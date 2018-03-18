@@ -20,7 +20,10 @@ $rows = mysqli_num_rows($result);
 
 if ($rows == 1){
 
-	$success = 'successful logging in'; 
+			$_SESSION['email'] = $email;
+			header("Location: ../index.php");
+
+	//$success = 'successful logging in'; 
 }
 
 else{

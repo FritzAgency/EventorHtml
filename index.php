@@ -8,6 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <?php 
+session_start();
+?>
 </head>
 <body>
 
@@ -23,8 +26,28 @@
         <li><a href="#" style="color:#4f2684;">SPECIAL DEALS</a></li>
         <li><a href="#" style="color:#4f2684;">ABOUT US</a></li>
         <li><a href="#" style="color:#4f2684;">CONTACT</a></li>
-      <li><a href="signup.html" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="login.html" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <?php if ((isset($_SESSION['email']))){
+
+        echo 
+      ''; 
+      }else{
+      echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>'; 
+    }
+?>
+
+        <?php if ((isset($_SESSION['email']))){
+
+        echo 
+      '
+      <li><a href="auth/logout.php" style="color:#4f2684;"><span class=""></span> Logout</a></li>
+'; 
+      }else{
+      echo'
+      <li><a href="auth/login.php" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+'; 
+    }
+?><!--li> Welcome <?php echo $_SESSION['email']; ?></li-->
+
     </ul>
   </div>
 </nav>

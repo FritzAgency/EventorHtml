@@ -58,3 +58,12 @@ color: #fff;
 #venia:hover{
 background-color: black;
 color: #fff;
+}
+
+ul li a {
+  color:yellow;
+ }
+ 
+ ul li a:hover, ul li a:focus {
+  color:red;
+ }

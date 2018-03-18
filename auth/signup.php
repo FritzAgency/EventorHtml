@@ -14,9 +14,8 @@
 </head>
 <body>
 		<div class="container" style="width:500px;">
-                <form class="form-horizontal" role="form" method="POST" action="/signup">
+                <form class="form-horizontal" role="form" method="POST" action="/login">
 
- <input name="_token" type="hidden" value="{{ csrf_token() }}">
 
                     <h2>Signup Form</h2>
                     <div class="form-group">
@@ -95,7 +94,7 @@
                     </div>
 
                     <div class="form-group">
-                            <h4 style="padding-left: 15px;">Instagramg Account</h4>
+                            <h4 style="padding-left: 15px;">Instagram Account</h4>
                             <div class="col-sm-12">
                                 <input type="instagram" id="intagram" name="instagram" placeholder="Instagram Page" class="form-control">
                             </div>
@@ -108,16 +107,7 @@
                         </div>
                     </div>
                     
-                    <!--div class="form-group">
-                        <div class="col-sm-12">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox">I accept <a href="#">terms</a>
-                                </label>
-                            </div>
-                        </div>
-                    </div--> <!-- /.form-group -->
-                    
+                                    
                     <div class="form-group">
                         <div class="col-sm-12">
                             <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Eventor - Signup.</title>
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -13,8 +13,7 @@
 	<link rel="stylesheet" href="style11.css">
     <?php 
 
-    require_once('../auth/signuplogin.php');
-
+    require_once('../auth/signupclass.php');
      ?> 
 
 </head>
@@ -24,11 +23,15 @@
 
 
                     <!--h2>Signup Form</h2-->
-                  <div>   <?php if(isset($check_mail)){echo $check_mail;}?> </div>
+                  <div>   <?php 
+                    if(isset($check_mail)){echo $check_mail;}?> </div>
 
-                   <div>   <?php if(isset($check_fn)){echo $check_fn;}?> </div>
+                   <div>   <?php 
 
-                    <div>   <?php if(isset($check_pass)){echo $check_pass;}?> </div>
+                    if(isset($check_fn)){echo $check_fn;}?> </div>
+
+                    <div>   <?php 
+                        if(isset($check_pass)){echo $check_pass;}?> </div>
 
                     <div>   <?php if(isset($success)){echo $success;}?> </div>
 

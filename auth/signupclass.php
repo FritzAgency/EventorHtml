@@ -2,6 +2,7 @@
 
 <?php
 
+
  require_once('../Database/conn.php');
 
 //if the submit is clicked. 
@@ -76,6 +77,7 @@ else{
 }
 
 }
+
 
 ?>
 

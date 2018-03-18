@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    background-image: url("img/eventor.jpg");
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.tabs-right > li {
+    margin-left: -83px;
+}
+
+.sideways > li {
+    height: 101px;
+    width: 200px;
+    margin-bottom: 100px;
+}
+
+.sideways.tabs-right {
+    right: -97px;
+}
+
+.col-sm-5 {
+
+    width: 41.66666667%;
+    padding-left: 47px;
+
+}
+

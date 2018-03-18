@@ -10,7 +10,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<link rel="stylesheet" href="signup.css">
 	<link rel="stylesheet" href="app.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style11.css">
 </head>
 <body>
         <form class="form-horizontal" role="form" action="" method="POST">
@@ -30,16 +30,6 @@
                     <input type="password" id="password" placeholder="Password" class="form-control" name="password">
                 </div>
             </div>
-
-            <!--div class="form-group">
-                <div class="col-sm-12">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"><a href="#">Remember me</a>
-                        </label>
-                    </div>
-                </div>
-            </div--> <!-- /.form-group -->
             
             <div class="form-group">
                 <div class="col-sm-12">

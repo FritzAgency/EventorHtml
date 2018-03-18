@@ -11,13 +11,29 @@
 	<link rel="stylesheet" href="signup.css">
 	<link rel="stylesheet" href="app.css">
 	<link rel="stylesheet" href="style11.css">
+    <?php 
+
+    require_once('../auth/signuplogin.php');
+
+     ?> 
+
 </head>
 <body>
 		<div class="container" style="width:500px;">
-                <form class="form-horizontal" role="form" method="POST" action="/login">
+                <form class="form-horizontal" role="form" method="POST" action="">
 
 
-                    <h2>Signup Form</h2>
+                    <!--h2>Signup Form</h2-->
+                  <div>   <?php if(isset($check_mail)){echo $check_mail;}?> </div>
+
+                   <div>   <?php if(isset($check_fn)){echo $check_fn;}?> </div>
+
+                    <div>   <?php if(isset($check_pass)){echo $check_pass;}?> </div>
+
+                    <div>   <?php if(isset($success)){echo $success;}?> </div>
+
+
+
                     <div class="form-group">
                         <h4 style="padding-left: 15px;">Name<span class="fa fa-asterisk text-danger"> *</span></h4> 
                         <div class="col-sm-6">
@@ -31,7 +47,7 @@
                     <div class="form-group">
                         <h4 style="padding-left: 15px;">Email<span class="fa fa-asterisk text-danger"> *</span></h4>
                         <div class="col-sm-12">
-                            <input type="email" name="email"id="email" placeholder="Email" class="form-control">
+                            <input type="email" name="email" id="email" placeholder="Email" class="form-control">
                         </div>
                     </div>
 
@@ -59,7 +75,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <label class="radio-inline">
-                                        <input type="radio" id="maleRadio" value="Male" name="gneder">Male
+                                        <input type="radio" id="maleRadio" value="Male" name="gender">Male
                                     </label>
                                 </div>
                             </div>
@@ -69,20 +85,20 @@
                     <div class="form-group">
                         <h4 style="padding-left: 15px;">Phone Number<span class="fa fa-asterisk text-danger"> *</span></h4>
                         <div class="col-sm-12">
-                            <input type="phoneNumber" id="phoneNumber" placeholder="Phone Number" name="phoneNumber" class="form-control">
+                            <input type="Number" id="phoneNumber" placeholder="Phone Number" name="phoneNumber" class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
                             <h4 style="padding-left: 15px;">Address<span class="fa fa-asterisk text-danger"> *</span></h4>
-                            <div class="col-sm-6">
+                            <!--div class="col-sm-6">
                                 <input type="orgAddress" id="phoneNumber" placeholder="Phone Number" name="phoneNumber" class="form-control">
                             </div>
                             <div class="col-sm-6">
                                 <input type="orgAddress" id="phoneNumber" placeholder="Phone Number" name="phoneNumber" class="form-control">
-                            </div>
+                            </div-->
                             <div class="col-sm-12" style="padding-top: 10px;">
-                                    <input type="orgAddress" id="Address" placeholder="Street Address" name="streetAdress" class="form-control">
+                                    <input type="orgAddress" id="Address" placeholder="Address" name="Address" class="form-control">
                             </div>
                         </div>
 
@@ -106,9 +122,7 @@
                             <input type="facebook" id="facebook" name="facebook" placeholder="facebook Page" class="form-control">
                         </div>
                     </div>
-                    
-                                    
-                    <div class="form-group">
+                                        <div class="form-group">
                         <div class="col-sm-12">
                             <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
                         </div>

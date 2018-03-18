@@ -30,16 +30,6 @@
                     <input type="password" id="password" placeholder="Password" class="form-control" name="password">
                 </div>
             </div>
-
-            <!--div class="form-group">
-                <div class="col-sm-12">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox"><a href="#">Remember me</a>
-                        </label>
-                    </div>
-                </div>
-            </div--> <!-- /.form-group -->
             
             <div class="form-group">
                 <div class="col-sm-12">

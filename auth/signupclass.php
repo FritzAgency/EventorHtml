@@ -67,6 +67,8 @@ else{
         if ($result) {
         	
         	$success = 'User successfully registered'; 
+
+        	header("Location: ../auth/login.php");
         }
 
         else{

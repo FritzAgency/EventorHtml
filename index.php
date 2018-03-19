@@ -40,13 +40,18 @@ session_start();
         echo 
       '
       <li><a href="auth/logout.php" style="color:#4f2684;"><span class=""></span> Logout</a></li>
-'; 
-      }else{
+';      }else{
       echo'
       <li><a href="auth/login.php" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 '; 
     }
-?><!--li> Welcome <?php echo $_SESSION['email']; ?></li-->
+?>
+
+<li>  <?php 
+if((isset($_SESSION['first_name']))){
+  echo 'Welcome,'. $_SESSION['first_name'];
+}
+   ?></li>
 
     </ul>
   </div>
@@ -59,7 +64,7 @@ session_start();
     <div class="col-sm-4" styling="padding-right: 0px; padding-left: 10px;">
       <!-- section for create event button -->
       <div>
-        <a href="createeventform.html"><div style=" margin-top: 3px; height: 377px; width: 100%; background-image:url('img/create.png')"></div></a>
+        <a href="event/create.php"><div style=" margin-top: 3px; height: 377px; width: 100%; background-image:url('img/create.png')"></div></a>
       </div>
       <!-- section for sell products -->
       <div>

@@ -14,16 +14,26 @@ if(isset($_POST['submit'])){
 	//Checking is user existing in the database or not
         $query = "SELECT * FROM `users` WHERE email='$email' and password='$password_hash'"; 
 
-$result = mysqli_query($con,$query) or die(mysql_error());
+$result = mysqli_query($con,$query) or die(mysqli_error());
 
-$rows = mysqli_num_rows($result);
+$count = mysqli_num_rows($result);
 
-if ($rows == 1){
+if ($count == 1){
+while( $row = mysqli_fetch_array($result) ){
+    //$array[]= $row;	
+	$_SESSION['email'] = $email; //store the user's email into session 
+	$id = $row['id'];
 
-			$_SESSION['email'] = $email;
-			header("Location: ../index.php");
+	$first_name = $row['first_name']; 
 
-	//$success = 'successful logging in'; 
+	$_SESSION['id'] = $id; //store the user's id into session   
+
+	$_SESSION['first_name'] = $first_name; 
+
+	header("Location: ../index.php");//redirect to the homepage after log in. 
+
+
+} 
 }
 
 else{

@@ -134,7 +134,8 @@ if((isset($_SESSION['first_name']))){
   </div>
   <div class="row">
     <div class="col-sm-3">
-      <img src="img/first1.png" alt="" style="width-max:100%">
+      <img src="img/first1.png" alt="" style="min-height: 200px; min-width: 100%; min-height: 200px;
+			min-width: 100%;">
     </div>
     <div class="col-sm-3">
       <img src="img/second.png" alt="" style="width-max:100%">

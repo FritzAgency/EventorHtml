@@ -12,11 +12,14 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/file-upload-with-preview/dist/file-upload-with-preview.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-      <script src="style.js"></script>
+      <script src="style2.js"></script>
 <!-- scripts ends here -->
 
 <?php 
@@ -70,7 +73,7 @@ header("Location: ../auth/signup.php");
         <form method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="usr">Event Name:</label>
-                <input type="text" class="form-control" id="usr" placeholder="Event Name." name="title">
+                <input type="text" class="form-control" id="usr" placeholder="Event Name" name="title">
             </div>
                     
             <div class="form-group">
@@ -91,26 +94,92 @@ header("Location: ../auth/signup.php");
                     </div>
                 </div>
 
+                <div class="form-group">
+                <button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+    Add Sponsors
+  </button>
+                <div class="row">
+                <div class="col-sm-4" style="padding-right: 0px; padding-bottom: 5px;">
+                <input type="text" class="form-control" id="usr" placeholder="Enter sponsors Name" name="title">
+                </div>
+                <div class="col-sm-4" style="padding-left: 3px;">
+                    <input type="text" class="form-control" id="usr" placeholder="Enter sponsors custom Url" name="title">
+                </div>
+                <div class="col-sm-4" style="padding-left: 3px; margin-left: -15px;">
+                    <input type="file" title=" " name="org_logo" id="js-upload-files" multiple>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-sm-4" style="padding-right: 0px; padding-bottom: 5px;">
+                <input type="text" class="form-control" id="usr" placeholder="Enter sponsors Name" name="title">
+                </div>
+                <div class="col-sm-4" style="padding-left: 3px;">
+                    <input type="text" class="form-control" id="usr" placeholder="Enter sponsors custom Url" name="title">
+                </div>
+                <div class="col-sm-4" style="padding-left: 3px; margin-left: -15px;">
+                    <input type="file" title=" " name="org_logo" id="js-upload-files" multiple>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-sm-4" style="padding-right: 0px; padding-bottom: 5px;">
+                <input type="text" class="form-control" id="usr" placeholder="Enter sponsors Name" name="title">
+                </div>
+                <div class="col-sm-4" style="padding-left: 3px;">
+                    <input type="text" class="form-control" id="usr" placeholder="Enter sponsors custom Url" name="title">
+                </div>
+                <div class="col-sm-4" style="padding-left: 3px; margin-left: -15px;">
+                    <input type="file" title=" " name="org_logo" id="js-upload-files" multiple>
+                </div>
+                </div>
+            </div>
+                
+<!-- <div class="form-group">
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top: 17px; background-color: #4f2684; color: #fff;" id="venia">
+    Add Sponsors
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 500px; padding: 5px;">
+  <form class="dropdown-menu p-4">
+  <div class="form-group input-group">
+                        <input type="text" name="multiple[]" class="form-control" placeholder="Enter social media link eg. example@facebook.com/example">
+                        <span class="input-group-btn"><button type="button" class="btn btn-default btn-add">+
+                        </button></span>
+                    </div>
+</form>
+  </div>
+</div>
+</div> -->
+
         <!-- add sponsors link starts here -->
-        <div class="form-group">
+        <!-- <div class="form-group">
                 <button type='button' class="btn btn-secondary" data-toggle="modal" data-target="#popUpWindow" style="margin-top: 17px;" id="venia">Click to add Sponsors Logo</button>
-  
+                <div class="row" style="margin-top: 5px;">
+                <div class="col-sm-11">
+                <input type="text" class="form-control" id="usr" placeholder="Added sponsors shows here" name="title">
+                </div>
+                <div class="col-sm-1">
+                <h4 style="font-size: 12px; color: red;">X</h4>
+                </div>
+                </div>
                 <div class="modal fade" id="popUpWindow">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <!-- header -->
-                      <div class="modal-header">
+                      <!-- <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3 class="modal-title">Upload Logo</h3>
-                      </div>
+                        <h3 class="modal-title">Name And Logo Of Sponsor</h3>
+                      </div> -->
                       <!-- body -->
-                      <div class="modal-header">
+                      <!-- <div class="modal-header">
+                        <h5>Sponsors Name</h5>
+                        <input type="text" class="form-control" id="usr" placeholder="Enter sponosrs name here" name="title">
+                        <hr>
                             <div class="panel panel-default">
                                     <div class="panel-heading"><strong>Upload Files</strong></div>
-                                    <div class="panel-body">
-                            
+                                    <div class="panel-body"> -->
+                                    
                                       <!-- Standar Form -->
-                                      <h4>Select files from your computer</h4>
+                                      <!-- <h5>Select files from your computer</h5>
                                       <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
                                         <div class="form-inline">
                                           <div class="form-group">
@@ -118,17 +187,17 @@ header("Location: ../auth/signup.php");
                                           </div>
                                           <button type="submit" class="btn btn-sm btn-primary new" id="js-upload-submit">Upload files</button>
                                         </div>
-                                      </form>
+                                      </form> -->
                             
                                       <!-- Drop Zone -->
-                                      <h4>Or drag and drop files below</h4>
+                                      <!-- <h5>Or drag and drop files below</h5>
                                       <div class="upload-drop-zone" id="drop-zone">
                                         Just drag and drop files here
-                                      </div>
+                                      </div> -->
                             
                                       <!-- Upload Finished -->
-                                      <div class="js-upload-finished">
-                                        <h3>Processed files</h3>
+                                      <!-- <div class="js-upload-finished">
+                                        <h5>Processed files</h5>
                                         <div class="list-group">
                                           <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>logo1.jpg</a>
                                         </div>
@@ -139,12 +208,14 @@ header("Location: ../auth/signup.php");
                    </div>
                   </div>
                 </div>
-        </div>
+        </div> -->
           <!-- sponsors add link ends here -->
 
           <!-- organizers name -->
           <div class="form-group">
-                <label for="usr">Organizers Name</label>
+          <button class="btn btn-secondary" type="button" style="margin-top: -10px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+    Organizers Name
+  </button>
                 <input type="text" class="form-control" id="usr" placeholder="Organizer Name" name="org_name">
             </div>
 
@@ -196,7 +267,7 @@ header("Location: ../auth/signup.php");
                 <div class="row">
                     <div class="col-sm-6" style="padding-right: 0px;">
                             <div class="form-group"> <!-- State Button -->
-                                <label for="state_id" class="control-label">City</label>
+                                <label for="state_id" class="control-label">State</label>
                                 <select class="form-control" id="state_id">
                                     <option value="AL">Choose City</option>
                                     <option value="AK">Aba</option>
@@ -273,10 +344,10 @@ header("Location: ../auth/signup.php");
                                 </select>					
                             </div>
                     </div>
-                    <div class="col-sm-6" style="padding-left: 0px;">
+                    <div class="col-sm-6" style="padding-right: 0px;">
                             <div class="form-group"> <!-- State Button -->
-                                <label for="state_id" class="control-label">LGA</label>
-                                <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Enter LGA here, e.g Alimosho, Ikeja, Victoria Island, etc">					
+                                <label for="state_id" class="control-label">City</label>
+                                <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Enter name of city here">					
                             </div>
                     </div>
                 </div>								
@@ -321,7 +392,7 @@ header("Location: ../auth/signup.php");
                     <div class="row">
                             <div class="col-sm-6">
                                     <div class="input-group bootstrap-timepicker timepicker">
-                                            <input id="timepicker1" type="text" class="form-control input-small" placeholder="Time">
+                                    <input class="form-control" id="time" name="time" placeholder="Date" type="text"/>
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
                                     </div>
                             </div>
@@ -329,21 +400,13 @@ header("Location: ../auth/signup.php");
                                     <div>
                                             <div class="form-group">
                                                 <div class='input-group date' id='datetimepicker10'>
-                                                    <input type='text' class="form-control" placeholder="Date"/>
+                                                <input class="form-control" id="time" name="date" placeholder="Date" type="text"/>
                                                     <span class="input-group-addon">
                                                         <span class="glyphicon glyphicon-calendar">
                                                         </span>
                                                     </span>
                                                 </div>
                                             </div>
-                                        <script type="text/javascript">
-                                            $(function () {
-                                                $('#datetimepicker10').datetimepicker({
-                                                    viewMode: 'years',
-                                                    format: 'MM/YYYY'
-                                                });
-                                            });
-                                        </script>
                                     </div>
                             </div>
                     </div>
@@ -360,22 +423,14 @@ header("Location: ../auth/signup.php");
                                     <div>
                                             <div class="form-group">
                                                 <div class='input-group date' id='datetimepicker10'>
-                                                    <input type='text' class="form-control" placeholder="Date"/>
+                                                <input class="form-control" id="date" name="date" placeholder="Date" type="text"/>
                                                     <span class="input-group-addon">
                                                         <span class="glyphicon glyphicon-calendar">
                                                         </span>
                                                     </span>
                                                 </div>
                                             </div>
-                                        <script type="text/javascript">
-                                            $(function () {
-                                                $('#datetimepicker10').datetimepicker({
-                                                    viewMode: 'years',
-                                                    format: 'MM/YYYY'
-                                                });
-                                            });
-                                        </script>
-                                    </div>
+                                        </div>
                             </div>
                     </div>
             </div>
@@ -383,58 +438,60 @@ header("Location: ../auth/signup.php");
        </div>
 
        <!-- schedule multiple activties -->
-       <div class="form-group">
-            <button type='button' class="btn btn-secondary" data-toggle="modal" data-target="#popUpWindow1" style="margin-top: 0px;" id="venia">Click to add Activities</button>
-
-            <div class="modal fade" id="popUpWindow1">
-              <div class="modal-dialog" style="width: 50%;">
-                <div class="modal-content" style="margin: auto;">
-                  <!-- header -->
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h3 class="modal-title">List of Activities Available</h3>
-                  </div>
-                  <!-- body -->
-                  <div class="modal-header">
-                        <div class="panel panel-default">
-                                <div class="panel-heading"><strong>You can select Mutilple Activies</strong></div>
-                                <div class="panel-body">
-                                    <div class="row" style="margin: auto;">
-                                        <div class="col-sm-3"  style="height:150px; background-color: grey; margin:1px; width: 24%;">
-                                            <label for="street1_id" class="control-label">Hicking</label>
+    <div class="form-group">
+                <button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+    Add Avtivities
+  </button>
+       <div class="row" style="margin-top: 10px;">
+                                        <div class="col-sm-5" style="margin:1px;" >
+                                        <input class="form-control" placeholder="Enter activity name here" type="text"/>
                                         </div>
-                                        <a href="index.html"><div class="col-sm-3" style="height:150px; background-color: lightgrey; margin:1px; width: 24%;">
-                                                <label for="street1_id" class="control-label">Cyclying</label>
-                                        </div></a>
-                                        <a href="index.html"><div class="col-sm-3" style="height:150px; background-color: grey; margin:1px; width: 24%;">
-                                                <label for="street1_id" class="control-label">Fencing</label>
-                                        </div></a>
-                                        <a href="index.html"><div class="col-sm-3" style="height:150px; background-color: grey; margin:1px; width: 24%;">
-                                                <label for="street1_id" class="control-label">Fencing</label>
-                                        </div></a>
+                                        <div class="col-sm-5">
+                                        <input type="file" name="event_flyer" id="js-upload-files" multiple>
+                                        </div>
                                     </div>
-                                    <div class="row" style="margin: auto;">
-                                            <a href="index.html"><div class="col-sm-3" style="height:150px; background-color: grey; margin:1px;width: 24%; ">
-                                                <label for="street1_id" class="control-label">Horse Racing</label>
-                                            </div></a>
-                                            <a href="index.html"><div class="col-sm-3" style="height:150px; background-color: lightgrey; margin:1px; width: 24%;">
-                                                    <label for="street1_id" class="control-label">Dancing</label>
-                                            </div></a>
-                                            <a href="index.html"><div class="col-sm-3" style="height:150px; background-color: grey; margin:1px; width: 24%;">
-                                                    <label for="street1_id" class="control-label">5K Run</label>
-                                            </div></a>
-                                            <a href="index.html"><div class="col-sm-3" style="height:150px; background-color: grey; margin:1px; width: 24%;">
-                                                    <label for="street1_id" class="control-label">Fencing</label>
-                                            </div></a>
+                                    <div class="row" style="margin-top: 10px;">
+                                        <div class="col-sm-5" style="margin:1px;" >
+                                        <input class="form-control" placeholder="Enter location of Activity here" type="text"/>
+                                        </div>
+                                        <div class="col-sm-5">
+                                        <div class="input-group bootstrap-timepicker timepicker">
+                                    <input class="form-control" id="time" name="time" placeholder="Date" type="text"/>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
                                     </div>
-                                </div>
-                                <button class="btn btn-secondary btn-small" style="margin:auto;">Save Selection</button>
-                              </div>
-                  </div>
-               </div>
-              </div>
-            </div>
-    </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:10px;">
+                                    <div class="col-sm-11"
+                                    <label for="comment">Description of Activity</label>
+                                    <textarea class="form-control" rows="5" id="comment" placeholder="Write a short passage that describes your event" name="description"></textarea>
+                                    </div>
+                                    <div class="col-sm-5" style="margin-top:10px;" >
+                                        <input class="form-control" placeholder="Enter activity name here" type="text"/>
+                                        </div>
+                                        <div class="col-sm-5" style="margin-top:10px;">
+                                        <input type="file" name="event_flyer" id="js-upload-files" multiple>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top: 10px;">
+                                        <div class="col-sm-5" style="margin:1px;" >
+                                        <input class="form-control" placeholder="Enter location of Activity here" type="text"/>
+                                        </div>
+                                        <div class="col-sm-5">
+                                        <div class="input-group bootstrap-timepicker timepicker">
+                                    <input class="form-control" id="time" name="time" placeholder="Date" type="text"/>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                                    </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top:10px;">
+                                    <div class="col-sm-11"
+                                    <label for="comment">Description of Activity</label>
+                                    <textarea class="form-control" rows="5" id="comment" placeholder="Write a short passage that describes your event" name="description"></textarea>
+                                    </div>
+                                    </div>
+                                    </div>
+
 <!-- section four starts here -->
 <hr style="margin-top: 2px;">
 <!-- rounded number and text     -->
@@ -449,98 +506,68 @@ header("Location: ../auth/signup.php");
 
 <!-- line breaker for sections -->
 <hr style="margin-top: 10px;">
-
+<!-- tickest section with form drop -->
 <div class="form-group">
-        <label for="usr">TICKETS</label>
-        <div class="row">
-            <div class="col-sm-3">
-                <button class="btn btn-secondary" id="venia">Free +</button>
-            </div>
-            <div class="col-sm-3">
-                    <button type='button' class="btn btn-secondary" data-toggle="modal" data-target="#popUpWindow2" id="venia">Paid +</button>
+<ul class="nav nav-pills" style="background-color: white; color: #4f2684;">
+    <li><a data-toggle="tab" href="#home" style="margin-right: 20px; background-color: #4f2684; color: white; font-weight: bold; ">FREE +</a></li>
+    <li><a data-toggle="tab" href="#menu1" style=" margin-right: 20px; background-color: #4f2684; color: white; font-weight: bold;">PAID +</a></li>
+    <li><a data-toggle="tab" href="#menu2" style="background-color: #4f2684; color: white; font-weight: bold;">RESERVED +</a></li>
+  </ul>
 
-                    <div class="modal fade" id="popUpWindow2">
-                      <div class="modal-dialog" style="width: 50%;">
-                        <div class="modal-content" style="margin: auto;">
-                          <!-- header -->
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">Tickets</h3>
-                          </div>
-                          <!-- body -->
-                          <div class="modal-header">
-                                <div class="panel panel-default">
-                                        <div class="panel-heading"><strong>Set Ticket Settings</strong></div>
-                                        <div class="panel-body">
-                                            <div class="row" style="margin: auto;">
-                                                <div class="col-sm-6">
-                                                        <input type="text" class="form-control" id="ticket" name="ticket" placeholder="Enter quantity of ticket here">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                        <input type="text" class="form-control" id="ticket" name="street1" placeholder="Enter Price of Ticket here">
-                                                </div>
-                                            </div>
-                                        <button  type="button" class="btn btn-secondary btn-small" style="margin:auto; margin-top: 15px;" id="venia">Save Ticket Settings</button>
-                                      </div>
-                          </div>
-                       </div>
-                      </div>
-                    </div>
-            </div>
-            </div>
-            <div class="col-sm-3">
-                    <button type='button' class="btn btn-secondary" data-toggle="modal" data-target="#popUpWindow2" id="venia">RESERVED +</button>
-
-                    <div class="modal fade" id="popUpWindow2">
-                      <div class="modal-dialog" style="width: 50%;">
-                        <div class="modal-content" style="margin: auto;">
-                          <!-- header -->
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 class="modal-title">Tickets</h3>
-                          </div>
-                          <!-- body -->
-                          <div class="modal-header">
-                                <div class="panel panel-default">
-                                        <div class="panel-heading"><strong>Set Ticket Settings</strong></div>
-                                        <div class="panel-body">
-                                            <div class="row" style="margin: auto;">
-                                                <div class="col-sm-6">
-                                                        <input type="text" class="form-control" id="ticket" name="ticket" placeholder="Enter Price of Ticket here">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                        <input type="text" class="form-control" id="ticket" name="street1" placeholder="Enter number of reserved">
-                                                </div>
-                                            </div>
-                                        <button  type="button" class="btn btn-secondary btn-small" style="margin:auto; margin-top: 15px;" id="venia">Save Ticket Settings</button>
-                                      </div>
-                          </div>
-                       </div>
-                      </div>
-                    </div>
-            </div>
-            </div>
-        </div>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade">
+    <div class="row">
+    <div class="col-sm-5">
+      <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
     </div>
-
-    <div class="form-group">
-            <div class="row">
-                    <div class="col-xs-6">
-                    <form>
-                        <div class="form-group multiple-form-group" data-max=3>
-                            <label style="margin-top: 10px;">Social Media Links </label>
-            
-                            <div class="form-group input-group">
-                                <input type="text" name="multiple[]" class="form-control" placeholder="Enter social media link eg. example@facebook.com/example">
-                                    <span class="input-group-btn"><button type="button" class="btn btn-default btn-add">+
-                                    </button></span>
-                            </div>
-                        </div>
-                    </form>
-                    </div>  
-
+    <div class="col-sm-5">
+     </div>
+    </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <div class="row">
+    <div class="col-sm-5">
+      <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+    </div>
+    <div class="col-sm-5">
+      <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+    </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <div class="row">
+    <div class="col-sm-5">
+      <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+    </div>
+    <div class="col-sm-5">
+      <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+    </div>
     </div>
 </div>
+</div>
+
+<!-- social media section -->
+<div class="form-group">
+                <button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+    Add Social Media Links
+  </button>
+       <div class="row" style="margin-top: 10px;">
+                                        <div class="col-sm-5" style="margin:1px;" >
+                                        <input class="form-control" placeholder="Enter Facebook page herehere" type="text"/>
+                                        </div>
+                                        <div class="col-sm-5">
+                                        <input class="form-control" placeholder="Enter Instagram page here" type="text"/>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                                        <div class="col-sm-5" style="margin:1px;" >
+                                        <input class="form-control" placeholder="Enter Twitter handle here" type="text"/>
+                                        </div>
+                                        <div class="col-sm-5">
+                                        <div class="input-group bootstrap-timepicker timepicker">
+                                        <input class="form-control" placeholder="Enter Google + link here" type="text"/>
+                                    </div>
+                                        </div>
+                                    </div>
     <div class="form-group">
             <div class="row">
                     <div class="col-sm-1" style="margin-right: 0px; padding-right: 0px;">
@@ -569,16 +596,42 @@ header("Location: ../auth/signup.php");
     </div>    
 
         </form>
+        </div>
     </div><!-- /.container -->
     </div>
     <div class="col-sm-5">
-        <div style="height: 392px; background-color: grey; font-weight: bold; font-size: 20px; text-align: center; margin-top:50px;">PREVIEW</div>
+        <div style="height: 392px; background-color: grey; font-weight: bold; font-size: 20px; text-align: center; margin-top:10px;">PREVIEW</div>
     </div>
 </div>
 
 <!-- script Starts here -->
-<script type="text/javascript">
-    $('#timepicker1').timepicker();
-</script>
+<script src="https://unpkg.com/file-upload-with-preview"></script> 
+        <script>
+        $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+
+    $(document).ready(function(){
+      var date_input=$('input[name="time"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: '00:00',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.timepicker(options);
+    })
+            // var upload = new FileUploadWithPreview('myUniqueUploadId')
+        </script>
+    <!-- script -->
 </body>
 </html>

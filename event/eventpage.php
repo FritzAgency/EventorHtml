@@ -1,3 +1,39 @@
+<?php
+
+$url = $_GET['url']; 
+
+
+require_once('Database/conn.php');
+
+
+  $query = "SELECT * FROM `event` WHERE event_url='$url'"; 
+
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+$row = mysqli_num_rows($result);
+
+
+while( $row = mysqli_fetch_array($result) ){
+
+$event_description =  $row['event_description']; 
+
+$Address = $row['Address']; 
+
+$event_title = $row['event_title']; 
+
+$event_flier = $row['event_flier'];  
+
+$ticket_price = $row['ticket_price']; 
+
+$ticket_qty = $row['ticket_qty'];
+
+$status = $row['status']; 
+
+$sponsor_name = $row['sponsor_name'];     
+
+}
+
+?>
 <html>
 <head>
   <meta charset="utf-8">
@@ -26,11 +62,12 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
     
-          <div class="item active">
-              <img src="img/new.jpg" alt="Los Angeles" style="width:100%; height: 100%;">
+        <div class="item active">
+              <img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
             <div class="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>LA is always so much fun!</p>
+              <h3>Celine Dion</h3>
+              <!--p>LA is always so much fun!</p-->
             </div>
           </div>
     
@@ -65,7 +102,31 @@
 </div>
             <div class="tab-pane" id="profile-vr">
               <div style="width: 645px; height: 609px;">
-                <img src="img/schedule.png" alt="" style="width:645px; height:609px;">
+               <div class="row" style="padding: 24; background-color: white; width: 100%; height:100%">
+                 <div class="col-sm-6" style="padding: 10px; margin: auto;">
+                   <h3 style="font-weight: bold; padding-top: 0px; margin-top: 0px; color: #4f2684;">Name Of Activity goes here</h3>
+                   <p style="text-align: justify;margin-top: 20px;">
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum deleniti quia quis natus earum aspernatur voluptatum beatae accusamus sed quasi tempora, aut sapiente quaerat, nesciunt ratione fugit molestias. Iure dolorum ipsa adipisci odit minus aspernatur dolores nobis! Asperiores, facilis natus.
+                 </p>
+                 </div>
+                 <div class="col-sm-6">
+                 <div style="padding: 10px; text-align: center; margin: auto;" >
+                     <h3>TIME</h3>
+                   </div>
+
+                  <div style="padding: 10px; text-align: center; margin: auto;" >
+                     <h3>12:00PM</h3>
+                   </div>
+
+                   <div style="padding: 10px; text-align: center; margin: auto;">
+                     <h3>12:00PM</h3>
+                   </div>
+
+                   <div class="col-md-3">
+            <a href="vendor.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; padding: 5px; width: 200px;">SCHEDULE</button></a>
+          </div>
+                 </div>
+               </div>
               </div>
             </div>
             <div class="tab-pane" id="messages-vr">
@@ -211,17 +272,23 @@
 
         <div class="col-xs-3"> <!-- required for floating -->
           <!-- Nav tabs -->
-          <ul class="nav nav-tabs tabs-right sideways">
-            <li class="active"><a href="#home-vr" data-toggle="tab">Media</a></li>
-            <li><a href="#profile-vr" data-toggle="tab">Schedule</a></li>
-            <li><a href="#messages-vr" data-toggle="tab">Activities</a></li>
+          <ul class="nav nav-tabs tabs-right sideways" style="right: -130px; margin-left: 33px;">
+            <li class="active" style="margin-left: -50px;"><a href="#home-vr" data-toggle="tab">Media</a></li>
+            <li style="margin-left: -50px;"><a href="#profile-vr" data-toggle="tab">Schedule</a></li>
+            <li style="margin-left: -50px;"><a href="#messages-vr" data-toggle="tab">Activities</a></li>
 
           </ul>
         </div>
       </div>
-  <div class="col-sm-5">
+      <div class="col-sm-5">
     <div class="row">
-    <h2 style="font-weight: bold;">A Trip To The <br> Hills Of Idanre</h2>
+    <h2 style="font-weight: bold;"><?php 
+
+    if(isset($event_title)){
+     echo $event_title; 
+    }
+
+    ?></h2>
     <div>
         <!-- Nav tabs -->
         <ul class="nav nav-tabs">
@@ -294,7 +361,7 @@
 <footer style="background-color: white; padding: 10px;">
   <div class="row">
     <div class="col-sm-2">
-      <img src="img/logo.png" alt="" style="width-max:100%; height-max: 100%">
+      <img src="img/logo.png" alt="" class="img-responsive">
     </div>
     <div class="col-sm-8">
       <p style="text-align: center; font-weight: bold; padding-top: 15px;">Copyright &copy; 2018 Eventor.com, all Rights Reserved. All Photos &copy; their respective owners</p>

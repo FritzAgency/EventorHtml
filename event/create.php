@@ -441,14 +441,23 @@ Add Avtivities
 <li><a data-toggle="tab" href="#menu2" style="background-color: #4f2684; color: white; font-weight: bold;">RESERVED +</a></li>
 </ul>
 
-<div class="tab-content">
-<div id="home" class="tab-pane fade">
+<div class="">
+<div id="home" class="">
 <div class="row">
 <div class="col-sm-5">
-<input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+<input class="form-control" id="time" name="ticket_qty" placeholder="Ticket quantity" type="text" style="margin-top: 10px;">
 </div>
 <div class="col-sm-5">
 </div>
+</div>
+</div>
+<div id="menu1" class="">
+<div class="row">
+<div class="col-sm-5">
+<input class="form-control" id="time" name="ticket_price" placeholder="Ticket Price" type="text" style="margin-top: 10px;">
+</div>
+<!--div class="col-sm-5">
+<input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
 </div>
 </div>
 <div id="menu1" class="tab-pane fade">
@@ -458,16 +467,7 @@ Add Avtivities
 </div>
 <div class="col-sm-5">
 <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
-</div>
-</div>
-<div id="menu1" class="tab-pane fade">
-<div class="row">
-<div class="col-sm-5">
-<input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
-</div>
-<div class="col-sm-5">
-<input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
-</div>
+</div-->
 </div>
 </div>
 </div>

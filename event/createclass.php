@@ -27,7 +27,10 @@ $event_starts = $_POST['event_starts'];
 $event_ends = $_POST['event_ends'];
 $facebook = $_POST['facebook']; 
 $instagram = $_POST['instagram']; 
-$twitter = $_POST['twitter'];  
+$twitter = $_POST['twitter']; 
+$ticket_qty = $_POST['ticket_qty']; 
+$ticket_price = $_POST['ticket_price']; 
+
 $event_url = preg_replace('/\s+/', '-', $event_title); 
 
 
@@ -47,7 +50,7 @@ move_uploaded_file($_FILES["event_flyer"]["tmp_name"], "../public/images/".$_FIL
 //move_uploaded_file($_FILES['userfile']['tmp_name'], 'c:/wamp/www/uploads/images/'.$file['name']);
 
 
-	$query = "INSERT into `event` (creator_id, event_title, event_url, event_description, status, sponsor_name, sponsor_url, sponsor_logo, org_name, org_logo, event_flier, Address, city, state, lga, event_starts, event_ends, facebook, twitter, instagram, created_at) VALUES ('$creator_id', '$event_title', '$event_url', '$event_description', '$status', '$sponsor_name', '$sponsor_url', '$sponsor_logo', '$org_name', '$org_logo', '$event_flier', '$Address', '$city', '$state', '$lga', '$event_starts', '$event_ends', '$facebook', '$twitter', '$instagram', '$created_at' )";  
+	$query = "INSERT into `event` (creator_id, event_title, event_url, event_description, status, sponsor_name, sponsor_url, sponsor_logo, org_name, org_logo, event_flier, Address, city, state, lga, event_starts, event_ends, facebook, twitter, instagram, ticket_qty, ticket_price, created_at) VALUES ('$creator_id', '$event_title', '$event_url', '$event_description', '$status', '$sponsor_name', '$sponsor_url', '$sponsor_logo', '$org_name', '$org_logo', '$event_flier', '$Address', '$city', '$state', '$lga', '$event_starts', '$event_ends', '$facebook', '$twitter', '$instagram', '$ticket_qty', '$ticket_price', '$created_at' )";  
 
         $result = mysqli_query($con,$query) or die(mysqli_error($con));
 

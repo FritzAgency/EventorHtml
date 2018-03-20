@@ -65,7 +65,31 @@
 </div>
             <div class="tab-pane" id="profile-vr">
               <div style="width: 645px; height: 609px;">
-                <img src="img/schedule.png" alt="" style="width:645px; height:609px;">
+               <div class="row" style="padding: 24; background-color: white; width: 100%; height:100%">
+                 <div class="col-sm-6" style="padding: 10px; margin: auto;">
+                   <h3 style="font-weight: bold; padding-top: 0px; margin-top: 0px; color: #4f2684;">Name Of Activity goes here</h3>
+                   <p style="text-align: justify;margin-top: 20px;">
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum deleniti quia quis natus earum aspernatur voluptatum beatae accusamus sed quasi tempora, aut sapiente quaerat, nesciunt ratione fugit molestias. Iure dolorum ipsa adipisci odit minus aspernatur dolores nobis! Asperiores, facilis natus.
+                 </p>
+                 </div>
+                 <div class="col-sm-6">
+                 <div style="padding: 10px; text-align: center; margin: auto;" >
+                     <h3>TIME</h3>
+                   </div>
+
+                  <div style="padding: 10px; text-align: center; margin: auto;" >
+                     <h3>12:00PM</h3>
+                   </div>
+
+                   <div style="padding: 10px; text-align: center; margin: auto;">
+                     <h3>12:00PM</h3>
+                   </div>
+
+                   <div class="col-md-3">
+            <a href="vendor.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; padding: 5px; width: 200px;">SCHEDULE</button></a>
+          </div>
+                 </div>
+               </div>
               </div>
             </div>
             <div class="tab-pane" id="messages-vr">
@@ -294,7 +318,7 @@
 <footer style="background-color: white; padding: 10px;">
   <div class="row">
     <div class="col-sm-2">
-      <img src="img/logo.png" alt="" style="width-max:100%; height-max: 100%">
+      <img src="img/logo.png" alt="" class="img-responsive">
     </div>
     <div class="col-sm-8">
       <p style="text-align: center; font-weight: bold; padding-top: 15px;">Copyright &copy; 2018 Eventor.com, all Rights Reserved. All Photos &copy; their respective owners</p>

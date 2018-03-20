@@ -436,6 +436,7 @@ Add Avtivities
 <!-- tickest section with form drop -->
 <div class="form-group">
 <ul class="nav nav-pills" style="background-color: white; color: #4f2684;">
+<<<<<<< HEAD
 <li><a data-toggle="tab" href="#home" style="margin-right: 20px; background-color: #4f2684; color: white; font-weight: bold; ">FREE +</a></li>
 <li><a data-toggle="tab" href="#menu1" style=" margin-right: 20px; background-color: #4f2684; color: white; font-weight: bold;">PAID +</a></li>
 <li><a data-toggle="tab" href="#menu2" style="background-color: #4f2684; color: white; font-weight: bold;">RESERVED +</a></li>
@@ -469,11 +470,45 @@ Add Avtivities
 <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
 </div-->
 </div>
+    <li><a data-toggle="tab" href="#home" style="margin-right: 20px; background-color: #4f2684; color: white; font-weight: bold; ">FREE +</a></li>
+    <li><a data-toggle="tab" href="#menu1" style=" margin-right: 20px; background-color: #4f2684; color: white; font-weight: bold;">PAID +</a></li>
+    <li><a data-toggle="tab" href="#menu2" style="background-color: #4f2684; color: white; font-weight: bold;">RESERVED +</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade">
+    <div class="row">
+    <div class="col-sm-5">
+      <input class="form-control" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+    </div>
+    <div class="col-sm-5">
+     </div>
+    </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <div class="row">
+    <div class="col-sm-5">
+      <input class="form-control" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+    </div>
+    <div class="col-sm-5">
+      <input class="form-control" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+    </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <div class="row">
+    <div class="col-sm-5">
+      <input class="form-control" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+    </div>
+    <div class="col-sm-5">
+      <input class="form-control" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+    </div>
+    </div>
 </div>
 </div>
 
 <!-- social media section -->
 <div class="form-group">
+
 <button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
 Add Social Media Links
 </button>
@@ -530,6 +565,65 @@ Add Social Media Links
 <div class="col-sm-5">
 <div style="height: 392px; background-color: grey; font-weight: bold; font-size: 20px; text-align: center; margin-top:10px;">PREVIEW</div>
 </div>
+
+                <button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+    Add Social Media Links
+  </button>
+       <div class="row" style="margin-top: 10px;">
+                                        <div class="col-sm-5" style="margin:1px;" >
+                                        <input class="form-control" placeholder="Enter Facebook page herehere" type="text"/>
+                                        </div>
+                                        <div class="col-sm-5">
+                                        <input class="form-control" placeholder="Enter Instagram page here" type="text"/>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                                        <div class="col-sm-5" style="margin:1px;" >
+                                        <input class="form-control" placeholder="Enter Twitter handle here" type="text"/>
+                                        </div>
+                                        <div class="col-sm-5">
+                                        <div class="input-group bootstrap-timepicker timepicker">
+                                        <input class="form-control" placeholder="Enter Google + link here" type="text"/>
+                                    </div>
+                                        </div>
+                                    </div>
+</div>
+</div>
+
+    <div class="form-group">
+            <div class="row">
+                    <div class="col-sm-1" style="margin-right: 0px; padding-right: 0px;">
+                    <input type="checkbox" >
+                    </div>
+                    <div class="col-xs-11">
+                            <p>I agree to the terms of use.</p>
+                    </div>   
+
+    </div>
+    </div>    
+
+    <div class="form-group">
+            <div class="row">
+                    <div class="col-sm-4">
+                        
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="index.html"><button type="submit" class="btn  btn-success" name="submit">SAVE</button></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-primary">PREVIEW</button>
+                    </div>    
+
+    </div>
+    </div>    
+
+        </form>
+        </div>
+    </div><!-- /.container -->
+    </div>
+    <div class="col-sm-5">
+        <div style="height: 392px; background-color: grey; font-weight: bold; font-size: 20px; text-align: center; margin-top:10px;">PREVIEW</div>
+    </div>
 </div>
 
 <!-- script Starts here -->

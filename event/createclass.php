@@ -3,26 +3,66 @@
 
  require_once('../Database/conn.php');
 
-if(isset($_POST['submit'])){
-	
-$title = $_POST['title']; 
-$description = $_POST['description']; 
-$creator_id = $_SESSION['id']; 
-$created_at = date("Y-m-d"); //get the date of registration. 
+
+$target_dir = "../public/images/"; //the storage directory to store the image. 
+
+//when the submit button is clicked
+if(isset($_POST['save'])){
+
+$event_title = $_POST['event_title']; //grabs the event title from the form
+$creator_id = $_SESSION['id']; //the creator session id to differentiate creators from each other. 
+$event_description = $_POST['event_description'];  //grabs the event description from the form
+$status = $_POST['status'];  //grabs the event status from the form 
+$sponsor_name = $_POST['sponsor_name']; //grabs the sponsor's name from the form 
+$sponsor_url = $_POST['sponsor_url']; //grabs the sponsor's url from the form 
+$created_at = date("Y-m-d");
+$sponsor_logo = $_FILES["sponsor_logo"]["name"]; 
+$org_name = $_POST['org_name']; 
+$org_logo = $_FILES["org_logo"]["name"]; 
+$event_flier = $_FILES["event_flier"]["name"]; 
+$Address = $_POST['Address']; 
+$city = $_POST ['city'];  
+$state = $_POST['state'];
+$lga = $_POST['lga']; 
+$event_starts = $_POST['event_starts']; 
+$event_ends = $_POST['event_ends'];
+$facebook = $_POST['facebook']; 
+$instagram = $_POST['instagram']; 
+$twitter = $_POST['twitter']; 
+$ticket_qty = $_POST['ticket_qty']; 
+$ticket_price = $_POST['ticket_price']; 
+
+$event_url = preg_replace('/\s+/', '-', $event_title); 
 
 
-	$query = "INSERT into `event` (title, description, creator_id) VALUES ($title, $description, $creator_id, $created_at)";
+$target_file = $target_dir . basename($_FILES["sponsor_logo"]["name"]);	
+$target_file = $target_dir . basename($_FILES["org_logo"]["name"]);	
+$target_file = $target_dir . basename($_FILES["event_flyer"]["name"]);	
 
-        $result = mysqli_query($con,$query);//send the query
+
+move_uploaded_file($_FILES["sponsor_logo"]["tmp_name"], "../public/images/".$_FILES['sponsor_logo']['name']); 
+
+
+move_uploaded_file($_FILES["org_logo"]["tmp_name"], "../public/images/".$_FILES['org_logo']['name']); 
+
+
+move_uploaded_file($_FILES["event_flyer"]["tmp_name"], "../public/images/".$_FILES['event_flyer']['name']); 
+
+//move_uploaded_file($_FILES['userfile']['tmp_name'], 'c:/wamp/www/uploads/images/'.$file['name']);
+
+
+	$query = "INSERT into `event` (creator_id, event_title, event_url, event_description, status, sponsor_name, sponsor_url, sponsor_logo, org_name, org_logo, event_flier, Address, city, state, lga, event_starts, event_ends, facebook, twitter, instagram, ticket_qty, ticket_price, created_at) VALUES ('$creator_id', '$event_title', '$event_url', '$event_description', '$status', '$sponsor_name', '$sponsor_url', '$sponsor_logo', '$org_name', '$org_logo', '$event_flier', '$Address', '$city', '$state', '$lga', '$event_starts', '$event_ends', '$facebook', '$twitter', '$instagram', '$ticket_qty', '$ticket_price', '$created_at' )";  
+
+        $result = mysqli_query($con,$query) or die(mysqli_error($con));
+
+
+        //send the query
 
         if ($result) {
-        	echo 'event created'; 
+        	$message = "Your page has been created successfully. Your event page is at '<a href='/eventorhtml/event/page/$event_url'> localhost/eventorhtml/event/page/$event_url</a>";        
         }
         else{
-        	echo 'Something went wrong'; 
+        	$message = 'oops, something went wrong'; 
         }
-
 }
-
-
 ?> 

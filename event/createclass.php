@@ -4,14 +4,15 @@
  require_once('../Database/conn.php');
 
 
-$target_dir = "../public/images/"; //target storage directory to store the image. 
+$target_dir = "../public/images/"; //the storage directory to store the image. 
 
+//when the submit button is clicked
 if(isset($_POST['save'])){
 
-$event_title = $_POST['event_title']; 
-$creator_id = $_SESSION['id']; 
-$event_description = $_POST['event_description']; 
-$status = $_POST['status']; 
+$event_title = $_POST['event_title']; //grabs the event title from the form
+$creator_id = $_SESSION['id']; //the creator session id to differentiate creators from each other. 
+$event_description = $_POST['event_description'];  //grabs the event description from the form
+$status = $_POST['status'];  //grabs the event status from the form 
 $sponsor_name = $_POST['sponsor_name']; 
 $sponsor_url = $_POST['sponsor_url']; 
 $created_at = date("Y-m-d");

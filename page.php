@@ -27,7 +27,9 @@ $ticket_price = $row['ticket_price'];
 
 $ticket_qty = $row['ticket_qty'];
 
-$status = $row['status'];     
+$status = $row['status']; 
+
+$sponsor_name = $row['sponsor_name'];     
 
 }
 ?>
@@ -288,7 +290,13 @@ echo $event_description;
             </div>
             <div id="menu1" class="tab-pane fade" style="height: 308px;">
               <h3>SPONSORS</h3>
-              <p>Set Boxes for sponsors when added at the registration form in a carousel</p>
+              <p><?php 
+
+              if (isset($sponsor_name)){
+              	echo $sponsor_name; 
+              }
+
+              ?></p>
             </div>
             <div id="menu2" class="tab-pane fade" style="height: 308px;">
               <h3>LOCATION</h3>

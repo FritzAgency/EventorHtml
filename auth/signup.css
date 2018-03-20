@@ -152,4 +152,12 @@ body{
 	left: 0;
 	top: 0;
 	opacity: 0;
-  }
+	}
+	
+	.new{
+		background-color: #4f2684;
+	}
+
+	.new:hover{
+		background-color: #000;
+	}

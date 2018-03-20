@@ -7,17 +7,46 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <?php 
 session_start();
 ?>
+
+<style>
+  .search-background img {
+    width: 100%;
+    background: rgba(0, 0, 0, 0);
+}
+.well-searchbox {
+  min-height: 15px;
+  min-width: 350px;
+  padding: 5px;
+  position: absolute;
+  z-index: 80;
+  top: 311px;
+  right: 136px;
+  background: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px;
+  border: 1px solid #e3e3e3;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.well-searchbox label {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+</style>
+
 </head>
 <body>
 
 <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197" style="margin:auto;">
   <div class="container-fluid" style=:"padding-right: 8px;">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Eventor.com" style="margin-top: -11px; margin-left: 95px;"></a>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Eventor.com" style="margin-top: -11px; margin-left: 95px;" class="img-responsive"></a>
     </div>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#" class="active" style="color:#4f2684;">HOME</a></li>
@@ -47,9 +76,9 @@ session_start();
     }
 ?>
 
-<li>  <?php 
+<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  <?php 
 if((isset($_SESSION['first_name']))){
-  echo 'Welcome,'. $_SESSION['first_name'];
+  echo 'Welcome, '. $_SESSION['first_name'];
 }
    ?></li>
 
@@ -109,12 +138,49 @@ if((isset($_SESSION['first_name']))){
       </div>
     </div>
     
-    <!-- search form 3
-<form id="search-form_3">
-    <input type="text" class="search_3"/>
-    <input type="submit" class="submit_3" value="Search" />
-    </form> -->
-    
+    <!-- search form 3 -->
+<div class="well-searchbox">
+                <form class="form-horizontal" role="form" style="background: rgba(0, 0, 0, 0);">
+                <div class="row">
+                <div class="col-sm-3" style="padding-right: 33px;">
+                    <div class="form-group">
+                            <select class="form-control" placeholder="Category" style="background: rgba(0, 0, 0, 0);">
+                                <option value="">Category</option>
+                                <option value="">Party</option>
+                                <option value="">Sport</option>
+                                <option value="">Entertainment</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3" style="padding-right: 33px;">
+                    <div class="form-group">
+                            <select class="form-control" placeholder="Location" style="background: rgba(0, 0, 0, 0);">
+                                <option value="">Location</option>
+                                <option value="">V.I</option>
+                                <option value="">Ikeja</option>
+                                <option value="">Ikorodun</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                    <div class="form-group">
+                            <select class="form-control" placeholder="Time" style="background: rgba(0, 0, 0, 0);">
+                                <option value="">Time</option>
+                                                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                    <button type="submit" class="btn btn-default" style="background: rgba(0, 0, 0, 0); padding: 6px 14px; border-radius: 50px; font-size: 15px;">
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+     <!-- search form ends here -->
     <!-- Controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <i class="glyphicon glyphicon-chevron-left"></i>

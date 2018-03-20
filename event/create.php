@@ -518,7 +518,7 @@ header("Location: ../auth/signup.php");
     <div id="home" class="tab-pane fade">
     <div class="row">
     <div class="col-sm-5">
-      <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+      <input class="form-control" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
     </div>
     <div class="col-sm-5">
      </div>
@@ -527,19 +527,19 @@ header("Location: ../auth/signup.php");
     <div id="menu1" class="tab-pane fade">
       <div class="row">
     <div class="col-sm-5">
-      <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+      <input class="form-control" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
     </div>
     <div class="col-sm-5">
-      <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+      <input class="form-control" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
     </div>
     </div>
     <div id="menu1" class="tab-pane fade">
       <div class="row">
     <div class="col-sm-5">
-      <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+      <input class="form-control" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
     </div>
     <div class="col-sm-5">
-      <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
+      <input class="form-control" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
     </div>
     </div>
 </div>

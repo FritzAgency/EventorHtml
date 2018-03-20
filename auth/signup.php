@@ -19,10 +19,11 @@
 </head>
 <body>
 		<div class="container" style="width:500px;">
+                
                 <form class="form-horizontal" role="form" method="POST" action="">
 
+                    <h2 style="margin-right: auto; marign-left: auto; font-weight: bold; color: #4f2684; margin-left: 6em;">Signup</h2>
 
-                    <!--h2>Signup Form</h2-->
                   <div>   <?php 
                     if(isset($check_mail)){echo $check_mail;}?> </div>
 
@@ -60,6 +61,14 @@
                             <input type="password" id="password" placeholder="Password" name="password" class="form-control">
                         </div>
                     </div>
+
+                    <div class="form-group">
+                            <h4 style="padding-left: 15px;">Comfirm Password<span class="fa fa-asterisk text-danger"> *</span></h4>
+                        <div class="col-sm-12">
+                            <input type="password" id="password" placeholder="Password" name="password" class="form-control">
+                        </div>
+                    </div>
+
                     <div class="form-group">
                             <h4 style="padding-left: 15px;">Date Of Birth <span class="fa fa-asterisk text-danger"> *</span></h4>
                         <div class="col-sm-12">
@@ -88,7 +97,7 @@
                     <div class="form-group">
                         <h4 style="padding-left: 15px;">Phone Number<span class="fa fa-asterisk text-danger"> *</span></h4>
                         <div class="col-sm-12">
-                            <input type="Number" id="phoneNumber" placeholder="Phone Number" name="phoneNumber" class="form-control">
+                            <input id="phoneNumber" placeholder="Phone Number" name="phoneNumber" class="form-control">
                         </div>
                     </div>
 
@@ -104,6 +113,12 @@
                                     <input type="orgAddress" id="Address" placeholder="Address" name="Address" class="form-control">
                             </div>
                         </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="text" id="address 2" name="address 2" placeholder="Address 2" class="form-control">
+                        </div>
+                    </div>
 
                     <div class="form-group">
                         <h4 style="padding-left: 15px;">Twitter Account</h4>

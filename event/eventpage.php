@@ -1,3 +1,39 @@
+<?php
+
+$url = $_GET['url']; 
+
+
+require_once('Database/conn.php');
+
+
+  $query = "SELECT * FROM `event` WHERE event_url='$url'"; 
+
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+$row = mysqli_num_rows($result);
+
+
+while( $row = mysqli_fetch_array($result) ){
+
+$event_description =  $row['event_description']; 
+
+$Address = $row['Address']; 
+
+$event_title = $row['event_title']; 
+
+$event_flier = $row['event_flier'];  
+
+$ticket_price = $row['ticket_price']; 
+
+$ticket_qty = $row['ticket_qty'];
+
+$status = $row['status']; 
+
+$sponsor_name = $row['sponsor_name'];     
+
+}
+
+?>
 <html>
 <head>
   <meta charset="utf-8">
@@ -26,11 +62,12 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
     
-          <div class="item active">
-              <img src="img/new.jpg" alt="Los Angeles" style="width:100%; height: 100%;">
+        <div class="item active">
+              <img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
             <div class="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>LA is always so much fun!</p>
+              <h3>Celine Dion</h3>
+              <!--p>LA is always so much fun!</p-->
             </div>
           </div>
     
@@ -243,9 +280,15 @@
           </ul>
         </div>
       </div>
-  <div class="col-sm-5">
+      <div class="col-sm-5">
     <div class="row">
-    <h2 style="font-weight: bold;">A Trip To The <br> Hills Of Idanre</h2>
+    <h2 style="font-weight: bold;"><?php 
+
+    if(isset($event_title)){
+     echo $event_title; 
+    }
+
+    ?></h2>
     <div>
         <!-- Nav tabs -->
         <ul class="nav nav-tabs">

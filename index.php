@@ -46,7 +46,7 @@ session_start();
 <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197" style="margin:auto;">
   <div class="container-fluid" style=:"padding-right: 8px;">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Eventor.com" style="margin-top: -11px; margin-left: 95px;" class="img-responsive"></a>
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Eventor.com" style="margin-top: -11px; margin-left: 95px;" class="img-git commitresponsive"></a>
     </div>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#" class="active" style="color:#4f2684;">HOME</a></li>

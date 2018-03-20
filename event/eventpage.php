@@ -272,10 +272,10 @@ $event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
 
         <div class="col-xs-3"> <!-- required for floating -->
           <!-- Nav tabs -->
-          <ul class="nav nav-tabs tabs-right sideways">
-            <li class="active"><a href="#home-vr" data-toggle="tab">Media</a></li>
-            <li><a href="#profile-vr" data-toggle="tab">Schedule</a></li>
-            <li><a href="#messages-vr" data-toggle="tab">Activities</a></li>
+          <ul class="nav nav-tabs tabs-right sideways" style="right: -130px; margin-left: 33px;">
+            <li class="active" style="margin-left: -50px;"><a href="#home-vr" data-toggle="tab">Media</a></li>
+            <li style="margin-left: -50px;"><a href="#profile-vr" data-toggle="tab">Schedule</a></li>
+            <li style="margin-left: -50px;"><a href="#messages-vr" data-toggle="tab">Activities</a></li>
 
           </ul>
         </div>

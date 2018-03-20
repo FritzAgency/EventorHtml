@@ -37,7 +37,7 @@ $sponsor_name = $row['sponsor_name'];
 <html>
 <head>
   <meta charset="utf-8">
-  <title>eventor</title>
+  <title>Eventor.com</title>
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap.vertical-tabs.css">
   <link rel="stylesheet" href="style.css">
@@ -49,7 +49,7 @@ $sponsor_name = $row['sponsor_name'];
       <div  class="col-sm-7" style="margin-bottom: -43px;">
         <div class="col-xs-9">
           <!-- Tab panes -->
-          <div class="tab-content" style="background-color:lightgrey; width: 645px; height: 609px;">
+          <div class="tab-content" style="background-color: white; width: 645px; height: 609px;">
 <div class="tab-pane active" id="home-vr">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -64,7 +64,7 @@ $sponsor_name = $row['sponsor_name'];
     
           <div class="item active">
               <img src="/eventorhtml/public/images/<?php echo 
-$event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
+$event_flier;?>" alt="Los Angeles"class="img-responsive">
             <div class="carousel-caption">
               <h3>Celine Dion</h3>
               <!--p>LA is always so much fun!</p-->
@@ -102,144 +102,136 @@ $event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
 </div>
             <div class="tab-pane" id="profile-vr">
               <div style="width: 645px; height: 609px;">
-                <img src="img/schedule.png" alt="" style="width:645px; height:609px;">
+              <div class="tab-pane" id="profile-vr">
+              <div style="width: 645px; height: 609px;">
+                <div><img src="img/first1.png" class="img-responsive"alt="" style="margin:auto; padding-top: 5px;"></div>
+               <div class="row" style="margin: 0px; padding: 5px; background-color: white; width: 100%; padding-top-5px;">
+               <ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home" style="font-weight: bold; color:#4f2684;">Hicking</a></li>
+  <li><a data-toggle="tab" href="#menu1" style="font-weight: bold; color:#4f2684;">5K Run</a></li>
+  <li><a data-toggle="tab" href="#menu2" style="font-weight: bold; color:#4f2684;">Dancing</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <div class="row">
+      <div class="col-sm-6">
+        <p style="font-weight:bold; margin-top: 18px;">TITLE GOES HERE</p>
+        <p style="font-align:justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi in impedit necessitatibus quam? Dolorem recusandae ex modi odio error.</p>
+      </div>
+      <div class="col-sm-6">
+                 <div style="text-align: center;" >
+                     <h3 style="font-size: 19px; font-weight: bold; color:#4f2684; margin-top: 3px; margin-top: 29px;">TIME</h3>
+                   </div>
+
+                  <div style="text-align: center;" >
+                     <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">12:00PM</h3>
+                   </div>
+
+                   <div style="text-align: center;" >
+                     <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">-</h3>
+                   </div>
+
+                   <div style="text-align: center;">
+                     <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">12:00PM</h3>
+                   </div>
+
+                   <div class="col-md-3">
+            <a href="vendor.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; margin-top: 15px; font: 10px; font-size: 21px; margin-left: 58px;">SCHEDULE</button></a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+  <div class="row">
+      <div class="col-sm-6">
+        <p style="font-weight:bold; margin-top: 18px;">TITLE GOES HERE</p>
+        <p style="font-align:justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi in impedit necessitatibus quam? Dolorem recusandae ex modi odio error.</p>
+      </div>
+      <div class="col-sm-6">
+                 <div style="text-align: center;" >
+                     <h3 style="font-size: 19px; font-weight: bold; color:#4f2684; margin-top: 3px; margin-top: 29px;">TIME</h3>
+                   </div>
+
+                  <div style="text-align: center;" >
+                     <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">12:00PM</h3>
+                   </div>
+
+                   <div style="text-align: center;" >
+                     <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">-</h3>
+                   </div>
+
+                   <div style="text-align: center;">
+                     <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">12:00PM</h3>
+                   </div>
+
+                   <div class="col-md-3">
+            <a href="vendor.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; margin-top: 15px; font: 10px; font-size: 21px; margin-left: 58px;">SCHEDULE</button></a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+  <div class="row">
+      <div class="col-sm-6">
+        <p style="font-weight:bold; margin-top: 18px;">TITLE GOES HERE</p>
+        <p style="font-align:justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi in impedit necessitatibus quam? Dolorem recusandae ex modi odio error.</p>
+      </div>
+      <div class="col-sm-6">
+                 <div style="text-align: center;" >
+                     <h3 style="font-size: 19px; font-weight: bold; color:#4f2684; margin-top: 3px; margin-top: 29px;">TIME</h3>
+                   </div>
+
+                  <div style="text-align: center;" >
+                     <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">12:00PM</h3>
+                   </div>
+
+                   <div style="text-align: center;" >
+                     <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">-</h3>
+                   </div>
+
+                   <div style="text-align: center;">
+                     <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">12:00PM</h3>
+                   </div>
+
+                   <div class="col-md-3">
+            <a href="vendor.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; margin-top: 15px; font: 10px; font-size: 21px; margin-left: 58px;">SCHEDULE</button></a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+                 <!-- <div class="col-sm-6" style="padding: 10px; margin: auto;">
+                   <h3 style="font-weight: bold; padding-top: 0px; margin-top: 0px; color: #4f2684; font-size: 18px;">Name Of Activity goes here</h3>
+                   <p style="text-align: justify;margin-top: 10px;">
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum deleniti quia quis natus earum aspernatur voluptatum beatae accusamus sed quasi tempora, aut sapiente quaerat, nesciunt ratione fugit molestias. Iure dolorum ipsa adipisci odit minus aspernatur dolores nobis! Asperiores, facilis natus.
+                 </p>
+                 </div> -->
+                 <!-- <div class="col-sm-6">
+                 <div style="text-align: center; margin: auto;" >
+                     <h3>TIME</h3>
+                   </div> -->
+
+                  <!-- <div style="text-align: center; margin: auto;" >
+                     <h3>12:00PM</h3>
+                   </div> -->
+
+                   <!-- <div style="text-align: center; margin: auto;">
+                     <h3>12:00PM</h3>
+                   </div> -->
+
+                   <!-- <div class="col-md-3">
+            <a href="vendor.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; padding: 5px; width: 200px; margin-left: 20px;
+margin-top: 15px;">SCHEDULE</button></a>
+          </div> --> -->
+                 <!-- </div> -->
+               </div>
+              </div>
+            </div>
               </div>
             </div>
             <div class="tab-pane" id="messages-vr">
-                <div class="row">
-                    <div class="col-sm-12">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <div class="well">
-                            <h4 class="text-danger"><a href="#"><span class="label label-danger pull-right">- 9%</span> New Users </a></h4>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="well">
-                            <h4 class="text-success"><a href=""><span class="label label-success pull-right">+ 3%</span> Returning </a></h4>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="well">
-                            <h4 class="text-primary"><a href=""><span class="label label-primary pull-right">201</span> Sales </a></h4>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="well">
-                            <h4 class="text-success"><a href=""><span class="label label-success pull-right">+ 24%</span> Pageviews </a></h4>
-                          </div>
-                        </div>
-                      </div><!--/row-->    
-                    </div><!--/col-12-->
-                  </div><!--/row-->
-
-                  <div class="row">
-                      <div class="col-sm-12">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <div class="well">
-                              <h4 class="text-danger"><a href="#"><span class="label label-danger pull-right">- 9%</span> New Users </a></h4>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="well">
-                              <h4 class="text-success"><a href=""><span class="label label-success pull-right">+ 3%</span> Returning </a></h4>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="well">
-                              <h4 class="text-primary"><a href=""><span class="label label-primary pull-right">201</span> Sales </a></h4>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <div class="well">
-                              <h4 class="text-success"><a href=""><span class="label label-success pull-right">+ 24%</span> Pageviews </a></h4>
-                            </div>
-                          </div>
-                        </div><!--/row-->    
-                      </div><!--/col-12-->
-                    </div><!--/row-->
-
-                    <div class="row">
-                        <div class="col-sm-12">
-                          <div class="row">
-                            <div class="col-md-3">
-                              <div class="well">
-                                <h4 class="text-danger"><a href="#"><span class="label label-danger pull-right">- 9%</span> New Users </a></h4>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="well">
-                                <h4 class="text-success"><a href=""><span class="label label-success pull-right">+ 3%</span> Returning </a></h4>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="well">
-                                <h4 class="text-primary"><a href=""><span class="label label-primary pull-right">201</span> Sales </a></h4>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="well">
-                                <h4 class="text-success"><a href=""><span class="label label-success pull-right">+ 24%</span> Pageviews </a></h4>
-                              </div>
-                            </div>
-                          </div><!--/row-->    
-                        </div><!--/col-12-->
-                      </div><!--/row-->
-
-                      <div class="row">
-                          <div class="col-sm-12">
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div class="well">
-                                  <h4 class="text-danger"><a href="#"><span class="label label-danger pull-right">- 9%</span> New Users </a></h4>
-                                </div>
-                              </div>
-                              <div class="col-md-3">
-                                <div class="well">
-                                  <h4 class="text-success"><a href=""><span class="label label-success pull-right">+ 3%</span> Returning </a></h4>
-                                </div>
-                              </div>
-                              <div class="col-md-3">
-                                <div class="well">
-                                  <h4 class="text-primary"><a href=""><span class="label label-primary pull-right">201</span> Sales </a></h4>
-                                </div>
-                              </div>
-                              <div class="col-md-3">
-                                <div class="well">
-                                  <h4 class="text-success"><a href=""><span class="label label-success pull-right">+ 24%</span> Pageviews </a></h4>
-                                </div>
-                              </div>
-                            </div><!--/row-->    
-                          </div><!--/col-12-->
-                        </div><!--/row-->
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                              <div class="row">
-                                <div class="col-md-3">
-                                  <div class="well">
-                                    <h4 class="text-danger"><a href="#"><span class="label label-danger pull-right">- 9%</span> New Users </a></h4>
-                                  </div>
-                                </div>
-                                <div class="col-md-3">
-                                  <div class="well">
-                                    <h4 class="text-success"><a href=""><span class="label label-success pull-right">+ 3%</span> Returning </a></h4>
-                                  </div>
-                                </div>
-                                <div class="col-md-3">
-                                  <div class="well">
-                                    <h4 class="text-primary"><a href=""><span class="label label-primary pull-right">201</span> Sales </a></h4>
-                                  </div>
-                                </div>
-                                <div class="col-md-3">
-                                  <div class="well">
-                                    <h4 class="text-success"><a href=""><span class="label label-success pull-right">+ 24%</span> Pageviews </a></h4>
-                                  </div>
-                                </div>
-                              </div><!--/row-->    
-                            </div><!--/col-12-->
-                          </div><!--/row-->
+                <h3>waiting feed from the backend....</h3>
 
                       
             </div>
@@ -248,10 +240,10 @@ $event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
 
         <div class="col-xs-3"> <!-- required for floating -->
           <!-- Nav tabs -->
-          <ul class="nav nav-tabs tabs-right sideways">
-            <li class="active"><a href="#home-vr" data-toggle="tab">Media</a></li>
-            <li><a href="#profile-vr" data-toggle="tab">Schedule</a></li>
-            <li><a href="#messages-vr" data-toggle="tab">Activities</a></li>
+          <ul class="nav nav-tabs tabs-right sideways" style="right: -130px;">
+            <li class="active"><a href="#home-vr" data-toggle="tab" style="color: lightgrey;">Media</a></li>
+            <li><a href="#profile-vr" data-toggle="tab" style="color: lightgrey;">Schedule</a></li>
+            <li><a href="#messages-vr" data-toggle="tab" style="color: lightgrey;">Activities</a></li>
 
           </ul>
         </div>
@@ -267,7 +259,7 @@ $event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
     ?></h2>
     <div>
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-tabs" style="margin-left: 4px;">
             <li class="active"><a data-toggle="tab" href="#home" style="font-size: 12px; font-weight: bold; color:#4f2684;">ABOUT</a></li>
             <li><a data-toggle="tab" href="#menu1" style="font-size: 12px; font-weight: bold; color:#4f2684;">SPONSORS</a></li>
             <li><a data-toggle="tab" href="#menu2" style="font-size: 12px; font-weight: bold; color:#4f2684;">LOCATION</a></li>
@@ -275,9 +267,9 @@ $event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
           </ul>
         
           <div class="tab-content">
-            <div id="home" class="tab-pane fade in active" style="height: 308px;">
+            <div id="home" class="tab-pane fade in active" style="height: 397px;">
               
-             <p style="padding:10px; text-align:justify; font: grey;">
+             <p style="padding:10px; text-align:justify; font: grey; margin-left: 6px;">This is the 
 <?php 
 
 if(isset($event_description)){
@@ -288,9 +280,9 @@ echo $event_description;
 ?> 
                   </p>
             </div>
-            <div id="menu1" class="tab-pane fade" style="height: 308px;">
-              <h3>SPONSORS</h3>
-              <p><?php 
+            <div id="menu1" class="tab-pane fade" style="height: 397px;">
+              <h3 style="margin-left: 8px;">SPONSORS</h3>
+              <p style="margin-left: 8px;"><?php 
 
               if (isset($sponsor_name)){
               	echo $sponsor_name; 
@@ -298,9 +290,9 @@ echo $event_description;
 
               ?></p>
             </div>
-            <div id="menu2" class="tab-pane fade" style="height: 308px;">
-              <h3>LOCATION</h3>
-              <p><?php 
+            <div id="menu2" class="tab-pane fade" style="height: 397px;">
+              <h3 margin-left: 8px;>LOCATION</h3>
+              <p style="margin-left: 8px;"><?php 
 
               if (isset($Address)){
               	echo $Address; 
@@ -308,26 +300,26 @@ echo $event_description;
 
               ?></p>
             </div>
-            <div id="menu3" class="tab-pane fade" style="height: 308px;">
-              <h3>VENDORS</h3>
-              <p>Set boxes for vendors that displays vendors in a carousel</p>
+            <div id="menu3" class="tab-pane fade" style="height: 397px;">
+              <h3 style="margin-left: 8px;">VENDORS</h3>
+              <p style="margin-left: 8px;">Set boxes for vendors that displays vendors in a carousel</p>
             </div>
           </div>
     </div>
-    <div class="row container" style="width: 60%; margin: auto;">
-      <div class="col-sm-4">
-        <p style="font-size: 13px; color:#4f2684;" >Ticket Price <br> 
+    <div class="row container" style="width: 100%; margin: auto;">
+      <div class="col-sm-4" style="width:29%;">
+        <p style="font-size: 13px; color:#4f2684;">TICKET PRICE <br> 
         <?php if(isset($ticket_price)){
             	echo '&#8358;'. $ticket_price; 
             }  ?></p>
       </div>
-      <div class="col-sm-4">
-          <p style="font-size: 13px; color:#4f2684;">Ticket Quantity <br> <?php if(isset($ticket_qty)){
+      <div class="col-sm-4" style="width:35%;">
+          <p style="font-size: 13px; color:#4f2684;">TICKET QUANTITY <br> <?php if(isset($ticket_qty)){
             	echo $ticket_qty; 
             }  ?> </p>
       </div>
-      <div class="col-sm-4">
-          <p style="font-size: 13px; color:#4f2684;">Event type <br>  <?php if(isset($status)){
+      <div class="col-sm-4" style="width:36%;">
+          <p style="margin-left:20px; color:#4f2684;">EVENT TYPE <br>  <?php if(isset($status)){
             	echo $status; 
             }  ?>   </p>
       </div>
@@ -342,12 +334,12 @@ echo $event_description;
               <p style="margin-left:77px; font-weight:bold; color:#4f2684;">    </p>
           </div>
          </div> <!-- bottom button for register and vendor -->
-        <div class="row container" style="margin-left: -98px; margin-top: 22px;">
-          <div class="col-md-3">
-            <a href="vendor.html" style="color:#4f2684;"><button>BECOME A VENDOR</button></a>
+        <div class="row container" style="margin-left: -15px; margin-top: 22px;">
+          <div class="col-md-3" style="width: 21%;">
+            <a href="vendor.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; padding: 5px; width: 173px;">BECOME A VENDOR</button></a>
           </div>
           <div class="col-md-3">
-            <a href="signup.html" style="color:#4f2684;"><button>REGISTER</button></a>
+            <a href="signup.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; padding: 5px; width: 152px;">REGISTER</button></a>
           </div>
         </div>
     </div>
@@ -359,7 +351,7 @@ echo $event_description;
 <footer style="background-color: white; padding: 10px;">
   <div class="row">
     <div class="col-sm-2">
-      <img src="img/logo.png" alt="" style="width-max:100%; height-max: 100%">
+      <img src="img/logo.png" alt="" class="img-responsive" style="margin-top: -41px; margin-bottom: -30px;">
     </div>
     <div class="col-sm-8">
       <p style="text-align: center; font-weight: bold; padding-top: 15px;">Copyright &copy; 2018 Eventor.com, all Rights Reserved. All Photos &copy; their respective owners</p>

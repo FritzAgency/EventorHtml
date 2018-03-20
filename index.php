@@ -61,22 +61,22 @@ if((isset($_SESSION['first_name']))){
   <!-- section to divide the page into two -->
   <div class="row">
     <!-- left side bar for vendor and create event attributes -->
-    <div class="col-sm-4" styling="padding-right: 0px; padding-left: 10px;">
+    <div class="col-sm-4" style="margin-top: 10px;">
       <!-- section for create event button -->
       <div>
-        <a href="event/create.php"><div style=" margin-top: 3px; height: 377px; width: 100%; background-image:url('img/create.png')"></div></a>
+        <a href="event/create.php"><img src="img/create.png" alt="" class="img-responsive"></a>
       </div>
       <!-- section for sell products -->
-      <div>
-          <a href="vendor.html"><div style="margin-top: 3px; margin-bottom: 3px; height: 377px; width: 100%; background-image:url('img/start.png')"></div></a>
+      <div style="margin-top: 10px;">
+          <a href="vendor.html"><img src="img/start.png" alt="" class="img-responsive"></a>
       </div>
     </div>
     <!-- side bar ends here -->
     <!-- right section of the page where main content exist -->
-    <div class="col-sm-8" style="padding: 0px; border: 0px; margin-top: 3px; padding-left: 3px;">
+    <div class="col-sm-8" style="padding: 0px; border: 0px; margin-top: 12px; padding-left: 3px; margin-left: -16px;">
 <!-- Carousel
 ================================================== -->
-<div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide" style="margin-left: 11px;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -132,28 +132,39 @@ if((isset($_SESSION['first_name']))){
 
     </footer>
   </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <img src="img/first1.png" alt="" style="min-height: 200px; min-width: 100%; min-height: 200px;
-			min-width: 100%;">
+
+  <div class="row" style="width: 142%; padding-top: 5px; margin-top: 6px;">
+    <div class="col-sm-3 view overlay" style="margin-left: 12px;">
+      <img src="img/first1.png" alt="" class="img-responsive">
     </div>
-    <div class="col-sm-3">
-      <img src="img/second.png" alt="" style="width-max:100%">
+
+    <div class="col-sm-3 view overlay" style="margin-left: -16px;">
+      <img src="img/second.png" alt="" class="img-responsive">
     </div>
-    <div class="col-sm-3">
-      <img src="img/third.png" alt="" style="width-max:100%">
+
+    <div class="col-sm-3 view overlay" style="margin-left: -16px;">
+      <img src="img/third.png" alt="" class="img-responsive">
     </div>
   </div>
-  <div class="row">
-      <div class="col-sm-3">
-        <img src="img/fourth.png" alt="" style="width-max:100%">
+
+  <div class="row" style="width: 142%; padding-top: 5px; margin-top: 6px;">
+      <div class="col-sm-3 view overlay" style="margin-left: 12px;">
+        <img src="img/fourth.png" alt="" class="img-responsive">
       </div>
-      <div class="col-sm-3">
-        <img src="img/fifth.png" alt="" style="width-max:100%">
+
+      <div class="col-sm-3 view overlay" style="margin-left: -16px;">
+        <img src="img/fifth.png" alt="" class="img-responsive">
       </div>
-      <div class="col-sm-3">
-        <img src="img/sixth.png" alt="" style="width-max:100%">
+
+      <div class="col-sm-3 z-depth-5" style="margin-left: -16px;">
+        <div class="view overlay z-depth-5">
+        <img src="img/sixth.png" alt="" class="img-responsive">
+        <div class="mask flex-center rgba-green-slight">
+        <p class="white-text">Super light overlay</p>
+    </div>
       </div>
+</div>
+
     </div>
   </div><!-- /.container -->
     </div>

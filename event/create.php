@@ -568,6 +568,9 @@ header("Location: ../auth/signup.php");
                                     </div>
                                         </div>
                                     </div>
+</div>
+</div>
+
     <div class="form-group">
             <div class="row">
                     <div class="col-sm-1" style="margin-right: 0px; padding-right: 0px;">

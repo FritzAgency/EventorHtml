@@ -344,3 +344,31 @@ margin-left: 476px;
     }
     
     
+
+
+
+
+    /* <div class="col-sm-3">
+            <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" class="new"type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #4f2684; color: #fff;
+ }">Paid +</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <form class="dropdown-menu p-4">
+  <div class="row" style="width: 500px; padding: 5px;">
+  <div class="col-sm-6">
+  <div class="form-group">
+    <label for="exampleDropdownFormEmail2">Quantity</label>
+    <input type="text" class="form-control" id="exampleDropdownFormEmail2" placeholder="Quantity of ticket here">
+  </div>
+  </div>
+  <div class="col-sm-6">
+  <div class="form-group">
+    <label for="exampleDropdownFormPassword2">Price</label>
+    <input type="text" class="form-control" id="exampleDropdownFormPassword2" placeholder="Ticket price here">
+  </div>
+  </div>
+  </div>
+</form>
+  </div>
+</div>
+</div> */

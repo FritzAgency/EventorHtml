@@ -202,12 +202,12 @@ body {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 13px;
   position: absolute;
-  top: 3%;
-  left: 5%;
-  transform: translate(-3%, -5%);
-  -ms-transform: translate(-3%, -5%);
+  top: 8%;
+  left: 14%;
+  transform: translate(-10%, -8%);
+  -ms-transform: translate(-10%, -8%);
   text-align: left;
 }
 
@@ -228,9 +228,36 @@ body {
       <li><a href="#" class="new">SPECIAL DEALS</a></li>
       <li><a href="#" class="new">ABOUT US</a></li>
       <li><a href="#" class="new">CONTACT</a></li>
-      <li><a href="auth/signup.php" class="new">SIGNUP</a></li>
-      <li><a href="auth/signup.php" class="new"> | </a></li>
-      <li><a href="auth/login.php" class="new">LOGIN</a></li>
+      <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
+      <li><a class="new"> | </a></li>
+      <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
+      <?php if ((isset($_SESSION['email']))){
+
+echo 
+''; 
+}else{
+echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>'; 
+}
+?>
+
+<?php if ((isset($_SESSION['email']))){
+
+echo 
+'
+<li><a href="auth/logout.php" style="color:#4f2684;"><span class=""></span> Logout</a></li>
+';      }else{
+echo'
+<li><a href="auth/login.php" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+'; 
+}
+?>
+
+<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  <?php 
+if((isset($_SESSION['first_name']))){
+echo 'Welcome, '. $_SESSION['first_name'];
+}
+?>
+
     </ul>
   </div>
 </nav>
@@ -243,12 +270,12 @@ body {
       <!-- creator and vendor buttons goes in here -->
       <div class="row" style="width:75%; height: 20%; position:absolute; left: 115px;">
         <!-- create event button -->
-        <div style="margin-bottom: 10px;" class="shadow swing">
+        <div style="margin-bottom: 18px;" class="shadow swing">
           <img src="img/create.png" alt="create event design" srcset="" class="img-responsive">
         </div>
         <!-- start selling vendor retisgration form -->
         <div class="shadow swing">
-          <img src="img/start.png" alt="create event design" srcset="" class="img-responsive">
+          <img src="img/start.png" style="margin-bottom: 18px;" alt="create event design" srcset="" class="img-responsive">
         </div>
 
         <!-- Adds goes here-->
@@ -260,13 +287,83 @@ body {
     <div class="col-sm-8 shadow" style="padding-right: 0px;">
       <!-- carousel goes in here -->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
-
+<!-- search bar starts here -->
+  <div class="search">
+    <form class="example" action="action_page.php">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-group">
+          <select class="form-control" id="state_id" name="state">
+<option value="AL">Choose Category</option>
+<option value="AK">Aba</option>
+<option value="AZ">Abakaliki</option>
+<option value="AR">Abeokuta</option>
+<option value="CA">Abuja</option>
+<option value="CO">Ado Ekiti</option>
+<option value="CT">Akpawfu</option>
+<option value="DE">Akure</option>
+<option value="DC">Asaba</option>
+<option value="FL">Awka</option>
+<option value="GA">Bauchi</option>
+<option value="HI">Benin City</option>
+<option value="ID">Birnin Kebbi</option>
+</select> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+          <select class="form-control" id="state_id" name="state">
+<option value="AL">Choose Category</option>
+<option value="AK">Aba</option>
+<option value="AZ">Abakaliki</option>
+<option value="AR">Abeokuta</option>
+<option value="CA">Abuja</option>
+<option value="CO">Ado Ekiti</option>
+<option value="CT">Akpawfu</option>
+<option value="DE">Akure</option>
+<option value="DC">Asaba</option>
+<option value="FL">Awka</option>
+<option value="GA">Bauchi</option>
+<option value="HI">Benin City</option>
+<option value="ID">Birnin Kebbi</option>
+</select> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+          <select class="form-control" id="state_id" name="state">
+<option value="AL">Choose Category</option>
+<option value="AK">Aba</option>
+<option value="AZ">Abakaliki</option>
+<option value="AR">Abeokuta</option>
+<option value="CA">Abuja</option>
+<option value="CO">Ado Ekiti</option>
+<option value="CT">Akpawfu</option>
+<option value="DE">Akure</option>
+<option value="DC">Asaba</option>
+<option value="FL">Awka</option>
+<option value="GA">Bauchi</option>
+<option value="HI">Benin City</option>
+<option value="ID">Birnin Kebbi</option>
+</select> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- search bar ends here -->
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
@@ -312,7 +409,13 @@ body {
       <img src="img/first1.png" alt="" class="img-responsive image">
       <!-- this section for over layer hover -->
       <div class="overlay">
-        <div class="text">this is good</div>
+      <div class="text">
+          <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
+          <p><span class="glyphicon glyphicon-calendar" style="padding:5px; margin: 2px;"></span>Feb 11, 2018</p>
+          <p><span class="glyphicon glyphicon-tasks" style="padding:5px; margin: 2px;"></span>200</p>
+          <p><span class="glyphicon glyphicon-film" style="padding:5px; margin: 2px;"></span>Music Entertainment</p>
+          <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+        </div>
       </div>
       <!-- over layer section ends here -->
     </div>
@@ -320,7 +423,13 @@ body {
       <img src="img/second.png" alt="" class="img-responsive image">
        <!-- this section for over layer hover -->
        <div class="overlay">
-        <div class="text">this is good</div>
+       <div class="text">
+          <p style="font-weight: bold; color: #ffffff; padding:5px; margin: 2px;">Title of Event Here</p>
+          <p><span class="glyphicon glyphicon-calendar" style="padding:5px; margin: 2px;"></span>Feb 11, 2018</p>
+          <p><span class="glyphicon glyphicon-tasks" style="padding:5px; margin: 2px;"></span>200</p>
+          <p><span class="glyphicon glyphicon-film" style="padding:5px; margin: 2px;"></span>Music Entertainment</p>
+          <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+        </div>
         </div>
        <!-- over layer section ends here -->
     </div>
@@ -328,7 +437,13 @@ body {
       <img src="img/third.png" alt="" class="img-responsive image">
        <!-- this section for over layer hover -->
        <div class="overlay">
-        <div class="text">this is good</div>
+       <div class="text">
+          <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 5px;">Title of Event Here</p>
+          <p><span class="glyphicon glyphicon-calendar" style="padding:5px; margin: 2px;"></span>Feb 11, 2018</p>
+          <p><span class="glyphicon glyphicon-tasks" style="padding:5px; margin: 2px;"></span>200</p>
+          <p><span class="glyphicon glyphicon-film" style="padding:5px; margin: 2px;"></span>Music Entertainment</p>
+          <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+        </div>
       </div>
        <!-- over layer section ends here -->
     </div>
@@ -336,29 +451,44 @@ body {
   <!-- first row of images ends here -->
   <!-- second row of images starts here -->
   <div class="row">
-    <div class="col-sm-4 shadow swing contain" style="padding-right: 0px; margin-top: 10px;">
+    <div class="col-sm-4 shadow swing contain" style="padding-right: 0px; margin-top: 10px; margin-right: -9px">
       <img src="img/fourth.png" alt="" class="img-responsive image">
        <!-- this section for over layer hover -->
        <div class="overlay">
-        <div class="text">this is good</div>
+       <div class="text">
+          <p style="font-weight: bold; color: #ffffff; padding:5px; margin: 2px;">Title of Event Here</p>
+          <p><span class="glyphicon glyphicon-calendar" style="padding:5px; margin: 2px;"></span>Feb 11, 2018</p>
+          <p><span class="glyphicon glyphicon-tasks" style="padding:5px; margin: 2px;"></span>200</p>
+          <p><span class="glyphicon glyphicon-film" style="padding:5px; margin: 2px;"></span>Music Entertainment</p>
+          <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+        </div>
       </div>
        <!-- over layer section ends here -->
     </div>
-    <div class="col-sm-4 shadow swing contain" style="padding-right: 0px; margin-top: 10px;">
+    <div class="col-sm-4 shadow swing contain" style="padding-right: 0px; margin-top: 10px; margin-right: -9px">
       <img src="img/fifth.png" alt="" class="img-responsive image">
        <!-- this section for over layer hover -->
        <div class="overlay">
-        <div class="text">this is good</div>
+       <div class="text">
+          <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
+          <p><span class="glyphicon glyphicon-calendar" style="padding:2px; margin: 2px;"></span>Feb 11, 2018</p>
+          <p><span class="glyphicon glyphicon-tasks" style="padding:2px; margin: 2px;"></span>200</p>
+          <p><span class="glyphicon glyphicon-film" style="padding:2px; margin: 2px;"></span>Music Entertainment</p>
+          <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+        </div>
         </div>
        <!-- over layer section ends here -->
     </div>
-    <div class="col-sm-4 shadow swing contain" style="padding-right: 0px; margin-top: 10px;">
+    <div class="col-sm-4 shadow swing contain" style="padding-right: 0px; margin-top: 10px; margin-right: -9px">
       <img src="img/sixth.png" alt="" class="img-responsive image">
        <!-- this section for over layer hover -->
        <div class="overlay">
         <div class="text">
           <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-          <p><span class="glyphicon glyphicon-calendar" style="padding:2px; margin: 2px;"></span></p>
+          <p><span class="glyphicon glyphicon-calendar" style="padding:2px; margin: 2px;"></span>Feb 11, 2018</p>
+          <p><span class="glyphicon glyphicon-tasks" style="padding:2px; margin: 2px;"></span>200</p>
+          <p><span class="glyphicon glyphicon-film" style="padding:2px; margin: 2px;"></span>Music Entertainment</p>
+          <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
         </div>
       </div>
        <!-- over layer section ends here -->
@@ -375,6 +505,30 @@ body {
     </div>
   </div>
 </div>
+
+<footer style="background-color: white; padding: 10px;">
+  <div class="row">
+    <div class="col-sm-2">
+      <img src="img/logo.png" alt="" class="img-responsive" style="margin-top: -41px; margin-bottom: -30px;">
+    </div>
+    <div class="col-sm-8">
+      <p style="text-align: center; font-weight: bold; padding-top: 15px;">Copyright &copy; 2018 Eventor.com, all Rights Reserved. All Photos &copy; their respective owners</p>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="row">
+        <div class="col-sm-4">
+          <a href=""><img src="img/index.png" alt="" style="width: 25px; height-max: 100%; padding-top: 15px;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index1.png" alt="" style="width: 25px; height-max: 100%; padding-top: 15px;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index11.png" alt="" style="width: 25px; height-max: 100%; padding-top: 15px;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <!-- <script>
 function myFunction() {

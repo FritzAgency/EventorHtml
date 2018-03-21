@@ -66,22 +66,22 @@ $sponsor_name = $row['sponsor_name'];
               <img src="/eventorhtml/public/images/<?php echo 
 $event_flier;?>" alt="Los Angeles"class="img-responsive">
             <div class="carousel-caption">
-              <h3>Celine Dion</h3>
+              <h3></h3>
               <!--p>LA is always so much fun!</p-->
             </div>
           </div>
     
           <div class="item">
-              <img src="img/new.jpg" alt="Los Angeles" style="width:100%; height: 100%;">
-            <div class="carousel-caption">
+            <img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" alt="Los Angeles"class="img-responsive">            <div class="carousel-caption">
               <h3>Chicago</h3>
               <p>Thank you, Chicago!</p>
             </div>
           </div>
         
           <div class="item">
-            <img src="img/new.jpg" alt="Los Angeles" style="width:100%; height: 100%;">
-            <div class="carousel-caption">
+          	<img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" alt="Los Angeles"class="img-responsive">            <div class="carousel-caption">
               <h3>New York</h3>
               <p>We love the Big Apple!</p>
             </div>
@@ -200,8 +200,7 @@ $event_flier;?>" alt="Los Angeles"class="img-responsive">
       </div>
     </div>
   </div>
-</div>
-                 <!-- <div class="col-sm-6" style="padding: 10px; margin: auto;">
+</div>                 <!-- <div class="col-sm-6" style="padding: 10px; margin: auto;">
                    <h3 style="font-weight: bold; padding-top: 0px; margin-top: 0px; color: #4f2684; font-size: 18px;">Name Of Activity goes here</h3>
                    <p style="text-align: justify;margin-top: 10px;">
                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum deleniti quia quis natus earum aspernatur voluptatum beatae accusamus sed quasi tempora, aut sapiente quaerat, nesciunt ratione fugit molestias. Iure dolorum ipsa adipisci odit minus aspernatur dolores nobis! Asperiores, facilis natus.

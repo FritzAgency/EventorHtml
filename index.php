@@ -213,6 +213,12 @@ body {
 
 </style>
 </head>
+
+<?php 
+    require_once('auth/loginclass.php');
+ ?>
+
+
 <body>
   <!-- header starts here -->
 <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
@@ -236,7 +242,7 @@ body {
 echo 
 ''; 
 }else{
-echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>'; 
+echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>'; 
 }
 ?>
 
@@ -251,6 +257,8 @@ echo'
 '; 
 }
 ?>
+
+
 
 <li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  <?php 
 if((isset($_SESSION['first_name']))){
@@ -271,7 +279,9 @@ echo 'Welcome, '. $_SESSION['first_name'];
       <div class="row" style="width:75%; height: 20%; position:absolute; left: 115px;">
         <!-- create event button -->
         <div style="margin-bottom: 18px;" class="shadow swing">
+          <a href="event/create.php">
           <img src="img/create.png" alt="create event design" srcset="" class="img-responsive">
+        </a>
         </div>
         <!-- start selling vendor retisgration form -->
         <div class="shadow swing">

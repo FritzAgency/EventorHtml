@@ -1,7 +1,7 @@
 <?php
 
 
-require_once('../Database/conn.php');
+require_once('Database/conn.php');
 
 session_start();
 

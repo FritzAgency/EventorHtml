@@ -232,6 +232,12 @@ div.form-group {
 
 </style>
 </head>
+
+<?php 
+    require_once('auth/loginclass.php');
+ ?>
+
+
 <body>
   <!-- header starts here -->
 <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
@@ -242,20 +248,20 @@ div.form-group {
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -43px;padding-bottom: 10px;">
-    <li><a href="#" class="new">HOW IT WORKDS </a></li>
+    <li><a href="#" class="new">HOW IT WORKS </a></li>
       <li><a href="#" class="new">EVENTS</a></li>
       <li><a href="#" class="new">SPECIAL DEALS</a></li>
       <li><a href="#" class="new">ABOUT US</a></li>
       <li><a href="#" class="new">CONTACT</a></li>
       <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
-      <li><a class="new"> | </a></li>
+      <!--li><a class="new"> | </a></li-->
       <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
       <?php if ((isset($_SESSION['email']))){
 
 echo 
 ''; 
 }else{
-echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>'; 
+echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>'; 
 }
 ?>
 
@@ -270,6 +276,8 @@ echo'
 '; 
 }
 ?>
+
+
 
 <li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  <?php 
 if((isset($_SESSION['first_name']))){
@@ -290,7 +298,9 @@ echo 'Welcome, '. $_SESSION['first_name'];
       <div class="row" style="width:75%; height: 20%; position:absolute; left: 115px;">
         <!-- create event button -->
         <div style="margin-bottom: 18px;" class="shadow swing">
+          <a href="event/create.php">
           <img src="img/create.png" alt="create event design" srcset="" class="img-responsive">
+        </a>
         </div>
         <!-- start selling vendor retisgration form -->
         <div class="shadow swing">

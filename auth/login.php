@@ -51,7 +51,7 @@
                 </div>
                 <div class="row" style="margin-left: 0px; margin-top: 10px;">
                 <div class="col-sm-6" style="padding-left: 15px;">
-                <label for="forgot"><a href="" style="text-align: center; color: #4f2684;">Forgot Password</a></label>
+                <label for="forgot"><a href="../auth/forgotpassword.php" style="text-align: center; color: #4f2684;">Forgot Password</a></label>
                 </div>
                 </div>
             </div>

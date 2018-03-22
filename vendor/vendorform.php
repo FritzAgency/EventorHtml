@@ -158,8 +158,13 @@ Store Name
 <button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
 Address
 </button>
-<input type="text" class="form-control" id="street1_id" name="Address" placeholder="Street address, P.O. box, company name, c/o">
-</div>                  
+<input type="text" class="form-control" id="street1_id" name="Address" placeholder="Address line 1">
+</div>
+
+<div class="form-group"> <!-- Street 1 -->
+<input type="text" class="form-control" id="street1_id" name="Address" placeholder="Address line 2">
+</div>
+
 <!-- column for city and state -->
 <div class="row">
 <div class="col-sm-4" style="padding-right: 0px;">

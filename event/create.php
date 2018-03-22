@@ -218,14 +218,14 @@ Organizers Name
 <div class="col-sm-4">
 <div class="form-inline">
 <div class="form-group">
-<input type="file" name="event_flier" id="js-upload-files">
+<input type="file" name="event_flier1" id="js-upload-files">
 </div>
 </div>
 </div>
 <div class="col-sm-4">
 <div class="form-inline">
 <div class="form-group">
-<input type="file" name="event_flier" id="js-upload-files">
+<input type="file" name="event_flier2" id="js-upload-files">
 </div>
 </div>
 </div>

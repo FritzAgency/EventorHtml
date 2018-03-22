@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 $db_host='localhost'; //defining the database host. 
 $db_user='root'; //defining the database user. 
@@ -14,8 +14,6 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();//returns error if connection failed. 
   } 
   
-session_start();
-
 //if the submit button is clicked
 if(isset($_POST['submit'])){
 	$email = stripslashes($_POST['email']); 

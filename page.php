@@ -1,16 +1,21 @@
 <?php
-
-$url = $_GET['url']; 
+ 
 
 
 require_once('Database/conn.php');
 
 
-  $query = "SELECT * FROM `event` WHERE event_url='$url'"; 
+//$url = $_GET['url'];
+
+if(isset($_GET['event_url'])){
+
+$event_url = $_GET['event_url'];
+
+$query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
 
 $result = mysqli_query($con,$query) or die(mysqli_error());
 
-$row = mysqli_num_rows($result);
+$row = mysqli_num_rows($result) or die(mysqli_error());
 
 
 while( $row = mysqli_fetch_array($result) ){
@@ -29,7 +34,10 @@ $ticket_qty = $row['ticket_qty'];
 
 $status = $row['status']; 
 
-$sponsor_name = $row['sponsor_name'];     
+$sponsor_name = $row['sponsor_name']; 
+
+
+}
 
 }
 ?>
@@ -41,8 +49,8 @@ $sponsor_name = $row['sponsor_name'];
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap.vertical-tabs.css">
   <link rel="stylesheet" href="style.css">
-</head>
-<style>
+
+  <style>
   .eon{
     background-color: black;
     font-weight: bold;
@@ -55,6 +63,8 @@ $sponsor_name = $row['sponsor_name'];
     color: red;
   }
 </style>
+</head>
+
 
 <body>
 
@@ -282,7 +292,7 @@ margin-top: 15px;">SCHEDULE</button></a>
           <div class="tab-content">
             <div id="home" class="tab-pane fade in active" style="height: 397px;">
               
-             <p style="padding:10px; text-align:justify; font: grey; margin-left: 6px;">This is the 
+             <p style="padding:10px; text-align:justify; font: grey; margin-left: 6px;">
 <?php 
 
 if(isset($event_description)){

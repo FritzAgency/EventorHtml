@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
+  <?php session_start(); ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
@@ -232,12 +233,6 @@ div.form-group {
 
 </style>
 </head>
-
-<?php 
-    require_once('auth/loginclass.php');
- ?>
-
-
 <body>
   <!-- header starts here -->
 <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">

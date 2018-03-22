@@ -3,6 +3,11 @@
 
 require_once('../Database/conn.php');
 
+
+
+function forgotpassword(){
+
+
 if(isset($_POST['submit'])){
 
 
@@ -46,6 +51,9 @@ else{
 }
 }
 
+forgotpassword(); 
+
+}
 
 
 ?> 

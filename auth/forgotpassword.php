@@ -11,21 +11,25 @@
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="signup.css">
 </head>
-
-<?php require_once('../auth/fpclass.php'); ?> 
+ 
 <body>
 <div class="container" style="margin-top: 100px;">
 
-<div> 
-    <?php if(isset($message)){
 
-        echo $message; 
-
-} 
-?>
-</div>
         <form class="form-horizontal" role="form" action="" method="POST">
 
+<div> 
+    <?php 
+include('../auth/fpclass.php'); 
+
+if(isset($message)){
+
+        echo $message; 
+} 
+ //forgotpassword(); 
+ //message(); 
+?>
+</div>
              <h2 style="margin-right: auto; marign-left: auto; font-weight: bold; color: #4f2684; margin-left: 6em;"></h2>
 
              <div></div>

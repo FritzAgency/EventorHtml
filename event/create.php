@@ -17,10 +17,19 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
 <script src="style2.js"></script>
 <!-- scripts ends here -->
+<style>
+  #change{
+    background-color: #4f2684;
+    color: white;
+  }
+
+  #change:hover{
+    background-color: lightgrey;
+    color: #4f2684;
+  }
+</style>
 
 <?php 
 session_start(); 
@@ -44,7 +53,7 @@ header("Location: ../auth/signup.php");
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -43px;padding-bottom: 10px;">
-    <li><a href="Home" class="new"><span class="glyphicon glyphicon-arrow-left"></span></a></li>
+    <li><a href="index.php" class="new" style="margin-top: 53px; font-size: 20px; font-weight: bold; border-radius: 5%;" id="change"> <span class="glyphicon glyphicon-arrow-left"> </span></a></li>
     <!--  <li><a href="#" class="new">EVENTS</a></li>
       <li><a href="#" class="new">SPECIAL DEALS</a></li>
       <li><a href="#" class="new">ABOUT US</a></li>
@@ -256,7 +265,7 @@ Organizers Name
 </div>                  
 <!-- column for city and state -->
 <div class="row">
-<div class="col-sm-6" style="padding-right: 0px;">
+<div class="col-sm-4" style="padding-right: 0px;">
 <div class="form-group"> <!-- State Button -->
 <label for="state_id" class="control-label">State</label>
 <select class="form-control" id="state_id" name="state">
@@ -335,7 +344,7 @@ Organizers Name
 </select>                   
 </div>
 </div>
-<div class="col-sm-6" style="padding-right: 0px;">
+<div class="col-sm-7" style="padding-left: 22px; width: 64.333%;">
 <div class="form-group"> <!-- State Button -->
 
 <label for="state_id" class="control-label">City</label>
@@ -344,7 +353,18 @@ Organizers Name
 </div>
 </div>                              
 
-
+<div class="form-group"> <!-- Zip Code-->
+<div class="row">
+<div class="col-sm-4" style="padding-right: 0px;">
+<label for="state_id" class="control-label">Zip-Code</label>
+<input type="text" class="form-control" id="street1_id" name="city" placeholder="Zip COde">
+</div>
+<div class="col-sm-8" style="padding-left: 23px;">
+<label for="state_id" class="control-label">Phone Number</label>
+<input type="text" class="form-control" id="street1_id" name="city" placeholder="Phone Number">
+</div>
+</div>
+</div>
 
 
 <div class="form-group"> <!-- Zip Code-->
@@ -517,13 +537,14 @@ Add Activities
 <input class="form-control" id="time" name="ticket_qty" placeholder="Ticket quantity" type="text" style="margin-top: 10px;">
 </div>
 <div class="col-sm-5">
+<input class="form-control" id="time" name="ticket_price" placeholder="Ticket Price not not applicable to free" type="text" style="margin-top: 10px;">
 </div>
 </div>
 </div>
 <div id="menu1" class="">
 <div class="row">
 <div class="col-sm-5">
-<input class="form-control" id="time" name="ticket_price" placeholder="Ticket Price" type="text" style="margin-top: 10px;">
+<!-- <input class="form-control" id="time" name="ticket_price" placeholder="Ticket Price" type="text" style="margin-top: 10px;"> -->
 </div>
 <!--div class="col-sm-5">
 <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
@@ -602,11 +623,11 @@ Add Social Media Links
 <p>I agree to the terms of use.</p>
 </div>   
 <div class="col-xs-4" style="margin-top: 45px; margin-left: 170px;">
-<button type="submit" class="btn  btn-success" name="save">SAVE</button
-<input type="submit" name="save" value="SAVE" class="btn  btn-success">
+<button type="submit" class="btn  btn-success" name="save">SAVE</button>
+<!-- <input type="submit" name="save" value="SAVE" class="btn  btn-success"> -->
 </div>
 <div class="col-sm-4" style="margin-top: 45px;">
-<!-- <button type="submit" class="btn btn-primary">PREVIEW</button> -->
+<button type="submit" class="btn btn-primary">PREVIEW</button>
 </div>    
 </div>
 </div>    

@@ -2,7 +2,23 @@
 
 
 
-require_once('../Database/conn.php');
+//function forgotpassword(){
+
+//require_once('../Database/conn.php');
+
+
+$db_host='localhost'; //defining the database host. 
+$db_user='root'; //defining the database user. 
+$db_name='eventor';//defining the database name.   
+$db_pass=''; //defining the password
+
+$con = mysqli_connect($db_host, $db_user, "", $db_name);//establishing the connecting. 
+
+// Check if its connected. 
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();//returns error if connection failed. 
+  } 
 
 if(isset($_POST['email'])){
 	
@@ -39,17 +55,27 @@ $sent=mail($to,$subject,$body,$headers);
 if($sent){
 $message = "An email has been sent to your mail. Check your mail to reset your password"; 
 }else{
-	$message = "An error occured. Try again"; 
+	echo "An error occured. Try again"; 
 }
 }
 
 else{
 
-echo 'You are not in our database'; 
+$message = 'You are not in our database'; 
 
 }
 
+//}
 
+/*function message(){
+
+    if(isset($message)){
+
+        echo $message; 
+} */ 
+//}
+
+//forgotpassword();
 
 ?> 
 

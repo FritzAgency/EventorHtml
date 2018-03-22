@@ -14,7 +14,11 @@
 </head>
 
 
-<?php require_once('../auth/newpasswordclass.php'); ?>
+<?php 
+
+require_once('../auth/newpasswordclass.php'); 
+
+?>
 
 <body>
 

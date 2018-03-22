@@ -358,10 +358,10 @@ $event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
 </div>
 </div>
 </div>
-<footer style="background-color: white; padding: 10px;">
+<footer style="background-color: #f8f8f8; border: 3px solid #e7e7e7; padding: 10px; margin-top: 10px; height: 100px;">
   <div class="row">
     <div class="col-sm-2">
-      <img src="img/logo.png" alt="" class="img-responsive">
+      <img src="img/logo.png" alt="" class="img-responsive" style="margin-top: -37px;">
     </div>
     <div class="col-sm-8">
       <p style="text-align: center; font-weight: bold; padding-top: 15px;">Copyright &copy; 2018 Eventor.com, all Rights Reserved. All Photos &copy; their respective owners</p>
@@ -369,13 +369,13 @@ $event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
     <div class="col-sm-2"> 
       <div class="row">
         <div class="col-sm-4">
-          <a href=""><img src="img/index.png" alt="" style="width: 25px; height-max: 100%; padding-top: 15px;"></a>
+          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index1.png" alt="" style="width: 25px; height-max: 100%; padding-top: 15px;"></a>
+            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index11.png" alt="" style="width: 25px; height-max: 100%; padding-top: 15px;"></a>
+            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
         </div>
       </div>
     </div>

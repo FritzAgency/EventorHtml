@@ -21,20 +21,22 @@ $row = mysqli_num_rows($result) or die(mysqli_error());
 while( $row = mysqli_fetch_array($result) ){
 
 $event_description =  $row['event_description']; 
-
 $Address = $row['Address']; 
-
 $event_title = $row['event_title']; 
-
 $event_flier = $row['event_flier'];  
-
+$event_flier1 = $row['event_flier1'];  
+$event_flier2 = $row['event_flier2'];  
 $ticket_price = $row['ticket_price']; 
-
 $ticket_qty = $row['ticket_qty'];
-
 $status = $row['status']; 
-
 $sponsor_name = $row['sponsor_name']; 
+
+$act_name = $row['act_name']; 
+$act_loc = $row['act_loc']; 
+$act_desc = $row['act_desc']; 
+$act_date = $row['act_date']; 
+$act_img = $row['act_img']; 
+
 
 
 }
@@ -88,7 +90,7 @@ $sponsor_name = $row['sponsor_name'];
     
           <div class="item active">
               <img src="/eventorhtml/public/images/<?php echo 
-$event_flier;?>" alt="Los Angeles"class="img-responsive">
+$event_flier;?>" class="img-responsive">
             <div class="carousel-caption">
               <h3></h3>
               <!--p>LA is always so much fun!</p-->
@@ -97,17 +99,17 @@ $event_flier;?>" alt="Los Angeles"class="img-responsive">
     
           <div class="item">
             <img src="/eventorhtml/public/images/<?php echo 
-$event_flier;?>" alt="Los Angeles"class="img-responsive">            <div class="carousel-caption">
-              <h3>Chicago</h3>
-              <p>Thank you, Chicago!</p>
+$event_flier1;?>" alt="Los Angeles"class="img-responsive">            <div class="carousel-caption">
+              <!--h3>Chicago</h3>
+              <p>Thank you, Chicago!</p-->
             </div>
           </div>
         
           <div class="item">
           	<img src="/eventorhtml/public/images/<?php echo 
-$event_flier;?>" alt="Los Angeles"class="img-responsive">            <div class="carousel-caption">
-              <h3>New York</h3>
-              <p>We love the Big Apple!</p>
+$event_flier2;?>" alt="Los Angeles"class="img-responsive">            <div class="carousel-caption">
+              <!--h3>New York</h3>
+              <p>We love the Big Apple!</p-->
             </div>
           </div>
       
@@ -128,10 +130,15 @@ $event_flier;?>" alt="Los Angeles"class="img-responsive">            <div class=
               <div style="width: 645px; height: 609px;">
               <div class="tab-pane" id="profile-vr">
               <div style="width: 645px; height: 609px;">
-                <div><img src="img/first1.png" class="img-responsive"alt="" style="margin:auto; padding-top: 5px;"></div>
+                
+<div> 
+<img src="/eventorhtml/public/images/<?php echo 
+$act_img;?>" class="img-responsive">
+</div>
                <div class="row" style="margin: 0px; padding: 5px; background-color: white; width: 100%; padding-top-5px;">
                <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="#home" style="font-weight: bold; color:#4f2684;">Hicking</a></li>
+  <li class="active"><a data-toggle="tab" href="#home" style="font-weight: bold; color:#4f2684;"><?php /*echo 
+$act_img;*/?></a></li>
   <li><a data-toggle="tab" href="#menu1" style="font-weight: bold; color:#4f2684;">5K Run</a></li>
   <li><a data-toggle="tab" href="#menu2" style="font-weight: bold; color:#4f2684;">Dancing</a></li>
 </ul>
@@ -141,7 +148,8 @@ $event_flier;?>" alt="Los Angeles"class="img-responsive">            <div class=
     <div class="row">
       <div class="col-sm-6">
         <p style="font-weight:bold; margin-top: 18px;">TITLE GOES HERE</p>
-        <p style="font-align:justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi in impedit necessitatibus quam? Dolorem recusandae ex modi odio error.</p>
+        <p style="font-align:justify;"><?php echo 
+$act_desc;?></p>
       </div>
       <div class="col-sm-6">
                  <div style="text-align: center;" >
@@ -149,16 +157,17 @@ $event_flier;?>" alt="Los Angeles"class="img-responsive">            <div class=
                    </div>
 
                   <div style="text-align: center;" >
-                     <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">12:00PM</h3>
+                     <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;"><?php echo 
+$act_date;?></h3>
                    </div>
 
                    <div style="text-align: center;" >
                      <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">-</h3>
                    </div>
 
-                   <div style="text-align: center;">
+                   <!--div style="text-align: center;">
                      <h3 style="font-size: 21px; font-weight: bold; color:#4f2684; margin-top: 3px;">12:00PM</h3>
-                   </div>
+                   </div-->
 
                    <div class="col-md-3">
             <a href="vendor.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; margin-top: 15px; font: 10px; font-size: 21px; margin-left: 58px;">SCHEDULE</button></a>
@@ -254,8 +263,13 @@ margin-top: 15px;">SCHEDULE</button></a>
               </div>
             </div>
             <div class="tab-pane" id="messages-vr">
-                <h3>waiting feed from the backend....</h3>
+                <h3><?php echo 
+$act_name;?></h3>
 
+<div> 
+<img src="/eventorhtml/public/images/<?php echo 
+$act_img;?>" class="img-responsive">
+</div>
                       
             </div>
           </div>

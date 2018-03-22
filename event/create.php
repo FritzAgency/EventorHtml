@@ -435,23 +435,23 @@ Organizers Name
 <!-- schedule multiple activties -->
 <div class="form-group">
 <button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
-Add Avtivities
+Add Activities
 </button>
 <div class="row" style="margin-top: 10px;">
 <div class="col-sm-5" style="margin:1px;" >
-<input class="form-control" placeholder="Enter activity name here" type="text"/>
+<input class="form-control" placeholder="Enter activity name here" type="text" name="act_name" />
 </div>
 <div class="col-sm-5">
-<input type="file" name="event_flyer" id="js-upload-files" multiple>
+<input type="file" name="act_img" id="js-upload-files">
 </div>
 </div>
 <div class="row" style="margin-top: 10px;">
 <div class="col-sm-5" style="margin:1px;" >
-<input class="form-control" placeholder="Enter location of Activity here" type="text"/>
+<input class="form-control" placeholder="Enter location of Activity here" type="text" name="act_loc" />
 </div>
 <div class="col-sm-5">
 <div class="input-group bootstrap-timepicker timepicker">
-<input class="form-control" id="time" name="time" placeholder="Date" type="text"/>
+<input class="form-control" id="time" name="act_date" placeholder="Date" type="text"/>
 <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
 </div>
 </div>
@@ -459,9 +459,9 @@ Add Avtivities
 <div class="row" style="margin-top:10px;">
 <div class="col-sm-11"
 <label for="comment">Description of Activity</label>
-<textarea class="form-control" rows="5" id="comment" placeholder="Write a short passage that describes your event" name="description"></textarea>
+<textarea class="form-control" rows="5" id="comment" placeholder="Write a short passage that describes your event" name="act_desc"></textarea>
 </div>
-<div class="col-sm-5" style="margin-top:10px;" >
+<!--div class="col-sm-5" style="margin-top:10px;" >
 <input class="form-control" placeholder="Enter activity name here" type="text"/>
 </div>
 <div class="col-sm-5" style="margin-top:10px;">
@@ -483,7 +483,7 @@ Add Avtivities
 <div class="col-sm-11"
 <label for="comment">Description of Activity</label>
 <textarea class="form-control" rows="5" id="comment" placeholder="Write a short passage that describes your event" name="description"></textarea>
-</div>
+</div-->
 </div>
 </div>
 

@@ -42,6 +42,20 @@ $sponsor_name = $row['sponsor_name'];
   <link rel="stylesheet" href="bootstrap.vertical-tabs.css">
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+  .eon{
+    background-color: black;
+    font-weight: bold;
+    color: white;
+  }
+
+  .eon:hover{
+    background-color: yellow;
+    font-weight: bold;
+    color: red;
+  }
+</style>
+
 <body>
 
   <div class="container" style="background-color:white; margin:auot;">
@@ -335,7 +349,7 @@ echo $event_description;
          </div> <!-- bottom button for register and vendor -->
         <div class="row container" style="margin-left: -15px; margin-top: 22px;">
           <div class="col-md-3" style="width: 21%;">
-            <a href="vendor.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; padding: 5px; width: 173px;">BECOME A VENDOR</button></a>
+            <a href="vendor.html" style="color:#4f2684;"><button class="eon">BECOME A VENDOR</button></a>
           </div>
           <div class="col-md-3">
             <a href="signup.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; padding: 5px; width: 152px;">REGISTER</button></a>

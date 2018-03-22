@@ -210,6 +210,25 @@ body {
   -ms-transform: translate(-10%, -8%);
   text-align: left;
 }
+/* .logo{
+    position:absolute;
+    border:2px solid #eee;
+    left:162px;
+    top:386px;
+} */
+
+div#carousel-example-generic {
+    position:relative;
+}
+
+div.form-group {
+    position:absolute;
+    z-index:9999999;
+    top:368px; /* change to whatever you want */
+    left:140px; /* change to whatever you want */
+    right:auto; /* change to whatever you want */
+    bottom:auto; /* change to whatever you want */
+}
 
 </style>
 </head>
@@ -296,84 +315,64 @@ echo 'Welcome, '. $_SESSION['first_name'];
     </div>
     <div class="col-sm-8 shadow" style="padding-right: 0px;">
       <!-- carousel goes in here -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-<!-- search bar starts here -->
-  <div class="search">
+      <div id="myCarousel carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- search bar starts here -->
+  <div>
     <form class="example" action="action_page.php">
       <div class="row">
-        <div class="col-sm-3">
+      <div class="col-sm-3" style="margin-right: -21px;">
           <div class="form-group">
-          <select class="form-control" id="state_id" name="state">
-<option value="AL">Choose Category</option>
-<option value="AK">Aba</option>
-<option value="AZ">Abakaliki</option>
-<option value="AR">Abeokuta</option>
-<option value="CA">Abuja</option>
-<option value="CO">Ado Ekiti</option>
-<option value="CT">Akpawfu</option>
-<option value="DE">Akure</option>
-<option value="DC">Asaba</option>
-<option value="FL">Awka</option>
-<option value="GA">Bauchi</option>
-<option value="HI">Benin City</option>
-<option value="ID">Birnin Kebbi</option>
-</select> 
+          <div class="selectDiv">
+   <span class="selectDefault"></span>
+   <select name="txtCountry" class="selectBox">
+      <option class="defualt-text">Search by Category</option>
+      <option value="1">Search by Category</option>
+      <option value="2">Jogging</option>
+   </select>
+</div>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" style="margin-right: -26px;">
           <div class="form-group">
-          <select class="form-control" id="state_id" name="state">
-<option value="AL">Choose Category</option>
-<option value="AK">Aba</option>
-<option value="AZ">Abakaliki</option>
-<option value="AR">Abeokuta</option>
-<option value="CA">Abuja</option>
-<option value="CO">Ado Ekiti</option>
-<option value="CT">Akpawfu</option>
-<option value="DE">Akure</option>
-<option value="DC">Asaba</option>
-<option value="FL">Awka</option>
-<option value="GA">Bauchi</option>
-<option value="HI">Benin City</option>
-<option value="ID">Birnin Kebbi</option>
-</select> 
+          <div class="selectDiv">
+   <span class="selectDefault"></span>
+   <select name="txtCountry" class="selectBox">
+      <option class="defualt-text">Search by Location</option>
+      <option value="1">Ikeja</option>
+      <option value="2">Victoria</option>
+   </select>
+</div>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" style="margin-right: -52px;">
           <div class="form-group">
-          <select class="form-control" id="state_id" name="state">
-<option value="AL">Choose Category</option>
-<option value="AK">Aba</option>
-<option value="AZ">Abakaliki</option>
-<option value="AR">Abeokuta</option>
-<option value="CA">Abuja</option>
-<option value="CO">Ado Ekiti</option>
-<option value="CT">Akpawfu</option>
-<option value="DE">Akure</option>
-<option value="DC">Asaba</option>
-<option value="FL">Awka</option>
-<option value="GA">Bauchi</option>
-<option value="HI">Benin City</option>
-<option value="ID">Birnin Kebbi</option>
-</select> 
+          <div class="selectDiv">
+   <span class="selectDefault"></span>
+   <select name="txtCountry" class="selectBox">
+      <option class="defualt-text">Search by Time</option>
+      <option value="1">Morning</option>
+      <option value="2">Afternoon</option>
+   </select>
+</div>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" style="margin-right: -51px;">
           <div class="form-group">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button type="submit"><span class="glyphicon glyphicon-search"></span></i></button>
           </div>
         </div>
       </div>
     </form>
   </div>
   <!-- search bar ends here -->
+  
+  <!-- Indicators -->
+  <ol class="carousel-indicators" style="bottom: 40px;">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Create EVENT</title>
+<title>Vendor Registration</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -39,13 +39,13 @@ header("Location: ../auth/signup.php");
   <div class="container-fluid">
     <div class="navbar-header" >
       <div>
-      <h2 style="margin-right: auto; font-weight: bold; color: #4f2684; margin-left: 2em; margin-bottom: 20px; margin-top: 20px;">CREATE EVENT FORM</h2>
+      <h2 style="margin-right: auto; font-weight: bold; color: #4f2684; margin-left: 2em; margin-bottom: 20px; margin-top: 20px;">VENDOR REGISTRATION FORM</h2>
       <!-- <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a> -->
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -43px;padding-bottom: 10px;">
-    <li><a href="Home" class="new"><span class="glyphicon glyphicon-arrow-left"></span></a></li>
-    <!--  <li><a href="#" class="new">EVENTS</a></li>
+    <!-- <li><a href="#" class="new">HOW IT WORKS </a></li>
+      <li><a href="#" class="new">EVENTS</a></li>
       <li><a href="#" class="new">SPECIAL DEALS</a></li>
       <li><a href="#" class="new">ABOUT US</a></li>
       <li><a href="#" class="new">CONTACT</a></li> -->
@@ -85,28 +85,26 @@ echo 'Welcome, '. $_SESSION['first_name'];
   </div>
 </nav>
 <!-- header stops here -->
-<div class=row>
-<div class="col-sm-6">
 <div class="container" style="background-color: white; width: 600px; padding: 20px;">
 <!-- rounded number and text     -->
 <div class="row">
 <div class="col-sm-1">
 <div class="numberCircle">1</div>
 </div>
-<div class="col-sm-2" style="padding-left: 8px;">
-<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">What</h3>
+<div class="col-sm-11" style="padding-left: 10px;">
+<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">Personal Details</h3>
 </div>
 </div>
 
 <!-- line breaker for sections -->
 <hr style="margin-top: 10px;">
 
-<!-- group button for public or private event -->
+<!-- group button for public or private event
 <div class="btn-group" role="group" aria-label="Basic example" style="margin-bottom: 20px;">
 <button type="button" class="btn btn-secondary" style="background-color: #4f2684; color: #fff;">Public</button>
 <button type="button" class="btn btn-secondary">Private</button>
 
-</div>
+</div> -->
 
 <?php 
 
@@ -116,16 +114,127 @@ if(isset($message)){
 ?> 
 <!-- registration form starts here -->
 <form method="POST" enctype="multipart/form-data">
+<!-- organization/business name starts here -->
 <div class="form-group">
-<label for="usr">Event Name:</label>
+<button class="btn btn-secondary" type="button" style="margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+Organization/Business Name
+</button>
 <input type="text"   class="form-control" id="usr" placeholder="Event Name" name="event_title">
 </div>
+<!-- organization/business name ends here -->
+
+<!-- address starts here -->
+<div class="form-group"> <!-- Street 1 -->
+<label for="street1_id" class="control-label">Address</label>
+<input type="text" class="form-control" id="street1_id" name="Address" placeholder="Street address, P.O. box, company name, c/o">
+</div>                  
+<!-- column for city and state -->
+<div class="row">
+<div class="col-sm-6" style="padding-right: 0px;">
+<div class="form-group"> <!-- State Button -->
+<label for="state_id" class="control-label">State</label>
+<select class="form-control" id="state_id" name="state">
+<option value="AL">Choose City</option>
+<option value="AK">Aba</option>
+<option value="AZ">Abakaliki</option>
+<option value="AR">Abeokuta</option>
+<option value="CA">Abuja</option>
+<option value="CO">Ado Ekiti</option>
+<option value="CT">Akpawfu</option>
+<option value="DE">Akure</option>
+<option value="DC">Asaba</option>
+<option value="FL">Awka</option>
+<option value="GA">Bauchi</option>
+<option value="HI">Benin City</option>
+<option value="ID">Birnin Kebbi</option>
+<option value="IL">Buguma</option>
+<option value="IN">Calabar</option>
+<option value="IA">Dutse</option>
+<option value="KS">Efon-Alaaye</option>
+<option value="KY">Eket</option>
+<option value="LA">Enugu</option>
+<option value="ME">Gombe</option>
+<option value="MD">Gusau</option>
+<option value="MA">Ibadan</option>
+<option value="MI">Ibadan</option>
+<option value="MN">Ifelodun</option>
+<option value="MS">Ife</option>
+<option value="MO">Ikeja</option>
+<option value="MT">Ikirun</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Ikot-Abasi</option>
+<option value="NH">Ikot Ekpene</option>
+<option value="NJ">Ilorin</option>
+<option value="NM">Iragbiji</option>
+<option value="NY">Jalingo</option>
+<option value="NC">Jimeta</option>
+<option value="ND">Jos</option>
+<option value="OH">Kaduna</option>
+<option value="OK">Kano</option>
+<option value="OR">Katsina</option>
+<option value="PA">Karu</option>
+<option value="RI">Kumariya</option>
+<option value="SC">Lafia</option>
+<option value="SD">Lagos</option>
+<option value="TN">Lekki</option>
+<option value="TX">Lokoja</option>
+<option value="UT">Maiduguri</option>
+<option value="VT">Makurdi</option>
+<option value="VA">Minna</option>
+<option value="WA">Nnewi</option>
+<option value="WV">Nsukka</option>
+<option value="WI">Offa</option>
+<option value="WY">Ogbomoso</option>
+<option value="OK">Onitsha</option>
+<option value="OR">Okene</option>
+<option value="PA">Ogaminana</option>
+<option value="RI">Omu-Aran</option>
+<option value="SC">Oron</option>
+<option value="SD">Oshogbo</option>
+<option value="TN">Owerri</option>
+<option value="TX">Owo</option>
+<option value="UT">Orlu</option>
+<option value="VT">Oyo</option>
+<option value="VA">Port Harcourt</option>
+<option value="WA">Sokoto</option>
+<option value="WV">Sokoto</option>
+<option value="WI">Suleja</option>
+<option value="WY">Umuahia</option>
+<option value="VT">Uyo</option>
+<option value="VA">Warri</option>
+<option value="WA">Wukari</option>
+<option value="WV">Yenagoa</option>
+<option value="WI">Yola</option>
+<option value="WY">Zaria</option>
+</select>                   
+</div>
+</div>
+<div class="col-sm-6" style="padding-right: 0px;">
+<div class="form-group"> <!-- State Button -->
+
+<label for="state_id" class="control-label">City</label>
+<input type="text" class="form-control" id="street1_id" name="city" placeholder="Enter LGA here, e.g Alimosho, Ikeja, Victoria Island, etc">                 
+</div>
+</div>
+</div>                              
+
+<div class="form-group"> <!-- Zip Code-->
+<div class="row">
+<div class="col-sm-1" style="padding-right: 0px;">
+<i class="material-icons" style="color: #4f2684">&#xe568;</i>
+</div>
+<div class="col-sm-3" style="padding-left: 0px;">
+<p style="font-weight: bold;">Map</p>
+</div>
+</div>
+</div>
+<!-- address ends here -->
 
 <div class="form-group">
 <label for="comment">Description:</label>
 <textarea class="form-control" rows="5" id="comment" placeholder="Write a short passage that describes your event" name="event_description"></textarea>
 </div> 
-<div class="form-group">
+<!-- <div class="form-group">
 <div class="row">
 <div class="col-sm-2">
 <label class="radio-inline">
@@ -137,7 +246,7 @@ if(isset($message)){
 <input type="radio" name="status" value="paid"> Paid
 </label>
 </div>
-</div>
+</div> -->
 <div class="form-group">
 <button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
 Add Sponsors
@@ -249,114 +358,6 @@ Organizers Name
 <!-- line breaker for sections -->
 <hr style="margin-top: 10px;">
 
-<!-- address starts here -->
-<div class="form-group"> <!-- Street 1 -->
-<label for="street1_id" class="control-label">Address</label>
-<input type="text" class="form-control" id="street1_id" name="Address" placeholder="Street address, P.O. box, company name, c/o">
-</div>                  
-<!-- column for city and state -->
-<div class="row">
-<div class="col-sm-6" style="padding-right: 0px;">
-<div class="form-group"> <!-- State Button -->
-<label for="state_id" class="control-label">State</label>
-<select class="form-control" id="state_id" name="state">
-<option value="AL">Choose City</option>
-<option value="AK">Aba</option>
-<option value="AZ">Abakaliki</option>
-<option value="AR">Abeokuta</option>
-<option value="CA">Abuja</option>
-<option value="CO">Ado Ekiti</option>
-<option value="CT">Akpawfu</option>
-<option value="DE">Akure</option>
-<option value="DC">Asaba</option>
-<option value="FL">Awka</option>
-<option value="GA">Bauchi</option>
-<option value="HI">Benin City</option>
-<option value="ID">Birnin Kebbi</option>
-<option value="IL">Buguma</option>
-<option value="IN">Calabar</option>
-<option value="IA">Dutse</option>
-<option value="KS">Efon-Alaaye</option>
-<option value="KY">Eket</option>
-<option value="LA">Enugu</option>
-<option value="ME">Gombe</option>
-<option value="MD">Gusau</option>
-<option value="MA">Ibadan</option>
-<option value="MI">Ibadan</option>
-<option value="MN">Ifelodun</option>
-<option value="MS">Ife</option>
-<option value="MO">Ikeja</option>
-<option value="MT">Ikirun</option>
-<option value="NE">Nebraska</option>
-<option value="NV">Ikot-Abasi</option>
-<option value="NH">Ikot Ekpene</option>
-<option value="NJ">Ilorin</option>
-<option value="NM">Iragbiji</option>
-<option value="NY">Jalingo</option>
-<option value="NC">Jimeta</option>
-<option value="ND">Jos</option>
-<option value="OH">Kaduna</option>
-<option value="OK">Kano</option>
-<option value="OR">Katsina</option>
-<option value="PA">Karu</option>
-<option value="RI">Kumariya</option>
-<option value="SC">Lafia</option>
-<option value="SD">Lagos</option>
-<option value="TN">Lekki</option>
-<option value="TX">Lokoja</option>
-<option value="UT">Maiduguri</option>
-<option value="VT">Makurdi</option>
-<option value="VA">Minna</option>
-<option value="WA">Nnewi</option>
-<option value="WV">Nsukka</option>
-<option value="WI">Offa</option>
-<option value="WY">Ogbomoso</option>
-<option value="OK">Onitsha</option>
-<option value="OR">Okene</option>
-<option value="PA">Ogaminana</option>
-<option value="RI">Omu-Aran</option>
-<option value="SC">Oron</option>
-<option value="SD">Oshogbo</option>
-<option value="TN">Owerri</option>
-<option value="TX">Owo</option>
-<option value="UT">Orlu</option>
-<option value="VT">Oyo</option>
-<option value="VA">Port Harcourt</option>
-<option value="WA">Sokoto</option>
-<option value="WV">Sokoto</option>
-<option value="WI">Suleja</option>
-<option value="WY">Umuahia</option>
-<option value="VT">Uyo</option>
-<option value="VA">Warri</option>
-<option value="WA">Wukari</option>
-<option value="WV">Yenagoa</option>
-<option value="WI">Yola</option>
-<option value="WY">Zaria</option>
-</select>                   
-</div>
-</div>
-<div class="col-sm-6" style="padding-right: 0px;">
-<div class="form-group"> <!-- State Button -->
-
-<label for="state_id" class="control-label">City</label>
-<input type="text" class="form-control" id="street1_id" name="city" placeholder="Enter LGA here, e.g Alimosho, Ikeja, Victoria Island, etc">                 
-</div>
-</div>
-</div>                              
-
-
-
-
-<div class="form-group"> <!-- Zip Code-->
-<div class="row">
-<div class="col-sm-1" style="padding-right: 0px;">
-<i class="material-icons" style="color: #4f2684">&#xe568;</i>
-</div>
-<div class="col-sm-3" style="padding-left: 0px;">
-<p style="font-weight: bold;">Map</p>
-</div>
-</div>
-</div>
 
 <!-- section three starts here -->
 <hr style="margin-top: 2px;">
@@ -606,7 +607,7 @@ Add Social Media Links
 <input type="submit" name="save" value="SAVE" class="btn  btn-success">
 </div>
 <div class="col-sm-4" style="margin-top: 45px;">
-<!-- <button type="submit" class="btn btn-primary">PREVIEW</button> -->
+<button type="submit" class="btn btn-primary">PREVIEW</button>
 </div>    
 </div>
 </div>    
@@ -618,16 +619,9 @@ Add Social Media Links
 
 </form>
 </div>
-</div><!-- /.container -->
-
-      </form>
-        </div>
-    </div><!-- /.container -->
-    </div>
-    <div class="col-sm-5">
-        <div style="height: 392px; background-color: grey; font-weight: bold; font-size: 20px; text-align: center; margin-top:10px;">PREVIEW</div>
-    </div>
 </div>
+</div>
+</div><!-- /.container -->
 <footer style="background-color: #f8f8f8; border: 3px solid #e7e7e7; padding: 10px; margin-top: 10px; height: 100px;">
   <div class="row">
     <div class="col-sm-2">
@@ -651,6 +645,7 @@ Add Social Media Links
     </div>
   </div>
 </footer>
+
 <!-- script Starts here -->
 <script src="https://unpkg.com/file-upload-with-preview"></script> 
 <script>

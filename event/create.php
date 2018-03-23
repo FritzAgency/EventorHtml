@@ -1,3 +1,4 @@
+<?php session_start();?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,65 +136,11 @@ border:2px solid #4f2684;
 </style>
 </head>
 <body>
-    <header>
-    <!-- header starts here -->
-    <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
-  <div class="container-fluid">
-    <div class="navbar-header" >
-      <div>
-      <h2 style="margin-right: auto; font-weight: bold; color: #4f2684; margin-left: 7em; margin-bottom: 20px; margin-top: 20px;">CREATE EVENT FORM</h2>
-      <!-- <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a> -->
-      </div>
-    </div>
-    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: 10px;padding-bottom: 10px;">
-    <!-- <li><a href="index.php" class="new" style="margin-top: 53px; font-size: 20px; font-weight: bold; border-radius: 5%;" id="change"> <span class="glyphicon glyphicon-arrow-left"> </span></a></li> -->
-    <!--  <li><a href="#" class="new">EVENTS</a></li>
-      <li><a href="#" class="new">SPECIAL DEALS</a></li>
-      <li><a href="#" class="new">ABOUT US</a></li>
-      <li><a href="#" class="new">CONTACT</a></li> -->
-      <li style="font-weight: bold;"><a href="auth/signup.php">SIGNUP</a></li>
-      <li style="font-weight: bold;"><a> | </a></li>
-      <li style="margin-right: 52px; font-weight: bold;"><a href="auth/login.php">LOGIN</a></li>
-
-<?php if ((isset($_SESSION['email']))){
-
-echo 
-''; 
-}else{
-echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>'; 
-}
-?>
-
-<?php if ((isset($_SESSION['email']))){
-
-echo 
-'
-<li><a href="auth/logout.php" style="color:#4f2684;"><span class=""></span> Logout</a></li>
-';      }else{
-echo'
-<li><a href="auth/login.php" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-'; 
-}
-?>
-
-
-
-<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  <?php 
-if((isset($_SESSION['first_name']))){
-echo 'Welcome, '. $_SESSION['first_name'];
-}
-?>
-
-    </ul>
-  </div>
-</nav>
-</header>
+  
     <!-- header ends here -->
-<?php 
 
-if(isset($message)){
-    echo '<div class="alert alert-success">'. $message .'</div>';
-}
+<?php 
+require_once('../event/createclass.php'); 
 ?> 
 
     <!-- the whole body starts here -->
@@ -213,15 +160,21 @@ if(isset($message)){
         <div class="row">
             <!-- form starts here -->
             <div class="col-sm-6">
+                <?php 
+
+if(isset($message)){
+    echo '<div class="alert alert-success">'. $message .'</div>';
+}
+?> 
             <form method="POST" enctype="multipart/form-data">
                 <!-- switch button goes in here -->
                 <p>Select type of event here</p>
                 <div class="btn-group" data-toggle="buttons">
                     <label class="btn1 btn btn-default btn-sm">
-                        <input name="options" id="option2" autocomplete="off" type="radio"> PUBLIC
+                        <input name="status" id="option2"  type="radio" value="public"> PUBLIC
                     </label>
                     <label class="btn1 btn btn-default btn-sm">
-                        <input name="options" id="option3" autocomplete="off" type="radio"> PRIVATE
+                        <input name="options" id="option3"  type="radio" value="private"> PRIVATE
                     </label>
                 </div>
                 <!-- end of switch button -->
@@ -229,7 +182,7 @@ if(isset($message)){
 
                 <div class="form-group">
                 <label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px; margin-top: 20px;margin-top: 20px;">EVENT NAME</label>
-                    <input type="text" class="form-control well" id="email" placeholder="Enter event name here">
+                    <input type="text" class="form-control well" id="" placeholder="Enter event name here" name="event_title">
                 </div>
                 <!-- end of event name --> 
 

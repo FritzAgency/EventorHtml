@@ -317,6 +317,8 @@ echo $event_description;
 ?> 
                   </p>
             </div>
+</div>
+
             <div id="menu1" class="tab-pane fade" style="height: 397px;">
               <h3 style="margin-left: 8px;">SPONSORS</h3>
               <p style="margin-left: 8px;"><?php 
@@ -332,7 +334,7 @@ echo $event_description;
               <p style="margin-left: 8px;"><?php 
 
               if (isset($Address)){
-              	echo $Address; 
+              	echo $Address;  
               }
 
               ?></p>

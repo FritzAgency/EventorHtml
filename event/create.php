@@ -16,7 +16,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="style2.js"></script>
+
 <link rel="stylesheet" href="style.css">
 <style>
 /* .switch {
@@ -133,9 +133,33 @@ font-weight: bold;
 border:2px solid #4f2684;
 }
 
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
 </style>
 </head>
 <body>
+
   
     <!-- header ends here -->
 
@@ -143,20 +167,48 @@ border:2px solid #4f2684;
 require_once('../event/createclass.php'); 
 ?> 
 
+
+    <header>
+    <!-- header starts here -->
+    <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
+  <div class="container-fluid">
+    <div class="navbar-header" >
+      <div>
+      <h2 style="margin-right: auto; font-weight: bold; color: #4f2684; margin-left: 7em; margin-bottom: 20px; margin-top: 20px;">CREATE EVENT FORM</h2>
+      <!-- <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a> -->
+      </div>
+    </div>
+    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: 10px;padding-bottom: 10px;">
+    <!-- <li><a href="index.php" class="new" style="margin-top: 53px; font-size: 20px; font-weight: bold; border-radius: 5%;" id="change"> <span class="glyphicon glyphicon-arrow-left"> </span></a></li> -->
+    <!--  <li><a href="#" class="new">EVENTS</a></li>
+      <li><a href="#" class="new">SPECIAL DEALS</a></li>
+      <li><a href="#" class="new">ABOUT US</a></li>
+      <li><a href="#" class="new">CONTACT</a></li> -->
+      <!--li style="font-weight: bold;"><a href="auth/signup.php">SIGNUP</a></li>
+      <li style="font-weight: bold;"><a> | </a></li>
+      <li style="margin-right: 52px; font-weight: bold;"><a href="auth/login.php">LOGIN</a></li-->
+    </ul>
+  </div>
+</nav>
+</header>
+    <!-- header ends here -->
+
     <!-- the whole body starts here -->
     <div class="container" style="background-color: white; padding: 20px 0px 20px 20px; border-radius: 15px;">
-        <!-- section two starts here -->
+        <!-- rounded number and text     -->
+        <div class="row">
+            <div class="col-sm-1">
+                <div class="numberCircle">1</div>
+                </div>
+                <div class="col-sm-2" style="padding-left: 8px;">
+                <h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">WHAT</h3>
+            </div>
+        </div>
+                <!-- rounded number ends here -->
 
-<!-- rounded number and text     -->
-<div class="row">
-<div class="col-sm-1">
-<div class="numberCircle">2</div>
-</div>
-<div class="col-sm-2" style="padding-left: 8px;">
-<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">WHERE</h3>
-</div>
-
-<hr style="margin-top: 2px;">
+        <!-- line breaker for sections -->
+        <hr style="margin-top: 0px; color: #4f2684;">
+        <!-- line breaker ends here -->
         <div class="row">
             <!-- form starts here -->
             <div class="col-sm-6">
@@ -174,7 +226,7 @@ if(isset($message)){
                         <input name="status" id="option2"  type="radio" value="public"> PUBLIC
                     </label>
                     <label class="btn1 btn btn-default btn-sm">
-                        <input name="options" id="option3"  type="radio" value="private"> PRIVATE
+                        <input name="status" id="option3"  type="radio" value="private"> PRIVATE
                     </label>
                 </div>
                 <!-- end of switch button -->
@@ -190,6 +242,26 @@ if(isset($message)){
 <label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">DESCRIPTION</label>
 <textarea class="form-control well" rows="5" id="comment" placeholder="Write a short passage that describes your event" name="event_description"></textarea>
 </div> 
+
+<!-- organizers name -->
+<div class="form-group">
+<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px; margin-top: 20px;margin-top: 20px;">ORGANIZERS NAME </label>
+<input type="text" class="form-control well" id="usr" placeholder="Organizer Name" name="org_name">
+</div>
+
+
+
+<!-- event logo -->
+<div class="form-group" style="margin-bottom: 30px;">
+<label for="OrgName" style="font-weight: bold; border: 1px solid black; background-color: #4f2684; color: white; border-radius: 5px; padding: 10px;">UPLOAD LOGO</label>
+<div class="form-inline">
+<div class="form-group">
+<input type="file" name="org_logo" id="js-upload-files">
+</div>
+<!--button type="submit" class="btn btn-sm btn-secondary new" id="js-upload-submit"> Upload Logo </button-->
+</div>
+</div>
+
 <div class="form-group">
 <label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">ADD SPONSORS</label>
 <div class="row">
@@ -233,7 +305,7 @@ if(isset($message)){
 <label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">UPLOAD LOGO</label>
 <div class="form-inline">
 <div class="form-group">
-<input type="file" name="org_logo" id="js-upload-files">
+<input type="file" name="event_flier" id="js-upload-files">
 </div>
 <!--button type="submit" class="btn btn-sm btn-secondary new" id="js-upload-submit"> Upload Logo </button-->
 </div>
@@ -241,17 +313,10 @@ if(isset($message)){
 
 <!-- event banner upload here -->
 <div class="form-group" style="margin-bottom: 30px;">
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">UPLOAD EVENT BANNER (You can upload more than one banner)</label>
+<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">UPLOAD EVENT BANNER</label>
 <!--form action="" method="post" enctype="multipart/form-data" id="js-upload-form"-->
 <div class="row">
     <div class="col-sm-4">
-<div class="form-inline">
-<div class="form-group">
-<input type="file" name="event_flier" id="js-upload-files">
-</div>
-</div>
-</div>
-<div class="col-sm-4">
 <div class="form-inline">
 <div class="form-group">
 <input type="file" name="event_flier1" id="js-upload-files">
@@ -262,6 +327,13 @@ if(isset($message)){
 <div class="form-inline">
 <div class="form-group">
 <input type="file" name="event_flier2" id="js-upload-files">
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-inline">
+<div class="form-group">
+<!--input type="file" name="event_flier2" id="js-upload-files"-->
 </div>
 </div>
 </div>
@@ -437,7 +509,7 @@ if(isset($message)){
 <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span> -->
 </div>
 </div>
-<div class="col-sm-6">
+<div class="col-sm-6" style="padding-right: 16px;">
 <div>
 <div class="form-group">
 <div class='input-group date' id='datetimepicker10'>
@@ -472,6 +544,20 @@ if(isset($message)){
 </div>
 </div>
 
+<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+    <div data-role="collapsible">
+        <h3>Section 1</h3>
+    <p>I'm the collapsible content for section 1</p>
+    </div>
+    <div data-role="collapsible">
+        <h3>Section 2</h3>
+    <p>I'm the collapsible content for section 2</p>
+    </div>
+    <div data-role="collapsible">
+        <h3>Section 3</h3>
+    <p>I'm the collapsible content for section 3</p>
+    </div>
+</div>
 
 <!-- schedule multiple activties -->
 <div class="form-group">
@@ -674,11 +760,20 @@ if(isset($message)){
         </div>
     </div>
 <script>
-    $(document).ready(function(){
-                $("#toggle").click(function(){
-                    $("#content").toggle();
-                });
-            });
+   var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
 </script>
 </body>
 </html>

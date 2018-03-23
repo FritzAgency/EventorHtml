@@ -78,7 +78,7 @@ $act_desc = $_POST['act_desc'];
 $act_date = $_POST['act_date']; 
 $act_img = $_FILES["act_img"]["name"];
 
-	$query = "INSERT into `event` (creator_id, event_title, event_url, event_description, status, sponsor_name, sponsor_url, sponsor_logo, org_name, org_logo, event_flier, event_flier1, event_flier2, Address, city, state,  event_starts, event_ends, facebook, twitter, instagram, act_name, act_loc, act_desc, act_date, act_img, ticket_qty, ticket_price, created_at) VALUES ('$creator_id', '$event_title', '$event_url', '$event_description', '$status', '$sponsor_name', '$sponsor_url', '$sponsor_logo', '$org_name', '$org_logo', '$event_flier', '$event_flier1', '$event_flier2', '$Address', '$city', '$state', '$event_starts', '$event_ends', '$facebook', '$twitter', '$instagram', '$act_name', '$act_loc', '$act_desc', '$act_date', '$act_img', '$ticket_qty', '$ticket_price', '$created_at' )";  
+	$query = "INSERT into `event` (creator_id, event_title, event_url, event_description, status,  sponsor_name, sponsor_url, sponsor_logo, org_name, org_logo, event_flier, event_flier1, event_flier2, Address, city, state,  event_starts, event_ends, facebook, twitter, instagram, act_name, act_loc, act_desc, act_date, act_img, ticket_qty, ticket_price, created_at) VALUES ('$creator_id', '$event_title', '$event_url', '$event_description', '$status', '$sponsor_name', '$sponsor_url', '$sponsor_logo', '$org_name', '$org_logo', '$event_flier', '$event_flier1', '$event_flier2', '$Address', '$city', '$state', '$event_starts', '$event_ends', '$facebook', '$twitter', '$instagram', '$act_name', '$act_loc', '$act_desc', '$act_date', '$act_img', '$ticket_qty', '$ticket_price', '$created_at' )";  
 
         $result = mysqli_query($con,$query) or die(mysqli_error($con));
 

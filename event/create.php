@@ -1,3 +1,4 @@
+<?php session_start();?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -159,6 +160,15 @@ border:2px solid #4f2684;
 </style>
 </head>
 <body>
+
+  
+    <!-- header ends here -->
+
+<?php 
+require_once('../event/createclass.php'); 
+?> 
+
+
     <header>
     <!-- header starts here -->
     <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
@@ -175,14 +185,15 @@ border:2px solid #4f2684;
       <li><a href="#" class="new">SPECIAL DEALS</a></li>
       <li><a href="#" class="new">ABOUT US</a></li>
       <li><a href="#" class="new">CONTACT</a></li> -->
-      <li style="font-weight: bold;"><a href="auth/signup.php">SIGNUP</a></li>
+      <!--li style="font-weight: bold;"><a href="auth/signup.php">SIGNUP</a></li>
       <li style="font-weight: bold;"><a> | </a></li>
-      <li style="margin-right: 52px; font-weight: bold;"><a href="auth/login.php">LOGIN</a></li>
+      <li style="margin-right: 52px; font-weight: bold;"><a href="auth/login.php">LOGIN</a></li-->
     </ul>
   </div>
 </nav>
 </header>
     <!-- header ends here -->
+
     <!-- the whole body starts here -->
     <div class="container" style="background-color: white; padding: 20px 0px 20px 20px; border-radius: 15px;">
         <!-- rounded number and text     -->
@@ -202,15 +213,21 @@ border:2px solid #4f2684;
         <div class="row">
             <!-- form starts here -->
             <div class="col-sm-6">
+                <?php 
+
+if(isset($message)){
+    echo '<div class="alert alert-success">'. $message .'</div>';
+}
+?> 
             <form method="POST" enctype="multipart/form-data">
                 <!-- switch button goes in here -->
                 <p>Select type of event here</p>
                 <div class="btn-group" data-toggle="buttons">
                     <label class="btn1 btn btn-default btn-sm">
-                        <input name="options" id="option2" autocomplete="off" type="radio"> PUBLIC
+                        <input name="status" id="option2"  type="radio" value="public"> PUBLIC
                     </label>
                     <label class="btn1 btn btn-default btn-sm">
-                        <input name="options" id="option3" autocomplete="off" type="radio"> PRIVATE
+                        <input name="status" id="option3"  type="radio" value="private"> PRIVATE
                     </label>
                 </div>
                 <!-- end of switch button -->
@@ -218,7 +235,7 @@ border:2px solid #4f2684;
 
                 <div class="form-group">
                 <label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px; margin-top: 20px;margin-top: 20px;">EVENT NAME</label>
-                    <input type="text" class="form-control well" id="email" placeholder="Enter event name here">
+                    <input type="text" class="form-control well" id="" placeholder="Enter event name here" name="event_title">
                 </div>
                 <!-- end of event name --> 
 
@@ -289,7 +306,7 @@ border:2px solid #4f2684;
 <label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">UPLOAD LOGO</label>
 <div class="form-inline">
 <div class="form-group">
-<input type="file" name="org_logo" id="js-upload-files">
+<input type="file" name="event_flier" id="js-upload-files">
 </div>
 <!--button type="submit" class="btn btn-sm btn-secondary new" id="js-upload-submit"> Upload Logo </button-->
 </div>
@@ -303,13 +320,6 @@ border:2px solid #4f2684;
     <div class="col-sm-4">
 <div class="form-inline">
 <div class="form-group">
-<input type="file" name="event_flier" id="js-upload-files">
-</div>
-</div>
-</div>
-<div class="col-sm-4">
-<div class="form-inline">
-<div class="form-group">
 <input type="file" name="event_flier1" id="js-upload-files">
 </div>
 </div>
@@ -318,6 +328,13 @@ border:2px solid #4f2684;
 <div class="form-inline">
 <div class="form-group">
 <input type="file" name="event_flier2" id="js-upload-files">
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="form-inline">
+<div class="form-group">
+<!--input type="file" name="event_flier2" id="js-upload-files"-->
 </div>
 </div>
 </div>

@@ -5,13 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleaactivepis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="bootstrap3.min.js"></script>
+  <script src="bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="bootstrap3.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <style>
 .nav-tabs { border-bottom: 4px solid #e3e2e6; }
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+.nav-tabs > li.active > a, .nav-tabs > li. > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
 .nav-tabs > li > a { border: none; color: #000000; }
     .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4f2684 !important; background: transparent; }
     .nav-tabs > li > a::after { content: ""; background: #4f2684; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
@@ -158,7 +161,7 @@ input:checked + label {
     </a>
   </div>
   <!-- event title goes in here -->
-<h1 style="text-align: center; margin:auto font-size:70px; font-weight:bolder;">A Trip To The Hills Of <br>Idanran</h1>
+<h1 style="text-align: center; margin:auto font-size: 82px; font-weight:bolder;">A Trip To The Hills Of <br>Idanran</h1>
 <!-- event title ends here -->
 
 <!-- menu tab for event information -->
@@ -257,7 +260,7 @@ input:checked + label {
 
     
   <section id="content11">
-  <div style="margin: auto;">
+  <!-- <div style="margin: auto;">
       <img src="img/first1.png" alt="" img="img-responsive">
     </div>
   <div class="row" style="padding: 24; background-color: white; width: 100%; height:100%">
@@ -282,11 +285,11 @@ input:checked + label {
       <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
-</div>
+</div> -->
   </section>
     
   <section id="content21">
-  <div style="margin: auto;">
+  <!-- <div style="margin: auto;">
       <img src="img/first1.png" alt="" img="img-responsive">
     </div>
   <div class="row" style="padding: 24; background-color: white; width: 100%; height:100%">
@@ -311,11 +314,11 @@ input:checked + label {
       <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
-</div>
+</div> -->
   </section>
     
   <section id="content31">
-  <div style="margin: auto;">
+  <!-- <div style="margin: auto;">
       <img src="img/first1.png" alt="" img="img-responsive">
     </div>
   <div class="row" style="padding: 24; background-color: white; width: 100%; height:100%">
@@ -340,11 +343,11 @@ input:checked + label {
       <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
-</div>
+</div> -->
   </section>
 
   <section id="content41">
-  <div style="margin: auto;">
+  <!-- <div style="margin: auto;">
       <img src="img/first1.png" alt="" img="img-responsive">
     </div>
   <div class="row" style="padding: 24; background-color: white; width: 100%; height:100%">
@@ -369,11 +372,11 @@ input:checked + label {
       <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
-</div>
+</div> -->
   </section>
 
   <section id="content51">
-  <div style="margin: auto;">
+  <!-- <div style="margin: auto;">
       <img src="img/first1.png" alt="" img="img-responsive">
     </div>
   <div class="row" style="padding: 24; background-color: white; width: 100%; height:100%">
@@ -398,9 +401,10 @@ input:checked + label {
       <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
-</div>
+</div> -->
+</main>
   </section>
-  </section>
+</section>
     
   <section id="content2">
     <img src="img/celine.jpg" alt="">

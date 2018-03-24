@@ -16,7 +16,9 @@
 
 <?php 
 
-require_once('../auth/newpasswordclass.php'); 
+require_once('../auth/auth.php');
+
+setnewpassword();  
 
 ?>
 
@@ -30,9 +32,11 @@ require_once('../auth/newpasswordclass.php');
 </div>
         <form class="form-horizontal" role="form" action="" method="POST">
 <div>
-    <?php if(isset($message)){
-        echo $message; 
+    <?php if(!empty($_SESSION['message'])){
+        echo $_SESSION['message']; 
     }
+
+    unset($_SESSION['message']);
     ?>
 </div>
 

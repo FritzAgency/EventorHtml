@@ -14,7 +14,9 @@
 	<link rel="stylesheet" href="style11.css">
     <?php 
 
-    require_once('../auth/signupclass.php');
+    require_once('../auth/auth.php');
+
+    signup(); 
      ?> 
 
 </head>
@@ -25,17 +27,16 @@
 
                     <h2 style="margin-right: auto; marign-left: auto; font-weight: bold; color: #4f2684; margin-left: 6em;">Signup</h2>
 
-                  <div>   <?php 
-                    if(isset($check_mail)){echo $check_mail;}?> </div>
+<div>
+  <?php 
 
-                   <div>   <?php 
+  if(!empty($_SESSION['message'])){
 
-                    if(isset($check_fn)){echo $check_fn;}?> </div>
-
-                    <div>   <?php 
-                        if(isset($check_pass)){echo $check_pass;}?> </div>
-
-                    <div>   <?php if(isset($success)){echo $success;}?> </div>
+    echo $_SESSION['message']; 
+  }  
+?>
+</div>
+<?php unset($_SESSION['message']); ?>
 
 
 

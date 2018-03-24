@@ -299,7 +299,9 @@ echo 'Welcome, '. $_SESSION['first_name'];
         </div>
         <!-- start selling vendor retisgration form -->
         <div class="shadow swing">
+          <a href="vendor/vendorform.php">
           <img src="img/start.png" style="margin-bottom: 18px;" alt="create event design" srcset="" class="img-responsive">
+        </a>
         </div>
 
         <!-- Adds goes here-->

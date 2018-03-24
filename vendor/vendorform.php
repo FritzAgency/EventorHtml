@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,9 +33,7 @@
 </style>
 
 <?php 
-session_start(); 
-
-require_once('../event/createclass.php');
+require_once('../vendor/vendorclass.php');
 
 //if user not logged, redirect to the signup page 
 if((!isset($_SESSION['email']))){
@@ -124,19 +123,17 @@ if(isset($message)){
 <!-- registration form starts here -->
 <form method="POST" enctype="multipart/form-data">
 <div class="form-group">
-<button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+<!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
 Business/Organization Name
 </button>
-<input type="text"   class="form-control" id="usr" placeholder="Event Name" name="event_title">
+<input type="text"   class="form-control" id="usr" placeholder="Business Name" name="Biz_name">
 </div>
 
-<!-- registration form starts here -->
-<form method="POST" enctype="multipart/form-data">
 <div class="form-group">
-<button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+<!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
 Store Name
 </button>
-<input type="text"   class="form-control" id="usr" placeholder="Event Name" name="event_title">
+<input type="text"   class="form-control" id="usr" placeholder="Store Name" name="stor_name">
 </div>
 
 <!-- section two starts here -->
@@ -156,25 +153,25 @@ Store Name
 
 <!-- address starts here -->
 <div class="form-group"> <!-- Street 1 -->
-<button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+<!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
 Address
 </button>
-<input type="text" class="form-control" id="street1_id" name="Address" placeholder="Address line 1">
+<input type="text" class="form-control" id="street1_id" name="Address" placeholder="Address">
 </div>
 
 <div class="form-group"> <!-- Street 1 -->
-<input type="text" class="form-control" id="street1_id" name="Address" placeholder="Address line 2">
+<!--input type="text" class="form-control" id="street1_id" name="Address" placeholder="Address line 2"-->
 </div>
 
 <!-- column for city and state -->
 <div class="row">
 <div class="col-sm-4" style="padding-right: 0px;">
 <div class="form-group"> <!-- State Button -->
-<button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+<!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
 State
 </button>
 <select class="form-control" id="state_id" name="state">
-<option value="AL">Choose City</option>
+<option value="AL">Choose State</option>
 <option value="AK">Aba</option>
 <option value="AZ">Abakaliki</option>
 <option value="AR">Abeokuta</option>
@@ -252,10 +249,10 @@ State
 <div class="col-sm-7" style="padding-left: 22px; width: 64.333%;">
 <div class="form-group"> <!-- State Button -->
 
-<button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+<!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
 City
-</button>
-<input type="text" class="form-control" id="street1_id" name="city" placeholder="Enter LGA here, e.g Alimosho, Ikeja, Victoria Island, etc">                 
+
+<input type="text" class="form-control" id="street1_id" name="city" placeholder="City">                 
 </div>
 </div>
 </div>                              
@@ -263,16 +260,16 @@ City
 <div class="form-group"> <!-- Zip Code-->
 <div class="row">
 <div class="col-sm-4" style="padding-right: 0px;">
-<button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+<!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
 Zip
 </button>
-<input type="text" class="form-control" id="street1_id" name="city" placeholder="Zip Code">
+<input type="text" class="form-control" id="street1_id" name="zip_code" placeholder="Zip Code">
 </div>
 <div class="col-sm-8" style="padding-left: 23px;">
-<button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+<!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
 Phone Number
 </button>
-<input type="text" class="form-control" id="street1_id" name="city" placeholder="Phone Number">
+<input type="text" class="form-control" id="street1_id" name="city" placeholder="Phone Number"-->
 </div>
 </div>
 </div>
@@ -280,16 +277,16 @@ Phone Number
 <div class="form-group"> <!-- Zip Code-->
 <div class="row">
 <div class="col-sm-6" style="padding-left: 16px;">
-<button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+<!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
 Mobile Number 1
 </button>
-<input type="text" class="form-control" id="street1_id" name="city" placeholder="Mobile Number 1">
+<input type="text" class="form-control" id="street1_id" name="mobile_number1" placeholder="Mobile Number 1">
 </div>
 <div class="col-sm-6" style="padding-left: 0px;">
-<button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+<!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
 Mobile Number 2
-</button>
-<input type="text" class="form-control" id="street1_id" name="city" placeholder="Mobile number 2">
+
+<input type="text" class="form-control" id="street1_id" name="mobile_number2" placeholder="Mobile number 2">
 </div>
 </div>
 </div>
@@ -312,14 +309,14 @@ Mobile Number 2
 <button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
 Business Category
 </button>
-<select class="form-control" id="state_id" name="state">
-<option value="AL">Choose Category</option>
-<option value="AK">Tents</option>
-<option value="AZ">Audio</option>Ai</option>
-<option value="AR">DJ's</option>
-<option value="CA">Food</option>
-<option value="CO">Fun Toys</option>
-<option value="CT">Games</option>
+<select class="form-control" id="state_id" name="category">
+<option value="">Choose Category</option>
+<option value="Tents">Tents</option>
+<option value="Audio">Audio</option>Ai</option>
+<option value="DJ">DJ's</option>
+<option value="Food">Food</option>
+<option value="Fun Toys">Fun Toys</option>
+<option value="Games">Games</option>
 </select>                   
 </div>
 
@@ -328,10 +325,10 @@ Business Category
 <!-- add vendors logo goes here -->
 <!-- event logo -->
 <div class="form-group">
-<button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
+<!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
 Upload Logo
-</button>
-<input type="file" name="org_logo" id="js-upload-files">
+
+<input type="file" name="vendor_logo" id="js-upload-files">
 </div>
 <!-- add vendors logo ends here -->
 
@@ -348,7 +345,7 @@ Upload Logo
 <!-- <input type="submit" name="save" value="SAVE" class="btn  btn-success"> -->
 </div>
 <div class="col-sm-4" style="margin-top: 5px; padding-left: 86px;">
-<button type="submit" class="btn btn-danger btn-lg">Submit</button>
+<input type="submit" name="save" class="btn btn-danger btn-lg">
 </div>    
 </div>
 </div>    

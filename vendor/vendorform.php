@@ -18,6 +18,45 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="style2.js"></script>
+<script type="text/javascript">
+  $(document).ready( function() {
+      $(document).on('change', '.btn-file :file', function() {
+    var input = $(this),
+      label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    input.trigger('fileselect', [label]);
+    });
+
+    $('.btn-file :file').on('fileselect', function(event, label) {
+        
+        var input = $(this).parents('.input-group').find(':text'),
+            log = label;
+        
+        if( input.length ) {
+            input.val(log);
+        } else {
+            if( log ) alert(log);
+        }
+      
+    });
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#img-upload').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#imgInp").change(function(){
+        readURL(this);
+    });   
+  });
+
+</script>
+
 <link rel="stylesheet" href="style.css">
 <!-- scripts ends here -->
 <style>
@@ -30,6 +69,29 @@
     background-color: lightgrey;
     color: #4f2684;
   }
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
 </style>
 
 <?php 
@@ -119,7 +181,11 @@ echo 'Welcome, '. $_SESSION['first_name'];
 if(isset($message)){
     echo '<div class="alert alert-success">'. $message .'</div>';
 }
-?> 
+?>
+
+
+
+
 <!-- registration form starts here -->
 <form method="POST" enctype="multipart/form-data">
 <div class="form-group">
@@ -305,10 +371,7 @@ Mobile Number 2
 
 <!-- section three starts here -->
 
-<div class="form-group">
-<button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia">
-Business Category
-</button>
+<div class="form-group">Business Category
 <select class="form-control" id="state_id" name="category">
 <option value="">Choose Category</option>
 <option value="Tents">Tents</option>
@@ -324,12 +387,25 @@ Business Category
 
 <!-- add vendors logo goes here -->
 <!-- event logo -->
-<div class="form-group">
+<!--div class="form-group"-->
 <!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
-Upload Logo
 
-<input type="file" name="vendor_logo" id="js-upload-files">
-</div>
+
+ <div class="form-group">
+        <label>Upload Logo</label>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                    Browse… <input type="file" name="vendor_logo" id="imgInp">
+                </span>
+            </span>
+            <input type="text" class="form-control" readonly>
+        </div>
+        <img id='img-upload'/>
+    </div>
+
+<!--input type="file" name="vendor_logo" id="js-upload-files">
+</div-->
 <!-- add vendors logo ends here -->
 
 <div class="form-group">

@@ -39,7 +39,7 @@ $query = "INSERT `vendor` (creator_id, Biz_name, Address, state, city, zip_code,
 
         if ($result) {
         	//$message = "Your page has been created successfully. Your event page is at '<a href='/eventorhtml/event/page/$event_url'> localhost/eventorhtml/event/page/$event_url</a>"; 
-        	$message = "You are now a registered vendor on Eventor."; 
+        	$message = "You are now a registered vendor on Eventor. You can now Add your first Product on Eventor. <a href='../vendor/addproduct.php'>Start here</a>"; 
         }
         else{
         	$message = 'oops, something went wrong'; 

@@ -294,16 +294,16 @@ $act_img;?>" class="img-responsive">
     }
 
     ?></h2>
-    <div>
+    <div class="container">
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs" style="margin-left: 4px;">
+        <!-- <ul class="container nav nav-tabs" style="margin-left: 4px;">
             <li class="active"><a data-toggle="tab" href="#home" style="font-size: 12px; font-weight: bold; color:#4f2684;">ABOUT</a></li>
             <li><a data-toggle="tab" href="#menu1" style="font-size: 12px; font-weight: bold; color:#4f2684;">SPONSORS</a></li>
             <li><a data-toggle="tab" href="#menu2" style="font-size: 12px; font-weight: bold; color:#4f2684;">LOCATION</a></li>
             <li><a data-toggle="tab" href="#menu3"style="font-size: 12px; font-weight: bold; color:#4f2684;">VENDORS</a></li>
-          </ul>
+          </ul> -->
         
-          <div class="tab-content">
+          <!-- <div class="tab-content">
             <div id="home" class="tab-pane fade in active" style="height: 397px;">
               
              <p style="padding:10px; text-align:justify; font: grey; margin-left: 6px;">
@@ -314,7 +314,7 @@ if(isset($event_description)){
 echo $event_description; 
 
 }
-?> 
+?> This is the about section
                   </p>
             </div>
 </div>
@@ -327,7 +327,9 @@ echo $event_description;
               	echo $sponsor_name; 
               }
 
-              ?></p>
+              ?>
+              This is the sponsor's section
+              </p>
             </div>
             <div id="menu2" class="tab-pane fade" style="height: 397px;">
               <h3 margin-left: 8px;>LOCATION</h3>
@@ -337,14 +339,44 @@ echo $event_description;
               	echo $Address;  
               }
 
-              ?></p>
+              ?>
+              this is the location section
+              </p>
             </div>
             <div id="menu3" class="tab-pane fade" style="height: 397px;">
               <h3 style="margin-left: 8px;">VENDORS</h3>
               <p style="margin-left: 8px;">Set boxes for vendors that displays vendors in a carousel</p>
             </div>
           </div>
+    </div> -->
+
+<ul class="nav nav-tabs" style="margin-left: 4px;">
+    <li class="active"><a data-toggle="tab" href="#home" style="font-size: 12px; font-weight: bold; color:#4f2684;">About</a></li>
+    <li><a data-toggle="tab" href="#menu1" style="font-size: 12px; font-weight: bold; color:#4f2684;">Sponsors</a></li>
+    <li><a data-toggle="tab" href="#menu2" style="font-size: 12px; font-weight: bold; color:#4f2684;">Location</a></li>
+    <li><a data-toggle="tab" href="#menu3" style="font-size: 12px; font-weight: bold; color:#4f2684;">Vendors</a></li>
+  </ul>
+
+<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>About</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Sponsors</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Location</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Vendors</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+
     <div class="row container" style="width: 100%; margin: auto;">
       <div class="col-sm-4" style="width:29%;">
         <p style="font-size: 13px; color:#4f2684;">TICKET PRICE <br> 

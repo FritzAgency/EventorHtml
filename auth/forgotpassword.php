@@ -20,14 +20,14 @@
 
 <div> 
     <?php 
-include('../auth/fpclass.php'); 
+require('../auth/auth.php'); 
 
-if(isset($message)){
+forgotpassword();
 
-        echo $message; 
+if(!empty($_SESSION['message'])){
+echo $_SESSION['message']; 
 } 
- //forgotpassword(); 
- //message(); 
+unset($_SESSION['message']);
 ?>
 </div>
              <h2 style="margin-right: auto; marign-left: auto; font-weight: bold; color: #4f2684; margin-left: 6em;"></h2>

@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <?php 
-    require_once('../auth/loginclass.php');
+    require_once('../auth/auth.php');
+
+    login(); 
  ?>
 
 <body>
@@ -22,9 +24,10 @@
 
              <h2 style="margin-right: auto; marign-left: auto; font-weight: bold; color: #4f2684; margin-left: 6em;">Login</h2>
 
-             <div><?php if((isset($success))) {
-                echo $success; 
+             <div><?php if(!empty($_SESSION['message'])) {
+                echo $_SESSION['message']; 
              } ?></div>
+             <?php unset($_SESSION['message']); ?>
 
             <div class="form-group">
                 <h4 style="padding-left: 15px; color: #4f2684;">Email</h4>

@@ -1,3 +1,4 @@
+<?php session_start();?> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -71,7 +72,10 @@ form_main {
 <div class="container-fluid">
 
 <div class="row">
-	<h1> Eventor </h1>
+	<div class="col-md-offset-1 col-md-6" style="margin-top: 50px">
+<p class="lead">Confirm your Details Below to reserve a seat at -- </p>
+
+    </div>
 </div>
 
 
@@ -133,13 +137,13 @@ FREE
 
 <div class="form">
                 <form action="" method="post" id="contactFrm" name="contactFrm">
-                    <input type="text" required="" placeholder="Please input your Name" value="" name="name" class="txt">
+                    <input type="text" required="" placeholder="Please input your Name" value="<?php echo $_SESSION['first_name'];?>" name="name" class="txt">
                     
-                    <input type="text" required="" placeholder="Please input your mobile No" value="" name="mob" class="txt">
+                    <input type="text" required="" placeholder="Please input your mobile No" value="<?php echo $_SESSION['phoneNumber'];?>" name="mob" class="txt">
                     
-                    <input type="text" required="" placeholder="Please input your Email" value="" name="email" class="txt">
+                    <input type="text" required="" placeholder="Please input your Email" value="<?php echo $_SESSION['email'];?>" name="email" class="txt">
 
-                     <input type="text" required="" placeholder="Location" value="" name="location" class="txt">
+                     <input type="text" required="" placeholder="Location" value="<?php echo $_SESSION['Address'];?>" name="location" class="txt">
 
                      <input type="submit" value="Complete Registration" name="submit" class="txt2">
                 </form>

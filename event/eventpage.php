@@ -1,39 +1,3 @@
-<?php
-
-$url = $_GET['url']; 
-
-
-require_once('Database/conn.php');
-
-
-  $query = "SELECT * FROM `event` WHERE event_url='$url'"; 
-
-$result = mysqli_query($con,$query) or die(mysqli_error());
-
-$row = mysqli_num_rows($result);
-
-
-while( $row = mysqli_fetch_array($result) ){
-
-$event_description =  $row['event_description']; 
-
-$Address = $row['Address']; 
-
-$event_title = $row['event_title']; 
-
-$event_flier = $row['event_flier'];  
-
-$ticket_price = $row['ticket_price']; 
-
-$ticket_qty = $row['ticket_qty'];
-
-$status = $row['status']; 
-
-$sponsor_name = $row['sponsor_name'];     
-
-}
-
-?>
 <html>
 <head>
   <h1></h1>
@@ -64,8 +28,7 @@ $sponsor_name = $row['sponsor_name'];
         <div class="carousel-inner">
     
         <div class="item active">
-              <img src="/eventorhtml/public/images/<?php echo 
-$event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
+              <img src="" alt="Los Angeles" style="width:100%; height: 100%;">
             <div class="carousel-caption">
               <h3>Celine Dion</h3>
               <!--p>LA is always so much fun!</p-->
@@ -285,76 +248,9 @@ $event_flier;?>" alt="Los Angeles" style="width:100%; height: 100%;">
     <div class="row">
     <h2 style="font-weight: bold;"><?php 
 
-    if(isset($event_title)){
-     echo $event_title; 
-    }
 
     ?></h2>
-    <div>
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#home" style="font-size: 12px; font-weight: bold; color:#4f2684;">ABOUT</a></li>
-            <li><a data-toggle="tab" href="#menu1" style="font-size: 12px; font-weight: bold; color:#4f2684;">SPONSORS</a></li>
-            <li><a data-toggle="tab" href="#menu2" style="font-size: 12px; font-weight: bold; color:#4f2684;">LOCATION</a></li>
-            <li><a data-toggle="tab" href="#menu3"style="font-size: 12px; font-weight: bold; color:#4f2684;">VENDORS</a></li>
-          </ul>
-        
-          <div class="tab-content">
-            <div id="home" class="tab-pane fade in active" style="height: 308px;">
-              
-             <p style="padding:10px; text-align:justify; font: grey;">"Ipsum" redirects here. For the car, see Toyota Ipsum.
-                  "Random text" redirects here. It is not to be confused with Random text generator.
-                  Using lorem ipsum to focus attention on graphic elements in a webpage design proposal
-                  
-                  In publishing and graphic design, lorem ipsum is a filler text or greeking commonly used to demonstrate the textual elements of a graphic document or visual presentation. Replacing meaningful content with placeholder text allows designers to design the form of the content before the content itself has been produced.
-                  
-                  </p>
-            </div>
-            <div id="menu1" class="tab-pane fade" style="height: 308px;">
-              <h3>SPONSORS</h3>
-              <p>Set Boxes for sponsors when added at the registration form in a carousel</p>
-            </div>
-            <div id="menu2" class="tab-pane fade" style="height: 308px;">
-              <h3>LOCATION</h3>
-              <p>A generated google map to show the location</p>
-            </div>
-            <div id="menu3" class="tab-pane fade" style="height: 308px;">
-              <h3>VENDORS</h3>
-              <p>Set boxes for vendors that displays vendors in a carousel</p>
-            </div>
-          </div>
-    </div>
-    <div class="row container" style="width: 60%; margin: auto;">
-      <div class="col-sm-4">
-        <p style="font-size: 13px; color:#4f2684;" >REGULAR</p>
-      </div>
-      <div class="col-sm-4">
-          <p style="font-size: 13px; color:#4f2684;">PREMIUM</p>
-      </div>
-      <div class="col-sm-4">
-          <p style="font-size: 13px; color:#4f2684;">EXQUISITE</p>
-      </div>
-      <div class="row container" style="width: 70%;">
-          <div class="col-sm-4">
-            <p style="margin-left:20px; font-weight: bold; color:#4f2684;">  1500  </p>
-          </div>
-          <div class="col-sm-4">
-              <p style="margin-left:50px; font-weight: bold; color:#4f2684;">   5000   </p>
-          </div>
-          <div class="col-sm-4">
-              <p style="margin-left:77px; font-weight:bold; color:#4f2684;">  100000  </p>
-          </div>
-         </div> <!-- bottom button for register and vendor -->
-        <div class="row container" style="margin-left: -98px; margin-top: 22px;">
-          <div class="col-md-3">
-            <a href="vendor.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; padding: 5px; width: 200px;">BECOME A VENDOR</button></a>
-          </div>
-          <div class="col-md-3">
-            <a href="signup.html" style="color:#4f2684;"><button style="background-color:#4f2684; color: white; font-weight: bold; border-radius: 10px; border-radius: 10px; padding: 5px; width: 150px;">REGISTER</button></a>
-          </div>
-        </div>
-    </div>
-  </div>
+    
 </div>
 </div>
 </div>

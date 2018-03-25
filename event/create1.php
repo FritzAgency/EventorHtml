@@ -16,6 +16,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
 
 <link rel="stylesheet" href="style.css">
 <style>
@@ -201,7 +202,7 @@ require_once('../event/createclass.php');
                 <div class="numberCircle">1</div>
                 </div>
                 <div class="col-sm-2" style="padding-left: 8px;">
-                <h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">WHAT</h3>
+                <h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 35px;">What</h3>
             </div>
         </div>
                 <!-- rounded number ends here -->
@@ -238,14 +239,14 @@ if(isset($message)){
                 </div>
                 <!-- end of event name --> 
 
-<div class="form-group">
+                <div class="form-group">
 <label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">DESCRIPTION</label>
 <textarea class="form-control well" rows="5" id="comment" placeholder="Write a short passage that describes your event" name="event_description"></textarea>
 </div> 
 
 <!-- organizers name -->
 <div class="form-group">
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px; margin-top: 20px;margin-top: 20px;">ORGANIZERS NAME </label>
+<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">ORGANIZERS NAME </label>
 <input type="text" class="form-control well" id="usr" placeholder="Organizer Name" name="org_name">
 </div>
 
@@ -253,7 +254,7 @@ if(isset($message)){
 
 <!-- event logo -->
 <div class="form-group" style="margin-bottom: 30px;">
-<label for="OrgName" style="font-weight: bold; border: 1px solid black; background-color: #4f2684; color: white; border-radius: 5px; padding: 10px;">UPLOAD LOGO</label>
+<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">UPLOAD LOGO</label>
 <div class="form-inline">
 <div class="form-group">
 <input type="file" name="org_logo" id="js-upload-files">
@@ -349,7 +350,7 @@ if(isset($message)){
 <div class="numberCircle">2</div>
 </div>
 <div class="col-sm-2" style="padding-left: 8px;">
-<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">WHERE</h3>
+<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 35px;">Where</h3>
 </div>
 </div>
 
@@ -359,7 +360,8 @@ if(isset($message)){
 <!-- address starts here -->
 <div class="form-group"> <!-- Street 1 -->
 <label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">ADDRESS</label>
-<input type="text" class="form-control well" id="street1_id" name="Address" placeholder="Street address, P.O. box, company name, c/o">
+<input type="text" class="form-control well" id="street1_id" name="Address" placeholder="Street address 1,">
+<input type="text" class="form-control well" id="street1_id" name="Address" placeholder="Street address 2.">
 </div>                  
 <!-- column for city and state -->
 <div class="row">
@@ -484,7 +486,7 @@ if(isset($message)){
 <div class="numberCircle">3</div>
 </div>
 <div class="col-sm-2" style="padding-left: 8px;">
-<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">WHEN</h3>
+<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 35px;">When</h3>
 </div>
 </div>
 
@@ -505,7 +507,7 @@ if(isset($message)){
 <div class="row">
 <div class="col-sm-6">
 <div class="input-group bootstrap-timepicker timepicker">
-<input class="form-control well" id="time" name="time" placeholder="Date" type="text"/>
+<input class="form-control well" id="time" name="time" placeholder="Time" type="text"/>
 <!-- <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span> -->
 </div>
 </div>
@@ -513,7 +515,7 @@ if(isset($message)){
 <div>
 <div class="form-group">
 <div class='input-group date' id='datetimepicker10'>
-<input class="form-control well" id="time" name="event_starts" placeholder="Time" type="text"/>
+<input class="form-control well" id="time" name="event_starts" placeholder="Date" type="text"/>
 <!-- <span class="glyphicon glyphicon-calendar"></span> -->
 </div>
 </div>
@@ -542,21 +544,6 @@ if(isset($message)){
 </div>
 </div>
 </div>
-</div>
-
-<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
-    <div data-role="collapsible">
-        <h3>Section 1</h3>
-    <p>I'm the collapsible content for section 1</p>
-    </div>
-    <div data-role="collapsible">
-        <h3>Section 2</h3>
-    <p>I'm the collapsible content for section 2</p>
-    </div>
-    <div data-role="collapsible">
-        <h3>Section 3</h3>
-    <p>I'm the collapsible content for section 3</p>
-    </div>
 </div>
 
 <!-- schedule multiple activties -->
@@ -620,7 +607,7 @@ if(isset($message)){
 <div class="numberCircle">4</div>
 </div>
 <div class="col-sm-2" style="padding-left: 8px;">
-<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">HOW</h3>
+<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 35px;">How</h3>
 </div>
 </div>
 
@@ -628,7 +615,7 @@ if(isset($message)){
 <hr style="margin-top: 10px;">
 <!-- tickest section with form drop -->
 <div class="form-group">
-<ul class="nav nav-pills" style="background-color: white; color: #4f2684;">
+<!-- <ul class="nav nav-pills" style="background-color: white; color: #4f2684;">
 
 <li><a data-toggle="tab" href="#home" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">FREE +</a></li>
 <li><a data-toggle="tab" href="#menu1" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">PAID +</a></li>
@@ -648,9 +635,9 @@ if(isset($message)){
 </div>
 <div id="menu1" class="">
 <div class="row">
-<div class="col-sm-5" style="padding-left: 16px;">
+<div class="col-sm-5" style="padding-left: 16px;"> -->
 <!-- <input class="form-control" id="time" name="ticket_price" placeholder="Ticket Price" type="text" style="margin-top: 10px;"> -->
-</div>
+<!-- </div> -->
 <!--div class="col-sm-5">
 <input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
 </div>
@@ -698,10 +685,10 @@ if(isset($message)){
 <!-- social media section -->
 <div class="form-group">
 
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">ADD SOCIAL MEDIA</label>
+<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">ADD SOCIAL MEDIA LINKS</label>
 <div class="row" style="margin-top: 10px; ">
 <div class="col-sm-5" style="margin:1px; padding-left: 16px;" >
-<input class="form-control well" placeholder="@Facebook.com " type="text" name="facebook" />
+<input class="form-control well" placeholder="Facebook.com" type="text" name="facebook" />
 </div>
 <div class="col-sm-5" style="padding-left: 16px;">
 <input class="form-control well" placeholder="@instagram.com" type="text" name="instagram" />
@@ -759,6 +746,31 @@ if(isset($message)){
             </div>
         </div>
     </div>
+
+<footer style="background-color: #f8f8f8; border: 3px solid #e7e7e7; padding: 10px; margin-top: 10px; height: 100px;">
+  <div class="row">
+    <div class="col-sm-2">
+      <img src="img/logo.png" alt="" class="img-responsive" style="margin-top: -37px;">
+    </div>
+    <div class="col-sm-8">
+      <p style="text-align: center; font-weight: bold; padding-top: 15px;">Copyright &copy; 2018 Eventor.com, all Rights Reserved. All Photos &copy; their respective owners</p>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="row">
+        <div class="col-sm-4">
+          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 <script>
    var coll = document.getElementsByClassName("collapsible");
 var i;

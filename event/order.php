@@ -7,20 +7,62 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <style type="text/css">
-	.invoice-title h2, .invoice-title h3 {
-    display: inline-block;
+form_main {
+    width: 100%;
 }
-
-.table > tbody > tr > .no-line {
-    border-top: none;
+.form_main h4 {
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
 }
-
-.table > thead > tr > .no-line {
-    border-bottom: none;
+.heading {
+    border-bottom: 1px solid #fcab0e;
+    padding-bottom: 9px;
+    position: relative;
 }
-
-.table > tbody > tr > .thick-line {
-    border-top: 2px solid;
+.heading span {
+    background: #9e6600 none repeat scroll 0 0;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 75px;
+}   
+.form {
+    border-radius: 7px;
+    padding: 6px;
+}
+.txt[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt_3[type="text"] {
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt2[type="submit"] {
+    background: #242424 none repeat scroll 0 0;
+    border: 1px solid #4f5c04;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 30%;
+}
+.txt2:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #5793ef;
+    transition: all 0.5s ease 0s;
 }
 
 </style>
@@ -74,14 +116,48 @@
 <div class="col-md-offset-4 col-md-2">
 FREE
    </div>
+</div>
+
+</div>
+
+<div class="container"> 
+<div class="row">
+<div class="col-md-12">
+<p class="lead"> Ticket info</p> 	
+</div>
+</div>
 
 
+<div class="row">
+<!-- form begins --> 
+
+<div class="form">
+                <form action="" method="post" id="contactFrm" name="contactFrm">
+                    <input type="text" required="" placeholder="Please input your Name" value="" name="name" class="txt">
+                    
+                    <input type="text" required="" placeholder="Please input your mobile No" value="" name="mob" class="txt">
+                    
+                    <input type="text" required="" placeholder="Please input your Email" value="" name="email" class="txt">
+
+                     <input type="text" required="" placeholder="Location" value="" name="location" class="txt">
+
+                     <input type="submit" value="Complete Registration" name="submit" class="txt2">
+                </form>
+            </div>
 
 
+<!-- form ends --> 
+
+	
+</div>
+
+	
 </div>
 
 
 
-    </div>
+
+
+
 </body>
 </html>

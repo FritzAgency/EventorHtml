@@ -272,23 +272,6 @@ padding-bottom: 10px;
 <!-- Tab panes -->
 <div class="tab-content">
   <div class="tab-pane active" id="hometab" style="font-size: 17px; color: #626263;">
-
-  <p style="text-align: justify;">!Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam reprehenderit aut nemo, sint quaerat illo non libero perferendis iusto mollitia? Temporibus facilis error optio! Optio cum esse facere vitae. Iusto incidunt enim neque repellendus, repudiandae doloremque excepturi alias est dolores, sed tempore, saepe odio. Quos reprehenderit obcaecati dicta numquam deserunt repellat, maxime facere officiis soluta eaque sed eligendi enim autem iusto asperiores voluptatem mollitia dignissimos porro pariatur! Odio voluptatum non eos itaque dolorem illum, perferendis ea exercitationem esse deserunt. Possimus nemo eligendi accusantium necessitatibus omnis, ipsa vel nostrum ab ipsam veniam voluptates officiis quia sint, laudantium officia impedit praesentium!</p>
-    <p style="text-align: justify;">!Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni libero dicta corrupti mollitia odit temporibus! Doloribus hic rem explicabo illo quos alias minus molestiae. Atque modi ab sed illo quo repellat consequatur dicta, harum alias consequuntur ullam facilis officiis, tenetur officia dolorum cumque incidunt repellendus debitis accusamus molestiae cum adipisci explicabo neque pariatur. Culpa similique, voluptatum rerum a laborum soluta pariatur facilis, enim quo dicta, quisquam maxime ad. Adipisci officia maiores accusamus ea? Officiis sed rem accusantium, est, velit accusamus libero mollitia facere fuga aperiam nostrum earum? Vel asperiores quaerat necessitatibus iure, vitae repudiandae illo harum quisquam provident similique!</p></div>
-
-<!--p style="text-align: justify; "> 
-
-<?php 
-
-/*if(isset($event_description)){
-
-echo $event_description; 
-
-}*/
-?> 
-
-
-  </p-->
 <p style="text-align: justify; ">  
 
 <?php 
@@ -302,12 +285,8 @@ echo $event_description;
 
 
  </p>
-
-  <!--p style="text-align: justify;">!Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni libero dicta corrupti mollitia odit temporibus! Doloribus hic rem explicabo illo quos alias minus molestiae. Atque modi ab sed illo quo repellat consequatur dicta, harum alias consequuntur ullam facilis officiis, tenetur officia dolorum cumque incidunt repellendus debitis accusamus molestiae cum adipisci explicabo neque pariatur. Culpa similique, voluptatum rerum a laborum soluta pariatur facilis, enim quo dicta, quisquam maxime ad. Adipisci officia maiores accusamus ea? Officiis sed rem accusantium, est, velit accusamus libero mollitia facere fuga aperiam nostrum earum? Vel asperiores quaerat necessitatibus iure, vitae repudiandae illo harum quisquam provident similique!</p--></div>
-<!--p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam reprehenderit aut nemo, sint quaerat illo non libero perferendis iusto mollitia? Temporibus facilis error optio! Optio cum esse facere vitae. Iusto incidunt enim neque repellendus, repudiandae doloremque excepturi alias est dolores, sed tempore, saepe odio. Quos reprehenderit obcaecati dicta numquam deserunt repellat, maxime facere officiis soluta eaque sed eligendi enim autem iusto asperiores voluptatem mollitia dignissimos porro pariatur! Odio voluptatum non eos itaque dolorem illum, perferendis ea exercitationem esse deserunt. Possimus nemo eligendi accusantium necessitatibus omnis, ipsa vel nostrum ab ipsam veniam voluptates officiis quia sint, laudantium officia impedit praesentium!</p-->
-
-  
-  <div class="tab-pane" id="javatab">
+</div>
+    <div class="tab-pane" id="javatab">
      <!-- sponsors logo will come here -->
     <div style="margin-left: 74px; margin-right: auto; text-align: center; width: 100%; margin-top: 15px;">
     <div class="row" style="margin-left: auto; margin-right:auto">

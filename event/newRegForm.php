@@ -266,7 +266,7 @@ if(isset($message)){
     <p><input placeholder="Enter Instagram link here" oninput="this.className = ''" name="instagram"></p>
     <p><input placeholder="Enter Twitter handle here" oninput="this.className = ''" name="twitter"></p>
     Ticket Information
-    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_quantity"></p>
+    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
     <p><input placeholder="Ticket Price (Leave empty if ticket is free.)" oninput="this.className = ''" name="ticket_price"></p>
   </div>
 

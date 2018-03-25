@@ -224,7 +224,11 @@ padding-bottom: 10px;
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="img/create.png" alt="Los Angeles" style="width:50%; height: 50%; margin: auto;" class="img-responsive">
+        <!--img src="img/create.png" alt="" style="width:50%; height: 50%; margin: auto;" class="img-responsive"-->
+
+        <img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" class="img-responsive" style="width:50%; height: 50%; margin: auto;">
+
       </div>
 
       <div class="item">
@@ -385,8 +389,18 @@ echo $event_description;
   </div>
   <div class="col-sm-4">
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">1500</h2>
+      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><?php if(isset($ticket_price)){
+     echo '&#8358;'.$ticket_price; 
+    } else {
+      echo 'FREE'; 
+    }
+?>
+    </h2>
+
+
     </div>
+
+
     <div class="col-sm-3">
     <div style="border: 2px solid lightgrey; text-align: center; padding: 0px; margin: auto; border-radius: 43px;">
 
@@ -394,6 +408,9 @@ echo $event_description;
   </div>
 </div>
 </div>
+
+
+
 <!-- price tag ends here -->
 
 <!-- become a vendor and register button starts here -->

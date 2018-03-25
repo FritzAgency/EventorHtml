@@ -167,7 +167,7 @@ outline: 0;
 .sizinga{
 outline: 0;
 color: #000000;
-width: 270px;
+width: 190px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -212,7 +212,7 @@ padding-bottom: 10px;
 </head>
 <body>
 
-<div class="container" style="background-color: white; padding:40px;">
+<div class="container" style="background-color: white; width: 70%; padding:40px;">
   <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding: 10px; border: 2px solid lightgrey;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -273,8 +273,8 @@ padding-bottom: 10px;
 <div class="tab-content">
   <div class="tab-pane active" id="hometab" style="font-size: 17px; color: #626263;">
 
-  <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam reprehenderit aut nemo, sint quaerat illo non libero perferendis iusto mollitia? Temporibus facilis error optio! Optio cum esse facere vitae. Iusto incidunt enim neque repellendus, repudiandae doloremque excepturi alias est dolores, sed tempore, saepe odio. Quos reprehenderit obcaecati dicta numquam deserunt repellat, maxime facere officiis soluta eaque sed eligendi enim autem iusto asperiores voluptatem mollitia dignissimos porro pariatur! Odio voluptatum non eos itaque dolorem illum, perferendis ea exercitationem esse deserunt. Possimus nemo eligendi accusantium necessitatibus omnis, ipsa vel nostrum ab ipsam veniam voluptates officiis quia sint, laudantium officia impedit praesentium!</p>
-    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni libero dicta corrupti mollitia odit temporibus! Doloribus hic rem explicabo illo quos alias minus molestiae. Atque modi ab sed illo quo repellat consequatur dicta, harum alias consequuntur ullam facilis officiis, tenetur officia dolorum cumque incidunt repellendus debitis accusamus molestiae cum adipisci explicabo neque pariatur. Culpa similique, voluptatum rerum a laborum soluta pariatur facilis, enim quo dicta, quisquam maxime ad. Adipisci officia maiores accusamus ea? Officiis sed rem accusantium, est, velit accusamus libero mollitia facere fuga aperiam nostrum earum? Vel asperiores quaerat necessitatibus iure, vitae repudiandae illo harum quisquam provident similique!</p></div>
+  <p style="text-align: justify;">!Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam reprehenderit aut nemo, sint quaerat illo non libero perferendis iusto mollitia? Temporibus facilis error optio! Optio cum esse facere vitae. Iusto incidunt enim neque repellendus, repudiandae doloremque excepturi alias est dolores, sed tempore, saepe odio. Quos reprehenderit obcaecati dicta numquam deserunt repellat, maxime facere officiis soluta eaque sed eligendi enim autem iusto asperiores voluptatem mollitia dignissimos porro pariatur! Odio voluptatum non eos itaque dolorem illum, perferendis ea exercitationem esse deserunt. Possimus nemo eligendi accusantium necessitatibus omnis, ipsa vel nostrum ab ipsam veniam voluptates officiis quia sint, laudantium officia impedit praesentium!</p>
+    <p style="text-align: justify;">!Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni libero dicta corrupti mollitia odit temporibus! Doloribus hic rem explicabo illo quos alias minus molestiae. Atque modi ab sed illo quo repellat consequatur dicta, harum alias consequuntur ullam facilis officiis, tenetur officia dolorum cumque incidunt repellendus debitis accusamus molestiae cum adipisci explicabo neque pariatur. Culpa similique, voluptatum rerum a laborum soluta pariatur facilis, enim quo dicta, quisquam maxime ad. Adipisci officia maiores accusamus ea? Officiis sed rem accusantium, est, velit accusamus libero mollitia facere fuga aperiam nostrum earum? Vel asperiores quaerat necessitatibus iure, vitae repudiandae illo harum quisquam provident similique!</p></div>
 
 <!--p style="text-align: justify; "> 
 
@@ -305,7 +305,7 @@ echo $event_description;
 
   <!--p style="text-align: justify;">!Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni libero dicta corrupti mollitia odit temporibus! Doloribus hic rem explicabo illo quos alias minus molestiae. Atque modi ab sed illo quo repellat consequatur dicta, harum alias consequuntur ullam facilis officiis, tenetur officia dolorum cumque incidunt repellendus debitis accusamus molestiae cum adipisci explicabo neque pariatur. Culpa similique, voluptatum rerum a laborum soluta pariatur facilis, enim quo dicta, quisquam maxime ad. Adipisci officia maiores accusamus ea? Officiis sed rem accusantium, est, velit accusamus libero mollitia facere fuga aperiam nostrum earum? Vel asperiores quaerat necessitatibus iure, vitae repudiandae illo harum quisquam provident similique!</p--></div>
 <!--p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam reprehenderit aut nemo, sint quaerat illo non libero perferendis iusto mollitia? Temporibus facilis error optio! Optio cum esse facere vitae. Iusto incidunt enim neque repellendus, repudiandae doloremque excepturi alias est dolores, sed tempore, saepe odio. Quos reprehenderit obcaecati dicta numquam deserunt repellat, maxime facere officiis soluta eaque sed eligendi enim autem iusto asperiores voluptatem mollitia dignissimos porro pariatur! Odio voluptatum non eos itaque dolorem illum, perferendis ea exercitationem esse deserunt. Possimus nemo eligendi accusantium necessitatibus omnis, ipsa vel nostrum ab ipsam veniam voluptates officiis quia sint, laudantium officia impedit praesentium!</p-->
->>>>>>> Stashed changes
+
   
   <div class="tab-pane" id="javatab">
      <!-- sponsors logo will come here -->

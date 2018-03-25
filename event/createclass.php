@@ -7,7 +7,7 @@
 $target_dir = "../public/images/"; //the storage directory to store the image. 
 
 //when the submit button is clicked
-if(isset($_POST['save'])){
+if(isset($_POST['event_title'])){
 
 $event_title = $_POST['event_title']; //grabs the event title from the form
 $creator_id = $_SESSION['id']; //the creator session id to differentiate creators from each other. 
@@ -87,7 +87,7 @@ $act_img = $_FILES["act_img"]["name"];
 
         if ($result) {
         	//$message = "Your page has been created successfully. Your event page is at '<a href='/eventorhtml/event/page/$event_url'> localhost/eventorhtml/event/page/$event_url</a>"; 
-        	$message = "Your page has been created successfully. Your event page is at '<a href='/eventorhtml/page.php?event_url=$event_url'> localhost/eventorhtml/event/page?event_url=$event_url</a>";        
+        	$message = "Your page has been created successfully. Your event page is at '<a href='/eventorhtml/newGenerated.php?event_url=$event_url'> localhost/eventorhtml/newGenerated.php?event_url=$event_url</a>";        
         }
         else{
         	$message = 'oops, something went wrong'; 

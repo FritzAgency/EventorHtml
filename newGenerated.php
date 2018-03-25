@@ -1,53 +1,4 @@
-<?php
- 
-
-
-require_once('Database/conn.php');
-
-
-//$url = $_GET['url'];
-
-if(isset($_GET['event_url'])){
-
-$event_url = $_GET['event_url'];
-
-$query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
-
-$result = mysqli_query($con,$query) or die(mysqli_error());
-
-$row = mysqli_num_rows($result) or die(mysqli_error());
-
-
-while( $row = mysqli_fetch_array($result) ){
-
-$event_description =  $row['event_description']; 
-//$Address = $row['Address']; 
-$event_title = $row['event_title']; 
-$event_flier = $row['event_flier'];  
-//$event_flier1 = $row['event_flier1'];  
-//$event_flier2 = $row['event_flier2'];  
-$ticket_price = $row['ticket_price']; 
-$ticket_qty = $row['ticket_qty'];
-//$status = $row['status']; 
-//$sponsor_name = $row['sponsor_name']; 
-
-/*$act_name = $row['act_name']; 
-$act_loc = $row['act_loc']; 
-$act_desc = $row['act_desc']; 
-$act_date = $row['act_date']; 
-$act_img = $row['act_img']; */
-
-
-
-}
-
-}
-?>
-
-
-
-
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Generated page</title>
@@ -181,16 +132,7 @@ padding-bottom: 10px;
     </a>
   </div>
   <!-- event title goes in here -->
-<div class="jumbotron"><h1 style="text-align: center;">
-  <?php 
-
-    if(isset($event_title)){
-     echo $event_title; 
-    }
-
-    ?>
-
-</h1></div>
+<div class="jumbotron"><h1 style="text-align: center;">A Trip To The Hills Of <br>Idanran</h1></div>
 <!-- event title ends here -->
 
 <!-- Nav tabs -->
@@ -205,37 +147,8 @@ padding-bottom: 10px;
 
 <!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane active" id="hometab" style="font-size: 17px; color: #626263;">
-
-<!--p style="text-align: justify; "> 
-
-<?php 
-
-/*if(isset($event_description)){
-
-echo $event_description; 
-
-}*/
-?> 
-
-
-  </p-->
-<p style="text-align: justify; ">  
-
-<?php 
-
-if(isset($event_description)){
-
-echo $event_description; 
-
-}
-?> 
-
-
- </p>
-
-  <!--p style="text-align: justify;">!Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni libero dicta corrupti mollitia odit temporibus! Doloribus hic rem explicabo illo quos alias minus molestiae. Atque modi ab sed illo quo repellat consequatur dicta, harum alias consequuntur ullam facilis officiis, tenetur officia dolorum cumque incidunt repellendus debitis accusamus molestiae cum adipisci explicabo neque pariatur. Culpa similique, voluptatum rerum a laborum soluta pariatur facilis, enim quo dicta, quisquam maxime ad. Adipisci officia maiores accusamus ea? Officiis sed rem accusantium, est, velit accusamus libero mollitia facere fuga aperiam nostrum earum? Vel asperiores quaerat necessitatibus iure, vitae repudiandae illo harum quisquam provident similique!</p--></div>
-<!--p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam reprehenderit aut nemo, sint quaerat illo non libero perferendis iusto mollitia? Temporibus facilis error optio! Optio cum esse facere vitae. Iusto incidunt enim neque repellendus, repudiandae doloremque excepturi alias est dolores, sed tempore, saepe odio. Quos reprehenderit obcaecati dicta numquam deserunt repellat, maxime facere officiis soluta eaque sed eligendi enim autem iusto asperiores voluptatem mollitia dignissimos porro pariatur! Odio voluptatum non eos itaque dolorem illum, perferendis ea exercitationem esse deserunt. Possimus nemo eligendi accusantium necessitatibus omnis, ipsa vel nostrum ab ipsam veniam voluptates officiis quia sint, laudantium officia impedit praesentium!</p-->
+  <div class="tab-pane active" id="hometab" style="font-size: 17px; color: #626263;"><p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni libero dicta corrupti mollitia odit temporibus! Doloribus hic rem explicabo illo quos alias minus molestiae. Atque modi ab sed illo quo repellat consequatur dicta, harum alias consequuntur ullam facilis officiis, tenetur officia dolorum cumque incidunt repellendus debitis accusamus molestiae cum adipisci explicabo neque pariatur. Culpa similique, voluptatum rerum a laborum soluta pariatur facilis, enim quo dicta, quisquam maxime ad. Adipisci officia maiores accusamus ea? Officiis sed rem accusantium, est, velit accusamus libero mollitia facere fuga aperiam nostrum earum? Vel asperiores quaerat necessitatibus iure, vitae repudiandae illo harum quisquam provident similique!</p></div>
+<p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam reprehenderit aut nemo, sint quaerat illo non libero perferendis iusto mollitia? Temporibus facilis error optio! Optio cum esse facere vitae. Iusto incidunt enim neque repellendus, repudiandae doloremque excepturi alias est dolores, sed tempore, saepe odio. Quos reprehenderit obcaecati dicta numquam deserunt repellat, maxime facere officiis soluta eaque sed eligendi enim autem iusto asperiores voluptatem mollitia dignissimos porro pariatur! Odio voluptatum non eos itaque dolorem illum, perferendis ea exercitationem esse deserunt. Possimus nemo eligendi accusantium necessitatibus omnis, ipsa vel nostrum ab ipsam veniam voluptates officiis quia sint, laudantium officia impedit praesentium!</p>
   
   <div class="tab-pane" id="javatab">
      <!-- sponsors logo will come here -->

@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+<script type="text/javascript">
+
+</script>
+
+
 <style>
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
@@ -92,6 +99,51 @@ button:hover {
 .step.finish {
   background-color: #4CAF50;
 }
+
+/* css for the image upload*/ 
+
+ #change{
+    background-color: #4f2684;
+    color: white;
+  }
+
+  #change:hover{
+    background-color: lightgrey;
+    color: #4f2684;
+  }
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload1{
+    width: 100%;
+}
+
+#img-upload{
+    width: 100%;
+}
+
+#sponsInp{
+    width: 100%;
+}
+
+
 </style>
 </head>
 <body>
@@ -148,6 +200,10 @@ echo 'Welcome, '. $_SESSION['first_name'];
 <!-- header stops here -->
 </header>
 
+
+<?php 
+require_once('../event/createclass.php'); 
+?> 
 <!-- form starts here -->
 <div class="container">
                 <!-- rounded number ends here -->
@@ -155,27 +211,76 @@ echo 'Welcome, '. $_SESSION['first_name'];
         <!-- line breaker for sections -->
         <hr style="margin-top: 0px; color: #4f2684;">
         <!-- line breaker ends here -->
-<form id="regForm" action="/action_page.php">
+<form id="regForm" action="" method="POST">
   <h1>Create Event Form</h1>
   <!-- One "tab" for each step in the form: -->
+<?php
+if(isset($message)){
+    echo '<div class="alert alert-success">'. $message .'</div>';
+}
+?> 
+
+
+
   <div class="tab">EVENT DETAILS
-    <p><input placeholder="Event Name" oninput="this.className = ''" name="eventname"></p>
-    <p><textarea placeholder="Description" oninput="this.className = ''" name="desciption"></textarea></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Organizer Name" oninput="this.className = ''" name="lname"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook"></p>
+    <p><input placeholder="Event Name"  name="event_title" oninput="this.className = ''" ></p>
+
+    <p><textarea placeholder="Description" oninput="this.className = ''" name="event_description"></textarea></p>
+
+    <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p-->
+
+<div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                    Upload Event Banner.. <input type="file" name="event_flier" id="imgInp1"><input type="text" class="form-control" readonly>
+
+                </span>
+            </span>
+                  </div>
+        <img id='img-upload1'/>
+
+
+
+
+    <p style="margin-top: 10px"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
+
+
+    <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p-->
+
+
+<div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                    Upload Organizer's Logo.. <input type="file" name="org_logo" id="imgInp"><input type="text" class="form-control" readonly>
+
+                </span>
+            </span>
+                  </div>
+        <img id='img-upload'/>
+    
+
+
+
+    <p style="margin-top: 10px"><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook"></p>
+
     <p><input placeholder="Enter Instagram link here" oninput="this.className = ''" name="instagram"></p>
     <p><input placeholder="Enter Twitter handle here" oninput="this.className = ''" name="twitter"></p>
     Ticket Information
-    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="phone"></p>
+    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_quantity"></p>
+    <p><input placeholder="Ticket Price (Leave empty if ticket is free.)" oninput="this.className = ''" name="ticket_price"></p>
   </div>
+
   <div class="tab">SPONSORS
     Sponsors 1
-    <p><input placeholder="Name of Sponosors 1" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="URl" oninput="this.className = ''" name="phone"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="logo"></p>
+    <p><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name"></p>
+
+    <p><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url"></p>
+    
+    <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="logo"></p-->
+
+
+
+
 
     Sponsor 2
     <p><input placeholder="Name of Sponosors 2" oninput="this.className = ''" name="email"></p>
@@ -187,12 +292,18 @@ echo 'Welcome, '. $_SESSION['first_name'];
     <p><input placeholder="URl" oninput="this.className = ''" name="phone"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="logo"></p>
   </div>
+
+
   <div class="tab">Activities
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name"></p>
+
+    <p><input type="file" name="act_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''"></p>
+
+    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_logo"></p>
+
+    <p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="act_date"></p>
+
+    <!--p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p-->
     Activity 2
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
@@ -338,7 +449,7 @@ function validateForm() {
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
   // A loop that checks every input field in the current tab:
-  for (i = 0; i < y.length; i++) {
+  /*for (i = 0; i < y.length; i++) {
     // If a field is empty...
     if (y[i].value == "") {
       // add an "invalid" class to the field:
@@ -346,7 +457,7 @@ function validateForm() {
       // and set the current valid status to false
       valid = false;
     }
-  }
+  }*/ 
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
@@ -363,6 +474,122 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+
+  $(document).ready( function() {
+      $(document).on('change', '.btn-file :file', function() {
+    var input = $(this),
+      label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    input.trigger('fileselect', [label]);
+    });
+
+    $('.btn-file :file').on('fileselect', function(event, label) {
+        
+        var input = $(this).parents('.input-group').find(':text'),
+            log = label;
+        
+        if( input.length ) {
+            input.val(log);
+        } else {
+            if( log ) alert(log);
+        }
+      
+    });
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#img-upload1').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#imgInp1").change(function(){
+        readURL(this);
+    });   
+  });
+
+</script>
+
+
+<script type="text/javascript">
+  
+  $(document).ready( function() {
+      $(document).on('change', '.btn-file :file', function() {
+    var input = $(this),
+      label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    input.trigger('fileselect', [label]);
+    });
+
+    $('.btn-file :file').on('fileselect', function(event, label) {
+        
+        var input = $(this).parents('.input-group').find(':text'),
+            log = label;
+        
+        if( input.length ) {
+            input.val(log);
+        } else {
+            if( log ) alert(log);
+        }
+      
+    });
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#img-upload').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#imgInp").change(function(){
+        readURL(this);
+    });   
+  });
+</script>
+<script type="text/javascript">
+$(document).ready( function() {
+      $(document).on('change', '.btn-file :file', function() {
+    var input = $(this),
+      label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    input.trigger('fileselect', [label]);
+    });
+
+    $('.btn-file :file').on('fileselect', function(event, label) {
+        
+        var input = $(this).parents('.input-group').find(':text'),
+            log = label;
+        
+        if( input.length ) {
+            input.val(log);
+        } else {
+            if( log ) alert(log);
+        }
+      
+    });
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#sponsInp').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#sponsInp").change(function(){
+        readURL(this);
+    });   
+  });
+
 </script>
 
 </body>

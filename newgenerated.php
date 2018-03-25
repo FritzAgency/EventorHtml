@@ -368,7 +368,7 @@ echo $event_description;
     
   </div>
   <div class="col-sm-3" style="margin-top: px;">
-    <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: center">Ticket left</h3>
+    <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: center; width: width: 109px;">Ticket left</h3>
   </div>
   <div class="col-sm-4">
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px;">

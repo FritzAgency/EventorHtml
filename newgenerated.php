@@ -113,7 +113,7 @@ font-size: 18px;
 }
 
 .sizing3{
-width:215px;
+width:170px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -342,12 +342,12 @@ echo $event_description;
   <!-- event information ends here -->
 
 <!-- price tag goes in here -->
-<div class="row" style="width: 40%; margin: auto; margin-top: 70px;">
+<div class="row" style="width: 40%; margin: auto; margin-top: 50px;">
   <div class="col-sm-3">
     
   </div>
-  <div class="col-sm-3" style="margin-top: px;">
-    <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: center">PRICE</h3>
+  <div class="col-sm-3" style="margin-top: px; width: 109px;">
+    <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: right">PRICE</h3>
   </div>
   <div class="col-sm-4">
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px;">
@@ -363,12 +363,12 @@ echo $event_description;
 <!-- price tag ends here -->
 
 <!-- price tag goes in here -->
-<div class="row" style="width: 40%; margin: auto; margin-top: 70px;">
+<div class="row" style="width: 40%; margin: auto; margin-top: 30px;">
   <div class="col-sm-3">
     
   </div>
-  <div class="col-sm-3" style="margin-top: px;">
-    <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: center; width: width: 109px;">Ticket left</h3>
+  <div class="col-sm-3" style="margin-top: px; width: 109px;">
+    <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: right;">Ticket left</h3>
   </div>
   <div class="col-sm-4">
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px;">

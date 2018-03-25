@@ -212,7 +212,7 @@ require_once('../event/createclass.php');
         <hr style="margin-top: 0px; color: #4f2684;">
         <!-- line breaker ends here -->
 <form id="regForm" action="" method="POST" enctype="multipart/form-data">
-  <h1>Create Event Form</h1>
+  <h1 style="font-weight: bold; padding-bottom: 32px; color: #4f2684;">Create Event Form</h1>
   <!-- One "tab" for each step in the form: -->
 <?php
 if(isset($message)){
@@ -222,27 +222,39 @@ if(isset($message)){
 
 
 
-  <div class="tab">EVENT DETAILS
+  <div class="tab"><p style="font-weight: bold; padding-bottom: 10px; color: #4f2684; font-size: 20px; margin-top: 16px;">EVENT DETAILS</p>
     <p><input placeholder="Event Name"  name="event_title" oninput="this.className = ''" ></p>
 
-    <p><textarea placeholder="Description" oninput="this.className = ''" name="event_description"></textarea></p>
+    <p><textarea placeholder="Description" oninput="this.className = ''" name="event_description" style="width: 100%; margin-top: 16px; height: 176px;"></textarea></p>
 
     <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p-->
 
-<div class="input-group">
+<div class="input-group" style="margin-top: 26px;">
             <span class="input-group-btn">
-                <span class="btn btn-default btn-file">
-                    Upload Event Banner.. <input type="file" name="event_flier" id="imgInp1"><input type="text" class="form-control" readonly>
+                <span class="btn btn-default btn-file" style="width: 100%;">
+                    Upload Event Banner<input type="file" name="event_flier" id="imgInp1" style="width: 100%;"><input type="text" class="form-control" readonly>
 
                 </span>
             </span>
                   </div>
         <img id='img-upload1'/>
 
+<p style="margin-top: 29px;"><input placeholder="Enter Address here" oninput="this.className = ''" name="ticket_qty"></p>
+
+<div class="col-sm-6" style="margin-bottom: 29px; margin-top: 29px; padding-left: 0px;">
+<p ><input placeholder="Enter State here" oninput="this.className = ''" name="ticket_qty"></p>
+</div>
+<div class="col-sm-6" style="margin-bottom: 29px; margin-top: 29px; padding-right: 0px;">
+<p><input placeholder="Enter City here" oninput="this.className = ''" name="ticket_qty"></p>
+</div>
+
+<p style="margin-bottom: 29px;  margin-top: 29px;"><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
+    <p><input placeholder="Ticket Price (Leave empty if ticket is free.)" oninput="this.className = ''" name="ticket_price"></p>
 
 
 
-    <p style="margin-top: 10px"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
+
+    <p style="margin-top: 29px; margin-bottom: 29px;"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
 
 
     <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p-->
@@ -250,7 +262,7 @@ if(isset($message)){
 
 <div class="input-group">
             <span class="input-group-btn">
-                <span class="btn btn-default btn-file">
+                <span class="btn btn-default btn-file" style="width: 100%;">
                     Upload Organizer's Logo.. <input type="file" name="org_logo" id="imgInp"><input type="text" class="form-control" readonly>
 
                 </span>
@@ -261,14 +273,11 @@ if(isset($message)){
 
 
 
-    <p style="margin-top: 10px"><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook"></p>
+    <p style="margin-top: 29px; margin-bottom: 29px;"><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook"></p>
 
     <p><input placeholder="Enter Instagram link here" oninput="this.className = ''" name="instagram"></p>
-    <p><input placeholder="Enter Twitter handle here" oninput="this.className = ''" name="twitter"></p>
-    Ticket Information
-    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
-    <p><input placeholder="Ticket Price (Leave empty if ticket is free.)" oninput="this.className = ''" name="ticket_price"></p>
-  </div>
+    <p style="margin-top: 29px; margin-bottom: 29px;"><input placeholder="Enter Twitter handle here" oninput="this.className = ''" name="twitter"></p>
+    
 
   <div class="tab">SPONSORS
     Sponsors 1

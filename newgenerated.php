@@ -57,6 +57,8 @@ $act_img = $row['act_img']; */
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
   <style>
@@ -178,6 +180,7 @@ padding-bottom: 10px;
 </head>
 <body>
 
+
 <div class="container" style="background-color: white; width: 70%; padding:40px;">
   <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding: 10px; border: 2px solid lightgrey;">
     <!-- Indicators -->
@@ -188,12 +191,12 @@ padding-bottom: 10px;
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
+    <div class="carousel-inner" style="width:50%; height: 50%;">
+      <div class="item active" >
         <!--img src="img/create.png" alt="" style="width:50%; height: 50%; margin: auto;" class="img-responsive"-->
 
         <img src="/eventorhtml/public/images/<?php echo 
-$event_flier;?>" class="img-responsive" style="width:50%; height: 50%; margin: auto;">
+$event_flier;?>" class="img-responsive" style="margin: auto;">
 
       </div>
 
@@ -385,11 +388,16 @@ echo $event_description;
     
   </div>
   <div class="col-sm-3" style="margin-top: px;">
-    <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: center; width: width: 109px;">Ticket left</h3>
+    <h2 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: center;  width: 109px;" class="text-justify">TICKET LEFT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h2>
   </div>
   <div class="col-sm-4">
-    <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">500</h2>
+    <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-left: 20px">
+      <h2 style="font-weight:bold; margin: 10px; font-size: 20px; margin-right: 10px"><?php if(isset($ticket_qty)){
+     echo $ticket_qty; 
+    } else {
+      echo 'UNLIMITED'; 
+    }
+?></h2>
     </div>
     <div class="col-sm-3">
     <div style="border: 2px solid lightgrey; text-align: center; padding: 0px; margin: auto; border-radius: 43px;">
@@ -411,12 +419,26 @@ echo $event_description;
     <div style="text-align: center; border-radius: 17px;">
      </div>
 </div>
+
+
+<!--div class="container">
+  <h2>Modal Example</h2-->
+  <!-- Button to Open the Modal -->
+  <!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button-->
+
+  
+
+
+
 <div class="col-sm-4">
       <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">REGISTER</h2>
+      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;" data-toggle="modal" data-target="#myModal">REGISTER</h2>
     </div></a>
 </div>
 </div>
+
 <!-- become a vendor and register button ends here -->
 
 
@@ -667,6 +689,48 @@ echo $event_description;
   <div class="tab-pane" id="csharptab1" style="font-size: 17px; color: #626263">C# is also a programming language</div>
 </div> -->
 <!-- menu tab for event information ends here -->
+<div class="container-fluid">
 
+<!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"> Register.</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p> Number of Ticket: </p>
+          <div class="form-group">
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <!--option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option-->
+      </select>
+
+      </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+       
+       <a href="event/order.php">   <input type="submit" class="btn btn-success btn-lg" value="CHECKOUT"></a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
  </body>
  </html>

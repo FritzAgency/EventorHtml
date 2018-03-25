@@ -211,7 +211,7 @@ require_once('../event/createclass.php');
         <!-- line breaker for sections -->
         <hr style="margin-top: 0px; color: #4f2684;">
         <!-- line breaker ends here -->
-<form id="regForm" action="" method="POST">
+<form id="regForm" action="" method="POST" enctype="multipart/form-data">
   <h1>Create Event Form</h1>
   <!-- One "tab" for each step in the form: -->
 <?php

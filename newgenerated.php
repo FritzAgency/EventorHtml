@@ -102,43 +102,9 @@ border: 0;
           color:grey;
       }
 .nav-pills >
-/*
-.nav-pills > li.item1.active > a, .nav-pills > li.item1.active > a:focus, .nav-tabs > li.item1.active > a:hover {
-border:0;
-background-color:#fff;
-color:#000000;
-}
-
-.nav-pills > li > a{padding:10px 30px}
-.nav-pills > li.active {
-color:#000000;
-}
-
-.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
-  color: #fff;
-  background-color: white;
-} */
-
-/* ul li a {
-background-color: #00ff00;
-color: green;
-}
-
-ul li a:hover {
-background-color: #ff0000;
-color: yellow;
-} */
-
-/* .sizing{
-width: 275px;
-font-size: 18px;
-  font-weight: bolder;
-  text-align: center;
-  color: #000000;
-} */
 
 .sizing2{
-width:360px;
+width:285px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -413,11 +379,32 @@ echo $event_description;
 
 <!-- price tag ends here -->
 
+<!-- price tag goes in here -->
+<div class="row" style="width: 40%; margin: auto; margin-top: 70px;">
+  <div class="col-sm-3">
+    
+  </div>
+  <div class="col-sm-3" style="margin-top: px;">
+    <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: center; width: width: 109px;">Ticket left</h3>
+  </div>
+  <div class="col-sm-4">
+    <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px;">
+      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">500</h2>
+    </div>
+    <div class="col-sm-3">
+    <div style="border: 2px solid lightgrey; text-align: center; padding: 0px; margin: auto; border-radius: 43px;">
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- price tag ends here -->
+
 <!-- become a vendor and register button starts here -->
 <div class="row" style="margin-top: 50px; margin-left: auto; margin-right: auto;">
   <div class="col-sm-4" style="margin-left: 47px;">
   <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">BECOME A VENDOR</h2>
+      <h2 style="font-weight:bold; margin: 10px; font-size: 19px;">BECOME A VENDOR</h2>
     </div></a>
   </div>
   <div class="col-sm-3">
@@ -569,6 +556,8 @@ echo $event_description;
     </div></a>
     </div>
   </div>
+
+
 
 
 

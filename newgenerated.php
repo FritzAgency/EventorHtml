@@ -462,11 +462,11 @@ echo $event_description;
 <div class="tab-content" style="margin-top: 20px;">
   <div class="tab-pane active" id="hometab2" style="font-size: 17px; color: #626263;">
     <!-- activity content goes in here -->
-  <div style="width: 960px; margin: auto;">
+  <div style="width: ; margin: auto;">
         <img src="img/celine.jpg" alt="" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
   </div>
   <!-- tabs for activity information starts here -->
-  <div style="margin-top: 10px;">
+  <div style="margin-top: 100%;">
 <ul class="nav nav-pills" role="tablist" style="background-color: #f3f1f1;" >
   <li class="active sizing3"><a class="sizinga" href="#hometab4" role="tab" data-toggle="tab" style="margin-left: 5px; padding-top: 20px; width: auto; padding-bottom: 20px;">Hiking</a></li>
   <li class="sizing3"><a class="sizinga" href="#javatab4" role="tab" data-toggle="tab" style="padding-top: 20px; padding-bottom: 20px; width: auto;">Jogging</a></li>
@@ -588,29 +588,7 @@ echo $event_description;
 
 
 
-      <!-- <div class="col-sm-6">
-      
-      <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
-      </div>
-      <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-      <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
-      </div>
-
-  <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
-    </div></a>
-
-    </div> -->
-
-
-
-
-
-
-
-<!-- event discriptoion and media, schedule ends hethre -->
+- event discriptoion and media, schedule ends hethre -->
 
 <!-- menu tab for event information goes in here -->
 <!-- Nav tabs

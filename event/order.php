@@ -122,7 +122,7 @@ body {
 <div class="container-fluid">
 
 <div class="row">
-	<div class="col-md-offset-1 col-md-6" style="margin-top: 50px">
+	<div class="col-md-offset-1 col-md-8" style="margin-top: 50px">
 <p class="lead">Complete your ticket details below to reserve a seat at <?php echo $_GET['event'];?> </p>
 
     </div>

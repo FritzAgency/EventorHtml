@@ -293,7 +293,7 @@ echo 'Welcome, '. $_SESSION['first_name'];
       <div class="row" style="width:75%; height: 20%; position:absolute; left: 115px;">
         <!-- create event button -->
         <div style="margin-bottom: 18px;" class="shadow swing">
-          <a href="event/create.php">
+          <a href="event/newRegForm.php">
           <img src="img/create.png" alt="create event design" srcset="" class="img-responsive">
         </a>
         </div>

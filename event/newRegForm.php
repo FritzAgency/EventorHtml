@@ -182,9 +182,12 @@ if(isset($message)){
 
     <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
 
+<p> Upload event Banner </p>
     <p><input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"></p>
-
+<p> Event starts: </p>
     <p><input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts"></p>
+
+<p> Event Ends: </p>
 
     <p><input type="date" placeholder="Event End date" oninput="this.className = ''" name="event_ends"></p>
 
@@ -230,9 +233,10 @@ if(isset($message)){
     <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc" id="autocomplete" onFocus="geolocate()"></p>
 
     <!--p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p-->
+    <p> Activity Time: </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
 
-    
+
     Activity 2
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
@@ -260,11 +264,20 @@ if(isset($message)){
     <p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p>
     <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
   </div>
-  <div class="tab">Scheduled
-    <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
-    <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
+  <div class="tab">Schedule 
+
+    <p><input placeholder="Name of Schedule" oninput="this.className = ''" name="sch_name" ></p>
+
+<p> When the schedule starts: </p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="sch_start"></p>
+
+<p> When the schedule ends: </p>
+    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end"></p>
+
+
+    <!--p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="sch_end"></p-->
+
+
     Scheduled 2
     <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
     <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>

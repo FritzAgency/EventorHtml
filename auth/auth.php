@@ -137,6 +137,12 @@ while( $row = mysqli_fetch_array($result) ){
 
     $_SESSION['first_name'] = $first_name; 
 
+    $_SESSION['last_name'] = $last_name; 
+
+    $_SESSION['phoneNumber'] = $phoneNumber; 
+
+    $_SESSION['Address'] = $Address; 
+
     header("Location: ../index.php");//redirect to the homepage after log in. 
 
 

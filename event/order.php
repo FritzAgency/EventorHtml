@@ -118,7 +118,7 @@ form_main {
 
 <div class="row">
 	<div class="col-md-offset-1 col-md-6" style="margin-top: 50px">
-<p class="lead">Fill your Ticket Details Below to reserve a seat at <?php echo $_GET['event'];?> </p>
+<p class="lead">Complete your ticket details below to reserve a seat at <?php echo $_GET['event'];?> </p>
 
     </div>
 </div>

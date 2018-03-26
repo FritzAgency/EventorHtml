@@ -222,11 +222,17 @@ if(isset($message)){
   </div>
 
   <div class="tab">Activities
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name"></p>
+
+    <p><input type="file" name="act_img" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''"></p>
+
+
+    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc" id="autocomplete" onFocus="geolocate()"></p>
+
+    <!--p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p-->
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+
+    
     Activity 2
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>

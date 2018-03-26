@@ -262,16 +262,7 @@ padding-bottom: 10px;
     <!-- google map goes in here -->
     <h2>Address goes here and the map goes under</h2>
 
-    <!--img src="img/google_maps_hello_world.jpg" alt="" class="img-fluid" style="margin-left: auto; margin-right: auto; margin-top: 15px; width: 1139px;"-->
-
-    <iframe
-  width="1139px"
-  height="450"
-  frameborder="0" style="border:0" 
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDWG8NOZeOKNf9FabkmtqwCpNs04zcT5Yc
-    &q='<?php echo 'Odo Oba Road, Ibadan, Nigeria';?>'" allowfullscreen>
-</iframe>
-
+    <img src="img/google_maps_hello_world.jpg" alt="" class="img-fluid" style="margin-left: auto; margin-right: auto; margin-top: 15px; width: 1139px;">
     <!-- google map stops here -->
   </div>
   <div class="tab-pane" id="mysqltab">

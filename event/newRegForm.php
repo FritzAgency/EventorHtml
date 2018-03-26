@@ -240,14 +240,22 @@ if(isset($message)){
                   </div>
         <img id='img-upload1'/>
 
+<<<<<<< HEAD
 <p style="margin-top: 29px;"><input placeholder="Enter Address here" oninput="this.className = ''" name="ticket_qty" id="autocomplete"></p>
+=======
+<p style="margin-top: 29px;"><input placeholder="Enter Address here" oninput="this.className = ''" name="ticket_qty"></p>
+>>>>>>> 5a5e7c7ba496df835168952c74c2c251315e134f
 
 <div class="col-sm-6" style="margin-bottom: 29px; margin-top: 29px; padding-left: 0px;">
 <p ><input placeholder="Enter State here" oninput="this.className = ''" name="ticket_qty"></p>
 </div>
 <div class="col-sm-6" style="margin-bottom: 29px; margin-top: 29px; padding-right: 0px;">
+<<<<<<< HEAD
 <p><input placeholder="Enter City here" oninput="this.className = ''" name="city" id="locality"
           ></p>
+=======
+<p><input placeholder="Enter City here" oninput="this.className = ''" name="ticket_qty"></p>
+>>>>>>> 5a5e7c7ba496df835168952c74c2c251315e134f
 </div>
 
 <p style="margin-bottom: 29px;  margin-top: 29px;"><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>

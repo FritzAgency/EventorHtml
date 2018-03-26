@@ -146,7 +146,7 @@ font-size: 18px;
 } */
 
 .sizing2{
-width:360px;
+width:231px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -155,7 +155,7 @@ font-size: 18px;
 }
 
 .sizing3{
-width:215px;
+width:138px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -175,8 +175,8 @@ outline: 0;
 .sizinga{
 outline: 0;
 color: #000000;
-width: 270px;
-font-size: 18px;
+width: 199px;
+font-size: 11px;
   font-weight: bolder;
   text-align: center;
 
@@ -215,13 +215,17 @@ background-color: white;
 padding-top: 15px;
 padding-bottom: 10px;
 }
+
+.jumbotron .h1, .jumbotron h1 {
+    font-size: 45px;
+}
 </style>
 
 </head>
 <body>
 
-<div class="container" style="background-color: white; padding:40px;">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding: 10px; border: 2px solid lightgrey;">
+<div class="container" style="background-color: white; width: 60%;">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid lightgrey;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -230,19 +234,19 @@ padding-bottom: 10px;
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" style="width:50%; height: 50%; margin: auto;" >
+    <div class="carousel-inner" style="width:80%; height: 526px; margin: auto;">
       <div class="item active">
         <!--img src="img/create.png" alt="Los Angeles" style="width:50%; height: 50%; margin: auto;" class="img-responsive"-->
         <img src="/eventorhtml/public/images/<?php echo 
-$event_flier;?>" class="img-responsive">
+$event_flier;?>" class="img-responsive" style="width:100%; height: 526px; margin: auto;">
       </div>
-
+      <!-- style="width:50%; height: 50%; margin: auto;" -->
       <div class="item">
-        <img src="img/fourth.png" alt="Chicago" style="width:50%; height: 50%; margin: auto;" class="img-responsive">
+        <img src="img/fourth.png" alt="Chicago"  class="img-responsive" style="width:100%; height: 526px; margin: auto;">
       </div>
     
       <div class="item">
-        <img src="img/fifth.png" alt="New york" style="width:50%; height: 50%; margin: auto;" class="img-responsive">
+        <img src="img/fifth.jpg" alt="New york" class="img-responsive" style="width:100%; height: 526px; margin: auto;">
       </div>
     </div>
 
@@ -256,8 +260,13 @@ $event_flier;?>" class="img-responsive">
       <span class="sr-only">Next</span>
     </a>
   </div>
+
+
+
+
+  <div style="padding:40px; margin-top: 10pxpx;padding-top: 5px; padding-left: 40px; padding-right: 40px;">
   <!-- event title goes in here -->
-<div class="jumbotron"><h1 style="text-align: center;">
+<div class="jumbotron; font-size: 50px;"><h1 style="text-align: center; margin-top: 20px; font-weight:bold;">A Trip To Idanran Hills
   <?php 
 
     if(isset($event_title)){
@@ -270,12 +279,11 @@ $event_flier;?>" class="img-responsive">
 <!-- event title ends here -->
 
 <!-- Nav tabs -->
-<ul class="nav nav-tabs" role="tablist">
+<ul class="nav nav-tabs" role="tablist" style=" margin-left: -53px; margin-right: -53px;">
   <li class="active sizing"><a class="sizinga" href="#hometab" role="tab" data-toggle="tab">ABOUT</a></li>
   <li class="sizing"><a class="sizinga" href="#javatab" role="tab" data-toggle="tab" >SPONSORS</a></li>
   <li class="sizing"><a class="sizinga" href="#csharptab" role="tab" data-toggle="tab">LOCATION</a></li>
-  <li class="sizing"><a class="sizinga" href="#mysqltab" role="tab" data-toggle="tab">VENDORS</a></li>
-  
+  <li class="sizing"><a class="sizinga" href="#mysqltab" role="tab" data-toggle="tab">VENDORS</a></li> 
 </ul>
 </li>
 
@@ -439,7 +447,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
 <div class="row" style="margin-top: 50px; margin-left: auto; margin-right: auto;">
   <div class="col-sm-4" style="margin-left: 47px;">
   <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">BECOME A VENDOR</h2>
+      <h2 style="font-weight:bold; margin: 10px; font-size: 13px;">BECOME A VENDOR</h2>
     </div></a>
   </div>
   <div class="col-sm-3">
@@ -448,7 +456,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
 </div>
 <div class="col-sm-4">
       <a href="#" style="color: #ffffff; text-decoration: none;" data-toggle="modal" data-target="#myModal"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">REGISTER</h2>
+      <h2 style="font-weight:bold; margin: 10px; font-size: 13px;">REGISTER</h2>
     </div></a>
 </div>
 </div>
@@ -470,7 +478,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
 <div class="tab-content" style="margin-top: 20px;">
   <div class="tab-pane active" id="hometab2" style="font-size: 17px; color: #626263;">
     <!-- activity content goes in here -->
-  <div style="width: 960px; margin: auto;">
+  <div style="width: 100%; margin: auto;">
         <img src="img/celine.jpg" alt="" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
   </div>
   <!-- tabs for activity information starts here -->
@@ -622,7 +630,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
   
 </div>
 
-
+</div>
 </div>
 
  </body>

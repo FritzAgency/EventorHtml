@@ -82,7 +82,7 @@ form_main {
 
 <div class="row">
 	<div class="col-md-offset-1 col-md-6" style="margin-top: 50px">
-<p class="lead">Confirm your Details Below to reserve a seat at -- </p>
+<p class="lead">Confirm your Details Below to reserve a seat at <?php echo $_GET['event'];?> </p>
 
     </div>
 </div>
@@ -110,7 +110,7 @@ form_main {
 </div>
 
 <div class="col-md-offset-4 col-md-2">
-111
+<?php echo $_GET['ticket']; ?>
    </div>
 
 
@@ -127,7 +127,7 @@ form_main {
 </div>
 
 <div class="col-md-offset-4 col-md-2">
-FREE
+
    </div>
 </div>
 

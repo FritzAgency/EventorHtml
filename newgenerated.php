@@ -1,3 +1,50 @@
+<?php
+ 
+
+
+require_once('Database/conn.php');
+
+
+//$url = $_GET['url'];
+
+if(isset($_GET['event_url'])){
+
+$event_url = $_GET['event_url'];
+
+$query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
+
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+while( $row = mysqli_fetch_array($result) ){
+
+$event_description =  $row['event_description']; 
+$Address = $row['Address']; 
+$event_title = $row['event_title']; 
+$event_flier = $row['event_flier'];  
+$event_flier1 = $row['event_flier1'];  
+$event_flier2 = $row['event_flier2'];  
+$ticket_price = $row['ticket_price']; 
+$ticket_qty = $row['ticket_qty'];
+$status = $row['status']; 
+$sponsor_name = $row['sponsor_name']; 
+
+$act_name = $row['act_name']; 
+$act_loc = $row['act_loc']; 
+$act_desc = $row['act_desc']; 
+$act_date = $row['act_date']; 
+$act_img = $row['act_img']; 
+
+
+
+}
+
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -198,7 +245,16 @@ padding-bottom: 10px;
     </a>
   </div>
   <!-- event title goes in here -->
-<div class="jumbotron"><h1 style="text-align: center;">A Trip To The Hills Of <br>Idanran</h1></div>
+<div class="jumbotron"><h1 style="text-align: center;">
+  <?php 
+
+    if(isset($event_title)){
+     echo $event_title; 
+    }
+
+    ?>
+
+</h1></div>
 <!-- event title ends here -->
 
 <!-- Nav tabs -->
@@ -214,8 +270,15 @@ padding-bottom: 10px;
 <!-- Tab panes -->
 <div class="tab-content">
   <div class="tab-pane active" id="hometab" style="font-size: 17px; color: #626263;">
-  <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam reprehenderit aut nemo, sint quaerat illo non libero perferendis iusto mollitia? Temporibus facilis error optio! Optio cum esse facere vitae. Iusto incidunt enim neque repellendus, repudiandae doloremque excepturi alias est dolores, sed tempore, saepe odio. Quos reprehenderit obcaecati dicta numquam deserunt repellat, maxime facere officiis soluta eaque sed eligendi enim autem iusto asperiores voluptatem mollitia dignissimos porro pariatur! Odio voluptatum non eos itaque dolorem illum, perferendis ea exercitationem esse deserunt. Possimus nemo eligendi accusantium necessitatibus omnis, ipsa vel nostrum ab ipsam veniam voluptates officiis quia sint, laudantium officia impedit praesentium!</p>
-    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni libero dicta corrupti mollitia odit temporibus! Doloribus hic rem explicabo illo quos alias minus molestiae. Atque modi ab sed illo quo repellat consequatur dicta, harum alias consequuntur ullam facilis officiis, tenetur officia dolorum cumque incidunt repellendus debitis accusamus molestiae cum adipisci explicabo neque pariatur. Culpa similique, voluptatum rerum a laborum soluta pariatur facilis, enim quo dicta, quisquam maxime ad. Adipisci officia maiores accusamus ea? Officiis sed rem accusantium, est, velit accusamus libero mollitia facere fuga aperiam nostrum earum? Vel asperiores quaerat necessitatibus iure, vitae repudiandae illo harum quisquam provident similique!</p></div>
+  <p style="text-align: justify;"><?php 
+
+    if(isset($event_description)){
+     echo $event_description; 
+    }
+
+    ?>
+</p>
+    <!--p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni libero dicta corrupti mollitia odit temporibus! Doloribus hic rem explicabo illo quos alias minus molestiae. Atque modi ab sed illo quo repellat consequatur dicta, harum alias consequuntur ullam facilis officiis, tenetur officia dolorum cumque incidunt repellendus debitis accusamus molestiae cum adipisci explicabo neque pariatur. Culpa similique, voluptatum rerum a laborum soluta pariatur facilis, enim quo dicta, quisquam maxime ad. Adipisci officia maiores accusamus ea? Officiis sed rem accusantium, est, velit accusamus libero mollitia facere fuga aperiam nostrum earum? Vel asperiores quaerat necessitatibus iure, vitae repudiandae illo harum quisquam provident similique!</p--></div>
 
   
   <div class="tab-pane" id="javatab">
@@ -260,9 +323,23 @@ padding-bottom: 10px;
   </div>
   <div class="tab-pane" id="csharptab">
     <!-- google map goes in here -->
-    <h2>Address goes here and the map goes under</h2>
+    <h2><?php 
 
-    <img src="img/google_maps_hello_world.jpg" alt="" class="img-fluid" style="margin-left: auto; margin-right: auto; margin-top: 15px; width: 1139px;">
+    if(isset($Address)){
+     echo $Address; 
+    }
+
+    ?></h2>
+
+    <!--img src="img/google_maps_hello_world.jpg" alt="" class="img-fluid" style="margin-left: auto; margin-right: auto; margin-top: 15px; width: 1139px;"-->
+
+<iframe
+  width="1139px"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDWG8NOZeOKNf9FabkmtqwCpNs04zcT5Yc
+    &q='<?php echo $Address;?>'" allowfullscreen>
+</iframe>
     <!-- google map stops here -->
   </div>
   <div class="tab-pane" id="mysqltab">
@@ -317,7 +394,12 @@ padding-bottom: 10px;
   </div>
   <div class="col-sm-4">
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">1500</h2>
+      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><?php if(isset($ticket_price)){
+              echo '&#8358;'. $ticket_price; 
+            } else{
+              echo 'FREE'; 
+            } ?></h2>
+            
     </div>
     <div class="col-sm-3">
     <div style="border: 2px solid lightgrey; text-align: center; padding: 0px; margin: auto; border-radius: 43px;">
@@ -340,7 +422,7 @@ padding-bottom: 10px;
      </div>
 </div>
 <div class="col-sm-4">
-      <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px;">
+      <a href="#" style="color: #ffffff; text-decoration: none;" data-toggle="modal" data-target="#myModal"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">REGISTER</h2>
     </div></a>
 </div>
@@ -486,6 +568,37 @@ padding-bottom: 10px;
 </div>
  <div class="tab-pane" id="javatab2">The Java is an object-oriented programming language <br /> that was developed by James Gosling from the Sun Microsystems in 1995.</div>
   <div class="tab-pane" id="csharptab2">C# is also a programming language</div>
+
+<div class="container">
+!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Register</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="col-md-4"> Number of Ticket </div> <div class="col-md-offset-4"> 1 </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+         <a href="event/order.php?ticket=1&event=<?php echo $event_title; ?>"> <button type="button" class="btn btn-lg btn-success">CHECKOUT</button></a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+</div>
 
  </body>
  </html>

@@ -111,6 +111,11 @@ form_main {
     transition: all 0.5s ease 0s;
 }
 
+body {
+   background-image: url("img/eventor.jpg");
+
+}   
+
 </style>
 </head>
 <body>

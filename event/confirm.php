@@ -3,6 +3,13 @@
 <head> 
 
 <title> Confirm Ticket Order </title> 
+<style type="text/css">
+body {
+   background-image: url("img/eventor.jpg");
+
+}	
+
+</style>
 
 </head> 
 

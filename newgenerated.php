@@ -30,6 +30,16 @@ $ticket_price = $row['ticket_price'];
 $ticket_qty = $row['ticket_qty'];
 $status = $row['status']; 
 $sponsor_name = $row['sponsor_name']; 
+$sponsor_logo = $row['sponsor_logo'];
+$sponsor_url = $row['sponsor_url'];
+
+$sponsor_name1 = $row['sponsor_name1']; 
+$sponsor_logo1 = $row['sponsor_logo1'];
+$sponsor_url1 = $row['sponsor_url1'];
+
+$sponsor_name2 = $row['sponsor_name2']; 
+$sponsor_logo2 = $row['sponsor_logo2'];
+$sponsor_url2 = $row['sponsor_url2'];
 
 $act_name = $row['act_name']; 
 $act_loc = $row['act_loc']; 
@@ -220,9 +230,11 @@ padding-bottom: 10px;
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div class="carousel-inner" style="width:50%; height: 50%; margin: auto;" >
       <div class="item active">
-        <img src="img/create.png" alt="Los Angeles" style="width:50%; height: 50%; margin: auto;" class="img-responsive">
+        <!--img src="img/create.png" alt="Los Angeles" style="width:50%; height: 50%; margin: auto;" class="img-responsive"-->
+        <img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" class="img-responsive">
       </div>
 
       <div class="item">
@@ -286,15 +298,28 @@ padding-bottom: 10px;
     <div style="margin-left: 74px; margin-right: auto; text-align: center; width: 100%; margin-top: 15px;">
     <div class="row" style="margin-left: auto; margin-right:auto">
       <div class="col-sm-2" style="height: 100px; background-color: grey; margin: 5px;">
-        sponsor 1
+        
+      <a href="<?php if (isset($sponsor_url)){echo $sponsor_url;}?>">  <img src="/eventorhtml/public/images/<?php echo 
+$sponsor_logo;?>" class="img-responsive"> </a>
+<p> <?php if(isset($sponsor_name)){echo $sponsor_name;}?> </p>
+
+
+
+
       </div>
       <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
-        sponsor 2
+        <a href="<?php if (isset($sponsor_url1)){echo $sponsor_url1;}?>">  <img src="/eventorhtml/public/images/<?php echo 
+$sponsor_logo1;?>" class="img-responsive"> </a>
+<p> <?php if(isset($sponsor_name1)){echo $sponsor_name1;}?> </p>
+
       </div>
       <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
-        sponsor 3
+        <a href="<?php if (isset($sponsor_url2)){echo $sponsor_url2;}?>">  <img src="/eventorhtml/public/images/<?php echo 
+$sponsor_logo2;?>" class="img-responsive"> </a>
+<p> <?php if(isset($sponsor_name2)){echo $sponsor_name2;}?> </p>
+
       </div>
-      <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
+      <!--div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
         sponsor 4
       </div>
       <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
@@ -316,7 +341,7 @@ padding-bottom: 10px;
       </div>
       <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
         sponsor 
-      </div>
+      </div-->
     </div>
     </div>
     <!-- sponsors contents ends here -->
@@ -396,7 +421,7 @@ padding-bottom: 10px;
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><?php if(isset($ticket_price)){
               echo '&#8358;'. $ticket_price; 
-            } else{
+            } elseif($row['ticket_price'] <=0 ){
               echo 'FREE'; 
             } ?></h2>
             
@@ -570,7 +595,7 @@ padding-bottom: 10px;
   <div class="tab-pane" id="csharptab2">C# is also a programming language</div>
 
 <div class="container">
-!-- The Modal -->
+<!-- The Modal -->
   <div class="modal fade" id="myModal">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">

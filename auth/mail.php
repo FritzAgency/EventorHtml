@@ -6,7 +6,7 @@ ini_set("smtp_port","587");
 ini_set("sendmail_from","adetonaabiodun12@gmail.com");
 ini_set("SMTP","tls://smtp.gmail.com");*/ 
 error_reporting(E_ALL);
-$to = 'abiodun@fritzng.com';
+$to = 'adetonaabiodun12@gmail.com';
 $subject = "Test email for eventor";
 $headers =  'MIME-Version: 1.0' . "\r\n"; 
 $headers .= 'From: Fritz abiodun@fritzng.com' . "\r\n";

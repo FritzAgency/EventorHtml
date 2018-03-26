@@ -1,7 +1,8 @@
+<?php session_start(); ?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Event form</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -148,6 +149,10 @@ echo 'Welcome, '. $_SESSION['first_name'];
 <!-- header stops here -->
 </header>
 
+<?php 
+require_once('../event/createclass.php'); 
+?> 
+
 <!-- form starts here -->
 <div class="container">
                 <!-- rounded number ends here -->
@@ -155,46 +160,67 @@ echo 'Welcome, '. $_SESSION['first_name'];
         <!-- line breaker for sections -->
         <hr style="margin-top: 0px; color: #4f2684;">
         <!-- line breaker ends here -->
-<form id="regForm" action="/action_page.php">
-  <h1>Create Event Form</h1>
+<form id="regForm" action="" method="post" enctype="multipart/form-data">
+  <h1>Create Event</h1>
   <!-- One "tab" for each step in the form: -->
+              <?php 
+
+if(isset($message)){
+    echo '<div class="alert alert-success">'. $message .'</div>';
+}
+?> 
+
   <div class="tab">EVENT DETAILS
-    <p><input placeholder="Event Name" oninput="this.className = ''" name="eventname"></p>
-    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the event" oninput="this.className = ''" name="desciption"></textarea></p>
-    <p><input placeholder="Enter Address or location of the event here " oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Enter State here"oninput="this.className = ''" name="phone"></p>
-    <p><input placeholder="Enter City here" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="phone"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Event start Time here" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Enter Event Start date" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Enter Event End Time here" oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Event Name" oninput="this.className = ''" name="event_title"></p>
+    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the event" oninput="this.className = ''" name="event_description"></textarea></p>
+    <p><input placeholder="Enter Address or location of the event here " oninput="this.className = ''" name="Address"></p>
+
+    <p><input placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
+    <p><input placeholder="Enter City here" oninput="this.className = ''" name="city"></p>
+
+    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
+
+    <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
+
+    <p><input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"></p>
+
+    <p><input placeholder="Event start Date here" oninput="this.className = ''" name="event_starts"></p>
+
+    <p><input placeholder="Event End date" oninput="this.className = ''" name="event_ends"></p>
+
+    <!--p><input placeholder="Enter Event End Time here" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Enter Event End Date" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Organizer Name" oninput="this.className = ''" name="lname"></p>
+    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p-->
+
+    <p><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
+
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p>
+
     <p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook"></p>
     <p><input placeholder="Enter Instagram link here" oninput="this.className = ''" name="instagram"></p>
     <p><input placeholder="Enter Twitter handle here" oninput="this.className = ''" name="twitter"></p>
   </div>
-  <div class="tab">SPONSORS
-    Sponsors 1
-    <p><input placeholder="Name of Sponosors 1" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="URl" oninput="this.className = ''" name="phone"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="logo"></p>
+  
+  <div class="tab">
+    Sponsor 1 
+    <p><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name"></p>
+    <p><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url"></p>
+    <p><input type="file" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="sponsor_logo"></p>
 
     Sponsor 2
-    <p><input placeholder="Name of Sponosors 2" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="URl" oninput="this.className = ''" name="phone"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="logo"></p>
+    <p><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name1"></p>
+    <p><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url1"></p>
+    <p><input type="file" name="sponsor_logo1" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="logo"></p>
 
     Sponsor 3
-    <p><input placeholder="Name of Sponosors 3" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="URl" oninput="this.className = ''" name="phone"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="logo"></p>
+    <p><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name2"></p>
+
+    <p><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url2"></p>
+
+    <p><input type="file" name="sponsor_logo2" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" ></p>
   </div>
+  
   <div class="tab">Activities
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
@@ -346,7 +372,7 @@ function validateForm() {
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
   // A loop that checks every input field in the current tab:
-  for (i = 0; i < y.length; i++) {
+  /*for (i = 0; i < y.length; i++) {
     // If a field is empty...
     if (y[i].value == "") {
       // add an "invalid" class to the field:
@@ -354,7 +380,7 @@ function validateForm() {
       // and set the current valid status to false
       valid = false;
     }
-  }
+  }*/
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";

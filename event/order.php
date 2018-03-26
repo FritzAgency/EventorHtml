@@ -1,9 +1,45 @@
 <?php session_start();?> 
 <?php 
 
+$_SESSION['event'] = $_GET['event']; 
+
+
 if(isset($_POST['submit'])){
 
-    echo 'You are going to J ZEE event'; 
+$event_name = $_GET['event'];
+
+//$ee = $_SESSION['event'];  
+
+$ticket_id = uniqid(); 
+
+$email = $_POST['email'];
+$ticket_name = $_POST['name']; 
+$to = $email;
+$subject = "Your Ticket Details for $event_name";
+//$header = "From Eventor";
+$headers =  'MIME-Version: 1.0' . "\r\n"; 
+$headers .= 'From: Eventor abiodun@fritzng.com' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$body="<p>Ticket Details for  $event_name</p> 
+
+<p><b> Ticket Name:</b> $ticket_name</br> </p> 
+
+<b> Ticket ID: </b> $ticket_id  
+
+";   
+
+
+$sent=mail($to,$subject,$body,$headers);
+
+if ($sent){
+header("Location: confirm.php");
+    //echo 'success'; 
+}
+
+else{
+    echo 'Something went wrong'; 
+}
+
 }
 
 ?>
@@ -82,7 +118,7 @@ form_main {
 
 <div class="row">
 	<div class="col-md-offset-1 col-md-6" style="margin-top: 50px">
-<p class="lead">Confirm your Details Below to reserve a seat at <?php echo $_GET['event'];?> </p>
+<p class="lead">Fill your Ticket Details Below to reserve a seat at <?php echo $_GET['event'];?> </p>
 
     </div>
 </div>
@@ -146,13 +182,13 @@ form_main {
 
 <div class="form">
                 <form action="" method="post" id="contactFrm" name="contactFrm">
-                    <input type="text" required="" placeholder="Please input your Name" value="<?php echo $_SESSION['first_name'];?>" name="name" class="txt">
+                    <input type="text" required="" placeholder="Please input your Name" value="" name="name" class="txt">
                     
-                    <input type="text" required="" placeholder="Please input your mobile No" value="<?php echo $_SESSION['phoneNumber'];?>" name="mob" class="txt">
+                    <input type="text" required="" placeholder="Please input your mobile No" value="" name="mob" class="txt">
                     
                     <input type="text" required="" placeholder="Please input your Email" value="<?php echo $_SESSION['email'];?>" name="email" class="txt">
 
-                     <input type="text" required="" placeholder="Location" value="<?php echo $_SESSION['Address'];?>" name="location" class="txt">
+                     <input type="text" id="autocomplete" onFocus="geolocate()" required="" placeholder="Location" value="" name="location" class="txt">
 
                      <input type="submit" value="Complete Registration" name="submit" class="txt2">
                 </form>
@@ -173,4 +209,76 @@ form_main {
 
 
 </body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzCW1767osdDu9G37BlTJ88a7i9BNDQ7c&libraries=places&callback=initAutocomplete"
+        async defer></script>
+<script type="text/javascript">
+    // This example displays an address form, using the autocomplete feature
+// of the Google Places API to help users fill in the information.
+
+// This example requires the Places library. Include the libraries=places
+// parameter when you first load the API. For example:
+// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+var placeSearch, autocomplete;
+var componentForm = {
+  street_number: 'short_name',
+  route: 'long_name',
+  locality: 'long_name',
+  administrative_area_level_1: 'short_name',
+  country: 'long_name',
+  postal_code: 'short_name'
+};
+
+function initAutocomplete() {
+  // Create the autocomplete object, restricting the search to geographical
+  // location types.
+  autocomplete = new google.maps.places.Autocomplete(
+      /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+      {types: ['geocode']});
+
+  // When the user selects an address from the dropdown, populate the address
+  // fields in the form.
+  autocomplete.addListener('place_changed', fillInAddress);
+}
+
+function fillInAddress() {
+  // Get the place details from the autocomplete object.
+  var place = autocomplete.getPlace();
+
+  for (var component in componentForm) {
+    document.getElementById(component).value = '';
+    document.getElementById(component).disabled = false;
+  }
+
+  // Get each component of the address from the place details
+  // and fill the corresponding field on the form.
+  for (var i = 0; i < place.address_components.length; i++) {
+    var addressType = place.address_components[i].types[0];
+    if (componentForm[addressType]) {
+      var val = place.address_components[i][componentForm[addressType]];
+      document.getElementById(addressType).value = val;
+    }
+  }
+}
+
+// Bias the autocomplete object to the user's geographical location,
+// as supplied by the browser's 'navigator.geolocation' object.
+function geolocate() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var geolocation = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+      var circle = new google.maps.Circle({
+        center: geolocation,
+        radius: position.coords.accuracy
+      });
+      autocomplete.setBounds(circle.getBounds());
+    });
+  }
+}
+</script>
+
+
 </html>

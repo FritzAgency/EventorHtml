@@ -88,7 +88,6 @@ $act_img = $row['act_img'];
           <h4 class="modal-title">Register.</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-<<<<<<< HEAD
         
         <!-- Modal body -->
         <div class="modal-body">

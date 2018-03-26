@@ -17,6 +17,16 @@ $sponsor_name = $_POST['sponsor_name']; //grabs the sponsor's name from the form
 $sponsor_url = $_POST['sponsor_url']; //grabs the sponsor's url from the form 
 $created_at = date("Y-m-d");
 $sponsor_logo = $_FILES["sponsor_logo"]["name"]; 
+
+$sponsor_name1 = $_POST['sponsor_name1']; //grabs the sponsor's name from the form 
+$sponsor_url1 = $_POST['sponsor_url1']; //grabs the sponsor's url from the form 
+
+$sponsor_logo1 = $_FILES["sponsor_logo1"]["name"]; 
+
+$sponsor_name2 = $_POST['sponsor_name2']; //grabs the sponsor's name from the form 
+$sponsor_url2 = $_POST['sponsor_url2']; //grabs the sponsor's url from the form 
+
+$sponsor_logo2 = $_FILES["sponsor_logo2"]["name"]; 
 $org_name = $_POST['org_name']; 
 $org_logo = $_FILES["org_logo"]["name"]; 
 $event_flier = $_FILES["event_flier"]["name"]; 
@@ -46,6 +56,12 @@ $event_url = preg_replace('/\s+/', '-', $event_title);
 
 
 $target_file = $target_dir . basename($_FILES["sponsor_logo"]["name"]);	
+
+$target_file = $target_dir . basename($_FILES["sponsor_logo1"]["name"]);	
+
+
+$target_file = $target_dir . basename($_FILES["sponsor_logo2"]["name"]);	
+
 $target_file = $target_dir . basename($_FILES["org_logo"]["name"]);	
 $target_file = $target_dir . basename($_FILES["event_flier"]["name"]);	
 $target_file = $target_dir . basename($_FILES["event_flier1"]["name"]);	
@@ -55,6 +71,10 @@ $target_file = $target_dir . basename($_FILES["act_img"]["name"]);
 
 move_uploaded_file($_FILES["sponsor_logo"]["tmp_name"], "../public/images/".$_FILES['sponsor_logo']['name']); 
 
+
+move_uploaded_file($_FILES["sponsor_logo1"]["tmp_name"], "../public/images/".$_FILES['sponsor_logo1']['name']); 
+
+move_uploaded_file($_FILES["sponsor_logo2"]["tmp_name"], "../public/images/".$_FILES['sponsor_logo2']['name']); 
 
 move_uploaded_file($_FILES["org_logo"]["tmp_name"], "../public/images/".$_FILES['org_logo']['name']); 
 

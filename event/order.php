@@ -1,4 +1,13 @@
 <?php session_start();?> 
+<?php 
+
+if(isset($_POST['submit'])){
+
+    echo 'You are going to J ZEE event'; 
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,8 +1,9 @@
+
 <?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Eventor: Create your Event</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -212,7 +213,7 @@ require_once('../event/createclass.php');
         <hr style="margin-top: 0px; color: #4f2684;">
         <!-- line breaker ends here -->
 <form id="regForm" action="" method="POST" enctype="multipart/form-data">
-  <h1>Create Event Form</h1>
+  <h1 style="font-weight: bold; padding-bottom: 32px; color: #4f2684;">Create Event Form</h1>
   <!-- One "tab" for each step in the form: -->
 <?php
 if(isset($message)){
@@ -222,27 +223,40 @@ if(isset($message)){
 
 
 
-  <div class="tab">EVENT DETAILS
+  <div class="tab"><p style="font-weight: bold; padding-bottom: 10px; color: #4f2684; font-size: 20px; margin-top: 16px;">EVENT DETAILS</p>
     <p><input placeholder="Event Name"  name="event_title" oninput="this.className = ''" ></p>
 
-    <p><textarea placeholder="Description" oninput="this.className = ''" name="event_description"></textarea></p>
+    <p><textarea placeholder="Description" oninput="this.className = ''" name="event_description" style="width: 100%; margin-top: 16px; height: 176px;"></textarea></p>
 
     <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p-->
 
-<div class="input-group">
+<div class="input-group" style="margin-top: 26px;">
             <span class="input-group-btn">
-                <span class="btn btn-default btn-file">
-                    Upload Event Banner.. <input type="file" name="event_flier" id="imgInp1"><input type="text" class="form-control" readonly>
+                <span class="btn btn-default btn-file" style="width: 100%;">
+                    Upload Event Banner<input type="file" name="event_flier" id="imgInp1" style="width: 100%;"><input type="text" class="form-control" readonly>
 
                 </span>
             </span>
                   </div>
         <img id='img-upload1'/>
 
+<p style="margin-top: 29px;"><input placeholder="Enter Address here" oninput="this.className = ''" name="ticket_qty" id="autocomplete"></p>
+
+<div class="col-sm-6" style="margin-bottom: 29px; margin-top: 29px; padding-left: 0px;">
+<p ><input placeholder="Enter State here" oninput="this.className = ''" name="ticket_qty"></p>
+</div>
+<div class="col-sm-6" style="margin-bottom: 29px; margin-top: 29px; padding-right: 0px;">
+<p><input placeholder="Enter City here" oninput="this.className = ''" name="city" id="locality"
+          ></p>
+</div>
+
+<p style="margin-bottom: 29px;  margin-top: 29px;"><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
+    <p><input placeholder="Ticket Price (Leave empty if ticket is free.)" oninput="this.className = ''" name="ticket_price"></p>
 
 
 
-    <p style="margin-top: 10px"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
+
+    <p style="margin-top: 29px; margin-bottom: 29px;"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
 
 
     <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p-->
@@ -250,7 +264,7 @@ if(isset($message)){
 
 <div class="input-group">
             <span class="input-group-btn">
-                <span class="btn btn-default btn-file">
+                <span class="btn btn-default btn-file" style="width: 100%;">
                     Upload Organizer's Logo.. <input type="file" name="org_logo" id="imgInp"><input type="text" class="form-control" readonly>
 
                 </span>
@@ -261,14 +275,11 @@ if(isset($message)){
 
 
 
-    <p style="margin-top: 10px"><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook"></p>
+    <p style="margin-top: 29px; margin-bottom: 29px;"><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook"></p>
 
     <p><input placeholder="Enter Instagram link here" oninput="this.className = ''" name="instagram"></p>
-    <p><input placeholder="Enter Twitter handle here" oninput="this.className = ''" name="twitter"></p>
-    Ticket Information
-    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
-    <p><input placeholder="Ticket Price (Leave empty if ticket is free.)" oninput="this.className = ''" name="ticket_price"></p>
-  </div>
+    <p style="margin-top: 29px; margin-bottom: 29px;"><input placeholder="Enter Twitter handle here" oninput="this.className = ''" name="twitter"></p>
+    
 
   <div class="tab">SPONSORS
     Sponsors 1
@@ -327,7 +338,7 @@ if(isset($message)){
     Activity 5
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
+    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="yyyy"></p>
     <p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p>
     <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
   </div>
@@ -592,5 +603,71 @@ $(document).ready( function() {
 
 </script>
 
+<script type="text/javascript">
+  
+var placeSearch, autocomplete;
+var componentForm = {
+  street_number: 'short_name',
+  route: 'long_name',
+  locality: 'long_name',
+  administrative_area_level_1: 'short_name',
+  country: 'long_name',
+  postal_code: 'short_name'
+};
+
+function initAutocomplete() {
+  // Create the autocomplete object, restricting the search to geographical
+  // location types.
+  autocomplete = new google.maps.places.Autocomplete(
+      /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+      {types: ['geocode']});
+
+  // When the user selects an address from the dropdown, populate the address
+  // fields in the form.
+  autocomplete.addListener('place_changed', fillInAddress);
+}
+
+function fillInAddress() {
+  // Get the place details from the autocomplete object.
+  var place = autocomplete.getPlace();
+
+  for (var component in componentForm) {
+    document.getElementById(component).value = '';
+    document.getElementById(component).disabled = false;
+  }
+
+  // Get each component of the address from the place details
+  // and fill the corresponding field on the form.
+  for (var i = 0; i < place.address_components.length; i++) {
+    var addressType = place.address_components[i].types[0];
+    if (componentForm[addressType]) {
+      var val = place.address_components[i][componentForm[addressType]];
+      document.getElementById(addressType).value = val;
+    }
+  }
+}
+
+// Bias the autocomplete object to the user's geographical location,
+// as supplied by the browser's 'navigator.geolocation' object.
+function geolocate() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var geolocation = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+      var circle = new google.maps.Circle({
+        center: geolocation,
+        radius: position.coords.accuracy
+      });
+      autocomplete.setBounds(circle.getBounds());
+    });
+  }
+}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxu4feFQ2KIs7Q1_tDpdAXrp_jgJBKCgg&libraries=places&callback=initAutocomplete"
+        async defer></script>
 </body>
 </html>

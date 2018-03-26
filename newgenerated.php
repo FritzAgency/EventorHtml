@@ -1,53 +1,4 @@
-<?php
- 
-
-
-require_once('Database/conn.php');
-
-
-//$url = $_GET['url'];
-
-if(isset($_GET['event_url'])){
-
-$event_url = $_GET['event_url'];
-
-$query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
-
-$result = mysqli_query($con,$query) or die(mysqli_error());
-
-$row = mysqli_num_rows($result) or die(mysqli_error());
-
-
-while( $row = mysqli_fetch_array($result) ){
-
-$event_description =  $row['event_description']; 
-//$Address = $row['Address']; 
-$event_title = $row['event_title']; 
-$event_flier = $row['event_flier'];  
-//$event_flier1 = $row['event_flier1'];  
-//$event_flier2 = $row['event_flier2'];  
-$ticket_price = $row['ticket_price']; 
-$ticket_qty = $row['ticket_qty'];
-//$status = $row['status']; 
-//$sponsor_name = $row['sponsor_name']; 
-
-/*$act_name = $row['act_name']; 
-$act_loc = $row['act_loc']; 
-$act_desc = $row['act_desc']; 
-$act_date = $row['act_date']; 
-$act_img = $row['act_img']; */
-
-
-
-}
-
-}
-?>
-
-
-
-
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Generated page</title>
@@ -57,8 +8,6 @@ $act_img = $row['act_img']; */
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
   <style>
@@ -104,9 +53,43 @@ border: 0;
           color:grey;
       }
 .nav-pills >
+/*
+.nav-pills > li.item1.active > a, .nav-pills > li.item1.active > a:focus, .nav-tabs > li.item1.active > a:hover {
+border:0;
+background-color:#fff;
+color:#000000;
+}
+
+.nav-pills > li > a{padding:10px 30px}
+.nav-pills > li.active {
+color:#000000;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: white;
+} */
+
+/* ul li a {
+background-color: #00ff00;
+color: green;
+}
+
+ul li a:hover {
+background-color: #ff0000;
+color: yellow;
+} */
+
+/* .sizing{
+width: 275px;
+font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  color: #000000;
+} */
 
 .sizing2{
-width:285px;
+width:360px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -115,7 +98,7 @@ font-size: 18px;
 }
 
 .sizing3{
-width:170px;
+width:215px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -135,7 +118,7 @@ outline: 0;
 .sizinga{
 outline: 0;
 color: #000000;
-width: 190px;
+width: 270px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -180,8 +163,7 @@ padding-bottom: 10px;
 </head>
 <body>
 
-
-<div class="container" style="background-color: white; width: 70%; padding:40px;">
+<div class="container" style="background-color: white; padding:40px;">
   <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding: 10px; border: 2px solid lightgrey;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -191,13 +173,9 @@ padding-bottom: 10px;
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" style="width:50%; height: 50%;">
-      <div class="item active" >
-        <!--img src="img/create.png" alt="" style="width:50%; height: 50%; margin: auto;" class="img-responsive"-->
-
-        <img src="/eventorhtml/public/images/<?php echo 
-$event_flier;?>" class="img-responsive" style="margin: auto;">
-
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/create.png" alt="Los Angeles" style="width:50%; height: 50%; margin: auto;" class="img-responsive">
       </div>
 
       <div class="item">
@@ -220,16 +198,7 @@ $event_flier;?>" class="img-responsive" style="margin: auto;">
     </a>
   </div>
   <!-- event title goes in here -->
-<div class="jumbotron"><h1 style="text-align: center;">
-  <?php 
-
-    if(isset($event_title)){
-     echo $event_title; 
-    }
-
-    ?>
-
-</h1></div>
+<div class="jumbotron"><h1 style="text-align: center;">A Trip To The Hills Of <br>Idanran</h1></div>
 <!-- event title ends here -->
 
 <!-- Nav tabs -->
@@ -245,21 +214,11 @@ $event_flier;?>" class="img-responsive" style="margin: auto;">
 <!-- Tab panes -->
 <div class="tab-content">
   <div class="tab-pane active" id="hometab" style="font-size: 17px; color: #626263;">
-<p style="text-align: justify; ">  
+  <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam reprehenderit aut nemo, sint quaerat illo non libero perferendis iusto mollitia? Temporibus facilis error optio! Optio cum esse facere vitae. Iusto incidunt enim neque repellendus, repudiandae doloremque excepturi alias est dolores, sed tempore, saepe odio. Quos reprehenderit obcaecati dicta numquam deserunt repellat, maxime facere officiis soluta eaque sed eligendi enim autem iusto asperiores voluptatem mollitia dignissimos porro pariatur! Odio voluptatum non eos itaque dolorem illum, perferendis ea exercitationem esse deserunt. Possimus nemo eligendi accusantium necessitatibus omnis, ipsa vel nostrum ab ipsam veniam voluptates officiis quia sint, laudantium officia impedit praesentium!</p>
+    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, magni libero dicta corrupti mollitia odit temporibus! Doloribus hic rem explicabo illo quos alias minus molestiae. Atque modi ab sed illo quo repellat consequatur dicta, harum alias consequuntur ullam facilis officiis, tenetur officia dolorum cumque incidunt repellendus debitis accusamus molestiae cum adipisci explicabo neque pariatur. Culpa similique, voluptatum rerum a laborum soluta pariatur facilis, enim quo dicta, quisquam maxime ad. Adipisci officia maiores accusamus ea? Officiis sed rem accusantium, est, velit accusamus libero mollitia facere fuga aperiam nostrum earum? Vel asperiores quaerat necessitatibus iure, vitae repudiandae illo harum quisquam provident similique!</p></div>
 
-<?php 
-
-if(isset($event_description)){
-
-echo $event_description; 
-
-}
-?> 
-
-
- </p>
-</div>
-    <div class="tab-pane" id="javatab">
+  
+  <div class="tab-pane" id="javatab">
      <!-- sponsors logo will come here -->
     <div style="margin-left: 74px; margin-right: auto; text-align: center; width: 100%; margin-top: 15px;">
     <div class="row" style="margin-left: auto; margin-right:auto">
@@ -303,7 +262,16 @@ echo $event_description;
     <!-- google map goes in here -->
     <h2>Address goes here and the map goes under</h2>
 
-    <img src="img/google_maps_hello_world.jpg" alt="" class="img-fluid" style="margin-left: auto; margin-right: auto; margin-top: 15px; width: 1139px;">
+    <!--img src="img/google_maps_hello_world.jpg" alt="" class="img-fluid" style="margin-left: auto; margin-right: auto; margin-top: 15px; width: 1139px;"-->
+
+    <iframe
+  width="1139px"
+  height="450"
+  frameborder="0" style="border:0" 
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDWG8NOZeOKNf9FabkmtqwCpNs04zcT5Yc
+    &q='<?php echo 'Odo Oba Road, Ibadan, Nigeria';?>'" allowfullscreen>
+</iframe>
+
     <!-- google map stops here -->
   </div>
   <div class="tab-pane" id="mysqltab">
@@ -349,60 +317,16 @@ echo $event_description;
   <!-- event information ends here -->
 
 <!-- price tag goes in here -->
-<div class="row" style="width: 40%; margin: auto; margin-top: 50px;">
+<div class="row" style="width: 40%; margin: auto; margin-top: 70px;">
   <div class="col-sm-3">
     
   </div>
-  <div class="col-sm-3" style="margin-top: px; width: 109px;">
-    <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: right">PRICE</h3>
+  <div class="col-sm-3" style="margin-top: px;">
+    <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: center">PRICE</h3>
   </div>
   <div class="col-sm-4">
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><?php if(isset($ticket_price)){
-     echo '&#8358;'.$ticket_price; 
-    } else {
-      echo 'FREE'; 
-    }
-?>
-    </h2>
-
-
-    </div>
-
-
-    <div class="col-sm-3">
-    <div style="border: 2px solid lightgrey; text-align: center; padding: 0px; margin: auto; border-radius: 43px;">
-
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-<!-- price tag ends here -->
-
-<!-- price tag goes in here -->
-<div class="row" style="width: 40%; margin: auto; margin-top: 30px;">
-  <div class="col-sm-3">
-    
-  </div>
-
-  <div class="col-sm-3" style="margin-top: px;">
-    <h2 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: center;  width: 109px;" class="text-justify">TICKET LEFT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h2>
-
-  <div class="col-sm-3" style="margin-top: px; width: 109px;">
-    <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: right;">Ticket left</h3>
-
-  </div>
-  <div class="col-sm-4">
-    <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-left: 20px">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px; margin-right: 10px"><?php if(isset($ticket_qty)){
-     echo $ticket_qty; 
-    } else {
-      echo 'UNLIMITED'; 
-    }
-?></h2>
+      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">1500</h2>
     </div>
     <div class="col-sm-3">
     <div style="border: 2px solid lightgrey; text-align: center; padding: 0px; margin: auto; border-radius: 43px;">
@@ -417,33 +341,19 @@ echo $event_description;
 <div class="row" style="margin-top: 50px; margin-left: auto; margin-right: auto;">
   <div class="col-sm-4" style="margin-left: 47px;">
   <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 19px;">BECOME A VENDOR</h2>
+      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">BECOME A VENDOR</h2>
     </div></a>
   </div>
   <div class="col-sm-3">
     <div style="text-align: center; border-radius: 17px;">
      </div>
 </div>
-
-
-<!--div class="container">
-  <h2>Modal Example</h2-->
-  <!-- Button to Open the Modal -->
-  <!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-    Open modal
-  </button-->
-
-  
-
-
-
 <div class="col-sm-4">
       <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;" data-toggle="modal" data-target="#myModal">REGISTER</h2>
+      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">REGISTER</h2>
     </div></a>
 </div>
 </div>
-
 <!-- become a vendor and register button ends here -->
 
 
@@ -462,11 +372,11 @@ echo $event_description;
 <div class="tab-content" style="margin-top: 20px;">
   <div class="tab-pane active" id="hometab2" style="font-size: 17px; color: #626263;">
     <!-- activity content goes in here -->
-  <div style="width: ; margin: auto;">
+  <div style="width: 960px; margin: auto;">
         <img src="img/celine.jpg" alt="" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
   </div>
   <!-- tabs for activity information starts here -->
-  <div style="margin-top: 100%;">
+  <div style="margin-top: 10px;">
 <ul class="nav nav-pills" role="tablist" style="background-color: #f3f1f1;" >
   <li class="active sizing3"><a class="sizinga" href="#hometab4" role="tab" data-toggle="tab" style="margin-left: 5px; padding-top: 20px; width: auto; padding-bottom: 20px;">Hiking</a></li>
   <li class="sizing3"><a class="sizinga" href="#javatab4" role="tab" data-toggle="tab" style="padding-top: 20px; padding-bottom: 20px; width: auto;">Jogging</a></li>
@@ -582,138 +492,9 @@ echo $event_description;
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
     </div>
-  </div>
-
-
-
-
-
-- event discriptoion and media, schedule ends hethre -->
-
-<!-- menu tab for event information goes in here -->
-<!-- Nav tabs
-<div style="padding: 20px;"> -->
-<!-- <ul class="nav nav-tabs" role="tablist" style="border-bottom: 3px solid #d1d3d3; ">
-  <li class="active" style="font-size: 17px; width: 245px; text-align: center; margin-right: 20px; font-weight: bolder; color: black;"><a href="#hometab" role="tab" data-toggle="tab">ABOUT</a></li>
-  <li style="font-size: 15px; width: 245px; margin-right: 20px; text-align: center; font-weight: bolder; color: black;"><a href="#javatab" role="tab" data-toggle="tab">SPONSORS</a></li>
-  <li style="font-size: 15px; width: 245px; margin-right: 20px; font-weight: text-align: center; bolder; color: black;"><a href="#csharptab" role="tab" data-toggle="tab">LOCATION</a></li>
-  <li style="font-size: 15px; width: 245px; font-weight: bolder; margin-left: 20px; text-align: center; color: black;"><a href="#mysqltab" role="tab" data-toggle="tab">VENDORS</a></li>
-</ul>
-</li> -->
-
-<!-- Tab panes -->
-<!-- <div class="tab-content" style="margin-top: 15px; margin-left: auto; margin-right: auto;">
-  <div class="tab-pane active" id="hometab" style="f;ont-size: 17px; color: #626263">Write something for home tab</div>
-  <div class="tab-pane" id="javatab" style="font-size: 17px; color: #626263"> -->
-   
-    <!-- vensponsors logo will go here -->
-  <!-- </div> -->
-  <!-- <div class="tab-pane" id="csharptab" style="font-size: 17px; color: #626263">C# is also a programming language</div>
-  <div class="tab-pane" id="mysqltab" style="font-size: 17px; color: #626263"> -->
-    <!-- vendors logo will come here -->
-    <!-- <div style="margin: auto;">
-    <div class="row">
-      <div class="col-md-3" style="height: 100px; background-color: grey; margin: 5px;">
-        vendor 1
-      </div>
-      <div class="col-md-3" style="height: 100px; background-color: grey; margin: 5px;">
-        vendor 2
-      </div>
-      <div class="col-md-3" style="height: 100px; background-color: grey; margin: 5px;">
-        vendor 3
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3" style="height: 100px; background-color: grey; margin: 5px;">
-        vendor 1
-      </div>
-      <div class="col-md-3" style="height: 100px; background-color: grey; margin: 5px;">
-        vendor 2
-      </div>
-      <div class="col-md-3" style="height: 100px; background-color: grey; margin: 5px;">
-        vendor 3
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3" style="height: 100px; background-color: grey; margin: 5px;">
-        vendor 1
-      </div>
-      <div class="col-md-3" style="height: 100px; background-color: grey; margin: 5px;">
-        vendor 2
-      </div>
-      <div class="col-md-3" style="height: 100px; background-color: grey; margin: 5px;">
-        vendor 3
-      </div>
-    </div>
-    </div>
-    <!-- vendors logo will go here -->
-  <!-- </div>
 </div>
+ <div class="tab-pane" id="javatab2">The Java is an object-oriented programming language <br /> that was developed by James Gosling from the Sun Microsystems in 1995.</div>
+  <div class="tab-pane" id="csharptab2">C# is also a programming language</div>
 
-</div> -->
-<!-- menu tab for event information ends here -->
-
-
-
-<!-- menu tab for event information goes in here -->
-<!-- Nav tabs -->
-<!-- <div style="padding: 20px;">
-<ul class="nav nav-pills item1" role="tablist" style="border-bottom: 3px solid #d1d3d3;background-color: grey;">
-  <li class="active item1" style="font-size: 17px; width: 320px; margin-right: 20px; text-align: center; font-weight: bolder; margin-left: 10px; bottom-border-color-transparent;"><a href="#hometab1" role="tab" data-toggle="tab">Activities</a></li>
-  <li class="item1" style="font-size: 15px; width: 320px; margin-right: 20px; font-weight: text-align: center; bolder; margin-left: 10px; bottom-border-color-transparent;"><a href="#javatab1" role="tab" data-toggle="tab">Schedule</a></li>
-  <li class="item1" style="font-size: 15px; width: 320px; margin-right: 20px; font-weight: bolder; text-align: center; margin-left: 10px; bottom-border-color-transparent;"><a href="#csharptab1" role="tab" data-toggle="tab">Media</a></li>
-</ul>
-</li> -->
-
-<!-- Tab panes -->
-<!-- <div class="tab-content" style="margin-top: 15px;">
-  <div class="tab-pane active" id="hometab1" style="font-size: 17px; color: #626263">Write something for home tab</div>
-  <div class="tab-pane" id="javatab1" style="font-size: 17px; color: #626263">The Java is an object-oriented programming language <br /> that was developed by James Gosling from the Sun Microsystems in 1995.</div>
-  <div class="tab-pane" id="csharptab1" style="font-size: 17px; color: #626263">C# is also a programming language</div>
-</div> -->
-<!-- menu tab for event information ends here -->
-<div class="container-fluid">
-
-<!-- The Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title"> Register.</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          <p> Number of Ticket: </p>
-          <div class="form-group">
-      <select class="form-control" id="sel1">
-        <option>1</option>
-        <!--option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option-->
-      </select>
-
-      </div>
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-       
-       <a href="event/order.php">   <input type="submit" class="btn btn-success btn-lg" value="CHECKOUT"></a>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</div>
  </body>
  </html>

@@ -167,6 +167,12 @@ echo 'Welcome, '. $_SESSION['first_name'];
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="phone"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p>
+    <p><input placeholder="Enter Event start Time here" oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Enter Event Start date" oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Enter Event End Time here" oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Enter Event End Date" oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Organizer Name" oninput="this.className = ''" name="lname"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook"></p>

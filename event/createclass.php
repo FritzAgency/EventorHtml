@@ -12,7 +12,7 @@ if(isset($_POST['event_title'])){
 $event_title = $_POST['event_title']; //grabs the event title from the form
 $creator_id = $_SESSION['id']; //the creator session id to differentiate creators from each other. 
 $event_description = $_POST['event_description'];  //grabs the event description from the form
-$status = $_POST['status'];  //grabs the event status from the form 
+//$status = $_POST['status'];  //grabs the event status from the form 
 $sponsor_name = $_POST['sponsor_name']; //grabs the sponsor's name from the form 
 $sponsor_url = $_POST['sponsor_url']; //grabs the sponsor's url from the form 
 $created_at = date("Y-m-d");
@@ -30,8 +30,8 @@ $sponsor_logo2 = $_FILES["sponsor_logo2"]["name"];
 $org_name = $_POST['org_name']; 
 $org_logo = $_FILES["org_logo"]["name"]; 
 $event_flier = $_FILES["event_flier"]["name"]; 
-$event_flier1 = $_FILES["event_flier1"]["name"]; 
-$event_flier2 = $_FILES["event_flier2"]["name"]; 
+//$event_flier1 = $_FILES["event_flier1"]["name"]; 
+//$event_flier2 = $_FILES["event_flier2"]["name"]; 
 
 $Address = $_POST['Address']; 
 $city = $_POST ['city'];  

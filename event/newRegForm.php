@@ -184,9 +184,9 @@ if(isset($message)){
 
     <p><input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"></p>
 
-    <p><input placeholder="Event start Date here" oninput="this.className = ''" name="event_starts"></p>
+    <p><input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts"></p>
 
-    <p><input placeholder="Event End date" oninput="this.className = ''" name="event_ends"></p>
+    <p><input type="date" placeholder="Event End date" oninput="this.className = ''" name="event_ends"></p>
 
     <!--p><input placeholder="Enter Event End Time here" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Enter Event End Date" oninput="this.className = ''" name="email"></p>

@@ -161,7 +161,7 @@ require_once('../event/createclass.php');
         <hr style="margin-top: 0px; color: #4f2684;">
         <!-- line breaker ends here -->
 <form id="regForm" action="" method="post" enctype="multipart/form-data">
-  <h1>Create Event</h1>
+  <h1 style="font-weight: bold; color: #4f2684">CREATE EVENT</h1>
   <!-- One "tab" for each step in the form: -->
               <?php 
 
@@ -170,27 +170,39 @@ if(isset($message)){
 }
 ?> 
 
-  <div class="tab">EVENT DETAILS
+  <div class="tab"><h4 style="font-weight: bold; color: #4f2684">EVENT DETAILS</h4>
     <p><input placeholder="Event Name" oninput="this.className = ''" name="event_title"></p>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the event" oninput="this.className = ''" name="event_description"></textarea></p>
     <p><input placeholder="Enter Address or location of the event here " oninput="this.className = ''" name="Address" id="autocomplete" onFocus="geolocate()"></p>
-
+<div>
+  <div class="col-sm-6">
     <p><input placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
+</div>
+<div class="col-sm-6">
     <p><input placeholder="Enter City here" oninput="this.className = ''" name="city"></p>
-
+</div>
+</div>
+<div>
+<div class="col-sm-6">
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
-
+</div>
+<div class="col-sm-6">
     <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
+</div>
+</div>
+<p style="color: #4f2684">UPLOAD EVENT BANNER </p>
+    <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier">
+<div>
+  <div class="col-sm-6">
+    <p style="color: #4f2684">EVENT STARTS: </p>
+    <input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts" style="color: lightgrey;">
+</div>
+<div class="col-sm-6">
+<p style="color: #4f2684" >EVENT ENDS: </p>
 
-<p> Upload event Banner </p>
-    <p><input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"></p>
-<p> Event starts: </p>
-    <p><input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts"></p>
-
-<p> Event Ends: </p>
-
-    <p><input type="date" placeholder="Event End date" oninput="this.className = ''" name="event_ends"></p>
-
+    <input type="date" placeholder="Event End date" oninput="this.className = ''" name="event_ends" style="color: lightgrey;">
+</div>
+</div>
     <!--p><input placeholder="Enter Event End Time here" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Enter Event End Date" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
@@ -206,25 +218,25 @@ if(isset($message)){
   </div>
   
   <div class="tab">
-    Sponsor 1 
+  <p style="color: #4f2684">SPONSOR 1</p>
     <p><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name"></p>
     <p><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url"></p>
     <p><input type="file" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="sponsor_logo"></p>
 
-    Sponsor 2
-    <p><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name1"></p>
-    <p><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url1"></p>
-    <p><input type="file" name="sponsor_logo1" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="logo"></p>
+    <p style="color: #4f2684">SPONSOR 2</p>
+    <P><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name1"></P>
+    <P><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url1"></P>
+    <P><input type="file" name="sponsor_logo1" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="logo"></p>
 
-    Sponsor 3
-    <p><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name2"></p>
+    <p style="color: #4f2684">SPONSORS 3</p>
+    <input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name2">
 
-    <p><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url2"></p>
+    <P><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url2"></P>
 
-    <p><input type="file" name="sponsor_logo2" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" ></p>
+  <P><input type="file" name="sponsor_logo2" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" ></P>
   </div>
 
-  <div class="tab">Activities
+  <div class="tab"><h4 style="font-weight: bold; color: #4f2684">ACTIVITIES</h4>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name"></p>
 
     <p><input type="file" name="act_img" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''"></p>
@@ -233,38 +245,40 @@ if(isset($message)){
     <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc" id="autocomplete" onFocus="geolocate()"></p>
 
     <!--p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p-->
-    <p> Activity Time: </p>
+    <p> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
 
 
-    Activity 2
+    <p> ACTIVITY 2 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
-    Activity 3
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
+    <p> Activity Time </p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
 
-    Activity 4
+    
+    <p> ACTIVITY 3 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
+    <p> Activity Time </p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
 
-    Activity 5
+    <p> ACTIVITY 4 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
+    <p> Activity Time </p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+
+    <p> ACTIVITY 5 </p>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
+    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
+    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
+    <p> Activity Time </p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
   </div>
-  <div class="tab">Schedule 
+  <div class="tab"><div class="tab"><h4 style="font-weight: bold; color: #4f2684">SCHEDULE</h4> 
 
     <p><input placeholder="Name of Schedule" oninput="this.className = ''" name="sch_name" ></p>
 

@@ -113,6 +113,10 @@ border: 0;
           background-color: lightgrey;
           color:grey;
       }
+
+.nav-pills{
+   margin-right: 0px;
+}
 .nav-pills >
 /*
 .nav-pills > li.item1.active > a, .nav-pills > li.item1.active > a:focus, .nav-tabs > li.item1.active > a:hover {
@@ -150,7 +154,7 @@ font-size: 18px;
 } */
 
 .sizing2{
-width:231px;
+width:267px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -159,7 +163,7 @@ font-size: 18px;
 }
 
 .sizing3{
-width:138px;
+width:159.5px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -449,7 +453,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
 
 <!-- become a vendor and register button starts here -->
 <div class="row" style="margin-top: 50px; margin-left: auto; margin-right: auto;">
-  <div class="col-sm-4" style="margin-left: 47px;">
+  <div class="col-sm-4" style="margin-left: 35px;">
   <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 13px;">BECOME A VENDOR</h2>
     </div></a>
@@ -470,10 +474,10 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
   <!-- event discription and media, schedule starts here -->
   <!-- Nav tabs -->
 <div style="margin-top: 60px;">
-<ul class="nav nav-pills" role="tablist" style="background-color: #f3f1f1;" >
-  <li class="active sizing2"><a class="sizing2" href="#hometab2" role="tab" data-toggle="tab" style="margin-left: 5px; padding-top: 20px; padding-bottom: 20px;">ACTIVITIES</a></li>
-  <li class="sizing2"><a class="sizing2" href="#javatab2" role="tab" data-toggle="tab" style="padding-top: 20px; padding-bottom: 20px;">SCHEDULE</a></li>
-  <li class="sizing2"><a class="sizing2" href="#csharptab2" role="tab" data-toggle="tab" style="padding-top: 20px; padding-bottom: 20px;">MEDIA</a></li>
+<ul class="nav nav-pills" role="tablist" style="background-color: #f3f1f1; margin-left: -54px; margin-right: -53px;" >
+  <li class="active sizing2"><a class="sizing2" href="#hometab2" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">ACTIVITIES</a></li>
+  <li class="sizing2"><a class="sizing2" href="#javatab2" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">SCHEDULE</a></li>
+  <li class="sizing2"><a class="sizing2" href="#csharptab2" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">MEDIA</a></li>
   
 </ul>
 </li>
@@ -481,18 +485,19 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
 <!-- Tab panes -->
 <div class="tab-content" style="margin-top: 20px;">
   <div class="tab-pane active" id="hometab2" style="font-size: 17px; color: #626263;">
-    <!-- activity content goes in here -->
-  <div style="width: 100%; margin: auto;">
+    
+<!-- activity content goes in here -->
+<div style="width: 100%; margin: auto;">
         <img src="img/celine.jpg" alt="" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
   </div>
   <!-- tabs for activity information starts here -->
   <div style="margin-top: 10px;">
-<ul class="nav nav-pills" role="tablist" style="background-color: #f3f1f1;" >
-  <li class="active sizing3"><a class="sizinga" href="#hometab4" role="tab" data-toggle="tab" style="margin-left: 5px; padding-top: 20px; width: auto; padding-bottom: 20px;">Hiking</a></li>
-  <li class="sizing3"><a class="sizinga" href="#javatab4" role="tab" data-toggle="tab" style="padding-top: 20px; padding-bottom: 20px; width: auto;">Jogging</a></li>
-  <li class="sizing3"><a class="sizinga" href="#csharptab4" role="tab" data-toggle="tab" style="padding-top: 20px; padding-bottom: 20px; width: auto;">Dance</a></li>
-  <li class="sizing3"><a class="sizinga" href="#notok4" role="tab" data-toggle="tab" style="padding-top: 20px; padding-bottom: 20px; width: auto;">Tour</a></li>
-  <li class="sizing3"><a class="sizinga" href="#activity4" role="tab" data-toggle="tab" style="padding-top: 20px; padding-bottom: 20px; width: auto;">Tasks</a></li>
+<ul class="nav nav-pills" role="tablist" style="background-color: #f3f1f1; margin-left: -54px; margin-right: -54px;" >
+  <li class="active sizing3"><a class="sizinga" href="#hometab4" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">Hiking</a></li>
+  <li class="sizing3"><a class="sizinga" href="#javatab4" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">Jogging</a></li>
+  <li class="sizing3"><a class="sizinga" href="#csharptab4" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">Dance</a></li>
+  <li class="sizing3"><a class="sizinga" href="#notok4" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">Tour</a></li>
+  <li class="sizing3"><a class="sizinga" href="#activity4" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">Tasks</a></li>
 </ul>
 </li>
 
@@ -504,6 +509,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
       </p>
     </div>
+    <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
     <div class="col-sm-6" style="margin-top: 10px;">
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
@@ -525,6 +531,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
       </p>
     </div>
     <div class="col-sm-6" style="margin-top: 10px;">
+    <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">11:00</h2>
       </div>
@@ -537,7 +544,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
     </div>
-  
+
 
   </div>
   <div class="tab-pane" id="csharptab4">
@@ -548,6 +555,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
       </p>
     </div>
     <div class="col-sm-6" style="margin-top: 10px;">
+    <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">9:00</h2>
       </div>
@@ -569,6 +577,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
       </p>
     </div>
     <div class="col-sm-6" style="margin-top: 10px;">
+    <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">13:00</h2>
       </div>
@@ -590,6 +599,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
       </p>
     </div>
     <div class="col-sm-6" style="margin-top: 10px;">
+    <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">5:00</h2>
       </div>
@@ -602,7 +612,9 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
     </div>
+
 </div>
+<<<<<<< HEAD
  <div class="tab-pane" id="javatab2">
    <?php 
 
@@ -632,8 +644,10 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
 
     <hr>
  </div>
-  <div class="tab-pane" id="csharptab2">C# is also a programming language</div>
 
+ <div class="tab-pane" id="javatab2">The Java is an object-oriented programming language <br /> that was developed by James Gosling from the Sun Microsystems in 1995.</div>
+  <div class="tab-pane" id="csharptab2">C# is also a programming language</div>
+</div>
 <div class="container">
 <!-- The Modal -->
   <div class="modal fade" id="myModal">
@@ -665,5 +679,34 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
 </div>
 </div>
 
+</div>
+</div>
+</div>
+          </div>
+          </div>
+<!-- footer goes here -->
+<footer style="background-color: #f8f8f8; border: 3px solid #e7e7e7; padding: 10px; margin-top: 10px; height: 100px;">
+  <div class="row">
+    <div class="col-sm-2">
+      <img src="img/logo2.png" alt="" class="img-responsive" style="margin-top: 2px;">
+    </div>
+    <div class="col-sm-8">
+      <p style="text-align: center; font-weight: bold; padding-top: 15px;">Copyright &copy; 2018 Eventor.com, all Rights Reserved. All Photos &copy; their respective owners</p>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="row">
+        <div class="col-sm-4">
+          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
  </body>
  </html>

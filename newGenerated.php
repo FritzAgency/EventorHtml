@@ -154,7 +154,7 @@ font-size: 18px;
 } */
 
 .sizing2{
-width:267px;
+width:242px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -163,7 +163,7 @@ font-size: 18px;
 }
 
 .sizing3{
-width:159.5px;
+width:145px;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -183,7 +183,7 @@ outline: 0;
 .sizinga{
 outline: 0;
 color: #000000;
-width: 199px;
+width: 180px;
 font-size: 11px;
   font-weight: bolder;
   text-align: center;

@@ -32,6 +32,10 @@ $status = $row['status'];
 $sponsor_name = $row['sponsor_name']; 
 $sponsor_logo = $row['sponsor_logo'];
 $sponsor_url = $row['sponsor_url'];
+$sch_name = $row['sch_name'];  
+$sch_start = $row['sch_start']; 
+$sch_end = $row['sch_end']; 
+
 
 $sponsor_name1 = $row['sponsor_name1']; 
 $sponsor_logo1 = $row['sponsor_logo1'];
@@ -266,7 +270,7 @@ $event_flier;?>" class="img-responsive" style="width:100%; height: 526px; margin
 
   <div style="padding:40px; margin-top: 10pxpx;padding-top: 5px; padding-left: 40px; padding-right: 40px;">
   <!-- event title goes in here -->
-<div class="jumbotron; font-size: 50px;"><h1 style="text-align: center; margin-top: 20px; font-weight:bold;">A Trip To Idanran Hills
+<div class="jumbotron; font-size: 50px;"><h1 style="text-align: center; margin-top: 20px; font-weight:bold;">
   <?php 
 
     if(isset($event_title)){
@@ -599,7 +603,35 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
     </div></a>
     </div>
 </div>
- <div class="tab-pane" id="javatab2">The Java is an object-oriented programming language <br /> that was developed by James Gosling from the Sun Microsystems in 1995.</div>
+ <div class="tab-pane" id="javatab2">
+   <?php 
+
+    if(isset($sch_name)){
+     echo '<h2><p>'.$sch_name.'<h2><p>'; 
+    }
+
+    ?>
+
+<?php 
+
+    if(isset($sch_start)){
+     echo '<h4><p> Begins: &nbsp;'.$sch_start.'<h4><p>'; 
+    }
+
+    ?>
+
+
+
+<?php 
+
+    if(isset($sch_end)){
+     echo '<h4><p> Ends: &nbsp;'.$sch_end.'<h4><p>'; 
+    }
+
+    ?>
+
+    <hr>
+ </div>
   <div class="tab-pane" id="csharptab2">C# is also a programming language</div>
 
 <div class="container">

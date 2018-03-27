@@ -175,29 +175,29 @@ if(isset($message)){
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the event" oninput="this.className = ''" name="event_description"></textarea></p>
     <p><input placeholder="Enter Address or location of the event here " oninput="this.className = ''" name="Address" id="autocomplete" onFocus="geolocate()"></p>
 <div>
-  <div class="col-sm-6">
+  <div class="col-sm-6" style="padding-left: 0px; margin-top: 16px; margin-bottom: 16px;">
     <p><input placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
 </div>
-<div class="col-sm-6">
+<div class="col-sm-6" style="padding-right: 0px; margin-top: 16px; margin-bottom: 16px;">
     <p><input placeholder="Enter City here" oninput="this.className = ''" name="city"></p>
 </div>
 </div>
 <div>
-<div class="col-sm-6">
+<div class="col-sm-6" style="padding-left: 0px; margin-top: 16px; margin-bottom: 16px;">
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
 </div>
-<div class="col-sm-6">
+<div class="col-sm-6" style="padding-right: 0px; margin-top: 16px; margin-bottom: 16px;">
     <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
 </div>
 </div>
 <p style="color: #4f2684">UPLOAD EVENT BANNER </p>
     <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier">
 <div>
-  <div class="col-sm-6">
+  <div class="col-sm-6" style="padding-left: 0px; margin-top: 16px; margin-bottom: 16px;">
     <p style="color: #4f2684">EVENT STARTS: </p>
     <input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts" style="color: lightgrey;">
 </div>
-<div class="col-sm-6">
+<div class="col-sm-6" style="padding-right: 0px; margin-top: 16px; margin-bottom: 16px;">
 <p style="color: #4f2684" >EVENT ENDS: </p>
 
     <input type="date" placeholder="Event End date" oninput="this.className = ''" name="event_ends" style="color: lightgrey;">

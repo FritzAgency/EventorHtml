@@ -299,7 +299,35 @@ font-weight: bold;
   <div class="container">
     <div class="navbar-header" >
       <div class="col-sm-2 col-md-3 col-xm-4">
-      <a class="navbar-brand" href="#"><p><img src="" alt="Creator logo" srcset="" class="img-fluid"></p></a>
+     
+
+
+<?php
+
+$query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
+
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+while( $row = mysqli_fetch_array($result) ){
+
+
+if (!empty($row['org_logo'])){
+
+   echo "<p><img src='/eventorhtml/public/images/
+$org_logo' class='img-fluid'></p>"; 
+
+}
+else{
+  echo ''; 
+}
+}
+?>
+
+      
+
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="font-weight: bold; color: #4f2684">
@@ -359,7 +387,6 @@ font-weight: bold;
      echo $event_title; 
     }
     ?>
-A TRIP TO THE HILLS OF IDANRAN
 </h1></div>
 <!-- event title ends here -->
 
@@ -408,10 +435,14 @@ $row = mysqli_num_rows($result) or die(mysqli_error());
 while( $row = mysqli_fetch_array($result) ){
 
 
-if ($row['sponsor_logo'] == 1){
-     echo   '<a href="$sponsor_url"> <img src="/eventorhtml/public/images/<?php echo 
-$sponsor_logo;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>'; 
-    echo '<p>$sponsor_name</p>';  
+if (!empty($row['sponsor_logo'])){
+      
+echo "<a href='$sponsor_url'> <img src='/eventorhtml/public/images/
+$sponsor_logo' class='img-fluid'></a>"; 
+
+echo '<p>'.$sponsor_name.'</p>';  
+
+
 }
 else{
   echo ""; 
@@ -420,8 +451,7 @@ else{
 ?>
  </div>
       <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
-  
-<?php
+ <?php
 
 $query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
 
@@ -433,10 +463,14 @@ $row = mysqli_num_rows($result) or die(mysqli_error());
 while( $row = mysqli_fetch_array($result) ){
 
 
-if ($row['sponsor_logo1'] == 1){
-     echo   '<a href="$sponsor_url1"> <img src="/eventorhtml/public/images/<?php echo 
-$sponsor_logo1;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>'; 
-    echo '<p>$sponsor_name1</p>';  
+if (!empty($row['sponsor_logo1'])){
+      
+echo "<a href='$sponsor_url1'> <img src='/eventorhtml/public/images/
+$sponsor_logo1' class='img-fluid'></a>"; 
+
+echo '<p>'.$sponsor_name1.'</p>';  
+
+
 }
 else{
   echo ""; 
@@ -446,7 +480,7 @@ else{
 
       </div>
       <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
-  <?php
+ <?php
 
 $query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
 
@@ -458,17 +492,20 @@ $row = mysqli_num_rows($result) or die(mysqli_error());
 while( $row = mysqli_fetch_array($result) ){
 
 
-if ($row['sponsor_logo2'] == 1){
-     echo   '<a href="$sponsor_url2"> <img src="/eventorhtml/public/images/<?php echo 
-$sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>'; 
-    echo '<p>$sponsor_name2</p>';  
+if (!empty($row['sponsor_logo2'])){
+      
+echo "<a href='$sponsor_url2'> <img src='/eventorhtml/public/images/
+$sponsor_logo2' class='img-fluid'></a>"; 
+
+echo '<p>'.$sponsor_name2.'</p>';  
+
+
 }
 else{
   echo ""; 
 }
 }
 ?>
-
       </div>
       <!--div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
         sponsor 4

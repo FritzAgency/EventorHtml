@@ -202,7 +202,8 @@ if(isset($message)){
 
     <p><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
 
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="logo"></p>
+<p> Organizer's Logo </p>
+    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" ></p>
 
     <p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook"></p>
     <p><input placeholder="Enter Instagram link here" oninput="this.className = ''" name="instagram"></p>

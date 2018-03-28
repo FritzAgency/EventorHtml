@@ -306,7 +306,7 @@ padding-bottom: 10px;
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" style="width:100%; height: 100%; margin: auto;">
+    <div class="carousel-inner" style="width:100%; height: 60%; margin: auto;">
       <div class="item active">
         <!--img src="img/create.png" alt="Los Angeles" style="width:50%; height: 50%; margin: auto;" class="img-responsive"-->
         <img src="/eventorhtml/public/images/<?php echo 

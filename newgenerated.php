@@ -51,7 +51,7 @@ $act_desc = $row['act_desc'];
 $act_date = $row['act_date']; 
 $act_img = $row['act_img']; 
 
-
+$org_logo = $row['org_logo']; 
 
 }
 
@@ -299,7 +299,35 @@ font-weight: bold;
   <div class="container">
     <div class="navbar-header" >
       <div class="col-sm-2 col-md-3 col-xm-4">
-      <a class="navbar-brand" href="#"><p><img src="" alt="Creator logo" srcset="" class="img-fluid"></p></a>
+     
+
+
+<?php
+
+$query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
+
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+while( $row = mysqli_fetch_array($result) ){
+
+
+if (!empty($row['org_logo'])){
+
+   echo "<p><img src='/eventorhtml/public/images/
+$org_logo' class='img-fluid'></p>"; 
+
+}
+else{
+  echo ''; 
+}
+}
+?>
+
+      
+
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="font-weight: bold; color: #4f2684">
@@ -359,7 +387,6 @@ font-weight: bold;
      echo $event_title; 
     }
     ?>
-A TRIP TO THE HILLS OF IDANRAN
 </h1></div>
 <!-- event title ends here -->
 
@@ -394,25 +421,91 @@ A TRIP TO THE HILLS OF IDANRAN
     <div class="row" style="margin-left: auto; margin-right:auto">
       <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
         
-      <a href="<?php if (isset($sponsor_url)){echo $sponsor_url;}?>">  <img src="/eventorhtml/public/images/<?php echo 
-$sponsor_logo;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
-<p> <?php if(isset($sponsor_name)){echo $sponsor_name;}?> </p>
 
 
+<?php
 
+$query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
+
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+while( $row = mysqli_fetch_array($result) ){
+
+
+if (!empty($row['sponsor_logo'])){
+      
+echo "<a href='$sponsor_url'> <img src='/eventorhtml/public/images/
+$sponsor_logo' class='img-fluid'></a>"; 
+
+echo '<p>'.$sponsor_name.'</p>';  
+
+
+}
+else{
+  echo ""; 
+}
+}
+?>
+ </div>
+      <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
+ <?php
+
+$query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
+
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+while( $row = mysqli_fetch_array($result) ){
+
+
+if (!empty($row['sponsor_logo1'])){
+      
+echo "<a href='$sponsor_url1'> <img src='/eventorhtml/public/images/
+$sponsor_logo1' class='img-fluid'></a>"; 
+
+echo '<p>'.$sponsor_name1.'</p>';  
+
+
+}
+else{
+  echo ""; 
+}
+}
+?>
 
       </div>
       <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
-        <a href="<?php if (isset($sponsor_url1)){echo $sponsor_url1;}?>">  <img src="/eventorhtml/public/images/<?php echo 
-$sponsor_logo1;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
-<p> <?php if(isset($sponsor_name1)){echo $sponsor_name1;}?> </p>
+ <?php
 
-      </div>
-      <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
-        <a href="<?php if (isset($sponsor_url2)){echo $sponsor_url2;}?>">  <img src="/eventorhtml/public/images/<?php echo 
-$sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
-<p> <?php if(isset($sponsor_name2)){echo $sponsor_name2;}?> </p>
+$query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
 
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+while( $row = mysqli_fetch_array($result) ){
+
+
+if (!empty($row['sponsor_logo2'])){
+      
+echo "<a href='$sponsor_url2'> <img src='/eventorhtml/public/images/
+$sponsor_logo2' class='img-fluid'></a>"; 
+
+echo '<p>'.$sponsor_name2.'</p>';  
+
+
+}
+else{
+  echo ""; 
+}
+}
+?>
       </div>
     </div>
     </div>

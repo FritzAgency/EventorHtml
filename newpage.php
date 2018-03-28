@@ -628,7 +628,6 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
     </div>
 
 </div>
-<<<<<<< HEAD
  <div class="tab-pane" id="javatab2">
    <?php 
 

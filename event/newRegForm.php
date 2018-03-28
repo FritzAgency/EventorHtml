@@ -174,35 +174,27 @@ if(isset($message)){
     <p><input placeholder="Event Name" oninput="this.className = ''" name="event_title"></p>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the event" oninput="this.className = ''" name="event_description"></textarea></p>
     <p><input placeholder="Enter Address or location of the event here " oninput="this.className = ''" name="Address" id="autocomplete" onFocus="geolocate()"></p>
-<div>
-  <div class="col-sm-6" style="padding-left: 0px; margin-top: 16px; margin-bottom: 16px;">
+
     <p><input placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
-</div>
-<div class="col-sm-6" style="padding-right: 0px; margin-top: 16px; margin-bottom: 16px;">
+
     <p><input placeholder="Enter City here" oninput="this.className = ''" name="city"></p>
-</div>
-</div>
-<div>
-<div class="col-sm-6" style="padding-left: 0px; margin-top: 16px; margin-bottom: 16px;">
+
+
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
-</div>
-<div class="col-sm-6" style="padding-right: 0px; margin-top: 16px; margin-bottom: 16px;">
+
     <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
-</div>
-</div>
+
 <p style="color: #4f2684">UPLOAD EVENT BANNER </p>
     <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier">
-<div>
-  <div class="col-sm-6" style="padding-left: 0px; margin-top: 16px; margin-bottom: 16px;">
+
     <p style="color: #4f2684">EVENT STARTS: </p>
     <input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts" style="color: lightgrey;">
-</div>
-<div class="col-sm-6" style="padding-right: 0px; margin-top: 16px; margin-bottom: 16px;">
+
+
 <p style="color: #4f2684" >EVENT ENDS: </p>
 
     <input type="date" placeholder="Event End date" oninput="this.className = ''" name="event_ends" style="color: lightgrey;">
-</div>
-</div>
+
     <!--p><input placeholder="Enter Event End Time here" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Enter Event End Date" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
@@ -278,7 +270,7 @@ if(isset($message)){
     <p> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
   </div>
-  <div class="tab"><div class="tab"><h4 style="font-weight: bold; color: #4f2684">SCHEDULE</h4> 
+  <div class="tab"><h4 style="font-weight: bold; color: #4f2684">SCHEDULE</h4> 
 
     <p><input placeholder="Name of Schedule" oninput="this.className = ''" name="sch_name" ></p>
 
@@ -321,6 +313,7 @@ if(isset($message)){
       <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
     </div>
   </div>
+
   <!-- Circles which indicates the steps of the form: -->
   <div style="text-align:center;margin-top:40px;">
     <span class="step"></span>

@@ -157,7 +157,7 @@ font-size: 18px;
 } */
 
 .sizing2{
-width:242px;
+width:49.5%;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -166,7 +166,7 @@ font-size: 18px;
 }
 
 .sizing3{
-width:145px;
+width:20%;
 font-size: 18px;
   font-weight: bolder;
   text-align: center;
@@ -414,29 +414,6 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
 <p> <?php if(isset($sponsor_name2)){echo $sponsor_name2;}?> </p>
 
       </div>
-      <!--div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
-        sponsor 4
-      </div>
-      <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
-        sponsor 
-      </div>
-    </div>
-    <div class="row" style="margin-left: auto; margin-right:auto">
-      <div class="col-sm-2" style="height: 100px; background-color: grey; margin: 5px;">
-        sponsor 1
-      </div>
-      <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
-        sponsor 2
-      </div>
-      <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
-        sponsor 3
-      </div>
-      <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
-        sponsor 4
-      </div>
-      <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
-        sponsor 
-      </div-->
     </div>
     </div>
     <!-- sponsors contents ends here -->
@@ -550,177 +527,202 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
   <!-- Nav tabs -->
 <div style="margin-top: 60px;">
 <ul class="nav nav-pills" role="tablist" style="background-color: #f3f1f1; margin-left: -54px; margin-right: -53px;" >
-  <li class="active sizing2"><a class="sizing2" href="#hometab2" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">ACTIVITIES</a></li>
-  <li class="sizing2"><a class="sizing2" href="#javatab2" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">SCHEDULE</a></li>
-  <li class="sizing2"><a class="sizing2" href="#csharptab2" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">MEDIA</a></li>
-  
+  <li class="active sizing2"><a href="#hometab2" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">ACTIVITIES</a></li>
+  <li class="sizing2"><a href="#javatab2" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">SCHEDULE</a></li>
 </ul>
 </li>
 
 <!-- Tab panes -->
 <div class="tab-content" style="margin-top: 20px;">
   <div class="tab-pane active" id="hometab2" style="font-size: 17px; color: #626263;">
-    
-<!-- activity content goes in here -->
-<div style="width: 100%; margin: auto;">
-        <img src="img/celine.jpg" alt="" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
-  </div>
-  <!-- tabs for activity information starts here -->
-  <div style="margin-top: 10px;">
-<ul class="nav nav-pills" role="tablist" style="background-color: #f3f1f1; margin-left: -54px; margin-right: -54px;" >
-  <li class="active sizing3"><a class="sizinga" href="#hometab4" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">Hiking</a></li>
-  <li class="sizing3"><a class="sizinga" href="#javatab4" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">Jogging</a></li>
-  <li class="sizing3"><a class="sizinga" href="#csharptab4" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">Dance</a></li>
-  <li class="sizing3"><a class="sizinga" href="#notok4" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">Tour</a></li>
-  <li class="sizing3"><a class="sizinga" href="#activity4" role="tab" data-toggle="tab" style="padding-top: 20px; margin-left: 0px; margin-right: 0px; padding-bottom: 20px; width: auto; border-left-width: 0px; border-right-width: 0px;">Tasks</a></li>
+    <ul class="nav nav-tabs" role="tablist" style=" margin-left: -53px; margin-right: -53px;">
+  <li class="active sizing3"><a href="#hometab5" role="tab" data-toggle="tab">Hicking</a></li>
+  <li class="sizing3"><a href="#javatab5" role="tab" data-toggle="tab" >Jogging</a></li>
+  <li class="sizing3"><a href="#csharptab5" role="tab" data-toggle="tab">Dance</a></li>
+  <li class="sizing3"><a href="#mysqltab5" role="tab" data-toggle="tab">Running</a></li> 
+  <li class="sizing3"><a href="#fight" role="tab" data-toggle="tab">Fighting</a></li> 
 </ul>
 </li>
 
 <!-- Tab panes -->
-<div class="tab-content" style="margin-top: 20px">
-  <div class="tab-pane active" id="hometab4">
+<div class="tab-content">
+  <div class="tab-pane active" id="hometab5" style="font-size: 17px; color: #626263;">
+
+            <div style="width: 100%; margin: auto;">
+        <img src="" alt="activity image goes in here 1" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
+  </div>
+            <!-- activity schedule and time goes in here -->
+            <div class="row">
     <div class="col-sm-6">
-      <p style="text-align:justify;">
+        <p style="text-align:justify;">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
-      </p>
+        </p>
     </div>
-    <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-    <div class="col-sm-6" style="margin-top: 10px;">
-    <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
-      </div>
-      <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-      <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
-      </div>
-
-  <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
+   <div class="col-sm-6">
+        <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+        <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">23:00</h2>
+        </div>
+        <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+        <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">4:00</h2>
+        </div>
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
-    </div>
+   </div>
+   </div>  
+            <!-- activity and schedule time ends here -->
+
+      </div>
+  <div class="tab-pane" id="javatab5">
+
+
+          <div style="width: 100%; margin: auto;">
+        <img src="" alt="activity image goes in here2" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
   </div>
-  <div class="tab-pane" id="javatab4">
-  <div class="col-sm-6">
-      <p style="text-align:justify;">
+  <div class="row">
+    <div class="col-sm-6">
+        <p style="text-align:justify;">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
-      </p>
+        </p>
     </div>
-    <div class="col-sm-6" style="margin-top: 10px;">
-    <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-    <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">11:00</h2>
-      </div>
-      <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-      <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">19:00</h2>
-      </div>
-
-  <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
+   <div class="col-sm-6">
+        <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+        <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">15:00</h2>
+        </div>
+        <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+        <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">22:00</h2>
+        </div>
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
-    </div>
+   </div>
+   </div>  
 
 
-  </div>
-  <div class="tab-pane" id="csharptab4">
-    
-  <div class="col-sm-6">
-      <p style="text-align:justify;">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
-      </p>
-    </div>
-    <div class="col-sm-6" style="margin-top: 10px;">
-    <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-    <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">9:00</h2>
-      </div>
-      <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-      <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">4:00</h2>
-      </div>
-
-  <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
-    </div></a>
-    </div>
 
   </div>
-  <div class="tab-pane" id="notok4">
-  <div class="col-sm-6">
-      <p style="text-align:justify;">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
-      </p>
-    </div>
-    <div class="col-sm-6" style="margin-top: 10px;">
-    <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-    <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">13:00</h2>
-      </div>
-      <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-      <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">22:00</h2>
-      </div>
+  <div class="tab-pane" id="csharptab5">
 
-  <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
+
+<div style="width: 100%; margin: auto;">
+        <img src="" alt="activity image goes in here3" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+        <p style="text-align:justify;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
+        </p>
+    </div>
+   <div class="col-sm-6">
+        <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+        <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">18:00</h2>
+        </div>
+        <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+        <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
+        </div>
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
-    </div>  
+   </div>
+   </div>  
+
+
 
   </div>
-  <div class="tab-pane" id="activity4">
-  <div class="col-sm-6">
-      <p style="text-align:justify;">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
-      </p>
-    </div>
-    <div class="col-sm-6" style="margin-top: 10px;">
-    <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-    <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">5:00</h2>
-      </div>
-      <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-      <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
-      </div>
+  <div class="tab-pane" id="mysqltab5">
 
-  <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
+
+  <div style="width: 100%; margin: auto;">
+        <img src="" alt="activity image goes in here4" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
+  </div>
+
+    <div class="row">
+    <div class="col-sm-6">
+        <p style="text-align:justify;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
+        </p>
+    </div>
+   <div class="col-sm-6">
+        <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+        <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+        </div>
+        <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+        <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+        </div>
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
+   </div>
+   </div>  
+</div>
+<div class="tab-pane" id="fight">
+
+<div style="width: 100%; margin: auto;">
+        <img src="" alt="activity image goes in here5" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+        <p style="text-align:justify;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
+        </p>
     </div>
+   <div class="col-sm-6">
+        <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+        <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">6:00</h2>
+        </div>
+        <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+        <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
+        </div>
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
+      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
+    </div></a>
+   </div>
+   </div>  
 
 </div>
- <div class="tab-pane" id="javatab2">
-   <?php 
+  <!-- event information ends here -->
+    </div>
+</div>    
+    <div class="tab-pane" id="javatab2">
+              <?php 
 
-    if(isset($sch_name)){
-     echo '<h2><p>'.$sch_name.'<h2><p>'; 
-    }
+                if(isset($sch_name)){
+                echo '<h2><p>'.$sch_name.'<h2><p>'; 
+                }
 
-    ?>
+                ?>
+            something here
+            <?php 
 
-<?php 
+                if(isset($sch_start)){
+                echo '<h4><p> Begins: &nbsp;'.$sch_start.'<h4><p>'; 
+                }
 
-    if(isset($sch_start)){
-     echo '<h4><p> Begins: &nbsp;'.$sch_start.'<h4><p>'; 
-    }
-
-    ?>
+                ?>
 
 
 
-<?php 
+            <?php 
 
-    if(isset($sch_end)){
-     echo '<h4><p> Ends: &nbsp;'.$sch_end.'<h4><p>'; 
-    }
+                if(isset($sch_end)){
+                echo '<h4><p> Ends: &nbsp;'.$sch_end.'<h4><p>'; 
+                }
 
-    ?>
+                ?>
 
-    <hr>
- </div>
+                <hr>
+    </div>
 
- <div class="tab-pane" id="javatab2">The Java is an object-oriented programming language <br /> that was developed by James Gosling from the Sun Microsystems in 1995.</div>
-  <div class="tab-pane" id="csharptab2">C# is also a programming language</div>
 </div>
 <div class="container">
 <!-- The Modal -->

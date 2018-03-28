@@ -66,8 +66,10 @@ $target_file = $target_dir . basename($_FILES["sponsor_logo1"]["name"]);
 
 $target_file = $target_dir . basename($_FILES["sponsor_logo2"]["name"]);	
 
-$target_file = $target_dir . basename($_FILES["org_logo"]["name"]);	
 $target_file = $target_dir . basename($_FILES["event_flier"]["name"]);	
+
+$target_file = $target_dir . basename($_FILES["org_logo"]["name"]);	
+
 //$target_file = $target_dir . basename($_FILES["event_flier1"]["name"]);	
 //$target_file = $target_dir . basename($_FILES["event_flier2"]["name"]);	
 $target_file = $target_dir . basename($_FILES["act_img"]["name"]);	

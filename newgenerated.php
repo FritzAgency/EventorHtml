@@ -36,6 +36,8 @@ $sch_name = $row['sch_name'];
 $sch_start = $row['sch_start']; 
 $sch_end = $row['sch_end']; 
 
+$org_logo = $row['org_logo']; 
+
 
 $sponsor_name1 = $row['sponsor_name1']; 
 $sponsor_logo1 = $row['sponsor_logo1'];
@@ -285,7 +287,10 @@ padding-bottom: 10px;
   <div class="container">
     <div class="navbar-header" >
       <div class="col-sm-2 col-md-3 col-xm-4">
-      <a class="navbar-brand" href="#"><p><img src="" alt="Creator logo" srcset="" class="img-fluid"></p></a>
+     <p><img src="/eventorhtml/public/images/<?php echo 
+$org_logo;?>" alt=""  class="img-fluid">
+
+      </p>
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="font-weight: bold; color: #4f2684">
@@ -314,11 +319,16 @@ $event_flier;?>" class="img-fluid" style="width:100%; height: 100%; margin: auto
       </div>
       <!-- style="width:50%; height: 50%; margin: auto;" -->
       <div class="item">
-        <img src="" alt="Chicago"  class="img-fluid" style="width:100%; height: 100%; margin: auto;">
-      </div>
+
+<img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" class="img-fluid" style="width:100%; height: 100%; margin: auto;">
+
+
+              </div>
     
       <div class="item">
-        <img src="" alt="New york" class="img-fluid" style="width:100%; height: 100%; margin: auto;">
+       <img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" class="img-fluid" style="width:100%; height: 100%; margin: auto;">
       </div>
     </div>
 
@@ -345,7 +355,6 @@ $event_flier;?>" class="img-fluid" style="width:100%; height: 100%; margin: auto
      echo $event_title; 
     }
     ?>
-A TRIP TO THE HILLS OF IDANRAN
 </h1></div>
 <!-- event title ends here -->
 

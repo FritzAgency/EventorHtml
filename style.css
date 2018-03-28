@@ -61,12 +61,13 @@ ul li a:hover, ul li a:focus {
   }
 
   .new{
-     background-color: #4f2684; 
-     color: #fff;
+     color: #4f2684;
+     background-color: #f8f8f8;
+     border-color: #f8f8f8;
   }
 .new:hover{
- background-color: black;
-color: #fff;
+ background-color:lightgrey;
+color: #4f2684;
 }
 #venia{
     background-color: #4f2684; 

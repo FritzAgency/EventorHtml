@@ -1,54 +1,139 @@
----
-test
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
+<title>
+	Calendar
+</title>
+<style type="text/css">
+	
+	/* calendar */
+table.calendar		{ border-left:1px solid #999; }
+tr.calendar-row	{  }
+td.calendar-day	{ min-height:80px; font-size:11px; position:relative; } * html div.calendar-day { height:80px; }
+td.calendar-day:hover	{ background:#eceff5; }
+td.calendar-day-np	{ background:#eee; min-height:80px; } * html div.calendar-day-np { height:80px; }
+td.calendar-day-head { background:#ccc; font-weight:bold; text-align:center; width:120px; padding:5px; border-bottom:1px solid #999; border-top:1px solid #999; border-right:1px solid #999; }
+div.day-number		{ background:#999; padding:5px; color:#fff; font-weight:bold; float:right; margin:-5px -5px 0 0; width:20px; text-align:center; }
+/* shared */
+td.calendar-day, td.calendar-day-np { width:120px; padding:5px; border-bottom:1px solid #999; border-right:1px solid #999; }
+</style>
 
-
-<!-- piexif.min.js is only needed for restoring exif data in resized images and when you 
-    wish to resize images before upload. This must be loaded before fileinput.min.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.8/js/plugins/piexif.min.js" type="text/javascript"></script>
-<!-- sortable.min.js is only needed if you wish to sort / rearrange files in initial preview. 
-    This must be loaded before fileinput.min.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.8/js/plugins/sortable.min.js" type="text/javascript"></script>
-<!-- purify.min.js is only needed if you wish to purify HTML content in your preview for 
-    HTML files. This must be loaded before fileinput.min.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.8/js/plugins/purify.min.js" type="text/javascript"></script>
-<!-- popper.min.js below is needed if you use bootstrap 4.x. You can also use the bootstrap js 
-   3.3.x versions without popper.min.js. -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-<!-- bootstrap.min.js below is needed if you wish to zoom and preview file content in a detail modal
-    dialog. bootstrap 4.x is supported. You can also use the bootstrap js 3.3.x versions. -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" type="text/javascript"></script>
-<!-- the main fileinput plugin file -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.8/js/fileinput.min.js"></script>
-<!-- optionally if you need a theme like font awesome theme you can include it as mentioned below -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.8/themes/fa/theme.js"></script>
-<!-- optionally if you need translation for your language then include  locale file as mentioned below -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.8/js/locales/(lang).js"></script>
 </head>
 <body>
+	
+<?php
+	/* draws a calendar */
+function draw_calendar($month,$year){
 
-<iframe
-  width="600"
-  height="450"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDWG8NOZeOKNf9FabkmtqwCpNs04zcT5Yc
-    &q='<?php echo 'Odo Oba Road, Ibadan, Nigeria';?>'" allowfullscreen>
-</iframe>
+	/* draw table */
+	$calendar = '<table cellpadding="0" cellspacing="0" class="calendar">';
+
+	/* table headings */
+	$headings = array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+	$calendar.= '<tr class="calendar-row"><td class="calendar-day-head">'.implode('</td><td class="calendar-day-head">',$headings).'</td></tr>';
+
+	/* days and weeks vars now ... */
+	$running_day = date('w',mktime(0,0,0,$month,1,$year));
+	$days_in_month = date('t',mktime(0,0,0,$month,1,$year));
+	$days_in_this_week = 1;
+	$day_counter = 0;
+	$dates_array = array();
+
+	/* row for week one */
+	$calendar.= '<tr class="calendar-row">';
+
+	/* print "blank" days until the first of the current week */
+	for($x = 0; $x < $running_day; $x++):
+		$calendar.= '<td class="calendar-day-np"> </td>';
+		$days_in_this_week++;
+	endfor;
+
+	/* keep going with days.... */
+	for($list_day = 1; $list_day <= $days_in_month; $list_day++):
+		$calendar.= '<td class="calendar-day">';
+			/* add in the day number */
+			$calendar.= '<div class="day-number">'.$list_day.'</div>';
+
+			/** QUERY THE DATABASE FOR AN ENTRY FOR THIS DAY !!  IF MATCHES FOUND, PRINT THEM !! **/
+			$calendar.= str_repeat('<p> </p>',2);
+			
+		$calendar.= '</td>';
+		if($running_day == 6):
+			$calendar.= '</tr>';
+			if(($day_counter+1) != $days_in_month):
+				$calendar.= '<tr class="calendar-row">';
+			endif;
+			$running_day = -1;
+			$days_in_this_week = 0;
+		endif;
+		$days_in_this_week++; $running_day++; $day_counter++;
+	endfor;
+
+	/* finish the rest of the days in the week */
+	if($days_in_this_week < 8):
+		for($x = 1; $x <= (8 - $days_in_this_week); $x++):
+			$calendar.= '<td class="calendar-day-np"> </td>';
+		endfor;
+	endif;
+
+	/* final row */
+	$calendar.= '</tr>';
+
+	/* end the table */
+	$calendar.= '</table>';
+	
+	/* all done, return result */
+	return $calendar;
+}
+
+/* sample usages */
+//echo '<h2>July 2009</h2>';
+//echo draw_calendar(7,2009);
+//echo draw_calendar(8, 2009);
+
+//echo '<h2>August 2009</h2>';
+//echo draw_calendar(8,2009);
+?>
+
+<?php
+// Refer to the PHP quickstart on how to setup the environment:
+// https://developers.google.com/calendar/quickstart/php
+// Change the scope to Google_Service_Calendar::CALENDAR and delete any stored
+// credentials.
+
+$event = new Google_Service_Calendar_Event(array(
+  'summary' => 'Google I/O 2015',
+  'location' => '800 Howard St., San Francisco, CA 94103',
+  'description' => 'A chance to hear more about Google\'s developer products.',
+  'start' => array(
+    'dateTime' => '2015-05-28T09:00:00-07:00',
+    'timeZone' => 'America/Los_Angeles',
+  ),
+  'end' => array(
+    'dateTime' => '2015-05-28T17:00:00-07:00',
+    'timeZone' => 'America/Los_Angeles',
+  ),
+  'recurrence' => array(
+    'RRULE:FREQ=DAILY;COUNT=2'
+  ),
+  'attendees' => array(
+    array('email' => 'lpage@example.com'),
+    array('email' => 'sbrin@example.com'),
+  ),
+  'reminders' => array(
+    'useDefault' => FALSE,
+    'overrides' => array(
+      array('method' => 'email', 'minutes' => 24 * 60),
+      array('method' => 'popup', 'minutes' => 10),
+    ),
+  ),
+));
+
+$calendarId = 'primary';
+$event = $service->events->insert($calendarId, $event);
+printf('Event created: %s\n', $event->htmlLink);
+
+?>
+
 </body>
-
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWG8NOZeOKNf9FabkmtqwCpNs04zcT5Yc&libraries=places&callback=initAutocomplete"
-        async defer></script>
-
-</html>

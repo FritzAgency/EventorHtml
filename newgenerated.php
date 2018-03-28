@@ -186,7 +186,7 @@ outline: 0;
 .sizinga{
 outline: 0;
 color: #000000;
-width: 180px;
+width: 25%;
 font-size: 11px;
   font-weight: bolder;
   text-align: center;
@@ -200,7 +200,7 @@ font-size: 11px;
 
 img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 80%;
 }
 
 .portrait {
@@ -209,13 +209,13 @@ img {
 }
 
 .landscape {
-  height: 30px;
-  width: 80px;
+  height: 40%;
+  width: 90%;
 }
 
 .square {
-  height: 75px;
-  width: 75px;
+  height: 70%;
+  width: 83%;
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
@@ -272,6 +272,20 @@ padding-bottom: 10px;
     top: 5px;
 }
 
+.buck{
+  background-color: #4f2684;
+  color: #ffffff;
+border-color: #ffe484;
+font-weight: bold;
+}
+
+.buck:hover{
+  background-color: #ffe484;
+  color: #4f2684;
+border-color: #ffe484;
+font-weight: bold;
+}
+
 
 /* Extra Things */
 </style>
@@ -306,19 +320,18 @@ padding-bottom: 10px;
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" style="width:100%; height: 60%; margin: auto;">
+    <div class="carousel-inner landscape square" style="margin: auto;">
       <div class="item active">
         <!--img src="img/create.png" alt="Los Angeles" style="width:50%; height: 50%; margin: auto;" class="img-responsive"-->
-        <img src="/eventorhtml/public/images/<?php echo 
-$event_flier;?>" class="img-fluid" style="width:100%; height: 100%; margin: auto;">
+        <img src="img/fifth.jpg" class="img-responsive landscape square" style="margin: auto;">
       </div>
       <!-- style="width:50%; height: 50%; margin: auto;" -->
       <div class="item">
-        <img src="" alt="Chicago"  class="img-fluid" style="width:100%; height: 100%; margin: auto;">
+        <img src="img/fifth.jpg" alt="Chicago"  class="img-responsive landscape square" style="margin: auto;">
       </div>
     
       <div class="item">
-        <img src="" alt="New york" class="img-fluid" style="width:100%; height: 100%; margin: auto;">
+        <img src="img/fifth.jpg" alt="New york" class="img-responsive landscape square" style="margin: auto;">
       </div>
     </div>
 
@@ -336,9 +349,10 @@ $event_flier;?>" class="img-fluid" style="width:100%; height: 100%; margin: auto
 
 
 
-  <div style="padding:40px; margin-top: 10pxpx;padding-top: 5px; padding-left: 40px; padding-right: 40px;">
+  <div style="padding-top: 5px; padding-left: 40px; padding-right: 40px;">
   <!-- event title goes in here -->
-<div class="jumbotron; font-size: 80px;"><h1 style="text-align: center; margin-top: 20px; font-family: impact;">
+<div class="jumbotron" style="padding-right: 0px; padding-left: 0px; background-color: white; padding-top: 0px; padding-bottom: 15px;">
+  <h1 style="text-align: center; font-family: impact; font-size: 47px; margin-top: 5px;">
   <?php 
 
     if(isset($event_title)){
@@ -353,10 +367,10 @@ A TRIP TO THE HILLS OF IDANRAN
 <div id="details">
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" role="tablist" style=" margin-left: -53px; margin-right: -53px;">
-  <li class="active sizing"><a class="sizinga" href="#hometab" role="tab" data-toggle="tab">ABOUT</a></li>
-  <li class="sizing"><a class="sizinga" href="#javatab" role="tab" data-toggle="tab" >SPONSORS</a></li>
-  <li class="sizing"><a class="sizinga" href="#csharptab" role="tab" data-toggle="tab">LOCATION</a></li>
-  <li class="sizing"><a class="sizinga" href="#mysqltab" role="tab" data-toggle="tab">VENDORS</a></li> 
+  <li class="active sizinga"><a href="#hometab" role="tab" data-toggle="tab">ABOUT</a></li>
+  <li class="sizinga"><a href="#javatab" role="tab" data-toggle="tab" >SPONSORS</a></li>
+  <li class="sizinga"><a href="#csharptab" role="tab" data-toggle="tab">LOCATION</a></li>
+  <li class="sizinga"><a href="#mysqltab" role="tab" data-toggle="tab">VENDORS</a></li> 
 </ul>
 </li>
 
@@ -376,27 +390,27 @@ A TRIP TO THE HILLS OF IDANRAN
   
   <div class="tab-pane" id="javatab">
      <!-- sponsors logo will come here -->
-    <div style="margin-left: 74px; margin-right: auto; text-align: center; width: 100%; margin-top: 15px;">
+    <div style="margnin-left: auto; margin-right: auto; text-align: center; width: 100%; margin-top: 15px;">
     <div class="row" style="margin-left: auto; margin-right:auto">
-      <div class="col-sm-2" style="height: 100px; background-color: grey; margin: 5px;">
+      <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
         
       <a href="<?php if (isset($sponsor_url)){echo $sponsor_url;}?>">  <img src="/eventorhtml/public/images/<?php echo 
-$sponsor_logo;?>" class="img-responsive"> </a>
+$sponsor_logo;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
 <p> <?php if(isset($sponsor_name)){echo $sponsor_name;}?> </p>
 
 
 
 
       </div>
-      <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
+      <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
         <a href="<?php if (isset($sponsor_url1)){echo $sponsor_url1;}?>">  <img src="/eventorhtml/public/images/<?php echo 
-$sponsor_logo1;?>" class="img-responsive"> </a>
+$sponsor_logo1;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
 <p> <?php if(isset($sponsor_name1)){echo $sponsor_name1;}?> </p>
 
       </div>
-      <div class="col-md-2" style="height: 100px; background-color: grey; margin: 5px;">
+      <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
         <a href="<?php if (isset($sponsor_url2)){echo $sponsor_url2;}?>">  <img src="/eventorhtml/public/images/<?php echo 
-$sponsor_logo2;?>" class="img-responsive"> </a>
+$sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
 <p> <?php if(isset($sponsor_name2)){echo $sponsor_name2;}?> </p>
 
       </div>
@@ -439,11 +453,7 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
 
     <!--img src="img/google_maps_hello_world.jpg" alt="" class="img-fluid" style="margin-left: auto; margin-right: auto; margin-top: 15px; width: 1139px;"-->
 
-<iframe
-  width="1139px"
-  height="450"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDWG8NOZeOKNf9FabkmtqwCpNs04zcT5Yc
+<iframe style=" width: 100%; height: 500px;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDWG8NOZeOKNf9FabkmtqwCpNs04zcT5Yc
     &q='<?php echo $Address;?>'" allowfullscreen>
 </iframe>
     <!-- google map stops here -->
@@ -515,11 +525,10 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
 </div>
 </div>
 <!-- price tag ends here -->
-
 <!-- become a vendor and register button starts here -->
 <div class="row" style="margin-top: 50px; margin-left: auto; margin-right: auto;">
-  <div class="col-sm-4" style="margin-left: 35px;">
-  <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px;">
+  <div class="col-sm-4 buck" style="margin-left: 35px; border: 4px solid #ffe484; border-radius: 17px;">
+  <a href="#" style="text-decoration: none; color: #ffffff;"><div style="text-align: center; padding: 10px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 13px;">BECOME A VENDOR</h2>
     </div></a>
   </div>
@@ -527,8 +536,8 @@ $sponsor_logo2;?>" class="img-responsive"> </a>
     <div style="text-align: center; border-radius: 17px;">
      </div>
 </div>
-<div class="col-sm-4">
-      <a href="#" style="color: #ffffff; text-decoration: none;" data-toggle="modal" data-target="#myModal"><div style="border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px;">
+<div class="col-sm-4 buck" style="border: 4px solid #ffe484; border-radius: 17px;">
+      <a href="#" style="text-decoration: none; color: #ffffff;" data-toggle="modal" data-target="#myModal"><div style="text-align: center;padding: 10px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 13px;" id="register">REGISTER</h2>
     </div></a>
 </div>

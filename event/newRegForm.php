@@ -218,7 +218,8 @@ if(isset($message)){
     <p style="color: #4f2684">SPONSOR 2</p>
     <P><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name1"></P>
     <P><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url1"></P>
-    <P><input type="file" name="sponsor_logo1" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="logo"></p>
+    <P><input type="file" name="sponsor_logo1" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''"
+      ></p>
 
     <p style="color: #4f2684">SPONSORS 3</p>
     <input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name2">
@@ -243,7 +244,7 @@ if(isset($message)){
 
     <p> ACTIVITY 2 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
+    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
     <p> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
@@ -251,21 +252,21 @@ if(isset($message)){
     
     <p> ACTIVITY 3 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
+    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
     <p> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
 
     <p> ACTIVITY 4 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
+    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
     <p> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
 
     <p> ACTIVITY 5 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
+    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
     <p> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>

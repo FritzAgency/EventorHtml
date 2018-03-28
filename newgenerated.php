@@ -62,7 +62,7 @@ $act_img = $row['act_img'];
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Generated page</title>
+  <title></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -489,7 +489,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
   <div class="col-sm-4">
     <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><?php if(isset($ticket_price)){
-              echo '&#8358;'. $ticket_price; 
+              echo  $ticket_price; 
             } elseif($row['ticket_price'] <=0 ){
               echo 'FREE'; 
             } ?></h2>
@@ -701,57 +701,96 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
             <table class="table table-condensed table-bordered">
                 <thead>
                     <tr>
-                        <th>Date</th>
+                        <!--th>Date</th-->
                         <th>Time</th>
-                        <th>Event</th>
+                        <th>Schedule Name</th>
                     </tr>
                 </thead>
                 <tbody>
                     <!-- Single event in a single day -->
                     <tr>
-                        <td class="agenda-date" class="active" rowspan="1">
+                        <!--td class="agenda-date" class="active" rowspan="1">
                             <div class="dayofmonth">26</div>
                             <div class="dayofweek">Saturday</div>
-                            <div class="shortdate text-muted">July, 2014</div>
+                            <div class="shortdate text-muted">July, 2014</div-->
                         </td>
                         <td class="agenda-time">
-                            5:30 AM
+                            <?php if(isset($sch_start)){
+              echo '<p> Starts:'. $sch_start .'</p>'; 
+            }?>
+
+<hr>
+             <?php if(isset($sch_end)){
+              echo '<p>Ends:'. $sch_end .'</p>'; 
+            }?>
+
                         </td>
                         <td class="agenda-events">
                             <div class="agenda-event">
-                                <i class="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i>
-                                Fishing
+                                
+                                <?php if(isset($sch_name)){
+              echo  $sch_name; 
+            }?>
                             </div>
                         </td>
                     </tr>
                     
                     <!-- Multiple events in a single day (note the rowspan) -->
                     <tr>
-                        <td class="agenda-date" class="active" rowspan="3">
+                        <!--td class="agenda-date" class="active" rowspan="3">
                             <div class="dayofmonth">24</div>
                             <div class="dayofweek">Thursday</div>
-                            <div class="shortdate text-muted">July, 2014</div>
+                            <div class="shortdate text-muted">July, 2014</div-->
                         </td>
                         <td class="agenda-time">
-                            8:00 - 9:00 AM 
+                          
+
+
+ <?php if(isset($sch_start1)){
+              echo '<p> Starts:'. $sch_start1 .'</p>'; 
+            }?>
+
+<hr>
+             <?php if(isset($sch_end1)){
+              echo '<p>Ends:'. $sch_end1 .'</p>'; 
+            }?>
+
+
+
                         </td>
                         <td class="agenda-events">
                             <div class="agenda-event">
-                                Doctor's Appointment
+                              
+                                <?php if(isset($sch_name1)){
+              echo  $sch_name1; 
+            }?>
+
                             </div>
                         </td>
                     </tr>
                     <tr>
                         <td class="agenda-time">
-                            10:15 AM - 12:00 PM 
+                                                      <?php if(isset($sch_start2)){
+              echo '<p> Starts:'. $sch_start2 .'</p>'; 
+            }?>
+
+<hr>
+             <?php if(isset($sch_end2)){
+              echo '<p>Ends:'. $sch_end2 .'</p>'; 
+            }?>   
                         </td>
                         <td class="agenda-events">
                             <div class="agenda-event">
-                                Meeting with executives
+                
+                <?php if(isset($sch_name2)){
+                  echo $sch_name2;
+                }
+?>
+
                             </div>
                         </td>
                     </tr>
-                    <tr>
+                    <!--tr>
                         <td class="agenda-time">
                             7:00 - 9:00 PM
                         </td>
@@ -760,7 +799,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
                                 Aria's dance recital
                             </div>
                         </td>
-                    </tr>
+                    </tr-->
                 </tbody>
             </table>
         </div>

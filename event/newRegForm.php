@@ -292,17 +292,24 @@ if(isset($message)){
 
 
     Scheduled 2
-    <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
-    <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
-    Scheduled 3
-    <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
-    <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
+    <p><input  placeholder="Enter event schedule here" oninput="this.className = ''" name="sch_name1"></p>
 
-    Schedule 4
+    <p><input type="time" placeholder="Enter start time here" oninput="this.className = ''" name="sch_start1"></p>
+
+    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end1"></p>
+
+    <!--p><input placeholder="" oninput="this.className = ''" name="yyyy"></p-->
+
+    Scheduled 3
+    <p><input  placeholder="Enter event schedule here" oninput="this.className = ''" name="sch_name2"></p>
+    
+    <p><input type="time" placeholder="Enter start time here" oninput="this.className = ''" name="sch_start2"></p>
+    
+    <p><input  type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end2"></p>
+
+    <!--p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p-->
+
+   <!-- Schedule 4
     <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
     <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>
     <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
@@ -312,7 +319,8 @@ if(isset($message)){
     <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
     <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>
     <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
+    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>--> 
+
   </div>
   <div style="overflow:auto;">
     <div style="float:right;">

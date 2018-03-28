@@ -122,40 +122,6 @@ border: 0;
    margin-right: 0px;
 }
 .nav-pills >
-/*
-.nav-pills > li.item1.active > a, .nav-pills > li.item1.active > a:focus, .nav-tabs > li.item1.active > a:hover {
-border:0;
-background-color:#fff;
-color:#000000;
-}
-
-.nav-pills > li > a{padding:10px 30px}
-.nav-pills > li.active {
-color:#000000;
-}
-
-.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
-  color: #fff;
-  background-color: white;
-} */
-
-/* ul li a {
-background-color: #00ff00;
-color: green;
-}
-
-ul li a:hover {
-background-color: #ff0000;
-color: yellow;
-} */
-
-/* .sizing{
-width: 275px;
-font-size: 18px;
-  font-weight: bolder;
-  text-align: center;
-  color: #000000;
-} */
 
 .sizing2{
 width:49.5%;
@@ -234,8 +200,8 @@ padding-bottom: 10px;
 
 #return-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 120px;
+    right: 105px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
     width: 50px;
@@ -312,7 +278,7 @@ font-weight: bold;
 </nav>
 <!-- nav bar ends here -->
 <div class="container" style="background-color: white; width: 60%;">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid lightgrey;">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid lightgrey;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -328,11 +294,11 @@ font-weight: bold;
       </div>
       <!-- style="width:50%; height: 50%; margin: auto;" -->
       <div class="item">
-        <img src="img/fifth.jpg" alt="Chicago"  class="img-responsive landscape square" style="margin: auto;">
+        <img src="img/celine.jpg" alt="Chicago"  class="img-responsive landscape square" style="margin: auto;">
       </div>
     
       <div class="item">
-        <img src="img/fifth.jpg" alt="New york" class="img-responsive landscape square" style="margin: auto;">
+        <img src="img/google_maps_hello_world.jpg" alt="New york" class="img-responsive landscape square" style="margin: auto;">
       </div>
     </div>
 
@@ -808,7 +774,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
   </div>
   </div>
 <!-- footer goes here -->
-<footer style="background-color: #f8f8f8; border: 3px solid #e7e7e7; padding: 10px; height: 60px;">
+<footer style="background-color: #f8f8f8; border: 3px solid #e7e7e7; padding: 10px; height: 70px; margin-top: 10px;">
   <div class="row">
     <div class="col-sm-2">
       <img src="img/logo2.png" alt="" class="img-responsive" style="margin-top: 2px;">

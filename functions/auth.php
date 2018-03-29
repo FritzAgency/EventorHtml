@@ -17,16 +17,13 @@ function signup(){
 
 session_start(); //start session 
 
-
 include('../Database/conn.php'); //include the database file. 
-
 
 //when submit button is clicked
 if (isset($_POST['submit'])) {
 
-/*
-grabs the user's input from the form field. 
-*/
+
+//grabs the user's input from the form field. 
 $first_name= stripslashes($_POST['first_name']);
 $last_name= stripslashes($_POST['last_name']);
 //$gender= $_POST['gender']; 
@@ -41,79 +38,54 @@ $facebook= stripslashes($_POST['facebook']);
 $instagram= stripslashes($_POST['instagram']); 
 $created_at = date("Y-m-d");
 
-/*
-query the user's email 
-*/ 
 
+//query the user's email 
 $query = mysqli_query($con,"SELECT `email` FROM `users` WHERE `email` = '$email'");
 
 
-/*
-check if the user's email is in the user's table. 
-*/
+//check if the user's email is in the user's table. 
 	 if(mysqli_num_rows($query) >= 1) {
-/*
-throw error if already exists. 
-*/  
-  $check_mail = 'This email is already being used. <a href="#">Login</a> if already registered'; 
+//throw error if already exists. 
+  $_SESSION['message'] = 'This email is already being used. <a href="#">Login</a> if already registered'; 
 } 
 
-/*
-check if the firtsname and last name is empty. 
-*/ 
-
-if (empty($first_name) || empty(last_name)){
+//check if the firtsname and last name is empty. 
+if (empty($first_name) || empty($last_name)){
 //throw error if empty. 
   $_SESSION['message'] = 'First Name/Last Name is empty'; 
+
+  return false;  
 }
 
-/*elseif(empty($first_name) || empty($last_name)){
 
-	//$check_fn = 'First Name/Last Name is empty'; //check if firstname or lastname is empty 
-
-    $_SESSION['message'] = 'First Name/Last Name is empty';
-}*/ 
-/*
-check if the password field is empty
-*/
+//check if the password field is empty
 if(empty($password)){
   //throw error if empty. 
   $_SESSION['message']= 'Password field is empty'; 
+  return false; 
 } 
 
-/*elseif(empty($password)){
-    $_SESSION['message']= 'Password field is empty'; 
-}*/
 
 //insert the user's input into the database. 
 
 $insert = "INSERT into `users` (first_name, last_name,  email, password, dob, phoneNumber, Address, twitter, facebook, instagram, created_at ) VALUES ('$first_name', '$last_name',  '$email', '$password_hash', '$dob', '$phoneNumber', '$Address', '$twitter', '$facebook', '$instagram', '$created_at')";
 
-$result = mysqli_query($con,$query);
+$result = mysqli_query($con,$insert);
 
-
+//if inserting of user's data failed
+if ($result == true){ 
+//redirect to the login page if registration succeeds.
+  header("Location: ../auth/login.php"); 
+}
 else{
-
-	$query = "INSERT into `users` (first_name, last_name,  email, password, dob, phoneNumber, Address, twitter, facebook, instagram, created_at ) VALUES ('$first_name', '$last_name',  '$email', '$password_hash', '$dob', '$phoneNumber', '$Address', '$twitter', '$facebook', '$instagram', '$created_at')"; //insert the form data into the database.  
-       
-        $result = mysqli_query($con,$query);//send the query  
-
-        if ($result) {
-        	
-        	$_SESSION['message'] = 'User successfully registered'; 
-
-        	header("Location: ../auth/login.php");
-        }
-
-        else{
-
-        	$_SESSION['message'] = 'something went wrong'; 
-
-        }
+   //throw error.
+ $_SESSION['message'] = 'something went wrong';   
 }
 
 }
-} 
+
+}
+ 
 
 
 
@@ -121,18 +93,6 @@ else{
 function login(){
 session_start();
 
-$db_host='localhost'; //defining the database host. 
-$db_user='root'; //defining the database user. 
-$db_name='eventor';//defining the database name.   
-$db_pass=''; //defining the password
-
-$con = mysqli_connect($db_host, $db_user, "", $db_name);//establishing the connecting. 
-
-// Check if its connected. 
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();//returns error if connection failed. 
-  } 
   
 //if the submit button is clicked
 if(isset($_POST['submit'])){

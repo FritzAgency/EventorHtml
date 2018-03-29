@@ -173,8 +173,11 @@ font-size: 11px;
 }
 
 img {
-  max-width: 100%;
-  max-height: 80%;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .portrait {
@@ -189,7 +192,7 @@ img {
 
 .square {
   height: 70%;
-  width: 83%;
+  width: 70%;
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
@@ -260,6 +263,7 @@ border-color: #ffe484;
 font-weight: bold;
 }
 
+.carousel .carousel-inner { width:100%; height:570px; }
 
 /* Extra Things */
 </style>

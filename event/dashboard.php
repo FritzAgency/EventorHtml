@@ -114,23 +114,23 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
                 
                      <!-- event details goes in here -->
                 <div class="row">
-                    <div class="col-sm-4">
-                        <div>
+                    <div class="col-sm-4 panel panel-default" style="height: 559px; padding-left: 0px; padding-right: 0px; width: 31%; margin-left: 10px; margin-right: 27px;">
+                        <div class="panel panel-heading" style="margin-bottom: 6px;">
                             <h2>Events</h2>
                         </div>
-                        <div>
+                        <div class="panel panel-body" style="padding: 2px; margin-bottom: 10px;">
                             <div class="row">
-                                <div class="col-sm-4">
-                                    <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
+                                <div class="col-sm-2" style="margin-left: auto; margin-right: auto; padding: 5px;">
+                                    <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <p>F</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-6">
                                     <p>First Event</p>
-                                    <span class="glyphicon glyphicon-time"></span>
+                                    <span class="glyphicon glyphicon-time"> 6 days</span>
                                 </div>
                                 <!-- buttons at the end of the row not important -->
-                                <div class="col-sm-4">
+                                <div class="col-sm-2" style="position: relative; left: 80px;">
                                     <div>
                                         o
                                     </div>
@@ -146,17 +146,17 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
                         </div>
 
                          <div class="row">
-                                <div class="col-sm-4">
-                                    <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
+                                <div class="col-sm-2" style="margin-left: auto; margin-right: auto; padding: 5px;">
+                                    <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <p>S</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-sm-6">
                                     <p>Second Event</p>
                                     <span class="glyphicon glyphicon-time"> 2 days</span>
                                 </div>
                                 <!-- buttons at the end of the row not important -->
-                                <div class="col-sm-4">
+                                <div class="col-sm-1" style="position: relative; left: 80px;">
                                     <div>
                                         o
                                     </div>
@@ -173,127 +173,125 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
                     <!-- stops here -->
                     <!-- second column with the number of vendors and information -->
                     
-                    <div class="col-sm-4">
-                        <div class="row">
+                    <div class="col-sm-4 panel panel-default" style="height: 559px; padding-left: 0px; padding-right: 0px; width: 31%;">
+                    <div class="panel-heading" style="margin-bottom: 6px;">    
+                    <div class="row">
                             <div class="col-sm-10">
-                                <p>Vendors</p>
+                                <h2>Vendors</h2>
                             </div>
                             <div class="col-sm-2">
-                                <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
-                                        <p>2</p>
+                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                        <h2 style="color: white">2</h2>
                                     </div>
                             </div>
                         </div>
-
+                        </div>
+                        <div class="panel-body">
                         <div class="row">
-                            <div class="col-sm-2">
-                                <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
+                            <div class="col-sm-2" style="padding-left: 0px;">
+                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="col-sm-10">
-                            <p>vendors name comes here</p>
-                                <p>vendors discription of products goes here</p>
+                            <div class="col-sm-10" style="padding-left: 0px; padding-right:0px;">
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>vendors name comes here </strong><br/> vendors discription of products goes here</p>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-2">
-                                <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
+                            <div class="col-sm-2" style="padding-left: 0px;">
+                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="col-sm-10">
-                            <p>vendors name comes here</p>
-                                <p>vendors discription of products goes here</p>
+                            <div class="col-sm-10" style="padding-left: 0px; padding-right:0px;">
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>vendors name comes here </strong><br/> vendors discription of products goes here</p>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-2">
-                                <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
+                            <div class="col-sm-2" style="padding-left: 0px;">
+                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="col-sm-10">
-                            <p>vendors name comes here</p>
-                                <p>vendors discription of products goes here</p>
+                            <div class="col-sm-10" style="padding-left: 0px; padding-right:0px;">
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>vendors name comes here </strong><br/> vendors discription of products goes here</p>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-2">
-                                <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
+                            <div class="col-sm-2" style="padding-left: 0px;">
+                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="col-sm-10">
-                            <p>vendors name comes here</p>
-                            <p>vendors discription of products goes here</p>
+                            <div class="col-sm-10" style="padding-left: 0px; padding-right:0px;">
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>vendors name comes here </strong><br/> vendors discription of products goes here</p>
                             </div>
                         </div>
+                    </div>
                     </div>
                     <!-- vendors column ends here -->
                     <!-- second column with the number of ticket and information -->
-                    <div class="col-sm-4">
-                        <div class="row">
-                            <div class="col-sm-10">
-                                <p>Tickets</p>
+                    <div class="col-sm-4 panel panel-default" style="height: 559px; padding-left: 0px; padding-right: 0px; width: 31%; margin-left: 27px;">
+                    <div class="panel-heading" style="margin-bottom: 6px;">    
+                    <div class="row">
+                        <div class="col-sm-10">
+                                <h2>Tickets</h2>
                             </div>
                             <div class="col-sm-2">
-                                <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
-                                        <p>2</p>
+                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                        <h2 style="color: white">2</h2>
                                     </div>
                             </div>
+                            </div>
                         </div>
-
+                        <div class="panel-body" style="padding: 2px; margin-bottom: 10px;">
                         <div class="row">
                             <div class="col-sm-2">
-                                <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
                             <div class="col-sm-10">
-                            <p>vendors name comes here</p>
-                                <p>vendors discription of products goes here</p>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div class="col-sm-10">
-                            <p>vendors name comes here</p>
-                                <p>vendors discription of products goes here</p>
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>Ticket name goes here </strong><br/> vendors discription of products goes here</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-2">
-                                <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
                             <div class="col-sm-10">
-                            <p>vendors name comes here</p>
-                                <p>vendors discription of products goes here</p>
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>Ticket name goes here </strong><br/> vendors discription of products goes here</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-2">
-                                <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
                             <div class="col-sm-10">
-                            <p>vendors name comes here</p>
-                            <p>vendors discription of products goes here</p>
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>Ticket name goes here</strong><br/> vendors discription of products goes here</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>Ticket name goes here </strong><br/> vendors discription of products goes here</p>
                             </div>
                     </div>
+                </div>
                     <!-- ticket column ends here -->
                     </div>
                 </div>

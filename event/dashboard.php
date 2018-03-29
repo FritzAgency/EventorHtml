@@ -34,7 +34,7 @@ session_start();
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="#a20eab"><img src="" alt="">Eventor Logo</a> 
+                <a class="navbar-brand" href="#"><img src="assets/img/EventorLogo.png" alt="" class="img-responsive"></a> 
             </div>
 
   <div style="color: white;
@@ -51,19 +51,19 @@ font-size: 16px;"><a href="../auth/logout.php" class="btn btn-danger square-btn-
                 <ul class="nav" id="main-menu" style="margin-top: 15px;">
 				
                     <li>
-                        <a class="active-menu"  href="#"><i class="fa fa-home fa-2x"></i> Dashboard</a>
+                        <a class="active-menu"  href="#"><i class="fa fa-home fa-1x"></i> Dashboard</a>
                     </li>
                      <li>
-                        <a  href="#"><i class="fa fa-calendar fa-2x"></i> Events</a>
+                        <a  href="#"><i class="fa fa-calendar fa-1x"></i> Events</a>
                     </li>
                     <li>
-                        <a  href="#"><i class="fa fa-ticket fa-2x"></i> Tickets</a>
+                        <a  href="#"><i class="fa fa-ticket fa-1x"></i> Tickets</a>
                     </li>
 						   <li  >
-                        <a   href="#"><i class="fa fa-cart fa-2x"></i> Vendors</a>
+                        <a   href="#"><i class="fa fa-cart fa-1x"></i> Vendors</a>
                     </li>	
                       <li  >
-                        <a  href="#"><i class="fa fa-gear fa-2x"></i> Settings</a>
+                        <a  href="#"><i class="fa fa-gear fa-1x"></i> Settings</a>
                     </li>	
                 </ul>
                
@@ -95,7 +95,9 @@ font-size: 16px;"><a href="../auth/logout.php" class="btn btn-danger square-btn-
                      <!--h2 style="font-weight: bold; color: #4f2684; margin-bottom: 33px;"></h2-->
                      <!--h2 style="color: grey; margin-top: -80px; margin-bottom: 61px; margin-left: 10px;">Dashboard</h2-->
 
-                     <h2 style="font-weight: bold; color: #4f2684; margin-bottom: 20px; margin-left: 10px;">
+                     <!--h2 style="font-weight: bold; color: #4f2684; margin-bottom: 20px; margin-left: 10px;">
+                     <h2 style="font-weight: bold; color: #4f2684; margin-bottom: 20px; margin-left: 10px;"><strong>Creator's Name</strong></h2-->
+
 
                      <!-- div for contain tickets, events and sales volume content starts here -->
                     <div class="row">
@@ -127,15 +129,13 @@ echo $row;
 
              <div class="panel panel-back noti-box">
                   <div class="text-box" style="text-align: center; font-weight: bold;">
-                    <p class="main-text">23</p>
-                    <p class="text-muted">Tickets sold</p>
+                    <a href="#"><p class="main-text" style="margin-top: 21px">Add Service</p></a>
                 </div>
              </div>
 
                 <div class="panel panel-back noti-box">
                   <div class="text-box" style="text-align: center; font-weight: bold;">
-                    <p class="main-text">#69000</p>
-                    <p class="text-muted">Sales Volume</p>
+                    <a href="#"><p class="main-text" style="margin-top: 21px">Add Products</p></a>
                 </div>
              </div>
 
@@ -143,7 +143,7 @@ echo $row;
                         <div class="col-sm-8">
                         <div class="panel panel-default">
                         <div class="panel-heading">
-                            Bar Chart Example
+                            <h1 style="font-weight: bold; font-size: 23px; color: grey;">Event Visits</h2>
                         </div>
                         <div class="panel-body">
                             <div id="morris-bar-chart"></div>
@@ -156,13 +156,13 @@ echo $row;
                 
                      <!-- event details goes in here -->
                 <div class="row">
-                    <div class="col-sm-4 panel panel-default" style="height: 559px; padding-left: 0px; padding-right: 0px; width: 31%; margin-left: 10px; margin-right: 27px;">
+                    <div class="col-sm-4 panel panel-default" style="height: 540px; padding-left: 0px; padding-right: 0px; width: 31%; margin-left: 10px; margin-right: 27px;">
                         <div class="panel panel-heading" style="margin-bottom: 6px;">
                             <h2>Events</h2>
                         </div>
                         <div class="panel panel-body" style="padding: 2px; margin-bottom: 10px;">
                             <div class="row">
-<<<<<<< HEAD
+
                                 <div class="col-sm-4">
                                     <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
                                         <p></p>
@@ -208,25 +208,26 @@ while($row = mysqli_fetch_array($result)){
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-4">
                                     <!--div>
-=======
                                 <div class="col-sm-2" style="margin-left: auto; margin-right: auto; padding: 5px;">
-                                    <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                    <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <p>F</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                <p style="font-size: 16px; line-height: 21px; padding-bottom: 36px; margin-top: 3px;"><strong>First Event </strong><br/> <span class="glyphicon glyphicon-time"> 6 days</span></p>
+                                <p style="font-size: 14px; line-height: 21px; padding-bottom: 20px; margin-top: 3px; #bf62f0;"><strong style="color: black;">First Event </strong><br/> <span class="glyphicon glyphicon-time" style="color: #bf62f0;"> 6 days</span></p>
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-2" style="position: relative; left: 80px;">
+
                                     <div>
->>>>>>> bfa9cdb3f487d07440bf1cee1bafdfa470b78ed6
+                                    <div style="color: black;">
+
                                         o
                                     </div>
-                                    <div>
+                                    <div style="color: black;">
                                         o
                                     </div>
-                                    <div>
+                                    <div style="color: black;">
                                         o
                                     </div-->
                                 </div>
@@ -235,7 +236,7 @@ while($row = mysqli_fetch_array($result)){
                         </div>
 
                          <div class="row">
-<<<<<<< HEAD
+
                                 <!--div class="col-sm-4">
                                     <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
                                         <p>S</p>
@@ -247,25 +248,27 @@ while($row = mysqli_fetch_array($result)){
                                 </div-->
                                 <!-- buttons at the end of the row not important -->
                                 <!--div class="col-sm-4">
-=======
+
                                 <div class="col-sm-2" style="margin-left: auto; margin-right: auto; padding: 5px;">
-                                    <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                    <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <p>S</p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                <p style="font-size: 16px; line-height: 21px; padding-bottom: 20px; margin-top: 3px;"><strong>Second Event </strong><br/> <span class="glyphicon glyphicon-time"> 2 days</span></p>
+                                <p style="font-size: 14px; line-height: 21px; padding-bottom: 20px; margin-top: 3px; #bf62f0;"><strong style="color: black;">Second Event </strong><br/> <span class="glyphicon glyphicon-time" style="color: #bf62f0;"> 2 days</span></p>
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-1" style="position: relative; left: 80px;">
->>>>>>> bfa9cdb3f487d07440bf1cee1bafdfa470b78ed6
+
                                     <div>
+                                    <div style="color: black;">
+
                                         o
                                     </div>
-                                    <div>
+                                    <div style="color: black;">
                                         o
                                     </div>
-                                    <div>
+                                    <div style="color: black;">
                                         o
                                     </div>
                                 </div-->
@@ -282,7 +285,7 @@ while($row = mysqli_fetch_array($result)){
                                 <h2>Vendors</h2>
                             </div>
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <h2 style="color: white">2</h2>
                                     </div>
                             </div>
@@ -291,45 +294,45 @@ while($row = mysqli_fetch_array($result)){
                         <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-2" style="padding-left: 0px;">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
                             <div class="col-sm-10" style="padding-left: 0px; padding-right:0px;">
-                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>vendors name comes here </strong><br/> vendors discription of products goes here</p>
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong style="#8f2dc2">Ting Nigeria Limited </strong><br/> We imense to cater for party needs ()</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-2" style="padding-left: 0px;">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
                             <div class="col-sm-10" style="padding-left: 0px; padding-right:0px;">
-                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>vendors name comes here </strong><br/> vendors discription of products goes here</p>
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong style="#8f2dc2">Ting Nigeria Limited </strong><br/> We imense to cater for party needs ()</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-2" style="padding-left: 0px;">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
                             <div class="col-sm-10" style="padding-left: 0px; padding-right:0px;">
-                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>vendors name comes here </strong><br/> vendors discription of products goes here</p>
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong style="#8f2dc2">Ting Nigeria Limited </strong><br/> We imense to cater for party needs ()</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-2" style="padding-left: 0px;">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
                             <div class="col-sm-10" style="padding-left: 0px; padding-right:0px;">
-                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>vendors name comes here </strong><br/> vendors discription of products goes here</p>
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong style="#8f2dc2">Ting Nigeria Limited </strong><br/> We imense to cater for party needs ()</p>
                             </div>
                         </div>
                     </div>
@@ -340,10 +343,10 @@ while($row = mysqli_fetch_array($result)){
                     <div class="panel-heading" style="margin-bottom: 6px;">    
                     <div class="row">
                         <div class="col-sm-10">
-                                <h2>Tickets</h2>
+                                <h2>Products/Services</h2>
                             </div>
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <h2 style="color: white">2</h2>
                                     </div>
                             </div>
@@ -352,45 +355,45 @@ while($row = mysqli_fetch_array($result)){
                         <div class="panel-body" style="padding: 2px; margin-bottom: 10px;">
                         <div class="row">
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
                             <div class="col-sm-10">
-                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>Ticket name goes here </strong><br/> vendors discription of products goes here</p>
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;">Muhammed bought a ticket to Idanra hills<br/> <span class="glyphicon glyphicon-time" style="color: #bf62f0;"> Just now</span></p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
                             <div class="col-sm-10">
-                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>Ticket name goes here </strong><br/> vendors discription of products goes here</p>
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>Lawal Hard core bought a ticket to the zoo </strong><br/> <span class="glyphicon glyphicon-time" style="color: #bf62f0;"> 2 days</span></p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
                             <div class="col-sm-10">
-                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>Ticket name goes here</strong><br/> vendors discription of products goes here</p>
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;">More tickets sold <br/> <span class="glyphicon glyphicon-time" style="color: #bf62f0;"> 7 days</span></p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background:#4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
                             <div class="col-sm-10">
-                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;"><strong>Ticket name goes here </strong><br/> vendors discription of products goes here</p>
+                            <p style="font-size: 12px; line-height: 21px; padding-bottom: 36px; margin-top: -5px;">And more tickets bought again<br/> <span class="glyphicon glyphicon-time" style="color: #bf62f0;"> 9 days</span></p>
                             </div>
                     </div>
                 </div>

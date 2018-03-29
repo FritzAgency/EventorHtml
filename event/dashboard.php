@@ -408,6 +408,39 @@ while($row = mysqli_fetch_array($result)){
          <!-- /. PAGE WRAPPER  -->
         </div>
      <!-- /. WRAPPER  -->
+     <footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 70px; margin-top: 10px;">
+  <div class="row">
+    <div class="col-sm-2">
+      <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
+    </div>
+    <div class="col-sm-8">
+      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
+        <div class="col-sm-4">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">How it works</p></a>
+        </div>
+        <div class="col-sm-4">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">About us</p></a>
+        </div>
+        <div class="col-sm-4">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">Contact</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="row">
+        <div class="col-sm-4">
+          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #f3f3f3; border-radius: 50%;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #f3f3f3; border-radius: 50%;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #f3f3f3; border-radius: 50%;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
     <script src="assets/js/jquery-1.10.2.js"></script>

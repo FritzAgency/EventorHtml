@@ -184,14 +184,14 @@ if(isset($message)){
 
     <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
 
-<p style="color: #4f2684">UPLOAD EVENT BANNER </p>
+<p style="color: #4f2684; margin-top:24px;">UPLOAD EVENT BANNER </p>
     <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier">
 
-    <p style="color: #4f2684">EVENT STARTS: </p>
+    <p style="color: #4f2684; margin-top:24px;">EVENT STARTS: </p>
     <input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts" style="color: lightgrey;">
 
 
-<p style="color: #4f2684" >EVENT ENDS: </p>
+<p style="color: #4f2684; margin-top:24px;" >EVENT ENDS: </p>
 
     <input type="date" placeholder="Event End date" oninput="this.className = ''" name="event_ends" style="color: lightgrey;">
 
@@ -200,7 +200,7 @@ if(isset($message)){
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p-->
 
-    <p><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
+    <p style="margin-top:24px;"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
 
 <p> Organizer's Logo </p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" ></p>

@@ -14,10 +14,10 @@
 	<link rel="stylesheet" href="style11.css">
     <?php 
 
-    require_once('../auth/auth.php');
-
-    signup(); 
+    require_once('../functions/auth.php');
+   signup(); 
      ?> 
+    
 
 </head>
 <body>

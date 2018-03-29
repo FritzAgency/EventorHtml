@@ -22,7 +22,7 @@ body {
 
  #wrapper {
     width: 100%;
-    background:#202020;
+    background:#4f2684;
 }
 
 #page-wrapper {
@@ -34,7 +34,7 @@ body {
 #page-inner {
     width:100%;
     margin:10px 20px 10px 0px;
-    background-color:#fff!important;
+    /*! background-color:#fff!important; */
     padding:10px;
     min-height:1200px;
 }
@@ -61,18 +61,18 @@ border-radius: 0px;
 p {
     font-size:16px;
     line-height:25px;
-    padding-top:20px;
+    padding-top:10px;
 }
 /*==============================================
    DASHBOARD STYLES    
     =============================================*/
 .panel-back {
-    background-color:#F8F8F8;
+    background-color:#FFFDFD;
 
 }
    .noti-box {
 min-height: 100px;
-padding: 20px;
+padding: 5px;
 }
 
     .noti-box .icon-box {
@@ -88,6 +88,8 @@ font-size: 40px;
 }
 .text-box p{
     margin: 0 0 3px;
+    color: grey;
+    font-size: 21px;
 }
 .main-text {
     font-size: 25px;
@@ -211,7 +213,7 @@ max-width:170px;
 
 .navbar-cls-top .navbar-brand {
 	color: #fff;
-background: #4f2684;
+background: #a635c9;;
 width: 260px;
 text-align: center;
 height: 60px;
@@ -219,7 +221,7 @@ font-size: 30px;
 font-weight: 700;
 }
 .active-menu {
-    background-color:#4f2684!important;
+    background-color:#311a50 !important;
     border: solid 2px #2b1744;
 }
 
@@ -256,9 +258,9 @@ font-weight: 700;
 }
 .sidebar-collapse .nav > li > a {
 	color:#fff;
-	background:#202020;
 	text-shadow:none;
-	
+	background: #4f2684;
+	border-bottom: 2px solid black;
 }
 .sidebar-collapse > .nav > li > a {
 	padding:15px 10px;
@@ -269,7 +271,7 @@ font-weight: 700;
 .sidebar-collapse .nav > li > a:hover,
 .sidebar-collapse .nav > li > a:focus {
 	
-	background:#0A0A0A;
+	background:#2B1035;
 	outline:0;
 }
 

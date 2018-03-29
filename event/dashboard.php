@@ -8,7 +8,7 @@
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Bootstrap Admin Template : Binary Admin</title>
+    <title>Eventor</title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -24,14 +24,14 @@
 <body>
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
+            <div class="navbar-header" style="background-color: white;">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="" alt="">Eventor Logo</a> 
+                <a class="navbar-brand" href="#" style="#a20eab"><img src="" alt="">Eventor Logo</a> 
             </div>
   <div style="color: white;
 padding: 15px 50px 5px 50px;
@@ -41,22 +41,22 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation" style="top: 60px;">
             <div class="sidebar-collapse">
-                <ul class="nav" id="main-menu">
+                <ul class="nav" id="main-menu" style="margin-top: 15px;">
 				
                     <li>
-                        <a class="active-menu"  href="#"><i class="fa fa-dashboard fa-2x"></i> Dashboard</a>
+                        <a class="active-menu"  href="#"><i class="fa fa-home fa-2x"></i> Dashboard</a>
                     </li>
                      <li>
-                        <a  href="#"><i class="fa fa-ticket fa-2x"></i> Events</a>
+                        <a  href="#"><i class="fa fa-calendar fa-2x"></i> Events</a>
                     </li>
                     <li>
-                        <a  href="#"><i class="fa fa-calendar fa-2x"></i> Tickets</a>
+                        <a  href="#"><i class="fa fa-ticket fa-2x"></i> Tickets</a>
                     </li>
 						   <li  >
-                        <a   href="#"><i class="fa fa-bar-chart-o fa-2x"></i> Vendors</a>
+                        <a   href="#"><i class="fa fa-cart fa-2x"></i> Vendors</a>
                     </li>	
                       <li  >
-                        <a  href="#"><i class="fa fa-table fa-2x"></i> Settings</a>
+                        <a  href="#"><i class="fa fa-gear fa-2x"></i> Settings</a>
                     </li>	
                 </ul>
                
@@ -68,9 +68,9 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Dashboard</h2>
+                     <h2 style="color: #4f2684; margin-top: -97px; margin-bottom: 61px;">Dashboard</h2>
 
-                     <h2>Creators Name</h2>
+                     <h2 style="font-weight: bold; color: #4f2684; margin-bottom: 33px;">Creator's Name</h2>
 
                      <!-- div for contain tickets, events and sales volume content starts here -->
                     <div class="row">

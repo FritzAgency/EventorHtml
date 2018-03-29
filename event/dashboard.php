@@ -23,7 +23,7 @@
 </head>
 <body>
     <div id="wrapper">
-        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0; background-color: white;">
             <div class="navbar-header" style="background-color: white;">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -33,10 +33,7 @@
                 </button>
                 <a class="navbar-brand" href="#" style="#a20eab"><img src="" alt="">Eventor Logo</a> 
             </div>
-  <div style="color: white;
-padding: 15px 50px 5px 50px;
-float: right;
-font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+  <div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust" style="border: 2px solid gray; color: white; background-color: #4f2684; padding: 8px 20px; border-radius: 40px; font-size: 14px; font-weight: bold;">logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation" style="top: 60px;">
@@ -68,9 +65,9 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2 style="color: #4f2684; margin-top: -97px; margin-bottom: 61px;">Dashboard</h2>
+                     <h2 style="color: grey; margin-top: -80px; margin-bottom: 61px; margin-left: 10px;">Dashboard</h2>
 
-                     <h2 style="font-weight: bold; color: #4f2684; margin-bottom: 33px;">Creator's Name</h2>
+                     <h2 style="font-weight: bold; color: #4f2684; margin-bottom: 20px; margin-left: 10px;">Creator's Name</h2>
 
                      <!-- div for contain tickets, events and sales volume content starts here -->
                     <div class="row">
@@ -126,8 +123,7 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <p>First Event</p>
-                                    <span class="glyphicon glyphicon-time"> 6 days</span>
+                                <p style="font-size: 16px; line-height: 21px; padding-bottom: 36px; margin-top: 3px;"><strong>First Event </strong><br/> <span class="glyphicon glyphicon-time"> 6 days</span></p>
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-2" style="position: relative; left: 80px;">
@@ -152,8 +148,7 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <p>Second Event</p>
-                                    <span class="glyphicon glyphicon-time"> 2 days</span>
+                                <p style="font-size: 16px; line-height: 21px; padding-bottom: 20px; margin-top: 3px;"><strong>Second Event </strong><br/> <span class="glyphicon glyphicon-time"> 2 days</span></p>
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-1" style="position: relative; left: 80px;">

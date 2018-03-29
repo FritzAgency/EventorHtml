@@ -233,7 +233,7 @@ if(isset($message)){
   <div class="tab"><h4 style="font-weight: bold; color: #4f2684">ACTIVITIES</h4>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name"></p>
 
-    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
+    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc"></textarea></p>
 
     <p><input type="file" name="act_img" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''"></p>
 

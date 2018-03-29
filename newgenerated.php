@@ -36,6 +36,13 @@ $sch_name = $row['sch_name'];
 $sch_start = $row['sch_start']; 
 $sch_end = $row['sch_end']; 
 
+$sch_name1 = $row['sch_name1'];  
+$sch_start1 = $row['sch_start1']; 
+$sch_end1 = $row['sch_end1']; 
+
+$sch_name2 = $row['sch_name2'];  
+$sch_start2 = $row['sch_start2']; 
+$sch_end2 = $row['sch_end2']; 
 
 $sponsor_name1 = $row['sponsor_name1']; 
 $sponsor_logo1 = $row['sponsor_logo1'];
@@ -51,7 +58,7 @@ $act_desc = $row['act_desc'];
 $act_date = $row['act_date']; 
 $act_img = $row['act_img']; 
 
-
+$org_logo = $row['org_logo']; 
 
 }
 
@@ -300,7 +307,9 @@ font-weight: bold;
   <div class="container">
     <div class="navbar-header" >
       <div class="col-sm-2 col-md-3 col-xm-4">
-      <a class="navbar-brand" href="#"><p><img src="" alt="Creator logo" srcset="" class="img-fluid"></p></a>
+      <!--a class="navbar-brand" href="#"><p><img src="" alt="Creator logo" srcset="" class="img-fluid"></p></a-->
+      <p><img src="/eventorhtml/public/images/<?php echo 
+$org_logo;?>" alt=""  class="img-fluid">
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="font-weight: bold; color: #4f2684">
@@ -360,7 +369,6 @@ font-weight: bold;
      echo $event_title; 
     }
     ?>
-A TRIP TO THE HILLS OF IDANRAN
 </h1></div>
 <!-- event title ends here -->
 
@@ -537,11 +545,12 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
 <div class="tab-content" style="margin-top: 20px;">
   <div class="tab-pane active" id="hometab2" style="font-size: 17px; color: #626263;">
     <ul class="nav nav-tabs" role="tablist" style=" margin-left: -53px; margin-right: -53px;">
-  <li class="active sizing3"><a href="#hometab5" role="tab" data-toggle="tab">Hicking</a></li>
-  <li class="sizing3"><a href="#javatab5" role="tab" data-toggle="tab" >Jogging</a></li>
+  <li class="active sizing3"><a href="#hometab5" role="tab" data-toggle="tab"><?php if(isset($act_name)){echo $act_name;}?> </a></li>
+
+  <!--li class="sizing3"><a href="#javatab5" role="tab" data-toggle="tab" >Jogging</a></li>
   <li class="sizing3"><a href="#csharptab5" role="tab" data-toggle="tab">Dance</a></li>
   <li class="sizing3"><a href="#mysqltab5" role="tab" data-toggle="tab">Running</a></li> 
-  <li class="sizing3"><a href="#fight" role="tab" data-toggle="tab">Fighting</a></li> 
+  <li class="sizing3"><a href="#fight" role="tab" data-toggle="tab">Fighting</a></li--> 
 </ul>
 </li>
 
@@ -550,24 +559,24 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
   <div class="tab-pane active" id="hometab5" style="font-size: 17px; color: #626263;">
 
             <div style="width: 100%; margin: auto;">
-        <img src="" alt="activity image goes in here 1" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
+        <!--img src="" alt="activity image goes in here 1" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain"-->
   </div>
             <!-- activity schedule and time goes in here -->
             <div class="row">
     <div class="col-sm-6">
         <p style="text-align:justify;">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
+      <?php if(isset($act_desc)){echo $act_desc;}?>
         </p>
     </div>
    <div class="col-sm-6">
         <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">23:00</h2>
+        <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><?php if(isset($act_date)){echo $act_date;}?></h2>
         </div>
-        <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-        <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+        <!--h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2-->  
+        <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">4:00</h2>
-        </div>
+        </div-->
         <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>

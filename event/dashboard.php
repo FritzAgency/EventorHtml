@@ -1,14 +1,15 @@
 
 <?php
-
-
+session_start(); 
 ?>
+
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Bootstrap Admin Template : Binary Admin</title>
+    <title>Eventor: Dashboard</title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -36,7 +37,7 @@
   <div style="color: white;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a> </div>
+font-size: 16px;"><a href="../auth/logout.php" class="btn btn-danger square-btn-adjust">Logout</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation" style="top: 60px;">
@@ -68,16 +69,43 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Dashboard</h2>
+                     <!--h2>Dashboard</h2-->
 
-                     <h2>Creators Name</h2>
+                     <h2>
+                        <?php 
+
+                        if(!isset($_SESSION['first_name'])) {
+                      header("Location: ../index.php");
+                      //redirect to the homepage
+                        } 
+                        echo 'Welcome,'. $_SESSION['first_name'];//display user's first name.  
+                        ?>
+
+                     </h2>
 
                      <!-- div for contain tickets, events and sales volume content starts here -->
                     <div class="row">
                         <div class="col-sm-4">
                         <div class="panel panel-back noti-box">
                   <div class="text-box" style="text-align: center; font-weight: bold;">
-                    <p class="main-text">2</p>
+                    <p class="main-text"><?php
+
+require_once('../Database/conn.php');
+
+$id = $_SESSION['id']; 
+
+$query =  "SELECT * FROM `event` JOIN users ON users.id = event.creator_id WHERE `creator_id` = $id"; 
+
+$result = mysqli_query($con,$query); 
+
+
+$row = mysqli_num_rows($result); 
+//or die(mysqli_error());
+
+echo $row; 
+
+?>
+</p>
                     <p class="text-muted">Events</p>
                 </div>
              </div>
@@ -122,16 +150,49 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
-                                        <p>F</p>
+                                        <p></p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
-                                    <p>First Event</p>
-                                    <span class="glyphicon glyphicon-time"></span>
+                                    <!--p>First Event</p-->
+                                    <?php
+
+require_once('../Database/conn.php');
+
+$id = $_SESSION['id']; 
+
+$query =  "SELECT * FROM `event` JOIN users ON users.id = event.creator_id WHERE `creator_id` = $id"; 
+
+ $result = mysqli_query($con,$query); 
+
+
+$row = mysqli_num_rows($result); 
+//or die(mysqli_error($con));
+
+/*if($row<1 ){
+    echo '0'; 
+}*/
+
+//echo $row; 
+
+
+while($row = mysqli_fetch_array($result)){
+
+    //echo '<div><p><a href="$row['event_url']">'. $row['event_title']. '</div></p></a>'; 
+
+    $event_url = $row['event_url']; 
+
+   echo  "<div><p style='text-justify'><a href='/eventorhtml/newGenerated.php?event_url=$event_url'>". $row['event_title']. "</div></p></a>";
+}
+
+
+?>
+
+                                    <!--span class="glyphicon glyphicon-time"></span-->
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-4">
-                                    <div>
+                                    <!--div>
                                         o
                                     </div>
                                     <div>
@@ -139,24 +200,24 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
                                     </div>
                                     <div>
                                         o
-                                    </div>
+                                    </div-->
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                             </div>
                         </div>
 
                          <div class="row">
-                                <div class="col-sm-4">
+                                <!--div class="col-sm-4">
                                     <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
                                         <p>S</p>
                                     </div>
-                                </div>
-                                <div class="col-sm-4">
+                                </div-->
+                                <!--div class="col-sm-4">
                                     <p>Second Event</p>
                                     <span class="glyphicon glyphicon-time"> 2 days</span>
-                                </div>
+                                </div-->
                                 <!-- buttons at the end of the row not important -->
-                                <div class="col-sm-4">
+                                <!--div class="col-sm-4">
                                     <div>
                                         o
                                     </div>
@@ -166,7 +227,7 @@ font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust">Logout</a
                                     <div>
                                         o
                                     </div>
-                                </div>
+                                </div-->
                                 <!-- buttons at the end of the row not important -->
                             </div>
                         </div>

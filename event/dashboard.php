@@ -67,7 +67,7 @@
                     <div class="col-md-12">
                      <h2 style="color: grey; margin-top: -80px; margin-bottom: 61px; margin-left: 10px;">Dashboard</h2>
 
-                     <h2 style="font-weight: bold; color: #4f2684; margin-bottom: 20px; margin-left: 10px;">Creator's Name</h2>
+                     <h2 style="font-weight: bold; color: #4f2684; margin-bottom: 20px; margin-left: 10px;"><strong>Creator's Name</strong></h2>
 
                      <!-- div for contain tickets, events and sales volume content starts here -->
                     <div class="row">
@@ -82,15 +82,13 @@
 
              <div class="panel panel-back noti-box">
                   <div class="text-box" style="text-align: center; font-weight: bold;">
-                    <p class="main-text">23</p>
-                    <p class="text-muted">Tickets sold</p>
+                    <p class="main-text" style="margin-top: 21px">Add Service</p>
                 </div>
              </div>
 
                 <div class="panel panel-back noti-box">
                   <div class="text-box" style="text-align: center; font-weight: bold;">
-                    <p class="main-text">#69000</p>
-                    <p class="text-muted">Sales Volume</p>
+                    <p class="main-text" style="margin-top: 21px">Add Products</p>
                 </div>
              </div>
 
@@ -98,7 +96,7 @@
                         <div class="col-sm-8">
                         <div class="panel panel-default">
                         <div class="panel-heading">
-                            Bar Chart Example
+                            <h1 style="font-weight: bold; font-size: 23px; color: grey;">Event Visits</h2>
                         </div>
                         <div class="panel-body">
                             <div id="morris-bar-chart"></div>
@@ -111,7 +109,7 @@
                 
                      <!-- event details goes in here -->
                 <div class="row">
-                    <div class="col-sm-4 panel panel-default" style="height: 559px; padding-left: 0px; padding-right: 0px; width: 31%; margin-left: 10px; margin-right: 27px;">
+                    <div class="col-sm-4 panel panel-default" style="height: 540px; padding-left: 0px; padding-right: 0px; width: 31%; margin-left: 10px; margin-right: 27px;">
                         <div class="panel panel-heading" style="margin-bottom: 6px;">
                             <h2>Events</h2>
                         </div>
@@ -123,17 +121,17 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                <p style="font-size: 16px; line-height: 21px; padding-bottom: 36px; margin-top: 3px;"><strong>First Event </strong><br/> <span class="glyphicon glyphicon-time"> 6 days</span></p>
+                                <p style="font-size: 14px; line-height: 21px; padding-bottom: 36px; margin-top: 3px;"><strong>First Event </strong><br/> <span class="glyphicon glyphicon-time"> 6 days</span></p>
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-2" style="position: relative; left: 80px;">
-                                    <div>
+                                    <div style="color: black;">
                                         o
                                     </div>
-                                    <div>
+                                    <div style="color: black;">
                                         o
                                     </div>
-                                    <div>
+                                    <div style="color: black;">
                                         o
                                     </div>
                                 </div>
@@ -148,17 +146,17 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                <p style="font-size: 16px; line-height: 21px; padding-bottom: 20px; margin-top: 3px;"><strong>Second Event </strong><br/> <span class="glyphicon glyphicon-time"> 2 days</span></p>
+                                <p style="font-size: 14px; line-height: 21px; padding-bottom: 20px; margin-top: 3px;"><strong>Second Event </strong><br/> <span class="glyphicon glyphicon-time"> 2 days</span></p>
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-1" style="position: relative; left: 80px;">
-                                    <div>
+                                    <div style="color: black;">
                                         o
                                     </div>
-                                    <div>
+                                    <div style="color: black;">
                                         o
                                     </div>
-                                    <div>
+                                    <div style="color: black;">
                                         o
                                     </div>
                                 </div>

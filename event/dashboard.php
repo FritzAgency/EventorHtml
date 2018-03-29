@@ -81,12 +81,12 @@ font-size: 16px;"><a href="../auth/logout.php" class="btn btn-danger square-btn-
                      <h2>
                         <?php 
 
-                       /* if(!isset($_SESSION['first_name'])) {
+                        if(!isset($_SESSION['first_name'])) {
                       header("Location: ../index.php");
                       //redirect to the homepage
                         } 
                         echo 'Welcome,'. $_SESSION['first_name'];//display user's first name.  
-                        ?>*/ 
+                        ?>
 
                      </h2>
 

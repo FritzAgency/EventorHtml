@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="/event/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
 <style>
 
@@ -224,6 +225,7 @@ if(isset($message)){
 
 
 <p> Organizer's Logo </p>
+
     <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p-->
 <p>  <input type='file' name="org_logo" onchange="readURL(this);"/> </p>
 
@@ -236,6 +238,23 @@ if(isset($message)){
     <p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook" style="margin-top:10px"></p>
     <p><input placeholder="Enter Instagram link here" value="@Instagram.com" oninput="this.className = ''" name="instagram" ></p>
     <p><input placeholder="Enter Twitter handle here" value="@twitter.com" oninput="this.className = ''" name="twitter"></p>
+    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p>
+<hr>
+
+ <div class="input-group" style="margin-bottom: 15px;">
+   <span class="input-group-addon">@</span>
+   <input id="email" type="text" class="form-control" name="email" placeholder="twitter handle">
+ </div>
+ <div class="input-group" style="margin-bottom: 15px;">
+   <span class="input-group-addon">@</span>
+   <input id="password" type="password" class="form-control" name="password" placeholder="instagram handle">
+ </div>
+ <div class="input-group" style="margin-bottom: 15px;">
+   <span class="input-group-addon">Facebook.com/</span>
+   <input id="msg" type="text" class="form-control" name="msg" placeholder="facebook page">
+ </div>
+
+
   </div>
   
   <div class="tab">

@@ -1,30 +1,24 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
 
-session_start(); 
+<form>
+  <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon">Text</span>
+    <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+  </div>
+</form>
 
-require_once('../Database/conn.php');
-
-$id = $_SESSION['id']; 
-
-$query =  "SELECT * FROM `event` JOIN users ON users.id = event.creator_id WHERE `creator_id` = $id"; 
-
- $result = mysqli_query($con,$query); 
-
-
-$row = mysqli_num_rows($result); 
-//or die(mysqli_error($con));
-
-/*if($row<1 ){
-	echo '0'; 
-}*/
-
-//echo $row; 
-
-
-while($row = mysqli_fetch_array($result)){
-
-	echo '<div>'. $row['event_title']. '</div>'; 
-}
-
-
-?>
+</body>
+</html>

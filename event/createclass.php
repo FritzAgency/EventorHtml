@@ -9,9 +9,17 @@ $target_dir = "../public/images/"; //the storage directory to store the image.
 //when the submit button is clicked
 if(isset($_POST['event_title'])){
 
-$event_title = $_POST['event_title']; //grabs the event title from the form
+//$event_title = $_POST['event_title']; //grabs the event title from the form
+
+
+$event_title = mysqli_real_escape_string($con, $_POST['event_title']);
+
+
 $creator_id = $_SESSION['id']; //the creator session id to differentiate creators from each other. 
-$event_description = $_POST['event_description'];  //grabs the event description from the form
+//$event_description = $_POST['event_description'];  //grabs the event description from the form
+
+$event_description = mysqli_real_escape_string($con, $_POST['event_description']);
+
 //$status = $_POST['status'];  //grabs the event status from the form 
 $sponsor_name = $_POST['sponsor_name']; //grabs the sponsor's name from the form 
 $sponsor_url = $_POST['sponsor_url']; //grabs the sponsor's url from the form 

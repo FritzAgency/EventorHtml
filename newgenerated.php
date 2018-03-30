@@ -36,10 +36,9 @@ $sch_name = $row['sch_name'];
 $sch_start = $row['sch_start']; 
 $sch_end = $row['sch_end']; 
 
-<<<<<<< HEAD
+
 $org_logo = $row['org_logo']; 
 
-=======
 $sch_name1 = $row['sch_name1'];  
 $sch_start1 = $row['sch_start1']; 
 $sch_end1 = $row['sch_end1']; 
@@ -47,7 +46,7 @@ $sch_end1 = $row['sch_end1'];
 $sch_name2 = $row['sch_name2'];  
 $sch_start2 = $row['sch_start2']; 
 $sch_end2 = $row['sch_end2']; 
->>>>>>> 70985df5ad73491e684becf70d693298f06d5027
+
 
 $sponsor_name1 = $row['sponsor_name1']; 
 $sponsor_logo1 = $row['sponsor_logo1'];
@@ -282,16 +281,15 @@ font-weight: bold;
   <div class="container">
     <div class="navbar-header" >
       <div class="col-sm-2 col-md-3 col-xm-4">
-<<<<<<< HEAD
+
      <p><img src="/eventorhtml/public/images/<?php echo 
 $org_logo;?>" alt=""  class="img-fluid">
 
       </p>
-=======
+
       <!--a class="navbar-brand" href="#"><p><img src="" alt="Creator logo" srcset="" class="img-fluid"></p></a-->
-      <p><img src="/eventorhtml/public/images/<?php echo 
-$org_logo;?>" alt=""  class="img-fluid">
->>>>>>> 70985df5ad73491e684becf70d693298f06d5027
+      
+
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="font-weight: bold; color: #4f2684">
@@ -315,14 +313,27 @@ $org_logo;?>" alt=""  class="img-fluid">
     <div class="carousel-inner landscape square" style="margin: auto;">
       <div class="item active">
         <!--img src="img/create.png" alt="Los Angeles" style="width:50%; height: 50%; margin: auto;" class="img-responsive"-->
-        <img src="img/fifth.jpg" class="img-responsive landscape square" style="margin: auto;">
+        <!--img src="img/fifth.jpg" class="img-responsive landscape square" style="margin: auto;"-->
+<img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
+
       </div>
       <!-- style="width:50%; height: 50%; margin: auto;" -->
       <div class="item">
-<<<<<<< HEAD
 
-<img src="/eventorhtml/public/images/<?php echo 
-$event_flier;?>" class="img-fluid" style="width:100%; height: 100%; margin: auto;">
+        <!--img src="img/celine.jpg" alt="Chicago"  class="img-responsive landscape square" style="margin: auto;"-->
+        <img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
+
+      </div>
+    
+      <div class="item">
+        <!--img src="img/google_maps_hello_world.jpg" alt="New york" class="img-responsive landscape square" style="margin: auto;"-->
+        <img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
+
+
+
 
 
               </div>
@@ -330,13 +341,12 @@ $event_flier;?>" class="img-fluid" style="width:100%; height: 100%; margin: auto
       <div class="item">
        <img src="/eventorhtml/public/images/<?php echo 
 $event_flier;?>" class="img-fluid" style="width:100%; height: 100%; margin: auto;">
-=======
-        <img src="img/celine.jpg" alt="Chicago"  class="img-responsive landscape square" style="margin: auto;">
+
       </div>
     
       <div class="item">
-        <img src="img/google_maps_hello_world.jpg" alt="New york" class="img-responsive landscape square" style="margin: auto;">
->>>>>>> 70985df5ad73491e684becf70d693298f06d5027
+        <!--img src="img/google_maps_hello_world.jpg" alt="New york" class="img-responsive landscape square" style="margin: auto;"-->
+
       </div>
     </div>
 

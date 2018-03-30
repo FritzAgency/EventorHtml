@@ -102,8 +102,8 @@ body {
 {
     15%
     {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
     }
     30%
     {
@@ -140,23 +140,23 @@ body {
     }
     30%
     {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
     }
     50%
     {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
     }
     65%
     {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
     }
     80%
     {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
     }
     100%
     {
@@ -236,9 +236,9 @@ div.form-group {
 <body>
   <!-- header starts here -->
 <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
-  <div class="container-fluid">
-    <div class="navbar-header" >
-      <div class="col-sm-2 col-md-3 col-xm-4">
+  <div class="container">
+    <div class="navbar-header">
+      <div class="col-sm-2 col-md-3 col-xm-4" style="left: 70px;">
       <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
       </div>
     </div>
@@ -519,13 +519,13 @@ echo 'Welcome, '. $_SESSION['first_name'];
     </div>
     <div class="col-sm-8">
       <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
-        <div class="col-sm-4">
+        <div class="col-sm-5">
         <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">How it works</p></a>
         </div>
         <div class="col-sm-4">
         <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">About us</p></a>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
         <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">Contact</p></a>
         </div>
       </div>
@@ -533,13 +533,13 @@ echo 'Welcome, '. $_SESSION['first_name'];
     <div class="col-sm-2"> 
       <div class="row">
         <div class="col-sm-4">
-          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #f3f3f3; border-radius: 50%;"></a>
+          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #f3f3f3; border-radius: 50%;"></a>
+            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #f3f3f3; border-radius: 50%;"></a>
+            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px;"></a>
         </div>
       </div>
     </div>

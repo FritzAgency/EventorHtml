@@ -282,7 +282,7 @@ font-weight: bold;
     <div class="navbar-header" >
       <div class="col-sm-2 col-md-3 col-xm-4">
 
-     <p><img src="/eventorhtml/public/images/<?php echo 
+     <p><img src="/public/images/<?php echo 
 $org_logo;?>" alt=""  class="img-fluid">
 
       </p>
@@ -314,7 +314,7 @@ $org_logo;?>" alt=""  class="img-fluid">
       <div class="item active">
         <!--img src="img/create.png" alt="Los Angeles" style="width:50%; height: 50%; margin: auto;" class="img-responsive"-->
         <!--img src="img/fifth.jpg" class="img-responsive landscape square" style="margin: auto;"-->
-<img src="/eventorhtml/public/images/<?php echo 
+<img src="/public/images/<?php echo 
 $event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
 
       </div>
@@ -322,14 +322,14 @@ $event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
       <div class="item">
 
         <!--img src="img/celine.jpg" alt="Chicago"  class="img-responsive landscape square" style="margin: auto;"-->
-        <img src="/eventorhtml/public/images/<?php echo 
+        <img src="/public/images/<?php echo 
 $event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
 
       </div>
     
       <div class="item">
         <!--img src="img/google_maps_hello_world.jpg" alt="New york" class="img-responsive landscape square" style="margin: auto;"-->
-        <img src="/eventorhtml/public/images/<?php echo 
+        <img src="/public/images/<?php echo 
 $event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
 
 
@@ -339,7 +339,7 @@ $event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
               </div>
     
       <div class="item">
-       <img src="/eventorhtml/public/images/<?php echo 
+       <img src="/public/images/<?php echo 
 $event_flier;?>" class="img-fluid" style="width:100%; height: 100%; margin: auto;">
 
       </div>
@@ -408,7 +408,7 @@ $event_flier;?>" class="img-fluid" style="width:100%; height: 100%; margin: auto
     <div class="row" style="margin-left: auto; margin-right:auto">
       <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
         
-      <a href="<?php if (isset($sponsor_url)){echo $sponsor_url;}?>">  <img src="/eventorhtml/public/images/<?php echo 
+      <a href="<?php if (isset($sponsor_url)){echo $sponsor_url;}?>">  <img src="/public/images/<?php echo 
 $sponsor_logo;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
 <p> <?php if(isset($sponsor_name)){echo $sponsor_name;}?> </p>
 
@@ -417,13 +417,13 @@ $sponsor_logo;?>" class="img-responsive" style="height: auto; background-color: 
 
       </div>
       <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
-        <a href="<?php if (isset($sponsor_url1)){echo $sponsor_url1;}?>">  <img src="/eventorhtml/public/images/<?php echo 
+        <a href="<?php if (isset($sponsor_url1)){echo $sponsor_url1;}?>">  <img src="/public/images/<?php echo 
 $sponsor_logo1;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
 <p> <?php if(isset($sponsor_name1)){echo $sponsor_name1;}?> </p>
 
       </div>
       <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
-        <a href="<?php if (isset($sponsor_url2)){echo $sponsor_url2;}?>">  <img src="/eventorhtml/public/images/<?php echo 
+        <a href="<?php if (isset($sponsor_url2)){echo $sponsor_url2;}?>">  <img src="/public/images/<?php echo 
 $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
 <p> <?php if(isset($sponsor_name2)){echo $sponsor_name2;}?> </p>
 

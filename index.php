@@ -276,7 +276,7 @@ div.form-group {
 <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
   <div class="container">
     <div class="navbar-header">
-      <div class="col-sm-2 col-md-3 col-xm-4" style="left: 70px;">
+      <div class="col-sm-2 col-md-3 col-xm-4" style="left: 25px;">
       <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
       </div>
     </div>

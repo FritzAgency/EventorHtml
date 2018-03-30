@@ -225,11 +225,49 @@ div#carousel-example-generic {
 div.form-group {
     position:absolute;
     z-index:9999999;
-    top:368px; /* change to whatever you want */
-    left:140px; /* change to whatever you want */
+    top:361px; /* change to whatever you want */
+    left:-781; /* change to whatever you want */
     right:auto; /* change to whatever you want */
     bottom:auto; /* change to whatever you want */
 }
+
+ #custom-search-form {
+        margin:0;
+        margin-top: 5px;
+        padding: 0;
+    }
+ 
+    #custom-search-form .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-form button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
 
 </style>
 </head>
@@ -315,21 +353,19 @@ echo 'Welcome, '. $_SESSION['first_name'];
       <div id="myCarousel carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- search bar starts here -->
   <div>
-    <form class="example" action="action_page.php">
-      <div class="row">
-      <div class="col-sm-3" style="margin-right: -21px;">
-          <div class="form-group">
-          <div class="selectDiv">
-   <span class="selectDefault"></span>
-   <select name="txtCountry" class="selectBox">
-      <option class="defualt-text">Search by Category</option>
-      <option value="1">Search by Category</option>
-      <option value="2">Jogging</option>
-   </select>
-</div>
-          </div>
+  <div class="container form-group" style="width: 83%;">
+	<div class="row">
+        <div class="span12">
+            <form id="custom-search-form" class="form-search form-horizontal pull-right">
+                <div class="input-append span12">
+                    <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="Enter Search here" style="width: 464px; height: 39px; border-radius: 25px; background-color: transparent; border: 2px solid #ffffff;"></p>
+                    <button type="submit" class="btn"><span class="glyphicon glyphicon-search fa-2x" style="left: 450px; top: -49px; border: 1px solid #fff; padding: 8px; background-color: #ffff; border-radius: 46px;"></span></i></button>
+                </div>
+            </form>
         </div>
-        <div class="col-sm-3" style="margin-right: -26px;">
+	</div>
+</div>
+        <!-- <div class="col-sm-3" style="margin-right: -26px;">
           <div class="form-group">
           <div class="selectDiv">
    <span class="selectDefault"></span>
@@ -340,8 +376,8 @@ echo 'Welcome, '. $_SESSION['first_name'];
    </select>
 </div>
           </div>
-        </div>
-        <div class="col-sm-3" style="margin-right: -52px;">
+        </div> -->
+        <!-- <div class="col-sm-3" style="margin-right: -52px;">
           <div class="form-group">
           <div class="selectDiv">
    <span class="selectDefault"></span>
@@ -352,14 +388,14 @@ echo 'Welcome, '. $_SESSION['first_name'];
    </select>
 </div>
           </div>
-        </div>
-        <div class="col-sm-3" style="margin-right: -51px;">
+        </div> -->
+        <!-- <div class="col-sm-3">
           <div class="form-group">
             <button type="submit"><span class="glyphicon glyphicon-search"></span></i></button>
           </div>
         </div>
       </div>
-    </form>
+    </form> -->
   </div>
   <!-- search bar ends here -->
   
@@ -527,8 +563,7 @@ echo 'Welcome, '. $_SESSION['first_name'];
         </div>
         <div class="col-sm-3">
         <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">Contact</p></a>
-        </div>
-      </div>
+        </div> 
     </div>
     <div class="col-sm-2"> 
       <div class="row">

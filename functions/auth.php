@@ -81,7 +81,7 @@ else{
    //throw error.
  //$_SESSION['message'] = 'something went wrong';   
 
-  echo "Error" . mysqli_errno($insert); 
+  echo "Error" . mysqli_errno($con); 
 }
 
 }

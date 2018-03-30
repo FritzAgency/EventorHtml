@@ -25,14 +25,13 @@ $username = $url["bacf3fbec39377"];
 $password = $url["87d078f2"];*/
 
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+//$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$server = "us-cdbr-iron-east-05.cleardb.net";
+$username = "bacf3fbec39377";
+$password = "87d078f2";
+$db = "heroku_adcba3479704be4";
 
-$server = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$db = substr($url["path"], 1);
-
-$conn = new mysqli($server, $username, $password, $db);
+$con = new mysqli($server, $username, $password, $db);
 
 /*$server = "us-cdbr-iron-east-05.cleardb.net";
 $username = "bacf3fbec39377";
@@ -42,12 +41,12 @@ $password = "87d078f2"; */
 
 //$con = mysqli_connect($server, $username, $password);
 
-if (mysqli_connect_errno())
+if ($con == false)
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();//returns error if connection failed. 
-  } /*else{
+  } else{
   	echo 'connection succeed'; 
-  }*/
+  }
 
 
  ?>

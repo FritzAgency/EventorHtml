@@ -4,7 +4,7 @@ Author: Abiodun Adetona.
 email: adetonaabiodun12@gmail.com. 
 */
 
-$db_host='localhost'; //defining the database host. 
+/*$db_host='localhost'; //defining the database host. 
 $db_user='root'; //defining the database user. 
 $db_name='eventor';//defining the database name.   
 $db_pass=''; //defining the password
@@ -15,6 +15,22 @@ $con = mysqli_connect($db_host, $db_user, "", $db_name);//establishing the conne
 if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();//returns error if connection failed. 
+  } */
+
+
+$url = parse_url(getenv("mysql://bacf3fbec39377:87d078f2@us-cdbr-iron-east-05.cleardb.net:3306/heroku_adcba3479704be4"));
+
+$server = $url["us-cdbr-iron-east-05.cleardb.net"];
+$username = $url["bacf3fbec39377"];
+$password = $url["87d078f2"];
+$db = substr($url["path"], 1);
+
+$con = mysqli_connect($server, $username, $password, $db);
+
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();//returns error if connection failed. 
   } 
+
 
  ?>

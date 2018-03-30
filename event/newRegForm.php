@@ -187,8 +187,8 @@ if(isset($message)){
 
 <p style="color: #4f2684">UPLOAD EVENT BANNER </p>
    <p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p>
-<p style="color: #4f2684; margin-top:24px;">UPLOAD EVENT BANNER </p>
-    <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier">
+<!--p style="color: #4f2684; margin-top:24px;">UPLOAD EVENT BANNER </p>
+    <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"-->
 
 
     <p style="color: #4f2684; margin-top:24px;">EVENT STARTS: </p>

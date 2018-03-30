@@ -24,13 +24,23 @@ $server = $url["us-cdbr-iron-east-05.cleardb.net"];
 $username = $url["bacf3fbec39377"];
 $password = $url["87d078f2"];*/
 
-$server = "us-cdbr-iron-east-05.cleardb.net";
+
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
+$conn = new mysqli($server, $username, $password, $db);
+
+/*$server = "us-cdbr-iron-east-05.cleardb.net";
 $username = "bacf3fbec39377";
-$password = "87d078f2"; 
+$password = "87d078f2"; */ 
 
 //$db = substr($url["mysql://bacf3fbec39377:87d078f2@us-cdbr-iron-east-05.cleardb.net/heroku_adcba3479704be4?reconnect=true"], 1);
 
-$con = mysqli_connect($server, $username, $password);
+//$con = mysqli_connect($server, $username, $password);
 
 if (mysqli_connect_errno())
   {

@@ -286,7 +286,6 @@ div.form-group {
       <li><a href="#" class="new">SPECIAL DEALS</a></li>
       <li><a href="#" class="new">ABOUT US</a></li>
       <li><a href="#" class="new">CONTACT</a></li>
-      <li><a href="event/dashboard.php" class="new">Dashboard</a></li>
       <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
       <!--li><a class="new"> | </a></li-->
       <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
@@ -313,12 +312,27 @@ echo'
 
 
 
-<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  <?php 
+<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">
+<div class="dropdown">
+  <div class="row">
+    <div class="col-sm-6">
+    <?php 
 if((isset($_SESSION['first_name']))){
 echo 'Welcome, '. $_SESSION['first_name'];
 }
 ?>
+    </div>
+    <div class="col-sm-6">
+    <span class="caret dropdown-toggle" type="button" data-toggle="dropdown"></span>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+    </div>
 
+  </div>
+  </div>
     </ul>
   </div>
 </nav>

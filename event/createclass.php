@@ -50,9 +50,20 @@ $sch_name = $_POST['sch_name'];
 $sch_start = $_POST['sch_start']; 
 $sch_end  = $_POST['sch_start'];
 
+
+$sch_name1 = $_POST['sch_name1'];
+$sch_start1 = $_POST['sch_start1']; 
+$sch_end1  = $_POST['sch_start1'];
+
+
+$sch_name2 = $_POST['sch_name2'];
+$sch_start2 = $_POST['sch_start2']; 
+$sch_end2  = $_POST['sch_start2'];
+
+
 $act_name = $_POST['act_name']; 
 $act_loc = $_POST['act_loc']; 
-//$act_desc = $_POST['act_desc']; 
+$act_desc = $_POST['act_desc']; 
 $act_date = $_POST['act_date']; 
 $act_img = $_FILES["act_img"]["name"];
 
@@ -100,11 +111,11 @@ move_uploaded_file($_FILES["act_img"]["tmp_name"], "../public/images/".$_FILES['
 
 $act_name = $_POST['act_name']; 
 $act_loc = $_POST['act_loc']; 
-//$act_desc = $_POST['act_desc']; 
+$act_desc = $_POST['act_desc']; 
 $act_date = $_POST['act_date']; 
 $act_img = $_FILES["act_img"]["name"];
 
-	$query = "INSERT into `event` (creator_id, event_title, event_url, event_description,  sponsor_name, sponsor_url, sponsor_logo, org_name, org_logo, event_flier, Address, city, state,  event_starts, event_ends, facebook, twitter, instagram, act_name, act_desc, act_date, act_img, ticket_qty, ticket_price, created_at, sch_name, sch_start, sch_end) VALUES ('$creator_id', '$event_title', '$event_url', '$event_description', '$sponsor_name', '$sponsor_url', '$sponsor_logo', '$org_name', '$org_logo', '$event_flier', '$Address', '$city', '$state', '$event_starts', '$event_ends', '$facebook', '$twitter', '$instagram', '$act_name', '$act_loc', '$act_date', '$act_img', '$ticket_qty', '$ticket_price', '$created_at', '$sch_name', '$sch_start', '$sch_end')";  
+	$query = "INSERT into `event` (creator_id, event_title, event_url, event_description,  sponsor_name, sponsor_url, sponsor_logo, sponsor_name1, sponsor_url1, sponsor_logo1, sponsor_name2, sponsor_url2, sponsor_logo2, org_name, org_logo, event_flier, Address, city, state,  event_starts, event_ends, facebook, twitter, instagram, act_name, act_desc, act_date, act_img, ticket_qty, ticket_price, created_at, sch_name, sch_start, sch_end,  sch_name1, sch_start1, sch_end1,  sch_name2, sch_start2, sch_end2) VALUES ('$creator_id', '$event_title', '$event_url', '$event_description', '$sponsor_name', '$sponsor_url', '$sponsor_logo', '$sponsor_name1', '$sponsor_url1', '$sponsor_logo1', '$sponsor_name2', '$sponsor_url2', '$sponsor_logo2','$org_name', '$org_logo', '$event_flier', '$Address', '$city', '$state', '$event_starts', '$event_ends', '$facebook', '$twitter', '$instagram', '$act_name', '$act_desc', '$act_date', '$act_img', '$ticket_qty', '$ticket_price', '$created_at', '$sch_name', '$sch_start', '$sch_end', '$sch_name1', '$sch_start1', '$sch_end1', '$sch_name2', '$sch_start2', '$sch_end2')";  
 
         $result = mysqli_query($con,$query) or die(mysqli_error($con));
 

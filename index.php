@@ -281,11 +281,11 @@ div.form-group {
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -35px; padding-bottom: 10px;">
-    <li><a href="#" class="new">HOW IT WORKS </a></li>
-      <li><a href="#" class="new">EVENTS</a></li>
-      <li><a href="#" class="new">SPECIAL DEALS</a></li>
-      <li><a href="#" class="new">ABOUT US</a></li>
-      <li><a href="#" class="new">CONTACT</a></li>
+    <li><a href="#" class="new" style="color:#4f2684;">HOW IT WORKS </a></li>
+      <li><a style="color:#4f2684;" href="#" class="new">EVENTS</a></li>
+      <li><a style="color:#4f2684;" href="#" class="new">SPECIAL DEALS</a></li>
+      <li><a style="color:#4f2684;" href="#" class="new">ABOUT US</a></li>
+      <li><a style="color:#4f2684;" href="#" class="new">CONTACT</a></li>
       <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
       <!--li><a class="new"> | </a></li-->
       <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
@@ -294,7 +294,7 @@ div.form-group {
 echo 
 ''; 
 }else{
-echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>'; 
+echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>'; 
 }
 ?>
 
@@ -305,7 +305,7 @@ echo
 <li><a href="auth/logout.php" style="color:#4f2684;"><span class=""></span> Logout</a></li>
 ';      }else{
 echo'
-<li><a href="auth/login.php" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+<li><a href="auth/login.php" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
 '; 
 }
 ?>
@@ -322,12 +322,12 @@ echo 'Welcome, '. $_SESSION['first_name'];
 }
 ?>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-6" style="color:#4f2684;">
     <span class="caret dropdown-toggle" type="button" data-toggle="dropdown"></span>
     <ul class="dropdown-menu">
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">JavaScript</a></li>
+      <li><a href="#" style="color:#4f2684;">HTML</a></li>
+      <li><a href="#" style="color:#4f2684;">CSS</a></li>
+      <li><a href="#" style="color:#4f2684;">JavaScript</a></li>
     </ul>
     </div>
 

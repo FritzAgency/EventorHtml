@@ -491,8 +491,8 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
   <div class="col-sm-3" style="margin-top: px;">
     <h3 style="color: #4f2684; font-weight: bold; font-size: 15px; text-align: center">PRICE</h3>
   </div>
-  <div class="col-sm-5">
-    <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px;">
+  <div class="col-sm-4">
+    <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; width: 130px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><?php if(isset($ticket_price)){
               echo  $ticket_price; 
             } elseif($row['ticket_price'] <=0 ){
@@ -574,9 +574,11 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
         <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">4:00</h2>
         </div-->
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
-      <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
-    </div></a>
+        <a href="#" style="color: #ffffff; text-decoration: none;">
+        <div class="col-sm-4 buck" style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px;">
+      <h2 style="font-weight:bold; margin: 10px; font-size: 13px;">SCHEDULE</h2>
+  </div>
+        </a>
    </div>
    </div>  
             <!-- activity and schedule time ends here -->

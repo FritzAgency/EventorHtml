@@ -286,6 +286,7 @@ div.form-group {
       <li><a href="#" class="new">SPECIAL DEALS</a></li>
       <li><a href="#" class="new">ABOUT US</a></li>
       <li><a href="#" class="new">CONTACT</a></li>
+      <li><a href="event/dashboard.php" class="new">Dashboard</a></li>
       <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
       <!--li><a class="new"> | </a></li-->
       <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
@@ -324,7 +325,7 @@ echo 'Welcome, '. $_SESSION['first_name'];
 <!-- header stops here -->
 <body>
   <!-- body starts here -->
-<div class="container">
+<div class="container" style="margin-left: 128px;">
   <div class="row">
     <div class="col-sm-4">
       <!-- creator and vendor buttons goes in here -->

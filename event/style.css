@@ -28,7 +28,7 @@ body {
 }
 
 ul li a {
-    color:yellow;
+    color:grey;
 }
    
 ul li a:hover, ul li a:focus {

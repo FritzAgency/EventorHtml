@@ -169,42 +169,48 @@ if(isset($message)){
     echo '<div class="alert alert-success">'. $message .'</div>';
 }
 ?> 
-
+<hr>
   <div class="tab"><h4 style="font-weight: bold; color: #4f2684">EVENT DETAILS</h4>
     <p><input placeholder="Event Name" oninput="this.className = ''" name="event_title"></p>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the event" oninput="this.className = ''" name="event_description"></textarea></p>
+  <hr>  
     <p><input placeholder="Enter Address or location of the event here " oninput="this.className = ''" name="Address" id="autocomplete" onFocus="geolocate()"></p>
 
     <p><input placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
 
     <p><input placeholder="Enter City here" oninput="this.className = ''" name="city"></p>
 
-
+<div class="row">
+  <div class="col-sm-6">
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
-
+    </div>
+    <div class="col-sm-6">
     <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
-
-
+    </div>
+  </div>
+<hr  style="color: black;">
 <p style="color: #4f2684">UPLOAD EVENT BANNER </p>
    <p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p>
-<!--p style="color: #4f2684; margin-top:24px;">UPLOAD EVENT BANNER </p>
+<!--p style="color: #4f2684; margin-top:10px;">UPLOAD EVENT BANNER </p>
     <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"-->
 
-
-    <p style="color: #4f2684; margin-top:24px;">EVENT STARTS: </p>
+<div class="row">
+  <div class="col-sm-6">
+    <p style="color: #4f2684; margin-top:10px;">EVENT STARTS: </p>
     <input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts" style="color: lightgrey;">
-
-
-<p style="color: #4f2684; margin-top:24px;" >EVENT ENDS: </p>
+    </div>
+<div class="col-sm-6">
+<p style="color: #4f2684; margin-top:10px;" >EVENT ENDS: </p>
 
     <input type="date" placeholder="Event End date" oninput="this.className = ''" name="event_ends" style="color: lightgrey;">
-
+    </div>
+</div>
     <!--p><input placeholder="Enter Event End Time here" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Enter Event End Date" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p-->
-
-    <p style="margin-top:24px;"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
+<hr  style="color: black; font-size: bold;">
+    <p style="margin-top:10px;"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
 
    <!--p>  <input placeholder="Organizers logo" oninput="this.className = ''" type="file"   name="org_logo" > </p-->
 
@@ -214,8 +220,8 @@ if(isset($message)){
 
 
     <p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook"></p>
-    <p><input placeholder="Enter Instagram link here" oninput="this.className = ''" name="instagram"></p>
-    <p><input placeholder="Enter Twitter handle here" oninput="this.className = ''" name="twitter"></p>
+    <p><input placeholder="Enter Instagram link here" value="@Instagram.com" oninput="this.className = ''" name="instagram" ></p>
+    <p><input placeholder="Enter Twitter handle here" value="@twitter.com" oninput="this.className = ''" name="twitter"></p>
   </div>
   
   <div class="tab">
@@ -223,17 +229,17 @@ if(isset($message)){
     <p><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name"></p>
     <p><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url"></p>
     <p><input type="file" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="sponsor_logo"></p>
-
+<hr  style="color: black;">
     <p style="color: #4f2684">SPONSOR 2</p>
     <P><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name1"></P>
     <P><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url1"></P>
     <P><input type="file" name="sponsor_logo1" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''"
       ></p>
-
+<hr  style="color: black;">
     <p style="color: #4f2684">SPONSORS 3</p>
     <input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name2">
 
-    <P><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url2"></P>
+    <P style="margin-top: 10px;"><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url2"></P>
 
   <P><input type="file" name="sponsor_logo2" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" ></P>
   </div>
@@ -251,9 +257,9 @@ if(isset($message)){
     <!--p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p-->
     <p> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+<hr  style="color: black;">
 
-
-    <p> ACTIVITY 2 </p>
+    <p style="font-weight: bold;"> ACTIVITY 2 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
 
@@ -262,24 +268,24 @@ if(isset($message)){
     <p> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
 
-    
-    <p> ACTIVITY 3 </p>
+  <hr  style="color: black;">  
+    <p style="font-weight: bold;"> ACTIVITY 3 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
 
     <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
-    <p> Activity Time </p>
+    <p style="font-weight: bold;"> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
-
-    <p> ACTIVITY 4 </p>
+<hr  style="color: black;">
+    <p style="font-weight: bold;"> ACTIVITY 4 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
     <p> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
-
-    <p> ACTIVITY 5 </p>
+<hr  style="color: black;">
+    <p style="font-weight: bold;"> ACTIVITY 5 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
 
@@ -288,35 +294,35 @@ if(isset($message)){
     <p> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
   </div>
-  <div class="tab"><h4 style="font-weight: bold; color: #4f2684">SCHEDULE</h4> 
+  <!-- <div class="tab"><h4 style="font-weight: bold; color: #4f2684">SCHEDULE</h4> 
 
-    <p><input placeholder="Name of Schedule" oninput="this.className = ''" name="sch_name" ></p>
+    <p><input placeholder="Name of Schedule" oninput="this.className = ''" name="sch_name" ></p> -->
 
-<p> When the schedule starts: </p>
+<!-- <p> When the schedule starts: </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="sch_start"></p>
 
 <p> When the schedule ends: </p>
-    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end"></p>
+    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end"></p> -->
 
 
     <!--p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="sch_end"></p-->
 
 
-    Scheduled 2
+    <!-- Scheduled 2
     <p><input  placeholder="Enter event schedule here" oninput="this.className = ''" name="sch_name1"></p>
 
     <p><input type="time" placeholder="Enter start time here" oninput="this.className = ''" name="sch_start1"></p>
 
-    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end1"></p>
+    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end1"></p> -->
 
     <!--p><input placeholder="" oninput="this.className = ''" name="yyyy"></p-->
 
-    Scheduled 3
+    <!-- Scheduled 3
     <p><input  placeholder="Enter event schedule here" oninput="this.className = ''" name="sch_name2"></p>
     
     <p><input type="time" placeholder="Enter start time here" oninput="this.className = ''" name="sch_start2"></p>
     
-    <p><input  type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end2"></p>
+    <p><input  type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end2"></p> -->
 
     <!--p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p-->
 
@@ -332,7 +338,7 @@ if(isset($message)){
     <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
     <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>--> 
 
-  </div>
+  <!-- </div> -->
   <div style="overflow:auto;">
     <div style="float:right;">
       <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
@@ -351,24 +357,35 @@ if(isset($message)){
 <!-- form ends here -->
 </div>
 <!-- footer goes here -->
-<footer style="background-color: #f8f8f8; border: 3px solid #e7e7e7; padding: 10px; margin-top: 10px; height: 100px;">
+<!-- footer goes here -->
+<footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 70px; margin-top: 10px;">
   <div class="row">
     <div class="col-sm-2">
-      <img src="img/logo2.png" alt="" class="img-responsive" style="margin-top: 2px;">
+      <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
     </div>
     <div class="col-sm-8">
-      <p style="text-align: center; font-weight: bold; padding-top: 15px;">Copyright &copy; 2018 Eventor.com, all Rights Reserved. All Photos &copy; their respective owners</p>
+      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
+        <div class="col-sm-5">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">How it works</p></a>
+        </div>
+        <div class="col-sm-4">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">About us</p></a>
+        </div>
+        <div class="col-sm-3">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">Contact</p></a>
+        </div>
+      </div>
     </div>
     <div class="col-sm-2"> 
       <div class="row">
         <div class="col-sm-4">
-          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
+          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
+            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #000; border-radius: 50%;"></a>
+            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
         </div>
       </div>
     </div>

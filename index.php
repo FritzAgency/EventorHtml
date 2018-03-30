@@ -276,11 +276,11 @@ div.form-group {
 <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
   <div class="container">
     <div class="navbar-header">
-      <div class="col-sm-2 col-md-3 col-xm-4" style="left: 25px;">
+      <div class="col-sm-2 col-md-3 col-xm-4" style="left: 32px;">
       <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
       </div>
     </div>
-    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -43px;padding-bottom: 10px;">
+    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -35px; padding-bottom: 10px;">
     <li><a href="#" class="new">HOW IT WORKS </a></li>
       <li><a href="#" class="new">EVENTS</a></li>
       <li><a href="#" class="new">SPECIAL DEALS</a></li>

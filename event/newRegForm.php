@@ -191,7 +191,15 @@ if(isset($message)){
   </div>
 <hr  style="color: black;">
 <p style="color: #4f2684">UPLOAD EVENT BANNER </p>
-   <p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p>
+   <!--p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p-->
+
+   <p>  <input type='file' name="event_flier" onchange="readURL(this);"/> </p>
+
+  <div>
+  <img  src="http://placehold.it/180" alt="your image" style="max-width:500px;  height:100px;
+  margin-top:20px;"/>
+</div>
+
 <!--p style="color: #4f2684; margin-top:10px;">UPLOAD EVENT BANNER </p>
     <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"-->
 
@@ -217,6 +225,19 @@ if(isset($message)){
 
 
 <p> Organizer's Logo </p>
+
+    <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p-->
+<p>  <input type='file' name="org_logo" onchange="readURL(this);"/> </p>
+
+  <div>
+  <img id="blah" src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" alt="your image" style="max-width:100px;  height:100px;
+  margin-top:20px;"/>
+</div>
+
+
+    <p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook" style="margin-top:10px"></p>
+    <p><input placeholder="Enter Instagram link here" value="@Instagram.com" oninput="this.className = ''" name="instagram" ></p>
+    <p><input placeholder="Enter Twitter handle here" value="@twitter.com" oninput="this.className = ''" name="twitter"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p>
 <hr>
 
@@ -506,7 +527,11 @@ function initAutocomplete() {
   // location types.
   autocomplete = new google.maps.places.Autocomplete(
       /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
-      {types: ['geocode']});
+      {
+        types: ['geocode'],
+         componentRestrictions: {country: "ng"}
+
+    });
 
   // When the user selects an address from the dropdown, populate the address
   // fields in the form.
@@ -552,6 +577,21 @@ function geolocate() {
 }
 </script>
 
+<script type="text/javascript">
+  
+  function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
 
 </body>
 </html>

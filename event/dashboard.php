@@ -415,13 +415,13 @@ while($row = mysqli_fetch_array($result)){
     </div>
     <div class="col-sm-8">
       <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
-        <div class="col-sm-4">
+        <div class="col-sm-5">
         <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">How it works</p></a>
         </div>
         <div class="col-sm-4">
         <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">About us</p></a>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
         <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">Contact</p></a>
         </div>
       </div>
@@ -429,13 +429,13 @@ while($row = mysqli_fetch_array($result)){
     <div class="col-sm-2"> 
       <div class="row">
         <div class="col-sm-4">
-          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #f3f3f3; border-radius: 50%;"></a>
+          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #f3f3f3; border-radius: 50%;"></a>
+            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 15px; border: 1px solid #f3f3f3; border-radius: 50%;"></a>
+            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
         </div>
       </div>
     </div>

@@ -303,15 +303,24 @@ $org_logo;?>" alt=""  class="img-fluid">
     <div class="carousel-inner landscape square" style="margin: auto;">
       <div class="item active">
         <!--img src="img/create.png" alt="Los Angeles" style="width:50%; height: 50%; margin: auto;" class="img-responsive"-->
-        <img src="img/fifth.jpg" class="img-responsive landscape square" style="margin: auto;">
+        <!--img src="img/fifth.jpg" class="img-responsive landscape square" style="margin: auto;"-->
+<img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
+
       </div>
       <!-- style="width:50%; height: 50%; margin: auto;" -->
       <div class="item">
-        <img src="img/celine.jpg" alt="Chicago"  class="img-responsive landscape square" style="margin: auto;">
+        <!--img src="img/celine.jpg" alt="Chicago"  class="img-responsive landscape square" style="margin: auto;"-->
+        <img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
+
       </div>
     
       <div class="item">
-        <img src="img/google_maps_hello_world.jpg" alt="New york" class="img-responsive landscape square" style="margin: auto;">
+        <!--img src="img/google_maps_hello_world.jpg" alt="New york" class="img-responsive landscape square" style="margin: auto;"-->
+        <img src="/eventorhtml/public/images/<?php echo 
+$event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
+
       </div>
     </div>
 

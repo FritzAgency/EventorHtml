@@ -70,7 +70,7 @@ if(empty($password)){
 
 $insert = "INSERT into `users` (first_name, last_name,  email, password, dob, phoneNumber, Address, twitter, facebook, instagram, created_at ) VALUES ('$first_name', '$last_name',  '$email', '$password_hash', '$dob', '$phoneNumber', '$Address', '$twitter', '$facebook', '$instagram', '$created_at')";
 
-$result = mysqli_query($con,$insert);
+$result = mysqli_query($con,$insert)or die(mysqli_error());;
 
 //if inserting of user's data failed
 if ($result == true){ 
@@ -79,7 +79,9 @@ if ($result == true){
 }
 else{
    //throw error.
- $_SESSION['message'] = 'something went wrong';   
+ //$_SESSION['message'] = 'something went wrong';   
+
+  echo "Error" . mysqli_errno($con); 
 }
 
 }

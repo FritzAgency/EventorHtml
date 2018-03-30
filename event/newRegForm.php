@@ -184,8 +184,12 @@ if(isset($message)){
 
     <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
 
-<p style="color: #4f2684; margin-top:24px;">UPLOAD EVENT BANNER </p>
-    <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier">
+
+<p style="color: #4f2684">UPLOAD EVENT BANNER </p>
+   <p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p>
+<!--p style="color: #4f2684; margin-top:24px;">UPLOAD EVENT BANNER </p>
+    <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"-->
+
 
     <p style="color: #4f2684; margin-top:24px;">EVENT STARTS: </p>
     <input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts" style="color: lightgrey;">
@@ -202,8 +206,12 @@ if(isset($message)){
 
     <p style="margin-top:24px;"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
 
+   <p>  <input placeholder="Organizers logo" oninput="this.className = ''" type="file"   name="org_logo" > </p>
+
+
 <p> Organizer's Logo </p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" ></p>
+
 
     <p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook"></p>
     <p><input placeholder="Enter Instagram link here" oninput="this.className = ''" name="instagram"></p>
@@ -248,6 +256,7 @@ if(isset($message)){
     <p> ACTIVITY 2 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
+
     <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
     <p> Activity Time </p>
@@ -257,6 +266,7 @@ if(isset($message)){
     <p> ACTIVITY 3 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
+
     <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
     <p> Activity Time </p>
@@ -272,6 +282,7 @@ if(isset($message)){
     <p> ACTIVITY 5 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
+
     <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
     <p> Activity Time </p>

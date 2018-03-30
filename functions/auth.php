@@ -81,7 +81,7 @@ else{
    //throw error.
  //$_SESSION['message'] = 'something went wrong';   
 
-  echo "something went wrong " . mysqli_connect_error();
+  echo "something went wrong" . mysqli_error();
 }
 
 }

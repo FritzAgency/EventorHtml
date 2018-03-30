@@ -225,7 +225,7 @@ div#carousel-example-generic {
 div.form-group {
     position:absolute;
     z-index:9999999;
-    top:354px; /* change to whatever you want */
+    top:361px; /* change to whatever you want */
     left:-781; /* change to whatever you want */
     right:auto; /* change to whatever you want */
     bottom:auto; /* change to whatever you want */
@@ -358,8 +358,8 @@ echo 'Welcome, '. $_SESSION['first_name'];
         <div class="span12">
             <form id="custom-search-form" class="form-search form-horizontal pull-right">
                 <div class="input-append span12">
-                    <p style="color: white"><input type="text" class="search-query" placeholder="Enter Search here" style="width: 464px; height: 39px; border-radius: 25px; background-color: transparent; border: 2px solid #ffffff;"></p>
-                    <button type="submit" class="btn"><span class="glyphicon glyphicon-search fa-2x" style="left: 450px; top: -50px; border: 1px solid #fff; padding: 8px; background-color: #ffff; border-radius: 46px;"></span></i></button>
+                    <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="Enter Search here" style="width: 464px; height: 39px; border-radius: 25px; background-color: transparent; border: 2px solid #ffffff;"></p>
+                    <button type="submit" class="btn"><span class="glyphicon glyphicon-search fa-2x" style="left: 450px; top: -49px; border: 1px solid #fff; padding: 8px; background-color: #ffff; border-radius: 46px;"></span></i></button>
                 </div>
             </form>
         </div>

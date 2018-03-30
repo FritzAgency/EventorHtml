@@ -9,22 +9,36 @@ $target_dir = "../public/images/"; //the storage directory to store the image.
 //when the submit button is clicked
 if(isset($_POST['event_title'])){
 
-$event_title = $_POST['event_title']; //grabs the event title from the form
+//$event_title = $_POST['event_title']; //grabs the event title from the form
+
+
+$event_title = mysqli_real_escape_string($con, $_POST['event_title']);
+
+
 $creator_id = $_SESSION['id']; //the creator session id to differentiate creators from each other. 
-$event_description = $_POST['event_description'];  //grabs the event description from the form
-//$status = $_POST['status'];  //grabs the event status from the form 
-$sponsor_name = $_POST['sponsor_name']; //grabs the sponsor's name from the form 
-$sponsor_url = $_POST['sponsor_url']; //grabs the sponsor's url from the form 
+//$event_description = $_POST['event_description'];  //grabs the event description from the form
+
+$event_description = mysqli_real_escape_string($con, $_POST['event_description']);
+
+//$status = $_POST['status'];  //grabs the event status from the form  
+
+$sponsor_name = mysqli_real_escape_string($con, $_POST['sponsor_name']);
+$sponsor_url = mysqli_real_escape_string($con, $_POST['sponsor_url']);
+
+
 $created_at = date("Y-m-d");
 $sponsor_logo = $_FILES["sponsor_logo"]["name"]; 
 
-$sponsor_name1 = $_POST['sponsor_name1']; //grabs the sponsor's name from the form 
-$sponsor_url1 = $_POST['sponsor_url1']; //grabs the sponsor's url from the form 
+$sponsor_name1 = mysqli_real_escape_string($con, $_POST['sponsor_name1']);
+
+$sponsor_url1 = mysqli_real_escape_string($con, $_POST['sponsor_url1']);
+ 
 
 $sponsor_logo1 = $_FILES["sponsor_logo1"]["name"]; 
 
-$sponsor_name2 = $_POST['sponsor_name2']; //grabs the sponsor's name from the form 
-$sponsor_url2 = $_POST['sponsor_url2']; //grabs the sponsor's url from the form 
+$sponsor_name2 = mysqli_real_escape_string($con, $_POST['sponsor_name2']);
+ 
+$sponsor_url2 = mysqli_real_escape_string($con, $_POST['sponsor_url2']);
 
 $sponsor_logo2 = $_FILES["sponsor_logo2"]["name"]; 
 $org_name = $_POST['org_name']; 
@@ -33,7 +47,9 @@ $event_flier = $_FILES["event_flier"]["name"];
 //$event_flier1 = $_FILES["event_flier1"]["name"]; 
 //$event_flier2 = $_FILES["event_flier2"]["name"]; 
 
-$Address = $_POST['Address']; 
+
+$Address = mysqli_real_escape_string($con, $_POST['Address']);
+
 $city = $_POST ['city'];  
 $state = $_POST['state'];
 //$lga = $_POST['lga']; 

@@ -408,7 +408,8 @@ while($row = mysqli_fetch_array($result)){
          <!-- /. PAGE WRAPPER  -->
         </div>
      <!-- /. WRAPPER  -->
-     <footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 70px; margin-top: 10px;">
+ <!-- footer goes here -->
+ <footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 70px; margin-top: 10px;">
   <div class="row">
     <div class="col-sm-2">
       <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">

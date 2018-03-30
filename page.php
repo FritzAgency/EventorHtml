@@ -280,17 +280,12 @@ font-weight: bold;
 <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="padding: 0px; margin-bottom: 0px;" class="new">
   <div class="container">
     <div class="navbar-header" >
-      <div class="col-sm-2 col-md-3 col-xm-4">
-
-     <p><img src="/public/images/<?php echo 
-$org_logo;?>" alt=""  class="img-fluid">
-
-      </p>
-
-      <!--a class="navbar-brand" href="#"><p><img src="" alt="Creator logo" srcset="" class="img-fluid"></p></a-->
+    <div class="col-sm-2 col-md-3 col-xm-4" style="left: 70px;">
+      <a class="navbar-brand" href="index.php"><img src="/public/images/<?php echo 
+$org_logo;?>" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
+      </div>    
+<!--a class="navbar-brand" href="#"><p><img src="" alt="Creator logo" srcset="" class="img-fluid"></p></a-->
       
-
-      </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="font-weight: bold; color: #4f2684">
       <li><a href="#activities" class="new">EVENT ACTIVITIES</a></li>
@@ -860,6 +855,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
           </div>
   </div>
   </div>
+<!-- footer goes here -->
 <!-- footer goes here -->
 <footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 70px; margin-top: 10px;">
   <div class="row">

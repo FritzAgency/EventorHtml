@@ -35,7 +35,9 @@ $con = mysqli_connect($server, $username, $password);
 if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();//returns error if connection failed. 
-  } 
+  } else{
+  	echo 'connection succeed'; 
+  }
 
 
  ?>

@@ -79,7 +79,9 @@ if ($result == true){
 }
 else{
    //throw error.
- $_SESSION['message'] = 'something went wrong';   
+ //$_SESSION['message'] = 'something went wrong';   
+
+  echo "something went wrong " . mysqli_connect_error();
 }
 
 }

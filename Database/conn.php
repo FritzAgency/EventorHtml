@@ -45,9 +45,9 @@ $password = "87d078f2"; */
 if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();//returns error if connection failed. 
-  } else{
+  } /*else{
   	echo 'connection succeed'; 
-  }
+  }*/
 
 
  ?>

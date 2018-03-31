@@ -5,7 +5,7 @@ session_start();
 
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,11 +13,11 @@ session_start();
     <title>Eventor: Dashboard</title>
 
 	<!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="estylesheet" />
+    <link href="bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="font-awesome.css" rel="stylesheet" />
      <!-- MORRIS CHART STYLES-->
-    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <link href="morris-0.4.3.min.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
     <link href="assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
@@ -169,45 +169,18 @@ echo $row;
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
-                                    <!--p>First Event</p-->
-                                    <?php
+                                    <p>First Event</p>
 
-require_once('../Database/conn.php');
-
-$id = $_SESSION['id']; 
-
-$query =  "SELECT * FROM `event` JOIN users ON users.id = event.creator_id WHERE `creator_id` = $id"; 
-
- $result = mysqli_query($con,$query); 
+                                <div><p><a href=""></div></p></a>
 
 
-$row = mysqli_num_rows($result); 
-//or die(mysqli_error($con));
+   <div><p style='text-justify'><a href=""></p></div></a>
 
-/*if($row<1 ){
-    echo '0'; 
-}*/
-
-//echo $row; 
-
-
-while($row = mysqli_fetch_array($result)){
-
-    //echo '<div><p><a href="$row['event_url']">'. $row['event_title']. '</div></p></a>'; 
-
-    $event_url = $row['event_url']; 
-
-   echo  "<div><p style='text-justify'><a href='/eventorhtml/newGenerated.php?event_url=$event_url'>". $row['event_title']. "</div></p></a>";
-}
-
-
-?>
-
-                                    <!--span class="glyphicon glyphicon-time"></span-->
+                                <span class="glyphicon glyphicon-time"></span-->
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-4">
-                                    <!--div>
+                                    <div>
                                 <div class="col-sm-2" style="margin-left: auto; margin-right: auto; padding: 5px;">
                                     <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <p>F</p>
@@ -237,17 +210,17 @@ while($row = mysqli_fetch_array($result)){
 
                          <div class="row">
 
-                                <!--div class="col-sm-4">
+                                <div class="col-sm-4">
                                     <div style="width: 50px; height: 50px; border: 2px solid black; border-radius: 50px; background: black; color: white; text-align: center; font-weight: bold;">
                                         <p>S</p>
                                     </div>
-                                </div-->
-                                <!--div class="col-sm-4">
+                                </div>
+                                <div class="col-sm-4">
                                     <p>Second Event</p>
                                     <span class="glyphicon glyphicon-time"> 2 days</span>
-                                </div-->
+                                </div>
                                 <!-- buttons at the end of the row not important -->
-                                <!--div class="col-sm-4">
+                                <div class="col-sm-4">
 
                                 <div class="col-sm-2" style="margin-left: auto; margin-right: auto; padding: 5px;">
                                     <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">

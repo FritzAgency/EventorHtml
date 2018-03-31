@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
 
 body {
     background-image: url("./img/eventor.jpg");
@@ -70,7 +70,7 @@ ul li a:hover, ul li a:focus {
 color: #4f2684;
 }
 #venia{
-    background-color: #4f2684; 
+    background-color: rgb(79, 38, 132); 
     color: #fff;
  }
 #venia:hover{
@@ -538,3 +538,35 @@ padding-top: 15px;
 padding-bottom: 10px;
 }
 </style>
+
+
+// require_once('../Database/conn.php');
+
+// $id = $_SESSION['id']; 
+
+// $query =  "SELECT * FROM `event` JOIN users ON users.id = event.creator_id WHERE `creator_id` = $id"; 
+
+//  $result = mysqli_query($con,$query); 
+
+
+// $row = mysqli_num_rows($result); 
+//or die(mysqli_error($con));
+
+/*if($row<1 ){
+    echo '0'; 
+}*/
+
+//echo $row; 
+
+
+// while($row = mysqli_fetch_array($result)){
+
+    //echo '<div><p><a href="$row['event_url']">'. $row['event_title']. '</div></p></a>'; 
+
+    // $event_url = $row['event_url']; 
+
+   echo  "<div><p style='text-justify'><a href='/eventorhtml/newGenerated.php?event_url=$event_url'>". $row['event_title']. "</div></p></a>";
+}
+
+
+?>

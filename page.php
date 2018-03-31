@@ -443,6 +443,7 @@ $sponsor_logo;?>" class="img-responsive" style="height: auto; background-color: 
 
 ?>
       </div>
+
        <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
    
         <?php
@@ -498,6 +499,14 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
 
 
 ?>
+      <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
+        <a href="<?php /*if (isset($sponsor_url1)){echo $sponsor_url1;}*/?>">  <!--img src="/public/images/<?php //echo 
+//$sponsor_logo1;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"--> </a>
+<p> <?php //if(isset($sponsor_name1)){echo $sponsor_name1;}?> </p>
+      </div>
+      <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
+        <a href="">  <!--img src="/public/images/" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"--> </a>
+<p> </p>
 
       </div> 
     </div>
@@ -659,11 +668,11 @@ $act_img;?>" alt="" class="img-responsive" style="height: 100%; width: 100%; obj
         <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">4:00</h2>
         </div-->
-        <a href="#" style="color: #ffffff; text-decoration: none;">
+        <!-- <a href="#" style="color: #ffffff; text-decoration: none;">
         <div class="col-sm-4 buck" style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 13px;">SCHEDULE</h2>
   </div>
-        </a>
+        </a> -->
    </div>
    </div>  
             <!-- activity and schedule time ends here -->
@@ -696,9 +705,9 @@ $act_img1;?>" alt="" class="img-responsive" style="height: 100%; width: 100%; ob
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">22:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
+        <!-- <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
-    </div></a>
+    </div></a> -->
    </div>
    </div>  
 
@@ -733,9 +742,9 @@ $act_img2;?>" alt="" class="img-responsive" style="height: 100%; width: 100%; ob
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
+        <!-- <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
-    </div></a>
+    </div></a> -->
    </div>
    </div>  
 
@@ -764,9 +773,9 @@ $act_img2;?>" alt="" class="img-responsive" style="height: 100%; width: 100%; ob
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
+        <!-- <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
-    </div></a>
+    </div></a> -->
    </div>
    </div>  
 </div>
@@ -790,9 +799,9 @@ $act_img2;?>" alt="" class="img-responsive" style="height: 100%; width: 100%; ob
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
+        <!-- <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
-    </div></a>
+    </div></a> -->
    </div>
    </div>  
 

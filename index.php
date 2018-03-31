@@ -571,10 +571,10 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
 <footer style="background-color: #4f2684; padding: 7px; height: 54px; margin-top: 14px;">
   <div class="row">
     <div class="col-sm-2" style="width: 12.667%; left: 23px;">
-      <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
+      <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 7px;">
     </div>
     <div class="col-sm-8" style="left: 76px;">
-      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto; font-size: 12px; margin-top: -4px;">
+      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto; font-size: 12px; margin-top: 5px;">
         <div class="col-sm-5">
         <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff; font-size: 10px;">HOW IT WORKS</p></a>
         </div>

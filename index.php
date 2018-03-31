@@ -8,25 +8,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
 
 body {
   background-image:url("img/eventor.jpg");
   font-family: 'Montserrat', sans-serif;
 }
 
-.new{
-  background-color: #f8f8f8;
-  font-size: 12px;
-  font-weight: bold;
+li a .new{
+  background-color: #ffffff;
+  font-size: 10px;
+  font-weight: normal;
   color: #4f2684;
 }
 
-.new:hover{
-  background-color: #000;
-  color: #fff;
-  font-weight: bold;
-  font-size: 12px;
+li a .new:hover {
+  background-color: #f8f8f8;
+  color: #000000;
+  font-weight: normal;
+  font-size: 10px;
 }
 
 .topnav {
@@ -190,7 +190,7 @@ body {
   bottom: 0;
   left: 13px;
   right: 0;
-  background-color: rgba(232, 0, 0, 0.4);
+  background-color: rgba(79, 38, 132, 0.4);
   overflow: hidden;
 
   height: 0;
@@ -273,19 +273,19 @@ div.form-group {
 </head>
 <body>
   <!-- header starts here -->
-<nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
+<nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px; background-color: #fff;" class="new">
   <div class="container">
     <div class="navbar-header">
-      <div class="col-sm-2 col-md-3 col-xm-4" style="left: 32px;">
-      <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
+      <div class="col-sm-2 col-md-3 col-xm-4" style="left: -180px; width: 20%;">
+      <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: 4px;"></a>
       </div>
     </div>
-    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -35px; padding-bottom: 10px;">
-    <li><a href="#" class="new" style="color:#4f2684;">HOW IT WORKS </a></li>
-      <li><a style="color:#4f2684;" href="#" class="new">EVENTS</a></li>
-      <li><a style="color:#4f2684;" href="#" class="new">SPECIAL DEALS</a></li>
-      <li><a style="color:#4f2684;" href="#" class="new">ABOUT US</a></li>
-      <li><a style="color:#4f2684;" href="#" class="new">CONTACT</a></li>
+    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -35px; padding-bottom: 10px; margin-right: 189px;">
+    <li><a href="#" class="new">HOW IT WORKS </a></li>
+      <li><a href="#" class="new">EVENTS</a></li>
+      <li><a href="#" class="new">SPECIAL DEALS</a></li>
+      <li><a href="#" class="new">ABOUT US</a></li>
+      <li><a href="#" class="new">CONTACT</a></li>
       <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
       <!--li><a class="new"> | </a></li-->
       <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
@@ -313,7 +313,7 @@ echo
 
 
 
-<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">
+<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684; right: -345px;">
 <div class="dropdown">
   <div class="row">
     <div class="col-sm-6">
@@ -351,13 +351,13 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
         <!-- create event button -->
         <div style="margin-bottom: 18px;" class="shadow swing">
           <a href="event/newRegForm.php">
-          <img src="img/create.png" alt="create event design" srcset="" class="img-responsive">
+          <img src="img/create.jpg" alt="create event design" srcset="" class="img-responsive">
         </a>
         </div>
         <!-- start selling vendor retisgration form -->
         <div class="shadow swing">
           <a href="http://localhost/wordpress">
-          <img src="img/start.png" style="margin-bottom: 18px;" alt="create event design" srcset="" class="img-responsive">
+          <img src="img/start.jpg" style="margin-bottom: 18px;" alt="create event design" srcset="" class="img-responsive">
         </a>
         </div>
 
@@ -428,26 +428,26 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="img/carosel.png" alt="Chania" class="img-responsive">
+      <img src="img/carousel.jpg" alt="Chania" class="img-responsive">
       <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>LA is always so much fun!</p>
+        <!-- <h3>Los Angeles</h3>
+        <p>LA is always so much fun!</p> -->
       </div>
     </div>
 
     <div class="item">
-      <img src="img/carosel.png" alt="Chicago" class="img-responsive">
+      <img src="img/carousel.jpg" alt="Chicago" class="img-responsive">
       <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago!</p>
+        <!-- <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p> -->
       </div>
     </div>
 
     <div class="item">
-      <img src="img/carosel.png" alt="New York" class="img-responsive">
+      <img src="img/carousel.jpg" alt="New York" class="img-responsive">
       <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>We love the Big Apple!</p>
+        <!-- <h3>New York</h3>
+        <p>We love the Big Apple!</p> -->
       </div>
     </div>
   </div>
@@ -467,7 +467,7 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
 <!-- first row for images starts here -->
   <div class="row">
     <div class="col-sm-4 shadow swing contain" style="padding-right: 0px; margin-top: 10px;margin-right: -9px;">
-      <img src="img/first1.png" alt="" class="img-responsive image">
+      <img src="img/fifth.jpg" alt="" class="img-responsive image">
       <!-- this section for over layer hover -->
       <div class="overlay">
       <div class="text">
@@ -481,7 +481,7 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
       <!-- over layer section ends here -->
     </div>
     <div class="col-sm-4 shadow swing contain" style="padding-right: 0px; margin-top: 10px; margin-right: -9px;">
-      <img src="img/second.png" alt="" class="img-responsive image">
+      <img src="img/fifth.jpg" alt="" class="img-responsive image">
        <!-- this section for over layer hover -->
        <div class="overlay">
        <div class="text">
@@ -495,7 +495,7 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
        <!-- over layer section ends here -->
     </div>
     <div class="col-sm-4 shadow swing contain" style="padding-right: 0px; margin-top: 10px; margin-right: -9px;">
-      <img src="img/third.png" alt="" class="img-responsive image">
+      <img src="img/fifth.jpg" alt="" class="img-responsive image">
        <!-- this section for over layer hover -->
        <div class="overlay">
        <div class="text">
@@ -513,7 +513,7 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
   <!-- second row of images starts here -->
   <div class="row">
     <div class="col-sm-4 shadow swing contain" style="padding-right: 0px; margin-top: 10px; margin-right: -9px">
-      <img src="img/fourth.png" alt="" class="img-responsive image">
+      <img src="img/fifth.jpg" alt="" class="img-responsive image">
        <!-- this section for over layer hover -->
        <div class="overlay">
        <div class="text">
@@ -541,7 +541,7 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
        <!-- over layer section ends here -->
     </div>
     <div class="col-sm-4 shadow swing contain" style="padding-right: 0px; margin-top: 10px; margin-right: -9px">
-      <img src="img/sixth.png" alt="" class="img-responsive image">
+      <img src="img/fifth.jpg" alt="" class="img-responsive image">
        <!-- this section for over layer hover -->
        <div class="overlay">
         <div class="text">
@@ -568,34 +568,34 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
 </div>
 
 <!-- footer goes here -->
-<footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 70px; margin-top: 10px;">
+<footer style="background-color: #4f2684; padding: 7px; height: 54px; margin-top: 14px;">
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-2" style="width: 12.667%; left: 23px;">
       <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
     </div>
-    <div class="col-sm-8">
-      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
+    <div class="col-sm-8" style="left: 51px;">
+      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto; font-size: 12px; margin-top: -4px;">
         <div class="col-sm-5">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">How it works</p></a>
+        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff;">HOW IT WORKS</p></a>
         </div>
         <div class="col-sm-4">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">About us</p></a>
+        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff;">ABOUT US</p></a>
         </div>
         <div class="col-sm-3">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">Contact</p></a>
+        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff;">CONTACT</p></a>
         </div>
       </div>
     </div>
-    <div class="col-sm-2"> 
+    <div class="col-sm-2" style="right: -124px;"> 
       <div class="row">
-        <div class="col-sm-4">
-          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+        <div class="col-sm-4" style="width: 22.333%;">
+          <a href=""><img src="img/index.png" alt="" style="width: 13px; height-max: 100%; margin-top: 10px;"></a>
         </div>
-        <div class="col-sm-4">
-            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+        <div class="col-sm-4" style="width: 22.333%;">
+            <a href=""><img src="img/index1.png" alt="" style="width: 13px; height-max: 100%; margin-top: 10px;"></a>
         </div>
-        <div class="col-sm-4">
-            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+        <div class="col-sm-4" style="width: 22.333%;">
+            <a href=""><img src="img/index11.png" alt="" style="width: 13px; height-max: 100%; margin-top: 10px;"></a>
         </div>
       </div>
     </div>

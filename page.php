@@ -290,11 +290,11 @@ img{
 <!-- nav bar starts here -->
 <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="padding: 0px; margin-bottom: 0px;" class="new">
   <div class="container">
-    <div class="navbar-header" >
-    <div class="col-sm-2 col-md-3 col-xm-4" style="left: 70px;">
-      <a class="navbar-brand" href="index.php"><img src="/public/images/<?php echo 
-$org_logo;?>" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
-      </div>    
+    <div class="navbar-header">
+    <!--div class="col-sm-2 col-md-3 col-xm-4" style="left: 70px;"-->
+      <a class="navbar-brand" href="index.php"><img src="public/images/<?php echo 
+$org_logo;?>" alt="" class="img-responsive"></a>
+      <!--/div-->    
 <!--a class="navbar-brand" href="#"><p><img src="" alt="Creator logo" srcset="" class="img-fluid"></p></a-->
       
     </div>
@@ -309,7 +309,7 @@ $org_logo;?>" alt="" srcset="" class="img-responsive" style="margin-top: -7px;">
 <div class="container" style="background-color: #f3f3f3; width: 60%;">
 
 <div id="container">
-   <img <img src="/public/images/<?php echo $event_flier;?>" alt="your_keyword"/>
+   <img src="public/images/<?php echo $event_flier;?>" />
 <div>
   
 <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid lightgrey; background-color: lightgrey"> -->
@@ -415,24 +415,30 @@ $org_logo;?>" alt="" srcset="" class="img-responsive" style="margin-top: -7px;">
     <div class="row" style="margin-left: auto; margin-right:auto">
       <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
         
+        <?php
+
+
+$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_'"; 
+
+
+
       <a href="<?php if (isset($sponsor_url)){echo $sponsor_url;}?>">  <img src="/public/images/<?php echo 
 $sponsor_logo;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
 <p> <?php if(isset($sponsor_name)){echo $sponsor_name;}?> </p>
 
-
-
-
       </div>
-      <!-- <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
-        <a href="<?php //if (isset($sponsor_url1)){echo $sponsor_url1;}?>">  <img src="/public/images/<?php //echo 
-//$sponsor_logo1;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
-<p> <?php //if(isset($sponsor_name1)){echo $sponsor_name1;}?> </p>
-      </div> -->
-      <!-- <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
-        <a href="">  <img src="/public/images/" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
-<p> </p>
+       <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
+        <a href="<?php if (isset($sponsor_url1)){echo $sponsor_url1;}?>">  <img src="/public/images/<?php echo 
+$sponsor_logo1;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
+<p> <?php if(isset($sponsor_name1)){echo $sponsor_name1;}?> </p>
+      </div> 
+       <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
 
-      </div> -->
+<a href="<?php if (isset($sponsor_url2)){echo $sponsor_url2;}?>">  <img src="/public/images/<?php echo 
+$sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
+<p> <?php if(isset($sponsor_name2)){echo $sponsor_name2;}?> </p>
+
+      </div> 
     </div>
     </div>
     <!-- sponsors contents ends here -->

@@ -312,8 +312,13 @@ $org_logo;?>" alt="" class="img-responsive"></a>
 <div class="container" style="background-color: #f3f3f3; width: 60%;">
 
 <div id="container">
+<<<<<<< HEAD
+   <!-- <img src="public/images/<?php //echo $event_flier;?>" /> -->
+   <img src="img/carousel.jpg" />
+=======
    <img src="public/images/<?php echo 
 $event_flier;?>" alt="" class="img-responsive">
+>>>>>>> 6457161d504ea9a1cac6d302ac3a046f47b2e050
 <div>
   
 <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid lightgrey; background-color: lightgrey"> -->
@@ -601,7 +606,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
 <!-- price tag ends here -->
 <!-- become a vendor and register button starts here -->
 <div class="row" style="margin-top: 50px; margin-left: auto; margin-right: auto;">
-  <div class="col-sm-4 buck" style="margin-left: 35px; border: 4px solid #b784ff; border-radius: 17px;">
+  <div class="col-sm-4 buck" style="margin-left: 35px; border: 4px solid #b784ff; border-radius: 17px; width: 130px;">
   <a href="#" style="text-decoration: none; color: #ffffff;"><div style="text-align: center; padding: 10px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 13px;">BECOME A VENDOR</h2>
     </div></a>

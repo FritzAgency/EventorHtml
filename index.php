@@ -273,7 +273,7 @@ div.form-group {
 </head>
 <body>
   <!-- header starts here -->
-<nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px; background-color: #fff;" class="new">
+<nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="background-color: #fff; margin-bottom: 0px;" class="new">
   <div class="container">
     <div class="navbar-header">
       <div class="col-sm-2 col-md-3 col-xm-4" style="left: -180px; width: 20%;">
@@ -573,16 +573,16 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
     <div class="col-sm-2" style="width: 12.667%; left: 23px;">
       <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
     </div>
-    <div class="col-sm-8" style="left: 51px;">
+    <div class="col-sm-8" style="left: 76px;">
       <div class="row" style="width: 40%; margin-left: auto; margin-right: auto; font-size: 12px; margin-top: -4px;">
         <div class="col-sm-5">
-        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff;">HOW IT WORKS</p></a>
+        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff; font-size: 10px;">HOW IT WORKS</p></a>
         </div>
         <div class="col-sm-4">
-        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff;">ABOUT US</p></a>
+        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff; font-size: 10px;">ABOUT US</p></a>
         </div>
         <div class="col-sm-3">
-        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff;">CONTACT</p></a>
+        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff; font-size: 10px;">CONTACT</p></a>
         </div>
       </div>
     </div>

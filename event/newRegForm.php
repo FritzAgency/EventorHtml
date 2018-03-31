@@ -243,11 +243,11 @@ if(isset($message)){
 
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">@</span>
-   <input id="email" type="text" class="form-control" name="email" placeholder="twitter handle">
+   <input id="email" type="text" class="form-control" name="" placeholder="twitter handle">
  </div>
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">@</span>
-   <input id="password" type="password" class="form-control" name="password" placeholder="instagram handle">
+   <input id="password" type="text" class="form-control" name="" placeholder="instagram handle">
  </div>
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">Facebook.com/</span>
@@ -399,13 +399,13 @@ if(isset($message)){
     <div class="col-sm-8">
       <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
         <div class="col-sm-5">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">How it works</p></a>
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">How it works</p></a>
         </div>
         <div class="col-sm-4">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">About us</p></a>
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">About us</p></a>
         </div>
         <div class="col-sm-3">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff;">Contact</p></a>
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">Contact</p></a>
         </div>
       </div>
     </div>

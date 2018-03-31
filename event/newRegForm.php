@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="/event/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" type="text/css" href="https://unpkg.com/file-upload-with-preview/dist/file-upload-with-preview.min.css">
+
 <style>
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
@@ -94,6 +96,36 @@ button:hover {
 .step.finish {
   background-color: #4CAF50;
 }
+
+
+/*upload organizer's logo css*/  
+  .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: purple;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+
+.inputfile + label:hover {
+    background-color: red;
+}
+
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+/*upload organizer's logo */ 
 </style>
 </head>
 <body>
@@ -183,20 +215,52 @@ if(isset($message)){
 
 <div class="row">
   <div class="col-sm-6">
-    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
+    <p><input type="number" placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
     </div>
     <div class="col-sm-6">
-    <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
+    <p><input type="number" placeholder="Ticket Price (empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
     </div>
   </div>
 <hr  style="color: black;">
-<p style="color: #4f2684">UPLOAD EVENT BANNER </p>
-   <p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p>
+<!--p style="color: #4f2684">UPLOAD EVENT BANNER </p>
+   <p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p-->
 
    
 
 <!--p style="color: #4f2684; margin-top:10px;">UPLOAD EVENT BANNER </p>
     <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"-->
+
+    <!--input type="file" name="org_logo" id="file" class="inputfile" onchange="readURL(this);"/>
+    <span class="glyphicon glyphicon-upload" style="color:white"></span>
+<label for="file" style="color: white">Upload organizer's Logo</label-->
+
+        <div class="custom-file-container" data-upload-id="myUniqueUploadId">
+            <label>Upload Event flier<a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">&nbsp; &nbsp; X</a></label>
+
+            <label class="custom-file-container__custom-file" >
+                <input type="file" name="event_flier" class="inputfile custom-file-container__custom-file__custom-file-input" accept="*" multiple>
+                <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+                <!--span class="custom-file-container__custom-file__custom-file-control"></span-->
+
+<span class="glyphicon glyphicon-upload custom-file-container__custom-file__custom-file-control" style="color:white"></span>
+
+
+
+            </label>
+
+             <div class="custom-file-container__image-preview" style="height: 500px; width: 500px"> </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
 
 <div class="row">
   <div class="col-sm-6">
@@ -219,15 +283,23 @@ if(isset($message)){
    <!--p>  <input placeholder="Organizers logo" oninput="this.className = ''" type="file"   name="org_logo" > </p-->
 
 
-<p> Organizer's Logo </p>
+<!--p> Organizer's Logo </p-->
 
     <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p-->
-<p>  <input type='file' name="org_logo" onchange="readURL(this);"/> </p>
+<!--p>  <input type='file' name="org_logo" onchange="readURL(this);"/> </p-->
 
-  <div>
+  
+    <span class="btn btn-sm" style="background-color: #3b2a53; border-color: white">
+    <input type="file" name="org_logo" id="file" class="inputfile" onchange="readURL(this);"/>
+    <span class="glyphicon glyphicon-upload" style="color:white"></span>
+<label for="file" style="color: white">Upload organizer's Logo</label>
+</span>
+
+<div>
   <img id="blah" src="http://placehold.it/180" alt="your image" style="max-width:100px;  height:100px;
   margin-top:20px;"/>
 </div>
+
 
 
     <!--p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook" style="margin-top:10px"></p-->
@@ -588,5 +660,10 @@ function geolocate() {
         }
 </script>
 
+
+        <script src="https://unpkg.com/file-upload-with-preview"></script>
+        <script>
+            var upload = new FileUploadWithPreview('myUniqueUploadId')
+        </script>
 </body>
 </html>

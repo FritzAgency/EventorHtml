@@ -276,7 +276,7 @@ div.form-group {
 <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="background-color: #fff; margin-bottom: 0px;" class="new">
   <div class="container">
     <div class="navbar-header">
-      <div class="col-sm-2 col-md-3 col-xm-4" style="left: -180px; width: 20%;">
+      <div class="col-sm-2 col-md-3 col-xm-4" style="left: 0px; width: 20%;">
       <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: 4px;"></a>
       </div>
     </div>
@@ -586,7 +586,7 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
         </div>
       </div>
     </div>
-    <div class="col-sm-2" style="right: -124px;"> 
+    <div class="col-sm-2" style="right: -124px; text-align: right; padding-left: 0px; padding-right: 0px;"> 
       <div class="row">
         <div class="col-sm-4" style="width: 22.333%;">
           <a href=""><img src="img/index.png" alt="" style="width: 13px; height-max: 100%; margin-top: 10px;"></a>

@@ -281,11 +281,11 @@ div.form-group {
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -35px; padding-bottom: 10px;">
-    <li><a href="#" class="new">HOW IT WORKS </a></li>
-      <li><a href="#" class="new">EVENTS</a></li>
-      <li><a href="#" class="new">SPECIAL DEALS</a></li>
-      <li><a href="#" class="new">ABOUT US</a></li>
-      <li><a href="#" class="new">CONTACT</a></li>
+    <li><a href="#" class="new" style="color:#4f2684;">HOW IT WORKS </a></li>
+      <li><a style="color:#4f2684;" href="#" class="new">EVENTS</a></li>
+      <li><a style="color:#4f2684;" href="#" class="new">SPECIAL DEALS</a></li>
+      <li><a style="color:#4f2684;" href="#" class="new">ABOUT US</a></li>
+      <li><a style="color:#4f2684;" href="#" class="new">CONTACT</a></li>
       <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
       <!--li><a class="new"> | </a></li-->
       <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
@@ -294,7 +294,10 @@ div.form-group {
 echo 
 ''; 
 }else{
+
 echo'<li><a href="auth/signup.php" style="color:#4f2684;"> Sign up</a></li>'; 
+
+
 }
 ?>
 
@@ -304,6 +307,7 @@ echo
 '
 <li><a href="auth/login.php" style="color:#4f2684;"><span class=""></span> Login</a></li>
 ';      
+
 }
 ?>
 
@@ -319,6 +323,7 @@ echo $_SESSION['first_name'];
 }
 ?>
     </div>
+
 
 <?php
 if (isset($_SESSION['first_name'])){

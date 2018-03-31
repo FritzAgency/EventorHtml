@@ -377,7 +377,7 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
         <div class="span12">
             <form id="custom-search-form" class="form-search form-horizontal pull-right">
                 <div class="input-append span12">
-                    <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="Enter Search here" style="width: 464px; height: 39px; border-radius: 25px; background-color: transparent; border: 2px solid #ffffff;"></p>
+                    <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="   Enter Search here" style="width: 464px; height: 39px; border-radius: 25px; background-color: transparent; border: 2px solid #ffffff;"></p>
                     <button type="submit" class="btn"><span class="glyphicon glyphicon-search fa-2x" style="left: 450px; top: -49px; border: 1px solid #fff; padding: 8px; background-color: #ffff; border-radius: 46px;"></span></i></button>
                 </div>
             </form>

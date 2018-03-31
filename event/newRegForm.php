@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="/event/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" type="text/css" href="https://unpkg.com/file-upload-with-preview/dist/file-upload-with-preview.min.css">
+
 <style>
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
@@ -94,6 +96,36 @@ button:hover {
 .step.finish {
   background-color: #4CAF50;
 }
+
+
+/*upload organizer's logo css*/  
+  .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: purple;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+
+.inputfile + label:hover {
+    background-color: red;
+}
+
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+/*upload organizer's logo */ 
 </style>
 </head>
 <body>
@@ -183,25 +215,52 @@ if(isset($message)){
 
 <div class="row">
   <div class="col-sm-6">
-    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
+    <p><input type="number" placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
     </div>
     <div class="col-sm-6">
-    <p><input placeholder="Ticket Price (Leave empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
+    <p><input type="number" placeholder="Ticket Price (in &#8358;)"oninput="this.className = ''" name="ticket_price"></p>
     </div>
   </div>
 <hr  style="color: black;">
-<p style="color: #4f2684">UPLOAD EVENT BANNER </p>
-   <!--p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p-->
+<!--p style="color: #4f2684">UPLOAD EVENT BANNER </p>
+   <p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p-->
 
-   <p>  <input type='file' name="event_flier" onchange="readURL(this);"/> </p>
-
-  <div>
-  <img  src="http://placehold.it/180" alt="your image" style="max-width:500px;  height:100px;
-  margin-top:20px;"/>
-</div>
+   
 
 <!--p style="color: #4f2684; margin-top:10px;">UPLOAD EVENT BANNER </p>
     <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"-->
+
+    <!--input type="file" name="org_logo" id="file" class="inputfile" onchange="readURL(this);"/>
+    <span class="glyphicon glyphicon-upload" style="color:white"></span>
+<label for="file" style="color: white">Upload organizer's Logo</label-->
+
+        <div class="custom-file-container" data-upload-id="myUniqueUploadId">
+            <label>Upload Event flier<a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">&nbsp; &nbsp; X</a></label>
+
+            <label class="custom-file-container__custom-file" >
+                <input type="file" name="event_flier" class="inputfile custom-file-container__custom-file__custom-file-input" accept="*" multiple>
+                <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+                <!--span class="custom-file-container__custom-file__custom-file-control"></span-->
+
+<span class="glyphicon glyphicon-upload custom-file-container__custom-file__custom-file-control" style="color:white"></span>
+
+
+
+            </label>
+
+             <div class="custom-file-container__image-preview" style="height: 500px; width: 500px"> </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
 
 <div class="row">
   <div class="col-sm-6">
@@ -224,34 +283,50 @@ if(isset($message)){
    <!--p>  <input placeholder="Organizers logo" oninput="this.className = ''" type="file"   name="org_logo" > </p-->
 
 
-<p> Organizer's Logo </p>
+<!--p> Organizer's Logo </p-->
 
     <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p-->
-<p>  <input type='file' name="org_logo" onchange="readURL(this);"/> </p>
+<!--p>  <input type='file' name="org_logo" onchange="readURL(this);"/> </p-->
 
-  <div>
-  <img id="blah" src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" alt="your image" style="max-width:100px;  height:100px;
+  
+    <span class="btn btn-sm" style="background-color: #3b2a53; border-color: white">
+    <input type="file" name="org_logo" id="file" class="inputfile" onchange="readURL(this);"/>
+    <span class="glyphicon glyphicon-upload" style="color:white"></span>
+<label for="file" style="color: white">Upload organizer's Logo</label>
+</span>
+
+<div>
+  <img id="blah" src="http://placehold.it/180" alt="your image" style="max-width:100px;  height:100px;
   margin-top:20px;"/>
 </div>
 
 
-    <p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook" style="margin-top:10px"></p>
-    <p><input placeholder="Enter Instagram link here" value="@Instagram.com" oninput="this.className = ''" name="instagram" ></p>
+
+    <!--p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook" style="margin-top:10px"></p-->
+    <!--p><input placeholder="Enter Instagram link here" value="@Instagram.com" oninput="this.className = ''" name="instagram" ></p>
     <p><input placeholder="Enter Twitter handle here" value="@twitter.com" oninput="this.className = ''" name="twitter"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p>
+    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p-->
 <hr>
 
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">@</span>
+<<<<<<< HEAD
    <input id="email" type="text" class="form-control" name="" placeholder="twitter handle">
  </div>
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">@</span>
    <input id="password" type="text" class="form-control" name="" placeholder="instagram handle">
+=======
+   <input id="" type="text" class="form-control" name="twitter" placeholder="twitter handle">
+ </div>
+ <div class="input-group" style="margin-bottom: 15px;">
+   <span class="input-group-addon">@</span>
+   <input  type="text" class="form-control" name="instagram" placeholder="instagram handle">
+>>>>>>> e4436203f505c4bafaa2891a865125012d846c96
  </div>
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">Facebook.com/</span>
-   <input id="msg" type="text" class="form-control" name="msg" placeholder="facebook page">
+   <input type="text" class="form-control" name="facebook" placeholder="facebook page">
  </div>
 
 
@@ -293,25 +368,27 @@ if(isset($message)){
 <hr  style="color: black;">
 
     <p style="font-weight: bold;"> ACTIVITY 2 </p>
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name1"></p>
+    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc1"></textarea></p>
 
-    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
+    <p><input type="file"  id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="act_img1"></p>
+    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc1" id="autocomplete" onFocus="geolocate()"></p>
     <p> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date1"></p>
 
   <hr  style="color: black;">  
     <p style="font-weight: bold;"> ACTIVITY 3 </p>
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name2"></p>
+    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc2"></textarea></p>
 
-    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
+    <p><input type="file" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="act_img2"></p>
+
+    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc2" id="autocomplete" onFocus="geolocate()"></p>
+
     <p style="font-weight: bold;"> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date2"></p>
 <hr  style="color: black;">
-    <p style="font-weight: bold;"> ACTIVITY 4 </p>
+    <!--p style="font-weight: bold;"> ACTIVITY 4 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
@@ -325,7 +402,7 @@ if(isset($message)){
     <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
     <p> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p-->
   </div>
   <!-- <div class="tab"><h4 style="font-weight: bold; color: #4f2684">SCHEDULE</h4> 
 
@@ -593,5 +670,10 @@ function geolocate() {
         }
 </script>
 
+
+        <script src="https://unpkg.com/file-upload-with-preview"></script>
+        <script>
+            var upload = new FileUploadWithPreview('myUniqueUploadId')
+        </script>
 </body>
 </html>

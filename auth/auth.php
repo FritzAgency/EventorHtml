@@ -122,7 +122,7 @@ if(isset($_POST['submit'])){
     $password = stripslashes($_POST['password']); 
     $password_hash = md5($password); 
 
-    //Checking is user existing in the database or not
+    //Checking if user exists in the database or not
         $query = "SELECT * FROM `users` WHERE email='$email' and password='$password_hash'"; 
 
 $result = mysqli_query($con,$query) or die(mysqli_error());

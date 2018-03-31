@@ -1456,7 +1456,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.6;
-  background-color: green;
+  background-color: grey;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -3055,7 +3055,7 @@ th {
 }
 
 .table .table {
-  background-color: green;
+  background-color: grey;
 }
 
 .table-condensed > thead > tr > th,

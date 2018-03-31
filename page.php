@@ -254,16 +254,16 @@ padding-bottom: 10px;
 }
 
 .buck{
-  background-color: #4f2684;
+  background-color: #3b2a53;
   color: #ffffff;
-border-color: #ffe484;
+
 font-weight: bold;
 }
 
 .buck:hover{
-  background-color: #ffe484;
+  background-color: #15072a;
   color: #4f2684;
-border-color: #ffe484;
+
 font-weight: bold;
 }
 
@@ -309,7 +309,7 @@ $org_logo;?>" alt="" srcset="" class="img-responsive" style="margin-top: -7px;">
 <div class="container" style="background-color: #f3f3f3; width: 60%;">
 
 <div id="container">
-   <img src="http://images.fonearena.com/blog/wp-content/uploads/2013/11/Lenovo-p780-camera-sample-10.jpg" alt="your_keyword"/>
+   <img <img src="/public/images/<?php echo $event_flier;?>" alt="your_keyword"/>
 <div>
   
 <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid lightgrey; background-color: lightgrey"> -->
@@ -423,18 +423,16 @@ $sponsor_logo;?>" class="img-responsive" style="height: auto; background-color: 
 
 
       </div>
-      <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
-        <a href="<?php if (isset($sponsor_url1)){echo $sponsor_url1;}?>">  <img src="/public/images/<?php echo 
-$sponsor_logo1;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
-<p> <?php if(isset($sponsor_name1)){echo $sponsor_name1;}?> </p>
+      <!-- <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
+        <a href="<?php //if (isset($sponsor_url1)){echo $sponsor_url1;}?>">  <img src="/public/images/<?php //echo 
+//$sponsor_logo1;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
+<p> <?php //if(isset($sponsor_name1)){echo $sponsor_name1;}?> </p>
+      </div> -->
+      <!-- <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
+        <a href="">  <img src="/public/images/" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
+<p> </p>
 
-      </div>
-      <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
-        <a href="<?php if (isset($sponsor_url2)){echo $sponsor_url2;}?>">  <img src="/public/images/<?php echo 
-$sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
-<p> <?php if(isset($sponsor_name2)){echo $sponsor_name2;}?> </p>
-
-      </div>
+      </div> -->
     </div>
     </div>
     <!-- sponsors contents ends here -->
@@ -460,36 +458,36 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
     <!-- sponsors logo will come here -->
     <div style="margin-left: 74px; margin-right: auto; text-align: center; width: 100%; margin-top: 15px;">
     <div class="row" style="margin-left: auto; margin-right:auto">
-      <div class="col-sm-2" style="height: 100px; background-color: white; margin: 5px;">
+      <div class="col-sm-2" style="height: 100px; background-color: #f3f3f3; margin: 5px;">
       <!-- vendor 1 -->
       </div>
-      <div class="col-md-2" style="height: 100px; background-color: white; margin: 5px;">
+      <div class="col-md-2" style="height: 100px; background-color: #f3f3f3; margin: 5px;">
       <!-- vendor 2 -->
       </div>
-      <div class="col-md-2" style="height: 100px; background-color: white; margin: 5px;">
+      <div class="col-md-2" style="height: 100px; background-color: #f3f3f3; margin: 5px;">
       <!-- vendor 3 -->
       </div>
-      <div class="col-md-2" style="height: 100px; background-color: white; margin: 5px;">
+      <div class="col-md-2" style="height: 100px; background-color: #f3f3f3; margin: 5px;">
       <!-- vendor 4 -->
       </div>
-      <div class="col-md-2" style="height: 100px; background-color: white; margin: 5px;">
+      <div class="col-md-2" style="height: 100px; background-color: #f3f3f3; margin: 5px;">
       <!-- vendor  -->
       </div>
     </div>
     <div class="row" style="margin-left: auto; margin-right:auto">
-      <div class="col-sm-2" style="height: 100px; background-color: white; margin: 5px;">
+      <div class="col-sm-2" style="height: 100px; background-color: #f3f3f3; margin: 5px;">
       <!-- vendor 1 -->
       </div>
-      <div class="col-md-2" style="height: 100px; background-color: white; margin: 5px;">
+      <div class="col-md-2" style="height: 100px; background-color: #f3f3f3; margin: 5px;">
       <!-- vendor 2 -->
       </div>
-      <div class="col-md-2" style="height: 100px; background-color: white; margin: 5px;">
+      <div class="col-md-2" style="height: 100px; background-color: #f3f3f3; margin: 5px;">
       <!-- vendor 3 -->
       </div>
-      <div class="col-md-2" style="height: 100px; background-color: white; margin: 5px;">
+      <div class="col-md-2" style="height: 100px; background-color: #f3f3f3; margin: 5px;">
       <!-- vendor 4 -->
       </div>
-      <div class="col-md-2" style="height: 100px; background-color: white; margin: 5px;">
+      <div class="col-md-2" style="height: 100px; background-color: #f3f3f3; margin: 5px;">
         <!-- vendor 5 -->
       </div>
     </div>
@@ -525,7 +523,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
 <!-- price tag ends here -->
 <!-- become a vendor and register button starts here -->
 <div class="row" style="margin-top: 50px; margin-left: auto; margin-right: auto;">
-  <div class="col-sm-4 buck" style="margin-left: 35px; border: 4px solid #ffe484; border-radius: 17px;">
+  <div class="col-sm-4 buck" style="margin-left: 35px; border: 4px solid #b784ff; border-radius: 17px;">
   <a href="#" style="text-decoration: none; color: #ffffff;"><div style="text-align: center; padding: 10px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 13px;">BECOME A VENDOR</h2>
     </div></a>
@@ -534,7 +532,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
     <div style="text-align: center; border-radius: 17px;">
      </div>
 </div>
-<div class="col-sm-4 buck" style="border: 4px solid #ffe484; border-radius: 17px;">
+<div class="col-sm-4 buck" style="border: 4px solid #b784ff; border-radius: 17px;">
       <a href="#" style="text-decoration: none; color: #ffffff;" data-toggle="modal" data-target="#myModal"><div style="text-align: center;padding: 10px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 13px;" id="register">REGISTER</h2>
     </div></a>
@@ -590,7 +588,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">4:00</h2>
         </div-->
         <a href="#" style="color: #ffffff; text-decoration: none;">
-        <div class="col-sm-4 buck" style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
+        <div class="col-sm-4 buck" style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 13px;">SCHEDULE</h2>
   </div>
         </a>
@@ -620,7 +618,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">22:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
    </div>
@@ -650,7 +648,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
    </div>
@@ -681,7 +679,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
    </div>
@@ -707,7 +705,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #b784ff; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
    </div>

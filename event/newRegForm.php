@@ -135,7 +135,7 @@ button:hover {
   <div class="container-fluid">
     <div class="navbar-header" >
       <div class="col-sm-2 col-md-3 col-xm-4">
-      <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
+      <a class="navbar-brand" href="/EventorHtml/index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -45px;padding-bottom: 10px;">

@@ -176,7 +176,7 @@ font-size: 11px;
   background-color: white;
 }
 
-img {
+/* img {
 
   margin-top: auto;
   margin-bottom: auto;
@@ -197,7 +197,7 @@ img {
 .square {
   height: 70%;
   width: 70%;
-}
+} */
 
 .container .jumbotron, .container-fluid .jumbotron {
 
@@ -269,6 +269,17 @@ font-weight: bold;
 
 .carousel .carousel-inner { width:100%; height:570px; }
 
+#container{
+    max-width: 790px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    object-fit: contain;
+}
 /* Extra Things */
 </style>
 </head>
@@ -295,8 +306,13 @@ $org_logo;?>" alt="" srcset="" class="img-responsive" style="margin-top: -7px;">
   </div>
 </nav>
 <!-- nav bar ends here -->
-<div class="container" style="background-color: white; width: 60%;">
-<div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid lightgrey; background-color: lightgrey">
+<div class="container" style="background-color: #f3f3f3; width: 60%;">
+
+<div id="container">
+   <img src="http://images.fonearena.com/blog/wp-content/uploads/2013/11/Lenovo-p780-camera-sample-10.jpg" alt="your_keyword"/>
+<div>
+  
+<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid lightgrey; background-color: lightgrey"> -->
     <!-- Indicators -->
     <!-- <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -305,14 +321,13 @@ $org_logo;?>" alt="" srcset="" class="img-responsive" style="margin-top: -7px;">
     </ol> -->
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner landscape square" style="margin-top: auto; margin-bottom: auto; margin-left:auto; margin-right: auto; background-color: lightgrey;">
-      <div class="item active">
+    <!-- <div class="carousel-inner landscape square" style="margin-top: auto; margin-bottom: auto; margin-left:auto; margin-right: auto; background-color: lightgrey;">
+      <div class="item active"> -->
         <!--img src="img/create.png" alt="Los Angeles" style="width:50%; height: 50%; margin: auto;" class="img-responsive"-->
         <!--img src="img/fifth.jpg" class="img-responsive landscape square" style="margin: auto;"-->
-<img src="/public/images/<?php echo 
-$event_flier;?>" class="img-responsive landscape square" style="margin: auto;">
+<!-- <img src="/public/images/" class="img-responsive landscape square" style="margin: auto;"> -->
 
-      </div>
+      <!-- </div> -->
       <!-- style="width:50%; height: 50%; margin: auto;" -->
       <!-- <div class="item"> -->
 
@@ -575,7 +590,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">4:00</h2>
         </div-->
         <a href="#" style="color: #ffffff; text-decoration: none;">
-        <div class="col-sm-4 buck" style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px;">
+        <div class="col-sm-4 buck" style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 13px;">SCHEDULE</h2>
   </div>
         </a>
@@ -605,7 +620,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">22:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
    </div>
@@ -635,7 +650,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
    </div>
@@ -666,7 +681,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
    </div>
@@ -692,7 +707,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
         <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
         <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">12:00</h2>
         </div>
-        <a href="#" style="color: #ffffff; text-decoration: none;"><div style=" width: 56%; margin-left: auto; margin-right: auto; border: 4px solid #bb0b9e; background-color: #4f2684; color: #fff; text-align: center; border-radius: 17px; padding: 10px; margin-top: 50px;">
+        <a href="#" style="color: #ffffff; text-decoration: none;"><div style="border: 4px solid #ffe484; border-radius: 17px; text-align: center; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; left: 133px;">
       <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">SCHEDULE</h2>
     </div></a>
    </div>

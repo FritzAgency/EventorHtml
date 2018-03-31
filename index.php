@@ -356,7 +356,7 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
         </div>
         <!-- start selling vendor retisgration form -->
         <div class="shadow swing">
-          <a href="vendor/vendorform.php">
+          <a href="http://localhost/wordpress">
           <img src="img/start.png" style="margin-bottom: 18px;" alt="create event design" srcset="" class="img-responsive">
         </a>
         </div>

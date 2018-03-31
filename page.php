@@ -511,6 +511,7 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
       </div> 
     </div>
     </div>
+  </div>
     <!-- sponsors contents ends here -->
   </div>
   <div class="tab-pane" id="csharptab">

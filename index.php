@@ -294,19 +294,20 @@ div.form-group {
 echo 
 ''; 
 }else{
-echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>'; 
+
+echo'<li><a href="auth/signup.php" style="color:#4f2684;"> Sign up</a></li>'; 
+
+
 }
 ?>
 
-<?php if ((isset($_SESSION['email']))){
+<?php if ((!isset($_SESSION['first_name']))){
 
 echo 
 '
-<li><a href="auth/logout.php" style="color:#4f2684;"><span class=""></span> Logout</a></li>
-';      }else{
-echo'
-<li><a href="auth/login.php" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
-'; 
+<li><a href="auth/login.php" style="color:#4f2684;"><span class=""></span> Login</a></li>
+';      
+
 }
 ?>
 
@@ -318,19 +319,22 @@ echo'
     <div class="col-sm-6">
     <?php 
 if((isset($_SESSION['first_name']))){
-echo 'Welcome, '. $_SESSION['first_name'];
+echo $_SESSION['first_name'];
 }
 ?>
     </div>
-    <div class="col-sm-6" style="color:#4f2684;">
-    <span class="caret dropdown-toggle" type="button" data-toggle="dropdown"></span>
-    <ul class="dropdown-menu">
-      <li><a href="#" style="color:#4f2684;">HTML</a></li>
-      <li><a href="#" style="color:#4f2684;">CSS</a></li>
-      <li><a href="#" style="color:#4f2684;">JavaScript</a></li>
-    </ul>
-    </div>
 
+
+<?php
+if (isset($_SESSION['first_name'])){
+echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" data-toggle="dropdown"></span>
+    <ul class="dropdown-menu">
+      <li><a href="event/dashboard.php">Dashboard</a></li>
+      <li><a href="auth/logout.php">Logout</a></li>    
+    </ul>
+    </div>';
+}  
+?>
   </div>
   </div>
     </ul>

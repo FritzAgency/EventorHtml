@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="/event/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" type="text/css" href="https://unpkg.com/file-upload-with-preview/dist/file-upload-with-preview.min.css">
@@ -30,7 +30,7 @@ body {
 #regForm {
   background-color: #ffffff;
   margin: 50px auto;
-  font-family: Raleway;
+  font-family: 'Montserrat', sans-serif;
   padding: 40px;
   width: 60%;
   min-width: 300px;
@@ -43,9 +43,11 @@ h1 {
 input {
   padding: 10px;
   width: 100%;
-  font-size: 17px;
-  font-family: Raleway;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
   border: 1px solid #aaaaaa;
+  border-radius:5px;
+
 }
 
 /* Mark input boxes that gets an error on validation: */
@@ -64,7 +66,7 @@ button {
   border: none;
   padding: 10px 20px;
   font-size: 17px;
-  font-family: Raleway;
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
 }
 
@@ -194,7 +196,7 @@ require_once('../event/createclass.php');
         <hr style="margin-top: 0px; color: #4f2684;">
         <!-- line breaker ends here -->
 <form id="regForm" action="" method="post" enctype="multipart/form-data">
-  <h1 style="font-weight: bold; color: #4f2684">CREATE EVENT</h1>
+  <p style="font-family: Arial; text-align: center; font-weight: bolder; color: #4f2684; font-size: 30px">CREATE EVENT</p>
   <!-- One "tab" for each step in the form: -->
               <?php 
 
@@ -310,23 +312,23 @@ if(isset($message)){
 
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">@</span>
-<<<<<<< HEAD
-   <input id="email" type="text" class="form-control" name="" placeholder="twitter handle">
+
+   <input  type="text" class="form-control" name="twitter" placeholder="Twitter handle">
  </div>
+
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">@</span>
-   <input id="password" type="text" class="form-control" name="" placeholder="instagram handle">
-=======
-   <input id="" type="text" class="form-control" name="twitter" placeholder="twitter handle">
+   <input  type="text" class="form-control" name="instagram" placeholder="Instagram handle">
+
  </div>
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">@</span>
    <input  type="text" class="form-control" name="instagram" placeholder="instagram handle">
->>>>>>> e4436203f505c4bafaa2891a865125012d846c96
+
  </div>
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">Facebook.com/</span>
-   <input type="text" class="form-control" name="facebook" placeholder="facebook page">
+   <input type="text" class="form-control" name="facebook" placeholder="Facebook username">
  </div>
 
 

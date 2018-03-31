@@ -273,7 +273,7 @@ div.form-group {
 </head>
 <body>
   <!-- header starts here -->
-<nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px; background-color: #fff;" class="new">
+<nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="background-color: #fff; margin-bottom: 0px;" class="new">
   <div class="container">
     <div class="navbar-header">
       <div class="col-sm-2 col-md-3 col-xm-4" style="left: -180px; width: 20%;">
@@ -377,7 +377,7 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
         <div class="span12">
             <form id="custom-search-form" class="form-search form-horizontal pull-right">
                 <div class="input-append span12">
-                    <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="Enter Search here" style="width: 464px; height: 39px; border-radius: 25px; background-color: transparent; border: 2px solid #ffffff;"></p>
+                    <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="   Enter Search here" style="width: 464px; height: 39px; border-radius: 25px; background-color: transparent; border: 2px solid #ffffff;"></p>
                     <button type="submit" class="btn"><span class="glyphicon glyphicon-search fa-2x" style="left: 450px; top: -49px; border: 1px solid #fff; padding: 8px; background-color: #ffff; border-radius: 46px;"></span></i></button>
                 </div>
             </form>
@@ -571,18 +571,18 @@ echo'<div class="col-sm-6"><span class="caret dropdown-toggle" type="button" dat
 <footer style="background-color: #4f2684; padding: 7px; height: 54px; margin-top: 14px;">
   <div class="row">
     <div class="col-sm-2" style="width: 12.667%; left: 23px;">
-      <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
+      <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 7px;">
     </div>
-    <div class="col-sm-8" style="left: 51px;">
-      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto; font-size: 12px; margin-top: -4px;">
+    <div class="col-sm-8" style="left: 76px;">
+      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto; font-size: 12px; margin-top: 5px;">
         <div class="col-sm-5">
-        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff;">HOW IT WORKS</p></a>
+        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff; font-size: 10px;">HOW IT WORKS</p></a>
         </div>
         <div class="col-sm-4">
-        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff;">ABOUT US</p></a>
+        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff; font-size: 10px;">ABOUT US</p></a>
         </div>
         <div class="col-sm-3">
-        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff;">CONTACT</p></a>
+        <a href="#"><p style="text-align: center; font-weight: normal; padding-top: 15px; color: #ffffff; font-size: 10px;">CONTACT</p></a>
         </div>
       </div>
     </div>

@@ -23,29 +23,16 @@ while( $row = mysqli_fetch_array($result) ){
 $event_description =  $row['event_description']; 
 $Address = $row['Address']; 
 $event_title = $row['event_title']; 
-$event_flier = $row['event_flier'];  
-$event_flier1 = $row['event_flier1'];  
-$event_flier2 = $row['event_flier2'];  
+//$event_flier = $row['event_flier'];  
+//$event_flier1 = $row['event_flier1'];  
+//$event_flier2 = $row['event_flier2'];  
 $ticket_price = $row['ticket_price']; 
 $ticket_qty = $row['ticket_qty'];
 $status = $row['status']; 
 $sponsor_name = $row['sponsor_name']; 
 $sponsor_logo = $row['sponsor_logo'];
-$sponsor_url = $row['sponsor_url'];
-$sch_name = $row['sch_name'];  
-$sch_start = $row['sch_start']; 
-$sch_end = $row['sch_end']; 
+$sponsor_url = $row['sponsor_url']; 
 
-
-$org_logo = $row['org_logo']; 
-
-$sch_name1 = $row['sch_name1'];  
-$sch_start1 = $row['sch_start1']; 
-$sch_end1 = $row['sch_end1']; 
-
-$sch_name2 = $row['sch_name2'];  
-$sch_start2 = $row['sch_start2']; 
-$sch_end2 = $row['sch_end2']; 
 
 
 $sponsor_name1 = $row['sponsor_name1']; 
@@ -61,6 +48,22 @@ $act_loc = $row['act_loc'];
 $act_desc = $row['act_desc']; 
 $act_date = $row['act_date']; 
 $act_img = $row['act_img']; 
+
+
+
+$act_name1 = $row['act_name1']; 
+$act_loc1 = $row['act_loc1']; 
+$act_desc1 = $row['act_desc1']; 
+$act_date1 = $row['act_date1']; 
+$act_img1 = $row['act_img1']; 
+
+
+
+$act_name2 = $row['act_name2']; 
+$act_loc2 = $row['act_loc2']; 
+$act_desc2 = $row['act_desc2']; 
+$act_date2 = $row['act_date2']; 
+$act_img2 = $row['act_img2']; 
 
 $org_logo = $row['org_logo']; 
 
@@ -418,25 +421,83 @@ $org_logo;?>" alt="" class="img-responsive"></a>
         <?php
 
 
-$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_'"; 
+$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
+
+
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+
+$row = mysqli_num_rows($result) or die(mysqli_error());
 
 
 
-      <a href="<?php if (isset($sponsor_url)){echo $sponsor_url;}?>">  <img src="/public/images/<?php echo 
+if (empty($row['sponsor_logo'])){
+echo ''; 
+
+}else{
+  echo '<a href="<?php if (isset($sponsor_url)){echo $sponsor_url;}?>">  <img src="/public/images/<?php echo 
 $sponsor_logo;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
-<p> <?php if(isset($sponsor_name)){echo $sponsor_name;}?> </p>
+<p> <?php if(isset($sponsor_name)){echo $sponsor_name;}?> </p>'; 
+}
 
+
+?>
       </div>
        <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
-        <a href="<?php if (isset($sponsor_url1)){echo $sponsor_url1;}?>">  <img src="/public/images/<?php echo 
+   
+        <?php
+
+
+$query = "SELECT * FROM `event` WHERE sponsor_logo1='$sponsor_logo1'"; 
+
+
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+
+$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+
+if (empty($row['sponsor_logo1'])){
+echo ''; 
+
+}else{
+  echo '<a href="<?php if (isset($sponsor_url1)){echo $sponsor_url1;}?>">  <img src="/public/images/<?php echo 
 $sponsor_logo1;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
-<p> <?php if(isset($sponsor_name1)){echo $sponsor_name1;}?> </p>
+<p> <?php if(isset($sponsor_name1)){echo $sponsor_name1;}?> </p>'; 
+}
+
+
+?>
+
+
       </div> 
        <div class="col-sm-4" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;" class="img-responsive">
 
-<a href="<?php if (isset($sponsor_url2)){echo $sponsor_url2;}?>">  <img src="/public/images/<?php echo 
+ <?php
+
+
+$query = "SELECT * FROM `event` WHERE sponsor_logo2='$sponsor_logo2'"; 
+
+
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+
+$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+
+if (empty($row['sponsor_logo2'])){
+echo ''; 
+
+}else{
+  echo '<a href="<?php if (isset($sponsor_url2)){echo $sponsor_url2;}?>">  <img src="/public/images/<?php echo 
 $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color: white; margin-left: auto; margin-right: auto;"> </a>
-<p> <?php if(isset($sponsor_name2)){echo $sponsor_name2;}?> </p>
+<p> <?php if(isset($sponsor_name2)){echo $sponsor_name2;}?> </p>'; 
+}
+
+
+?>
 
       </div> 
     </div>
@@ -563,10 +624,12 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
     <ul class="nav nav-tabs" role="tablist" style=" margin-left: -53px; margin-right: -53px;">
   <li class="active sizing3"><a href="#hometab5" role="tab" data-toggle="tab"><?php if(isset($act_name)){echo $act_name;}?> </a></li>
 
-  <!--li class="sizing3"><a href="#javatab5" role="tab" data-toggle="tab" >Jogging</a></li>
-  <li class="sizing3"><a href="#csharptab5" role="tab" data-toggle="tab">Dance</a></li>
-  <li class="sizing3"><a href="#mysqltab5" role="tab" data-toggle="tab">Running</a></li> 
-  <li class="sizing3"><a href="#fight" role="tab" data-toggle="tab">Fighting</a></li--> 
+  <li class="sizing3"><a href="#javatab5" role="tab" data-toggle="tab" ><?php if(isset($act_name1)){echo $act_name1;}?></a></li>
+
+  <li class="sizing3"><a href="#csharptab5" role="tab" data-toggle="tab"><?php if(isset($act_name2)){echo $act_name2;}?></a></li>
+
+  <!--li class="sizing3"><a href="#mysqltab5" role="tab" data-toggle="tab">Running</a></li--> 
+  <!--li class="sizing3"><a href="#fight" role="tab" data-toggle="tab">Fighting</a></li--> 
 </ul>
 </li>
 
@@ -576,6 +639,9 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
 
             <div style="width: 100%; margin: auto;">
         <!--img src="" alt="activity image goes in here 1" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain"-->
+                        <img src="public/images/<?php echo 
+$act_img;?>" alt="" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
+
   </div>
             <!-- activity schedule and time goes in here -->
             <div class="row">
@@ -607,13 +673,19 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
 
 
           <div style="width: 100%; margin: auto;">
-        <img src="" alt="activity image goes in here2" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
+                <img src="public/images/<?php echo 
+$act_img1;?>" alt="" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
+
   </div>
   <div class="row">
     <div class="col-sm-6">
         <p style="text-align:justify;">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
-        </p>
+        
+
+      <?php if(isset($act_desc1)){echo $act_desc1;}?>
+
+
+                </p>
     </div>
    <div class="col-sm-6">
         <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
@@ -637,13 +709,20 @@ $sponsor_logo2;?>" class="img-responsive" style="height: auto; background-color:
 
 
 <div style="width: 100%; margin: auto;">
-        <img src="" alt="activity image goes in here3" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
+        <!--img src="" alt="activity image goes in here3" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain"-->
+                        <img src="public/images/<?php echo 
+$act_img2;?>" alt="" class="img-responsive" style="height: 100%; width: 100%; object-fit: contain">
+
   </div>
   <div class="row">
     <div class="col-sm-6">
         <p style="text-align:justify;">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ipsam enim aspernatur eaque commodi, tempora vitae, dolores accusantium vel neque quas voluptatum illo eum voluptatem laborum sequi saepe maiores magni architecto quae inventore officia nihil ullam. Magni magnam laudantium voluptatibus beatae, veritatis culpa architecto, dolorem eum maxime excepturi debitis minus, nostrum maiores consectetur saepe pariatur ad earum ab doloribus atque ea. Impedit vitae distinctio ullam provident eum deleniti reprehenderit beatae, iure et ex molestiae! Quidem suscipit eos cumque nulla, debitis in, quam optio totam sunt est dolorem vitae? Natus dolore beatae aspernatur quod. Atque nam, doloremque explicabo dolorum ex unde.
-        </p>
+        
+
+      <?php if(isset($act_desc2)){echo $act_desc2;}?>
+
+
+                </p>
     </div>
    <div class="col-sm-6">
         <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>

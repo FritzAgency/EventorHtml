@@ -218,7 +218,7 @@ if(isset($message)){
     <p><input type="number" placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
     </div>
     <div class="col-sm-6">
-    <p><input type="number" placeholder="Ticket Price (empty if ticket is free.)"oninput="this.className = ''" name="ticket_price"></p>
+    <p><input type="number" placeholder="Ticket Price (in &#8358;)"oninput="this.className = ''" name="ticket_price"></p>
     </div>
   </div>
 <hr  style="color: black;">
@@ -310,15 +310,15 @@ if(isset($message)){
 
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">@</span>
-   <input id="email" type="text" class="form-control" name="email" placeholder="twitter handle">
+   <input id="" type="text" class="form-control" name="twitter" placeholder="twitter handle">
  </div>
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">@</span>
-   <input id="password" type="password" class="form-control" name="password" placeholder="instagram handle">
+   <input  type="text" class="form-control" name="instagram" placeholder="instagram handle">
  </div>
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">Facebook.com/</span>
-   <input id="msg" type="text" class="form-control" name="msg" placeholder="facebook page">
+   <input type="text" class="form-control" name="facebook" placeholder="facebook page">
  </div>
 
 
@@ -360,25 +360,27 @@ if(isset($message)){
 <hr  style="color: black;">
 
     <p style="font-weight: bold;"> ACTIVITY 2 </p>
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name1"></p>
+    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc1"></textarea></p>
 
-    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
+    <p><input type="file"  id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="act_img1"></p>
+    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc1" id="autocomplete" onFocus="geolocate()"></p>
     <p> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date1"></p>
 
   <hr  style="color: black;">  
     <p style="font-weight: bold;"> ACTIVITY 3 </p>
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name2"></p>
+    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc2"></textarea></p>
 
-    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
+    <p><input type="file" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="act_img2"></p>
+
+    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc2" id="autocomplete" onFocus="geolocate()"></p>
+
     <p style="font-weight: bold;"> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date2"></p>
 <hr  style="color: black;">
-    <p style="font-weight: bold;"> ACTIVITY 4 </p>
+    <!--p style="font-weight: bold;"> ACTIVITY 4 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
     <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
@@ -392,7 +394,7 @@ if(isset($message)){
     <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
     <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
     <p> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p-->
   </div>
   <!-- <div class="tab"><h4 style="font-weight: bold; color: #4f2684">SCHEDULE</h4> 
 

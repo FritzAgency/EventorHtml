@@ -62,19 +62,7 @@ $ticket_qty = $_POST['ticket_qty'];
 $ticket_price = $_POST['ticket_price']; 
 
 
-$sch_name = $_POST['sch_name'];
-$sch_start = $_POST['sch_start']; 
-$sch_end  = $_POST['sch_start'];
 
-
-$sch_name1 = $_POST['sch_name1'];
-$sch_start1 = $_POST['sch_start1']; 
-$sch_end1  = $_POST['sch_start1'];
-
-
-$sch_name2 = $_POST['sch_name2'];
-$sch_start2 = $_POST['sch_start2']; 
-$sch_end2  = $_POST['sch_start2'];
 
 
 $act_name = $_POST['act_name']; 
@@ -82,6 +70,23 @@ $act_loc = $_POST['act_loc'];
 $act_desc = $_POST['act_desc']; 
 $act_date = $_POST['act_date']; 
 $act_img = $_FILES["act_img"]["name"];
+
+
+
+$act_name1 = $_POST['act_name1']; 
+$act_loc1 = $_POST['act_loc1']; 
+$act_desc1 = $_POST['act_desc1']; 
+$act_date1 = $_POST['act_date1']; 
+$act_img1 = $_FILES["act_img1"]["name"];
+
+
+$act_name2 = $_POST['act_name2']; 
+$act_loc2 = $_POST['act_loc2']; 
+$act_desc2 = $_POST['act_desc2']; 
+$act_date2 = $_POST['act_date2']; 
+$act_img2 = $_FILES["act_img2"]["name"];
+
+
 
 $event_url = preg_replace('/\s+/', '-', $event_title); 
 
@@ -96,6 +101,15 @@ $target_file = $target_dir . basename($_FILES["sponsor_logo2"]["name"]);
 $target_file = $target_dir . basename($_FILES["event_flier"]["name"]);	
 
 $target_file = $target_dir . basename($_FILES["org_logo"]["name"]);	
+
+
+$target_file = $target_dir . basename($_FILES["act_img"]["name"]); 
+
+
+$target_file = $target_dir . basename($_FILES["act_img1"]["name"]); 
+
+
+$target_file = $target_dir . basename($_FILES["act_img2"]["name"]); 
 
 //$target_file = $target_dir . basename($_FILES["event_flier1"]["name"]);	
 //$target_file = $target_dir . basename($_FILES["event_flier2"]["name"]);	
@@ -112,7 +126,19 @@ move_uploaded_file($_FILES["sponsor_logo2"]["tmp_name"], "../public/images/".$_F
 move_uploaded_file($_FILES["org_logo"]["tmp_name"], "../public/images/".$_FILES['org_logo']['name']); 
 
 
-move_uploaded_file($_FILES["event_flier"]["tmp_name"], "../public/images/".$_FILES['event_flier']['name']); 
+move_uploaded_file($_FILES["event_flier"]["tmp_name"], "../public/images/".$_FILES['event_flier']['name']);
+
+
+move_uploaded_file($_FILES["act_img"]["tmp_name"], "../public/images/".$_FILES['act_img']['name']); 
+
+
+move_uploaded_file($_FILES["act_img1"]["tmp_name"], "../public/images/".$_FILES['act_img1']['name']); 
+
+
+move_uploaded_file($_FILES["act_img2"]["tmp_name"], "../public/images/".$_FILES['act_img2']['name']); 
+
+
+
 
 //move_uploaded_file($_FILES["event_flier1"]["tmp_name"], "../public/images/".$_FILES['event_flier1']['name']); 
 
@@ -120,18 +146,18 @@ move_uploaded_file($_FILES["event_flier"]["tmp_name"], "../public/images/".$_FIL
 //move_uploaded_file($_FILES["event_flier2"]["tmp_name"], "../public/images/".$_FILES['event_flier2']['name']); 
 
 
-move_uploaded_file($_FILES["act_img"]["tmp_name"], "../public/images/".$_FILES['act_img']['name']); 
+//move_uploaded_file($_FILES["act_img"]["tmp_name"], "../public/images/".$_FILES['act_img']['name']); 
 
 
 //move_uploaded_file($_FILES['userfile']['tmp_name'], 'c:/wamp/www/uploads/images/'.$file['name']);
 
-$act_name = $_POST['act_name']; 
+/*$act_name = $_POST['act_name']; 
 $act_loc = $_POST['act_loc']; 
 $act_desc = $_POST['act_desc']; 
 $act_date = $_POST['act_date']; 
-$act_img = $_FILES["act_img"]["name"];
+$act_img = $_FILES["act_img"]["name"];*/ 
 
-	$query = "INSERT into `event` (creator_id, event_title, event_url, event_description,  sponsor_name, sponsor_url, sponsor_logo, sponsor_name1, sponsor_url1, sponsor_logo1, sponsor_name2, sponsor_url2, sponsor_logo2, org_name, org_logo, event_flier, Address, city, state,  event_starts, event_ends, facebook, twitter, instagram, act_name, act_desc, act_date, act_img, ticket_qty, ticket_price, created_at, sch_name, sch_start, sch_end,  sch_name1, sch_start1, sch_end1,  sch_name2, sch_start2, sch_end2) VALUES ('$creator_id', '$event_title', '$event_url', '$event_description', '$sponsor_name', '$sponsor_url', '$sponsor_logo', '$sponsor_name1', '$sponsor_url1', '$sponsor_logo1', '$sponsor_name2', '$sponsor_url2', '$sponsor_logo2','$org_name', '$org_logo', '$event_flier', '$Address', '$city', '$state', '$event_starts', '$event_ends', '$facebook', '$twitter', '$instagram', '$act_name', '$act_desc', '$act_date', '$act_img', '$ticket_qty', '$ticket_price', '$created_at', '$sch_name', '$sch_start', '$sch_end', '$sch_name1', '$sch_start1', '$sch_end1', '$sch_name2', '$sch_start2', '$sch_end2')";  
+	$query = "INSERT into `event` (creator_id, event_title, event_url, event_description,  sponsor_name, sponsor_url, sponsor_logo, sponsor_name1, sponsor_url1, sponsor_logo1, sponsor_name2, sponsor_url2, sponsor_logo2, org_name, org_logo, event_flier, Address, city, state,  event_starts, event_ends, facebook, twitter, instagram, act_name, act_desc, act_loc, act_date, act_img, act_name1, act_desc1, act_loc1, act_date1, act_img1, act_name2, act_desc2, act_loc2, act_date2, act_img2, ticket_qty, ticket_price, created_at) VALUES ('$creator_id', '$event_title', '$event_url', '$event_description', '$sponsor_name', '$sponsor_url', '$sponsor_logo', '$sponsor_name1', '$sponsor_url1', '$sponsor_logo1', '$sponsor_name2', '$sponsor_url2', '$sponsor_logo2','$org_name', '$org_logo', '$event_flier', '$Address', '$city', '$state', '$event_starts', '$event_ends', '$facebook', '$twitter', '$instagram', '$act_name', '$act_desc', '$act_loc', '$act_date', '$act_img', '$act_name1', '$act_desc1', '$act_loc1', '$act_date1', '$act_img1','$act_name2', '$act_desc2', '$act_loc2', '$act_date2', '$act_img2', '$ticket_qty', '$ticket_price', '$created_at')";  
 
         $result = mysqli_query($con,$query) or die(mysqli_error($con));
 

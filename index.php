@@ -87,7 +87,7 @@ body {
                     <!-- Right -->
                     <ul class="navbar-nav nav-flex-icons">
                         <li class="nav-item">
-                            <a href="event/newRegform.php" class="nav-link waves-effect" target="_blank">
+                            <a href="event/newregform.php" class="nav-link waves-effect">
                                 <i class="fa fa-login"></i>Create Event
                             </a>
                         </li>

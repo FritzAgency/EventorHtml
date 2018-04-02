@@ -131,6 +131,9 @@ $count = mysqli_num_rows($result);
 
 if ($count == 1){
 while( $row = mysqli_fetch_array($result) ){
+
+
+
     //$array[]= $row;   
     $_SESSION['email'] = $email; //store the user's email into session 
     $id = $row['id'];
@@ -146,6 +149,12 @@ while( $row = mysqli_fetch_array($result) ){
     $_SESSION['phoneNumber'] = $phoneNumber; 
 
     $_SESSION['Address'] = $Address; 
+
+
+
+setcookie("email", $_SESSION['email'], time() * 7200000);
+setcookie("first_name", $_SESSION['first_name'], time() * 7200000);
+setcookie("id", $_SESSION['id'], time() * 7200000);
 
     header("Location: ../index.php");//redirect to the homepage after log in. 
 

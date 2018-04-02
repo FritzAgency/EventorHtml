@@ -198,9 +198,8 @@ echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves
     <?php 
 if((isset($_SESSION['first_name']))){
 echo 'Welcome, ' . $_SESSION['first_name'];
-}
+} 
 ?>
-
 
 
 

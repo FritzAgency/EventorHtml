@@ -162,12 +162,12 @@ button:hover {
       <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
       <?php 
 
-      if ((!isset($_SESSION['email']))){
+      /*if ((!isset($_SESSION['email']))){
 
 
   header("Location: ../auth/signup.php");
 
-} 
+} */ 
 
  
 ?>

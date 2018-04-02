@@ -15,26 +15,25 @@
     </head>
     <body>
 
-<form>
-    <div class="input-group date" data-provide="datepicker calendar">
-    <input type="text" class="form-control">
-    <div class="input-group-addon">
-        <span class="glyphicon glyphicon-th"></span>
-    </div>
-</div>
+<?php
+$cookie_name = "user";
+$cookie_value = "John Doe";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30) ); // 86400 = 1 day
 
-</form>
-        
+$_SESSION['name'] = 'sdsg'; 
+?>
+
+<?php
+/*if(!isset($_COOKIE[$cookie_name])) {
+    echo "Cookie named '" . $cookie_name . "' is not set!";
+} else {
+    echo "Cookie '" . $cookie_name . "' is set!<br>";
+    echo "Value is: " . $_COOKIE[$cookie_name];
+}*/
+
+print_r($_COOKIE[$cookie_name]); 
+?>        
 
     </body>
-<script type="text/javascript">
-    
-
-$('.datepicker').datepicker({
-    format: 'mm/dd/yyyy',
-    startDate: '-3d'
-});
-
-    </script>
 
 </html>

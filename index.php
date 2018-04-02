@@ -25,7 +25,7 @@ body {
 }
 
 .text {
-  color: black;
+  color: white;
   font-size: 14px;
   position: absolute;
   top: 8%;
@@ -40,12 +40,13 @@ div#carousel-example-generic {
 }
 
 div.form-group {
-    position: absolute;
-z-index: 9999908;
-top: 70%;
-    left: 35%;
-right: auto;
-bottom: auto;
+    display: inline block;
+    position: relative;
+    z-index: 9999908;
+    top: 70%;
+    left: auto;
+    right: auto;
+    bottom: auto;
 }
 
  #custom-search-form {
@@ -100,6 +101,22 @@ bottom: auto;
     border: 2px solid #ffffff;
 }
 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
+.carousel-control.left {
+    z-index:7
+}  
+.carousel-control.right {
+    z-index:7
+}
+
+.mdb-color.darken-2 {
+
+background-color: #4f2684 !important;
+
+}
 </style>
 
 
@@ -115,7 +132,7 @@ bottom: auto;
             <div class="container">
 
                 <!-- Brand -->
-                <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+                <a class="navbar-brand waves-effect" href="#">
                     <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
                 </a>
 
@@ -239,12 +256,12 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                         <!--/First slide-->
                         <!--Second slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg" alt="Second slide">
+                            <img class="d-block w-100" src="img/carousel.jpg" alt="Second slide">
                         </div>
                         <!--/Second slide-->
                         <!--Third slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(133).jpg" alt="Third slide">
+                            <img class="d-block w-100" src="img/carousel.jpg" alt="Third slide">
                         </div>
                         <!--/Third slide-->
                     </div>
@@ -287,10 +304,10 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-12 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom">
-                            <img src="img/newimg.jpg" class="img-fluid" alt="">
+                        <div class="view overlay z-depth-1-half zoom tada animated">
+                            <img src="img/1.jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask back" style="background-color: rgba(79, 38, 132, 0.2);">
+                                <div class="mask back" style="background-color: rgba(79, 38, 132, 0.6);">
                                     <div class="text">
                                     <div class="doe">
                                     <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
@@ -310,10 +327,10 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom">
-                            <img src="img/newimg.jpg" class="img-fluid" alt="">
+                        <div class="view overlay z-depth-1-half zoom tada animated">
+                            <img src="img/2.jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.2);">
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
                                     <div class="text">
                                         <div class="doe">
                                         <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
@@ -333,10 +350,10 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom">
-                            <img src="img/newimg.jpg" class="img-fluid" alt="">
+                        <div class="view overlay z-depth-1-half zoom tada animated">
+                            <img src="img/3.jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.2);">
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
                                     <div class="text">
                                     <div class="doe">
                                     <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
@@ -354,23 +371,21 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
 
                 </div>
-                <!-- Grid row -->
-
                 <!-- Grid row -->
                 <div class="row">
 
                     <!-- Grid column -->
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-12 mb-3">
 
-                        <div class="view overlay z-depth-1-half">
-                            <img src="img/newimg.jpg" class="img-fluid" alt="">
+                        <div class="view overlay z-depth-1-half zoom tada animated">
+                            <img src="img/4.jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask rgba-white-light" style="background-color: rgba(79, 38, 132, 0.2);">
+                                <div class="mask back" style="background-color: rgba(79, 38, 132, 0.6);">
                                     <div class="text">
                                     <div class="doe">
                                     <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
-                                    </div>   
-                                    <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
+                                </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
                                         <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
                                         <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
                                         <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
@@ -383,16 +398,39 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half">
-                            <img src="img/newimg.jpg" class="img-fluid" alt="">
+                        <div class="view overlay z-depth-1-half zoom tada animated">
+                            <img src="img/5.jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask rgba-white-light" style="background-color: rgba(79, 38, 132, 0.2);">
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                        <div class="doe">
+                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
+                                        </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
+                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom tada animated">
+                            <img src="img/6.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
                                     <div class="text">
                                     <div class="doe">
                                     <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
-                                </div>    
+                                    </div>
                                     <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
                                         <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
                                         <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
@@ -406,38 +444,11 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
 
                 </div>
+                <!-- Grid row -->
                 <!-- Grid row -->
 
                 <!-- Grid row -->
                 <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-md-12 mb-3">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="img/carousel.jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-white-light" style="background-color: rgba(79, 38, 132, 0.2);">
-                                    <div class="text">
-                                    <div class="doe">
-                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
-                                </div>    
-                                    <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
-                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
-                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!-- Grid row -->
-
-
             </section>
 
 
@@ -470,21 +481,21 @@ echo 'Welcome, ' . $_SESSION['first_name'];
     <!--Main layout-->
 
     <!--Footer-->
-    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn" style="background-color: #4f2684;">
 
         <!--Call to action-->
-        <div class="pt-4">
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Become a Vendor
+        <div class="pt-4" style="background-color:#4f2684;">
+            <a class="btn btn-outline-white" href="#" role="button">Become a Vendor
             </a>
             <a class="btn btn-outline-white" href="#" target="_blank" role="button">Create Event
             </a>
         </div>
         <!--/.Call to action-->
 
-        <hr class="my-4">
+        <hr class="my-4" style="background-color: #4f2684; color: #4f2684;">
 
         <!-- Social icons -->
-        <div class="pb-4">
+        <div class="pb-4" style="background-color:#4f2684;">
             <a href="#">
                 <i class="fa fa-facebook mr-3"></i>
             </a>
@@ -507,7 +518,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
         <!-- Social icons -->
 
         <!--Copyright-->
-        <div class="footer-copyright py-3">
+        <div class="footer-copyright py-3" style="background-color:#4f2684;">
             © 2018 Copyright:
             <a href="#"> Eventor.com </a>
         </div>

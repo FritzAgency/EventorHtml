@@ -42,7 +42,7 @@ div#carousel-example-generic {
 div.form-group {
     position: absolute;
 z-index: 9999908;
-top: 75%;
+top: 57%;
     left: 37%;
 right: auto;
 bottom: auto;

@@ -169,8 +169,11 @@ else {
                            
     <?php if ((isset($_SESSION['email']))){
 
-echo 
-''; 
+
+echo'<a href="auth/login.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
+'; 
+
+ 
 }else{
 
 echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>

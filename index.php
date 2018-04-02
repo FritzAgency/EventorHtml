@@ -158,6 +158,10 @@ echo
 '<a href="auth/login.php" class="nav-link waves-effect">
 <i class="fa fa-login"></i>Login</a>';      
 }
+else {
+    echo '<a href="event/dashboard.php" class="nav-link waves-effect">
+<i class="fa fa-login"></i>Dashboard</a>';  
+}
 ?>
 
                         </li>

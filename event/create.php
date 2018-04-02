@@ -2,8 +2,12 @@
 
 session_start(); 
 
-
 ?> 
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -136,50 +140,44 @@ button:hover {
 </style>
 </head>
 <body>
+
+
   <header>
  <!-- header starts here -->
  <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
   <div class="container-fluid">
     <div class="navbar-header" >
       <div class="col-sm-2 col-md-3 col-xm-4">
-      <a class="navbar-brand" href="/EventorHtml/index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
+      <a class="navbar-brand" href="../index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -45px;padding-bottom: 10px;">
-    <li><a href="#" class="new">HOW IT WORKS </a></li>
+    <!--li><a href="#" class="new">HOW IT WORKS </a></li>
       <li><a href="#" class="new">EVENTS</a></li>
       <li><a href="#" class="new">SPECIAL DEALS</a></li>
       <li><a href="#" class="new">ABOUT US</a></li>
-      <li><a href="#" class="new">CONTACT</a></li>
+      <li><a href="#" class="new">CONTACT</a></li-->
       <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
       <!--li><a class="new"> | </a></li-->
       <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
-      <?php if ((isset($_SESSION['email']))){
+      <?php 
 
-echo 
-''; 
-}else{
-echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>'; 
-}
+      if ((!isset($_SESSION['email']))){
+
+
+  header("Location: ../auth/signup.php");
+
+} 
+
+ 
 ?>
 
-<?php if ((isset($_SESSION['email']))){
-
-echo 
-'
-<li><a href="auth/logout.php" style="color:#4f2684;"><span class=""></span> Logout</a></li>
-';      }else{
-echo'
-<li><a href="auth/login.php" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-'; 
-}
-?>
 
 
 
 <li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  <?php 
 if((isset($_SESSION['first_name']))){
-echo 'Welcome, '. $_SESSION['first_name'];
+//echo 'Welcome, '. $_SESSION['first_name'];
 }
 ?>
 
@@ -191,6 +189,7 @@ echo 'Welcome, '. $_SESSION['first_name'];
 
 <?php 
 require_once('../event/createclass.php'); 
+
 ?> 
 
 <!-- form starts here -->

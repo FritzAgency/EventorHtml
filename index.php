@@ -42,7 +42,7 @@ div#carousel-example-generic {
 div.form-group {
     position: absolute;
 z-index: 9999908;
-top: 123%;
+top: 75%;
     left: 37%;
 right: auto;
 bottom: auto;
@@ -169,7 +169,7 @@ echo
 ''; 
 }else{
 
-echo'<a href="auth/Signup.php" class="nav-link border border-light rounded waves-effect"><i class="fa fa-login"></i>Signup</a>
+echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect"><i class="fa fa-login"></i>Signup</a>
 '; 
 
 
@@ -247,7 +247,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!--/.Controls-->
                 </div>
                 <!--/.Carousel Wrapper-->
-                <div class="container form-group" style="width: 35%; height: 62px; background-color: rgba(79, 38, 132, 0.4);">
+                <div class="container form-group" style="width: 26%; height: 62px; background-color: rgba(79, 38, 132, 0.4);">
 	<div class="row" style="height: 55px;">
         <div class="span12" style="height: 55px;">
             <form id="custom-search-form" class="form-search form-horizontal pull-right">

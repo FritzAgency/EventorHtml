@@ -169,7 +169,7 @@ echo
 ''; 
 }else{
 
-echo'<a href="auth/Signup.php" class="nav-link border border-light rounded waves-effect"><i class="fa fa-login"></i>Signup</a>
+echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect"><i class="fa fa-login"></i>Signup</a>
 '; 
 
 

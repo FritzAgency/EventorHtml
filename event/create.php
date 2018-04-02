@@ -147,7 +147,7 @@ button:hover {
  <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
   <div class="container-fluid">
     <div class="navbar-header" >
-      <div class="col-sm-2 col-md-3 col-xm-4">
+      <div class="col-sm-2 col-md-3 col-xm-4" style="width: 19%;">
       <a class="navbar-brand" href="../index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
       </div>
     </div>
@@ -197,7 +197,6 @@ require_once('../event/createclass.php');
                 <!-- rounded number ends here -->
 
         <!-- line breaker for sections -->
-        <hr style="margin-top: 0px; color: #4f2684;">
         <!-- line breaker ends here -->
 <form id="regForm" action="" method="post" enctype="multipart/form-data">
   <p style="font-family: Arial; text-align: center; font-weight: bolder; color: #4f2684; font-size: 30px">CREATE EVENT</p>
@@ -259,13 +258,6 @@ if(isset($message)){
 
 
         </div>
-
-
-
-
-
-
-
 
 
 <div class="row">

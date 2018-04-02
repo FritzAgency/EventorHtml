@@ -235,7 +235,7 @@ background-color: #4f2684 !important;
                     <ul class="navbar-nav nav-flex-icons">
                     
                         <li class="nav-item">
-                            <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
+                            <a href="EventorHtml/event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
                                 <i class="fa fa-login"></i>Create Event
                             </a>
                         </li>
@@ -388,7 +388,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-12 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom tada animated">
+                        <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/1.jpg" class="img-fluid" alt="">
                             <a>
                                 <div class="mask back" style="background-color: rgba(79, 38, 132, 0.6);">
@@ -411,7 +411,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom tada animated">
+                        <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/2.jpg" class="img-fluid" alt="">
                             <a>
                                 <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
@@ -434,7 +434,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom tada animated">
+                        <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/3.jpg" class="img-fluid" alt="">
                             <a>
                                 <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
@@ -461,7 +461,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-12 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom tada animated">
+                        <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/4.jpg" class="img-fluid" alt="">
                             <a>
                                 <div class="mask back" style="background-color: rgba(79, 38, 132, 0.6);">
@@ -484,7 +484,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom tada animated">
+                        <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/5.jpg" class="img-fluid" alt="">
                             <a>
                                 <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
@@ -507,7 +507,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom tada animated">
+                        <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/6.jpg" class="img-fluid" alt="">
                             <a>
                                 <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">

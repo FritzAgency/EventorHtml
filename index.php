@@ -26,7 +26,7 @@ body {
 
 .text {
   color: black;
-  font-size: 13px;
+  font-size: 14px;
   position: absolute;
   top: 8%;
   left: 14%;
@@ -433,7 +433,6 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                         <strong>The most comprehensive Event creator and also a platform that allows you to sell your products and services.                            versions available. Create your own, stunning website.</strong>
                     </p>
                     <a target="_blank" href="#" class="btn btn-outline-white btn-lg">Start Your event creation
-                        <i class="fa fa-graduation-cap ml-2"></i>
                     </a>
 
                 </div>
@@ -451,10 +450,8 @@ echo 'Welcome, ' . $_SESSION['first_name'];
         <!--Call to action-->
         <div class="pt-4">
             <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Become a Vendor
-                <i class="fa fa-download ml-2"></i>
             </a>
             <a class="btn btn-outline-white" href="#" target="_blank" role="button">Create Event
-                <i class="fa fa-graduation-cap ml-2"></i>
             </a>
         </div>
         <!--/.Call to action-->
@@ -478,21 +475,8 @@ echo 'Welcome, ' . $_SESSION['first_name'];
             <a href="#">
                 <i class="fa fa-google-plus mr-3"></i>
             </a>
-
-            <a href="#">
-                <i class="fa fa-dribbble mr-3"></i>
-            </a>
-
             <a href="#">
                 <i class="fa fa-pinterest mr-3"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa fa-github mr-3"></i>
-            </a>
-
-            <a href="http://codepen.io/mdbootstrap/" target="_blank">
-                <i class="fa fa-codepen mr-3"></i>
             </a>
         </div>
         <!-- Social icons -->

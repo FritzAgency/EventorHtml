@@ -39,36 +39,101 @@ div#carousel-example-generic {
     position:relative;
 }
 
-div.form-group {
+
+/* #container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+} */
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* .carousel {
+  margin-bottom: 60px;
+} */
+
+.carousel-control {
+  top: 50%;
+}
+
+/* .carousel-caption {
+  z-index: 10;
+} */
+
+/* .carousel .item {
+  height: 500px;
+  background-color:#bbb;
+  overflow:hidden;
+} */
+/* .carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+} */
+
+#searchForm {
+	position:absolute;
+  	top:86%;
+}
+
+.form-group{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/* @media (max-width: 768px) {
+
+  .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+  	max-width:inherit;
+  }
+
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+} */
+
+
+/* div.form-group {
     display: inline block;
     position: relative;
-    z-index: 9999908;
-    top: 70%;
+    z-index: 10;
     left: auto;
     right: auto;
     bottom: auto;
-}
+} */
 
- #custom-search-form {
+ /* #custom-search-form {
         margin:0;
         margin-top: 5px;
         padding: 0;
-    }
+    } */
  
-    #custom-search-form .search-query {
+    /* #custom-search-form .search-query {
         padding-right: 3px;
         padding-right: 4px \9;
         padding-left: 3px;
-        padding-left: 4px \9;
+        padding-left: 4px \9; */
         /* IE7-8 doesn't have border-radius, so don't indent the padding */
  
-        margin-bottom: 0;
+        /* margin-bottom: 0;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
     }
- 
-    #custom-search-form button {
+  */
+    /* #custom-search-form button {
         border: 0;
     background: transparent;
     padding: 2px 5px;
@@ -78,13 +143,13 @@ div.form-group {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    top: -53px;
-}
+    top: -53px; */
+/* }
     }
  
     .search-query:focus + button {
-        z-index: 3;   
-    }
+        z-index: 1;   
+    } */
 
 .menu{
     font-size: 14px;
@@ -269,6 +334,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                         <!--/Third slide-->
                     </div>
                     <!--/.Slides-->
+                    
                     <!--Controls-->
                     <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -279,11 +345,26 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                         <span class="sr-only">Next</span>
                     </a>
                     <!--/.Controls-->
+                    <div><form class="col-sm-12" id="searchForm">
+    <div class="form-group col-sm-6 col-sm-offset-2">
+      <div class="input-group input-group-lg center-block" style="background-color: rgba(79, 38, 132, 0.4);">
+        <div class="row" style="border: 2px solid white; margin: 7px; width: 100%;">
+        <div class="col-sm-11">
+        <input type="text" class="form-control" value="Find an Event here" style="padding-top: 7px; background-color: transparent; color: white; text-align:center; border: 0px;">
+        </div>
+        <div class="col-sm-1">
+        <span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: white; font-size: 2.333333em; vertical-align: -61%;"></i></span>
+        <div>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
                 </div>
                 <!--/.Carousel Wrapper-->
-                <div class="container form-group" style="width: 26%; height: 62px; background-color: rgba(79, 38, 132, 0.4);">
+                <!-- <div class="container form-group" style="width: 26%; height: 62px; background-color: rgba(79, 38, 132, 0.4);">
 	<div class="row" style="height: 55px;">
-        <div class="span12" style="height: 55px;">
+        <div class="span12" style="height: 55px;" id="nav">
             <form id="custom-search-form" class="form-search form-horizontal pull-right">
                 <div class="input-append span12" style="height:43px;">
                     <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="Find an Event Here" style="width: 169%; height: 41px; background-color: transparent; border: 2px solid #ffffff; margin-left: 17px; margin-top: 5px; color: white; text-align: center;"></p>
@@ -292,7 +373,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
             </form>
         </div>
 	</div>
-</div>
+</div> -->
 
 
             </section>

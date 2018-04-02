@@ -24,7 +24,7 @@
     @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
     
     body {
-      background-image:url("img/eventor.jpg");
+      /* background-image:url("img/eventor.jpg"); */
       font-family: 'Montserrat', sans-serif;
     }
 
@@ -248,86 +248,70 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
     <div class="container" id="about">
 
       <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn">
+      <section class="mt-5 wow fadeIn card">
 
 <!--Section: Pricing v.3-->
 <section class="text-center pb-3 my-5">
 
-<!--Grid row-->
-<div class="row card" style="margin-top: 10px;">
+  <div class="row">
+    <div class="col-6 col-lg-4">
+      <!--Card-->
+      <div class="flex-center">
 
-    <!--Grid column-->
-    <div class="col-lg-4 col-md-12 mb-4" style="margin-top: 1.5em;">
-        <!--Card-->
-        <div class="card flex-center">
+<!--Content-->
+<div class="text-center">
+    <div class="card-body">
+    <h2 class="font-weight-bold mb-2 flex-center" style="margin-top: 10px;">ABOUT</h2>
+    </div>
+</div>
+
+</div>
+<!--Card-->
+</div>
+
+    
+    <div class="col-12 col-sm-6 col-lg-8"><!--Card-->
+        <div>
 
             <!--Content-->
             <div class="text-center">
                 <div class="card-body">
-                <h2 class="font-weight-bold mb-2 flex-center">ACTIVITIES</h2>
+                    
                 </div>
             </div>
 
         </div>
         <!--Card-->
     </div>
-    <!--Grid column-->
+</div>
+
 
     <!--Grid column-->
-    <div class="col-lg-4 col-md-12 mb-4">
+    <!-- <div class="col-lg-4 col-md-12 mb-4"> -->
         <!--Card-->
-        <div class="card purple-gradient">
+        <!-- <div class="card"> -->
 
             <!--Content-->
-            <div class="text-center white-text">
-                <div class="card-body">
-                    <h5>Premium plan</h5>
-                    <div class="flex-center">
-                        <div class="card-circle">
-                            <i class="fa fa-group white-text"></i>
-                        </div>
-                    </div>
-
-                    <!--Price-->
-                    <h2 class="font-weight-bold mb-2">79$</h2>
-                    <p>Esse corporis saepe laudantium velit adipisci cumque iste ratione facere non distinctio cupiditate
-                        sequi atque.
-                    </p>
-                    <a class="btn btn-outline-white btn-rounded">Buy now</a>
-                </div>
-            </div>
-
-        </div>
-        <!--Card-->
-    </div>
-    <!--Grid column-->
-
-    <!--Grid column-->
-    <div class="col-lg-4 col-md-12 mb-4">
-        <!--Card-->
-        <div class="card">
-
-            <!--Content-->
-            <div class="text-center">
+            <!-- <div class="text-center">
                 <div class="card-body">
                     <h5>Advanced plan</h5>
                     <div class="flex-center">
                         <div class="card-circle">
                             <i class="fa fa-bar-chart light-blue-text"></i>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!--Price-->
-                    <h2 class="font-weight-bold mb-2">99$</h2>
+                    <!-- <h2 class="font-weight-bold mb-2">99$</h2>
                     <p class="grey-text">At ab ea a molestiae corrupti numquam quo beatae minima ratione magni accusantium repellat eveniet
                         quia vitae.</p>
                     <a class="btn btn-light-blue btn-rounded">Buy now</a>
                 </div>
-            </div>
+            </div> -->
 
-        </div>
+        <!-- </div> -->
         <!--Card-->
-    </div>
+    <!-- </div> -->
     <!--Grid column-->
 
 </div>

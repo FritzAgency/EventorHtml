@@ -165,8 +165,8 @@ echo
                            
     <?php if ((isset($_SESSION['email']))){
 
-echo 
-''; 
+echo'<a href="auth/logout.php" class="nav-link border border-light rounded waves-effect"><i class="fa fa-login"></i>Logout</a>
+'; 
 }else{
 
 echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684; font-weight: bold;"><i class="fa fa-login"></i>Signup</a>
@@ -177,6 +177,9 @@ echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves
 ?>
     
 </li>
+
+
+
 </ul>
 
     

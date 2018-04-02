@@ -1,4 +1,12 @@
-<?php session_start(); ?> 
+<?php 
+
+session_start(); 
+
+if(!isset($_SESSION['email'])){
+header("Location: ../index.php"); 
+}
+
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -244,13 +252,13 @@ if(isset($message)){
                 <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
                 <!--span class="custom-file-container__custom-file__custom-file-control"></span-->
 
-<span class="glyphicon glyphicon-upload custom-file-container__custom-file__custom-file-control" style="color:white"></span>
+<span class="glyphicon glyphicon-upload custom-file-container__custom-file__custom-file-control" style="color:white; height:25px"></span>
 
 
 
             </label>
 
-             <div class="custom-file-container__image-preview" style="height: 500px; width: 500px"> </div>
+             <div class="custom-file-container__image-preview" style="height: 500px; width: 700px"> </div>
 
 
 

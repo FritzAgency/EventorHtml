@@ -281,7 +281,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
 <div class="card">
     <!--Card image-->
     <div class="view overlay zoom">
-        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <img src="img/newimg.jpg" class="img-fluid" alt="sample">
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>
@@ -321,7 +321,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
 <div class="card">
     <!--Card image-->
     <div class="view overlay zoom">
-        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <img src="img/newimg.jpg" class="img-fluid" alt="sample">
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>
@@ -337,7 +337,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
         <p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
     </div>
     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+            <button type="button" class="btn btn-primary btn-lg" style="margin-left:auto; margin-right: auto;">View Event</button>
     <!--/.Card content-->
     <!-- Card footer -->
     <div class="mdb-color lighten-3 text-center">
@@ -361,7 +361,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
 <div class="card">
     <!--Card image-->
     <div class="view overlay zoom">
-        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <img src="img/newimg.jpg" class="img-fluid" alt="sample">
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>
@@ -377,7 +377,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
         <p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
     </div>
     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+            <button type="button" class="btn btn-primary btn-lg" style="margin-left:auto; margin-right: auto;">View Event</button>
     <!--/.Card content-->
     <!-- Card footer -->
     <div class="mdb-color lighten-3 text-center">
@@ -407,7 +407,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
 <div class="card">
     <!--Card image-->
     <div class="view overlay zoom">
-        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <img src="img/newimg.jpg" class="img-fluid" alt="sample">
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>
@@ -423,7 +423,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
         <p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
     </div>
     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+            <button type="button" class="btn btn-primary btn-lg" style="margin-left:auto; margin-right: auto;">View Event</button>
     <!--/.Card content-->
     <!-- Card footer -->
     <div class="mdb-color lighten-3 text-center">
@@ -446,7 +446,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
 <div class="card">
     <!--Card image-->
     <div class="view overlay zoom">
-        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <img src="img/newimg.jpg" class="img-fluid" alt="sample">
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>
@@ -462,7 +462,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
         <p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
     </div>
     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+            <button type="button" class="btn btn-primary btn-lg" style="margin-left:auto; margin-right: auto;">View Event</button>
     <!--/.Card content-->
     <!-- Card footer -->
     <div class="mdb-color lighten-3 text-center">
@@ -491,7 +491,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
 <div class="card">
     <!--Card image-->
     <div class="view overlay zoom">
-        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <img src="img/carousel.jpg" class="img-fluid" alt="sample">
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>
@@ -507,7 +507,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
         <p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
     </div>
     <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-            <button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+            <button type="button" class="btn btn-primary btn-lg" style="margin-left:auto; margin-right: auto;">View Event</button>
     <!--/.Card content-->
     <!-- Card footer -->
     <div class="mdb-color lighten-3 text-center">

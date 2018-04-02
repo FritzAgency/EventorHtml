@@ -43,7 +43,7 @@ div.form-group {
     position: absolute;
 z-index: 9999908;
 top: 510px;
-left: 522px;
+left: 36%;
 right: auto;
 bottom: auto;
 }
@@ -72,7 +72,7 @@ bottom: auto;
     background: transparent;
     padding: 2px 5px;
     position: relative;
-    left: 440px;
+    left: 160%;
     margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -250,9 +250,9 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                 <div class="container form-group" style="width: 33%; height: 62px; background-color: rgba(79, 38, 132, 0.4);">
 	<div class="row" style="height: 55px;">
         <div class="span12" style="height: 55px;">
-            <form id="custom-search-form" class="form-search form-horizontal pull-right" style="80px">
+            <form id="custom-search-form" class="form-search form-horizontal pull-right">
                 <div class="input-append span12" style="height:43px;">
-                    <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="Find an Event Here" style="width: 464px; height: 41px; background-color: transparent; border: 2px solid #ffffff; margin-left: 17px; margin-top: 5px; color: white; text-align: center;"></p>
+                    <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="Find an Event Here" style="width: 169%; height: 41px; background-color: transparent; border: 2px solid #ffffff; margin-left: 17px; margin-top: 5px; color: white; text-align: center;"></p>
                     <button type="submit" style="width: 45px; height: 41px; color: white;"><i class="fa fa-search fa-lg"></i></button>
                 </div>
             </form>

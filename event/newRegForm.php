@@ -292,10 +292,11 @@ if(isset($message)){
 
   
     <span class="btn btn-sm" style="background-color: #3b2a53; border-color: white">
+      <label for="file" style="color: white">Upload organizer's Logo
     <input type="file" name="org_logo" id="file" class="inputfile" onchange="readURL(this);"/>
     <span class="glyphicon glyphicon-upload" style="color:white"></span>
-<label for="file" style="color: white">Upload organizer's Logo</label>
 </span>
+</label>
 
 <div>
   <img id="blah" src="http://placehold.it/180" alt="your image" style="max-width:100px;  height:100px;

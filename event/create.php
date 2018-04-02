@@ -1,779 +1,682 @@
-<?php session_start();?> 
+<?php session_start(); ?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Create EVENT</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/file-upload-with-preview/dist/file-upload-with-preview.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Event form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="/event/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" type="text/css" href="https://unpkg.com/file-upload-with-preview/dist/file-upload-with-preview.min.css">
 
-<link rel="stylesheet" href="style.css">
 <style>
-/* .switch {
-  position: relative;
-  height: 32px;
-  width: 146PX;
-  margin: -4px auto;
-  background: #4f2684;
-  border-radius: 14px;
-  /* -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1); */
-/* } */
 
-/* .switch-label {
-  position: relative;
-  z-index: 2;
-  float: left;
-  width: 146px;
-  line-height: 26px;
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center; */
-  /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45); */
-  /* cursor: pointer;
-}
-.switch-label:active {
-  font-weight: bold;
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  box-sizing: border-box;
 }
 
-.switch-label-off {
-  padding-left: 2px;
+body {
+    background-image: url("img/eventor.jpg");
+    font-family: 'Montserrat', sans-serif;
+
 }
 
-.switch-label-on {
-  padding-right: 2px;
-} */
+#regForm {
+  background-color: #ffffff;
+  margin: 50px auto;
+  font-family: 'Montserrat', sans-serif;
+  padding: 40px;
+  width: 60%;
+  min-width: 300px;
+}
 
+h1 {
+  text-align: center;  
+}
 
-/* .switch-input {
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #aaaaaa;
+  border-radius:5px;
+
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
   display: none;
 }
-.switch-input:checked + .switch-label {
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.65);
-  /* text-shadow: 0 1px rgba(255, 255, 255, 0.25); */
-  /* -webkit-transition: 0.15s ease-out;
-  -moz-transition: 0.15s ease-out;
-  -ms-transition: 0.15s ease-out;
-  -o-transition: 0.15s ease-out;
-  transition: 0.15s ease-out; */ 
-  /* -webkit-transition-property: color, text-shadow;
-  -moz-transition-property: color, text-shadow;
-  -ms-transition-property: color, text-shadow;
-  -o-transition-property: color, text-shadow;
-  transition-property: color, text-shadow; */
-/* } */
-/* .switch-input:checked + .switch-label-on ~ .switch-selection {
-  left: 60px; */
-  /* Note: left: 50%; doesn't transition in WebKit */
-/* } */
 
-/* .switch-selection {
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+
+/*upload organizer's logo css*/  
+  .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
   position: absolute;
-  z-index: 1;
-  top: 2px;
-  left: 2px;
-  display: block;
-  width: 58px;
-  height: 22px;
-  border-radius: 3px;
-  background-color: #65bd63;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9dd993), color-stop(100%, #65bd63));
-  background-image: -webkit-linear-gradient(top, #9dd993, #65bd63);
-  background-image: -moz-linear-gradient(top, #9dd993, #65bd63);
-  background-image: -ms-linear-gradient(top, #9dd993, #65bd63);
-  background-image: -o-linear-gradient(top, #9dd993, #65bd63);
-  background-image: linear-gradient(top, #9dd993, #65bd63);
-  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
-  -webkit-transition: left 0.15s ease-out;
-  -moz-transition: left 0.15s ease-out;
-  -ms-transition: left 0.15s ease-out;
-  -o-transition: left 0.15s ease-out;
-  transition: left 0.15s ease-out; */
-/* }
-.switch-blue .switch-selection {
-  background-color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4fc9ee), color-stop(100%, #3aa2d0));
-  background-image: -webkit-linear-gradient(top, #4fc9ee, #3aa2d0);
-  background-image: -moz-linear-gradient(top, #4fc9ee, #3aa2d0);
-  background-image: -ms-linear-gradient(top, #4fc9ee, #3aa2d0);
-  background-image: -o-linear-gradient(top, #4fc9ee, #3aa2d0);
-  background-image: linear-gradient(top, #4fc9ee, #3aa2d0);
-}
-.switch-yellow .switch-selection {
-  background-color: #c4bb61;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0dd94), color-stop(100%, #c4bb61));
-  background-image: -webkit-linear-gradient(top, #e0dd94, #c4bb61);
-  background-image: -moz-linear-gradient(top, #e0dd94, #c4bb61);
-  background-image: -ms-linear-gradient(top, #e0dd94, #c4bb61);
-  background-image: -o-linear-gradient(top, #e0dd94, #c4bb61);
-  background-image: linear-gradient(top, #e0dd94, #c4bb61);
-} */ 
-
-.btn1 {
-color: gray;
-background-color: #4f2684;
-padding: 8px 20px;
-border-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-font-size: 12px;
-font-weight: bold;
-border:2px solid #4f2684;
+  z-index: -1;
 }
 
-.collapsible {
-    background-color: #777;
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
     color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+    background-color: purple;
+    display: inline-block;
 }
 
-.active, .collapsible:hover {
-    background-color: #555;
+.inputfile:focus + label,
+
+.inputfile + label:hover {
+    background-color: red;
 }
 
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
 }
-
+/*upload organizer's logo */ 
 </style>
 </head>
 <body>
+  <header>
+ <!-- header starts here -->
+ <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
+  <div class="container-fluid">
+    <div class="navbar-header" >
+      <div class="col-sm-2 col-md-3 col-xm-4">
+      <a class="navbar-brand" href="/EventorHtml/index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
+      </div>
+    </div>
+    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -45px;padding-bottom: 10px;">
+    <li><a href="#" class="new">HOW IT WORKS </a></li>
+      <li><a href="#" class="new">EVENTS</a></li>
+      <li><a href="#" class="new">SPECIAL DEALS</a></li>
+      <li><a href="#" class="new">ABOUT US</a></li>
+      <li><a href="#" class="new">CONTACT</a></li>
+      <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
+      <!--li><a class="new"> | </a></li-->
+      <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
+      <?php if ((isset($_SESSION['email']))){
 
-  
-    <!-- header ends here -->
+echo 
+''; 
+}else{
+echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>'; 
+}
+?>
+
+<?php if ((isset($_SESSION['email']))){
+
+echo 
+'
+<li><a href="auth/logout.php" style="color:#4f2684;"><span class=""></span> Logout</a></li>
+';      }else{
+echo'
+<li><a href="auth/login.php" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+'; 
+}
+?>
+
+
+
+<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  <?php 
+if((isset($_SESSION['first_name']))){
+echo 'Welcome, '. $_SESSION['first_name'];
+}
+?>
+
+    </ul>
+  </div>
+</nav>
+<!-- header stops here -->
+</header>
 
 <?php 
 require_once('../event/createclass.php'); 
 ?> 
 
-
-    <header>
-    <!-- header starts here -->
-    <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
-  <div class="container-fluid">
-    <div class="navbar-header" >
-      <div>
-      <h2 style="margin-right: auto; font-weight: bold; color: #4f2684; margin-left: 7em; margin-bottom: 20px; margin-top: 20px;">CREATE EVENT FORM</h2>
-      <!-- <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a> -->
-      </div>
-    </div>
-    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: 10px;padding-bottom: 10px;">
-    <!-- <li><a href="index.php" class="new" style="margin-top: 53px; font-size: 20px; font-weight: bold; border-radius: 5%;" id="change"> <span class="glyphicon glyphicon-arrow-left"> </span></a></li> -->
-    <!--  <li><a href="#" class="new">EVENTS</a></li>
-      <li><a href="#" class="new">SPECIAL DEALS</a></li>
-      <li><a href="#" class="new">ABOUT US</a></li>
-      <li><a href="#" class="new">CONTACT</a></li> -->
-      <!--li style="font-weight: bold;"><a href="auth/signup.php">SIGNUP</a></li>
-      <li style="font-weight: bold;"><a> | </a></li>
-      <li style="margin-right: 52px; font-weight: bold;"><a href="auth/login.php">LOGIN</a></li-->
-    </ul>
-  </div>
-</nav>
-</header>
-    <!-- header ends here -->
-
-    <!-- the whole body starts here -->
-    <div class="container" style="background-color: white; padding: 20px 0px 20px 20px; border-radius: 15px;">
-        <!-- rounded number and text     -->
-        <div class="row">
-            <div class="col-sm-1">
-                <div class="numberCircle">1</div>
-                </div>
-                <div class="col-sm-2" style="padding-left: 8px;">
-                <h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">WHAT</h3>
-            </div>
-        </div>
+<!-- form starts here -->
+<div class="container">
                 <!-- rounded number ends here -->
 
         <!-- line breaker for sections -->
         <hr style="margin-top: 0px; color: #4f2684;">
         <!-- line breaker ends here -->
-        <div class="row">
-            <!-- form starts here -->
-            <div class="col-sm-6">
-                <?php 
+<form id="regForm" action="" method="post" enctype="multipart/form-data">
+  <p style="font-family: Arial; text-align: center; font-weight: bolder; color: #4f2684; font-size: 30px">CREATE EVENT</p>
+  <!-- One "tab" for each step in the form: -->
+              <?php 
 
 if(isset($message)){
     echo '<div class="alert alert-success">'. $message .'</div>';
 }
 ?> 
-            <form method="POST" enctype="multipart/form-data">
-                <!-- switch button goes in here -->
-                <p>Select type of event here</p>
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn1 btn btn-default btn-sm">
-                        <input name="status" id="option2"  type="radio" value="public"> PUBLIC
-                    </label>
-                    <label class="btn1 btn btn-default btn-sm">
-                        <input name="status" id="option3"  type="radio" value="private"> PRIVATE
-                    </label>
-                </div>
-                <!-- end of switch button -->
-                <!-- event name goes in -->
+<hr>
+  <div class="tab"><h4 style="font-weight: bold; color: #4f2684">EVENT DETAILS</h4>
+    <p><input placeholder="Event Name" oninput="this.className = ''" name="event_title"></p>
+    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the event" oninput="this.className = ''" name="event_description"></textarea></p>
+  <hr>  
+    <p><input placeholder="Enter Address or location of the event here " oninput="this.className = ''" name="Address" id="autocomplete" onFocus="geolocate()"></p>
 
-                <div class="form-group">
-                <label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px; margin-top: 20px;margin-top: 20px;">EVENT NAME</label>
-                    <input type="text" class="form-control well" id="" placeholder="Enter event name here" name="event_title">
-                </div>
-                <!-- end of event name --> 
+    <p><input placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
 
-<div class="form-group">
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">DESCRIPTION</label>
-<textarea class="form-control well" rows="5" id="comment" placeholder="Write a short passage that describes your event" name="event_description"></textarea>
-</div> 
-
-<!-- organizers name -->
-<div class="form-group">
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px; margin-top: 20px;margin-top: 20px;">ORGANIZERS NAME </label>
-<input type="text" class="form-control well" id="usr" placeholder="Organizer Name" name="org_name">
-</div>
-
-
-
-<!-- event logo -->
-<div class="form-group" style="margin-bottom: 30px;">
-<label for="OrgName" style="font-weight: bold; border: 1px solid black; background-color: #4f2684; color: white; border-radius: 5px; padding: 10px;">UPLOAD LOGO</label>
-<div class="form-inline">
-<div class="form-group">
-<input type="file" name="org_logo" id="js-upload-files">
-</div>
-<!--button type="submit" class="btn btn-sm btn-secondary new" id="js-upload-submit"> Upload Logo </button-->
-</div>
-</div>
-
-<div class="form-group">
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">ADD SPONSORS</label>
-<div class="row">
-<div class="col-sm-4" style="padding-right: 0px; padding-bottom: 5px;">
-<input type="text" class="form-control well" id="usr" placeholder="Enter sponsors Name" name="sponsor_name">
-</div>
-<div class="col-sm-4" style="padding-left: 3px;">
-<input type="text" class="form-control well" id="usr" placeholder="Website/URL" name="sponsor_url">
-</div>
-<div class="col-sm-4" style="padding-left: 3px; margin-left: -15px;">
-<input type="file" title=" " name="sponsor_logo" id="js-upload-files" multiple>
-</div>
-</div>
+    <p><input placeholder="Enter City here" oninput="this.className = ''" name="city"></p>
 
 <div class="row">
-<div class="col-sm-4" style="padding-right: 0px; padding-bottom: 5px;">
-<input type="text" class="form-control well" id="usr" placeholder="Enter sponsors Name" name="title">
-</div>
-<div class="col-sm-4" style="padding-left: 3px;">
-<input type="text" class="form-control weel" id="usr" placeholder="Enter sponsors custom Url" name="title">
-</div>
-<div class="col-sm-4" style="padding-left: 3px; margin-left: -15px;">
-<input type="file" title=" " name="org_logo" id="js-upload-files" multiple>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-4" style="padding-right: 0px; padding-bottom: 5px;">
-<input type="text" class="form-control well" id="usr" placeholder="Enter sponsors Name" name="title">
-</div>
-<div class="col-sm-4" style="padding-left: 3px;">
-<input type="text" class="form-control well" id="usr" placeholder="Enter sponsors custom Url" name="title">
-</div>
-<div class="col-sm-4" style="padding-left: 3px; margin-left: -15px;">
-<input type="file" title=" " name="org_logo" id="js-upload-files" multiple>
-</div>
-</div>    
-</div>
-
-<!-- event logo -->
-<div class="form-group" style="margin-bottom: 30px;">
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">UPLOAD LOGO</label>
-<div class="form-inline">
-<div class="form-group">
-<input type="file" name="event_flier" id="js-upload-files">
-</div>
-<!--button type="submit" class="btn btn-sm btn-secondary new" id="js-upload-submit"> Upload Logo </button-->
-</div>
-</div>
-
-<!-- event banner upload here -->
-<div class="form-group" style="margin-bottom: 30px;">
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">UPLOAD EVENT BANNER</label>
-<!--form action="" method="post" enctype="multipart/form-data" id="js-upload-form"-->
-<div class="row">
-    <div class="col-sm-4">
-<div class="form-inline">
-<div class="form-group">
-<input type="file" name="event_flier1" id="js-upload-files">
-</div>
-</div>
-</div>
-<div class="col-sm-4">
-<div class="form-inline">
-<div class="form-group">
-<input type="file" name="event_flier2" id="js-upload-files">
-</div>
-</div>
-</div>
-<div class="col-sm-4">
-<div class="form-inline">
-<div class="form-group">
-<!--input type="file" name="event_flier2" id="js-upload-files"-->
-</div>
-</div>
-</div>
-<!--button type="submit" class="btn btn-sm btn-secondary new" id="js-upload-submit">Upload Banner</button-->
-</div>
-</div>
-
-<!-- section two starts here -->
-<hr style="margin-top: 2px;">
-<!-- rounded number and text     -->
-<div class="row">
-<div class="col-sm-1">
-<div class="numberCircle">2</div>
-</div>
-<div class="col-sm-2" style="padding-left: 8px;">
-<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">WHERE</h3>
-</div>
-</div>
-
-<!-- line breaker for sections -->
-<hr style="margin-top: 10px;">
-            
-<!-- address starts here -->
-<div class="form-group"> <!-- Street 1 -->
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">ADDRESS</label>
-<input type="text" class="form-control well" id="street1_id" name="Address" placeholder="Street address, P.O. box, company name, c/o">
-</div>                  
-<!-- column for city and state -->
-<div class="row">
-<div class="col-sm-4" style="padding-right: 0px;">
-<div class="form-group"> <!-- State Button -->
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">STATE</label>
-<select class="form-control" id="state_id" name="state">
-<option value="AL">Choose City</option>
-<option value="AK">Aba</option>
-<option value="AZ">Abakaliki</option>
-<option value="AR">Abeokuta</option>
-<option value="CA">Abuja</option>
-<option value="CO">Ado Ekiti</option>
-<option value="CT">Akpawfu</option>
-<option value="DE">Akure</option>
-<option value="DC">Asaba</option>
-<option value="FL">Awka</option>
-<option value="GA">Bauchi</option>
-<option value="HI">Benin City</option>
-<option value="ID">Birnin Kebbi</option>
-<option value="IL">Buguma</option>
-<option value="IN">Calabar</option>
-<option value="IA">Dutse</option>
-<option value="KS">Efon-Alaaye</option>
-<option value="KY">Eket</option>
-<option value="LA">Enugu</option>
-<option value="ME">Gombe</option>
-<option value="MD">Gusau</option>
-<option value="MA">Ibadan</option>
-<option value="MI">Ibadan</option>
-<option value="MN">Ifelodun</option>
-<option value="MS">Ife</option>
-<option value="MO">Ikeja</option>
-<option value="MT">Ikirun</option>
-<option value="NE">Nebraska</option>
-<option value="NV">Ikot-Abasi</option>
-<option value="NH">Ikot Ekpene</option>
-<option value="NJ">Ilorin</option>
-<option value="NM">Iragbiji</option>
-<option value="NY">Jalingo</option>
-<option value="NC">Jimeta</option>
-<option value="ND">Jos</option>
-<option value="OH">Kaduna</option>
-<option value="OK">Kano</option>
-<option value="OR">Katsina</option>
-<option value="PA">Karu</option>
-<option value="RI">Kumariya</option>
-<option value="SC">Lafia</option>
-<option value="SD">Lagos</option>
-<option value="TN">Lekki</option>
-<option value="TX">Lokoja</option>
-<option value="UT">Maiduguri</option>
-<option value="VT">Makurdi</option>
-<option value="VA">Minna</option>
-<option value="WA">Nnewi</option>
-<option value="WV">Nsukka</option>
-<option value="WI">Offa</option>
-<option value="WY">Ogbomoso</option>
-<option value="OK">Onitsha</option>
-<option value="OR">Okene</option>
-<option value="PA">Ogaminana</option>
-<option value="RI">Omu-Aran</option>
-<option value="SC">Oron</option>
-<option value="SD">Oshogbo</option>
-<option value="TN">Owerri</option>
-<option value="TX">Owo</option>
-<option value="UT">Orlu</option>
-<option value="VT">Oyo</option>
-<option value="VA">Port Harcourt</option>
-<option value="WA">Sokoto</option>
-<option value="WV">Sokoto</option>
-<option value="WI">Suleja</option>
-<option value="WY">Umuahia</option>
-<option value="VT">Uyo</option>
-<option value="VA">Warri</option>
-<option value="WA">Wukari</option>
-<option value="WV">Yenagoa</option>
-<option value="WI">Yola</option>
-<option value="WY">Zaria</option>
-</select>                   
-</div>
-</div>
-<div class="col-sm-7" style="padding-left: 22px; width: 64.333%;">
-<div class="form-group"> <!-- State Button -->
-
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">CITY</label>
-<input type="text" class="form-control well" id="street1_id" name="city" placeholder="Enter LGA here, e.g Alimosho, Ikeja, Victoria Island, etc">                 
-</div>
-</div>
-</div>                              
-
-<div class="form-group"> <!-- Zip Code-->
-<div class="row">
-<div class="col-sm-4" style="padding-right: 0px;">
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">ZIP CODE</label>
-<input type="text" class="form-control well" id="street1_id" name="city" placeholder="Zip COde">
-</div>
-<div class="col-sm-8" style="padding-left: 23px;">
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">PHONE NUMBER </label>
-<input type="text" class="form-control well" id="street1_id" name="city" placeholder="Phone Number">
-</div>
-</div>
-</div>
-
-
-<div class="form-group"> <!-- Zip Code-->
-<div class="row">
-<div class="col-sm-1" style="padding-right: 0px;">
-<i class="material-icons" style="color: #4f2684">&#xe568;</i>
-</div>
-<div class="col-sm-3" style="padding-left: 0px;">
-<p style="font-weight: bold;">MAP</p>
-</div>
-</div>
-</div>
-
-<!-- section three starts here -->
-<hr style="margin-top: 2px;">
-<!-- rounded number and text     -->
-<div class="row">
-<div class="col-sm-1">
-<div class="numberCircle">3</div>
-</div>
-<div class="col-sm-2" style="padding-left: 8px;">
-<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">WHEN</h3>
-</div>
-</div>
-
-<!-- line breaker for sections -->
-<hr style="margin-top: 10px;">
-
-<div class="form-group"> <!-- Zip Code-->
-<div class="row">
-<div class="col-sm-6">
-<label for="state_id" class="control-label" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">STARTS</label>
-</div>
-<div class="col-sm-6">
-<label for="state_id" class="control-label" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">ENDS</label>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-6">
-<div class="row">
-<div class="col-sm-6">
-<div class="input-group bootstrap-timepicker timepicker">
-<input class="form-control well" id="time" name="time" placeholder="Date" type="text"/>
-<!-- <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span> -->
-</div>
-</div>
-<div class="col-sm-6" style="padding-right: 16px;">
-<div>
-<div class="form-group">
-<div class='input-group date' id='datetimepicker10'>
-<input class="form-control well" id="time" name="event_starts" placeholder="Time" type="text"/>
-<!-- <span class="glyphicon glyphicon-calendar"></span> -->
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-sm-6">
-<div class="row">
-<div class="col-sm-6">
-<div class="input-group bootstrap-timepicker timepicker">
-<input id="timepicker1" type="text" class="form-control well" placeholder="Time">
-<!-- <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span> -->
-</div>
-</div>
-<div class="col-sm-6">
-<div>
-<div class="form-group">
-<div class='input-group date' id='datetimepicker10'>
-<input class="form-control well" id="date" name="event_ends" placeholder="Date" type="text"/>
-<!-- <span class="glyphicon glyphicon-calendar"></span> -->
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
-    <div data-role="collapsible">
-        <h3>Section 1</h3>
-    <p>I'm the collapsible content for section 1</p>
+  <div class="col-sm-6">
+    <p><input type="number" placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
     </div>
-    <div data-role="collapsible">
-        <h3>Section 2</h3>
-    <p>I'm the collapsible content for section 2</p>
+    <div class="col-sm-6">
+    <p><input type="number" placeholder="Ticket Price (in &#8358;)"oninput="this.className = ''" name="ticket_price"></p>
     </div>
-    <div data-role="collapsible">
-        <h3>Section 3</h3>
-    <p>I'm the collapsible content for section 3</p>
-    </div>
-</div>
+  </div>
+<hr  style="color: black;">
+<!--p style="color: #4f2684">UPLOAD EVENT BANNER </p>
+   <p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p-->
 
-<!-- schedule multiple activties -->
-<div class="form-group">
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">ADD ACTIVITIES</label>
-<div class="row" style="margin-top: 10px;">
-<div class="col-sm-5" style="margin:1px; padding-left: 19px;" >
-<input class="form-control well" placeholder="Enter activity name here" type="text" name="act_name" />
-</div>
-<div class="col-sm-5" style="padding-left: 19px;">
-<input type="file" name="act_img" id="js-upload-files">
-</div>
-</div>
-<div class="row" style="margin-top: 10px;">
-<div class="col-sm-5" style="margin:1px; padding-left: 19px;" >
-<input class="form-control well" placeholder="Enter location of Activity here" type="text" name="act_loc" />
-</div>
-<div class="col-sm-5" style="padding-left: 19px;">
-<div class="input-group bootstrap-timepicker timepicker">
-<input class="form-control well" id="time" name="act_date" placeholder="Date" type="text"/>
-<!-- <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span> -->
-</div>
-</div>
-</div>
-<div class="row" style="margin-top:10px;">
-<div class="col-sm-11">
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">DESCRIPTION OF ACTIVITY</label>
-<textarea class="form-control well" rows="5" id="comment" placeholder="Write a short passage that describes your event" name="act_desc"></textarea>
-</div>
-<!--div class="col-sm-5" style="margin-top:10px;" >
-<input class="form-control" placeholder="Enter activity name here" type="text"/>
-</div>
-<div class="col-sm-5" style="margin-top:10px;">
-<input type="file" name="event_flyer" id="js-upload-files" multiple>
-</div>
-</div>
-<div class="row" style="margin-top: 10px;">
-<div class="col-sm-5" style="margin:1px;" >
-<input class="form-control" placeholder="Enter location of Activity here" type="text"/>
-</div>
-<div class="col-sm-5">
-<div class="input-group bootstrap-timepicker timepicker">
-<input class="form-control" id="time" name="time" placeholder="Date" type="text"/>
-<span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
-</div>
-</div>
-</div>
-<div class="row" style="margin-top:10px;">
-<div class="col-sm-11"
-<label for="comment">Description of Activity</label>
-<textarea class="form-control" rows="5" id="comment" placeholder="Write a short passage that describes your event" name="description"></textarea>
-</div-->
-</div>
-</div>
+   
 
-<!-- section four starts here -->
-<hr style="margin-top: 2px;">
-<!-- rounded number and text     -->
-<div class="row">
-<div class="col-sm-1">
-<div class="numberCircle">4</div>
-</div>
-<div class="col-sm-2" style="padding-left: 8px;">
-<h3 style="margin-top: 0px; padding-left: 0px; color:#4f2684; font-size: 28;">HOW</h3>
-</div>
-</div>
+<!--p style="color: #4f2684; margin-top:10px;">UPLOAD EVENT BANNER </p>
+    <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"-->
 
-<!-- line breaker for sections -->
-<hr style="margin-top: 10px;">
-<!-- tickest section with form drop -->
-<div class="form-group">
-<ul class="nav nav-pills" style="background-color: white; color: #4f2684;">
+    <!--input type="file" name="org_logo" id="file" class="inputfile" onchange="readURL(this);"/>
+    <span class="glyphicon glyphicon-upload" style="color:white"></span>
+<label for="file" style="color: white">Upload organizer's Logo</label-->
 
-<li><a data-toggle="tab" href="#home" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">FREE +</a></li>
-<li><a data-toggle="tab" href="#menu1" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">PAID +</a></li>
-<li><a data-toggle="tab" href="#menu2" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">RESERVED +</a></li>
-</ul>
+        <div class="custom-file-container" data-upload-id="myUniqueUploadId">
+            <label>Upload Event flier<a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">&nbsp; &nbsp; X</a></label>
 
-<div class="">
-<div id="home" class="">
-<div class="row">
-<div class="col-sm-5" style="padding-left: 16px;">
-<input class="form-control well" id="time" name="ticket_qty" placeholder="Ticket quantity" type="text" style="margin-top: 10px;">
-</div>
-<div class="col-sm-5" style="padding-left: 16px;">
-<input class="form-control well" id="time" name="ticket_price" placeholder="Ticket Price not not applicable to free" type="text" style="margin-top: 10px;">
-</div>
-</div>
-</div>
-<div id="menu1" class="">
-<div class="row">
-<div class="col-sm-5" style="padding-left: 16px;">
-<!-- <input class="form-control" id="time" name="ticket_price" placeholder="Ticket Price" type="text" style="margin-top: 10px;"> -->
-</div>
-<!--div class="col-sm-5">
-<input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
-</div>
-</div>
-<div id="menu1" class="tab-pane fade">
-<div class="row">
-<div class="col-sm-5">
-<input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
-</div>
-<div class="col-sm-5">
-<input class="form-control" id="time" name="date" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
-</div-->
-</div>
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade">
-    <div class="row">
-    <div class="col-sm-5" style="padding-left: 16px;">
-      <input class="form-control well" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
-    </div>
-    <div class="col-sm-5" style="padding-left: 16px;">
-     </div>
-    </div>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <div class="row">
-    <div class="col-sm-5" style="padding-left: 16px;">
-      <input class="form-control well" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
-    </div>
-    <div class="col-sm-5" style="padding-left: 16px;">
-      <input class="form-control well" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
-    </div>
-    </div>
-    <div id="menu1" class="tab-pane fade">
-      <div class="row">
-    <div class="col-sm-5" style="padding-left: 16px;">
-      <input class="form-control well" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
-    </div>
-    <div class="col-sm-5" style="padding-left: 16px;">
-      <input class="form-control well" placeholder="Enter Ticket quantity here" type="text" style="margin-top: 10px;">
-    </div>
-    </div>
-</div>
-</div>
+            <label class="custom-file-container__custom-file" >
+                <input type="file" name="event_flier" class="inputfile custom-file-container__custom-file__custom-file-input" accept="*" multiple>
+                <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+                <!--span class="custom-file-container__custom-file__custom-file-control"></span-->
 
-<!-- social media section -->
-<div class="form-group">
-
-<label for="OrgName" style="font-weight: bold; border: 0px solid black; color: grey; border-radius: 5px; padding-left: 0px; padding: 10px 10px 10px 0px; font-size: 20px;">ADD SOCIAL MEDIA</label>
-<div class="row" style="margin-top: 10px; ">
-<div class="col-sm-5" style="margin:1px; padding-left: 16px;" >
-<input class="form-control well" placeholder="@Facebook.com " type="text" name="facebook" />
-</div>
-<div class="col-sm-5" style="padding-left: 16px;">
-<input class="form-control well" placeholder="@instagram.com" type="text" name="instagram" />
-</div>
-</div>
-<div class="row" style="margin-top: 10px; margin-bottom: 10px;">
-<div class="col-sm-5" style="padding-left: 16px; margin:1px;" >
-<input class="form-control well" placeholder="@Twitter.com" type="text" name="twitter" />
-</div>
-<!--div class="col-sm-5">
-<div class="input-group bootstrap-timepicker timepicker">
-<input class="form-control" placeholder="Enter Google + link here" type="text"/>
-</div>
-</div-->
-</div>
-<div class="form-group">
-<div class="row">
-<div class="col-sm-1" style="margin-right: 0px; padding-right: 0px; margin-top: 25px;">
-<input type="checkbox" >
-</div>
-<div class="col-xs-11" style="margin-left: 0px; padding-left: 0px; margin-top: 30px;">
-<p>I agree to the terms of use.</p>
-</div>   
-<div class="col-xs-4" style="margin-top: 45px; margin-left: 170px;">
-<button type="submit" class="btn  btn-success btn-small" name="save">SAVE</button>
-<!-- <input type="submit" name="save" value="SAVE" class="btn  btn-success"> -->
-</div>
-<div class="col-sm-4" style="margin-top: 45px;">
-<button type="submit" class="btn btn-primary btn-sm">PREVIEW</button>
-</div>    
-</div>
-</div>    
+<span class="glyphicon glyphicon-upload custom-file-container__custom-file__custom-file-control" style="color:white"></span>
 
 
 
-</div>
-</div>    
+            </label>
 
-</form>
-</div>
-</div><!-- /.container -->
-</div>
+             <div class="custom-file-container__image-preview" style="height: 500px; width: 500px"> </div>
 
 
 
-
-            </div>
-            <!-- form ends here -->
-            <div class="col-sm-6">
-                <div style="margin: auto;">
-                    <h3 style="text-align: center;">
-                        PREVIEW
-                    </h3>
-                </div>
-            </div>
         </div>
-    </div>
-<script>
-   var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <p style="color: #4f2684; margin-top:10px;">EVENT STARTS: </p>
+    <input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts" style="color: lightgrey;">
+    </div>
+<div class="col-sm-6">
+<p style="color: #4f2684; margin-top:10px;" >EVENT ENDS: </p>
+
+    <input type="date" placeholder="Event End date" oninput="this.className = ''" name="event_ends" style="color: lightgrey;">
+    </div>
+</div>
+    <!--p><input placeholder="Enter Event End Time here" oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Enter Event End Date" oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p-->
+<hr  style="color: black; font-size: bold;">
+    <p style="margin-top:10px;"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
+
+   <!--p>  <input placeholder="Organizers logo" oninput="this.className = ''" type="file"   name="org_logo" > </p-->
+
+
+<!--p> Organizer's Logo </p-->
+
+    <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p-->
+<!--p>  <input type='file' name="org_logo" onchange="readURL(this);"/> </p-->
+
+  
+    <span class="btn btn-sm" style="background-color: #3b2a53; border-color: white">
+      <label for="file" style="color: white">Upload organizer's Logo
+    <input type="file" name="org_logo" id="file" class="inputfile" onchange="readURL(this);"/>
+    <span class="glyphicon glyphicon-upload" style="color:white"></span>
+</span>
+</label>
+
+<div>
+  <img id="blah" src="http://placehold.it/180" alt="your image" style="max-width:100px;  height:100px;
+  margin-top:20px;"/>
+</div>
+
+
+
+    <!--p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook" style="margin-top:10px"></p-->
+    <!--p><input placeholder="Enter Instagram link here" value="@Instagram.com" oninput="this.className = ''" name="instagram" ></p>
+    <p><input placeholder="Enter Twitter handle here" value="@twitter.com" oninput="this.className = ''" name="twitter"></p>
+    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p-->
+<hr>
+
+ <div class="input-group" style="margin-bottom: 15px;">
+   <span class="input-group-addon">@</span>
+
+   <input  type="text" class="form-control" name="twitter" placeholder="Twitter handle">
+ </div>
+
+ <div class="input-group" style="margin-bottom: 15px;">
+   <span class="input-group-addon">@</span>
+   <input  type="text" class="form-control" name="instagram" placeholder="Instagram handle">
+
+ </div>
+ <div class="input-group" style="margin-bottom: 15px;">
+   <span class="input-group-addon">@</span>
+   <input  type="text" class="form-control" name="instagram" placeholder="instagram handle">
+
+ </div>
+ <div class="input-group" style="margin-bottom: 15px;">
+   <span class="input-group-addon">Facebook.com/</span>
+   <input type="text" class="form-control" name="facebook" placeholder="Facebook username">
+ </div>
+
+
+  </div>
+  
+  <div class="tab">
+  <p style="color: #4f2684">SPONSOR 1</p>
+    <p><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name"></p>
+    <p><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url"></p>
+    <p><input type="file" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="sponsor_logo"></p>
+<hr  style="color: black;">
+    <p style="color: #4f2684">SPONSOR 2</p>
+    <P><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name1"></P>
+    <P><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url1"></P>
+    <P><input type="file" name="sponsor_logo1" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''"
+      ></p>
+<hr  style="color: black;">
+    <p style="color: #4f2684">SPONSORS 3</p>
+    <input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name2">
+
+    <P style="margin-top: 10px;"><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url2"></P>
+
+  <P><input type="file" name="sponsor_logo2" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" ></P>
+  </div>
+
+  <div class="tab"><h4 style="font-weight: bold; color: #4f2684">ACTIVITIES</h4>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name"></p>
+
+    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc"></textarea></p>
+
+    <p><input type="file" name="act_img" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''"></p>
+
+
+    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc" id="autocomplete" onFocus="geolocate()"></p>
+
+    <!--p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p-->
+    <p> Activity Time </p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+<hr  style="color: black;">
+
+    <p style="font-weight: bold;"> ACTIVITY 2 </p>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name1"></p>
+    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc1"></textarea></p>
+
+    <p><input type="file"  id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="act_img1"></p>
+    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc1" id="autocomplete" onFocus="geolocate()"></p>
+    <p> Activity Time </p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date1"></p>
+
+  <hr  style="color: black;">  
+    <p style="font-weight: bold;"> ACTIVITY 3 </p>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name2"></p>
+    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc2"></textarea></p>
+
+    <p><input type="file" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="act_img2"></p>
+
+    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc2" id="autocomplete" onFocus="geolocate()"></p>
+
+    <p style="font-weight: bold;"> Activity Time </p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date2"></p>
+<hr  style="color: black;">
+    <!--p style="font-weight: bold;"> ACTIVITY 4 </p>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
+    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
+    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
+    <p> Activity Time </p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+<hr  style="color: black;">
+    <p style="font-weight: bold;"> ACTIVITY 5 </p>
+    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
+    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
+
+    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
+    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
+    <p> Activity Time </p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p-->
+  </div>
+  <!-- <div class="tab"><h4 style="font-weight: bold; color: #4f2684">SCHEDULE</h4> 
+
+    <p><input placeholder="Name of Schedule" oninput="this.className = ''" name="sch_name" ></p> -->
+
+<!-- <p> When the schedule starts: </p>
+    <p><input type="time" placeholder="" oninput="this.className = ''" name="sch_start"></p>
+
+<p> When the schedule ends: </p>
+    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end"></p> -->
+
+
+    <!--p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="sch_end"></p-->
+
+
+    <!-- Scheduled 2
+    <p><input  placeholder="Enter event schedule here" oninput="this.className = ''" name="sch_name1"></p>
+
+    <p><input type="time" placeholder="Enter start time here" oninput="this.className = ''" name="sch_start1"></p>
+
+    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end1"></p> -->
+
+    <!--p><input placeholder="" oninput="this.className = ''" name="yyyy"></p-->
+
+    <!-- Scheduled 3
+    <p><input  placeholder="Enter event schedule here" oninput="this.className = ''" name="sch_name2"></p>
+    
+    <p><input type="time" placeholder="Enter start time here" oninput="this.className = ''" name="sch_start2"></p>
+    
+    <p><input  type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end2"></p> -->
+
+    <!--p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p-->
+
+   <!-- Schedule 4
+    <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
+    <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>
+    <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
+    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
+
+    Schedule 5
+    <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
+    <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>
+    <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
+    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>--> 
+
+  <!-- </div> -->
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+<!-- form ends here -->
+</div>
+<!-- footer goes here -->
+<!-- footer goes here -->
+<footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 70px; margin-top: 10px;">
+  <div class="row">
+    <div class="col-sm-2">
+      <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
+    </div>
+    <div class="col-sm-8">
+      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
+        <div class="col-sm-5">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">How it works</p></a>
+        </div>
+        <div class="col-sm-4">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">About us</p></a>
+        </div>
+        <div class="col-sm-3">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">Contact</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="row">
+        <div class="col-sm-4">
+          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer ends here -->
+
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the crurrent tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  /*for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }*/
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
 }
 </script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzCW1767osdDu9G37BlTJ88a7i9BNDQ7c&libraries=places&callback=initAutocomplete"
+        async defer></script>
+<script type="text/javascript">
+    // This example displays an address form, using the autocomplete feature
+// of the Google Places API to help users fill in the information.
+
+// This example requires the Places library. Include the libraries=places
+// parameter when you first load the API. For example:
+// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+var placeSearch, autocomplete;
+var componentForm = {
+  street_number: 'short_name',
+  route: 'long_name',
+  locality: 'long_name',
+  administrative_area_level_1: 'short_name',
+  country: 'long_name',
+  postal_code: 'short_name'
+};
+
+function initAutocomplete() {
+  // Create the autocomplete object, restricting the search to geographical
+  // location types.
+  autocomplete = new google.maps.places.Autocomplete(
+      /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+      {
+        types: ['geocode'],
+         componentRestrictions: {country: "ng"}
+
+    });
+
+  // When the user selects an address from the dropdown, populate the address
+  // fields in the form.
+  autocomplete.addListener('place_changed', fillInAddress);
+}
+
+function fillInAddress() {
+  // Get the place details from the autocomplete object.
+  var place = autocomplete.getPlace();
+
+  for (var component in componentForm) {
+    document.getElementById(component).value = '';
+    document.getElementById(component).disabled = false;
+  }
+
+  // Get each component of the address from the place details
+  // and fill the corresponding field on the form.
+  for (var i = 0; i < place.address_components.length; i++) {
+    var addressType = place.address_components[i].types[0];
+    if (componentForm[addressType]) {
+      var val = place.address_components[i][componentForm[addressType]];
+      document.getElementById(addressType).value = val;
+    }
+  }
+}
+
+// Bias the autocomplete object to the user's geographical location,
+// as supplied by the browser's 'navigator.geolocation' object.
+function geolocate() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var geolocation = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+      var circle = new google.maps.Circle({
+        center: geolocation,
+        radius: position.coords.accuracy
+      });
+      autocomplete.setBounds(circle.getBounds());
+    });
+  }
+}
+</script>
+
+<script type="text/javascript">
+  
+  function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
+
+
+        <script src="https://unpkg.com/file-upload-with-preview"></script>
+        <script>
+            var upload = new FileUploadWithPreview('myUniqueUploadId')
+        </script>
 </body>
 </html>

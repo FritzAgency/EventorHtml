@@ -166,7 +166,7 @@ $act_img = $_FILES["act_img"]["name"];*/
 
         if ($result) {
         	//$message = "Your page has been created successfully. Your event page is at '<a href='/eventorhtml/event/page/$event_url'> localhost/eventorhtml/event/page/$event_url</a>"; 
-        	$message = "Your page has been created successfully. Your event page is at '<a href='/page.php?event_url=$event_url'> dev-eventor.herokuapp.com/page.php?event_url=$event_url</a>";        
+        	$message = "Your page has been created successfully. Your event page is at '<a href='event/page.php?event_url=$event_url'> dev-eventor.herokuapp.com/event/page.php?event_url=$event_url</a>";        
         }
         else{
         	$message = 'oops, something went wrong'; 

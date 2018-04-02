@@ -1,7 +1,5 @@
 <?php
  
-
-
 require_once('Database/conn.php');
 
 
@@ -48,27 +46,18 @@ $act_loc = $row['act_loc'];
 $act_desc = $row['act_desc']; 
 $act_date = $row['act_date']; 
 $act_img = $row['act_img']; 
-
-
-
 $act_name1 = $row['act_name1']; 
 $act_loc1 = $row['act_loc1']; 
 $act_desc1 = $row['act_desc1']; 
 $act_date1 = $row['act_date1']; 
 $act_img1 = $row['act_img1']; 
-
-
-
 $act_name2 = $row['act_name2']; 
 $act_loc2 = $row['act_loc2']; 
 $act_desc2 = $row['act_desc2']; 
 $act_date2 = $row['act_date2']; 
 $act_img2 = $row['act_img2']; 
-
 $org_logo = $row['org_logo']; 
-
 }
-
 }
 ?>
 

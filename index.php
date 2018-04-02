@@ -138,7 +138,7 @@ bottom: auto;
                             <a class="nav-link waves-effect" href="#" target="_blank">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="event/newRegform.php" class="nav-link waves-effect" target="_blank">
+                            <a href="event/create.php" class="nav-link waves-effect">
                                 <i class="fa fa-login"></i>Create Event
                             </a>
                         </li>

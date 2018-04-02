@@ -1,682 +1,1138 @@
-<?php session_start(); ?> 
+<?php
+ 
+require_once('../Database/conn.php');
+
+
+//$url = $_GET['url'];
+
+if(isset($_GET['event_url'])){
+
+$event_url = $_GET['event_url'];
+
+$query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
+
+$result = mysqli_query($con,$query) or die(mysqli_error());
+
+$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+while( $row = mysqli_fetch_array($result) ){
+
+$event_description =  $row['event_description']; 
+$Address = $row['Address']; 
+$event_title = $row['event_title']; 
+$event_flier = $row['event_flier'];  
+//$event_flier1 = $row['event_flier1'];  
+//$event_flier2 = $row['event_flier2'];  
+$ticket_price = $row['ticket_price']; 
+$ticket_qty = $row['ticket_qty'];
+$status = $row['status']; 
+$sponsor_name = $row['sponsor_name']; 
+$sponsor_logo = $row['sponsor_logo'];
+$sponsor_url = $row['sponsor_url']; 
+
+
+
+$sponsor_name1 = $row['sponsor_name1']; 
+$sponsor_logo1 = $row['sponsor_logo1'];
+$sponsor_url1 = $row['sponsor_url1'];
+
+$sponsor_name2 = $row['sponsor_name2']; 
+$sponsor_logo2 = $row['sponsor_logo2'];
+$sponsor_url2 = $row['sponsor_url2'];
+
+$act_name = $row['act_name']; 
+$act_loc = $row['act_loc']; 
+$act_desc = $row['act_desc']; 
+$act_date = $row['act_date']; 
+$act_img = $row['act_img']; 
+$act_name1 = $row['act_name1']; 
+$act_loc1 = $row['act_loc1']; 
+$act_desc1 = $row['act_desc1']; 
+$act_date1 = $row['act_date1']; 
+$act_img1 = $row['act_img1']; 
+$act_name2 = $row['act_name2']; 
+$act_loc2 = $row['act_loc2']; 
+$act_desc2 = $row['act_desc2']; 
+$act_date2 = $row['act_date2']; 
+$act_img2 = $row['act_img2']; 
+$org_logo = $row['org_logo']; 
+}
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Event form</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="/event/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" type="text/css" href="https://unpkg.com/file-upload-with-preview/dist/file-upload-with-preview.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
 
-<style>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
+    
+    body {
+      background-image:url("img/eventor.jpg");
+      font-family: 'Montserrat', sans-serif;
+    }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+    .new{
+      color: black;
+    }
 
-* {
-  box-sizing: border-box;
-}
+  .new:hover{
+    border-bottom: 2px solid rgb(63, 10, 50);
+    color:black;
 
-body {
-    background-image: url("img/eventor.jpg");
-    font-family: 'Montserrat', sans-serif;
+  }
 
-}
-
-#regForm {
-  background-color: #ffffff;
-  margin: 50px auto;
-  font-family: 'Montserrat', sans-serif;
-  padding: 40px;
-  width: 60%;
-  min-width: 300px;
-}
-
-h1 {
-  text-align: center;  
-}
-
-input {
-  padding: 10px;
-  width: 100%;
-  font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
-  border: 1px solid #aaaaaa;
-  border-radius:5px;
-
-}
-
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-  background-color: #ffdddd;
-}
-
-/* Hide all steps by default: */
-.tab {
-  display: none;
-}
-
-button {
-  background-color: #4CAF50;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 17px;
-  font-family: 'Montserrat', sans-serif;
-  cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-#prevBtn {
-  background-color: #bbbbbb;
-}
-
-/* Make circles that indicate the steps of the form: */
-.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;  
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-}
-
-.step.active {
-  opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.step.finish {
-  background-color: #4CAF50;
-}
-
-
-/*upload organizer's logo css*/  
-  .inputfile {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
-.inputfile + label {
-    font-size: 1.25em;
-    font-weight: 700;
-    color: white;
-    background-color: purple;
-    display: inline-block;
-}
-
-.inputfile:focus + label,
-
-.inputfile + label:hover {
-    background-color: red;
-}
-
-.inputfile + label {
-  cursor: pointer; /* "hand" cursor */
-}
-/*upload organizer's logo */ 
 </style>
+
 </head>
+
 <body>
-  <header>
- <!-- header starts here -->
- <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
-  <div class="container-fluid">
-    <div class="navbar-header" >
-      <div class="col-sm-2 col-md-3 col-xm-4">
-      <a class="navbar-brand" href="/EventorHtml/index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
-      </div>
-    </div>
-    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -45px;padding-bottom: 10px;">
-    <li><a href="#" class="new">HOW IT WORKS </a></li>
-      <li><a href="#" class="new">EVENTS</a></li>
-      <li><a href="#" class="new">SPECIAL DEALS</a></li>
-      <li><a href="#" class="new">ABOUT US</a></li>
-      <li><a href="#" class="new">CONTACT</a></li>
-      <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
-      <!--li><a class="new"> | </a></li-->
-      <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
-      <?php if ((isset($_SESSION['email']))){
 
-echo 
-''; 
-}else{
-echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>'; 
-}
-?>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
 
-<?php if ((isset($_SESSION['email']))){
-
-echo 
-'
-<li><a href="auth/logout.php" style="color:#4f2684;"><span class=""></span> Logout</a></li>
-';      }else{
-echo'
-<li><a href="auth/login.php" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-'; 
-}
-?>
+      <!-- Brand -->
+      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/">
+        <div style="width: 40px; border-radius: 50%">
 
 
-
-<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  <?php 
-if((isset($_SESSION['first_name']))){
-echo 'Welcome, '. $_SESSION['first_name'];
-}
-?>
-
-    </ul>
-  </div>
-</nav>
-<!-- header stops here -->
-</header>
-
-<?php 
-require_once('../event/createclass.php'); 
-?> 
-
-<!-- form starts here -->
-<div class="container">
-                <!-- rounded number ends here -->
-
-        <!-- line breaker for sections -->
-        <hr style="margin-top: 0px; color: #4f2684;">
-        <!-- line breaker ends here -->
-<form id="regForm" action="" method="post" enctype="multipart/form-data">
-  <p style="font-family: Arial; text-align: center; font-weight: bolder; color: #4f2684; font-size: 30px">CREATE EVENT</p>
-  <!-- One "tab" for each step in the form: -->
-              <?php 
-
-if(isset($message)){
-    echo '<div class="alert alert-success">'. $message .'</div>';
-}
-?> 
-<hr>
-  <div class="tab"><h4 style="font-weight: bold; color: #4f2684">EVENT DETAILS</h4>
-    <p><input placeholder="Event Name" oninput="this.className = ''" name="event_title"></p>
-    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the event" oninput="this.className = ''" name="event_description"></textarea></p>
-  <hr>  
-    <p><input placeholder="Enter Address or location of the event here " oninput="this.className = ''" name="Address" id="autocomplete" onFocus="geolocate()"></p>
-
-    <p><input placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
-
-    <p><input placeholder="Enter City here" oninput="this.className = ''" name="city"></p>
-
-<div class="row">
-  <div class="col-sm-6">
-    <p><input type="number" placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
-    </div>
-    <div class="col-sm-6">
-    <p><input type="number" placeholder="Ticket Price (in &#8358;)"oninput="this.className = ''" name="ticket_price"></p>
-    </div>
-  </div>
-<hr  style="color: black;">
-<!--p style="color: #4f2684">UPLOAD EVENT BANNER </p>
-   <p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p-->
-
-   
-
-<!--p style="color: #4f2684; margin-top:10px;">UPLOAD EVENT BANNER </p>
-    <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"-->
-
-    <!--input type="file" name="org_logo" id="file" class="inputfile" onchange="readURL(this);"/>
-    <span class="glyphicon glyphicon-upload" style="color:white"></span>
-<label for="file" style="color: white">Upload organizer's Logo</label-->
-
-        <div class="custom-file-container" data-upload-id="myUniqueUploadId">
-            <label>Upload Event flier<a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">&nbsp; &nbsp; X</a></label>
-
-            <label class="custom-file-container__custom-file" >
-                <input type="file" name="event_flier" class="inputfile custom-file-container__custom-file__custom-file-input" accept="*" multiple>
-                <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
-                <!--span class="custom-file-container__custom-file__custom-file-control"></span-->
-
-<span class="glyphicon glyphicon-upload custom-file-container__custom-file__custom-file-control" style="color:white"></span>
-
-
-
-            </label>
-
-             <div class="custom-file-container__image-preview" style="height: 500px; width: 500px"> </div>
-
-
+          <!--img src="img/logo2.png" alt="" class="img-fluid"-->
+          <!-- The site logo goes in here --> 
+          
+<img src="../public/images/<?php echo 
+$org_logo;?>" alt="Anything" class="img-fluid" style="border-radius: 50px ">
 
         </div>
+    </a>
 
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/getting-started/" target="_blank"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"></a>
+          </li>
+        </ul>
 
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+                Activities
+            </a>
+          </li>
+          <li class="nav-item" style="margin-left: 27px;">
+            <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect waves-light"
+              target="_blank">Register
+            </a>
+          </li>
+        </ul>
 
+      </div>
 
-
-
-
-<div class="row">
-  <div class="col-sm-6">
-    <p style="color: #4f2684; margin-top:10px;">EVENT STARTS: </p>
-    <input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts" style="color: lightgrey;">
     </div>
-<div class="col-sm-6">
-<p style="color: #4f2684; margin-top:10px;" >EVENT ENDS: </p>
+  </nav>
+  <!-- Navbar -->
+  <!-- data-ride="carousel" -->
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade">
 
-    <input type="date" placeholder="Event End date" oninput="this.className = ''" name="event_ends" style="color: lightgrey;">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view">
+
+          <!--Video source-->
+          <!--video class="" autoplay loop>
+            <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
+          </video-->
+
+          <div class="view" style="background-image: url('../public/images/<?php echo 
+$event_flier;?>'); background-repeat: no-repeat; background-size: cover;"> </div>
+
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <!--strong>A Trip To Olumo Rock</strong-->
+                <strong><?php  if(isset($event_title)){echo $event_title;}?></strong>
+              </h1>
+
+              <p>
+                <!--strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong-->
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <!--event description goes here-->  
+                <strong><?php if(isset($event_description)){
+     echo $event_description; 
+    }?></strong>
+              </p>
+              <a  href="" class="btn btn-outline-white btn-lg">Become a Vendor
+              </a>
+              <a  href="" class="btn btn-outline-white btn-lg">Register
+              </a> 
+
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view">
+
+          <!--Video source-->
+          <!--video class="video-full" autoplay loop>
+              <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+          </video-->
+
+
+          <div class="view" style="background-image: url('../public/images/<?php echo 
+$event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
+</div>
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <!--strong>A Trip To Olumo Rock</strong-->
+                <strong><?php  if(isset($event_title)){echo $event_title;}?></strong>
+              </h1>
+
+              <p>
+                <!--strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong-->
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <!--strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong-->
+                  <strong><?php if(isset($event_description)){
+     echo $event_description; 
+    }?></strong>
+
+              </p>
+              <a  href="#" class="btn btn-outline-white btn-lg">Become a Vendor
+              </a>
+              <a href="#" class="btn btn-outline-white btn-lg">Register
+              </a> 
+
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
     </div>
-</div>
-    <!--p><input placeholder="Enter Event End Time here" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Enter Event End Date" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p-->
-<hr  style="color: black; font-size: bold;">
-    <p style="margin-top:10px;"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
+    <!--/.Slides-->
 
-   <!--p>  <input placeholder="Organizers logo" oninput="this.className = ''" type="file"   name="org_logo" > </p-->
-
-
-<!--p> Organizer's Logo </p-->
-
-    <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p-->
-<!--p>  <input type='file' name="org_logo" onchange="readURL(this);"/> </p-->
-
-  
-    <span class="btn btn-sm" style="background-color: #3b2a53; border-color: white">
-      <label for="file" style="color: white">Upload organizer's Logo
-    <input type="file" name="org_logo" id="file" class="inputfile" onchange="readURL(this);"/>
-    <span class="glyphicon glyphicon-upload" style="color:white"></span>
-</span>
-</label>
-
-<div>
-  <img id="blah" src="http://placehold.it/180" alt="your image" style="max-width:100px;  height:100px;
-  margin-top:20px;"/>
-</div>
-
-
-
-    <!--p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook" style="margin-top:10px"></p-->
-    <!--p><input placeholder="Enter Instagram link here" value="@Instagram.com" oninput="this.className = ''" name="instagram" ></p>
-    <p><input placeholder="Enter Twitter handle here" value="@twitter.com" oninput="this.className = ''" name="twitter"></p>
-    <p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p-->
-<hr>
-
- <div class="input-group" style="margin-bottom: 15px;">
-   <span class="input-group-addon">@</span>
-
-   <input  type="text" class="form-control" name="twitter" placeholder="Twitter handle">
- </div>
-
- <div class="input-group" style="margin-bottom: 15px;">
-   <span class="input-group-addon">@</span>
-   <input  type="text" class="form-control" name="instagram" placeholder="Instagram handle">
-
- </div>
- <div class="input-group" style="margin-bottom: 15px;">
-   <span class="input-group-addon">@</span>
-   <input  type="text" class="form-control" name="instagram" placeholder="instagram handle">
-
- </div>
- <div class="input-group" style="margin-bottom: 15px;">
-   <span class="input-group-addon">Facebook.com/</span>
-   <input type="text" class="form-control" name="facebook" placeholder="Facebook username">
- </div>
-
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
 
   </div>
-  
-  <div class="tab">
-  <p style="color: #4f2684">SPONSOR 1</p>
-    <p><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name"></p>
-    <p><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url"></p>
-    <p><input type="file" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" name="sponsor_logo"></p>
-<hr  style="color: black;">
-    <p style="color: #4f2684">SPONSOR 2</p>
-    <P><input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name1"></P>
-    <P><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url1"></P>
-    <P><input type="file" name="sponsor_logo1" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''"
-      ></p>
-<hr  style="color: black;">
-    <p style="color: #4f2684">SPONSORS 3</p>
-    <input placeholder="Sponsor's Name" oninput="this.className = ''" name="sponsor_name2">
+  <!--/.Carousel Wrapper-->
 
-    <P style="margin-top: 10px;"><input placeholder="Sponsor's Website" oninput="this.className = ''" name="sponsor_url2"></P>
+  <!--Main layout-->
+  <main>
+    <div class="container" id="about">
 
-  <P><input type="file" name="sponsor_logo2" id="js-upload-files" placeholder="Sponosor logo here" oninput="this.className = ''" ></P>
-  </div>
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn">
 
-  <div class="tab"><h4 style="font-weight: bold; color: #4f2684">ACTIVITIES</h4>
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name"></p>
+       
 
-    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc"></textarea></p>
+      </section>
+      <!--Section: Main info-->
 
-    <p><input type="file" name="act_img" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''"></p>
+      <!-- <hr class="my-5"> -->
 
+      <!--Section: Main features & Quick Start-->
+      <!-- <section> -->
 
-    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc" id="autocomplete" onFocus="geolocate()"></p>
+ <!--Grid row-->
+ <!-- <div class="row"> -->
 
-    <!--p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p-->
-    <p> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
-<hr  style="color: black;">
+    <!--Grid column-->
+    <!-- <div class="col-md-6 mb-4">
 
-    <p style="font-weight: bold;"> ACTIVITY 2 </p>
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name1"></p>
-    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc1"></textarea></p>
+      <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="">
 
-    <p><input type="file"  id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="act_img1"></p>
-    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc1" id="autocomplete" onFocus="geolocate()"></p>
-    <p> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date1"></p>
+    </div> -->
+    <!--Grid column-->
 
-  <hr  style="color: black;">  
-    <p style="font-weight: bold;"> ACTIVITY 3 </p>
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name2"></p>
-    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc2"></textarea></p>
+    <!--Grid column-->
+    <!-- <div class="col-md-6 mb-4"> -->
 
-    <p><input type="file" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="act_img2"></p>
+      <!-- Main heading -->
+      <!-- <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
+      <p>This template is created with Material Design for Bootstrap (
+        <strong>MDB</strong> ) framework.</p>
+      <p>Read details below to learn more about MDB.</p> -->
+      <!-- Main heading -->
+<!-- 
+      <hr>
 
-    <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc2" id="autocomplete" onFocus="geolocate()"></p>
+      <p>
+        <strong>400+</strong> material UI elements,
+        <strong>600+</strong> material icons,
+        <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
+        <strong>Free for personal and commercial use.</strong>
+      </p> -->
 
-    <p style="font-weight: bold;"> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date2"></p>
-<hr  style="color: black;">
-    <!--p style="font-weight: bold;"> ACTIVITY 4 </p>
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
-    <p> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
-<hr  style="color: black;">
-    <p style="font-weight: bold;"> ACTIVITY 5 </p>
-    <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
-    <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="activity_description"></textarea></p>
+      <!-- CTA -->
+      <!-- <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-grey btn-md">Download
+        <i class="fa fa-download ml-1"></i>
+      </a>
+      <a target="_blank" href="https://mdbootstrap.com/components/" class="btn btn-grey btn-md">Live demo
+        <i class="fa fa-image ml-1"></i>
+      </a>
 
-    <p><input type="file" name="" id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="logo"></p>
-    <p><input placeholder="Enter Locatio of Activity" oninput="this.className = ''" name="yyyy"></p>
-    <p> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p-->
-  </div>
-  <!-- <div class="tab"><h4 style="font-weight: bold; color: #4f2684">SCHEDULE</h4> 
-
-    <p><input placeholder="Name of Schedule" oninput="this.className = ''" name="sch_name" ></p> -->
-
-<!-- <p> When the schedule starts: </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="sch_start"></p>
-
-<p> When the schedule ends: </p>
-    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end"></p> -->
-
-
-    <!--p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="sch_end"></p-->
-
-
-    <!-- Scheduled 2
-    <p><input  placeholder="Enter event schedule here" oninput="this.className = ''" name="sch_name1"></p>
-
-    <p><input type="time" placeholder="Enter start time here" oninput="this.className = ''" name="sch_start1"></p>
-
-    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end1"></p> -->
-
-    <!--p><input placeholder="" oninput="this.className = ''" name="yyyy"></p-->
-
-    <!-- Scheduled 3
-    <p><input  placeholder="Enter event schedule here" oninput="this.className = ''" name="sch_name2"></p>
-    
-    <p><input type="time" placeholder="Enter start time here" oninput="this.className = ''" name="sch_start2"></p>
-    
-    <p><input  type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end2"></p> -->
-
-    <!--p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p-->
-
-   <!-- Schedule 4
-    <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
-    <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
-
-    Schedule 5
-    <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
-    <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>--> 
+    </div> -->
+    <!--Grid column-->
 
   <!-- </div> -->
-  <div style="overflow:auto;">
-    <div style="float:right;">
-      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-    </div>
-  </div>
-
-  <!-- Circles which indicates the steps of the form: -->
-  <div style="text-align:center;margin-top:40px;">
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-  </div>
-</form>
-<!-- form ends here -->
-</div>
-<!-- footer goes here -->
-<!-- footer goes here -->
-<footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 70px; margin-top: 10px;">
-  <div class="row">
-    <div class="col-sm-2">
-      <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
-    </div>
-    <div class="col-sm-8">
-      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
-        <div class="col-sm-5">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">How it works</p></a>
-        </div>
-        <div class="col-sm-4">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">About us</p></a>
-        </div>
-        <div class="col-sm-3">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">Contact</p></a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2"> 
-      <div class="row">
-        <div class="col-sm-4">
-          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
-        </div>
-        <div class="col-sm-4">
-            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
-        </div>
-        <div class="col-sm-4">
-            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- footer ends here -->
-
-<script>
-var currentTab = 0; // Current tab is set to be the first tab (0)
-showTab(currentTab); // Display the crurrent tab
-
-function showTab(n) {
-  // This function will display the specified tab of the form...
-  var x = document.getElementsByClassName("tab");
-  x[n].style.display = "block";
-  //... and fix the Previous/Next buttons:
-  if (n == 0) {
-    document.getElementById("prevBtn").style.display = "none";
-  } else {
-    document.getElementById("prevBtn").style.display = "inline";
-  }
-  if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
-  } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
-  }
-  //... and run a function that will display the correct step indicator:
-  fixStepIndicator(n)
-}
-
-function nextPrev(n) {
-  // This function will figure out which tab to display
-  var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateForm()) return false;
-  // Hide the current tab:
-  x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
-  currentTab = currentTab + n;
-  // if you have reached the end of the form...
-  if (currentTab >= x.length) {
-    // ... the form gets submitted:
-    document.getElementById("regForm").submit();
-    return false;
-  }
-  // Otherwise, display the correct tab:
-  showTab(currentTab);
-}
-
-function validateForm() {
-  // This function deals with validation of the form fields
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByTagName("input");
-  // A loop that checks every input field in the current tab:
-  /*for (i = 0; i < y.length; i++) {
-    // If a field is empty...
-    if (y[i].value == "") {
-      // add an "invalid" class to the field:
-      y[i].className += " invalid";
-      // and set the current valid status to false
-      valid = false;
-    }
-  }*/
-  // If the valid status is true, mark the step as finished and valid:
-  if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-  }
-  return valid; // return the valid status
-}
-
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class on the current step:
-  x[n].className += " active";
-}
-</script>
+  <!--Grid row-->
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzCW1767osdDu9G37BlTJ88a7i9BNDQ7c&libraries=places&callback=initAutocomplete"
-        async defer></script>
-<script type="text/javascript">
-    // This example displays an address form, using the autocomplete feature
-// of the Google Places API to help users fill in the information.
 
-// This example requires the Places library. Include the libraries=places
-// parameter when you first load the API. For example:
-// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+        <h3 class="h3 text-center mb-5" id="about">ABOUT</h3>
+        <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
+          <li class="nav-item new">
+              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel11" role="tab">Details</a>
+          </li>
+          <li class="nav-item new">
+            <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel12" role="tab">Price</a>
+        </li>
+          <li class="nav-item new">
+              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel13" role="tab">Organizer</a>
+          </li>
+          <li class="nav-item new">
+              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel14" role="tab">Location</a>
+          </li>
+          <li class="nav-item new">
+              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel15" role="tab">Vendor</a>
+          </li>
+          <li class="nav-item new">
+            <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel16" role="tab">Sponsors</a>
+        </li>
+      </ul>
+      
+      <!-- Tab panels -->
+      <div class="tab-content">
+      
+          <!--Panel 1-->
+          <div class="tab-pane fade in show" id="panel13" role="tabpanel">
+               <!--Grid row-->
+        <div class="row">
 
-var placeSearch, autocomplete;
-var componentForm = {
-  street_number: 'short_name',
-  route: 'long_name',
-  locality: 'long_name',
-  administrative_area_level_1: 'short_name',
-  country: 'long_name',
-  postal_code: 'short_name'
-};
-
-function initAutocomplete() {
-  // Create the autocomplete object, restricting the search to geographical
-  // location types.
-  autocomplete = new google.maps.places.Autocomplete(
-      /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
-      {
-        types: ['geocode'],
-         componentRestrictions: {country: "ng"}
-
-    });
-
-  // When the user selects an address from the dropdown, populate the address
-  // fields in the form.
-  autocomplete.addListener('place_changed', fillInAddress);
-}
-
-function fillInAddress() {
-  // Get the place details from the autocomplete object.
-  var place = autocomplete.getPlace();
-
-  for (var component in componentForm) {
-    document.getElementById(component).value = '';
-    document.getElementById(component).disabled = false;
-  }
-
-  // Get each component of the address from the place details
-  // and fill the corresponding field on the form.
-  for (var i = 0; i < place.address_components.length; i++) {
-    var addressType = place.address_components[i].types[0];
-    if (componentForm[addressType]) {
-      var val = place.address_components[i][componentForm[addressType]];
-      document.getElementById(addressType).value = val;
-    }
-  }
-}
-
-// Bias the autocomplete object to the user's geographical location,
-// as supplied by the browser's 'navigator.geolocation' object.
-function geolocate() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var geolocation = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
-      var circle = new google.maps.Circle({
-        center: geolocation,
-        radius: position.coords.accuracy
-      });
-      autocomplete.setBounds(circle.getBounds());
-    });
-  }
-}
-</script>
-
-<script type="text/javascript">
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
   
-  function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
+              <!-- Main heading -->
+              <h3 class="h3 mb-3" style="text-align: right;">Organizer Name goes in here</h3>
+              
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-6 mb-4">
+                <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
+            </div>
+            <!--Grid column-->
+  
+          </div>
+          <!--Grid row-->
+      
+          </div>
+          <!--/.Panel 1-->
+      
+          <!--Panel 2-->
+          <div class="tab-pane fade" id="panel14" role="tabpanel">
+              <br>
+      
+              <!--location goes here map.-->
 
-                reader.onload = function (e) {
-                    $('#blah')
-                        .attr('src', e.target.result);
-                };
+              <?php 
 
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-</script>
+    if(isset($Address)){
+     echo $Address; 
+    }
+
+    ?>
 
 
-        <script src="https://unpkg.com/file-upload-with-preview"></script>
-        <script>
-            var upload = new FileUploadWithPreview('myUniqueUploadId')
-        </script>
+         <!-- The map displays the location filled by the user -->      
+<iframe style=" width: 100%; height: 500px;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDWG8NOZeOKNf9FabkmtqwCpNs04zcT5Yc
+    &q='<?php echo $Address;?>'" allowfullscreen>
+</iframe>
+      
+          </div>
+          <!--/.Panel 2-->
+      
+          <!--Panel 3-->
+          <div class="tab-pane fade" id="panel15" role="tabpanel">
+              <div class="row">
+                <div class="col-md-4 mb-2">
+                  <!--Card Regular-->
+<div class="card card-cascade">
+
+    <!--Card image-->
+    <div class="view overlay">
+        <img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" class="img-fluid" alt="">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+    <!--/.Card image-->
+
+    <!--Card content-->
+    <div class="card-body text-center">
+        <!--Title-->
+        <h4 class="card-title"><strong>Name of Vendor here</strong></h4>
+            <h5>Products or services</h5>
+        <p class="card-text">information
+        </p>
+
+        <!--Facebook-->
+        <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+        <!--Twitter-->
+        <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+        <!--Google +-->
+        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a>
+
+    </div>
+    <!--/.Card content-->
+
+</div>
+<!--/.Card Regular-->
+                </div>
+                <div class="col-md-4 mb-2">
+                  <!--Card Regular-->
+<div class="card card-cascade">
+
+    <!--Card image-->
+    <div class="view overlay">
+        <img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" class="img-fluid" alt="">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+    <!--/.Card image-->
+
+    <!--Card content-->
+    <div class="card-body text-center">
+        <!--Title-->
+        <h4 class="card-title"><strong>Name of vendor</strong></h4>
+        <h5>Products or services</h5>
+
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+        </p>
+
+        <!--Facebook-->
+        <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+        <!--Twitter-->
+        <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+        <!--Google +-->
+        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a>
+
+    </div>
+    <!--/.Card content-->
+
+</div>
+<!--/.Card Regular-->
+                </div>
+                <div class="col-md-4 mb-2">
+                  <!--Card Regular-->
+<div class="card card-cascade">
+
+    <!--Card image-->
+    <div class="view overlay">
+        <img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" class="img-fluid" alt="">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+    <!--/.Card image-->
+
+    <!--Card content-->
+    <div class="card-body text-center">
+        <!--Title-->
+        <h4 class="card-title"><strong>Billy Cullen</strong></h4>
+        <h5>Web developer</h5>
+
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+        </p>
+
+        <!--Facebook-->
+        <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+        <!--Twitter-->
+        <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+        <!--Google +-->
+        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a>
+
+    </div>
+    <!--/.Card content-->
+
+</div>
+<!--/.Card Regular-->
+                </div>
+              </div>
+      
+          </div>
+          <!--/.Panel 3-->
+      
+          <!--Panel 4-->
+          <div class="tab-pane fade" id="panel11" role="tabpanel">
+              <br>
+      
+              details of event here
+      
+          </div>
+          <!--/.Panel 4-->
+
+          <!--Panel 5-->
+          <div class="tab-pane fade" id="panel16" role="tabpanel">
+              <div class="row">
+                  <div class="col-md-4">
+  <!-- Display the first sponsors logo--> 
+<?php
+
+
+//$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
+
+
+$select = mysqli_query($con,"SELECT `sponsor_logo` FROM `event` WHERE `sponsor_logo` = '$sponsor_logo'");
+
+//$result = mysqli_query($con,$query) or die(mysqli_error());
+
+
+//$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+
+if (mysqli_num_rows($select) === 1){
+ 
+ echo "<center><img src='../public/images/$sponsor_logo' alt='Any' class='img-fluid'><p style='margin-right:-20px '>$sponsor_name</p></center>";  
+
+
+}else{
+ 
+
+ echo '';
+
+
+}
+
+
+?>
+</div>
+              
+
+               <div class="col-md-4">
+                 
+<!-- display the 2nd sponsors logo--> 
+
+<?php
+
+
+//$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
+
+
+$select = mysqli_query($con,"SELECT `sponsor_logo1` FROM `event` WHERE `sponsor_logo1` = '$sponsor_logo1'");
+
+//$result = mysqli_query($con,$query) or die(mysqli_error());
+
+
+//$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+
+if (mysqli_num_rows($select) === 1){
+ 
+ echo "<center><img src='../public/images/$sponsor_logo1' alt='Any' class='img-fluid'><p style='margin-right:-20px '>$sponsor_name1</p></center>";  
+
+
+}else{
+  
+ echo '';
+
+}
+
+
+?>
+
+
+               </div>
+
+
+                  <div class="col-md-4">
+<!-- Display the 3rd logo-->  
+<?php
+
+
+//$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
+
+
+$select1 = mysqli_query($con,"SELECT `sponsor_logo2` FROM `event` WHERE `sponsor_logo2` = '$sponsor_logo2'");
+
+$row = mysqli_fetch_array($select1);
+ 
+
+//$result = mysqli_query($con,$query) or die(mysqli_error());
+
+
+//$row = mysqli_num_rows($result) or die(mysqli_error());
+
+
+
+if ($row['sponsor_logo2'] == 1){
+ 
+ echo "<center><img src='../public/images/$sponsor_logo2' alt='Any' class='img-fluid'><p style='margin-right:-20px '>$sponsor_name2</p></center>";  
+
+
+
+}else{
+  
+ echo '';
+
+
+  }
+
+
+?>
+
+                  </div>
+              </div>
+    
+        </div>
+        <!--/.Panel 5-->
+
+        <!--Panel 6-->
+        <div class="tab-pane fade" id="panel12" role="tabpanel">
+          <div class="row">  
+          <div class="col-md-4 mb-2">
+              <!--Card Wider-->
+<div class="card card-cascade wider">
+
+ <!--Card content-->
+  <div class="card-body text-center">
+      <!--Title-->
+      <h4 class="card-title"><strong>Regular</strong></h4>
+    <hr>
+      <p class="card-text">#5,000</p>
+  </div>
+  <!--/.Card content-->
+
+</div>
+<!--/.Card Wider-->
+           </div>
+           <div class="col-md-4 mb-2">
+             <!--Card Wider-->
+<div class="card card-cascade wider">
+
+  <!--Card content-->
+   <div class="card-body text-center">
+       <!--Title-->
+       <h4 class="card-title"><strong>VIP</strong></h4>
+     <hr>
+       <p class="card-text">#25,000</p>
+   </div>
+   <!--/.Card content-->
+ 
+ </div>
+ <!--/.Card Wider-->
+           </div>
+           <div class="col-md-4 mb-2">
+             <!--Card Wider-->
+<div class="card card-cascade wider">
+
+  <!--Card content-->
+   <div class="card-body text-center">
+       <!--Title-->
+       <h4 class="card-title"><strong>Premium</strong></h4>
+     <hr>
+       <p class="card-text">#100,000</p>
+   </div>
+   <!--/.Card content-->
+ 
+ </div>
+ <!--/.Card Wider-->
+           </div>
+         </div>
+
+    </div>
+    <!--/.Panel 6-->
+      
+      </div>
+
+        
+      <hr class="my-5">
+
+      <!--Section: ACTIVITIES-->
+      <section>
+        <h2 class="my-5 h3 text-center" id="activities">ACTIVITIES</h2>
+
+
+        <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
+            <li class="nav-item new">
+                <!--a class="nav-link" style="color:black;" data-toggle="tab" href="#panel31" role="tab">Hicking</a-->
+            </li>
+            <li class="nav-item new">
+              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel32" role="tab"><!--Jogging-->
+                <?php if(isset($act_name)){echo $act_name;}?>
+              </a>
+          </li>
+            <li class="nav-item new">
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel33" role="tab"><!--Organizer-->
+                  <?php if(isset($act_name1)){echo $act_name1;}?>
+
+                </a>
+            </li>
+            <li class="nav-item new">
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel34" role="tab"><!--Location-->
+                  
+                  <?php if(isset($act_name2)){echo $act_name2;}?>
+
+
+                </a>
+            </li>
+            <li class="nav-item new">
+                <!--a class="nav-link" style="color:black;" data-toggle="tab" href="#panel35" role="tab">Vendor</a-->
+            </li>
+            <li class="nav-item new">
+              <!--a class="nav-link" style="color:black;" data-toggle="tab" href="#panel36" role="tab">Sponsors</a-->
+          </li>
+        </ul>
+        
+        <!-- Tab panels -->
+        <div class="tab-content">
+        
+            <!--Panel 1-->
+            <div class="tab-pane fade in show" id="panel31" role="tabpanel">
+                <div class="row">
+  
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                        <div class="row">
+                          <div class="col-md-6 mb4">
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              </div>
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                          </div>
+                          </div>
+                          <div class="col-md-6 mb-4" style="margin: auto;">
+                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                          </div>
+                    </div>
+                    </div>
+                    <!--Grid column-->
+          
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
+                    </div>
+                    <!--Grid column-->
+          
+                  </div>
+                  <!--Grid row-->
+        
+            </div>
+            <!--/.Panel 1-->
+        
+            <!--Panel 2-->
+            <div class="tab-pane fade in show" id="panel32" role="tabpanel">
+                <div class="row">
+  
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                        <h4 class="card-title"><!--strong>Name of Activity</strong-->
+                          <strong><?php if(isset($act_name)){echo $act_name;}?></strong>
+
+                        </h4>
+                        <!--p class="card-text"> Lorem ipsum! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p-->
+
+                        <p class="card-text">
+                          <?php if(isset($act_desc)){echo $act_desc;}?>
+
+                        </p>
+
+
+                        <div class="row">
+                          <div class="col-md-6 mb4">
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              </div>
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                          </div>
+                          </div>
+                          <div class="col-md-6 mb-4" style="margin: auto;">
+                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                          </div>
+                    </div>
+                    </div>
+                    <!--Grid column-->
+          
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4" style="background-image: url('../public/images/<?php echo 
+$act_img;?>'); background-repeat: no-repeat;">
+                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
+
+
+                    </div>
+                    <!--Grid column-->
+          
+                  </div>
+                  <!--Grid row-->
+        
+            </div>
+            <!--/.Panel 2-->
+        
+            <!--Panel 3-->
+            <div class="tab-pane fade in show" id="panel33" role="tabpanel">
+                <div class="row">
+  
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                        <h4 class="card-title"><strong>
+                          <!--Name of Activity-->
+                             <?php if(isset($act_name1)){echo $act_name1;}?>
+
+
+                          </strong></h4>
+                        <!--p class="card-text"> Lorem ipsum!! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p-->
+                        <p class="card-text">
+                         
+                          <?php if(isset($act_desc1)){echo $act_desc1;}?>
+
+                        </p>
+
+
+                        <div class="row">
+                          <div class="col-md-6 mb4">
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              </div>
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                          </div>
+                          </div>
+                          <div class="col-md-6 mb-4" style="margin: auto;">
+                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                          </div>
+                    </div>
+                    </div>
+                    <!--Grid column-->
+          
+                    <!--Grid column-->
+                    
+<div class="col-md-6 mb-4" style="background-image: url('../public/images/<?php echo 
+$act_img1;?>'); background-repeat: no-repeat;">
+
+                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
+                    </div>
+                    <!--Grid column-->
+          
+                  </div>
+                  <!--Grid row-->
+        
+            </div>
+            <!--/.Panel 3-->
+        
+            <!--Panel   4-->
+            <div class="tab-pane fade in show" id="panel34" role="tabpanel">
+                <div class="row">
+  
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                        <h4 class="card-title"><strong>
+
+                      <!--  Name of Activity-->
+
+                          <?php if(isset($act_name2)){echo $act_name2;}?>
+
+                      
+                      </strong></h4>
+                        <!--p class="card-text"> Lorem ipsum!!! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p-->
+                       <p class="card-text">
+
+                          <?php if(isset($act_desc2)){echo $act_desc2;}?>
+
+                         
+                       </p>
+
+
+                        <div class="row">
+                          <div class="col-md-6 mb4">
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              </div>
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                          </div>
+                          </div>
+                          <div class="col-md-6 mb-4" style="margin: auto;">
+                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                          </div>
+                    </div>
+                    </div>
+                    <!--Grid column-->
+          
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4" style="background-image: url('../public/images/<?php echo 
+$act_img2;?>'); background-repeat: no-repeat;">                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
+                    </div>
+                    <!--Grid column-->
+          
+                  </div>
+                  <!--Grid row-->
+        
+            </div>
+            <!--/.Panel 4-->
+  
+            <!--Panel 5-->
+            <div class="tab-pane fade in show" id="panel35" role="tabpanel">
+                <div class="row">
+  
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                        <div class="row">
+                          <div class="col-md-6 mb4">
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              </div>
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                          </div>
+                          </div>
+                          <div class="col-md-6 mb-4" style="margin: auto;">
+                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                          </div>
+                    </div>
+                    </div>
+                    <!--Grid column-->
+          
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
+                    </div>
+                    <!--Grid column-->
+          
+                  </div>
+                  <!--Grid row-->
+        
+            </div>
+          <!--/.Panel 5-->
+  
+          <div class="tab-pane fade in show" id="panel36" role="tabpanel">
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6 mb-4">
+                      <h4 class="card-title"><strong>Name of Activity</strong></h4>
+                      <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                      <div class="row">
+                        <div class="col-md-6 mb4">
+                            <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                            <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                            <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                            </div>
+                            <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+                            <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                            <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                        </div>
+                        </div>
+                        <div class="col-md-6 mb-4" style="margin: auto;">
+                            <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                        </div>
+                  </div>
+                  </div>
+                  <!--Grid column-->
+        
+                  <!--Grid column-->
+                  <div class="col-md-6 mb-4">
+                      <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
+                  </div>
+                  <!--Grid column-->
+        
+                </div>
+                <!--Grid row-->
+      
+          </div>
+      <!--/.Panel 6-->
+      </div>
+    </div>
+      </section>
+      <!--Section: More-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Call to action-->
+    <div class="pt-4">
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Sell Products
+      </a>
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Register
+      </a>
+    </div>
+    <!--/.Call to action-->
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="https://www.facebook.com/mdbootstrap">
+        <i class="fa fa-facebook mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/MDBootstrap">
+        <i class="fa fa-twitter mr-3"></i>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4">
+        <i class="fa fa-youtube mr-3"></i>
+      </a>
+
+      <a href="https://plus.google.com/u/0/b/107863090883699620484">
+        <i class="fa fa-google-plus mr-3"></i>
+      </a>
+
+      <a href="https://dribbble.com/mdbootstrap">
+        <i class="fa fa-dribbble mr-3"></i>
+      </a>
+
+      <a href="https://pinterest.com/mdbootstrap">
+        <i class="fa fa-pinterest mr-3"></i>
+      </a>
+
+      <a href="https://github.com/mdbootstrap/bootstrap-material-design">
+        <i class="fa fa-github mr-3"></i>
+      </a>
+
+      <a href="http://codepen.io/mdbootstrap/">
+        <i class="fa fa-codepen mr-3"></i>
+      </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href="index1.php"> Eventor.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
 </body>
+
 </html>

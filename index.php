@@ -43,7 +43,7 @@ div.form-group {
     position: absolute;
 z-index: 9999908;
 top: 70%;
-    left: 37%;
+    left: 35%;
 right: auto;
 bottom: auto;
 }
@@ -86,7 +86,7 @@ bottom: auto;
     }
 
 .menu{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 </style>
@@ -142,12 +142,12 @@ bottom: auto;
                     <ul class="navbar-nav nav-flex-icons">
                     
                         <li class="nav-item">
-                            <a href="event/create.php" class="nav-link waves-effect menu">
+                            <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
                                 <i class="fa fa-login"></i>Create Event
                             </a>
                         </li>
-                        <li class="nav-item" style="margin-right: 60px;">
-                            <a href="#" class="nav-link waves-effect menu">
+                        <li class="nav-item" style="margin-right: 60px;" >
+                            <a href="#" class="nav-link waves-effect menu" style="color:#4f2684;">
                                 <i class="fa fa-login"></i>Sell Products
                             </a>
                         </li>
@@ -155,7 +155,7 @@ bottom: auto;
 <?php if ((!isset($_SESSION['first_name']))){
 
 echo 
-'<a href="auth/login.php" class="nav-link waves-effect">
+'<a href="auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
 <i class="fa fa-login"></i>Login</a>';      
 }
 else {
@@ -169,11 +169,11 @@ else {
                            
     <?php if ((isset($_SESSION['email']))){
 
-echo'<a href="auth/logout.php" class="nav-link border border-light rounded waves-effect"><i class="fa fa-login"></i>Logout</a>
-'; 
+echo 
+''; 
 }else{
 
-echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect"><i class="fa fa-login"></i>Signup</a>
+echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
 '; 
 
 
@@ -181,9 +181,6 @@ echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves
 ?>
     
 </li>
-
-
-
 </ul>
 
     
@@ -227,12 +224,12 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <div class="carousel-inner" role="listbox">
                         <!--First slide-->
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg" alt="First slide">
+                            <img class="d-block w-100" src="img/carousel.jpg" alt="First slide">
                         </div>
                         <!--/First slide-->
                         <!--Second slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(136).jpg" alt="Second slide">
+                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg" alt="Second slide">
                         </div>
                         <!--/Second slide-->
                         <!--Third slide-->
@@ -280,20 +277,39 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-12 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img(115).jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-red-dark">
-                                    <div class="text">
-                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
-                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
-                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        <!--Card-->
+<div class="card">
+    <!--Card image-->
+    <div class="view overlay zoom">
+        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+    <!--/.Card image-->
+    <!--Button-->
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Event Title Goes Here</h4>
+        <hr>
+        <!--Text-->
+        <p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+    </div>
+    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+    <!--/.Card content-->
+    <!-- Card footer -->
+    <div class="mdb-color lighten-3 text-center">
+        <ul class="list-unstyled list-inline font-small mt-3">
+            <li class="list-inline-item pr-2 white-text"><i class="fa fa-calendar-o pr-1"></i>Feb 05/10/2018</li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-tasks pr-1"></i>500</a></li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-film pr-1"> </i>Baby Showers</a></li>
+        </ul>
+    </div>
+    <!-- Card footer -->
+</div>
+<!--/.Card-->
 
                     </div>
                     <!-- Grid column -->
@@ -301,20 +317,39 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img(116).jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-blue-light">
-                                    <div class="text">
-                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
-                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
-                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        <!--Card-->
+<div class="card">
+    <!--Card image-->
+    <div class="view overlay zoom">
+        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+    <!--/.Card image-->
+    <!--Button-->
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Event Title Goes Here</h4>
+        <hr>
+        <!--Text-->
+        <p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+    </div>
+    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+    <!--/.Card content-->
+    <!-- Card footer -->
+    <div class="mdb-color lighten-3 text-center">
+        <ul class="list-unstyled list-inline font-small mt-3">
+            <li class="list-inline-item pr-2 white-text"><i class="fa fa-calendar-o pr-1"></i>Feb 05/10/2018</li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-tasks pr-1"></i>300</a></li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-film pr-1"> </i>Education</a></li>
+        </ul>
+    </div>
+    <!-- Card footer -->
+</div>
+<!--/.Card-->
 
                     </div>
                     <!-- Grid column -->
@@ -322,20 +357,39 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img(117).jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-blue-light">
-                                    <div class="text">
-                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
-                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
-                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        <!--Card-->
+<div class="card">
+    <!--Card image-->
+    <div class="view overlay zoom">
+        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+    <!--/.Card image-->
+    <!--Button-->
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Event Title Goes Here</h4>
+        <hr>
+        <!--Text-->
+        <p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+    </div>
+    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+    <!--/.Card content-->
+    <!-- Card footer -->
+    <div class="mdb-color lighten-3 text-center">
+        <ul class="list-unstyled list-inline font-small mt-3">
+            <li class="list-inline-item pr-2 white-text"><i class="fa fa-calendar-o pr-1"></i>Feb 05/10/2018</li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-tasks pr-1"></i>200</a></li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-film pr-1"> </i>Entertainment</a></li>
+        </ul>
+    </div>
+    <!-- Card footer -->
+</div>
+<!--/.Card-->
 
                     </div>
                     <!-- Grid column -->
@@ -343,74 +397,251 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                 </div>
                 <!-- Grid row -->
 
+                                <!-- Grid row -->
+                                <div class="row">
+
+<!-- Grid column -->
+<div class="col-lg-4 col-md-12 mb-3">
+
+    <!--Card-->
+<div class="card">
+<!--Card image-->
+<div class="view overlay zoom">
+<img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+<a>
+<div class="mask rgba-white-slight"></div>
+</a>
+</div>
+<!--/.Card image-->
+<!--Button-->
+<!--Card content-->
+<div class="card-body">
+<!--Title-->
+<h4 class="card-title">Event Title Goes Here</h4>
+<hr>
+<!--Text-->
+<p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+</div>
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+<!--/.Card content-->
+<!-- Card footer -->
+<div class="mdb-color lighten-3 text-center">
+<ul class="list-unstyled list-inline font-small mt-3">
+<li class="list-inline-item pr-2 white-text"><i class="fa fa-calendar-o pr-1"></i>Feb 05/10/2018</li>
+<li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-tasks pr-1"></i>500</a></li>
+<li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-film pr-1"> </i>Baby Showers</a></li>
+</ul>
+</div>
+<!-- Card footer -->
+</div>
+<!--/.Card-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="col-lg-4 col-md-6 mb-3">
+
+    <!--Card-->
+<div class="card">
+<!--Card image-->
+<div class="view overlay zoom">
+<img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+<a>
+<div class="mask rgba-white-slight"></div>
+</a>
+</div>
+<!--/.Card image-->
+<!--Button-->
+<!--Card content-->
+<div class="card-body">
+<!--Title-->
+<h4 class="card-title">Event Title Goes Here</h4>
+<hr>
+<!--Text-->
+<p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+</div>
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+<!--/.Card content-->
+<!-- Card footer -->
+<div class="mdb-color lighten-3 text-center">
+<ul class="list-unstyled list-inline font-small mt-3">
+<li class="list-inline-item pr-2 white-text"><i class="fa fa-calendar-o pr-1"></i>Feb 05/10/2018</li>
+<li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-tasks pr-1"></i>300</a></li>
+<li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-film pr-1"> </i>Education</a></li>
+</ul>
+</div>
+<!-- Card footer -->
+</div>
+<!--/.Card-->
+
+</div>
+<!-- Grid column -->
+
+<!-- Grid column -->
+<div class="col-lg-4 col-md-6 mb-3">
+
+    <!--Card-->
+<div class="card">
+<!--Card image-->
+<div class="view overlay zoom">
+<img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+<a>
+<div class="mask rgba-white-slight"></div>
+</a>
+</div>
+<!--/.Card image-->
+<!--Button-->
+<!--Card content-->
+<div class="card-body">
+<!--Title-->
+<h4 class="card-title">Event Title Goes Here</h4>
+<hr>
+<!--Text-->
+<p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+</div>
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+<!--/.Card content-->
+<!-- Card footer -->
+<div class="mdb-color lighten-3 text-center">
+<ul class="list-unstyled list-inline font-small mt-3">
+<li class="list-inline-item pr-2 white-text"><i class="fa fa-calendar-o pr-1"></i>Feb 05/10/2018</li>
+<li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-tasks pr-1"></i>200</a></li>
+<li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-film pr-1"> </i>Entertainment</a></li>
+</ul>
+</div>
+<!-- Card footer -->
+</div>
+<!--/.Card-->
+
+</div>
+<!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
                 <!-- Grid row -->
                 <div class="row">
 
                     <!-- Grid column -->
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-12 mb-3">
 
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img(117).jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-white-light">
-                                    <div class="text">
-                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
-                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
-                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        <!--Card-->
+<div class="card">
+    <!--Card image-->
+    <div class="view overlay zoom">
+        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+    <!--/.Card image-->
+    <!--Button-->
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Event Title Goes Here</h4>
+        <hr>
+        <!--Text-->
+        <p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+    </div>
+    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+    <!--/.Card content-->
+    <!-- Card footer -->
+    <div class="mdb-color lighten-3 text-center">
+        <ul class="list-unstyled list-inline font-small mt-3">
+            <li class="list-inline-item pr-2 white-text"><i class="fa fa-calendar-o pr-1"></i>Feb 05/10/2018</li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-tasks pr-1"></i>500</a></li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-film pr-1"> </i>Baby Showers</a></li>
+        </ul>
+    </div>
+    <!-- Card footer -->
+</div>
+<!--/.Card-->
 
                     </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img(129).jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-white-light">
-                                    <div class="text">
-                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
-                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
-                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        <!--Card-->
+<div class="card">
+    <!--Card image-->
+    <div class="view overlay zoom">
+        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+    <!--/.Card image-->
+    <!--Button-->
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Event Title Goes Here</h4>
+        <hr>
+        <!--Text-->
+        <p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+    </div>
+    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+    <!--/.Card content-->
+    <!-- Card footer -->
+    <div class="mdb-color lighten-3 text-center">
+        <ul class="list-unstyled list-inline font-small mt-3">
+            <li class="list-inline-item pr-2 white-text"><i class="fa fa-calendar-o pr-1"></i>Feb 05/10/2018</li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-tasks pr-1"></i>300</a></li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-film pr-1"> </i>Education</a></li>
+        </ul>
+    </div>
+    <!-- Card footer -->
+</div>
+<!--/.Card-->
 
                     </div>
                     <!-- Grid column -->
 
-                </div>
-                <!-- Grid row -->
-
-                <!-- Grid row -->
-                <div class="row">
-
                     <!-- Grid column -->
-                    <div class="col-md-12 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(137).jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-white-light">
-                                    <div class="text">
-                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
-                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
-                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        <!--Card-->
+<div class="card">
+    <!--Card image-->
+    <div class="view overlay zoom">
+        <img src="https://mdbootstrap.com/img/Photos/Others/food.jpg" class="img-fluid" alt="sample">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+    <!--/.Card image-->
+    <!--Button-->
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">Event Title Goes Here</h4>
+        <hr>
+        <!--Text-->
+        <p class="font-small grey-dark-text mb-0">Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+    </div>
+    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-primary btn-md" style="margin-left:auto; margin-right: auto;">View Event</button>
+    <!--/.Card content-->
+    <!-- Card footer -->
+    <div class="mdb-color lighten-3 text-center">
+        <ul class="list-unstyled list-inline font-small mt-3">
+            <li class="list-inline-item pr-2 white-text"><i class="fa fa-calendar-o pr-1"></i>Feb 05/10/2018</li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-tasks pr-1"></i>200</a></li>
+            <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fa fa-film pr-1"> </i>Entertainment</a></li>
+        </ul>
+    </div>
+    <!-- Card footer -->
+</div>
+<!--/.Card-->
 
                     </div>
                     <!-- Grid column -->

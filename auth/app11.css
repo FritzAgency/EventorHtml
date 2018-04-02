@@ -14,11 +14,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  margin: 0;
-  background-color: black;
-}
-
 article,
 aside,
 details,
@@ -1407,7 +1402,6 @@ body {
   font-size: 14px;
   line-height: 1.6;
   color: #636b6f;
-  background-color: green;
 }
 
 input,
@@ -8351,9 +8345,6 @@ button.close {
   }
 }
 
-body {
-  background-color: yellow;
-}
 
 *[role="form"] {
   max-width: 530px;

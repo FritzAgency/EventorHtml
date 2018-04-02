@@ -81,7 +81,7 @@ h1 {
 }
 
 mark {
-  background:grey;
+  background: grey;
   color: #000;
 }
 
@@ -1456,7 +1456,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.6;
-  background-color: grey;
+  background-color: green;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -3055,7 +3055,7 @@ th {
 }
 
 .table .table {
-  background-color: grey;
+  background-color: green;
 }
 
 .table-condensed > thead > tr > th,
@@ -8351,9 +8351,6 @@ button.close {
   }
 }
 
-body {
-
-}
 
 *[role="form"] {
   max-width: 530px;

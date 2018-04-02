@@ -85,6 +85,10 @@ bottom: auto;
         z-index: 3;   
     }
 
+.menu{
+    font-size: 15px;
+}
+
 </style>
 
 
@@ -115,39 +119,39 @@ bottom: auto;
 
                     <!-- Left -->
                     <ul class="navbar-nav mr-auto">
-                       
-                    </ul>
-
-                    <!-- Right -->
-                    <ul class="navbar-nav nav-flex-icons">
                     <li class="nav-item">
-                            <a class="nav-link waves-effect" href="#">How It Works
+                            <a class="nav-link waves-effect menu" href="#">How It Works
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect" href="#" target="_blank">Event</a>
+                            <a class="nav-link waves-effect menu" href="#">Event</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect" href="#" target="_blank">Special Deals</a>
+                            <a class="nav-link waves-effect menu" href="#">Special Deals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect" href="#" target="_blank">About us</a>
+                            <a class="nav-link waves-effect menu" href="#">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect" href="#" target="_blank">Contact</a>
+                            <a class="nav-link waves-effect menu" href="#" >Contact</a>
                         </li>
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                    
                         <li class="nav-item">
-                            <a href="event/create.php" class="nav-link waves-effect">
+                            <a href="event/create.php" class="nav-link waves-effect menu">
                                 <i class="fa fa-login"></i>Create Event
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link waves-effect" target="_blank">
+                        <li class="nav-item" style="margin-right: 60px;">
+                            <a href="#" class="nav-link waves-effect menu">
                                 <i class="fa fa-login"></i>Sell Products
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item menu">
 <?php if ((!isset($_SESSION['first_name']))){
 
 echo 
@@ -157,7 +161,7 @@ echo
 ?>
 
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item menu">
                            
     <?php if ((isset($_SESSION['email']))){
 
@@ -459,31 +463,31 @@ echo 'Welcome, ' . $_SESSION['first_name'];
 
         <!-- Social icons -->
         <div class="pb-4">
-            <a href="#" target="_blank">
+            <a href="#">
                 <i class="fa fa-facebook mr-3"></i>
             </a>
 
-            <a href="#" target="_blank">
+            <a href="#">
                 <i class="fa fa-twitter mr-3"></i>
             </a>
 
-            <a href="#" target="_blank">
+            <a href="#">
                 <i class="fa fa-youtube mr-3"></i>
             </a>
 
-            <a href="#" target="_blank">
+            <a href="#">
                 <i class="fa fa-google-plus mr-3"></i>
             </a>
 
-            <a href="#" target="_blank">
+            <a href="#">
                 <i class="fa fa-dribbble mr-3"></i>
             </a>
 
-            <a href="#" target="_blank">
+            <a href="#">
                 <i class="fa fa-pinterest mr-3"></i>
             </a>
 
-            <a href="#" target="_blank">
+            <a href="#">
                 <i class="fa fa-github mr-3"></i>
             </a>
 

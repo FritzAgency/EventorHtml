@@ -295,6 +295,42 @@
          <!-- /. PAGE WRAPPER  -->
         </div>
      <!-- /. WRAPPER  -->
+</div>
+     <!-- footer goes here -->
+<footer style="background-color: #4f2684; padding: 10px; height: 70px; margin-top: 10px;">
+  <div class="row">
+    <div class="col-sm-2">
+      <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
+    </div>
+    <div class="col-sm-8">
+      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
+        <div class="col-sm-5">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">How it works</p></a>
+        </div>
+        <div class="col-sm-4">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">About us</p></a>
+        </div>
+        <div class="col-sm-3">
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">Contact</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"> 
+      <div class="row">
+        <div class="col-sm-4">
+          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+        </div>
+        <div class="col-sm-4">
+            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer ends here -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
     <script src="assets/js/jquery-1.10.2.js"></script>
@@ -306,8 +342,7 @@
      <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
     <script src="assets/js/morris/morris.js"></script>
       <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
-    
+    <script src="assets/js/custom.js"></script>   
    
 </body>
 </html>

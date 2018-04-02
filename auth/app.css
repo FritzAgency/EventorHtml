@@ -14,6 +14,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0;
+  background-color: black;
+}
+
 article,
 aside,
 details,
@@ -76,7 +81,7 @@ h1 {
 }
 
 mark {
-  background:grey;
+  background: grey;
   color: #000;
 }
 
@@ -1402,6 +1407,7 @@ body {
   font-size: 14px;
   line-height: 1.6;
   color: #636b6f;
+  background-color: green;
 }
 
 input,
@@ -1450,7 +1456,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.6;
-  background-color: grey;
+  background-color: green;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -3049,7 +3055,7 @@ th {
 }
 
 .table .table {
-  background-color: grey;
+  background-color: green;
 }
 
 .table-condensed > thead > tr > th,
@@ -8345,6 +8351,9 @@ button.close {
   }
 }
 
+body {
+  background-color: yellow;
+}
 
 *[role="form"] {
   max-width: 530px;

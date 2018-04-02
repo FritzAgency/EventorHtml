@@ -254,14 +254,14 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
 <section class="text-center pb-3 my-5">
 
   <div class="row">
-    <div class="col-6 col-lg-4">
+    <div class="col-3 col-sm-3 col-lg-3">
       <!--Card-->
       <div class="flex-center">
 
 <!--Content-->
 <div class="text-center">
     <div class="card-body">
-    <h2 class="font-weight-bold mb-2 flex-center" style="margin-top: 10px;">ABOUT</h2>
+    <h2 class="font-weight-bold mb-2 flex-center wow fadeInUp" style="margin-top: 10px;">ABOUT</h2>
     </div>
 </div>
 
@@ -270,13 +270,14 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
 </div>
 
     
-    <div class="col-12 col-sm-6 col-lg-8"><!--Card-->
+    <div class="col-8 col-sm-4 col-lg-9"><!--Card-->
         <div>
 
             <!--Content-->
             <div class="text-center">
                 <div class="card-body">
-                    
+                <h1 class="display-4 font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInUp">A Trip to Olumo Rock</h1>
+            <h5 class="pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 wow fadeInUp" data-wow-delay="0.2s">It comes with a lot of new features, easy to follow videos and images. Check it out now!</h5>
                 </div>
             </div>
 

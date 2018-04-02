@@ -15,7 +15,7 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
 
@@ -25,7 +25,7 @@ body {
 }
 
 .text {
-  color: white;
+  color: black;
   font-size: 13px;
   position: absolute;
   top: 8%;
@@ -34,6 +34,56 @@ body {
   -ms-transform: translate(-10%, -8%);
   text-align: left;
 }
+
+div#carousel-example-generic {
+    position:relative;
+}
+
+div.form-group {
+    position: absolute;
+z-index: 9999908;
+top: 510px;
+left: 522px;
+right: auto;
+bottom: auto;
+}
+
+ #custom-search-form {
+        margin:0;
+        margin-top: 5px;
+        padding: 0;
+    }
+ 
+    #custom-search-form .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-form button {
+        border: 0;
+    background: transparent;
+    padding: 2px 5px;
+    position: relative;
+    left: 440px;
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    top: -57px;
+}
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
 
 </style>
 
@@ -65,7 +115,12 @@ body {
 
                     <!-- Left -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
+                       
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
                             <a class="nav-link waves-effect" href="#">How It Works
                                 <span class="sr-only">(current)</span>
                             </a>
@@ -82,10 +137,6 @@ body {
                         <li class="nav-item">
                             <a class="nav-link waves-effect" href="#" target="_blank">Contact</a>
                         </li>
-                    </ul>
-
-                    <!-- Right -->
-                    <ul class="navbar-nav nav-flex-icons">
                         <li class="nav-item">
                             <a href="event/newRegform.php" class="nav-link waves-effect" target="_blank">
                                 <i class="fa fa-login"></i>Create Event
@@ -155,11 +206,11 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                 <!--Carousel Wrapper-->
                 <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
                     <!--Indicators-->
-                    <ol class="carousel-indicators">
+                    <!-- <ol class="carousel-indicators">
                         <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-1z" data-slide-to="1"></li>
                         <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-                    </ol>
+                    </ol> -->
                     <!--/.Indicators-->
                     <!--Slides-->
                     <div class="carousel-inner" role="listbox">
@@ -192,6 +243,18 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!--/.Controls-->
                 </div>
                 <!--/.Carousel Wrapper-->
+                <div class="container form-group" style="width: 33%; height: 62px; background-color: rgba(79, 38, 132, 0.4);">
+	<div class="row" style="height: 55px;">
+        <div class="span12" style="height: 55px;">
+            <form id="custom-search-form" class="form-search form-horizontal pull-right" style="80px">
+                <div class="input-append span12" style="height:43px;">
+                    <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="Find an Event Here" style="width: 464px; height: 41px; background-color: transparent; border: 2px solid #ffffff; margin-left: 17px; margin-top: 5px; color: white; text-align: center;"></p>
+                    <button type="submit" style="width: 45px; height: 41px; color: white;"><i class="fa fa-search fa-lg"></i></button>
+                </div>
+            </form>
+        </div>
+	</div>
+</div>
 
 
             </section>
@@ -206,15 +269,15 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-12 mb-3">
 
-                        <div class="view overlay z-depth-1-half">
+                        <div class="view overlay z-depth-1-half zoom">
                             <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img(115).jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask rgba-white-light">
+                                <div class="mask rgba-red-dark">
                                     <div class="text">
-                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><span class="glyphicon glyphicon-calendar" style="padding:5px; margin: 2px;"></span>Feb 11, 2018</p>
-                                        <p><span class="glyphicon glyphicon-tasks" style="padding:5px; margin: 2px;"></span>200</p>
-                                        <p><span class="glyphicon glyphicon-film" style="padding:5px; margin: 2px;"></span>Music Entertainment</p>
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
                                         <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
                                     </div>
                                 </div>
@@ -227,15 +290,15 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half">
+                        <div class="view overlay z-depth-1-half zoom">
                             <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img(116).jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask rgba-white-light">
+                                <div class="mask rgba-blue-light">
                                     <div class="text">
                                         <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><span class="glyphicon glyphicon-calendar" style="padding:5px; margin: 2px;"></span>Feb 11, 2018</p>
-                                        <p><span class="glyphicon glyphicon-tasks" style="padding:5px; margin: 2px;"></span>200</p>
-                                        <p><span class="glyphicon glyphicon-film" style="padding:5px; margin: 2px;"></span>Music Entertainment</p>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
                                         <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
                                     </div>
                                 </div>
@@ -248,15 +311,15 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half">
+                        <div class="view overlay z-depth-1-half zoom">
                             <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img(117).jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask rgba-white-light">
+                                <div class="mask rgba-blue-light">
                                     <div class="text">
-                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><span class="glyphicon glyphicon-calendar" style="padding:5px; margin: 2px;"></span>Feb 11, 2018</p>
-                                        <p><span class="glyphicon glyphicon-tasks" style="padding:5px; margin: 2px;"></span>200</p>
-                                        <p><span class="glyphicon glyphicon-film" style="padding:5px; margin: 2px;"></span>Music Entertainment</p>
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
                                         <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
                                     </div>
                                 </div>
@@ -280,10 +343,10 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                             <a>
                                 <div class="mask rgba-white-light">
                                     <div class="text">
-                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><span class="glyphicon glyphicon-calendar" style="padding:5px; margin: 2px;"></span>Feb 11, 2018</p>
-                                        <p><span class="glyphicon glyphicon-tasks" style="padding:5px; margin: 2px;"></span>200</p>
-                                        <p><span class="glyphicon glyphicon-film" style="padding:5px; margin: 2px;"></span>Music Entertainment</p>
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
                                         <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
                                     </div>
                                 </div>
@@ -301,10 +364,10 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                             <a>
                                 <div class="mask rgba-white-light">
                                     <div class="text">
-                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><span class="glyphicon glyphicon-calendar" style="padding:5px; margin: 2px;"></span>Feb 11, 2018</p>
-                                        <p><span class="glyphicon glyphicon-tasks" style="padding:5px; margin: 2px;"></span>200</p>
-                                        <p><span class="glyphicon glyphicon-film" style="padding:5px; margin: 2px;"></span>Music Entertainment</p>
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
                                         <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
                                     </div>
                                 </div>
@@ -328,10 +391,10 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                             <a>
                                 <div class="mask rgba-white-light">
                                     <div class="text">
-                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
-                                        <p><span class="glyphicon glyphicon-calendar" style="padding:5px; margin: 2px;"></span>Feb 11, 2018</p>
-                                        <p><span class="glyphicon glyphicon-tasks" style="padding:5px; margin: 2px;"></span>200</p>
-                                        <p><span class="glyphicon glyphicon-film" style="padding:5px; margin: 2px;"></span>Music Entertainment</p>
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px;">Title of Event Here</p>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
                                         <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
                                     </div>
                                 </div>
@@ -365,7 +428,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
                     <p class="mb-4">
                         <strong>The most comprehensive Event creator and also a platform that allows you to sell your products and services.                            versions available. Create your own, stunning website.</strong>
                     </p>
-                    <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start Your event creation
+                    <a target="_blank" href="#" class="btn btn-outline-white btn-lg">Start Your event creation
                         <i class="fa fa-graduation-cap ml-2"></i>
                     </a>
 
@@ -383,10 +446,10 @@ echo 'Welcome, ' . $_SESSION['first_name'];
 
         <!--Call to action-->
         <div class="pt-4">
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Download MDB
+            <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Become a Vendor
                 <i class="fa fa-download ml-2"></i>
             </a>
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Start free tutorial
+            <a class="btn btn-outline-white" href="#" target="_blank" role="button">Create Event
                 <i class="fa fa-graduation-cap ml-2"></i>
             </a>
         </div>
@@ -396,31 +459,31 @@ echo 'Welcome, ' . $_SESSION['first_name'];
 
         <!-- Social icons -->
         <div class="pb-4">
-            <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+            <a href="#" target="_blank">
                 <i class="fa fa-facebook mr-3"></i>
             </a>
 
-            <a href="https://twitter.com/MDBootstrap" target="_blank">
+            <a href="#" target="_blank">
                 <i class="fa fa-twitter mr-3"></i>
             </a>
 
-            <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+            <a href="#" target="_blank">
                 <i class="fa fa-youtube mr-3"></i>
             </a>
 
-            <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+            <a href="#" target="_blank">
                 <i class="fa fa-google-plus mr-3"></i>
             </a>
 
-            <a href="https://dribbble.com/mdbootstrap" target="_blank">
+            <a href="#" target="_blank">
                 <i class="fa fa-dribbble mr-3"></i>
             </a>
 
-            <a href="https://pinterest.com/mdbootstrap" target="_blank">
+            <a href="#" target="_blank">
                 <i class="fa fa-pinterest mr-3"></i>
             </a>
 
-            <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+            <a href="#" target="_blank">
                 <i class="fa fa-github mr-3"></i>
             </a>
 
@@ -433,7 +496,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
         <!--Copyright-->
         <div class="footer-copyright py-3">
             © 2018 Copyright:
-            <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
+            <a href="#"> Eventor.com </a>
         </div>
         <!--/.Copyright-->
 
@@ -442,6 +505,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
+
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>

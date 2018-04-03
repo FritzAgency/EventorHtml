@@ -281,7 +281,7 @@ echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves
 if((isset($_COOKIE['first_name']))){
 //link to the dashboard and logout dashboard
 echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
-list-style-type: none;">me
+list-style-type: none;">
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
 </a>

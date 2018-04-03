@@ -241,7 +241,7 @@ if(isset($message)){
 <label for="file" style="color: white">Upload organizer's Logo</label-->
 
         <div class="custom-file-container" data-upload-id="myUniqueUploadId">
-            <label>Upload Event flier<a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">&nbsp; &nbsp; X</a></label>
+            <label>Upload Event Image<a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">&nbsp; &nbsp; X</a></label>
 
             <label class="custom-file-container__custom-file" >
                 <input type="file" name="event_flier" class="inputfile custom-file-container__custom-file__custom-file-input" accept="*" multiple>
@@ -284,22 +284,10 @@ if(isset($message)){
 
 <!--p> Organizer's Logo </p-->
 
-    <!--p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p-->
-<!--p>  <input type='file' name="org_logo" onchange="readURL(this);"/> </p-->
+   
 
-  
-    <span class="btn btn-sm" style="background-color: #3b2a53; border-color: white">
-      <label for="file" style="color: white">Upload organizer's Logo
-    <input type="file" name="org_logo" id="file" class="inputfile" onchange="readURL(this);"/>
-    <span class="glyphicon glyphicon-upload" style="color:white"></span>
-</span>
-</label>
-
-<div>
-  <img id="blah" src="http://placehold.it/180" alt="your image" style="max-width:100px;  height:100px;
-  margin-top:20px;"/>
-</div>
-
+<label>Upload Organizer's logo</label>
+ <p><input type="file" id="js-upload-files" placeholder="Organizer's Logo" oninput="this.className = ''" name="org_logo"></p>
 
 
     <!--p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook" style="margin-top:10px"></p-->
@@ -319,11 +307,11 @@ if(isset($message)){
    <input  type="text" class="form-control" name="instagram" placeholder="Instagram handle">
 
  </div>
- <div class="input-group" style="margin-bottom: 15px;">
+ <!--div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">@</span>
    <input  type="text" class="form-control" name="instagram" placeholder="instagram handle">
 
- </div>
+ </div-->
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">Facebook.com/</span>
    <input type="text" class="form-control" name="facebook" placeholder="Facebook username">

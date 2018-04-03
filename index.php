@@ -25,7 +25,7 @@ body {
 }
 
 .text {
-  color: black;
+  color: white;
   font-size: 14px;
   position: absolute;
   top: 8%;
@@ -39,35 +39,101 @@ div#carousel-example-generic {
     position:relative;
 }
 
-div.form-group {
-    position: absolute;
-z-index: 9999908;
-top: 70%;
-    left: 35%;
-right: auto;
-bottom: auto;
+
+/* #container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+} */
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* .carousel {
+  margin-bottom: 60px;
+} */
+
+.carousel-control {
+  top: 50%;
 }
 
- #custom-search-form {
+/* .carousel-caption {
+  z-index: 10;
+} */
+
+/* .carousel .item {
+  height: 500px;
+  background-color:#bbb;
+  overflow:hidden;
+} */
+/* .carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+} */
+
+#searchForm {
+	position:absolute;
+  	top:86%;
+}
+
+.form-group{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+/* @media (max-width: 768px) {
+
+  .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+  	max-width:inherit;
+  }
+
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+} */
+
+
+/* div.form-group {
+    display: inline block;
+    position: relative;
+    z-index: 10;
+    left: auto;
+    right: auto;
+    bottom: auto;
+} */
+
+ /* #custom-search-form {
         margin:0;
         margin-top: 5px;
         padding: 0;
-    }
+    } */
  
-    #custom-search-form .search-query {
+    /* #custom-search-form .search-query {
         padding-right: 3px;
         padding-right: 4px \9;
         padding-left: 3px;
-        padding-left: 4px \9;
+        padding-left: 4px \9; */
         /* IE7-8 doesn't have border-radius, so don't indent the padding */
  
-        margin-bottom: 0;
+        /* margin-bottom: 0;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
     }
- 
-    #custom-search-form button {
+  */
+    /* #custom-search-form button {
         border: 0;
     background: transparent;
     padding: 2px 5px;
@@ -77,13 +143,13 @@ bottom: auto;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    top: -53px;
-}
+    top: -53px; */
+/* }
     }
  
     .search-query:focus + button {
-        z-index: 3;   
-    }
+        z-index: 1;   
+    } */
 
 .menu{
     font-size: 14px;
@@ -100,6 +166,22 @@ bottom: auto;
     border: 2px solid #ffffff;
 }
 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
+.carousel-control.left {
+    z-index:7
+}  
+.carousel-control.right {
+    z-index:7
+}
+
+.mdb-color.darken-2 {
+
+background-color: #4f2684 !important;
+
+}
 </style>
 
 
@@ -115,7 +197,7 @@ bottom: auto;
             <div class="container">
 
                 <!-- Brand -->
-                <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+                <a class="navbar-brand waves-effect" href="#">
                     <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
                 </a>
 
@@ -153,7 +235,7 @@ bottom: auto;
                     <ul class="navbar-nav nav-flex-icons">
                     
                         <li class="nav-item">
-                            <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
+                            <a href="EVENTORHTML/event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
                                 <i class="fa fa-login"></i>Create Event
                             </a>
                         </li>
@@ -244,16 +326,17 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
                         <!--/First slide-->
                         <!--Second slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg" alt="Second slide">
+                            <img class="d-block w-100" src="img/carousel.jpg" alt="Second slide">
                         </div>
                         <!--/Second slide-->
                         <!--Third slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(133).jpg" alt="Third slide">
+                            <img class="d-block w-100" src="img/carousel.jpg" alt="Third slide">
                         </div>
                         <!--/Third slide-->
                     </div>
                     <!--/.Slides-->
+                    
                     <!--Controls-->
                     <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -264,11 +347,26 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
                         <span class="sr-only">Next</span>
                     </a>
                     <!--/.Controls-->
+                    <div><form class="col-sm-12" id="searchForm">
+    <div class="form-group col-sm-6 col-sm-offset-2">
+      <div class="input-group input-group-lg center-block" style="background-color: rgba(79, 38, 132, 0.4);">
+        <div class="row" style="border: 2px solid white; margin: 7px; width: 100%;">
+        <div class="col-sm-11">
+        <input type="text" class="form-control" value="Find an Event here" style="padding-top: 7px; background-color: transparent; color: white; text-align:center; border: 0px;">
+        </div>
+        <div class="col-sm-1">
+        <span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: white; font-size: 2.333333em; vertical-align: -61%;"></i></span>
+        <div>
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
                 </div>
                 <!--/.Carousel Wrapper-->
-                <div class="container form-group" style="width: 26%; height: 62px; background-color: rgba(79, 38, 132, 0.4);">
+                <!-- <div class="container form-group" style="width: 26%; height: 62px; background-color: rgba(79, 38, 132, 0.4);">
 	<div class="row" style="height: 55px;">
-        <div class="span12" style="height: 55px;">
+        <div class="span12" style="height: 55px;" id="nav">
             <form id="custom-search-form" class="form-search form-horizontal pull-right">
                 <div class="input-append span12" style="height:43px;">
                     <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="Find an Event Here" style="width: 169%; height: 41px; background-color: transparent; border: 2px solid #ffffff; margin-left: 17px; margin-top: 5px; color: white; text-align: center;"></p>
@@ -277,7 +375,7 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
             </form>
         </div>
 	</div>
-</div>
+</div> -->
 
 
             </section>
@@ -292,10 +390,10 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-12 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom">
-                            <img src="img/newimg.jpg" class="img-fluid" alt="">
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/1.jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask back" style="background-color: rgba(79, 38, 132, 0.2);">
+                                <div class="mask back" style="background-color: rgba(79, 38, 132, 0.6);">
                                     <div class="text">
                                     <div class="doe">
                                     <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
@@ -315,10 +413,10 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom">
-                            <img src="img/newimg.jpg" class="img-fluid" alt="">
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/2.jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.2);">
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
                                     <div class="text">
                                         <div class="doe">
                                         <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
@@ -338,10 +436,10 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half zoom">
-                            <img src="img/newimg.jpg" class="img-fluid" alt="">
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/3.jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.2);">
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
                                     <div class="text">
                                     <div class="doe">
                                     <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
@@ -359,23 +457,21 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
                     <!-- Grid column -->
 
                 </div>
-                <!-- Grid row -->
-
                 <!-- Grid row -->
                 <div class="row">
 
                     <!-- Grid column -->
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-12 mb-3">
 
-                        <div class="view overlay z-depth-1-half">
-                            <img src="img/newimg.jpg" class="img-fluid" alt="">
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/4.jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask rgba-white-light" style="background-color: rgba(79, 38, 132, 0.2);">
+                                <div class="mask back" style="background-color: rgba(79, 38, 132, 0.6);">
                                     <div class="text">
                                     <div class="doe">
                                     <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
-                                    </div>   
-                                    <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
+                                </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
                                         <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
                                         <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
                                         <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
@@ -388,16 +484,39 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-6 mb-3">
 
-                        <div class="view overlay z-depth-1-half">
-                            <img src="img/newimg.jpg" class="img-fluid" alt="">
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/5.jpg" class="img-fluid" alt="">
                             <a>
-                                <div class="mask rgba-white-light" style="background-color: rgba(79, 38, 132, 0.2);">
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                        <div class="doe">
+                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
+                                        </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
+                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/6.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
                                     <div class="text">
                                     <div class="doe">
                                     <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
-                                </div>    
+                                    </div>
                                     <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
                                         <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
                                         <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
@@ -411,38 +530,11 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
                     <!-- Grid column -->
 
                 </div>
+                <!-- Grid row -->
                 <!-- Grid row -->
 
                 <!-- Grid row -->
                 <div class="row">
-
-                    <!-- Grid column -->
-                    <div class="col-md-12 mb-3">
-
-                        <div class="view overlay z-depth-1-half">
-                            <img src="img/carousel.jpg" class="img-fluid" alt="">
-                            <a>
-                                <div class="mask rgba-white-light" style="background-color: rgba(79, 38, 132, 0.2);">
-                                    <div class="text">
-                                    <div class="doe">
-                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Title of Event Here</p>
-                                </div>    
-                                    <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
-                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
-                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!-- Grid row -->
-
-
             </section>
 
 
@@ -475,21 +567,21 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
     <!--Main layout-->
 
     <!--Footer-->
-    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn" style="background-color: #4f2684;">
 
         <!--Call to action-->
-        <div class="pt-4">
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Become a Vendor
+        <div class="pt-4" style="background-color:#4f2684;">
+            <a class="btn btn-outline-white" href="#" role="button">Become a Vendor
             </a>
             <a class="btn btn-outline-white" href="#" target="_blank" role="button">Create Event
             </a>
         </div>
         <!--/.Call to action-->
 
-        <hr class="my-4">
+        <hr class="my-4" style="background-color: #4f2684; color: #4f2684;">
 
         <!-- Social icons -->
-        <div class="pb-4">
+        <div class="pb-4" style="background-color:#4f2684;">
             <a href="#">
                 <i class="fa fa-facebook mr-3"></i>
             </a>
@@ -512,7 +604,7 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
         <!-- Social icons -->
 
         <!--Copyright-->
-        <div class="footer-copyright py-3">
+        <div class="footer-copyright py-3" style="background-color:#4f2684;">
             © 2018 Copyright:
             <a href="#"> Eventor.com </a>
         </div>

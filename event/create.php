@@ -152,7 +152,7 @@ button:hover {
  <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
   <div class="container-fluid">
     <div class="navbar-header" >
-      <div class="col-sm-2 col-md-3 col-xm-4">
+      <div class="col-sm-2 col-md-3 col-xm-4" style="width: 19%;">
       <a class="navbar-brand" href="../index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
       </div>
     </div>
@@ -198,7 +198,6 @@ require_once('../event/createclass.php');
                 <!-- rounded number ends here -->
 
         <!-- line breaker for sections -->
-        <hr style="margin-top: 0px; color: #4f2684;">
         <!-- line breaker ends here -->
 <form id="regForm" action="" method="post" enctype="multipart/form-data">
   <p style="font-family: Arial; text-align: center; font-weight: bolder; color: #4f2684; font-size: 30px">CREATE EVENT</p>
@@ -255,18 +254,11 @@ if(isset($message)){
 
             </label>
 
-             <div class="custom-file-container__image-preview" style="height: 500px; width: 700px"> </div>
+             <div class="custom-file-container__image-preview" style="height: 500px; width: 100%;"> </div>
 
 
 
         </div>
-
-
-
-
-
-
-
 
 
 <div class="row">
@@ -412,51 +404,7 @@ if(isset($message)){
     <p> Activity Time </p>
     <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p-->
   </div>
-  <!-- <div class="tab"><h4 style="font-weight: bold; color: #4f2684">SCHEDULE</h4> 
-
-    <p><input placeholder="Name of Schedule" oninput="this.className = ''" name="sch_name" ></p> -->
-
-<!-- <p> When the schedule starts: </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="sch_start"></p>
-
-<p> When the schedule ends: </p>
-    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end"></p> -->
-
-
-    <!--p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="sch_end"></p-->
-
-
-    <!-- Scheduled 2
-    <p><input  placeholder="Enter event schedule here" oninput="this.className = ''" name="sch_name1"></p>
-
-    <p><input type="time" placeholder="Enter start time here" oninput="this.className = ''" name="sch_start1"></p>
-
-    <p><input type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end1"></p> -->
-
-    <!--p><input placeholder="" oninput="this.className = ''" name="yyyy"></p-->
-
-    <!-- Scheduled 3
-    <p><input  placeholder="Enter event schedule here" oninput="this.className = ''" name="sch_name2"></p>
-    
-    <p><input type="time" placeholder="Enter start time here" oninput="this.className = ''" name="sch_start2"></p>
-    
-    <p><input  type="time" placeholder="Enter end time here" oninput="this.className = ''" name="sch_end2"></p> -->
-
-    <!--p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p-->
-
-   <!-- Schedule 4
-    <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
-    <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>
-
-    Schedule 5
-    <p><input placeholder="Enter event schedule here" oninput="this.className = ''" name="dd"></p>
-    <p><input placeholder="Enter start time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter end time here" oninput="this.className = ''" name="yyyy"></p>
-    <p><input placeholder="Enter Date of Activity here" oninput="this.className = ''" name="yyyy"></p>--> 
-
-  <!-- </div> -->
+ 
   <div style="overflow:auto;">
     <div style="float:right;">
       <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
@@ -466,7 +414,6 @@ if(isset($message)){
 
   <!-- Circles which indicates the steps of the form: -->
   <div style="text-align:center;margin-top:40px;">
-    <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>

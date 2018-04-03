@@ -259,10 +259,6 @@ echo
 '<a href="auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
 <i class="fa fa-login"></i>Login</a>';      
 }
-else {
-    echo '<a href="event/dashboard.php" class="nav-link waves-effect">
-<i class="fa fa-login"></i>Dashboard</a>';  
-}
 ?>
 
                         </li>
@@ -270,14 +266,9 @@ else {
 
                         <li class="nav-item menu">
                            
-    <?php if ((isset($_COOKIE['email']))){
+    <?php if ((!isset($_COOKIE['email']))){
 
 
-echo'<a href="auth/logout.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Logout</a>
-'; 
-
- 
-}else{
 
 echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
 '; 
@@ -288,23 +279,26 @@ echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves
     
 </li>
 <!-- drop down for dashboard and logout -->
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
-    </a>
-    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-    </div>
-</li>
 <!-- drop down for dashboard and logout ends here -->
 </ul>
 
     
     <?php 
 if((isset($_COOKIE['first_name']))){
-echo 'Welcome, ' . $_COOKIE['first_name'];
-} 
+
+//link to the dashboard and logout dashboard
+
+echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
+    list-style-type: none;">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+    </a>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="event/dashboard.php">Dashboard</a>
+        <a class="dropdown-item" href="auth/logout.php">Logout</a>
+    </div>
+</li>'; 
+}
 ?>
 
 

@@ -374,7 +374,7 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
         <input type="text" class="form-control" value="Find an Event here" style="padding-top: 7px; background-color: transparent; color: white; text-align:center; border: 0px;">
         </div>
         <div class="col-sm-1">
-        <span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: white; font-size: 2.333333em; vertical-align: -61%;"></i></span>
+        <span class="input-group-addon"><i class="fa fa-search" style="color: white; font-size: 1.333333em; vertical-align: -61%;"></i></span>
         <div>
         </div>
       </div>

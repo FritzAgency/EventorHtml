@@ -235,7 +235,7 @@ background-color: #4f2684 !important;
                     <ul class="navbar-nav nav-flex-icons">
                     
                         <li class="nav-item">
-                            <a href="EVENTORHTML/event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
+                            <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
                                 <i class="fa fa-login"></i>Create Event
                             </a>
                         </li>

@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="#a20eab"><img src="" alt="">Eventor Logo</a> 
+                <a class="navbar-brand" href="../index.php" style="#a20eab"><img src="" alt="">Eventor Logo</a> 
             </div>
   <div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust" style="border: 2px solid gray; color: white; background-color: #4f2684; padding: 8px 20px; border-radius: 40px; font-size: 14px; font-weight: bold;">logout</a> </div>
         </nav>   

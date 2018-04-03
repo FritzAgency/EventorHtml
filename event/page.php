@@ -371,15 +371,15 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
 
         <h3 class="h3 text-center mb-5" id="about">ABOUT</h3>
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
-          <li class="nav-item new">
+          <!--li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel11" role="tab">Details</a>
-          </li>
+          </li-->
           <li class="nav-item new">
-            <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel12" role="tab">Price</a>
+            <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel12" role="tab">Ticket Details</a>
         </li>
-          <li class="nav-item new">
+          <!--li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel13" role="tab">Organizer</a>
-          </li>
+          </li-->
           <li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel14" role="tab">Location</a>
           </li>
@@ -556,12 +556,12 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
           <!--/.Panel 3-->
       
           <!--Panel 4-->
-          <div class="tab-pane fade" id="panel11" role="tabpanel">
+          <!--div class="tab-pane fade" id="panel11" role="tabpanel">
               <br>
       
               details of event here
       
-          </div>
+          </div-->
           <!--/.Panel 4-->
 
           <!--Panel 5-->
@@ -580,19 +580,21 @@ $select = mysqli_query($con,"SELECT `sponsor_logo` FROM `event` WHERE `sponsor_l
 //$result = mysqli_query($con,$query) or die(mysqli_error());
 
 
+
+
 //$row = mysqli_num_rows($result) or die(mysqli_error());
 
 
 
-if (mysqli_num_rows($select) === 1){
+if (mysqli_num_rows($select) == 1){
  
- echo "<center><img src='../public/images/$sponsor_logo' alt='Any' class='img-fluid'><p style='margin-right:-20px '>$sponsor_name</p></center>";  
+ echo "<center><img src='../public/images/$sponsor_logo'  class='img-fluid'><p style='margin-right:-20px '>$sponsor_name</p></center>";  
 
 
 }else{
  
 
- echo '';
+ echo 'Hi Hi hi';
 
 
 }
@@ -612,18 +614,20 @@ if (mysqli_num_rows($select) === 1){
 //$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
 
 
-$select = mysqli_query($con,"SELECT `sponsor_logo1` FROM `event` WHERE `sponsor_logo1` = '$sponsor_logo1'");
+$select1 = mysqli_query($con,"SELECT `sponsor_logo1` FROM `event` WHERE `sponsor_logo1` = '$sponsor_logo1'");
 
 //$result = mysqli_query($con,$query) or die(mysqli_error());
+
+$row = mysqli_fetch_array($select1);
 
 
 //$row = mysqli_num_rows($result) or die(mysqli_error());
 
 
 
-if (mysqli_num_rows($select) === 1){
+if (mysqli_num_rows($select1) == 1){
  
- echo "<center><img src='../public/images/$sponsor_logo1' alt='Any' class='img-fluid'><p style='margin-right:-20px '>$sponsor_name1</p></center>";  
+ echo "<center><img src='../public/images/$sponsor_logo1'  class='img-fluid'><p style='margin-right:-20px '>$sponsor_name1</p></center>";  
 
 
 }else{
@@ -647,9 +651,9 @@ if (mysqli_num_rows($select) === 1){
 //$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
 
 
-$select1 = mysqli_query($con,"SELECT `sponsor_logo2` FROM `event` WHERE `sponsor_logo2` = '$sponsor_logo2'");
+$select2 = mysqli_query($con,"SELECT `sponsor_logo2` FROM `event` WHERE `sponsor_logo2` = '$sponsor_logo2'");
 
-$row = mysqli_fetch_array($select1);
+$row = mysqli_fetch_array($select2);
  
 
 //$result = mysqli_query($con,$query) or die(mysqli_error());
@@ -659,7 +663,7 @@ $row = mysqli_fetch_array($select1);
 
 
 
-if ($row['sponsor_logo2'] == 1){
+if (mysqli_num_rows($select2) == 1){
  
  echo "<center><img src='../public/images/$sponsor_logo2' alt='Any' class='img-fluid'><p style='margin-right:-20px '>$sponsor_name2</p></center>";  
 
@@ -689,12 +693,12 @@ if ($row['sponsor_logo2'] == 1){
 <div class="card card-cascade wider">
 
  <!--Card content-->
-  <div class="card-body text-center">
-      <!--Title-->
+  <!--div class="card-body text-center">
+      <Title>
       <h4 class="card-title"><strong>Regular</strong></h4>
     <hr>
       <p class="card-text">#5,000</p>
-  </div>
+  </div-->
   <!--/.Card content-->
 
 </div>
@@ -707,9 +711,19 @@ if ($row['sponsor_logo2'] == 1){
   <!--Card content-->
    <div class="card-body text-center">
        <!--Title-->
-       <h4 class="card-title"><strong>VIP</strong></h4>
+       <h4 class="card-title"><strong>Ticket Price</strong></h4>
      <hr>
-       <p class="card-text">#25,000</p>
+       <p class="card-text">
+         <?php  if(($ticket_price == 0 )){
+         
+
+          echo 'FREE'; 
+
+       }else{
+         echo   '&#8358;'.$ticket_price;
+       }
+       ?>
+       </p>
    </div>
    <!--/.Card content-->
  
@@ -723,9 +737,17 @@ if ($row['sponsor_logo2'] == 1){
   <!--Card content-->
    <div class="card-body text-center">
        <!--Title-->
-       <h4 class="card-title"><strong>Premium</strong></h4>
+       <h4 class="card-title"><strong>Ticket Available</strong></h4>
      <hr>
-       <p class="card-text">#100,000</p>
+       <p class="card-text"> <?php  if(($ticket_qty == 0 )){
+         
+
+          echo 'Not Specified'; 
+
+       }else{
+         echo   $ticket_qty;
+       }
+       ?></p>
    </div>
    <!--/.Card content-->
  

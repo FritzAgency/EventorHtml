@@ -132,11 +132,11 @@ $count = mysqli_num_rows($result);
 if ($count == 1){
 while( $row = mysqli_fetch_array($result) ){
 
-
+$id = $row['id'];
 
     //$array[]= $row;   
     $_SESSION['email'] = $email; //store the user's email into session 
-    $id = $row['id'];
+    
 
     $first_name = $row['first_name']; 
 
@@ -151,10 +151,11 @@ while( $row = mysqli_fetch_array($result) ){
     $_SESSION['Address'] = $Address; 
 
 
+setcookie ('email' , $row ['email'] , time () + (60 * 60* 24) , '/' ) ; 
 
-setcookie("email", $_SESSION['email'], time() * 7200000);
-setcookie("first_name", $_SESSION['first_name'], time() * 7200000);
-setcookie("id", $_SESSION['id'], time() * 7200000);
+setcookie ('id' , $row ['id'] , time () + (60 * 60 * 24) , '/') ; 
+
+setcookie ('first_name' , $row ['first_name'] , time () + (60 * 60 * 24) , '/') ; 
 
     header("Location: ../index.php");//redirect to the homepage after log in. 
 
@@ -173,11 +174,22 @@ else{
 
 function logout(){
 
-session_start();
-if(session_destroy()) // Destroying All Sessions
+
+setcookie ('email' , $row ['email'] , time () - (60 * 60* 24) , '/' ) ; 
+
+setcookie ('id' , $row ['id'] , time () - (60 * 60 * 24) , '/') ; 
+
+setcookie ('first_name' , $row ['first_name'] , time () - (60 * 60 * 24) , '/') ; 
+
+
+header("Location: ../index.php");
+
+
+//session_start();
+/*if(session_destroy()) // Destroying All Sessions
 {
 header("Location: ../index.php"); // Redirecting To Home Page
-}
+}*/
 
 
 } 

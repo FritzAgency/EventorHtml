@@ -163,7 +163,7 @@ bottom: auto;
                             </a>
                         </li>
                         <li class="nav-item menu">
-<?php if ((!isset($_SESSION['first_name']))){
+<?php if ((!isset($_COOKIE['first_name']))){
 
 echo 
 '<a href="auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
@@ -176,9 +176,11 @@ else {
 ?>
 
                         </li>
+
+
                         <li class="nav-item menu">
                            
-    <?php if ((isset($_SESSION['email']))){
+    <?php if ((isset($_COOKIE['email']))){
 
 
 echo'<a href="auth/logout.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Logout</a>
@@ -199,8 +201,8 @@ echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves
 
     
     <?php 
-if((isset($_SESSION['first_name']))){
-echo 'Welcome, ' . $_SESSION['first_name'];
+if((isset($_COOKIE['first_name']))){
+echo 'Welcome, ' . $_COOKIE['first_name'];
 } 
 ?>
 

@@ -281,7 +281,7 @@ echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves
 if((isset($_COOKIE['first_name']))){
 //link to the dashboard and logout dashboard
 echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
-list-style-type: none;">
+list-style-type: none;">me
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
 </a>
@@ -360,7 +360,8 @@ list-style-type: none;">
         <input type="text" class="form-control" value="Find an Event here" style="padding-top: 7px; background-color: transparent; color: white; text-align:center; border: 0px;">
         </div>
         <div class="col-sm-1">
-        <span class="input-group-addon"><i class="fa fa-search" style="color: white; font-size: 1.333333em; vertical-align: -61%;"></i></span>
+        <span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: white; font-size: 1.333333em; vertical-align: -35%;"></i></span>
+
         <div>
         </div>
       </div>

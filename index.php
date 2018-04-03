@@ -193,110 +193,102 @@ background-color: #4f2684 !important;
 
 <body>
 
-    <!--Main Navigation-->
-    <header>
+<!--Main Navigation-->
+<header>
 
-        <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-            <div class="container">
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
 
-                <!-- Brand -->
-                <a class="navbar-brand waves-effect" href="#">
-                    <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
-                </a>
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" href="#">
+            <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
+        </a>
 
-                <!-- Collapse -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <!-- Links -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-top: 14px;">
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-top: 14px;">
 
-                    <!-- Left -->
-                    <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                            <a class="nav-link waves-effect menu1" href="#">How It Works
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect menu1" href="#">Event</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect menu1" href="#">Special Deals</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect menu1" href="#">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect menu1" href="#" >Contact</a>
-                        </li>
-                    </ul>
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">How It Works
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">Event</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">Special Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#" >Contact</a>
+                </li>
+            </ul>
 
 
-                    
+            
 
-                    <!-- Right -->
-                    <ul class="navbar-nav nav-flex-icons">
-                    
-                        <li class="nav-item">
-                            <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
-                                <i class="fa fa-login"></i>Create Event
-                            </a>
-                        </li>
-                        <li class="nav-item" style="margin-right: 60px;" >
-                            <a href="#" class="nav-link waves-effect menu" style="color:#4f2684;">
-                                <i class="fa fa-login"></i>Sell Products
-                            </a>
-                        </li>
-                        
-                        <li class="nav-item menu">
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+            
+                <li class="nav-item">
+                    <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
+                        <i class="fa fa-login"></i>Create Event
+                    </a>
+                </li>
+                <li class="nav-item" style="margin-right: 60px;" >
+                    <a href="#" class="nav-link waves-effect menu" style="color:#4f2684;">
+                        <i class="fa fa-login"></i>Sell Products
+                    </a>
+                </li>
+                
+                <li class="nav-item menu">
 <?php if ((!isset($_COOKIE['first_name']))){
-
 echo 
 '<a href="auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
 <i class="fa fa-login"></i>Login</a>';      
 }
 ?>
 
-                        </li>
+                </li>
 
 
-                        <li class="nav-item menu">
-                           
-    <?php if ((!isset($_COOKIE['email']))){
-
-
-
+                <li class="nav-item menu">
+                   
+<?php if ((!isset($_COOKIE['email']))){
 echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
 '; 
-
-
 }
 ?>
-    
+
 </li>
 <!-- drop down for dashboard and logout -->
 <!-- drop down for dashboard and logout ends here -->
 </ul>
 
-    
-    <?php 
+
+<?php 
 if((isset($_COOKIE['first_name']))){
-
 //link to the dashboard and logout dashboard
-
 echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
-    list-style-type: none;">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        
-    </a>
-    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="event/dashboard.php">Dashboard</a>
-        <a class="dropdown-item" href="auth/logout.php">Logout</a>
-    </div>
+list-style-type: none;">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item" href="event/dashboard.php">Dashboard</a>
+<a class="dropdown-item" href="auth/logout.php">Logout</a>
+</div>
 </li>'; 
 }
 ?>
@@ -305,14 +297,14 @@ echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
 
 
 
-                </div>
+        </div>
 
-            </div>
-        </nav>
-        <!-- Navbar -->
+    </div>
+</nav>
+<!-- Navbar -->
 
-    </header>
-    <!--Main Navigation-->
+</header>
+<!--Main Navigation-->
 
     <!--Main layout-->
     <main class="mt-5 pt-5">
@@ -368,7 +360,8 @@ echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
         <input type="text" class="form-control" value="Find an Event here" style="padding-top: 7px; background-color: transparent; color: white; text-align:center; border: 0px;">
         </div>
         <div class="col-sm-1">
-        <span class="input-group-addon"><i class="fa fa-search" style="color: white; font-size: 1.333333em; vertical-align: -61%;"></i></span>
+        <span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: white; font-size: 1.333333em; vertical-align: -57%;"></i></span>
+
         <div>
         </div>
       </div>
@@ -583,7 +576,7 @@ echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
     <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn" style="background-color: #4f2684;">
 
         <!--Call to action-->
-        <div class="pt-4" style="background-color:#8f2dc2;">
+        <div class="pt-4" style="background-color:#8f2dc2; padding-bottom: 1.5rem;">
             <a class="btn btn-outline-white" href="#" role="button">Become a Vendor
             </a>
             <a class="btn btn-outline-white" href="#" target="_blank" role="button">Create Event
@@ -591,10 +584,8 @@ echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
         </div>
         <!--/.Call to action-->
 
-        <hr class="my-4" style="background-color: ##8f2dc2; color: ##8f2dc2;">
-
         <!-- Social icons -->
-        <div class="pb-4" style="background-color:#4f2684;">
+        <div class="pb-4" style="background-color:#4f2684; padding-top: 1.5rem;">
             <a href="#">
                 <i class="fa fa-facebook mr-3"></i>
             </a>
@@ -617,12 +608,11 @@ echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
         <!-- Social icons -->
 
         <!--Copyright-->
-        <div class="footer-copyright py-3" style="background-color:#4f2684;">
+        <div class="footer-copyright py-3" style="background-color:#4f2684; padding-top: 0px;">
             © 2018 Copyright:
             <a href="#"> Eventor.com </a>
         </div>
         <!--/.Copyright-->
-
     </footer>
     <!--/.Footer-->
 

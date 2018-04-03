@@ -152,7 +152,11 @@ body {
     } */
 
 .menu{
-    font-size: 14px;
+    font-size: 13px;
+}
+
+.menu1{
+    font-size:12px;
 }
 
 .doe{
@@ -208,28 +212,31 @@ background-color: #4f2684 !important;
                 </button>
 
                 <!-- Links -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-top: 14px;">
 
                     <!-- Left -->
                     <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                            <a class="nav-link waves-effect menu" href="#">How It Works
+                            <a class="nav-link waves-effect menu1" href="#">How It Works
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect menu" href="#">Event</a>
+                            <a class="nav-link waves-effect menu1" href="#">Event</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect menu" href="#">Special Deals</a>
+                            <a class="nav-link waves-effect menu1" href="#">Special Deals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect menu" href="#">About us</a>
+                            <a class="nav-link waves-effect menu1" href="#">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect menu" href="#" >Contact</a>
+                            <a class="nav-link waves-effect menu1" href="#" >Contact</a>
                         </li>
                     </ul>
+
+
+                    
 
                     <!-- Right -->
                     <ul class="navbar-nav nav-flex-icons">
@@ -244,6 +251,7 @@ background-color: #4f2684 !important;
                                 <i class="fa fa-login"></i>Sell Products
                             </a>
                         </li>
+                        
                         <li class="nav-item menu">
 <?php if ((!isset($_SESSION['first_name']))){
 
@@ -277,6 +285,17 @@ echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves
 ?>
     
 </li>
+<!-- drop down for dashboard and logout -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+    </a>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+    </div>
+</li>
+<!-- drop down for dashboard and logout ends here -->
 </ul>
 
     
@@ -568,7 +587,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
     <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn" style="background-color: #4f2684;">
 
         <!--Call to action-->
-        <div class="pt-4" style="background-color:#4f2684;">
+        <div class="pt-4" style="background-color:#8f2dc2;">
             <a class="btn btn-outline-white" href="#" role="button">Become a Vendor
             </a>
             <a class="btn btn-outline-white" href="#" target="_blank" role="button">Create Event
@@ -576,7 +595,7 @@ echo 'Welcome, ' . $_SESSION['first_name'];
         </div>
         <!--/.Call to action-->
 
-        <hr class="my-4" style="background-color: #4f2684; color: #4f2684;">
+        <hr class="my-4" style="background-color: ##8f2dc2; color: ##8f2dc2;">
 
         <!-- Social icons -->
         <div class="pb-4" style="background-color:#4f2684;">

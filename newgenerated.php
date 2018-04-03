@@ -245,7 +245,7 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
 
   <!--Main layout-->
   <main>
-    <div class="container" id="about">
+    <div class="container-fluid wow fadeIn" id="about">
 
       <!--Section: Main info-->
       <section class="mt-5 wow fadeIn card">
@@ -270,7 +270,8 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
 </div>
 
     
-    <div class="col-8 col-sm-4 col-lg-9"><!--Card-->
+    <div class="col-8 col-sm-4 col-lg-9">
+      <!--Card-->
         <div>
 
             <!--Content-->
@@ -278,414 +279,59 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
                 <div class="card-body">
                 <h1 class="display-4 font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInUp">A Trip to Olumo Rock</h1>
             <h5 class="pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 wow fadeInUp" data-wow-delay="0.2s">It comes with a lot of new features, easy to follow videos and images. Check it out now!</h5>
-                </div>
-            </div>
-
-        </div>
-        <!--Card-->
-    </div>
-</div>
-
-
-    <!--Grid column-->
-    <!-- <div class="col-lg-4 col-md-12 mb-4"> -->
-        <!--Card-->
-        <!-- <div class="card"> -->
-
-            <!--Content-->
-            <!-- <div class="text-center">
-                <div class="card-body">
-                    <h5>Advanced plan</h5>
-                    <div class="flex-center">
-                        <div class="card-circle">
-                            <i class="fa fa-bar-chart light-blue-text"></i>
-                        </div>
-                    </div> -->
-
-                    <!--Price-->
-                    <!-- <h2 class="font-weight-bold mb-2">99$</h2>
-                    <p class="grey-text">At ab ea a molestiae corrupti numquam quo beatae minima ratione magni accusantium repellat eveniet
-                        quia vitae.</p>
-                    <a class="btn btn-light-blue btn-rounded">Buy now</a>
-                </div>
-            </div> -->
-
-        <!-- </div> -->
-        <!--Card-->
-    <!-- </div> -->
-    <!--Grid column-->
-
-</div>
-<!--Grid row-->
-
-</section>
-<!--Section: Pricing v.3-->
-        
-
-       
-
-      </section>
-      
-
-
-
-        <h3 class="h3 text-center mb-5" id="about">ABOUT</h3>
-        <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
-          <li class="nav-item new">
-              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel11" role="tab">Details</a>
-          </li>
-          <li class="nav-item new">
-            <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel12" role="tab">Price</a>
-        </li>
-          <li class="nav-item new">
-              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel13" role="tab">Organizer</a>
-          </li>
-          <li class="nav-item new">
-              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel14" role="tab">Location</a>
-          </li>
-          <li class="nav-item new">
-              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel15" role="tab">Vendor</a>
-          </li>
-          <li class="nav-item new">
-            <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel16" role="tab">Sponsors</a>
-        </li>
-      </ul>
-      
-      <!-- Tab panels -->
-      <div class="tab-content">
-      
-          <!--Panel 1-->
-          <div class="tab-pane fade in show" id="panel13" role="tabpanel">
-               <!--Grid row-->
-        <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-  
-              <!-- Main heading -->
-              <h3 class="h3 mb-3" style="text-align: right;">Organizer Name goes in here</h3>
-              
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-                <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
-            </div>
-            <!--Grid column-->
-  
-          </div>
-          <!--Grid row-->
-      
-          </div>
-          <!--/.Panel 1-->
-      
-          <!--Panel 2-->
-          <div class="tab-pane fade" id="panel14" role="tabpanel">
-              <br>
-      
-              <!--location goes here map.-->
-
-              <?php 
-
-    if(isset($Address)){
-     echo $Address; 
-    }
-
-    ?>
-
-
-         <!-- The map displays the location filled by the user -->      
-<iframe style=" width: 100%; height: 500px;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDWG8NOZeOKNf9FabkmtqwCpNs04zcT5Yc
-    &q='<?php echo $Address;?>'" allowfullscreen>
-</iframe>
-      
-          </div>
-          <!--/.Panel 2-->
-      
-          <!--Panel 3-->
-          <div class="tab-pane fade" id="panel15" role="tabpanel">
-              <div class="row">
-                <div class="col-md-4 mb-2">
-                  <!--Card Regular-->
-<div class="card card-cascade">
-
-    <!--Card image-->
-    <div class="view overlay">
-        <img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" class="img-fluid" alt="">
-        <a>
-            <div class="mask rgba-white-slight"></div>
-        </a>
-    </div>
-    <!--/.Card image-->
-
-    <!--Card content-->
-    <div class="card-body text-center">
-        <!--Title-->
-        <h4 class="card-title"><strong>Name of Vendor here</strong></h4>
-            <h5>Products or services</h5>
-        <p class="card-text">information
-        </p>
-
-        <!--Facebook-->
-        <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
-        <!--Twitter-->
-        <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
-        <!--Google +-->
-        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a>
-
-    </div>
-    <!--/.Card content-->
-
-</div>
-<!--/.Card Regular-->
-                </div>
-                <div class="col-md-4 mb-2">
-                  <!--Card Regular-->
-<div class="card card-cascade">
-
-    <!--Card image-->
-    <div class="view overlay">
-        <img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" class="img-fluid" alt="">
-        <a>
-            <div class="mask rgba-white-slight"></div>
-        </a>
-    </div>
-    <!--/.Card image-->
-
-    <!--Card content-->
-    <div class="card-body text-center">
-        <!--Title-->
-        <h4 class="card-title"><strong>Name of vendor</strong></h4>
-        <h5>Products or services</h5>
-
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
-        </p>
-
-        <!--Facebook-->
-        <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
-        <!--Twitter-->
-        <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
-        <!--Google +-->
-        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a>
-
-    </div>
-    <!--/.Card content-->
-
-</div>
-<!--/.Card Regular-->
-                </div>
-                <div class="col-md-4 mb-2">
-                  <!--Card Regular-->
-<div class="card card-cascade">
-
-    <!--Card image-->
-    <div class="view overlay">
-        <img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" class="img-fluid" alt="">
-        <a>
-            <div class="mask rgba-white-slight"></div>
-        </a>
-    </div>
-    <!--/.Card image-->
-
-    <!--Card content-->
-    <div class="card-body text-center">
-        <!--Title-->
-        <h4 class="card-title"><strong>Billy Cullen</strong></h4>
-        <h5>Web developer</h5>
-
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
-        </p>
-
-        <!--Facebook-->
-        <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
-        <!--Twitter-->
-        <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
-        <!--Google +-->
-        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a>
-
-    </div>
-    <!--/.Card content-->
-
-</div>
-<!--/.Card Regular-->
-                </div>
-              </div>
-      
-          </div>
-          <!--/.Panel 3-->
-      
-          <!--Panel 4-->
-          <div class="tab-pane fade" id="panel11" role="tabpanel">
-              <br>
-      
-              details of event here
-      
-          </div>
-          <!--/.Panel 4-->
-
-          <!--Panel 5-->
-          <div class="tab-pane fade" id="panel16" role="tabpanel">
-              <div class="row">
-                  <div class="col-md-4">
-  <!-- Display the first sponsors logo--> 
-<?php
-
-
-//$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
-
-
-$select = mysqli_query($con,"SELECT `sponsor_logo` FROM `event` WHERE `sponsor_logo` = '$sponsor_logo'");
-
-//$result = mysqli_query($con,$query) or die(mysqli_error());
-
-
-//$row = mysqli_num_rows($result) or die(mysqli_error());
-
-
-
-if (mysqli_num_rows($select) === 1){
- 
- echo "<center><img src='../public/images/$sponsor_logo' alt='Any' class='img-fluid'><p style='margin-right:-20px '>$sponsor_name</p></center>";  
-
-
-}else{
- 
-
- echo '';
-
-
-}
-
-
-?>
-</div>
-              
-
-               <div class="col-md-4">
-                 
-<!-- display the 2nd sponsors logo--> 
-
-<?php
-
-
-//$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
-
-
-$select = mysqli_query($con,"SELECT `sponsor_logo1` FROM `event` WHERE `sponsor_logo1` = '$sponsor_logo1'");
-
-//$result = mysqli_query($con,$query) or die(mysqli_error());
-
-
-//$row = mysqli_num_rows($result) or die(mysqli_error());
-
-
-
-if (mysqli_num_rows($select) === 1){
- 
- echo "<center><img src='../public/images/$sponsor_logo1' alt='Any' class='img-fluid'><p style='margin-right:-20px '>$sponsor_name1</p></center>";  
-
-
-}else{
-  
- echo '';
-
-}
-
-
-?>
-
-
-               </div>
-
-
-                  <div class="col-md-4">
-<!-- Display the 3rd logo-->  
-<?php
-
-
-//$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
-
-
-$select1 = mysqli_query($con,"SELECT `sponsor_logo2` FROM `event` WHERE `sponsor_logo2` = '$sponsor_logo2'");
-
-$row = mysqli_fetch_array($select1);
- 
-
-//$result = mysqli_query($con,$query) or die(mysqli_error());
-
-
-//$row = mysqli_num_rows($result) or die(mysqli_error());
-
-
-
-if ($row['sponsor_logo2'] == 1){
- 
- echo "<center><img src='../public/images/$sponsor_logo2' alt='Any' class='img-fluid'><p style='margin-right:-20px '>$sponsor_name2</p></center>";  
-
-
-
-}else{
-  
- echo '';
-
-
-  }
-
-
-?>
-
-                  </div>
-              </div>
-    
-        </div>
-        <!--/.Panel 5-->
-
-        <!--Panel 6-->
-        <div class="tab-pane fade" id="panel12" role="tabpanel">
-          <div class="row">  
-          <div class="col-md-4 mb-2">
+            <h4 class="py-4 font-weight-bold wow fadeInUp">TICKETS</h4>
+            <div class="row">  
+          <div class="col-md-4 mb-2 wow fadeInUp">
               <!--Card Wider-->
-<div class="card card-cascade wider">
+<div class="card card-cascade wider wow fadeInUp">
 
  <!--Card content-->
   <div class="card-body text-center">
       <!--Title-->
       <h4 class="card-title"><strong>Regular</strong></h4>
     <hr>
-      <p class="card-text">#5,000</p>
+    <p class="card-text list-inline-item">QTY</p> 
+      <p class="card-text list-inline-item" style="font-weight: bold;">100</p>
+      <p class="card-text list-inline-item">Price</p> 
+      <p class="card-text list-inline-item" style="font-weight: bold;">25000</p>
   </div>
   <!--/.Card content-->
 
 </div>
 <!--/.Card Wider-->
            </div>
-           <div class="col-md-4 mb-2">
+           <div class="col-md-4 mb-2 wow fadeInUp">
              <!--Card Wider-->
-<div class="card card-cascade wider">
+<div class="card card-cascade wider wow fadeInUp">
 
   <!--Card content-->
    <div class="card-body text-center">
        <!--Title-->
        <h4 class="card-title"><strong>VIP</strong></h4>
      <hr>
-       <p class="card-text">#25,000</p>
+     <p class="card-text list-inline-item">QTY</p> 
+      <p class="card-text list-inline-item" style="font-weight: bold;">100</p>
+      <p class="card-text list-inline-item">Price</p> 
+      <p class="card-text list-inline-item" style="font-weight: bold;">25000</p>
    </div>
    <!--/.Card content-->
  
  </div>
  <!--/.Card Wider-->
            </div>
-           <div class="col-md-4 mb-2">
+           <div class="col-md-4 mb-2 wow fadeInUp">
              <!--Card Wider-->
-<div class="card card-cascade wider">
+<div class="card card-cascade wider wow fadeInUp">
 
   <!--Card content-->
    <div class="card-body text-center">
        <!--Title-->
        <h4 class="card-title"><strong>Premium</strong></h4>
      <hr>
-       <p class="card-text">#100,000</p>
+     <p class="card-text list-inline-item">QTY</p> 
+      <p class="card-text list-inline-item" style="font-weight: bold;">100</p>
+      <p class="card-text list-inline-item">Price</p> 
+      <p class="card-text list-inline-item" style="font-weight: bold;">100000</p>
    </div>
    <!--/.Card content-->
  
@@ -693,324 +339,162 @@ if ($row['sponsor_logo2'] == 1){
  <!--/.Card Wider-->
            </div>
          </div>
-
-    </div>
-    <!--/.Panel 6-->
-      
-      </div>
-
-        
-      <hr class="my-5">
-
-      <!--Section: ACTIVITIES-->
-      <section>
-        <h2 class="my-5 h3 text-center" id="activities">ACTIVITIES</h2>
-
-
-        <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
-            <li class="nav-item new">
-                <!--a class="nav-link" style="color:black;" data-toggle="tab" href="#panel31" role="tab">Hicking</a-->
-            </li>
-            <li class="nav-item new">
-              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel32" role="tab"><!--Jogging-->
-                <?php if(isset($act_name)){echo $act_name;}?>
-              </a>
-          </li>
-            <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel33" role="tab"><!--Organizer-->
-                  <?php if(isset($act_name1)){echo $act_name1;}?>
-
-                </a>
-            </li>
-            <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel34" role="tab"><!--Location-->
-                  
-                  <?php if(isset($act_name2)){echo $act_name2;}?>
-
-
-                </a>
-            </li>
-            <li class="nav-item new">
-                <!--a class="nav-link" style="color:black;" data-toggle="tab" href="#panel35" role="tab">Vendor</a-->
-            </li>
-            <li class="nav-item new">
-              <!--a class="nav-link" style="color:black;" data-toggle="tab" href="#panel36" role="tab">Sponsors</a-->
-          </li>
-        </ul>
-        
-        <!-- Tab panels -->
-        <div class="tab-content">
-        
-            <!--Panel 1-->
-            <div class="tab-pane fade in show" id="panel31" role="tabpanel">
-                <div class="row">
-  
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-4">
-                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
-                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
-                        <div class="row">
-                          <div class="col-md-6 mb4">
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
-                              </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div>
-                          </div>
-                          <div class="col-md-6 mb-4" style="margin: auto;">
-                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
-                          </div>
-                    </div>
-                    </div>
-                    <!--Grid column-->
-          
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-4">
-                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
-                    </div>
-                    <!--Grid column-->
-          
-                  </div>
-                  <!--Grid row-->
-        
-            </div>
-            <!--/.Panel 1-->
-        
-            <!--Panel 2-->
-            <div class="tab-pane fade in show" id="panel32" role="tabpanel">
-                <div class="row">
-  
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-4">
-                        <h4 class="card-title"><!--strong>Name of Activity</strong-->
-                          <strong><?php if(isset($act_name)){echo $act_name;}?></strong>
-
-                        </h4>
-                        <!--p class="card-text"> Lorem ipsum! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p-->
-
-                        <p class="card-text">
-                          <?php if(isset($act_desc)){echo $act_desc;}?>
-
-                        </p>
-
-
-                        <div class="row">
-                          <div class="col-md-6 mb4">
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
-                              </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div>
-                          </div>
-                          <div class="col-md-6 mb-4" style="margin: auto;">
-                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
-                          </div>
-                    </div>
-                    </div>
-                    <!--Grid column-->
-          
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-4" style="background-image: url('../public/images/<?php echo 
-$act_img;?>'); background-repeat: no-repeat;">
-                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
-
-
-                    </div>
-                    <!--Grid column-->
-          
-                  </div>
-                  <!--Grid row-->
-        
-            </div>
-            <!--/.Panel 2-->
-        
-            <!--Panel 3-->
-            <div class="tab-pane fade in show" id="panel33" role="tabpanel">
-                <div class="row">
-  
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-4">
-                        <h4 class="card-title"><strong>
-                          <!--Name of Activity-->
-                             <?php if(isset($act_name1)){echo $act_name1;}?>
-
-
-                          </strong></h4>
-                        <!--p class="card-text"> Lorem ipsum!! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p-->
-                        <p class="card-text">
-                         
-                          <?php if(isset($act_desc1)){echo $act_desc1;}?>
-
-                        </p>
-
-
-                        <div class="row">
-                          <div class="col-md-6 mb4">
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
-                              </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div>
-                          </div>
-                          <div class="col-md-6 mb-4" style="margin: auto;">
-                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
-                          </div>
-                    </div>
-                    </div>
-                    <!--Grid column-->
-          
-                    <!--Grid column-->
-                    
-<div class="col-md-6 mb-4" style="background-image: url('../public/images/<?php echo 
-$act_img1;?>'); background-repeat: no-repeat;">
-
-                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
-                    </div>
-                    <!--Grid column-->
-          
-                  </div>
-                  <!--Grid row-->
-        
-            </div>
-            <!--/.Panel 3-->
-        
-            <!--Panel   4-->
-            <div class="tab-pane fade in show" id="panel34" role="tabpanel">
-                <div class="row">
-  
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-4">
-                        <h4 class="card-title"><strong>
-
-                      <!--  Name of Activity-->
-
-                          <?php if(isset($act_name2)){echo $act_name2;}?>
-
-                      
-                      </strong></h4>
-                        <!--p class="card-text"> Lorem ipsum!!! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p-->
-                       <p class="card-text">
-
-                          <?php if(isset($act_desc2)){echo $act_desc2;}?>
-
-                         
-                       </p>
-
-
-                        <div class="row">
-                          <div class="col-md-6 mb4">
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
-                              </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div>
-                          </div>
-                          <div class="col-md-6 mb-4" style="margin: auto;">
-                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
-                          </div>
-                    </div>
-                    </div>
-                    <!--Grid column-->
-          
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-4" style="background-image: url('../public/images/<?php echo 
-$act_img2;?>'); background-repeat: no-repeat;">                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
-                    </div>
-                    <!--Grid column-->
-          
-                  </div>
-                  <!--Grid row-->
-        
-            </div>
-            <!--/.Panel 4-->
-  
-            <!--Panel 5-->
-            <div class="tab-pane fade in show" id="panel35" role="tabpanel">
-                <div class="row">
-  
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-4">
-                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
-                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
-                        <div class="row">
-                          <div class="col-md-6 mb4">
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
-                              </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div>
-                          </div>
-                          <div class="col-md-6 mb-4" style="margin: auto;">
-                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
-                          </div>
-                    </div>
-                    </div>
-                    <!--Grid column-->
-          
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-4">
-                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
-                    </div>
-                    <!--Grid column-->
-          
-                  </div>
-                  <!--Grid row-->
-        
-            </div>
-          <!--/.Panel 5-->
-  
-          <div class="tab-pane fade in show" id="panel36" role="tabpanel">
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-6 mb-4">
-                      <h4 class="card-title"><strong>Name of Activity</strong></h4>
-                      <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
-                      <div class="row">
-                        <div class="col-md-6 mb4">
-                            <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-                            <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                            <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
-                            </div>
-                            <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-                            <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                            <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                        </div>
-                        </div>
-                        <div class="col-md-6 mb-4" style="margin: auto;">
-                            <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
-                        </div>
-                  </div>
-                  </div>
-                  <!--Grid column-->
-        
-                  <!--Grid column-->
-                  <div class="col-md-6 mb-4">
-                      <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
-                  </div>
-                  <!--Grid column-->
-        
                 </div>
-                <!--Grid row-->
-      
-          </div>
-      <!--/.Panel 6-->
+            </div>
+
+        </div>
+        <!--Card-->
+    </div>
+</div>
+<!--Grid row-->
+<hr>
+<!-- location goes here -->
+<div class="row wow fadeInUp">
+  <div class="col-8 col-sm-4 col-lg-9">
+    <h4>address goes here</h4>
+    <iframe style=" width: 100%; height: 500px;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDWG8NOZeOKNf9FabkmtqwCpNs04zcT5Yc
+    &q='<?php echo $Address;?>'" allowfullscreen>
+</iframe>
+  </div>
+  <div class="col-3 col-sm-3 col-lg-3">
+         <!--Card-->
+         <div class="flex-center">
+
+<!--Content-->
+<div class="text-center">
+    <div class="card-body">
+    <h2 class="font-weight-bold mb-2 flex-center wow fadeInUp" style="margin-top: 10px;">LOCATION</h2>
+    </div>
+</div>
+</div>
+<!--Card-->
+</div>
+</div>
+<!-- location ends here -->
+
+<hr class="my-4">
+<!-- Activities goes here -->
+<div class="row wow fadeInUp">
+<div class="col-3 col-sm-3 col-lg-3">
+  <!--Card-->
+  <div class="flex-center">
+
+<!--Content-->
+<div class="text-center">
+    <div class="card-body">
+    <h2 class="font-weight-bold mb-2 flex-center wow fadeInUp" style="margin-top: 10px;">ACTIVITIES</h2>
+    </div>
+</div>
+</div>
+<!--Card-->
+  </div>
+  <div class="col-8 col-sm-4 col-lg-9">
+  <div class="row">
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+                </div>
+    </div>
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(28).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
       </div>
+    </div>
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(22).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+      </div>
+    </div>
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(25).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+      </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- Activities ends here -->
+<hr>
+<!-- sponsors starts -->
+<!-- location goes here -->
+<div class="row wow fadeInUp">
+  <div class="col-8 col-sm-4 col-lg-9">
+  <div class="row">
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+                </div>
+    </div>
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(28).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+      </div>
+    </div>
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(22).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+      </div>
+    </div>
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(25).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+      </div>
+    </div>
+</div>
+  </div>
+  <div class="col-3 col-sm-3 col-lg-3">
+         <!--Card-->
+         <div class="flex-center">
+
+<!--Content-->
+<div class="text-center">
+    <div class="card-body">
+    <h2 class="font-weight-bold mb-2 flex-center wow fadeInUp" style="margin-top: 10px;">SPONSORS</h2>
+    </div>
+</div>
+</div>
+<!--Card-->
+</div>
+</div>
+<!-- sponsors ends here -->
+
+<hr>
+
+<!-- vendors starts here -->
+<!-- Activities goes here -->
+<div class="row wow fadeInUp">
+<div class="col-3 col-sm-3 col-lg-3">
+  <!--Card-->
+  <div class="flex-center">
+
+<!--Content-->
+<div class="text-center">
+    <div class="card-body">
+    <h2 class="font-weight-bold mb-2 flex-center wow fadeInUp" style="margin-top: 10px;">SPONSORS</h2>
+    </div>
+</div>
+</div>
+<!--Card-->
+  </div>
+  <div class="col-8 col-sm-4 col-lg-9">
+  <div class="row">
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+                </div>
+    </div>
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(28).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+      </div>
+    </div>
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(22).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+      </div>
+    </div>
+    <div class="col-6 col-sm-3">
+    <div class="avatar mx-auto white white wow fadeInUp"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(25).jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+      </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- Activities ends here -->
+<hr>
+<!-- vendors ends here -->
+
+</section>
+
     </div>
       </section>
       <!--Section: More-->

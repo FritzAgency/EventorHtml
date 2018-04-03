@@ -1,6 +1,11 @@
 <?php 
 
-session_start(); 
+/*
+if user not logged in, redirect to the login page
+*/
+if (!isset($_COOKIE['id'])) {
+  header('Location: ../auth/signup.php'); 
+}
 
 ?> 
 
@@ -175,11 +180,7 @@ button:hover {
 
 
 
-<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  <?php 
-if((isset($_SESSION['first_name']))){
-//echo 'Welcome, '. $_SESSION['first_name'];
-}
-?>
+<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  
 
     </ul>
   </div>

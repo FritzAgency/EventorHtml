@@ -15,7 +15,7 @@ if(isset($_POST['event_title'])){
 $event_title = mysqli_real_escape_string($con, $_POST['event_title']);
 
 
-$creator_id = $_SESSION['id']; //the creator session id to differentiate creators from each other. 
+$creator_id = $_COOKIE['id']; //the creator session id to differentiate creators from each other. 
 //$event_description = $_POST['event_description'];  //grabs the event description from the form
 
 $event_description = mysqli_real_escape_string($con, $_POST['event_description']);

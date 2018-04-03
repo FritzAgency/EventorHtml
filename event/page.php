@@ -594,7 +594,7 @@ if (mysqli_num_rows($select) == 1){
 }else{
  
 
- echo 'Hi Hi hi';
+ echo '';
 
 
 }

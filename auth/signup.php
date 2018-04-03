@@ -49,7 +49,7 @@
 
 
                     <div class="form-group">
-                        <h4 style="padding-left: 15px;">Name<span class="fa fa-asterisk text-danger">*</span></h4> 
+                        <h4 style="padding-left: 15px;">Name<span style="color:red;"> *</span></h4> 
                         <div class="col-sm-6">
                             <input type="text" id="firstName" name="first_name" placeholder="First Name" class="form-control" autofocus>
                         </div>
@@ -59,35 +59,36 @@
                     </div>
                                         
                     <div class="form-group">
-                        <h4 style="padding-left: 15px;">Email<span class="fa fa-asterisk text-danger"> *</span></h4>
+                        <h4 style="padding-left: 15px;">Email<span style="color:red;"> *</span></h4>
                         <div class="col-sm-12">
                             <input type="email" name="email" id="email" placeholder="Email" class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
-                            <h4 style="padding-left: 15px;">Password<span class="fa fa-asterisk text-danger"> *</span></h4>
+                            <h4 style="padding-left: 15px;">Password<span style="color:red;"> *</span></h4>
                         <div class="col-sm-12">
                             <input type="password" id="password" placeholder="Password" name="password" class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
-                            <h4 style="padding-left: 15px;">Comfirm Password<span class="fa fa-asterisk text-danger"> *</span></h4>
+                            <h4 style="padding-left: 15px;">Comfirm Password<span style="color:red;"> *</span></h4>
                         <div class="col-sm-12">
                             <input type="password" id="password" placeholder="Password" name="password" class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
-                            <h4 style="padding-left: 15px;">Date Of Birth <span class="fa fa-asterisk text-danger"> *</span></h4>
+                    <label for="date-picker-example" style="padding-left: 15px;">Date Of Birth <span style="color:red;"> *</span></label>
+
                         <div class="col-sm-12">
-                            <input type="date" id="birthDate" name="dob" class="form-control" style="padding:2px">
+                            <input type="text" id="birthDate" name="dob" class="form-control" style="padding:2px" id="date-picker-example" class="form-control datepicker">
                         </div>
                     </div>
                    
                     <div class="form-group">
-                        <h4 style="padding-left: 15px;">Gender<span class="fa fa-asterisk text-danger"> *</span></h4>
+                        <h4 style="padding-left: 15px;">Gender<span style="color:red;"> *</span></h4>
                         <div class="col-sm-12">
                             <div class="row">
                                 <div class="col-sm-4">
@@ -105,14 +106,14 @@
                     </div> <!-- /.form-group -->
 
                     <div class="form-group">
-                        <h4 style="padding-left: 15px;">Phone Number<span class="fa fa-asterisk text-danger"> *</span></h4>
+                        <h4 style="padding-left: 15px;">Phone Number<span style="color:red;"> *</span></h4>
                         <div class="col-sm-12">
                             <input id="phoneNumber" placeholder="Phone Number" name="phoneNumber" class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
-                            <h4 style="padding-left: 15px;">Address<span class="fa fa-asterisk text-danger"> *</span></h4>
+                            <h4 style="padding-left: 15px;">Address<span style="color:red;"> *</span></h4>
                             <!--div class="col-sm-6">
                                 <input type="orgAddress" id="phoneNumber" placeholder="Phone Number" name="phoneNumber" class="form-control">
                             </div>
@@ -157,6 +158,8 @@
                         </div>
     </form>
 
+// Data Picker Initialization
+$('.datepicker').pickadate();
     <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->

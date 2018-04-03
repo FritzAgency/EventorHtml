@@ -589,7 +589,7 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
     <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn" style="background-color: #4f2684;">
 
         <!--Call to action-->
-        <div class="pt-4" style="background-color:#8f2dc2;">
+        <div class="pt-4" style="background-color:#8f2dc2; padding-bottom: 1.5rem;">
             <a class="btn btn-outline-white" href="#" role="button">Become a Vendor
             </a>
             <a class="btn btn-outline-white" href="#" target="_blank" role="button">Create Event
@@ -597,10 +597,8 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
         </div>
         <!--/.Call to action-->
 
-        <hr class="my-4" style="background-color: ##8f2dc2; color: ##8f2dc2;">
-
         <!-- Social icons -->
-        <div class="pb-4" style="background-color:#4f2684;">
+        <div class="pb-4" style="background-color:#4f2684; padding-top: 1.5rem;">
             <a href="#">
                 <i class="fa fa-facebook mr-3"></i>
             </a>
@@ -623,12 +621,11 @@ echo 'Welcome, ' . $_COOKIE['first_name'];
         <!-- Social icons -->
 
         <!--Copyright-->
-        <div class="footer-copyright py-3" style="background-color:#4f2684;">
+        <div class="footer-copyright py-3" style="background-color:#4f2684; padding-top: 0px;">
             © 2018 Copyright:
             <a href="#"> Eventor.com </a>
         </div>
         <!--/.Copyright-->
-
     </footer>
     <!--/.Footer-->
 

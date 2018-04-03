@@ -49,7 +49,7 @@
 
 
                     <div class="form-group">
-                        <h4 style="padding-left: 15px;">Name<span class="fa fa-asterisk text-danger"> *</span></h4> 
+                        <h4 style="padding-left: 15px;">Name<span class="fa fa-asterisk text-danger">*</span></h4> 
                         <div class="col-sm-6">
                             <input type="text" id="firstName" name="first_name" placeholder="First Name" class="form-control" autofocus>
                         </div>

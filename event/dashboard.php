@@ -297,7 +297,7 @@
      <!-- /. WRAPPER  -->
 </div>
      <!-- footer goes here -->
-<footer style="background-color: #4f2684; padding: 10px; height: 70px; margin-top: 10px;">
+<footer style="background-color: #4f2684; padding: 5px; height: 50px; margin-top: 5px;">
   <div class="row">
     <div class="col-sm-2">
       <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
@@ -305,26 +305,26 @@
     <div class="col-sm-8">
       <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
         <div class="col-sm-5">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">How it works</p></a>
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 8px; color: #ffffff; font-size: 10px;">How it works</p></a>
         </div>
         <div class="col-sm-4">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">About us</p></a>
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 8px; color: #ffffff; font-size: 10px;">About us</p></a>
         </div>
         <div class="col-sm-3">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">Contact</p></a>
+        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 8px; color: #ffffff; font-size: 10px;">Contact</p></a>
         </div>
       </div>
     </div>
     <div class="col-sm-2"> 
       <div class="row">
         <div class="col-sm-4">
-          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+          <a href=""><img src="img/index.png" alt="" style="width: 15px; height-max: 100%; margin-top: 10px;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+            <a href=""><img src="img/index1.png" alt="" style="width: 15px; height-max: 100%; margin-top: 10px;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+            <a href=""><img src="img/index11.png" alt="" style="width: 15px; height-max: 100%; margin-top: 10px;"></a>
         </div>
       </div>
     </div>

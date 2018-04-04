@@ -546,7 +546,7 @@ list-style-type: none;">
 
 
             <!--Section: Jumbotron-->
-            <section class="card wow fadeIn" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/background2.jpg);">
+            <section class="card wow fadeIn" style="background-image: url('img/midle.jpg');">
 
                 <!-- Content -->
                 <div class="card-body text-white text-center py-5 px-5 my-5">

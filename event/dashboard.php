@@ -32,7 +32,9 @@
                 </button>
                 <a class="navbar-brand" href="../index.php" style="#a20eab"><img src="" alt="">user Logo</a> 
             </div>
-  <div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust" style="border: 2px solid gray; color: white; background-color: #4f2684; padding: 8px 20px; border-radius: 40px; font-size: 14px; font-weight: bold;">logout</a> </div>
+  <div style="color: white; padding: 15px 10px 5px 10px; float: right; font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust" style="border: 2px solid gray; color: white; background-color: #4f2684; padding: 4px 20px; border-radius: 40px; font-size: 14px; font-weight: bold;">logout</a> </div>
+  <div style="color: white; padding: 15px 10px 5px 10px; float: right; font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust" style="border: 2px solid gray; color: white; background-color: #4f2684; padding: 4px 20px; border-radius: 40px; font-size: 14px; font-weight: bold;">Become a Vendor</a> </div>
+  <div style="color: white; padding: 15px 10px 5px 10px; float: right; font-size: 16px;"><a href="page.php" class="btn btn-danger square-btn-adjust" style="border: 2px solid gray; color: white; background-color: #4f2684; padding: 4px 20px; border-radius: 40px; font-size: 14px; font-weight: bold;">Create Event</a> </div>
         </nav>   
            <!-- /. NAV TOP  -->
                 <nav class="navbar-default navbar-side" role="navigation" style="top: 60px;">
@@ -189,7 +191,6 @@ while($row = mysqli_fetch_array($result)){
 
 
 
-
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-2" style="position: relative; left: 65px;">
                                     <div style="color: #4f2684;">
@@ -231,8 +232,8 @@ while($row = mysqli_fetch_array($result)){
                                     <div style="color: #4f2684;">
                                         o
                                     </div>
-                                </div-->
-                                <!-- buttons at the end of the row not important -->
+</div>
+                                <!-- buttons at the end of the row not important
                             </div>
                         </div>
                     <!-- stops here -->

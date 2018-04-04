@@ -301,13 +301,8 @@ $org_logo;?>" alt="" class="img-responsive"></a>
 <div class="container" style="background-color: #f3f3f3; width: 60%;">
 
 <div id="container">
-<<<<<<< HEAD
-   <!-- <img src="public/images/<?php //echo $event_flier;?>" /> -->
-   <img src="img/carousel.jpg" />
-=======
    <img src="public/images/<?php echo 
 $event_flier;?>" alt="" class="img-responsive">
->>>>>>> 6457161d504ea9a1cac6d302ac3a046f47b2e050
 <div>
   
 <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" style=" border: 2px solid lightgrey; background-color: lightgrey"> -->

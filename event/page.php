@@ -83,7 +83,7 @@ $org_logo = $row['org_logo'];
     @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
     
     body {
-      background-image:url("img/eventor.jpg");
+      /* background-image:url("img/eventor.jpg"); */
       font-family: 'Montserrat', sans-serif;
     }
 
@@ -809,20 +809,21 @@ if (mysqli_num_rows($select2) == 1){
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
+                    <div class="row">
+                      <div class="col-md-6 mb4">
                         <h4 class="card-title"><strong>Name of Activity</strong></h4>
                         <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
-                        <div class="row">
-                          <div class="col-md-6 mb4">
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              
+                          </div>
+                          </div>
+                          <div class="col-md-6 mb-4" style="margin: auto;">
+                          <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                            <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
                               </div>
                               <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div>
-                          </div>
-                          <div class="col-md-6 mb-4" style="margin: auto;">
                               <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
                           </div>
                     </div>

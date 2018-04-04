@@ -815,14 +815,14 @@ if (mysqli_num_rows($select2) == 1){
                         <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
                           </div>
                             <div class="col-md-6 mb-4" style="margin: auto;">
-                          <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                          <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
                             <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 10px;">Location</h2>  
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center;font-size: 16px;margin-bottom: 20px; margin-top: 20px;">LOCATION</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">location here</h2>
-                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                              <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: auto; margin-right:auto;">Schedule</button>
                           </div>
                     </div>
                     </div>
@@ -862,21 +862,21 @@ if (mysqli_num_rows($select2) == 1){
                       </div>
 
                         <div class="col-md-6 mb-4" style="margin: auto;">
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><!--10:00-->
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 16px;"><!--10:00-->
                                 
 
                   <?php if(isset($act_date)){echo $act_date;}?>
 
                               </h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 10px;">Location:  
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">LOCATION  
                   <?php if(isset($act_loc)){echo $act_loc;}?></h2>  
                               <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
                           </div--> 
-                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                              <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">SCHEDULE</button>
                           </div>
                     </div>
                     </div>
@@ -922,7 +922,7 @@ $act_img;?>'); background-repeat: no-repeat;">
                         
                               
                           <div class="col-md-6 mb-4" style="margin: auto;">
-                          <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                          <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><!--10:00--> 
 
@@ -931,12 +931,12 @@ $act_img;?>'); background-repeat: no-repeat;">
 
                               </h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 10px;">Location:  
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">LOCATION  
                   <?php if(isset($act_loc1)){echo $act_loc1;}?></h2>  
                               <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
                           </div-->
-                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                              <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">Schedule</button>
                           </div>
                     </div>
                     </div>
@@ -982,24 +982,24 @@ $act_img1;?>'); background-repeat: no-repeat;">
                        </p>
       </div>                       
       <div class="col-md-6 mb-4" style="margin: auto;"> 
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-bottom: 20px; margin-top: 20px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><!--10:00-->
                                   
                   <?php if(isset($act_date2)){echo $act_date2;}?>
 
                               </h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">
                                 
 
-                                Location:  
+                                LOCATION  
                   <?php if(isset($act_loc2)){echo $act_loc2;}?>
                               </h2>  
                               <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
                           </div-->
-                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                              <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">SCHEDULE</button>
                           </div>
                     </div>
                     </div>
@@ -1027,17 +1027,17 @@ $act_img2;?>'); background-repeat: no-repeat;">                        <!--img s
                         <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
                         <div class="row">
                           <div class="col-md-6 mb4">
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px; margin-bottom: 20px; margin-top: 20px;">LOCATION</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
                           </div>
                           </div>
                           <div class="col-md-6 mb-4" style="margin: auto;">
-                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                              <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">Schedule</button>
                           </div>
                     </div>
                     </div>
@@ -1064,17 +1064,17 @@ $act_img2;?>'); background-repeat: no-repeat;">                        <!--img s
                       <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
                       <div class="row">
                         <div class="col-md-6 mb4">
-                            <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                            <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
                             <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                             <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
                             </div>
-                            <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
+                            <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: font-size: 20px; margin-bottom: 16px; margin-top: 20px;">LOCATION</h2>  
                             <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                             <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
                         </div>
                         </div>
                         <div class="col-md-6 mb-4" style="margin: auto;">
-                            <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
+                            <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">Schedule</button>
                         </div>
                   </div>
                   </div>
@@ -1105,9 +1105,9 @@ $act_img2;?>'); background-repeat: no-repeat;">                        <!--img s
 
     <!--Call to action-->
     <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Sell Products
+      <a class="btn btn-outline-white" href="#" target="_blank" role="button">Sell Products
       </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Register
+      <a class="btn btn-outline-white" href="create.php" target="_blank" role="button">Register
       </a>
     </div>
     <!--/.Call to action-->
@@ -1116,7 +1116,7 @@ $act_img2;?>'); background-repeat: no-repeat;">                        <!--img s
 
     <!-- Social icons -->
     <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap">
+      <a href="#">
         <i class="fa fa-facebook mr-3"></i>
       </a>
 
@@ -1124,28 +1124,12 @@ $act_img2;?>'); background-repeat: no-repeat;">                        <!--img s
         <i class="fa fa-twitter mr-3"></i>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4">
+      <a href="#">
         <i class="fa fa-youtube mr-3"></i>
       </a>
 
-      <a href="https://plus.google.com/u/0/b/107863090883699620484">
+      <a href="#">
         <i class="fa fa-google-plus mr-3"></i>
-      </a>
-
-      <a href="https://dribbble.com/mdbootstrap">
-        <i class="fa fa-dribbble mr-3"></i>
-      </a>
-
-      <a href="https://pinterest.com/mdbootstrap">
-        <i class="fa fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design">
-        <i class="fa fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/">
-        <i class="fa fa-codepen mr-3"></i>
       </a>
     </div>
     <!-- Social icons -->

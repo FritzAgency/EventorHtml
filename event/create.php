@@ -194,7 +194,7 @@ button:hover {
 
 
 
-<li style="margin-right: 17px; font-weight: bold; color: #4f2684; margin-top: -11px;"><a href="EventorHtml/index.php"><span class="glyphicon glyphicon-home" style="color: #4f2684; font-size: 21px;"></span></a></li> 
+<li style="margin-right: 17px; font-weight: bold; color: #4f2684; margin-top: -11px;"><a href="../index.php"><span class="glyphicon glyphicon-home" style="color: #4f2684; font-size: 21px;"></span></a></li> 
 
     </ul>
   </div>
@@ -235,7 +235,7 @@ if(isset($message)){
   <div class="row">
   <div class="col-sm-6">
   <h4 style="color: #4f2684; font-size: 14px;">State</h4>
-  <p><input type="number" placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
+  <p><input type="text" placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
     </div>
     <div class="col-sm-6">
     <h4 style="color: #4f2684; font-size: 14px;">City</h4>
@@ -271,7 +271,7 @@ if(isset($message)){
   <div class="form-group">
                             <h4 style="padding-left: 15px; color: #4f2684;font-size: 14px;">Event Start</h4>
                         <div class="col-sm-12">
-                            <input type="text" id="departing" name="event_statrs" class="form-control" placeholder="Start Date" style="padding:2px">
+                            <input type="text" id="departing" name="event_starts" class="form-control" placeholder="Start Date" style="padding:2px">
                             <script>
                                 $(document).ready(function() {
                                 $("#departing").datepicker();
@@ -295,7 +295,7 @@ if(isset($message)){
   <div class="form-group">
                             <h4 style="padding-left: 15px; color: #4f2684;font-size: 14px;">Events Ends</h4>
                         <div class="col-sm-12">
-                            <input type="text" id="ends" name="event_starts" class="form-control" placeholder="Start Date" style="padding:2px">
+                            <input type="text" id="ends" name="event_ends" class="form-control" placeholder="Start Date" style="padding:2px">
                             <script>
                                 $(document).ready(function() {
                                 $("#ends").datepicker();
@@ -405,14 +405,14 @@ if(isset($message)){
 
     <!--p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p-->
     <p style="color: #4f2684"> Activity Time </p>
-    <p><input type="text" placeholder="click to pick event time" oninput="this.className = ''" name="picker-1">
+    <p><input type="text" placeholder="click to pick event time" oninput="this.className = ''" name="act_date">
     <style>
       .js-t{
         width: 297px;
       }
     </style>
         <script>
-          	window.picker1 = new JsTimepicker(document.querySelector('[name="picker-1"]'), {hourLeadingZero: false, minuteLeadingZero: false});
+          	window.picker1 = new JsTimepicker(document.querySelector('[name="act_date"]'), {hourLeadingZero: false, minuteLeadingZero: false});
         </script>
   </p>
 <hr  style="color: black;">
@@ -424,14 +424,14 @@ if(isset($message)){
     <p><input type="file"  id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="act_img1"></p>
     <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc1" id="autocomplete" onFocus="geolocate()"></p>
     <p style="color: #4f2684"> Activity Time </p>
-    <p><input type="text" placeholder="click to pick event time" oninput="this.className = ''" name="picker-1">
+    <p><input type="text" placeholder="click to pick event time" oninput="this.className = ''" name="act_date1">
     <style>
       .js-t{
         width: 297px;
       }
     </style>
         <script>
-          	window.picker1 = new JsTimepicker(document.querySelector('[name="picker-1"]'), {hourLeadingZero: false, minuteLeadingZero: false});
+          	window.picker1 = new JsTimepicker(document.querySelector('[name="act_date1"]'), {hourLeadingZero: false, minuteLeadingZero: false});
         </script>
   </p>
 
@@ -445,14 +445,14 @@ if(isset($message)){
     <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc2" id="autocomplete" onFocus="geolocate()"></p>
 
     <p style="color: #4f2684"> Activity Time </p>
-    <p><input type="text" placeholder="click to pick event time" oninput="this.className = ''" name="picker-1">
+    <p><input type="text" placeholder="click to pick event time" oninput="this.className = ''" name="act_date2">
     <style>
       .js-t{
         width: 297px;
       }
     </style>
         <script>
-          	window.picker1 = new JsTimepicker(document.querySelector('[name="picker-1"]'), {hourLeadingZero: false, minuteLeadingZero: false});
+          	window.picker1 = new JsTimepicker(document.querySelector('[name="act_date2"]'), {hourLeadingZero: false, minuteLeadingZero: false});
         </script>
   </p>
 <hr  style="color: black;">

@@ -863,7 +863,12 @@ if (mysqli_num_rows($select2) == 1){
                           <div class="col-md-6 mb4">
                               <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><!--10:00-->
+                                
+
+                  <?php if(isset($act_date)){echo $act_date;}?>
+
+                              </h2>
                               </div>
                               <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">

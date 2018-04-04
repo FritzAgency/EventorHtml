@@ -12,6 +12,14 @@
         <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'/>
         <script type='text/javascript' src='script.js'></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <?php 
 
     require_once('../functions/auth.php');
@@ -67,26 +75,26 @@ p {
  <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px; background-color: white;">
   <div class="container">
     <div class="navbar-header" >
-      <div class="col-sm-2 col-md-3 col-xm-4" style="width: 90%;">
-      <a class="navbar-brand" href="../index.php"><img src="" alt="Organizer logo" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
+      <div class="col-sm-12 col-md-12 col-xm-12" style="width: 90%;">
+      <a class="navbar-brand" href="#"><img src="" alt="Organizer logo" srcset="" class="img-responsive" style="margin-left: auto; margin-right: auto;"></a>
       </div>
     </div>
-    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -41px;">
+    <!-- <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -41px;"> -->
       <?php 
  
 ?>
-<li style="    margin-top: 13px; margin-right: 17px; font-weight: bold; color: #4f2684; padding-top: 29px;"><a href="/EventorHtml/index.php"><span class="glyphicon glyphicon-home" style="color: #4f2684; font-size: 21px;"></span></a></li> 
+<!-- <li style="    margin-top: 13px; margin-right: 17px; font-weight: bold; color: #4f2684; padding-top: 29px;"><a href="/EventorHtml/index.php"><span class="glyphicon glyphicon-home" style="color: #4f2684; font-size: 21px;"></span></a></li>  -->
 
-    </ul>
+    <!-- </ul> -->
   </div>
 </nav>
 <!-- header stops here -->
 </header>
-		<div class="container" style="width:500px; background-color: white;">
+		<div class="container" style="width:500px; background-color: white; margin-bottom: 2%; margin-top:2%;padding-top: 20px; padding-bottom: 20px; ">
                 
                 <form class="form-horizontal" role="form" method="POST" action="">
 
-                    <h2 style="margin-right: auto; marign-left: auto; font-weight: bold; color: #4f2684;">REGISTER</h2>
+                    <h2 style="margin-right: auto; marign-left: auto; font-weight: bold; color: #4f2684; margin-bottom: 20px;">REGISTER</h2>
 
 <div>
   <?php 
@@ -99,7 +107,7 @@ p {
 </div>
 <?php unset($_SESSION['message']); ?>
                     <div class="form-group">
-                        <h4 style="padding-left: 15px;">Name<span class="fa fa-asterisk text-danger"> *</span></h4> 
+                        <h4 style="padding-left: 15px;">Name<span style="color: red;"> *</span></h4> 
                         <div class="col-sm-6">
                             <input type="text" id="firstName" name="first_name" placeholder="First Name" class="form-control" autofocus>
                         </div>
@@ -109,29 +117,29 @@ p {
                     </div>
                                         
                     <div class="form-group">
-                        <h4 style="padding-left: 15px;">Email<span class="fa fa-asterisk text-danger"> *</span></h4>
+                        <h4 style="padding-left: 15px;">Email<span style="color: red;"> *</span></h4>
                         <div class="col-sm-12">
                             <input type="email" name="email" id="email" placeholder="Email" class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <h4 style="padding-left: 15px;">Phone Number<span class="fa fa-asterisk text-danger"> *</span></h4>
+                        <h4 style="padding-left: 15px;">Phone Number<span style="color: red;"> *</span></h4>
                         <div class="col-sm-12">
                             <input id="phoneNumber" placeholder="Phone Number" name="phoneNumber" class="form-control">
                         </div>
                     </div>
 
                     <div class="form-group">
-                            <h4 style="padding-left: 15px;">Address<span class="fa fa-asterisk text-danger"> *</span></h4>
+                            <h4 style="padding-left: 15px;">Address<span style="color: red;"> *</span></h4>
                             <div class="col-sm-12" style="padding-top: 10px;">
                                     <input type="orgAddress" id="Address" placeholder="Address" name="Address" class="form-control">
                             </div>
                         </div>
 
                                         <div class="form-group">
-                        <div class="col-sm-12">
-                            <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
+                        <div class="col-sm-12" style="margin-top: 10px;">
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" name="submit">Submit</button>
                         </div>
     </form>
 

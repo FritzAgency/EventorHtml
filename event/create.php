@@ -271,7 +271,7 @@ if(isset($message)){
 <div class="row">
   <div class="col-sm-6" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
   <div class="form-group">
-                            <h4 style="padding-left: 15px; color: #4f2684;font-size: 14px;">Event Start</h4>
+                            <h4 style="padding-left: 15px; color: #4f2684;font-size: 14px;">Event Starts</h4>
                         <div class="col-sm-12">
                             <input type="text" id="departing" name="event_starts" class="form-control" placeholder="Start Date" style="padding:2px">
                             <script>
@@ -295,7 +295,7 @@ if(isset($message)){
                           </div>
                           <div class="col-sm-6" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
   <div class="form-group">
-                            <h4 style="padding-left: 15px; color: #4f2684;font-size: 14px;">Events Ends</h4>
+                            <h4 style="padding-left: 15px; color: #4f2684;font-size: 14px;">Event Ends</h4>
                         <div class="col-sm-12">
                             <input type="text" id="ends" name="event_ends" class="form-control" placeholder="Start Date" style="padding:2px">
                             <script>

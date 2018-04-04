@@ -65,19 +65,7 @@ body{
 	width: 24.333%;
   }
   
-  *[role="form"] {
-	max-width: 530px;
-	padding: 15px;
-	margin: 0 auto;
-	background-color: #fff;
-	border-radius: 0.3em;
-  }
-  
-  *[role="form"] h2 {
-	margin-left: 5em;
-	margin-bottom: 1em;
-  }
-  
+ 
   .files input {
 	outline: 2px dashed #92b0b3;
 	outline-offset: -10px;

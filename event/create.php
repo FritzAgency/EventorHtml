@@ -27,6 +27,16 @@ if (!isset($_COOKIE['id'])) {
   <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" type="text/css" href="https://unpkg.com/file-upload-with-preview/dist/file-upload-with-preview.min.css">
 
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+        <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'/>
+        <script type='text/javascript' src='script.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script src="js-timepicker.js"></script>
+	<link rel="stylesheet" href="js-timepicker.css">
+
 <style>
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
@@ -75,7 +85,7 @@ input.invalid {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #4f2684;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -141,22 +151,26 @@ button:hover {
 .inputfile + label {
   cursor: pointer; /* "hand" cursor */
 }
+
+.custom-file-container__image-preview {
+  margin-top: -29px;
+}
 /*upload organizer's logo */ 
 </style>
 </head>
 <body>
 
 
-  <header>
+ <header>
  <!-- header starts here -->
- <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px;" class="new">
+ <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px; background-color: white;">
   <div class="container-fluid">
     <div class="navbar-header" >
-      <div class="col-sm-2 col-md-3 col-xm-4" style="width: 19%;">
-      <a class="navbar-brand" href="../index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
+      <div class="col-sm-2 col-md-3 col-xm-4" style="width: 90%;">
+      <a class="navbar-brand" href="../index.php"><img src="img/logo12.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
       </div>
     </div>
-    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -45px;padding-bottom: 10px;">
+    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -41px;">
     <!--li><a href="#" class="new">HOW IT WORKS </a></li>
       <li><a href="#" class="new">EVENTS</a></li>
       <li><a href="#" class="new">SPECIAL DEALS</a></li>
@@ -180,7 +194,7 @@ button:hover {
 
 
 
-<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  
+<li style="    margin-top: 13px; margin-right: 17px; font-weight: bold; color: #4f2684; padding-top: 29px;"><a href="EventorHtml/index.php">Back to <span class="glyphicon glyphicon-home"></span></a></li> 
 
     </ul>
   </div>
@@ -210,38 +224,28 @@ if(isset($message)){
 ?> 
 <hr>
   <div class="tab"><h4 style="font-weight: bold; color: #4f2684">EVENT DETAILS</h4>
+  <hr> 
+  <h4 style="color: #4f2684; font-size: 14px;">Event Title</h4>
     <p><input placeholder="Event Name" oninput="this.className = ''" name="event_title"></p>
+    <h4 style="color: #4f2684; font-size: 14px;">Event Description</h4>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the event" oninput="this.className = ''" name="event_description"></textarea></p>
   <hr>  
-    <p><input placeholder="Enter Address or location of the event here " oninput="this.className = ''" name="Address" id="autocomplete" onFocus="geolocate()"></p>
-
-    <p><input placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
-
-    <p><input placeholder="Enter City here" oninput="this.className = ''" name="city"></p>
-
-<div class="row">
+  <h4 style="color: #4f2684; font-size: 14px;">Address</h4>
+  <p><input type="number" placeholder="Enter Address" oninput="this.className = ''" name="Address" id="autocomplete" onFocus="geolocate()"></p>
+  <div class="row">
   <div class="col-sm-6">
-    <p><input type="number" placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
+  <h4 style="color: #4f2684; font-size: 14px;">State</h4>
+  <p><input type="number" placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
     </div>
     <div class="col-sm-6">
-    <p><input type="number" placeholder="Ticket Price (in &#8358;)"oninput="this.className = ''" name="ticket_price"></p>
+    <h4 style="color: #4f2684; font-size: 14px;">City</h4>
+    <p><input placeholder="Enter City here" oninput="this.className = ''" name="city"></p>
     </div>
   </div>
 <hr  style="color: black;">
-<!--p style="color: #4f2684">UPLOAD EVENT BANNER </p>
-   <p> <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"> </p-->
-
-   
-
-<!--p style="color: #4f2684; margin-top:10px;">UPLOAD EVENT BANNER </p>
-    <input type="file"  id="js-upload-files" placeholder="Event Logo" oninput="this.className = ''" name="event_flier"-->
-
-    <!--input type="file" name="org_logo" id="file" class="inputfile" onchange="readURL(this);"/>
-    <span class="glyphicon glyphicon-upload" style="color:white"></span>
-<label for="file" style="color: white">Upload organizer's Logo</label-->
 
         <div class="custom-file-container" data-upload-id="myUniqueUploadId">
-            <label>Upload Event Image<a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">&nbsp; &nbsp; X</a></label>
+        <h4 style="color: #4f2684; font-size: 14px;">Upload Event Banner</h4>
 
             <label class="custom-file-container__custom-file" >
                 <input type="file" name="event_flier" class="inputfile custom-file-container__custom-file__custom-file-input" accept="*" multiple>
@@ -255,6 +259,7 @@ if(isset($message)){
             </label>
 
              <div class="custom-file-container__image-preview" style="height: 500px; width: 100%;"> </div>
+             <p style="margin-top: -30px; text-align: right;"><a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image" style="color: red; font-weight: bold;"> Remove Image</a></p>
 
 
 
@@ -262,21 +267,73 @@ if(isset($message)){
 
 
 <div class="row">
-  <div class="col-sm-6">
-    <p style="color: #4f2684; margin-top:10px;">EVENT STARTS: </p>
-    <input type="date" placeholder="Event start Date here" oninput="this.className = ''" name="event_starts" style="color: lightgrey;">
-    </div>
-<div class="col-sm-6">
-<p style="color: #4f2684; margin-top:10px;" >EVENT ENDS: </p>
-
-    <input type="date" placeholder="Event End date" oninput="this.className = ''" name="event_ends" style="color: lightgrey;">
-    </div>
+  <div class="col-sm-6" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+  <div class="form-group">
+                            <h4 style="padding-left: 15px; color: #4f2684;font-size: 14px;">Event Start</h4>
+                        <div class="col-sm-12">
+                            <input type="text" id="departing" name="event_statrs" class="form-control" placeholder="Start Date" style="padding:2px">
+                            <script>
+                                $(document).ready(function() {
+                                $("#departing").datepicker();
+                                $("#returning").datepicker();
+                                $("button").click(function() {
+                                    var selected = $("#dropdown option:selected").text();
+                                    var departing = $("#departing").val();
+                                    var returning = $("#returning").val();
+                                    // if (departing === "" || returning === "") {
+                                    //     alert("Please select Event start date");
+                                    // } else {
+                                    //     confirm("Event Start date selected.");
+                                    // }
+                                });
+                            });
+                            </script>
+                        </div>
+                    </div>
+                          </div>
+                          <div class="col-sm-6" style="padding-left: 0px; padding-right: 0px; margin-bottom: 10px;">
+  <div class="form-group">
+                            <h4 style="padding-left: 15px; color: #4f2684;font-size: 14px;">Events Ends</h4>
+                        <div class="col-sm-12">
+                            <input type="text" id="ends" name="event_statrs" class="form-control" placeholder="Start Date" style="padding:2px">
+                            <script>
+                                $(document).ready(function() {
+                                $("#ends").datepicker();
+                                $("#end2").datepicker();
+                                $("button").click(function() {
+                                    var selected = $("#dropdown option:selected").text();
+                                    var departing = $("#ends").val();
+                                    var returning = $("#ends2").val();
+                                    // if (departing === "" || returning === "") {
+                                    //     alert("Please select Event start date");
+                                    // } else {
+                                    //     confirm("Event Start date selected.");
+                                    // }
+                                });
+                            });
+                            </script>
+                        </div>
+                    </div>
+                          </div>
 </div>
+
+<div class="row">
+  <div class="col-sm-6">
+  <h4 style="color: #4f2684; font-size: 14px;">Ticket Quantity</h4>
+    <p><input type="number" placeholder="Ticket Quantity" oninput="this.className = ''" name="ticket_qty"></p>
+    </div>
+    <div class="col-sm-6">
+    <h4 style="color: #4f2684; font-size: 14px;">Ticket Price</h4>
+    <p><input type="number" placeholder="Ticket Price (in &#8358;)"oninput="this.className = ''" name="ticket_price"></p>
+    <p style="color: grey; margin-top: -9px;">Leave Empty if Event Ticket is free.</p>
+    </div>
+  </div>
     <!--p><input placeholder="Enter Event End Time here" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Enter Event End Date" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Ticket Quantity" oninput="this.className = ''" name="email"></p-->
-<hr  style="color: black; font-size: bold;">
+<hr  style="color: black; font-size: bold; margin-top: 10px; margin-bottom: 6px;">
+<h4 style="color: #4f2684; font-size: 14px;">Organizer Name</h4>
     <p style="margin-top:10px;"><input placeholder="Organizer Name" oninput="this.className = ''" name="org_name"></p>
 
    <!--p>  <input placeholder="Organizers logo" oninput="this.className = ''" type="file"   name="org_logo" > </p-->
@@ -286,16 +343,16 @@ if(isset($message)){
 
    
 
-<label>Upload Organizer's logo</label>
- <p><input type="file" id="js-upload-files" placeholder="Organizer's Logo" oninput="this.className = ''" name="org_logo"></p>
+<h4 style="color: #4f2684; font-size: 14px;">Upload Organizer's logo</h4>
+ <p style="margin-bottom: 35px;"><input type="file" id="js-upload-files" placeholder="Organizer's Logo" oninput="this.className = ''" name="org_logo"></p>
 
 
     <!--p><input placeholder="Enter Facebook page here" oninput="this.className = ''" name="facebook" style="margin-top:10px"></p-->
     <!--p><input placeholder="Enter Instagram link here" value="@Instagram.com" oninput="this.className = ''" name="instagram" ></p>
     <p><input placeholder="Enter Twitter handle here" value="@twitter.com" oninput="this.className = ''" name="twitter"></p>
     <p><input type="file" name="org_logo" id="js-upload-files" placeholder="" oninput="this.className = ''" ></p-->
-<hr>
-
+<hr style="color: black; font-size: bold; margin-top: 20px; margin-bottom: 20px;">
+<h4 style="color: #4f2684; font-size: 14px;">Social Account</h4>
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">@</span>
 
@@ -307,11 +364,7 @@ if(isset($message)){
    <input  type="text" class="form-control" name="instagram" placeholder="Instagram handle">
 
  </div>
- <!--div class="input-group" style="margin-bottom: 15px;">
-   <span class="input-group-addon">@</span>
-   <input  type="text" class="form-control" name="instagram" placeholder="instagram handle">
 
- </div-->
  <div class="input-group" style="margin-bottom: 15px;">
    <span class="input-group-addon">Facebook.com/</span>
    <input type="text" class="form-control" name="facebook" placeholder="Facebook username">
@@ -351,21 +404,39 @@ if(isset($message)){
     <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc" id="autocomplete" onFocus="geolocate()"></p>
 
     <!--p><input placeholder="Enter Time of Activity here" oninput="this.className = ''" name="yyyy"></p-->
-    <p> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date"></p>
+    <p style="color: #4f2684"> Activity Time </p>
+    <p><input type="text" placeholder="click to pick event time" oninput="this.className = ''" name="picker-1">
+    <style>
+      .js-t{
+        width: 297px;
+      }
+    </style>
+        <script>
+          	window.picker1 = new JsTimepicker(document.querySelector('[name="picker-1"]'), {hourLeadingZero: false, minuteLeadingZero: false});
+        </script>
+  </p>
 <hr  style="color: black;">
 
-    <p style="font-weight: bold;"> ACTIVITY 2 </p>
+    <p style="font-weight: bold; color: #4f2684"> ACTIVITY 2 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name1"></p>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc1"></textarea></p>
 
     <p><input type="file"  id="js-upload-files" placeholder="Upload Activity logo here" oninput="this.className = ''" name="act_img1"></p>
     <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc1" id="autocomplete" onFocus="geolocate()"></p>
-    <p> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date1"></p>
+    <p style="color: #4f2684"> Activity Time </p>
+    <p><input type="text" placeholder="click to pick event time" oninput="this.className = ''" name="picker-1">
+    <style>
+      .js-t{
+        width: 297px;
+      }
+    </style>
+        <script>
+          	window.picker1 = new JsTimepicker(document.querySelector('[name="picker-1"]'), {hourLeadingZero: false, minuteLeadingZero: false});
+        </script>
+  </p>
 
   <hr  style="color: black;">  
-    <p style="font-weight: bold;"> ACTIVITY 3 </p>
+    <p style="font-weight: bold; color: #4f2684"> ACTIVITY 3 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="act_name2"></p>
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the activity" oninput="this.className = ''" name="act_desc2"></textarea></p>
 
@@ -373,8 +444,17 @@ if(isset($message)){
 
     <p><input placeholder="Enter Location of Activity" oninput="this.className = ''" name="act_loc2" id="autocomplete" onFocus="geolocate()"></p>
 
-    <p style="font-weight: bold;"> Activity Time </p>
-    <p><input type="time" placeholder="" oninput="this.className = ''" name="act_date2"></p>
+    <p style="color: #4f2684"> Activity Time </p>
+    <p><input type="text" placeholder="click to pick event time" oninput="this.className = ''" name="picker-1">
+    <style>
+      .js-t{
+        width: 297px;
+      }
+    </style>
+        <script>
+          	window.picker1 = new JsTimepicker(document.querySelector('[name="picker-1"]'), {hourLeadingZero: false, minuteLeadingZero: false});
+        </script>
+  </p>
 <hr  style="color: black;">
     <!--p style="font-weight: bold;"> ACTIVITY 4 </p>
     <p><input placeholder="Enter Activity name here" oninput="this.className = ''" name="dd"></p>
@@ -411,13 +491,13 @@ if(isset($message)){
 </div>
 <!-- footer goes here -->
 <!-- footer goes here -->
-<footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 70px; margin-top: 10px;">
+<footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 50px; margin-top: 10px;">
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-2"  style="width: 12.666667%; margin-left: 36px">
       <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
     </div>
-    <div class="col-sm-8">
-      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto;">
+    <div class="col-sm-8" style="margin-top: -8px;">
+      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto; margin-top: -4;">
         <div class="col-sm-5">
         <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">How it works</p></a>
         </div>
@@ -432,18 +512,21 @@ if(isset($message)){
     <div class="col-sm-2"> 
       <div class="row">
         <div class="col-sm-4">
-          <a href=""><img src="img/index.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+          <a href=""><img src="img/index.png" alt="" style="width: 15px; height-max: 100%; margin-top: 10px;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index1.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+            <a href=""><img src="img/index1.png" alt="" style="width: 15px; height-max: 100%; margin-top: 10px;"></a>
         </div>
         <div class="col-sm-4">
-            <a href=""><img src="img/index11.png" alt="" style="width: 30px; height-max: 100%; margin-top: 10px;"></a>
+            <a href=""><img src="img/index11.png" alt="" style="width: 15px; height-max: 100%; margin-top: 10px;"></a>
         </div>
       </div>
     </div>
   </div>
 </footer>
+<!-- footer ends here -->
+</body>
+</html>
 <!-- footer ends here -->
 
 <script>

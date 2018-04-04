@@ -64,7 +64,7 @@ p {
 <header>
  <!-- header starts here -->
  <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px; background-color: white;">
-  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header" >
       <div class="col-sm-2 col-md-3 col-xm-4" style="width: 90%;">
       <a class="navbar-brand" href="../index.php"><img src="img/logo.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
@@ -94,7 +94,7 @@ p {
 
 
 
-<li style="    margin-top: 13px; margin-right: 17px; font-weight: bold; color: #4f2684; padding-top: 29px;"><a href="EventorHtml/index.php">Back to <span class="glyphicon glyphicon-home"></span></a></li> 
+<li style="    margin-top: 13px; margin-right: 17px; font-weight: bold; color: #4f2684; padding-top: 29px;"><a href="EventorHtml/index.php"><span class="glyphicon glyphicon-home" style="color: #4f2684; font-size: 21px;"></span></a></li> 
 
     </ul>
   </div>

@@ -66,7 +66,19 @@
                     <div class="col-md-12">
                      <h2 style="color: grey; margin-top: -80px; margin-bottom: 61px; margin-left: 10px;">Dashboard</h2>
 
-                     <h2 style="font-weight: bold; color: #4f2684; margin-bottom: 20px; margin-left: 10px;"><strong>Creator's Name</strong></h2>
+                     <h2 style="font-weight: bold; color: #4f2684; margin-bottom: 20px; margin-left: 10px;"><strong><!--Creator's Name--> 
+
+                        <?php 
+                        //display the creator's first name. 
+
+                        if (isset($_COOKIE['first_name'])){
+
+                            echo 'Welcome, '  . $_COOKIE['first_name']; 
+
+                        }
+                        ?> 
+
+                     </strong></h2>
 
                      <!-- div for contain tickets, events and sales volume content starts here -->
                     <div class="row">

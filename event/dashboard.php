@@ -179,7 +179,7 @@ while($row = mysqli_fetch_array($result)){
 
     $event_url = $row['event_url']; 
 
-   echo  "<p style='text-justify font-size: 14px; line-height: 21px; padding-bottom: 36px; margin-top: 3px;'><strong><a href='../page.php?event_url=$event_url'>". $row['event_title']. "</strong></a> <br/><span class='glyphicon glyphicon-time'>  ". $row['created_at']. " </span>
+   echo  "<p style='text-justify font-size: 14px; line-height: 21px; padding-bottom: 36px; margin-top: 3px;'><strong><a href='../event/page.php?event_url=$event_url'>". $row['event_title']. "</strong></a> <br/><span class='glyphicon glyphicon-time'>  ". $row['created_at']. " </span>
 
    </p></div>";
 }

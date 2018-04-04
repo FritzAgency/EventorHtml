@@ -85,7 +85,31 @@
                         <div class="col-sm-4">
                         <div class="panel panel-back noti-box">
                   <div class="text-box" style="text-align: center; font-weight: bold;">
-                    <p class="main-text">2</p>
+                    <p class="main-text">
+
+                        <!--number of event(s) created--> 
+
+
+                        <?php
+
+require_once('../Database/conn.php');
+
+$id = $_COOKIE['id']; 
+
+$query =  "SELECT * FROM `event` JOIN users ON users.id = event.creator_id WHERE `creator_id` = $id"; 
+
+$result = mysqli_query($con,$query); 
+
+
+$row = mysqli_num_rows($result); 
+//or die(mysqli_error());
+
+echo $row; 
+
+?>
+
+
+                    </p>
                     <p class="text-muted">Events</p>
                 </div>
              </div>

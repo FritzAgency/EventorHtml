@@ -357,7 +357,7 @@ list-style-type: none;">
       <div class="input-group input-group-lg center-block" style="background-color: rgba(79, 38, 132, 0.4);">
         <div class="row" style="border: 2px solid white; margin: 7px; width: 100%;">
         <div class="col-sm-11">
-        <input type="text" class="form-control" value="Find an Event here" style="padding-top: 7px; background-color: transparent; color: white; text-align:center; border: 0px;">
+        <input type="text" class="form-control" placeholder="Find an Event here" style="padding-top: 7px; background-color: transparent; color: white; text-align:center; border: 0px;">
         </div>
         <div class="col-sm-1">
         <span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: white; font-size: 1.333333em; vertical-align: -57%;"></i></span>

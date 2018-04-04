@@ -156,7 +156,7 @@ echo $row;
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                <p style="font-size: 14px; line-height: 21px; padding-bottom: 36px; margin-top: 3px;"><strong>First Event </strong><br/> <span class="glyphicon glyphicon-time"> 6 days</span></p>
+                                <p style="font-size: 14px; line-height: 21px; padding-bottom: 36px; margin-top: 3px;"><strong>Asha Encore</strong><br/> <span class="glyphicon glyphicon-time"> Created on 24/3/2018</span></p>
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-2" style="position: relative; left: 65px;">
@@ -180,11 +180,11 @@ echo $row;
                                         <p>S</p>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <!--div class="col-sm-6">
                                 <p style="font-size: 14px; line-height: 21px; padding-bottom: 20px; margin-top: 3px;"><strong>Second Event </strong><br/> <span class="glyphicon glyphicon-time"> 2 days</span></p>
-                                </div>
+                                </div-->
                                 <!-- buttons at the end of the row not important -->
-                                <div class="col-sm-1" style="position: relative; left: 65px;">
+                                <!--div class="col-sm-1" style="position: relative; left: 65px;">
                                     <div style="color: black;">
                                         o
                                     </div>
@@ -194,7 +194,7 @@ echo $row;
                                     <div style="color: black;">
                                         o
                                     </div>
-                                </div>
+                                </div-->
                                 <!-- buttons at the end of the row not important -->
                             </div>
                         </div>

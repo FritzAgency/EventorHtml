@@ -97,8 +97,15 @@ $org_logo = $row['org_logo'];
 
   }
 
-</style>
+  a{
+    font-size: 17px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 14px;
+  }
 
+</style>
 </head>
 
 <body>
@@ -369,7 +376,7 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
 
 
 
-        <h3 class="h3 text-center mb-5" id="about">ABOUT</h3>
+        <h3 class="h3 text-center mb-5" id="about" style="font-style: 18px; font-weight: bold;">ABOUT</h3>
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
           <!--li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel11" role="tab">Details</a>
@@ -566,7 +573,7 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
 
           <!--Panel 5-->
           <div class="tab-pane fade" id="panel16" role="tabpanel">
-              <div class="row">
+              <div class="row" style="margin-left: auto; margin-right: auto;">
                   <div class="col-md-4">
   <!-- Display the first sponsors logo--> 
 <?php
@@ -687,7 +694,7 @@ if (mysqli_num_rows($select2) == 1){
 
         <!--Panel 6-->
         <div class="tab-pane fade" id="panel12" role="tabpanel">
-          <div class="row">  
+          <div class="row" style="margin-left: auto; margin-right: auto;">  
           <div class="col-md-4 mb-2">
               <!--Card Wider-->
 <div class="card card-cascade wider">
@@ -766,7 +773,7 @@ if (mysqli_num_rows($select2) == 1){
 
       <!--Section: ACTIVITIES-->
       <section>
-        <h2 class="my-5 h3 text-center" id="activities">ACTIVITIES</h2>
+        <h2 class="my-5 h3 text-center" id="activities" style="font-weight: bold; font-size: 18px;">ACTIVITIES</h2>
 
 
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
@@ -805,7 +812,7 @@ if (mysqli_num_rows($select2) == 1){
         
             <!--Panel 1-->
             <div class="tab-pane fade in show" id="panel31" role="tabpanel">
-                <div class="row">
+                <div class="row" style="margin-left: auto; margin-right: auto;">
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
@@ -843,7 +850,7 @@ if (mysqli_num_rows($select2) == 1){
         
             <!--Panel 2-->
             <div class="tab-pane fade in show" id="panel32" role="tabpanel">
-                <div class="row">
+                <div class="row" style="margin-left: auto; margin-right: auto;">
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
@@ -899,7 +906,7 @@ $act_img;?>'); background-repeat: no-repeat;">
         
             <!--Panel 3-->
             <div class="tab-pane fade in show" id="panel33" role="tabpanel">
-                <div class="row">
+                <div class="row" style="margin-left: auto; margin-right: auto;">
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
@@ -959,11 +966,11 @@ $act_img1;?>'); background-repeat: no-repeat;">
         
             <!--Panel   4-->
             <div class="tab-pane fade in show" id="panel34" role="tabpanel">
-                <div class="row">
+                <div class="row" style="margin-left: auto; margin-right: auto;">
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                    <div class="row">
+                    <div class="row" style="margin-left: auto; margin-right: auto;">
                           <div class="col-md-6 mb4">
                         <h4 class="card-title"><strong>
 
@@ -1019,7 +1026,7 @@ $act_img2;?>'); background-repeat: no-repeat;">                        <!--img s
   
             <!--Panel 5-->
             <div class="tab-pane fade in show" id="panel35" role="tabpanel">
-                <div class="row">
+                <div class="row" style="margin-left: auto; margin-right: auto;">
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
@@ -1062,7 +1069,7 @@ $act_img2;?>'); background-repeat: no-repeat;">                        <!--img s
                   <div class="col-md-6 mb-4">
                       <h4 class="card-title"><strong>Name of Activity</strong></h4>
                       <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
-                      <div class="row">
+                      <div class="row" style="margin-left: auto; margin-right: auto;">
                         <div class="col-md-6 mb4">
                             <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
                             <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">

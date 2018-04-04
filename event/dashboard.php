@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.php" style="#a20eab"><img src="" alt="">Eventor Logo</a> 
+                <a class="navbar-brand" href="../index.php" style="#a20eab"><img src="" alt="">user Logo</a> 
             </div>
   <div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;"><a href="#" class="btn btn-danger square-btn-adjust" style="border: 2px solid gray; color: white; background-color: #4f2684; padding: 8px 20px; border-radius: 40px; font-size: 14px; font-weight: bold;">logout</a> </div>
         </nav>   
@@ -40,19 +40,19 @@
                 <ul class="nav" id="main-menu" style="margin-top: 15px;">
 				
                     <li>
-                        <a class="active-menu"  href="#"><i class="fa fa-home fa-2x"></i> Dashboard</a>
+                        <a class="active-menu"  style="height: 95px;" href="#"><i class="fa fa-home fa-2x"></i> Dashboard</a>
                     </li>
                      <li>
-                        <a  href="#"><i class="fa fa-calendar fa-2x"></i> Events</a>
+                        <a  href="#" style="height: 95px;"><i class="fa fa-calendar fa-2x"></i> Events</a>
                     </li>
                     <li>
-                        <a  href="#"><i class="fa fa-ticket fa-2x"></i> Tickets</a>
+                        <a  href="#" style="height: 95px;"><i class="fa fa-ticket fa-2x"></i> Tickets</a>
                     </li>
-						   <li  >
-                        <a   href="#"><i class="fa fa-cart fa-2x"></i> Vendors</a>
+						   <li>
+                        <a   href="#" style="height: 95px;"><i class="fa fa-book fa-2x"></i> Vendors</a>
                     </li>	
-                      <li  >
-                        <a  href="#"><i class="fa fa-gear fa-2x"></i> Settings</a>
+                      <li>
+                        <a  href="#" style="height: 95px;"><i class="fa fa-gear fa-2x"></i> Settings</a>
                     </li>	
                 </ul>
                
@@ -134,7 +134,7 @@ echo $row;
                             <h1 style="font-weight: bold; font-size: 23px; color: grey;">Event Visits</h2>
                         </div>
                         <div class="panel-body">
-                            <div id="morris-bar-chart"></div>
+                            <div><img src="img/chart.png" alt="" class="img-responsive"></div>
                         </div>
                     </div>
                         </div>
@@ -144,14 +144,14 @@ echo $row;
                 
                      <!-- event details goes in here -->
                 <div class="row">
-                    <div class="col-sm-4 panel panel-default" style="height: 540px; padding-left: 0px; padding-right: 0px; width: 31%; margin-left: 10px; margin-right: 27px;">
+                    <div class="col-sm-4 panel panel-default" style="height: 557px;; padding-left: 0px; padding-right: 0px; width: 31%; margin-left: 10px; margin-right: 27px;">
                         <div class="panel panel-heading" style="margin-bottom: 6px;">
                             <h2>Events</h2>
                         </div>
                         <div class="panel panel-body" style="padding: 2px; margin-bottom: 10px;">
                             <div class="row">
                                 <div class="col-sm-2" style="margin-left: auto; margin-right: auto; padding: 5px;">
-                                    <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                    <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <p>F</p>
                                     </div>
                                 </div>
@@ -160,13 +160,13 @@ echo $row;
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-2" style="position: relative; left: 65px;">
-                                    <div style="color: black;">
+                                    <div style="color: #4f2684;">
                                         o
                                     </div>
-                                    <div style="color: black;">
+                                    <div style="color: #4f2684;">
                                         o
                                     </div>
-                                    <div style="color: black;">
+                                    <div style="color: #4f2684;;">
                                         o
                                     </div>
                                 </div>
@@ -176,7 +176,7 @@ echo $row;
 
                          <div class="row">
                                 <div class="col-sm-2" style="margin-left: auto; margin-right: auto; padding: 5px;">
-                                    <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                    <div style="width: 38px; height: 40px; border: 2px solid #4f2684;; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <p>S</p>
                                     </div>
                                 </div>
@@ -185,13 +185,13 @@ echo $row;
                                 </div>
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-1" style="position: relative; left: 65px;">
-                                    <div style="color: black;">
+                                    <div style="color: #4f2684;">
                                         o
                                     </div>
-                                    <div style="color: black;">
+                                    <div style="color: ##4f2684;">
                                         o
                                     </div>
-                                    <div style="color: black;">
+                                    <div style="color: #4f2684;">
                                         o
                                     </div>
                                 </div>
@@ -208,7 +208,7 @@ echo $row;
                                 <h2>Vendors</h2>
                             </div>
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684;; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <h2 style="color: white">2</h2>
                                     </div>
                             </div>
@@ -217,7 +217,7 @@ echo $row;
                         <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-2" style="padding-left: 0px;">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684;; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
@@ -228,7 +228,7 @@ echo $row;
 
                         <div class="row">
                             <div class="col-sm-2" style="padding-left: 0px;">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684;; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
@@ -239,7 +239,7 @@ echo $row;
 
                         <div class="row">
                             <div class="col-sm-2" style="padding-left: 0px;">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684;; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
@@ -250,7 +250,7 @@ echo $row;
 
                         <div class="row">
                             <div class="col-sm-2" style="padding-left: 0px;">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684;; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
@@ -269,7 +269,7 @@ echo $row;
                                 <h2>Tickets</h2>
                             </div>
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684;; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <h2 style="color: white">2</h2>
                                     </div>
                             </div>
@@ -278,7 +278,7 @@ echo $row;
                         <div class="panel-body" style="padding: 2px; margin-bottom: 10px;">
                         <div class="row">
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
@@ -289,7 +289,7 @@ echo $row;
 
                         <div class="row">
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
@@ -300,7 +300,7 @@ echo $row;
 
                         <div class="row">
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>
@@ -311,7 +311,7 @@ echo $row;
 
                         <div class="row">
                             <div class="col-sm-2">
-                                <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
+                                <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                     <p></p>
                                 </div>
                             </div>

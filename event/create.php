@@ -231,7 +231,7 @@ if(isset($message)){
     <p><textarea style="width:100%; height: 200px; "placeholder="Give a short discription of the event" oninput="this.className = ''" name="event_description"></textarea></p>
   <hr>  
   <h4 style="color: #4f2684; font-size: 14px;">Address</h4>
-  <p><input type="number" placeholder="Enter Address" oninput="this.className = ''" name="Address" id="autocomplete" onFocus="geolocate()"></p>
+  <p><input type="text" placeholder="Enter Address" oninput="this.className = ''" name="Address" id="autocomplete" onFocus="geolocate()"></p>
   <div class="row">
   <div class="col-sm-6">
   <h4 style="color: #4f2684; font-size: 14px;">State</h4>

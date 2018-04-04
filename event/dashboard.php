@@ -152,12 +152,41 @@ echo $row;
                             <div class="row">
                                 <div class="col-sm-2" style="margin-left: auto; margin-right: auto; padding: 5px;">
                                     <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
-                                        <p>F</p>
+                                        <p><!-- F --></p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                <p style="font-size: 14px; line-height: 21px; padding-bottom: 36px; margin-top: 3px;"><strong>Asha Encore</strong><br/> <span class="glyphicon glyphicon-time"> Created on 24/3/2018</span></p>
-                                </div>
+                                                                     <?php
+
+require_once('../Database/conn.php');
+
+$id = $_COOKIE['id']; 
+
+$query =  "SELECT * FROM `event` JOIN users ON users.id = event.creator_id WHERE `creator_id` = $id"; 
+
+ $result = mysqli_query($con,$query); 
+
+
+$row = mysqli_num_rows($result); 
+
+while($row = mysqli_fetch_array($result)){
+
+
+    $event_url = $row['event_url']; 
+
+   echo  "<p style='text-justify font-size: 14px; line-height: 21px; padding-bottom: 36px; margin-top: 3px;'><strong><a href='../page.php?event_url=$event_url'>". $row['event_title']. "</strong></a> <br/><span class='glyphicon glyphicon-time'>  ". $row['created_at']. " </span>
+
+   </p></div>";
+}
+
+
+?>
+                                <!--p style="font-size: 14px; line-height: 21px; padding-bottom: 36px; margin-top: 3px;"><strong>Asha Encore</strong><br/> <span class="glyphicon glyphicon-time"> Created on 24/3/2018</span></p-->
+                                <!--/div-->
+
+
+
+
                                 <!-- buttons at the end of the row not important -->
                                 <div class="col-sm-2" style="position: relative; left: 65px;">
                                     <div style="color: black;">

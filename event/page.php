@@ -83,7 +83,7 @@ $org_logo = $row['org_logo'];
     @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
     
     body {
-      background-image:url("img/eventor.jpg");
+      /* background-image:url("img/eventor.jpg"); */
       font-family: 'Montserrat', sans-serif;
     }
 

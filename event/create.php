@@ -235,7 +235,7 @@ if(isset($message)){
   <div class="row">
   <div class="col-sm-6">
   <h4 style="color: #4f2684; font-size: 14px;">State</h4>
-  <p><input type="number" placeholder="Enter State here"oninput="this.className = ''" name="state"></p>
+  <p><input type="text" placeholder="Enter State here"o ninput="this.className = ''" name="state"></p>
     </div>
     <div class="col-sm-6">
     <h4 style="color: #4f2684; font-size: 14px;">City</h4>

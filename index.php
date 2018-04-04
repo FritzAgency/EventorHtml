@@ -560,7 +560,7 @@ list-style-type: none;">
                     <p class="mb-4">
                         <strong>The most comprehensive Event creator and also a platform that allows you to sell your products and services.                            versions available. Create your own, stunning website.</strong>
                     </p>
-                    <a target="_blank" href="#" class="btn btn-outline-white btn-lg">Start Your event creation
+                    <a target="_blank" href="create.php" class="btn btn-outline-white btn-lg">Start Your event creation
                     </a>
 
                 </div>
@@ -579,7 +579,7 @@ list-style-type: none;">
         <div class="pt-4" style="background-color:#8f2dc2; padding-bottom: 1.5rem;">
             <a class="btn btn-outline-white" href="#" role="button">Become a Vendor
             </a>
-            <a class="btn btn-outline-white" href="#" target="_blank" role="button">Create Event
+            <a class="btn btn-outline-white" href="event/create.php" target="_blank" role="button">Create Event
             </a>
         </div>
         <!--/.Call to action-->

@@ -151,13 +151,10 @@ echo $row;
                         <div class="panel panel-body" style="padding: 2px; margin-bottom: 10px;">
                             <div class="row">
                                 <div class="col-sm-2" style="margin-left: auto; margin-right: auto; padding: 5px;">
-<<<<<<< HEAD
                                     <div style="width: 38px; height: 40px; border: 2px solid #4f2684; border-radius: 50px; background: #4f2684; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <p>F</p>
-=======
                                     <div style="width: 38px; height: 40px; border: 2px solid black; border-radius: 50px; background: black; color: #ffffff !important; text-align: center; font-weight: bold;">
                                         <p><!-- F --></p>
->>>>>>> 384c4da48a14d36bc1551dbb4ae1e227327a920c
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -214,17 +211,12 @@ while($row = mysqli_fetch_array($result)){
                                         <p>S</p>
                                     </div>
                                 </div>
-                                <!--div class="col-sm-6">
+                                div class="col-sm-6">
                                 <p style="font-size: 14px; line-height: 21px; padding-bottom: 20px; margin-top: 3px;"><strong>Second Event </strong><br/> <span class="glyphicon glyphicon-time"> 2 days</span></p>
                                 </div-->
                                 <!-- buttons at the end of the row not important -->
-<<<<<<< HEAD
-                                <div class="col-sm-1" style="position: relative; left: 65px;">
-                                    <div style="color: #4f2684;">
-=======
-                                <!--div class="col-sm-1" style="position: relative; left: 65px;">
+                                div class="col-sm-1" style="position: relative; left: 65px;">
                                     <div style="color: black;">
->>>>>>> 384c4da48a14d36bc1551dbb4ae1e227327a920c
                                         o
                                     </div>
                                     <div style="color: ##4f2684;">
@@ -233,8 +225,8 @@ while($row = mysqli_fetch_array($result)){
                                     <div style="color: #4f2684;">
                                         o
                                     </div>
-                                </div-->
-                                <!-- buttons at the end of the row not important -->
+</div>
+                                <!-- buttons at the end of the row not important
                             </div>
                         </div>
                     <!-- stops here -->

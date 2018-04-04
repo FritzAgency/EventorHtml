@@ -295,7 +295,7 @@ if(isset($message)){
   <div class="form-group">
                             <h4 style="padding-left: 15px; color: #4f2684;font-size: 14px;">Events Ends</h4>
                         <div class="col-sm-12">
-                            <input type="text" id="ends" name="event_statrs" class="form-control" placeholder="Start Date" style="padding:2px">
+                            <input type="text" id="ends" name="event_starts" class="form-control" placeholder="Start Date" style="padding:2px">
                             <script>
                                 $(document).ready(function() {
                                 $("#ends").datepicker();

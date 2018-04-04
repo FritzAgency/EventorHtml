@@ -871,10 +871,11 @@ if (mysqli_num_rows($select2) == 1){
 
                               </h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 10px;">Location</h2>  
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 10px;">Location:  
+                  <?php if(isset($act_loc)){echo $act_loc;}?></h2>  
+                              <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div> 
+                          </div--> 
                               <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
                           </div>
                     </div>
@@ -923,12 +924,18 @@ $act_img;?>'); background-repeat: no-repeat;">
                           <div class="col-md-6 mb-4" style="margin: auto;">
                           <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><!--10:00--> 
+
+
+                  <?php if(isset($act_date1)){echo $act_date1;}?>
+
+                              </h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 10px;">-</h2>  
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 10px;">Location:  
+                  <?php if(isset($act_loc1)){echo $act_loc1;}?></h2>  
+                              <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div>
+                          </div-->
                               <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
                           </div>
                     </div>
@@ -977,12 +984,21 @@ $act_img1;?>'); background-repeat: no-repeat;">
       <div class="col-md-6 mb-4" style="margin: auto;"> 
                               <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><!--10:00-->
+                                  
+                  <?php if(isset($act_date2)){echo $act_date2;}?>
+
+                              </h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">
+                                
+
+                                Location:  
+                  <?php if(isset($act_loc2)){echo $act_loc2;}?>
+                              </h2>  
+                              <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div>
+                          </div-->
                               <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
                           </div>
                     </div>

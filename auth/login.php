@@ -60,7 +60,7 @@
 <!-- header stops here -->
 </header>
 
-<div class="container" style="margin-top: 87px; width: 29%; background-color: white;">
+<div class="container" style="margin-top: 87px; width: 29%; background-color: white; margin-top: 7%; margin-bottom: 6%">
 
         <form class="form-horizontal" role="form" action="" method="POST">
 
@@ -110,7 +110,7 @@
             </div>
 
     <!-- footer goes here -->
-    <footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 50px; margin-top: 10%; margin-bottom: 10%">
+    <footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 50px;">
   <div class="row">
     <div class="col-sm-2"  style="width: 12.666667%; margin-left: 36px">
       <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">

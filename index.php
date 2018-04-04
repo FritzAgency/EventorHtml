@@ -407,7 +407,10 @@ list-style-type: none;">
                                         <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
                                         <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
                                         <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees.
+                                    </p>
+                                    <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
                                     </div>
                                 </div>
                             </a>
@@ -430,7 +433,9 @@ list-style-type: none;">
                                         <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
                                         <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
                                         <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees.</p>
+                                            <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
                                     </div>
                                 </div>
                             </a>
@@ -453,7 +458,10 @@ list-style-type: none;">
                                     <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
                                         <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
                                         <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees.
+                                        </p>
+                                        <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
                                     </div>
                                 </div>
                             </a>
@@ -480,7 +488,9 @@ list-style-type: none;">
                                         <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
                                         <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
                                         <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees.</p>
+                                        <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
                                     </div>
                                 </div>
                             </a>
@@ -503,7 +513,9 @@ list-style-type: none;">
                                         <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
                                         <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
                                         <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees.</p>
+                                        <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
                                     </div>
                                 </div>
                             </a>
@@ -526,7 +538,9 @@ list-style-type: none;">
                                     <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>Feb 11, 2018</p>
                                         <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
                                         <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music Entertainment</p>
-                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees. Order for your ticket now</p>
+                                        <p>Come and party with flyest men and women in nigeria, free drinks and meals for the first 200 attendees.</p>
+                                        <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
                                     </div>
                                 </div>
                             </a>

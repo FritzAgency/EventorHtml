@@ -363,14 +363,14 @@
             <div class="col-md-6 mb-4">
   
               <!-- Main heading -->
-              <h3 class="h3 mb-3" style="text-align: right;">Organizer Name goes in here</h3>
+              <h3 class="h3 mb-3" style="text-align: right;">Fritz International.</h3>
               
             </div>
             <!--Grid column-->
   
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-                <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
+                <img src="../public/images/fritzng.png">
             </div>
             <!--Grid column-->
   

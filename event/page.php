@@ -115,9 +115,12 @@
         <div class="view">
 
           <!--Video source-->
-          <video class="" autoplay loop>
+          <!--video class="" autoplay loop>
             <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
-          </video>
+          </video-->
+
+          <div class="view" style="background-image: url('../public/images/carousel.jpg'); background-repeat: no-repeat; background-size: cover;"> </div>
+
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -152,7 +155,9 @@
 
       <!--Second slide-->
       <div class="carousel-item">
-        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
+        <!--div class="view" style="background-image: url('public/images/carousel.jpg'); background-repeat: no-repeat; background-size: cover;"-->
+
+          <div class="view" style="background-image: url('../public/images/carousel.jpg'); background-repeat: no-repeat; background-size: cover;"> 
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -186,13 +191,16 @@
       <!--/Second slide-->
 
       <!--Third slide-->
-      <div class="carousel-item">
+      <!--div class="carousel-item">
         <div class="view">
 
           <!--Video source-->
-          <video class="video-full" autoplay loop>
-              <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
-          </video>
+          <!--video class="video-full" autoplay loop>
+              <source src="" type="video/mp4" />
+          </video-->
+
+          <!--div class="view" style="background-image: url('../public/images/carousel.jpg'); background-repeat: no-repeat; background-size: cover;"> </div-->
+
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">

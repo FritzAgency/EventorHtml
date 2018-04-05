@@ -878,7 +878,7 @@ if (mysqli_num_rows($select2) == 1){
 
                               </h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">LOCATION  
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">Location:  
                   <?php if(isset($act_loc)){echo $act_loc;}?></h2>  
                               <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
@@ -938,7 +938,7 @@ $act_img;?>'); background-repeat: no-repeat;">
 
                               </h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">LOCATION  
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">Location:  
                   <?php if(isset($act_loc1)){echo $act_loc1;}?></h2>  
                               <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
@@ -1000,7 +1000,7 @@ $act_img1;?>'); background-repeat: no-repeat;">
                               <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">
                                 
 
-                                LOCATION  
+                                Location:  
                   <?php if(isset($act_loc2)){echo $act_loc2;}?>
                               </h2>  
                               <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">

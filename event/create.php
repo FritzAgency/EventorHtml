@@ -1,18 +1,3 @@
-<?php 
-
-/*
-if user not logged in, redirect to the login page
-*/
-if (!isset($_COOKIE['id'])) {
-  header('Location: ../auth/signup.php'); 
-}
-
-?> 
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -171,25 +156,7 @@ button:hover {
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -41px;">
-    <!--li><a href="#" class="new">HOW IT WORKS </a></li>
-      <li><a href="#" class="new">EVENTS</a></li>
-      <li><a href="#" class="new">SPECIAL DEALS</a></li>
-      <li><a href="#" class="new">ABOUT US</a></li>
-      <li><a href="#" class="new">CONTACT</a></li-->
-      <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
-      <!--li><a class="new"> | </a></li-->
-      <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
-      <?php 
-
-      /*if ((!isset($_SESSION['email']))){
-
-
-  header("Location: ../auth/signup.php");
-
-} */ 
-
- 
-?>
+   
 
 
 
@@ -202,10 +169,6 @@ button:hover {
 <!-- header stops here -->
 </header>
 
-<?php 
-require_once('../event/createclass.php'); 
-
-?> 
 
 <!-- form starts here -->
 <div class="container">
@@ -216,13 +179,7 @@ require_once('../event/createclass.php');
 <form id="regForm" action="" method="post" enctype="multipart/form-data">
   <p style="font-family: Arial; text-align: center; font-weight: bolder; color: #4f2684; font-size: 30px">CREATE EVENT</p>
   <!-- One "tab" for each step in the form: -->
-              <?php 
-
-if(isset($message)){
-    echo '<div class="alert alert-success">'. $message .'</div>';
-}
-?> 
-<hr>
+  <hr>
   <div class="tab"><h4 style="font-weight: bold; color: #4f2684">EVENT DETAILS</h4>
   <hr> 
   <h4 style="color: #4f2684; font-size: 14px;">Event Title</h4>
@@ -479,7 +436,8 @@ if(isset($message)){
   <div style="overflow:auto;">
     <div style="float:right;">
       <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1);">Next</button>
+      <button type="button" id="mytest">Create Event</button>
     </div>
   </div>
 
@@ -535,6 +493,8 @@ if(isset($message)){
 <script>
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the crurrent tab
+ //redirect to the generated page
+
 
 function showTab(n) {
   // This function will display the specified tab of the form...
@@ -543,13 +503,17 @@ function showTab(n) {
   //... and fix the Previous/Next buttons:
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
+     document.getElementById("mytest").style.display = "none";
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    //document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("mytest").innerHTML = "Create Event";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    //document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("mytest").innerHTML = "Create Event";
+
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
@@ -605,6 +569,21 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+/*function redirect(){
+if (document.getElementById("nextBtn").innerHTML = "Submit") {
+
+  window.location = "../event/page.php"
+ } 
+}*/ 
+
+  // body...
+
+ 
+
+
+
+
 </script>
 
 

@@ -94,18 +94,18 @@
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
-            <a href="#about" class="nav-link">
+            <a href="#about" class="nav-link" style="font-size: 10px">
               About
             </a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link">
+            <a href="#about" class="nav-link" style="font-size: 10px" >
                 Activities
             </a>
           </li>
           <li class="nav-item" style="margin-left: 27px;">
             <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect waves-light"
-              target="_blank">Register
+              style="font-size: 10px">Register
             </a>
           </li>
         </ul>
@@ -148,11 +148,11 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Fitfamfest 2018</strong>
+                <p style="font-weight: bold">Fitfamfest 2018</p>
               </h1>
 
               <p>
-                <strong>#FitFamFest, Africa’s largest fitness festival, is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest.</strong>
+                <strong>#FitFamFest, Africa’s largest fitness festival,</strong><br> <strong> is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest.</strong>
               </p>
 
               <!--p class="mb-4 d-none d-md-block">
@@ -329,10 +329,10 @@
 
 
 
-        <h3 class="h5 text-center mb-5" id="about">ABOUT</h3>
+        <p class="text-center mb-5" style="font-weight:bold; ">ABOUT</p>
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
           <li class="nav-item new">
-              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel11" role="tab">Details</a>
+              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel11" role="tab" >Details</a>
           </li>
           <li class="nav-item new">
             <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel12" role="tab">Price</a>
@@ -360,18 +360,54 @@
         <div class="row">
 
             <!--Grid column-->
-            <div class="col-md-6 mb-4">
+            <div class="col-md-3 mb-2">
   
-              <!-- Main heading -->
-              <h3 class="h3 mb-3" style="text-align: right;">Fritz International.</h3>
+
+<div class="card card-cascade">
+
+    <!--Card image-->
+    <div class="view overlay">
+       <center> <img src="../public/images/fritzng.png" class="img-fluid" alt=""> </center>
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+         <hr>
+    </div>
+    <!--/.Card image-->
+
+    <!--Card content-->
+    <div class="card-body text-center">
+        <!--Title-->
+        <h4 class="card-title"><strong>Fritz International</strong></h4>
+
+            <!--h5>Products or services</h5>
+        <p class="card-text">information
+        </p-->
+
+        <!--Facebook-->
+        <!--a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+        <!--Twitter-->
+        <!--a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+        <!--Google +-->
+        <!--a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a-->
+
+    
+    <!--/.Card content-->
+
+</div>
+
+</div>
+
+ </div>             <!-- Main heading -->
+              <!--h3 class="h3 mb-3" style="text-align: right;">Fritz International.</h3>
               
             </div>
             <!--Grid column-->
   
             <!--Grid column-->
-            <div class="col-md-6 mb-4">
+            <!--div class="col-md-6 mb-4">
                 <img src="../public/images/fritzng.png">
-            </div>
+            </div-->
             <!--Grid column-->
   
           </div>
@@ -405,10 +441,11 @@
 
     <!--Card image-->
     <div class="view overlay">
-        <img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" class="img-fluid" alt="">
+       <center> <img src="../public/images/fritzng.png" class="img-fluid" alt=""> </center>
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>
+        <hr style="color: gray">
     </div>
     <!--/.Card image-->
 
@@ -512,20 +549,20 @@
           <div class="tab-pane fade" id="panel11" role="tabpanel">
               <br>
       
-              <p class="text-justify"> The full-day event which brings together amazing fun-fitness, food and wellness activities for family, friends, fitness freaks and those passionate about being healthy is scheduled to take place on 25th of November, 2017 at the prestigious Ember Creek Waterfront on Water Corporation Drive, Victoria Island. AXA Mansard FitFam Fest will have fitness activities hosted by celebrity fitness coaches like Maje Ayida, CEO Eden Lifestyle and owner of The HIIT Squad, AfriFitness Boss Rachel from the United Kingdom, Seyi Olusore, Shedams Fitness as well as top fitness outfits like Breathe Studio and RyderLounge.</p>
+              <p class="text-justify" style="font-size: 15px"> The full-day event which brings together amazing fun-fitness, food and wellness activities for family, friends, fitness freaks and those passionate about being healthy is scheduled to take place on 25th of November, 2017 at the prestigious Ember Creek Waterfront on Water Corporation Drive, Victoria Island. AXA Mansard FitFam Fest will have fitness activities hosted by celebrity fitness coaches like Maje Ayida, CEO Eden Lifestyle and owner of The HIIT Squad, AfriFitness Boss Rachel from the United Kingdom, Seyi Olusore, Shedams Fitness as well as top fitness outfits like Breathe Studio and RyderLounge.</p>
 
 
-              <p class="text-justify">Fitness enthusiasts can anticipate never-seen-before activities like the Fitfam Assault Obstacle Course sponsored by Skechers, Silent Disco Glow-in-the-dark Neon Spinning/Yoga/Dancing and the most fun 5K Colour Run. Speaking of colours, this year’s theme is tagged #ColoursofYou, as a reflection of the vibrancy and diversity of the participants and activities anticipated. </p>
+              <p class="text-justify" style="font-size: 15px">Fitness enthusiasts can anticipate never-seen-before activities like the Fitfam Assault Obstacle Course sponsored by Skechers, Silent Disco Glow-in-the-dark Neon Spinning/Yoga/Dancing and the most fun 5K Colour Run. Speaking of colours, this year’s theme is tagged #ColoursofYou, as a reflection of the vibrancy and diversity of the participants and activities anticipated. </p>
 
-              <p class="text-justify">Ember Creek Waterfront will for the first time be used to its full capacity, from the Mezzanine rooftop; which will hold over 50 food vendors, to the fitness centre on the middle floor, right down to the beach waterfront where 10 Extreme Obstacles over 300m will stand as well as a Vegan village hosted by Lagos VegFest, Kids Zone and lots more.</p>
+              <p class="text-justify" style="font-size: 15px">Ember Creek Waterfront will for the first time be used to its full capacity, from the Mezzanine rooftop; which will hold over 50 food vendors, to the fitness centre on the middle floor, right down to the beach waterfront where 10 Extreme Obstacles over 300m will stand as well as a Vegan village hosted by Lagos VegFest, Kids Zone and lots more.</p>
 
 
-              <p class="text-justify">
+              <p class="text-justify" style="font-size: 15px">
                 The main stage will house an assortment of activities from encore fitness parties to the Muscle Man and Bikini Model Championships hosted by Lifeland.ng. Exclusive discounts on fitness gear and equipment will be offered at the festival. Speaking of the event, AXA Mansard Health Limited CEO Tope Adeniyi said, “Everyone needs to make healthy decisions in every facet of their lives, not just in managing their finances or insuring their lives and health. Increasing public awareness of the need for a wellness-focused lifestyle is something we are passionate about at AXA Mansard. Through this event that celebrates health and fitness, we intend to walk hand-in-hand with our customers and indeed the public, as together we take necessary steps towards living healthy because everything depends on your wellbeing.”
 Get ready to have lots of fun and show the #ColoursofYou.
               </p>
 
-<p class="text-justify">
+<p class="text-justify" style="font-size: 15px">
   For more information, sponsorships and partnerships please visit www.fitfamfest.com or email hello@fritzng.com
 
 </p>
@@ -609,7 +646,8 @@ Get ready to have lots of fun and show the #ColoursofYou.
 
       <!--Section: ACTIVITIES-->
       <section>
-        <h2 class="my-5 h5 text-center" id="activities">ACTIVITIES</h2>
+       
+        <p class="text-center mb-5" style="font-weight:bold; ">ACTIVITIES</p>
 
 
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
@@ -620,16 +658,16 @@ Get ready to have lots of fun and show the #ColoursofYou.
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel32" role="tab">Jogging</a>
           </li>
             <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel33" role="tab">Organizer</a>
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel33" role="tab">Swimming</a>
             </li>
             <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel34" role="tab">Location</a>
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel34" role="tab">Fencing</a>
             </li>
             <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel35" role="tab">Vendor</a>
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel35" role="tab">Dancing</a>
             </li>
             <li class="nav-item new">
-              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel36" role="tab">Sponsors</a>
+              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel36" role="tab">Football</a>
           </li>
         </ul>
         
@@ -876,7 +914,7 @@ Get ready to have lots of fun and show the #ColoursofYou.
 
     <!--Call to action-->
     <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Sell Products
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Become a Vendor
       </a>
       <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Register
       </a>

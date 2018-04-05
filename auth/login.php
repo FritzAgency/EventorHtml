@@ -10,12 +10,15 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="signup.css">
-</head>
-<?php 
-    require_once('../auth/auth.php');
+<style type="text/css">
+  body{
+    background-color: white;
+  }
 
-    login(); 
- ?>
+</style>
+
+</head>
+
 
 <body>
 
@@ -37,18 +40,7 @@
       <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
       <!--li><a class="new"> | </a></li-->
       <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
-      <?php 
-
-      /*if ((!isset($_SESSION['email']))){
-
-
-  header("Location: ../auth/signup.php");
-
-} */ 
-
- 
-?>
-
+      
 
 
 
@@ -62,14 +54,9 @@
 
 <div class="container" style="margin-top: 87px; width: 29%; background-color: white; margin-top: 7%; margin-bottom: 6%">
 
-        <form class="form-horizontal" role="form" action="" method="POST">
+        <form class="form-horizontal" role="form" action="../index.php" method="POST">
 
-             <h2 style="margin-right: auto; marign-left: auto; font-weight: bold; color: #4f2684; margin-left: 6em;">Login</h2>
-
-             <div><?php if(!empty($_SESSION['message'])) {
-                echo $_SESSION['message']; 
-             } ?></div>
-             <?php unset($_SESSION['message']); ?>
+             <h2 style="margin-right: auto; marign-left: auto; font-weight: bold; color: #4f2684;">Login</h2>
 
             <div class="form-group">
                 <h4 style="padding-left: 15px; color: #4f2684;">Email</h4>

@@ -17,12 +17,7 @@
 	<link rel="stylesheet" href="signup.css">
 	<!-- <link rel="stylesheet" href="app.css"> -->
 	<link rel="stylesheet" href="style11.css">
-    <?php 
-
-    require_once('../functions/auth.php');
-   signup(); 
-     ?> 
-    <style>
+        <style>
 
 #header {
 	width: 100%;
@@ -79,18 +74,7 @@ p {
       <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
       <!--li><a class="new"> | </a></li-->
       <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
-      <?php 
-
-      /*if ((!isset($_SESSION['email']))){
-
-
-  header("Location: ../auth/signup.php");
-
-} */ 
-
- 
-?>
-
+   
 
 
 
@@ -105,20 +89,10 @@ p {
 
 		<div class="container" style="width:500px; background-color: white;">
                 
-                <form class="form-horizontal" role="form" method="POST" action="">
+                <form class="form-horizontal" role="form" method="POST" action="../auth/login.php">
 
                     <h2 style="margin-right: auto; marign-left: auto; font-weight: bold; color: #4f2684;">SIGNUP</h2>
 
-<div>
-  <?php 
-
-  if(!empty($_SESSION['message'])){
-
-    echo $_SESSION['message']; 
-  }  
-?>
-</div>
-<?php unset($_SESSION['message']); ?>
 
 
 
@@ -239,7 +213,7 @@ p {
  </div>
                                         <div class="form-group">
                         <div class="col-sm-12">
-                            <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button>
+                           <a href="../auth/login.php"> <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button></a>
                         </div>
     </form>
 

@@ -710,8 +710,8 @@ Get ready to have lots of fun and show the #ColoursofYou.
           
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
-                        Image Here. 
+                        <img src="../img/obstacles.jpg" class="img-fluid z-depth-1-half" alt="">
+                        
                     </div>
                     <!--Grid column-->
           
@@ -758,8 +758,8 @@ Get ready to have lots of fun and show the #ColoursofYou.
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
 
-                      Second image goes here 
-                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
+                      
+                        <img src="../img/5krun.jpg" class="img-fluid z-depth-1-half" alt="yt">
                     </div>
                     <!--Grid column-->
           
@@ -807,8 +807,8 @@ fitness to deliver an exciting route to a healthier lifestyle.
           
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                      Third Activity image goes here. 
-                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
+                      
+                        <img src="../img/neonryder.jpg" class="img-fluid z-depth-1-half" alt="">
                     </div>
                     <!--Grid column-->
           
@@ -854,8 +854,8 @@ fitness to deliver an exciting route to a healthier lifestyle.
           
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                      Fourth Image goes here. 
-                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
+                       
+                        <img src="../img/neonflex.jpg" class="img-fluid z-depth-1-half" alt="">
                     </div>
                     <!--Grid column-->
           
@@ -907,9 +907,7 @@ learning about portion control and calorie measurement.
           
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-
-                      Fifth image goes here. 
-                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
+                        <img src="../img/clean.jpg" class="img-fluid z-depth-1-half" alt="">
                     </div>
                     <!--Grid column-->
           

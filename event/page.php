@@ -652,23 +652,23 @@ Get ready to have lots of fun and show the #ColoursofYou.
 
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
             <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel31" role="tab">Hicking</a>
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel31" role="tab">Assault Obstacle Course</a>
             </li>
             <li class="nav-item new">
-              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel32" role="tab">Jogging</a>
+              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel32" role="tab">5K Run</a>
           </li>
             <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel33" role="tab">Swimming</a>
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel33" role="tab">Neon Ryder </a>
             </li>
             <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel34" role="tab">Fencing</a>
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel34" role="tab">Neon Flex </a>
             </li>
             <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel35" role="tab">Dancing</a>
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel35" role="tab">Clean Eat Buffet</a>
             </li>
-            <li class="nav-item new">
+            <!--li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel36" role="tab">Football</a>
-          </li>
+          </li-->
         </ul>
         
         <!-- Tab panels -->
@@ -680,17 +680,25 @@ Get ready to have lots of fun and show the #ColoursofYou.
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
-                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                        <h4 class="card-title">
+                          <!-- First Activity --> 
+
+                          <strong>Assault Obstacle Course</strong></h4>
+                          <!-- first activity description --> 
+                        <p class="card-text">
+
+                          Military inspired obstacle race competition.Overcome 10 extreme obstacles over a 300m course.For the ultimate FitFam individual.
+
+                         </p>
                         <div class="row">
                           <div class="col-md-6 mb4">
                               <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">1:00PM</h2>
                               </div>
                               <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">3:00PM</h2>
                           </div>
                           </div>
                           <div class="col-md-6 mb-4" style="margin: auto;">
@@ -702,7 +710,8 @@ Get ready to have lots of fun and show the #ColoursofYou.
           
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
+                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
+                        Image Here. 
                     </div>
                     <!--Grid column-->
           
@@ -718,17 +727,25 @@ Get ready to have lots of fun and show the #ColoursofYou.
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
-                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                        <h4 class="card-title">
+                          <!-- Second Activity name --> 
+
+                          <strong>5K Run</strong></h4>
+                          <!-- Second activity description--> 
+                        <p class="card-text">
+
+                          5km casual mini-marathon competition with a splash of colours on a scenic route through Victoria Island.
+
+                         </p>
                         <div class="row">
                           <div class="col-md-6 mb4">
                               <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">8:00AM </h2>
                               </div>
                               <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00AM</h2>
                           </div>
                           </div>
                           <div class="col-md-6 mb-4" style="margin: auto;">
@@ -740,7 +757,9 @@ Get ready to have lots of fun and show the #ColoursofYou.
           
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
+
+                      Second image goes here 
+                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
                     </div>
                     <!--Grid column-->
           
@@ -756,17 +775,27 @@ Get ready to have lots of fun and show the #ColoursofYou.
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
-                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                        <h4 class="card-title">
+
+                          <!-- Third activity name --> 
+
+                          <strong> Neon Ryder </strong></h4>
+                        <p class="card-text">
+                          <!-- Third activity description--> 
+
+                          RyderLounge is Africa's 1st and only Gamified Virtual cycling studio, fusing the very best of technology and
+fitness to deliver an exciting route to a healthier lifestyle.
+
+                        </p>
                         <div class="row">
                           <div class="col-md-6 mb4">
                               <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00AM </h2>
                               </div>
                               <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">1:00PM</h2>
                           </div>
                           </div>
                           <div class="col-md-6 mb-4" style="margin: auto;">
@@ -778,7 +807,8 @@ Get ready to have lots of fun and show the #ColoursofYou.
           
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
+                      Third Activity image goes here. 
+                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
                     </div>
                     <!--Grid column-->
           
@@ -794,17 +824,25 @@ Get ready to have lots of fun and show the #ColoursofYou.
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
-                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                        <h4 class="card-title">
+                          <!-- fourth activity name-->
+
+                          <strong>Neon Flex</strong></h4>
+                        <p class="card-text"> 
+                          <!-- Fourth activity description --> 
+
+                          Meditation + Sequence Workshop - With Breathe Yoga Studio
+
+                         </p>
                         <div class="row">
                           <div class="col-md-6 mb4">
                               <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">3:00PM</h2>
                               </div>
                               <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">4:00PM</h2>
                           </div>
                           </div>
                           <div class="col-md-6 mb-4" style="margin: auto;">
@@ -816,7 +854,8 @@ Get ready to have lots of fun and show the #ColoursofYou.
           
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
+                      Fourth Image goes here. 
+                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
                     </div>
                     <!--Grid column-->
           
@@ -832,17 +871,28 @@ Get ready to have lots of fun and show the #ColoursofYou.
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
-                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                        <h4 class="card-title">
+                          <!-- fifth activity goes here -->  
+
+                          <strong>Clean Eat Buffet </strong></h4>
+
+                         <!-- fifth activity description -->  
+                        <p class="card-text">  
+
+                        Taste a wide range of healthy and delicious meals, while
+
+learning about portion control and calorie measurement.
+
+                        </p>
                         <div class="row">
                           <div class="col-md-6 mb4">
                               <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"> 2:00PM</h2>
                               </div>
                               <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">5:00PM</h2>
                           </div>
                           </div>
                           <div class="col-md-6 mb-4" style="margin: auto;">
@@ -854,7 +904,9 @@ Get ready to have lots of fun and show the #ColoursofYou.
           
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
+
+                      Fifth image goes here. 
+                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
                     </div>
                     <!--Grid column-->
           
@@ -864,11 +916,11 @@ Get ready to have lots of fun and show the #ColoursofYou.
             </div>
           <!--/.Panel 5-->
   
-          <div class="tab-pane fade in show" id="panel36" role="tabpanel">
+          <!--div class="tab-pane fade in show" id="panel36" role="tabpanel">
               <div class="row">
 
                   <!--Grid column-->
-                  <div class="col-md-6 mb-4">
+                  <!--div class="col-md-6 mb-4">
                       <h4 class="card-title"><strong>Name of Activity</strong></h4>
                       <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
                       <div class="row">
@@ -886,16 +938,16 @@ Get ready to have lots of fun and show the #ColoursofYou.
                             <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
                         </div>
                   </div>
-                  </div>
+                  </div-->
                   <!--Grid column-->
         
                   <!--Grid column-->
-                  <div class="col-md-6 mb-4">
+                  <!--div class="col-md-6 mb-4">
                       <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
                   </div>
                   <!--Grid column-->
         
-                </div>
+                <!--/div-->
                 <!--Grid row-->
       
           </div>

@@ -446,6 +446,8 @@ button:hover {
     <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
+     <a href="../event/page.php">  <button type="button" id="mytest">Create Event</button></a>
+
   </div>
 </form>
 <!-- form ends here -->
@@ -509,10 +511,10 @@ function showTab(n) {
   }
   if (n == (x.length - 1)) {
     //document.getElementById("nextBtn").innerHTML = "Submit";
-    document.getElementById("mytest").innerHTML = "Create Event";
+    
   } else {
     //document.getElementById("nextBtn").innerHTML = "Next";
-    document.getElementById("mytest").innerHTML = "Create Event";
+  
 
   }
   //... and run a function that will display the correct step indicator:

@@ -14,11 +14,25 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css1/style.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="css1/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css1/style.css" type="text/css" rel="stylesheet" media="all">  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css'>
+<link href="css1/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="style.scss">
+    
     <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
-
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 body {
   background-image:url("img/eventor.jpg");
   font-family: 'Montserrat', sans-serif;
@@ -84,10 +98,10 @@ body {
   	top:86%;
 }
 
-.form-group{
+/* .form-group{
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -152,11 +166,11 @@ body {
     } */
 
 .menu{
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .menu1{
-    font-size:12px;
+    font-size:14px;
 }
 
 .doe{
@@ -170,9 +184,9 @@ body {
     border: 2px solid #ffffff;
 }
 
-    .search-query:focus + button {
+    /* .search-query:focus + button {
         z-index: 3;   
-    }
+    } */
 
 .carousel-control.left {
     z-index:7
@@ -184,8 +198,12 @@ body {
 .mdb-color.darken-2 {
 
 background-color: #4f2684 !important;
-
 }
+
+.dropdown-toggle::after {
+    margin-bottom: -2px;
+}
+
 </style>
 
 
@@ -193,119 +211,78 @@ background-color: #4f2684 !important;
 
 <body>
 
-<!--Main Navigation-->
-<header>
+    <!--Main Navigation-->
+    
+    <header>
 
-<!-- Navbar -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-    <div class="container">
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg" style="background-color: white;">
 
-        <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="#">
-            <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
-        </a>
+<!-- Navbar brand -->
+<a class="navbar-brand waves-effect" href="#" style="margin-right: 21% !important;margin-left: 7%; padding-top: 0px;">
+                    <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
+                </a>
 
-        <!-- Collapse -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- Collapse button -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
 
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-top: 14px;">
+<!-- Collapsible content -->
+<div class="collapse navbar-collapse" id="basicExampleNav" style="padding-top: 5px;">
 
-            <!-- Left -->
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">How It Works
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">Event</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">Special Deals</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#" >Contact</a>
-                </li>
-            </ul>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle menu" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink" style="background-color: rgba(79, 38, 132, 0.2);">
+                <a class="dropdown-item waves-effect menu1" style="font-size: 14px;" href="#">How It Works</a>
+                <a class="dropdown-item waves-effect menu1" style="font-size: 14px;" href="#">Events</a>
+                <a class="dropdown-item waves-effect menu1" style="font-size: 14px;" href="#">Special Deals</a>
+                <a class="dropdown-item waves-effect menu1" style="font-size: 14px;" href="#">About us</a>
+                <a class="dropdown-item waves-effect menu1" style="font-size: 14px;" href="#" >Contact</a>
+            </div>
+        </li>
+    </ul>
 
-
-            
-
-            <!-- Right -->
-            <ul class="navbar-nav nav-flex-icons">
-            
-                <li class="nav-item">
-                    <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
-                        <i class="fa fa-login"></i>Create Event
-                    </a>
-                </li>
-                <li class="nav-item" style="margin-right: 60px;" >
-                    <a href="#" class="nav-link waves-effect menu" style="color:#4f2684;">
-                        <i class="fa fa-login"></i>Sell Products
-                    </a>
-                </li>
-                
-                <li class="nav-item menu">
-<?php if ((!isset($_COOKIE['first_name']))){
-echo 
-'<a href="auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
-<i class="fa fa-login"></i>Login</a>';      
-}
-?>
-
-                </li>
-
-
-                <li class="nav-item menu">
-                   
-<?php if ((!isset($_COOKIE['email']))){
-echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
-'; 
-}
-?>
-
-</li>
-<!-- drop down for dashboard and logout -->
-<!-- drop down for dashboard and logout ends here -->
+    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons" style="margin-right: 26% !important;">
+                    
+                        <li class="nav-item">
+                            <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
+                                <i class="fa fa-login"></i>Create Event
+                            </a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 60px;" >
+                            <a href="#" class="nav-link waves-effect menu" style="color:#4f2684;">
+                                <i class="fa fa-login"></i>Sell Products
+                            </a>
+                        </li>
 </ul>
 
-
-<?php 
-if((isset($_COOKIE['first_name']))){
-//link to the dashboard and logout dashboard
-echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
-list-style-type: none;">
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-</a>
-<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-<a class="dropdown-item" href="event/dashboard.php">Dashboard</a>
-<a class="dropdown-item" href="auth/logout.php">Logout</a>
+<ul class="navbar-nav nav-flex-icons">
+                    
+                    <li class="nav-item">
+                        <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
+                            <i class="fa fa-login"></i>Signup
+                        </a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 60px;" >
+                        <a href="#" class="nav-link waves-effect menu" style="color:#4f2684;">
+                            <i class="fa fa-login"></i>Login
+                        </a>
+                    </li>
+</ul>
+    <!-- Links -->
 </div>
-</li>'; 
-}
-?>
+<!-- Collapsible content -->
 
-
-
-
-
-        </div>
-
-    </div>
 </nav>
-<!-- Navbar -->
-
-</header>
-<!--Main Navigation-->
-
+<!--/.Navbar-->
+    </header>
+    <!--Main Navigation-->
     <!--Main layout-->
     <main class="mt-5 pt-5">
         <div class="container">
@@ -341,6 +318,11 @@ list-style-type: none;">
                         <!--/Third slide-->
                     </div>
                     <!--/.Slides-->
+                    <div class="sample two">
+  <input type="text" name="search" placeholder="search">
+  <button type="submit" class="btn btn-search fa fa-search"></button>
+  <button type="reset" class="btn btn-reset fa fa-times"></button>
+</div>
                     
                     <!--Controls-->
                     <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
@@ -352,7 +334,10 @@ list-style-type: none;">
                         <span class="sr-only">Next</span>
                     </a>
                     <!--/.Controls-->
-                    <div><form class="col-sm-12" id="searchForm">
+
+                    <!-- search bar starts here -->
+
+                    <!-- <div><form class="col-sm-12" id="searchForm">
     <div class="form-group col-sm-6 col-sm-offset-2">
       <div class="input-group input-group-lg center-block" style="background-color: rgba(79, 38, 132, 0.4);">
         <div class="row" style="border: 2px solid white; margin: 7px; width: 100%;">
@@ -367,22 +352,10 @@ list-style-type: none;">
       </div>
     </div>
   </form>
-  </div>
-                </div>
-                <!--/.Carousel Wrapper-->
-                <!-- <div class="container form-group" style="width: 26%; height: 62px; background-color: rgba(79, 38, 132, 0.4);">
-	<div class="row" style="height: 55px;">
-        <div class="span12" style="height: 55px;" id="nav">
-            <form id="custom-search-form" class="form-search form-horizontal pull-right">
-                <div class="input-append span12" style="height:43px;">
-                    <p style="color: white; font-weight: bold;"><input type="text" class="search-query" placeholder="Find an Event Here" style="width: 169%; height: 41px; background-color: transparent; border: 2px solid #ffffff; margin-left: 17px; margin-top: 5px; color: white; text-align: center;"></p>
-                    <button type="submit" style="width: 45px; height: 41px; color: white;"><i class="fa fa-search fa-lg"></i></button>
-                </div>
-            </form>
-        </div>
-	</div>
-</div> -->
+  </div> -->
+  <!-- search bar form ends here -->
 
+                </div>
 
             </section>
             <!--Section: Carousel-->
@@ -391,7 +364,7 @@ list-style-type: none;">
             <section class="text-center">
 
                 <!-- Grid row -->
-                <div class="row">
+                <div class="row" style="clear: left;">
 
                     <!-- Grid column -->
                     <div class="col-lg-4 col-md-12 mb-3">
@@ -563,7 +536,7 @@ list-style-type: none;">
             <section class="card wow fadeIn" style="background-image: url('img/midle.jpg');">
 
                 <!-- Content -->
-                <div class="card-body text-white text-center py-5 px-5 my-5">
+                <div class="card-body text-white text-center py-5 px-5 my-5" style="font-family: 'Montserrat'"> 
 
                     <h1 class="mb-4">
                         <strong>Find Your Perfect Event at Eventor.com</strong>
@@ -586,53 +559,81 @@ list-style-type: none;">
     </main>
     <!--Main layout-->
 
-    <!--Footer-->
-    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn" style="background-color: #4f2684;">
+<!-- footer-top -->	
+<div class="footer-top">
+		<div class="container">
+			<div class="col-md-3 foot-left">
+				<h3>About Us</h3>
+			
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+			</div>
+			<div class="col-md-3 foot-left">
+					<h3>Get In Touch</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+				
+						<div class="contact-btm">
+							<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+							<p>90 Street, City, State 34789.</p>
+						</div>
+						<div class="contact-btm">
+							<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+							<p>+456 123 7890</p>
+						<div class="contact-btm">
+						</div>
+							<span class="fa fa-envelope-o" aria-hidden="true"></span>
+							<p><a href="mailto:example@email.com">info@example.com</a></p>
+						</div>
+						<div class="clearfix"></div>
 
-        <!--Call to action-->
-        <div class="pt-4" style="background-color:#8f2dc2; padding-bottom: 1.5rem;">
-            <a class="btn btn-outline-white" href="#" role="button">Become a Vendor
-            </a>
-            <a class="btn btn-outline-white" href="event/create.php" role="button">Create Event
-            </a>
-        </div>
-        <!--/.Call to action-->
+			</div>
+			<div class="col-md-3 foot-left">
+				<h3>Latest Events</h3>
+				<ul>
+					<li><a href="#" data-toggle="modal" data-target="#myModal"><img src="images/g1.jpg" alt="" class="img-responsive"></a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal"><img src="images/g2.jpg" alt="" class="img-responsive"></a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal"><img src="images/g3.jpg" alt="" class="img-responsive"></a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal"><img src="images/g4.jpg" alt="" class="img-responsive"></a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-3 foot-left">
+			<h3>Subscribe</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum has </p>
+			<form action="#" method="post">	
+					<input type="email" Name="Enter Your Email" placeholder="Enter Your Email" required="">
+				<input type="submit" value="Subscribe">
+			</form>
+			</div>
+				<div class="clearfix"></div>
+		</div>
+	</div>
+<!-- /footer-top -->							
 
-        <!-- Social icons -->
-        <div class="pb-4" style="background-color:#4f2684; padding-top: 1.5rem;">
-            <a href="#">
-                <i class="fa fa-facebook mr-3"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa fa-twitter mr-3"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa fa-youtube mr-3"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa fa-google-plus mr-3"></i>
-            </a>
-            <a href="#">
-                <i class="fa fa-pinterest mr-3"></i>
-            </a>
-        </div>
-        <!-- Social icons -->
-
-        <!--Copyright-->
-        <div class="footer-copyright py-3" style="background-color:#4f2684; padding-top: 0px;">
-            © 2018 Copyright:
-            <a href="#"> Eventor.com </a>
-        </div>
-        <!--/.Copyright-->
-    </footer>
-    <!--/.Footer-->
+<!-- footer -->
+			<div class="copy-right">
+				<div class="container">
+				<div class="col-md-6 col-sm-6 col-xs-6 copy-right-grids">
+						<div class="copy-left">
+						<p>&copy; 2017 Events. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+						</div>
+					</div>
+				<div class="col-md-6 col-sm-6 col-xs-6 top-middle">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+					</div>
+			</div>
+			
+<!-- //footer -->
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
-
+<script src="index1.js"></script>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>

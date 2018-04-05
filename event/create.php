@@ -167,7 +167,7 @@ button:hover {
   <div class="container">
     <div class="navbar-header" >
       <div class="col-sm-2 col-md-3 col-xm-4" style="width: 90%;">
-      <a class="navbar-brand" href="../index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px; width: 18%;"></a>
+      <a class="navbar-brand" href="../index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px; width: 18%; height: 39px;"></a>
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -41px;">
@@ -494,40 +494,49 @@ if(isset($message)){
 </div>
 <!-- footer goes here -->
 <!-- footer goes here -->
-<footer style="background-color: #4f2684; border: 3px solid #e7e7e7; padding: 10px; height: 50px; margin-top: 10px;">
-  <div class="row">
-    <div class="col-sm-2"  style="width: 12.666667%; margin-left: 36px">
-      <img src="img/footer.png" alt="" class="img-responsive" style="margin-top: 2px;">
-    </div>
-    <div class="col-sm-8" style="margin-top: -8px;">
-      <div class="row" style="width: 40%; margin-left: auto; margin-right: auto; margin-top: -4;">
-        <div class="col-sm-5">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">How it works</p></a>
+    <!--Footer-->
+    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn" style="background-color: #4f2684;">
+
+        <!--Call to action-->
+        <div class="pt-4" style="background-color:#8f2dc2; padding-bottom: 1.5rem;">
+            <a class="btn btn-outline-white" href="#" role="button">Become a Vendor
+            </a>
+            <a class="btn btn-outline-white" href="event/create.php" role="button">Create Event
+            </a>
         </div>
-        <div class="col-sm-4">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">About us</p></a>
+        <!--/.Call to action-->
+
+        <!-- Social icons -->
+        <div class="pb-4" style="background-color:#4f2684; padding-top: 1.5rem;">
+            <a href="#">
+                <i class="fa fa-facebook mr-3"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-twitter mr-3"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-youtube mr-3"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-google-plus mr-3"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-pinterest mr-3"></i>
+            </a>
         </div>
-        <div class="col-sm-3">
-        <a href="#"><p style="text-align: center; font-weight: bold; padding-top: 15px; color: #ffffff; font-size: 10px;">Contact</p></a>
+        <!-- Social icons -->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3" style="background-color:#4f2684; padding-top: 0px;">
+            © 2018 Copyright:
+            <a href="#"> Eventor.com </a>
         </div>
-      </div>
-    </div>
-    <div class="col-sm-2"> 
-      <div class="row">
-        <div class="col-sm-4">
-          <a href=""><img src="img/index.png" alt="" style="width: 15px; height-max: 100%; margin-top: 10px;"></a>
-        </div>
-        <div class="col-sm-4">
-            <a href=""><img src="img/index1.png" alt="" style="width: 15px; height-max: 100%; margin-top: 10px;"></a>
-        </div>
-        <div class="col-sm-4">
-            <a href=""><img src="img/index11.png" alt="" style="width: 15px; height-max: 100%; margin-top: 10px;"></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- footer ends here -->
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
 </body>
 </html>
 <!-- footer ends here -->

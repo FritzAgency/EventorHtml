@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>Material Design Bootstrap</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap core CSS -->
@@ -20,29 +19,18 @@
     @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
     
     body {
-      /* background-image:url("img/eventor.jpg"); */
+      background-image:url("img/eventor.jpg");
       font-family: 'Montserrat', sans-serif;
     }
-
     .new{
       color: black;
     }
-
   .new:hover{
     border-bottom: 2px solid rgb(63, 10, 50);
     color:black;
-
   }
-
-  a{
-    font-size: 17px;
-    font-weight: bold;
-  }
-  p{
-    font-size: 14px;
-  }
-
 </style>
+
 </head>
 
 <body>
@@ -52,15 +40,8 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/">
-        <div style="width: 40px; border-radius: 50%">
-
-
-          <img src="img/logo2.png" alt="" class="img-fluid">
-          <!-- The site logo goes in here --> 
-          
-
-        </div>
+      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+        <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
     </a>
 
       <!-- Collapse -->
@@ -138,22 +119,25 @@
             <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
           </video>
 
-
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
 
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>A Trip To Olumo Rock</strong>              </h1>
+                <strong>A Trip To Olumo Rock</strong>
+              </h1>
 
               <p>
                 <strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong>
               </p>
 
-                           <a  href="" class="btn btn-outline-white btn-lg">Become a Vendor
+              <p class="mb-4 d-none d-md-block">
+                <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
+              </p>
+              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
-              <a  href="" class="btn btn-outline-white btn-lg">Register
+              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Register
               </a> 
 
             </div>
@@ -167,7 +151,38 @@
       <!--/First slide-->
 
       <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
 
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>A Trip To Olumo Rock</strong>
+              </h1>
+
+              <p>
+                <strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
+              </p>
+              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
+              </a>
+              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Register
+              </a> 
+
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
       <!--/Second slide-->
 
       <!--Third slide-->
@@ -185,7 +200,8 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>A Trip To Olumo Rock</strong>              </h1>
+                <strong>A Trip To Olumo Rock</strong>
+              </h1>
 
               <p>
                 <strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong>
@@ -193,11 +209,10 @@
 
               <p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
-              
               </p>
-              <a  href="#" class="btn btn-outline-white btn-lg">Become a Vendor
+              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
-              <a href="#" class="btn btn-outline-white btn-lg">Register
+              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Register
               </a> 
 
             </div>
@@ -249,9 +264,7 @@
 
     <!--Grid column-->
     <!-- <div class="col-md-6 mb-4">
-
       <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="">
-
     </div> -->
     <!--Grid column-->
 
@@ -266,7 +279,6 @@
       <!-- Main heading -->
 <!-- 
       <hr>
-
       <p>
         <strong>400+</strong> material UI elements,
         <strong>600+</strong> material icons,
@@ -281,7 +293,6 @@
       <a target="_blank" href="https://mdbootstrap.com/components/" class="btn btn-grey btn-md">Live demo
         <i class="fa fa-image ml-1"></i>
       </a>
-
     </div> -->
     <!--Grid column-->
 
@@ -290,13 +301,13 @@
 
 
 
-        <h3 class="h3 text-center mb-5" id="about" style="font-style: 18px; font-weight: bold;">ABOUT</h3>
+        <h3 class="h3 text-center mb-5" id="about">ABOUT</h3>
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
           <li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel11" role="tab">Details</a>
           </li>
           <li class="nav-item new">
-            <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel12" role="tab">Ticket Details</a>
+            <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel12" role="tab">Price</a>
         </li>
           <li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel13" role="tab">Organizer</a>
@@ -345,7 +356,7 @@
           <div class="tab-pane fade" id="panel14" role="tabpanel">
               <br>
       
-              <!--location goes here map.-->
+                        <!--location goes here map.-->
 <p> Victoria Island, Lagos </p>
 
 
@@ -470,54 +481,20 @@
           <!--/.Panel 3-->
       
           <!--Panel 4-->
-          <!--div class="tab-pane fade" id="panel11" role="tabpanel">
+          <div class="tab-pane fade" id="panel11" role="tabpanel">
               <br>
       
               details of event here
       
-          </div-->
+          </div>
           <!--/.Panel 4-->
 
           <!--Panel 5-->
           <div class="tab-pane fade" id="panel16" role="tabpanel">
-              <div class="row" style="margin-left: auto; margin-right: auto;">
-                  <div class="col-md-4">
-
-
-
-
- 
- <center><img src='../public/images/'  class='img-fluid' alt="Logo"><p style='margin-right:-20px '>Amstel</p></center>";  
-
-
-
-</div>
-              
-
-               <div class="col-md-4">
-                 
-<!-- display the 2nd sponsors logo--> 
-
-
- 
- <center><img src='../public/images/'  class='img-fluid'><p style='margin-right:-20px '>Budweiser</p></center>
-  
-
-
-               </div>
-
-
-                  <div class="col-md-4">
-
-
-
-<center><img src='../public/images/' alt='Any' class='img-fluid'><p style='margin-right:-20px '>Amstel</p></center> 
-
-
-
-
-
-                  </div>
+              <div class="row">
+                  <div class="col-md-4">.col-md-4</div>
+                  <div class="col-md-4">.col-md-4</div>
+                  <div class="col-md-4">.col-md-4</div>
               </div>
     
         </div>
@@ -525,18 +502,18 @@
 
         <!--Panel 6-->
         <div class="tab-pane fade" id="panel12" role="tabpanel">
-          <div class="row" style="margin-left: auto; margin-right: auto;">  
+          <div class="row">  
           <div class="col-md-4 mb-2">
               <!--Card Wider-->
 <div class="card card-cascade wider">
 
  <!--Card content-->
   <div class="card-body text-center">
-      <Title>
+      <!--Title-->
       <h4 class="card-title"><strong>Regular</strong></h4>
     <hr>
       <p class="card-text">#5,000</p>
-  </div-->
+  </div>
   <!--/.Card content-->
 
 </div>
@@ -549,12 +526,9 @@
   <!--Card content-->
    <div class="card-body text-center">
        <!--Title-->
-       <h4 class="card-title"><strong>Ticket Price</strong></h4>
+       <h4 class="card-title"><strong>VIP</strong></h4>
      <hr>
-       <p class="card-text">
-        &#8358;500
-
-               </p>
+       <p class="card-text">#25,000</p>
    </div>
    <!--/.Card content-->
  
@@ -568,13 +542,9 @@
   <!--Card content-->
    <div class="card-body text-center">
        <!--Title-->
-       <h4 class="card-title"><strong>Ticket Available</strong></h4>
+       <h4 class="card-title"><strong>Premium</strong></h4>
      <hr>
-       <p class="card-text"> 
-
-        1000
-
-       </p>
+       <p class="card-text">#100,000</p>
    </div>
    <!--/.Card content-->
  
@@ -593,37 +563,27 @@
 
       <!--Section: ACTIVITIES-->
       <section>
-        <h2 class="my-5 h3 text-center" id="activities" style="font-weight: bold; font-size: 18px;">ACTIVITIES</h2>
+        <h2 class="my-5 h3 text-center" id="activities">ACTIVITIES</h2>
 
 
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
             <li class="nav-item new">
-                <!--a class="nav-link" style="color:black;" data-toggle="tab" href="#panel31" role="tab">Hicking</a-->
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel31" role="tab">Hicking</a>
             </li>
             <li class="nav-item new">
-              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel32" role="tab"><!--Jogging-->
-                <?php if(isset($act_name)){echo $act_name;}?>
-              </a>
+              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel32" role="tab">Jogging</a>
           </li>
             <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel33" role="tab"><!--Organizer-->
-                  <?php if(isset($act_name1)){echo $act_name1;}?>
-
-                </a>
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel33" role="tab">Organizer</a>
             </li>
             <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel34" role="tab"><!--Location-->
-                  
-                  <?php if(isset($act_name2)){echo $act_name2;}?>
-
-
-                </a>
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel34" role="tab">Location</a>
             </li>
             <li class="nav-item new">
-                <!--a class="nav-link" style="color:black;" data-toggle="tab" href="#panel35" role="tab">Vendor</a-->
+                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel35" role="tab">Vendor</a>
             </li>
             <li class="nav-item new">
-              <!--a class="nav-link" style="color:black;" data-toggle="tab" href="#panel36" role="tab">Sponsors</a-->
+              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel36" role="tab">Sponsors</a>
           </li>
         </ul>
         
@@ -632,28 +592,28 @@
         
             <!--Panel 1-->
             <div class="tab-pane fade in show" id="panel31" role="tabpanel">
-                <div class="row" style="margin-left: auto; margin-right: auto;">
+                <div class="row">
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                    <div class="row">
-                      <div class="col-md-6 mb4">
                         <h4 class="card-title"><strong>Name of Activity</strong></h4>
                         <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
-                          </div>
-                            <div class="col-md-6 mb-4" style="margin: auto;">
-                          <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
-                            <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                        <div class="row">
+                          <div class="col-md-6 mb4">
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center;font-size: 16px;margin-bottom: 20px; margin-top: 20px;">LOCATION</h2>  
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">location here</h2>
-                              <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: auto; margin-right:auto;">Schedule</button>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
+                          </div>
+                          </div>
+                          <div class="col-md-6 mb-4" style="margin: auto;">
+                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
                           </div>
                     </div>
                     </div>
-      </div>
                     <!--Grid column-->
           
                     <!--Grid column-->
@@ -670,41 +630,33 @@
         
             <!--Panel 2-->
             <div class="tab-pane fade in show" id="panel32" role="tabpanel">
-                <div class="row" style="margin-left: auto; margin-right: auto;">
+                <div class="row">
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                    <div class="row">
-                      <div class="col-md-6 mb4">
-                        <h4 class="card-title"><strong>Name of Activity</strong>
-                         
-                        </h4>
-                        <p class="card-text"> Lorem ipsum! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
-                      </div>
-
-                        <div class="col-md-6 mb-4" style="margin: auto;">
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
+                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                        <div class="row">
+                          <div class="col-md-6 mb4">
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 16px;">10:00
-                           
-
-                              </h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div> 
-                              <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">SCHEDULE</button>
+                          </div>
+                          </div>
+                          <div class="col-md-6 mb-4" style="margin: auto;">
+                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
                           </div>
                     </div>
                     </div>
                     <!--Grid column-->
           
                     <!--Grid column-->
-                    <div class="col-md-6 mb-4" style="background-image: url('../public/images/; background-repeat: no-repeat;">
-                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
-
-
+                    <div class="col-md-6 mb-4">
+                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
                     </div>
                     <!--Grid column-->
           
@@ -716,47 +668,33 @@
         
             <!--Panel 3-->
             <div class="tab-pane fade in show" id="panel33" role="tabpanel">
-                <div class="row" style="margin-left: auto; margin-right: auto;">
+                <div class="row">
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                    <div class="row">
+                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                        <div class="row">
                           <div class="col-md-6 mb4">
-                        <h4 class="card-title"><strong>
-                          Name of Activity
-                             
-
-
-
-                          </strong></h4>
-                        <p class="card-text"> Lorem ipsum!! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
-                        
-                        </div>
-                        
-                              
-                          <div class="col-md-6 mb-4" style="margin: auto;">
-                          <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00 
-
-
-                              </h2>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
                           </div>
-                              <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">Schedule</button>
+                          </div>
+                          <div class="col-md-6 mb-4" style="margin: auto;">
+                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
                           </div>
                     </div>
                     </div>
                     <!--Grid column-->
           
                     <!--Grid column-->
-                    
-<div class="col-md-6 mb-4" style="background-image: url('../public/images/; background-repeat: no-repeat;">
-
-                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
+                    <div class="col-md-6 mb-4">
+                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
                     </div>
                     <!--Grid column-->
           
@@ -768,45 +706,33 @@
         
             <!--Panel   4-->
             <div class="tab-pane fade in show" id="panel34" role="tabpanel">
-                <div class="row" style="margin-left: auto; margin-right: auto;">
+                <div class="row">
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
-                    <div class="row" style="margin-left: auto; margin-right: auto;">
+                        <h4 class="card-title"><strong>Name of Activity</strong></h4>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                        <div class="row">
                           <div class="col-md-6 mb4">
-                        <h4 class="card-title"><strong>
-
-                      Name of Activity
-
-                      
-                      </strong></h4>
-                        <p class="card-text"> Lorem ipsum!!! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
-
-                             </div>                       
-      <div class="col-md-6 mb-4" style="margin: auto;"> 
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-bottom: 20px; margin-top: 20px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00
-                       
-
-                              </h2>
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">
-                                
-
-                              
-                              </h2>  
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
                           </div>
-                              <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">SCHEDULE</button>
+                          </div>
+                          <div class="col-md-6 mb-4" style="margin: auto;">
+                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
                           </div>
                     </div>
                     </div>
                     <!--Grid column-->
           
                     <!--Grid column-->
-                    <div class="col-md-6 mb-4" style="background-image: url('../public/images/; background-repeat: no-repeat;">                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
+                    <div class="col-md-6 mb-4">
+                        <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;">
                     </div>
                     <!--Grid column-->
           
@@ -818,7 +744,7 @@
   
             <!--Panel 5-->
             <div class="tab-pane fade in show" id="panel35" role="tabpanel">
-                <div class="row" style="margin-left: auto; margin-right: auto;">
+                <div class="row">
   
                     <!--Grid column-->
                     <div class="col-md-6 mb-4">
@@ -826,17 +752,17 @@
                         <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
                         <div class="row">
                           <div class="col-md-6 mb4">
-                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
+                              <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px; margin-bottom: 20px; margin-top: 20px;">LOCATION</h2>  
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
                           </div>
                           </div>
                           <div class="col-md-6 mb-4" style="margin: auto;">
-                              <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">Schedule</button>
+                              <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
                           </div>
                     </div>
                     </div>
@@ -861,19 +787,19 @@
                   <div class="col-md-6 mb-4">
                       <h4 class="card-title"><strong>Name of Activity</strong></h4>
                       <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
-                      <div class="row" style="margin-left: auto; margin-right: auto;">
+                      <div class="row">
                         <div class="col-md-6 mb4">
-                            <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
+                            <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 20px; text-align: center">TIME</h2>
                             <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                             <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00</h2>
                             </div>
-                            <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: font-size: 20px; margin-bottom: 16px; margin-top: 20px;">LOCATION</h2>  
+                            <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
                             <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                             <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
                         </div>
                         </div>
                         <div class="col-md-6 mb-4" style="margin: auto;">
-                            <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">Schedule</button>
+                            <button type="button" class="btn btn-outline-secondary waves-effect">Schedule</button>
                         </div>
                   </div>
                   </div>
@@ -904,9 +830,9 @@
 
     <!--Call to action-->
     <div class="pt-4">
-      <a class="btn btn-outline-white" href="#" target="_blank" role="button">Sell Products
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Sell Products
       </a>
-      <a class="btn btn-outline-white" href="create.php" target="_blank" role="button">Register
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Register
       </a>
     </div>
     <!--/.Call to action-->
@@ -915,7 +841,7 @@
 
     <!-- Social icons -->
     <div class="pb-4">
-      <a href="#">
+      <a href="https://www.facebook.com/mdbootstrap">
         <i class="fa fa-facebook mr-3"></i>
       </a>
 
@@ -923,12 +849,28 @@
         <i class="fa fa-twitter mr-3"></i>
       </a>
 
-      <a href="#">
+      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4">
         <i class="fa fa-youtube mr-3"></i>
       </a>
 
-      <a href="#">
+      <a href="https://plus.google.com/u/0/b/107863090883699620484">
         <i class="fa fa-google-plus mr-3"></i>
+      </a>
+
+      <a href="https://dribbble.com/mdbootstrap">
+        <i class="fa fa-dribbble mr-3"></i>
+      </a>
+
+      <a href="https://pinterest.com/mdbootstrap">
+        <i class="fa fa-pinterest mr-3"></i>
+      </a>
+
+      <a href="https://github.com/mdbootstrap/bootstrap-material-design">
+        <i class="fa fa-github mr-3"></i>
+      </a>
+
+      <a href="http://codepen.io/mdbootstrap/">
+        <i class="fa fa-codepen mr-3"></i>
       </a>
     </div>
     <!-- Social icons -->

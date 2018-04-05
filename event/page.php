@@ -441,7 +441,7 @@
 
     <!--Card image-->
     <div class="view overlay">
-       <center> <img src="../public/images/fritzng.png" class="img-fluid" alt=""> </center>
+       <center> <img src="../img/vendor1.jpg" class="img-fluid" alt=""> </center>
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>
@@ -452,17 +452,17 @@
     <!--Card content-->
     <div class="card-body text-center">
         <!--Title-->
-        <h4 class="card-title"><strong>Name of Vendor here</strong></h4>
-            <h5>Products or services</h5>
-        <p class="card-text">information
-        </p>
+        <h4 class="card-title"><strong>Skinmatters</strong></h4>
+            <h5>Beauty | Skincare | Health </h5>
+        <!--p class="card-text">information
+        </p-->
 
         <!--Facebook-->
-        <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+        <!--a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
         <!--Twitter-->
-        <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+        <!--a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
         <!--Google +-->
-        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a>
+        <!--a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a-->
 
     </div>
     <!--/.Card content-->
@@ -476,7 +476,7 @@
 
     <!--Card image-->
     <div class="view overlay">
-        <img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" class="img-fluid" alt="">
+        <img src="../img/vendor2.jpg" class="img-fluid" alt="">
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>
@@ -486,18 +486,19 @@
     <!--Card content-->
     <div class="card-body text-center">
         <!--Title-->
-        <h4 class="card-title"><strong>Name of vendor</strong></h4>
-        <h5>Products or services</h5>
+        <h4 class="card-title"><strong>Habeebah Cakes & Confectionery</strong></h4>
+        
+        <h5>Food | Health | Confectionery</h5>
 
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
-        </p>
+        <!--p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+        </p-->
 
         <!--Facebook-->
-        <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
-        <!--Twitter-->
+        <!--a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+        
         <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
-        <!--Google +-->
-        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a>
+        
+        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a-->
 
     </div>
     <!--/.Card content-->
@@ -511,7 +512,7 @@
 
     <!--Card image-->
     <div class="view overlay">
-        <img src="https://mdbootstrap.com/img/Photos/Others/men.jpg" class="img-fluid" alt="">
+        <img src="../img/optima.jpg" class="img-fluid" alt="">
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>
@@ -521,18 +522,18 @@
     <!--Card content-->
     <div class="card-body text-center">
         <!--Title-->
-        <h4 class="card-title"><strong>Billy Cullen</strong></h4>
-        <h5>Web developer</h5>
+        <h4 class="card-title"><strong>Optima Sports</strong></h4>
+        <h5>Sports | Entertainment</h5>
 
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
-        </p>
+        <!--p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi sunt, quod quibusdam.
+        </p-->
 
         <!--Facebook-->
-        <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
-        <!--Twitter-->
+        <!--a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+        
         <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
-        <!--Google +-->
-        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a>
+        
+        <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a-->
 
     </div>
     <!--/.Card content-->
@@ -575,9 +576,9 @@ Get ready to have lots of fun and show the #ColoursofYou.
           <!--Panel 5-->
           <div class="tab-pane fade" id="panel16" role="tabpanel">
               <div class="row">
-                  <div class="col-md-4">.col-md-4</div>
-                  <div class="col-md-4">.col-md-4</div>
-                  <div class="col-md-4">.col-md-4</div>
+                  <div class="col-md-4"><img src="../img/sponsor1.jpg"></div>
+                  <div class="col-md-4"><img src="../img/sponsor2.jpg"></div>
+                  <div class="col-md-4"><img src="../img/sponsor3.jpg"></div>
               </div>
     
         </div>

@@ -325,7 +325,7 @@ list-style-type: none;">
                     <div class="carousel-inner" role="listbox">
                         <!--First slide-->
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/pageslide.jpg" alt="First slide">
+                            <img class="d-block w-100" src="img/pageslide0.jpg" alt="First slide">
                         </div>
                         <!--/First slide-->
                         <!--Second slide-->

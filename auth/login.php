@@ -27,8 +27,8 @@
  <nav class="navbar-sticky navbar navbar-default navbar-static-top" id="myTopnav" style="margin-bottom: 10px; background-color: white;">
   <div class="container">
     <div class="navbar-header" >
-      <div class="col-sm-2 col-md-3 col-xm-4" style="width: 90%;">
-      <a class="navbar-brand" href="../index.php"><img src="img/logo.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
+      <div class="col-sm-2 col-md-3 col-xm-4" style="width: 150px;">
+      <a class="navbar-brand" href="../index.php"><img src="../img/new-logo.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a>
       </div>
     </div>
     <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -41px;">

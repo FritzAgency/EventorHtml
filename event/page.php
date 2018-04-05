@@ -1,66 +1,3 @@
-<?php
- 
-require_once('../Database/conn.php');
-
-
-//$url = $_GET['url'];
-
-if(isset($_GET['event_url'])){
-
-$event_url = $_GET['event_url'];
-
-$query = "SELECT * FROM `event` WHERE event_url='$event_url'"; 
-
-$result = mysqli_query($con,$query) or die(mysqli_error());
-
-$row = mysqli_num_rows($result) or die(mysqli_error());
-
-
-while( $row = mysqli_fetch_array($result) ){
-
-$event_description =  $row['event_description']; 
-$Address = $row['Address']; 
-$event_title = $row['event_title']; 
-$event_flier = $row['event_flier'];  
-//$event_flier1 = $row['event_flier1'];  
-//$event_flier2 = $row['event_flier2'];  
-$ticket_price = $row['ticket_price']; 
-$ticket_qty = $row['ticket_qty'];
-$status = $row['status']; 
-$sponsor_name = $row['sponsor_name']; 
-$sponsor_logo = $row['sponsor_logo'];
-$sponsor_url = $row['sponsor_url']; 
-
-
-
-$sponsor_name1 = $row['sponsor_name1']; 
-$sponsor_logo1 = $row['sponsor_logo1'];
-$sponsor_url1 = $row['sponsor_url1'];
-
-$sponsor_name2 = $row['sponsor_name2']; 
-$sponsor_logo2 = $row['sponsor_logo2'];
-$sponsor_url2 = $row['sponsor_url2'];
-
-$act_name = $row['act_name']; 
-$act_loc = $row['act_loc']; 
-$act_desc = $row['act_desc']; 
-$act_date = $row['act_date']; 
-$act_img = $row['act_img']; 
-$act_name1 = $row['act_name1']; 
-$act_loc1 = $row['act_loc1']; 
-$act_desc1 = $row['act_desc1']; 
-$act_date1 = $row['act_date1']; 
-$act_img1 = $row['act_img1']; 
-$act_name2 = $row['act_name2']; 
-$act_loc2 = $row['act_loc2']; 
-$act_desc2 = $row['act_desc2']; 
-$act_date2 = $row['act_date2']; 
-$act_img2 = $row['act_img2']; 
-$org_logo = $row['org_logo']; 
-}
-}
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -119,11 +56,9 @@ $org_logo = $row['org_logo'];
         <div style="width: 40px; border-radius: 50%">
 
 
-          <!--img src="img/logo2.png" alt="" class="img-fluid"-->
+          <img src="img/logo2.png" alt="" class="img-fluid">
           <!-- The site logo goes in here --> 
           
-<img src="../public/images/<?php echo 
-$org_logo;?>" alt="Anything" class="img-fluid" style="border-radius: 50px ">
 
         </div>
     </a>
@@ -199,12 +134,9 @@ $org_logo;?>" alt="Anything" class="img-fluid" style="border-radius: 50px ">
         <div class="view">
 
           <!--Video source-->
-          <!--video class="" autoplay loop>
+          <video class="" autoplay loop>
             <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
-          </video-->
-
-          <div class="view" style="background-image: url('../public/images/<?php echo 
-$event_flier;?>'); background-repeat: no-repeat; background-size: cover;"> </div>
+          </video>
 
 
           <!-- Mask & flexbox options-->
@@ -213,21 +145,13 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;"> </div
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <!--strong>A Trip To Olumo Rock</strong-->
-                <strong><?php  if(isset($event_title)){echo $event_title;}?></strong>
-              </h1>
+                <strong>A Trip To Olumo Rock</strong>              </h1>
 
               <p>
-                <!--strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong-->
+                <strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong>
               </p>
 
-              <p class="mb-4 d-none d-md-block">
-                <!--event description goes here-->  
-                <strong><?php if(isset($event_description)){
-     echo $event_description; 
-    }?></strong>
-              </p>
-              <a  href="" class="btn btn-outline-white btn-lg">Become a Vendor
+                           <a  href="" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
               <a  href="" class="btn btn-outline-white btn-lg">Register
               </a> 
@@ -251,14 +175,9 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;"> </div
         <div class="view">
 
           <!--Video source-->
-          <!--video class="video-full" autoplay loop>
+          <video class="video-full" autoplay loop>
               <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
-          </video-->
-
-
-          <div class="view" style="background-image: url('../public/images/<?php echo 
-$event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
-</div>
+          </video>
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -266,20 +185,15 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <!--strong>A Trip To Olumo Rock</strong-->
-                <strong><?php  if(isset($event_title)){echo $event_title;}?></strong>
-              </h1>
+                <strong>A Trip To Olumo Rock</strong>              </h1>
 
               <p>
-                <!--strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong-->
+                <strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong>
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <!--strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong-->
-                  <strong><?php if(isset($event_description)){
-     echo $event_description; 
-    }?></strong>
-
+                <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
+              
               </p>
               <a  href="#" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
@@ -378,15 +292,15 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
 
         <h3 class="h3 text-center mb-5" id="about" style="font-style: 18px; font-weight: bold;">ABOUT</h3>
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
-          <!--li class="nav-item new">
+          <li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel11" role="tab">Details</a>
-          </li-->
+          </li>
           <li class="nav-item new">
             <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel12" role="tab">Ticket Details</a>
         </li>
-          <!--li class="nav-item new">
+          <li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel13" role="tab">Organizer</a>
-          </li-->
+          </li>
           <li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel14" role="tab">Location</a>
           </li>
@@ -432,19 +346,12 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
               <br>
       
               <!--location goes here map.-->
-
-              <?php 
-
-    if(isset($Address)){
-     echo $Address; 
-    }
-
-    ?>
+<p> Victoria Island, Lagos </p>
 
 
          <!-- The map displays the location filled by the user -->      
 <iframe style=" width: 100%; height: 500px;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDWG8NOZeOKNf9FabkmtqwCpNs04zcT5Yc
-    &q='<?php echo $Address;?>'" allowfullscreen>
+    &q='Victoria-Island'" allowfullscreen>
 </iframe>
       
           </div>
@@ -575,39 +482,15 @@ $event_flier;?>'); background-repeat: no-repeat; background-size: cover;">
           <div class="tab-pane fade" id="panel16" role="tabpanel">
               <div class="row" style="margin-left: auto; margin-right: auto;">
                   <div class="col-md-4">
-  <!-- Display the first sponsors logo--> 
-<?php
-
-
-//$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
-
-
-$select = mysqli_query($con,"SELECT `sponsor_logo` FROM `event` WHERE `sponsor_logo` = '$sponsor_logo'");
-
-//$result = mysqli_query($con,$query) or die(mysqli_error());
 
 
 
 
-//$row = mysqli_num_rows($result) or die(mysqli_error());
-
-
-
-if (mysqli_num_rows($select) == 1){
  
- echo "<center><img src='../public/images/$sponsor_logo'  class='img-fluid'><p style='margin-right:-20px '>$sponsor_name</p></center>";  
+ <center><img src='../public/images/'  class='img-fluid' alt="Logo"><p style='margin-right:-20px '>Amstel</p></center>";  
 
 
-}else{
- 
 
- echo '';
-
-
-}
-
-
-?>
 </div>
               
 
@@ -615,76 +498,24 @@ if (mysqli_num_rows($select) == 1){
                  
 <!-- display the 2nd sponsors logo--> 
 
-<?php
 
-
-//$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
-
-
-$select1 = mysqli_query($con,"SELECT `sponsor_logo1` FROM `event` WHERE `sponsor_logo1` = '$sponsor_logo1'");
-
-//$result = mysqli_query($con,$query) or die(mysqli_error());
-
-$row = mysqli_fetch_array($select1);
-
-
-//$row = mysqli_num_rows($result) or die(mysqli_error());
-
-
-
-if (mysqli_num_rows($select1) == 1){
  
- echo "<center><img src='../public/images/$sponsor_logo1'  class='img-fluid'><p style='margin-right:-20px '>$sponsor_name1</p></center>";  
-
-
-}else{
+ <center><img src='../public/images/'  class='img-fluid'><p style='margin-right:-20px '>Budweiser</p></center>
   
- echo '';
-
-}
-
-
-?>
 
 
                </div>
 
 
                   <div class="col-md-4">
-<!-- Display the 3rd logo-->  
-<?php
-
-
-//$query = "SELECT * FROM `event` WHERE sponsor_logo='$sponsor_logo'"; 
-
-
-$select2 = mysqli_query($con,"SELECT `sponsor_logo2` FROM `event` WHERE `sponsor_logo2` = '$sponsor_logo2'");
-
-$row = mysqli_fetch_array($select2);
- 
-
-//$result = mysqli_query($con,$query) or die(mysqli_error());
-
-
-//$row = mysqli_num_rows($result) or die(mysqli_error());
 
 
 
-if (mysqli_num_rows($select2) == 1){
- 
- echo "<center><img src='../public/images/$sponsor_logo2' alt='Any' class='img-fluid'><p style='margin-right:-20px '>$sponsor_name2</p></center>";  
+<center><img src='../public/images/' alt='Any' class='img-fluid'><p style='margin-right:-20px '>Amstel</p></center> 
 
 
 
-}else{
-  
- echo '';
 
-
-  }
-
-
-?>
 
                   </div>
               </div>
@@ -700,7 +531,7 @@ if (mysqli_num_rows($select2) == 1){
 <div class="card card-cascade wider">
 
  <!--Card content-->
-  <!--div class="card-body text-center">
+  <div class="card-body text-center">
       <Title>
       <h4 class="card-title"><strong>Regular</strong></h4>
     <hr>
@@ -721,16 +552,9 @@ if (mysqli_num_rows($select2) == 1){
        <h4 class="card-title"><strong>Ticket Price</strong></h4>
      <hr>
        <p class="card-text">
-         <?php  if(($ticket_price == 0 )){
-         
+        &#8358;500
 
-          echo 'FREE'; 
-
-       }else{
-         echo   '&#8358;'.$ticket_price;
-       }
-       ?>
-       </p>
+               </p>
    </div>
    <!--/.Card content-->
  
@@ -746,15 +570,11 @@ if (mysqli_num_rows($select2) == 1){
        <!--Title-->
        <h4 class="card-title"><strong>Ticket Available</strong></h4>
      <hr>
-       <p class="card-text"> <?php  if(($ticket_qty == 0 )){
-         
+       <p class="card-text"> 
 
-          echo 'Not Specified'; 
+        1000
 
-       }else{
-         echo   $ticket_qty;
-       }
-       ?></p>
+       </p>
    </div>
    <!--/.Card content-->
  
@@ -856,33 +676,24 @@ if (mysqli_num_rows($select2) == 1){
                     <div class="col-md-6 mb-4">
                     <div class="row">
                       <div class="col-md-6 mb4">
-                        <h4 class="card-title"><!--strong>Name of Activity</strong-->
-                          <strong><?php if(isset($act_name)){echo $act_name;}?></strong>
-
+                        <h4 class="card-title"><strong>Name of Activity</strong>
+                         
                         </h4>
-                        <!--p class="card-text"> Lorem ipsum! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p-->
-
-                        <p class="card-text">
-                          <?php if(isset($act_desc)){echo $act_desc;}?>
-
-                        </p>
+                        <p class="card-text"> Lorem ipsum! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
                       </div>
 
                         <div class="col-md-6 mb-4" style="margin: auto;">
                               <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 16px;"><!--10:00-->
-                                
-
-                  <?php if(isset($act_date)){echo $act_date;}?>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 16px;">10:00
+                           
 
                               </h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">Location:  
-                  <?php if(isset($act_loc)){echo $act_loc;}?></h2>  
-                              <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div--> 
+                          </div> 
                               <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">SCHEDULE</button>
                           </div>
                     </div>
@@ -890,8 +701,7 @@ if (mysqli_num_rows($select2) == 1){
                     <!--Grid column-->
           
                     <!--Grid column-->
-                    <div class="col-md-6 mb-4" style="background-image: url('../public/images/<?php echo 
-$act_img;?>'); background-repeat: no-repeat;">
+                    <div class="col-md-6 mb-4" style="background-image: url('../public/images/; background-repeat: no-repeat;">
                         <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
 
 
@@ -913,36 +723,29 @@ $act_img;?>'); background-repeat: no-repeat;">
                     <div class="row">
                           <div class="col-md-6 mb4">
                         <h4 class="card-title"><strong>
-                          <!--Name of Activity-->
-                             <?php if(isset($act_name1)){echo $act_name1;}?>
+                          Name of Activity
+                             
+
 
 
                           </strong></h4>
-                        <!--p class="card-text"> Lorem ipsum!! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p-->
-                        <p class="card-text">
-                         
-                          <?php if(isset($act_desc1)){echo $act_desc1;}?>
-
-                        </p>
-
+                        <p class="card-text"> Lorem ipsum!! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
+                        
                         </div>
                         
                               
                           <div class="col-md-6 mb-4" style="margin: auto;">
                           <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><!--10:00--> 
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00 
 
-
-                  <?php if(isset($act_date1)){echo $act_date1;}?>
 
                               </h2>
                               </div>
-                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">Location:  
-                  <?php if(isset($act_loc1)){echo $act_loc1;}?></h2>  
-                              <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div-->
+                          </div>
                               <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">Schedule</button>
                           </div>
                     </div>
@@ -951,8 +754,7 @@ $act_img;?>'); background-repeat: no-repeat;">
           
                     <!--Grid column-->
                     
-<div class="col-md-6 mb-4" style="background-image: url('../public/images/<?php echo 
-$act_img1;?>'); background-repeat: no-repeat;">
+<div class="col-md-6 mb-4" style="background-image: url('../public/images/; background-repeat: no-repeat;">
 
                         <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
                     </div>
@@ -974,38 +776,29 @@ $act_img1;?>'); background-repeat: no-repeat;">
                           <div class="col-md-6 mb4">
                         <h4 class="card-title"><strong>
 
-                      <!--  Name of Activity-->
-
-                          <?php if(isset($act_name2)){echo $act_name2;}?>
+                      Name of Activity
 
                       
                       </strong></h4>
-                        <!--p class="card-text"> Lorem ipsum!!! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p-->
-                       <p class="card-text">
+                        <p class="card-text"> Lorem ipsum!!! dolor sit amet consectetur adipisicing elit. Minima nulla natus id accusamus consectetur, quos sapiente molestiae eum dignissimos fuga fugit atque doloremque itaque numquam animi labore odio nam? Assumenda illum voluptatum eum quos ducimus dolore exercitationem similique ex tenetur. </p>
 
-                          <?php if(isset($act_desc2)){echo $act_desc2;}?>
-
-                         
-                       </p>
-      </div>                       
+                             </div>                       
       <div class="col-md-6 mb-4" style="margin: auto;"> 
                               <h2 style="font-weight:bold; margin: 40px; margin: 20px; font-size: 16px; text-align: center">TIME</h2>
                               <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-bottom: 20px; margin-top: 20px; width: 50%; margin-left: auto; margin-right: auto;">
-                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;"><!--10:00-->
-                                  
-                  <?php if(isset($act_date2)){echo $act_date2;}?>
+                              <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">10:00
+                       
 
                               </h2>
                               </div>
                               <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; font-size: 16px;margin-bottom: 20px; margin-top: 20px;">
                                 
 
-                                Location:  
-                  <?php if(isset($act_loc2)){echo $act_loc2;}?>
+                              
                               </h2>  
-                              <!--div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">7:00</h2>
-                          </div-->
+                          </div>
                               <button type="button" class="btn btn-outline-secondary waves-effect" style="margin-left: 75px; margin-right: auto;">SCHEDULE</button>
                           </div>
                     </div>
@@ -1013,8 +806,7 @@ $act_img1;?>'); background-repeat: no-repeat;">
                     <!--Grid column-->
           
                     <!--Grid column-->
-                    <div class="col-md-6 mb-4" style="background-image: url('../public/images/<?php echo 
-$act_img2;?>'); background-repeat: no-repeat;">                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
+                    <div class="col-md-6 mb-4" style="background-image: url('../public/images/; background-repeat: no-repeat;">                        <!--img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="" style="max-width: 70%; height: 100%;"-->
                     </div>
                     <!--Grid column-->
           

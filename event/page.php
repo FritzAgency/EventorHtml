@@ -38,12 +38,31 @@
 
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
+    <!--div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+      <!--a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
         <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
+    </a-->
+
+
+
+
+<div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/">
+        <div style="width: 70px; height: 50px; border-radius: 50%">
+
+
+          <!--img src="img/logo2.png" alt="" class="img-fluid"-->
+          <!-- The site logo goes in here --> 
+          
+<img src="../public/images/fitfam-logo.png" alt="Anything" class="img-fluid" style="border-radius: 50px ">
+
+        </div>
     </a>
+
 
       <!-- Collapse -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -310,7 +329,7 @@
 
 
 
-        <h3 class="h3 text-center mb-5" id="about">ABOUT</h3>
+        <h3 class="h5 text-center mb-5" id="about">ABOUT</h3>
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
           <li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel11" role="tab">Details</a>
@@ -590,7 +609,7 @@ Get ready to have lots of fun and show the #ColoursofYou.
 
       <!--Section: ACTIVITIES-->
       <section>
-        <h2 class="my-5 h3 text-center" id="activities">ACTIVITIES</h2>
+        <h2 class="my-5 h5 text-center" id="activities">ACTIVITIES</h2>
 
 
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">

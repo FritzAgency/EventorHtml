@@ -128,16 +128,16 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>A Trip To Olumo Rock</strong>
+                <strong>Fitfamfest 2018</strong>
               </h1>
 
               <p>
-                <strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong>
+                <strong>#FitFamFest, Africa’s largest fitness festival, is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest.</strong>
               </p>
 
-              <p class="mb-4 d-none d-md-block">
+              <!--p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
-              </p>
+              </p-->
               <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
               <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Register
@@ -165,16 +165,16 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>A Trip To Olumo Rock</strong>
+                <strong>Fitfamfest 2018</strong>
               </h1>
 
               <p>
-                <strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong>
+                <strong>#FitFamFest, Africa’s largest fitness festival, is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest.</strong>
               </p>
 
-              <p class="mb-4 d-none d-md-block">
+              <!--p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
-              </p>
+              </p-->
               <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
               <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Register
@@ -208,16 +208,16 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>A Trip To Olumo Rock</strong>
+                <strong>Fitfamfest 2018</strong>
               </h1>
 
               <p>
-                <strong>A forever green trip with lots of experience and tour in with knowledge of the great olumo rock.</strong>
+                <strong> #FitFamFest, Africa’s largest fitness festival, is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest.</strong>
               </p>
 
-              <p class="mb-4 d-none d-md-block">
+              <!--p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
-              </p>
+              </p-->
               <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
               <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Register
@@ -492,7 +492,25 @@
           <div class="tab-pane fade" id="panel11" role="tabpanel">
               <br>
       
-              details of event here
+              <p class="text-justify"> The full-day event which brings together amazing fun-fitness, food and wellness activities for family, friends, fitness freaks and those passionate about being healthy is scheduled to take place on 25th of November, 2017 at the prestigious Ember Creek Waterfront on Water Corporation Drive, Victoria Island. AXA Mansard FitFam Fest will have fitness activities hosted by celebrity fitness coaches like Maje Ayida, CEO Eden Lifestyle and owner of The HIIT Squad, AfriFitness Boss Rachel from the United Kingdom, Seyi Olusore, Shedams Fitness as well as top fitness outfits like Breathe Studio and RyderLounge.</p>
+
+
+              <p class="text-justify">Fitness enthusiasts can anticipate never-seen-before activities like the Fitfam Assault Obstacle Course sponsored by Skechers, Silent Disco Glow-in-the-dark Neon Spinning/Yoga/Dancing and the most fun 5K Colour Run. Speaking of colours, this year’s theme is tagged #ColoursofYou, as a reflection of the vibrancy and diversity of the participants and activities anticipated. </p>
+
+              <p class="text-justify">Ember Creek Waterfront will for the first time be used to its full capacity, from the Mezzanine rooftop; which will hold over 50 food vendors, to the fitness centre on the middle floor, right down to the beach waterfront where 10 Extreme Obstacles over 300m will stand as well as a Vegan village hosted by Lagos VegFest, Kids Zone and lots more.</p>
+
+
+              <p class="text-justify">
+                The main stage will house an assortment of activities from encore fitness parties to the Muscle Man and Bikini Model Championships hosted by Lifeland.ng. Exclusive discounts on fitness gear and equipment will be offered at the festival. Speaking of the event, AXA Mansard Health Limited CEO Tope Adeniyi said, “Everyone needs to make healthy decisions in every facet of their lives, not just in managing their finances or insuring their lives and health. Increasing public awareness of the need for a wellness-focused lifestyle is something we are passionate about at AXA Mansard. Through this event that celebrates health and fitness, we intend to walk hand-in-hand with our customers and indeed the public, as together we take necessary steps towards living healthy because everything depends on your wellbeing.”
+Get ready to have lots of fun and show the #ColoursofYou.
+              </p>
+
+<p class="text-justify">
+  For more information, sponsorships and partnerships please visit www.fitfamfest.com or email hello@fritzng.com
+
+</p>
+
+
       
           </div>
           <!--/.Panel 4-->

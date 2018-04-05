@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>Event Landing page</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap core CSS -->
@@ -19,7 +20,7 @@
     @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
     
     body {
-      background-image:url("img/eventor.jpg");
+      background-color: white;
       font-family: 'Montserrat', sans-serif;
     }
     .new{

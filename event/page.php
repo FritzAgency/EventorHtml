@@ -104,7 +104,7 @@
             </a>
           </li>
           <li class="nav-item" style="margin-left: 27px;">
-            <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect waves-light"
+            <a href="../event/ticket.html" class="nav-link border border-light rounded waves-effect waves-light"
               style="font-size: 10px">Register
             </a>
           </li>
@@ -160,7 +160,7 @@
               </p-->
               <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Register
+              <a href="../event/ticket.html" class="btn btn-outline-white btn-lg">Register
               </a> 
 
             </div>
@@ -195,9 +195,9 @@
               <!--p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
               </p-->
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
+              <a  href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Register
+              <a  href="../event/ticket.html" class="btn btn-outline-white btn-lg">Register
               </a> 
 
             </div>
@@ -238,9 +238,9 @@
               <!--p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
               </p-->
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
+              <a  href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Register
+              <a  href="../event/ticket.html" class="btn btn-outline-white btn-lg">Register
               </a> 
 
             </div>
@@ -970,7 +970,7 @@ learning about portion control and calorie measurement.
     <div class="pt-4">
       <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Become a Vendor
       </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Register
+      <a class="btn btn-outline-white" href="../event/ticket.html"  role="button">Register
       </a>
     </div>
     <!--/.Call to action-->

@@ -158,7 +158,7 @@
               <!--p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
               </p-->
-              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
+              <a  href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
               <a href="../event/ticket.html" class="btn btn-outline-white btn-lg">Register
               </a> 
@@ -238,7 +238,7 @@
               <!--p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
               </p-->
-              <a  href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
+              <a  href="" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
               <a  href="../event/ticket.html" class="btn btn-outline-white btn-lg">Register
               </a> 
@@ -968,7 +968,7 @@ learning about portion control and calorie measurement.
 
     <!--Call to action-->
     <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Become a Vendor
+      <a class="btn btn-outline-white"  role="button">Become a Vendor
       </a>
       <a class="btn btn-outline-white" href="../event/ticket.html"  role="button">Register
       </a>

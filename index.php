@@ -224,7 +224,7 @@ background-color: #4f2684 !important;
                     <a class="nav-link waves-effect menu1" href="#">Event</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">Special Deals</a>
+                    <a class="nav-link waves-effect menu1" href="#">Vendors</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link waves-effect menu1" href="#">About us</a>

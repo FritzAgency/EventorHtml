@@ -139,7 +139,7 @@
             <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
           </video-->
 
-          <div class="view" style="background-image: url('../public/images/carousel.jpg'); background-repeat: no-repeat; background-size: cover;"> </div>
+          <div class="view" style="background-image: url('../public/images/slide1.jpg'); background-repeat: no-repeat; background-size: cover;"> </div>
 
 
           <!-- Mask & flexbox options-->
@@ -177,7 +177,7 @@
       <div class="carousel-item">
         <!--div class="view" style="background-image: url('public/images/carousel.jpg'); background-repeat: no-repeat; background-size: cover;"-->
 
-          <div class="view" style="background-image: url('../public/images/carousel.jpg'); background-repeat: no-repeat; background-size: cover;"> 
+          <div class="view" style="background-image: url('../public/images/slide2.jpg'); background-repeat: no-repeat; background-size: cover;"> 
 
           <!-- Mask & flexbox options-->
           <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -185,13 +185,13 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Fitfamfest 2018</strong>
+                <p style="font-weight: bold">Fitfamfest 2018</p>
               </h1>
 
+              
               <p>
-                <strong>#FitFamFest, Africa’s largest fitness festival, is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest.</strong>
+                <strong>#FitFamFest, Africa’s largest fitness festival,</strong><br> <strong> is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest.</strong>
               </p>
-
               <!--p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
               </p-->

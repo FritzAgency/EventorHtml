@@ -74,7 +74,7 @@ font-family: 'Montserrat', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
 
 body {
-  background-image:url("img/eventor.jpg");
+  /*background-image:url("img/eventor.jpg");*/
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -145,6 +145,10 @@ div#carousel-example-generic {
 background-color: #4f2684 !important;
 
 }
+
+.active{
+	font-weight: normal;
+}
 </style>
 
 </head>
@@ -211,23 +215,17 @@ background-color: #4f2684 !important;
                 </li>
                 
                 <li class="nav-item menu">
-<?php if ((!isset($_COOKIE['first_name']))){
-echo 
-'<a href="auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
-<i class="fa fa-login"></i>Login</a>';      
-}
-?>
+<a href="auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
+<i class="fa fa-login"></i>Login</a>      
+
 
                 </li>
 
 
                 <li class="nav-item menu">
                    
-<?php if ((!isset($_COOKIE['email']))){
-echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
-'; 
-}
-?>
+<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
+
 
 </li>
 <!-- drop down for dashboard and logout -->
@@ -235,21 +233,6 @@ echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves
 </ul>
 
 
-<?php 
-if((isset($_COOKIE['first_name']))){
-//link to the dashboard and logout dashboard
-echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
-list-style-type: none;">
-<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-</a>
-<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-<a class="dropdown-item" href="event/dashboard.php">Dashboard</a>
-<a class="dropdown-item" href="auth/logout.php">Logout</a>
-</div>
-</li>'; 
-}
-?>
 
 
 
@@ -272,12 +255,12 @@ list-style-type: none;">
 </div>
 
 						
-		<div class="shoe-slider" style="margin-top: 50px">
+		<div class="shoe-slider" style="margin-top: 80px">
 			<div class="grid images_3_of_2">
 					<div class="flexslider">
 							       
 							
-          <img src="../public/images/summary2.jpg">
+          <img src="../public/images/summary2.jpg" style="    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
 							<!--div class="clearfix"></div-->
 					</div>	
@@ -288,21 +271,33 @@ list-style-type: none;">
 
 
 
-								<div class="grid images_3_1">
+								<div class="grid images_3_1" style="margin-top: -10px">
 				
-				<h3 style="
-font-family: 'Montserrat', sans-serif;">FITFAM FEST 2018</h3>
+				<h1 style="
+font-family: 'Montserrat', sans-serif; font-weight: bold">FITFAM FEST 2018</h1>
 				
 					<div class="doll-gd simpleCart_shelfItem">
 						
-						<div class="item_add"><span class="item_price"><p>Date</p></span></div>
-						
+						<!--div class="item_add"><span class="item_price"><p>Date</p></span></div-->
+
+						<div class="cnt-gd-siz">
+							<h6>Date:</h6>
+							
+							
+
+
 						<div class="item_add">May 30, 2018.</div>
+															
+							<!--p><span class="" aria-hidden="true"></span></p-->
+						</div>
+
+						
+						<!--div class="item_add">May 30, 2018.</div-->
 						
 						<div class="clearfix"></div>
 					</div>
 						<div class="cnt-gd-rt-col">
-							<h6>Price</h6>
+							<h6>Price:</h6>
 							<ul>
 								<li><a href="#"></a></li>
 								<li><a href="#"></a></li>
@@ -312,15 +307,10 @@ font-family: 'Montserrat', sans-serif;">FITFAM FEST 2018</h3>
 							<div class="clearfix"></div>
 						</div>
 						<div class="cnt-gd-siz">
-							<h6>Location</h6>
+							<h6>Location:</h6>
 							
 							Victoria Island, Lagos.
-								<!--li><a href="#">36</a></li>
-								<li><a href="#">37</a></li>
-								<li><a href="#">38</a></li>
-								<li><a href="#">39</a></li>
-								<li><a href="#">39.5</a></li-->
-							
+															
 							<p><span class="" aria-hidden="true"></span></p>
 						</div>
 						<div class="grid_3 grid_5">
@@ -329,13 +319,17 @@ font-family: 'Montserrat', sans-serif;">FITFAM FEST 2018</h3>
 								  
 								  <!--li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">About</a></li-->
 
-        <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
 
-								  <li role="presentation" class="active"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Organizers</a></li>
-								  <li role="presentation"><a href="#return" role="tab" id="return-tab" data-toggle="tab" aria-controls="return">Sponsors</a></li>
+        <li role="presentation" class="active active-tab"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">ABOUT</a></li>
+
+
+        <!--li role="presentation" class="active" style="font-weight: normal"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">ABOUT</a></li-->
+
+								  <li role="presentation" ><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">ORGANIZERS</a></li>
+								  <li role="presentation" style=""><a href="#return" role="tab" id="return-tab" data-toggle="tab" aria-controls="return">SPONSORS</a></li>
 								</ul>
 								<div id="myTabContent" class="tab-content">
-								  <div role="tabpanel" class="tabs-para tab-pane fade in" id="home" aria-labelledby="home-tab">
+								  <div role="tabpanel" class="tabs-para tab-pane  in active" id="home" aria-labelledby="home-tab">
 									<p>
 										
 										#FitFamFest, Africa’s largest fitness festival,
@@ -344,7 +338,8 @@ is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest <a h
 									
 								  </div>
 								  <div role="tabpanel" class="tabs-para tab-pane fade" id="profile" aria-labelledby="profile-tab">
-									<p>Organizers</p>
+									<!--p>Organizers</p-->
+									<p></p>
 
     <div class="view overlay">
        <center> <img src="../public/images/fritzng.png" class="img-fluid" alt=""> </center>
@@ -362,7 +357,7 @@ is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest <a h
 
 								  </div>
 								  <div role="tabpanel" class="tabs-para tab-pane fade" id="return" aria-labelledby="return-tab">
-									<p>Sponsors</p>
+									<p>SPONSORS</p>
 									
 
 								  </div>
@@ -375,6 +370,265 @@ is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest <a h
 		</div>
 
 </div>
+
+
+
+
+
+<!-- other events --> 
+<div class="container">
+
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="../img/kingmaker.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask back" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                    <div class="doe">
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">KING MAKER CONCERT</p>
+                                </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>APRIL 29, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music, Concert, Entertainment</p>
+
+                                        <p>
+                                            Witness the first live performance of Harrysong and some of the best songwriters and performers in Nigeria.
+                                    </p>
+                                    <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="../img/Concert2.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                        <div class="doe">
+                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Mente de Moda</p>
+                                        </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>APRIL 8, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Shopping, Exhibition</p>
+
+                                        <p>The biggest shopping experience in Nigeria is back again.</p>
+
+                                            <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="../img/Concert3.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                    <div class="doe">
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Safety Summit Lagos 2018</p>
+                                    </div>
+                                    <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>APRIL 4, 2018  </p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Business,  Education, Lecture</p>
+                                        <p>
+                                        Come share seats with prestigious individuals from various industries for an insightful lecture on security around us.  
+
+                                        </p>
+                                        <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+
+
+</div>
+
+
+
+
+<!-- other events --> 
+<div class="container">
+
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="../img/kingmaker.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask back" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                    <div class="doe">
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">KING MAKER CONCERT</p>
+                                </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>APRIL 29, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music, Concert, Entertainment</p>
+
+                                        <p>
+                                            Witness the first live performance of Harrysong and some of the best songwriters and performers in Nigeria.
+                                    </p>
+                                    <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="../img/Concert2.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                        <div class="doe">
+                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Mente de Moda</p>
+                                        </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>APRIL 8, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Shopping, Exhibition</p>
+
+                                        <p>The biggest shopping experience in Nigeria is back again.</p>
+
+                                            <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="../img/Concert3.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                    <div class="doe">
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Safety Summit Lagos 2018</p>
+                                    </div>
+                                    <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>APRIL 4, 2018  </p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Business,  Education, Lecture</p>
+                                        <p>
+                                        Come share seats with prestigious individuals from various industries for an insightful lecture on security around us.  
+
+                                        </p>
+                                        <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+
+
+</div>
+
+<!-- end of event --> 
+    <!--Footer-->
+    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn" style="background-color: #4f2684;">
+
+        <!--Call to action-->
+        <div class="pt-4" style="background-color:#8f2dc2; padding-bottom: 1.5rem;">
+            <a class="btn btn-outline-white" href="#" role="button">Become a Vendor
+            </a>
+            <a class="btn btn-outline-white" href="event/create.php" role="button">Create Event
+            </a>
+        </div>
+        <!--/.Call to action-->
+
+        <!-- Social icons -->
+        <div class="pb-4" style="background-color:#4f2684; padding-top: 1.5rem;">
+            <a href="#">
+                <i class="fa fa-facebook mr-3"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-twitter mr-3"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-youtube mr-3"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-google-plus mr-3"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-pinterest mr-3"></i>
+            </a>
+        </div>
+        <!-- Social icons -->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3" style="background-color:#4f2684; padding-top: 0px;">
+            © 2018 Copyright:
+            <a href="#"> Eventor.com </a>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
 
 <script src="js/bootstrap.js"></script>
 </body>

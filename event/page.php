@@ -331,8 +331,8 @@
 
         <p class="text-center mb-5" style="font-weight:bold; ">ABOUT</p>
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
-          <li class="nav-item new">
-              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel11" role="tab" >Details</a>
+          <li class="nav-item new active">
+              <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel11" role="tab">Details</a>
           </li>
           <li class="nav-item new">
             <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel12" role="tab">Price</a>
@@ -547,23 +547,23 @@
           <!--/.Panel 3-->
       
           <!--Panel 4-->
-          <div class="tab-pane fade" id="panel11" role="tabpanel">
+          <div class="tab-pane active" id="panel11" role="tabpanel">
               <br>
       
-              <p class="text-justify" style="font-size: 15px"> The full-day event which brings together amazing fun-fitness, food and wellness activities for family, friends, fitness freaks and those passionate about being healthy is scheduled to take place on 25th of November, 2017 at the prestigious Ember Creek Waterfront on Water Corporation Drive, Victoria Island. AXA Mansard FitFam Fest will have fitness activities hosted by celebrity fitness coaches like Maje Ayida, CEO Eden Lifestyle and owner of The HIIT Squad, AfriFitness Boss Rachel from the United Kingdom, Seyi Olusore, Shedams Fitness as well as top fitness outfits like Breathe Studio and RyderLounge.</p>
+              <p class="text-justify active" style="font-size: 15px"> The full-day event which brings together amazing fun-fitness, food and wellness activities for family, friends, fitness freaks and those passionate about being healthy is scheduled to take place on 25th of November, 2017 at the prestigious Ember Creek Waterfront on Water Corporation Drive, Victoria Island. AXA Mansard FitFam Fest will have fitness activities hosted by celebrity fitness coaches like Maje Ayida, CEO Eden Lifestyle and owner of The HIIT Squad, AfriFitness Boss Rachel from the United Kingdom, Seyi Olusore, Shedams Fitness as well as top fitness outfits like Breathe Studio and RyderLounge.</p>
 
 
-              <p class="text-justify" style="font-size: 15px">Fitness enthusiasts can anticipate never-seen-before activities like the Fitfam Assault Obstacle Course sponsored by Skechers, Silent Disco Glow-in-the-dark Neon Spinning/Yoga/Dancing and the most fun 5K Colour Run. Speaking of colours, this year’s theme is tagged #ColoursofYou, as a reflection of the vibrancy and diversity of the participants and activities anticipated. </p>
+              <p class="text-justify active" style="font-size: 15px">Fitness enthusiasts can anticipate never-seen-before activities like the Fitfam Assault Obstacle Course sponsored by Skechers, Silent Disco Glow-in-the-dark Neon Spinning/Yoga/Dancing and the most fun 5K Colour Run. Speaking of colours, this year’s theme is tagged #ColoursofYou, as a reflection of the vibrancy and diversity of the participants and activities anticipated. </p>
 
-              <p class="text-justify" style="font-size: 15px">Ember Creek Waterfront will for the first time be used to its full capacity, from the Mezzanine rooftop; which will hold over 50 food vendors, to the fitness centre on the middle floor, right down to the beach waterfront where 10 Extreme Obstacles over 300m will stand as well as a Vegan village hosted by Lagos VegFest, Kids Zone and lots more.</p>
+              <p class="text-justify active" style="font-size: 15px">Ember Creek Waterfront will for the first time be used to its full capacity, from the Mezzanine rooftop; which will hold over 50 food vendors, to the fitness centre on the middle floor, right down to the beach waterfront where 10 Extreme Obstacles over 300m will stand as well as a Vegan village hosted by Lagos VegFest, Kids Zone and lots more.</p>
 
 
-              <p class="text-justify" style="font-size: 15px">
+              <p class="text-justify active" style="font-size: 15px">
                 The main stage will house an assortment of activities from encore fitness parties to the Muscle Man and Bikini Model Championships hosted by Lifeland.ng. Exclusive discounts on fitness gear and equipment will be offered at the festival. Speaking of the event, AXA Mansard Health Limited CEO Tope Adeniyi said, “Everyone needs to make healthy decisions in every facet of their lives, not just in managing their finances or insuring their lives and health. Increasing public awareness of the need for a wellness-focused lifestyle is something we are passionate about at AXA Mansard. Through this event that celebrates health and fitness, we intend to walk hand-in-hand with our customers and indeed the public, as together we take necessary steps towards living healthy because everything depends on your wellbeing.”
 Get ready to have lots of fun and show the #ColoursofYou.
               </p>
 
-<p class="text-justify" style="font-size: 15px">
+<p class="text-justify active" style="font-size: 15px">
   For more information, sponsorships and partnerships please visit www.fitfamfest.com or email hello@fritzng.com
 
 </p>
@@ -652,7 +652,7 @@ Get ready to have lots of fun and show the #ColoursofYou.
 
 
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
-            <li class="nav-item new">
+            <li class="nav-item new active">
                 <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel31" role="tab">Assault Obstacle Course</a>
             </li>
             <li class="nav-item new">
@@ -676,7 +676,7 @@ Get ready to have lots of fun and show the #ColoursofYou.
         <div class="tab-content">
         
             <!--Panel 1-->
-            <div class="tab-pane fade in show" id="panel31" role="tabpanel">
+            <div class="tab-pane fade in show active" id="panel31" role="tabpanel">
                 <div class="row">
   
                     <!--Grid column-->
@@ -842,7 +842,7 @@ fitness to deliver an exciting route to a healthier lifestyle.
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">3:00PM</h2>
                               </div>
                               <h2 style="margin-left:auto; margin-right: auto; font-weight: bold; font-weight: bold; text-align: center; color: #4f2684; font-size: 20px;margin-bottom: 25px;">-</h2>  
-                              <div style="border: 3px solid lightgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
+                              <div style="border: 3px solid lightrgrey; text-align: center; border-radius: 17px; margin-top:10px; width: 50%; margin-left: auto; margin-right: auto;">
                               <h2 style="font-weight:bold; margin: 10px; font-size: 20px;">4:00PM</h2>
                           </div>
                           </div>

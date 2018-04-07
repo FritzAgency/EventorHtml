@@ -8,6 +8,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title></title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="js/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -59,11 +67,212 @@ font-family: 'Montserrat', sans-serif;
 
 
 </style> 
+
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
+
+body {
+  background-image:url("img/eventor.jpg");
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 8%;
+  left: 14%;
+  transform: translate(-10%, -8%);
+  -ms-transform: translate(-10%, -8%);
+  text-align: left;
+}
+
+div#carousel-example-generic {
+    position:relative;
+}
+
+
+.carousel-control {
+  top: 50%;
+}
+
+
+
+#searchForm {
+	position:absolute;
+  	top:86%;
+}
+
+.form-group{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu{
+    font-size: 13px;
+}
+
+.menu1{
+    font-size:12px;
+}
+
+.doe{
+    height: 40px; 
+    width: 104%; 
+    margin-top: 6px; 
+    background-color: rgba(79, 38, 132, 0.2);
+    padding: 6px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border: 2px solid #ffffff;
+}
+
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
+.carousel-control.left {
+    z-index:7
+}  
+.carousel-control.right {
+    z-index:7
+}
+
+.mdb-color.darken-2 {
+
+background-color: #4f2684 !important;
+
+}
+</style>
+
 </head>
 <body>
 
+<div class="container-fluid">
+	<!--Main Navigation-->
+<header>
+
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" href="#">
+            <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-top: 14px;">
+
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">How It Works
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">Event</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">Special Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#" >Contact</a>
+                </li>
+            </ul>
+
+
+            
+
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+            
+                <li class="nav-item">
+                    <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
+                        <i class="fa fa-login"></i>Create Event
+                    </a>
+                </li>
+                <li class="nav-item" style="margin-right: 60px;" >
+                    <a href="#" class="nav-link waves-effect menu" style="color:#4f2684;">
+                        <i class="fa fa-login"></i>Sell Products
+                    </a>
+                </li>
+                
+                <li class="nav-item menu">
+<?php if ((!isset($_COOKIE['first_name']))){
+echo 
+'<a href="auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
+<i class="fa fa-login"></i>Login</a>';      
+}
+?>
+
+                </li>
+
+
+                <li class="nav-item menu">
+                   
+<?php if ((!isset($_COOKIE['email']))){
+echo'<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
+'; 
+}
+?>
+
+</li>
+<!-- drop down for dashboard and logout -->
+<!-- drop down for dashboard and logout ends here -->
+</ul>
+
+
+<?php 
+if((isset($_COOKIE['first_name']))){
+//link to the dashboard and logout dashboard
+echo  $_COOKIE['first_name'].'<li class="nav-item dropdown" style="
+list-style-type: none;">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+<a class="dropdown-item" href="event/dashboard.php">Dashboard</a>
+<a class="dropdown-item" href="auth/logout.php">Logout</a>
+</div>
+</li>'; 
+}
+?>
+
+
+
+
+
+        </div>
+
+    </div>
+</nav>
+<!-- Navbar -->
+
+</header>
+<!--Main Navigation-->
+
+
+
+
+
+
+</div>
+
 						
-		<div class="shoe-slider">
+		<div class="shoe-slider" style="margin-top: 50px">
 			<div class="grid images_3_of_2">
 					<div class="flexslider">
 							       
@@ -117,12 +326,16 @@ font-family: 'Montserrat', sans-serif;">FITFAM FEST 2018</h3>
 						<div class="grid_3 grid_5">
 						    <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 								<ul id="myTab" class="nav nav-tabs" role="tablist">
-								  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">About</a></li>
-								  <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Organizers</a></li>
+								  
+								  <!--li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">About</a></li-->
+
+        <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
+
+								  <li role="presentation" class="active"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Organizers</a></li>
 								  <li role="presentation"><a href="#return" role="tab" id="return-tab" data-toggle="tab" aria-controls="return">Sponsors</a></li>
 								</ul>
 								<div id="myTabContent" class="tab-content">
-								  <div role="tabpanel" class="tabs-para tab-pane fade in active" id="home" aria-labelledby="home-tab">
+								  <div role="tabpanel" class="tabs-para tab-pane fade in" id="home" aria-labelledby="home-tab">
 									<p>
 										
 										#FitFamFest, Africa’s largest fitness festival,

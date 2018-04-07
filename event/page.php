@@ -652,7 +652,8 @@ Get ready to have lots of fun and show the #ColoursofYou.
 
 
         <ul class="nav md-pills nav-justified pills-secondary" style="margin-bottom: 20px;">
-            <li class="nav-item new active">
+            <li class="nav-item new active" style="overflow: hidden;
+white-space: nowrap;">
                 <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel31" role="tab">Assault Obstacle Course</a>
             </li>
             <li class="nav-item new">
@@ -665,7 +666,8 @@ Get ready to have lots of fun and show the #ColoursofYou.
                 <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel34" role="tab">Neon Flex </a>
             </li>
             <li class="nav-item new">
-                <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel35" role="tab">Clean Eat Buffet</a>
+                <a class="nav-link" style="color:black; overflow: hidden;
+white-space: nowrap" data-toggle="tab" href="#panel35" role="tab">Clean Eat Buffet</a>
             </li>
             <!--li class="nav-item new">
               <a class="nav-link" style="color:black;" data-toggle="tab" href="#panel36" role="tab">Football</a>

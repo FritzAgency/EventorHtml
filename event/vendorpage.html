@@ -1,0 +1,690 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="js/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="js/jquery-ui.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Material+Icons" rel="stylesheet">
+
+
+<!-- Custom Theme files -->
+<script src="js/jquery.min.js"></script>
+<!-- cart -->
+<script src="js/imagezoom.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+
+<!-- cart -->
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='//fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<!-- script for close -->
+<script>
+$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.vlcone').fadeOut('slow', function(c){
+			$('.vlcone').remove();
+		});
+	});	  
+});
+</script>
+<script>$(document).ready(function(c) {
+$('.alert-close1').on('click', function(c){
+	$('.vlctwo').fadeOut('slow', function(c){
+		$('.vlctwo').remove();
+	});
+});	  
+});
+</script>
+<!-- //script for close -->
+<script src="js/simpleCart.min.js"> </script>
+<style>
+
+body{
+font-family: 'Montserrat', sans-serif;
+}	
+
+
+</style> 
+
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
+
+body {
+  /*background-image:url("img/eventor.jpg");*/
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 8%;
+  left: 14%;
+  transform: translate(-10%, -8%);
+  -ms-transform: translate(-10%, -8%);
+  text-align: left;
+}
+
+div#carousel-example-generic {
+    position:relative;
+}
+
+
+.carousel-control {
+  top: 50%;
+}
+
+
+
+#searchForm {
+	position:absolute;
+  	top:86%;
+}
+
+.form-group{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu{
+    font-size: 13px;
+}
+
+.menu1{
+    font-size:12px;
+}
+
+.doe{
+    height: 40px; 
+    width: 104%; 
+    margin-top: 6px; 
+    background-color: rgba(79, 38, 132, 0.2);
+    padding: 6px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border: 2px solid #ffffff;
+}
+
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
+.carousel-control.left {
+    z-index:7
+}  
+.carousel-control.right {
+    z-index:7
+}
+
+.mdb-color.darken-2 {
+
+background-color: #4f2684 !important;
+
+}
+
+.active{
+	font-weight: normal;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+	<!--Main Navigation-->
+<header>
+
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" href="#">
+            <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-top: 14px;">
+
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">How It Works
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">Event</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">Special Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="#" >Contact</a>
+                </li>
+            </ul>
+
+
+            
+
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+            
+                <li class="nav-item">
+                    <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
+                        <i class="fa fa-login"></i>Create Event
+                    </a>
+                </li>
+                <li class="nav-item" style="margin-right: 60px;" >
+                    <a href="#" class="nav-link waves-effect menu" style="color:#4f2684;">
+                        <i class="fa fa-login"></i>Sell Products
+                    </a>
+                </li>
+                
+                <li class="nav-item menu">
+<a href="auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
+<i class="fa fa-login"></i>Login</a>      
+
+
+                </li>
+
+
+                <li class="nav-item menu">
+                   
+<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
+
+
+</li>
+<!-- drop down for dashboard and logout -->
+<!-- drop down for dashboard and logout ends here -->
+</ul>
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+</nav>
+<!-- Navbar -->
+
+</header>
+<!--Main Navigation-->
+
+
+
+
+
+
+</div>
+
+						
+		<div class="shoe-slider" style="margin-top: 80px">
+			<div class="grid images_3_of_2">
+					<div class="flexslider">
+							       
+							
+          <img src="../img/flaw2.jpg" style="    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+
+							<!--div class="clearfix"></div-->
+					</div>	
+			</div>										
+				
+
+
+
+
+
+								<div class="grid images_3_1" style="margin-top: -10px">
+				
+				<h1 style="
+font-family: 'Montserrat', sans-serif; font-weight: bold">FLAWLESS MAKEOVER</h1>
+				
+					<div class="doll-gd simpleCart_shelfItem">
+						
+						<!--div class="item_add"><span class="item_price"><p>Date</p></span></div-->
+
+						<div class="cnt-gd-siz">
+							<h6>Rating:</h6>
+							
+						
+
+						<div class="item_add">100%</div>
+															
+							<!--p><span class="" aria-hidden="true"></span></p-->
+						</div>
+
+						
+						<!--div class="item_add">May 30, 2018.</div-->
+						
+						<div class="clearfix"></div>
+					</div>
+						<div class="cnt-gd-rt-col">
+							<h6>Patronage:</h6>
+                            
+                            11
+							<!--ul>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+							</ul-->
+							<div class="clearfix"></div>
+						</div>
+						<div class="cnt-gd-siz">
+							<h6>Duration:</h6>
+							
+							6 months
+															
+							<p><span class="" aria-hidden="true"></span></p>
+						</div>
+
+                        <div class="cnt-gd-siz" style="margin-top: -15px">
+                            <h6>Category:</h6>
+                            
+                            Makeup Services, Special Effect Makeover, Sales of Makeup Products
+                                                            
+                            <p><span class="" aria-hidden="true"></span></p>
+                        </div>
+
+						<div class="grid_3 grid_5">
+						    <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+								<ul id="myTab" class="nav nav-tabs" role="tablist">
+								  
+								  <!--li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">About</a></li-->
+
+
+        <li role="presentation" class="active active-tab"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">MEDIA</a></li>
+
+
+        <!--li role="presentation" class="active" style="font-weight: normal"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">ABOUT</a></li-->
+
+								  <li role="presentation" ><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">PRODUCT/SERVICES</a></li>
+								  <li role="presentation" style=""><a href="#return" role="tab" id="return-tab" data-toggle="tab" aria-controls="return">ADDRESS</a></li>
+								</ul>
+								<div id="myTabContent" class="tab-content">
+								  <div role="tabpanel" class="tabs-para tab-pane  in active" id="home" aria-labelledby="home-tab">
+									<!--p>
+										
+										#FitFamFest, Africa’s largest fitness festival,
+is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest <a href="../event/page.php" style="text-decoration: underline">...more</a>
+									</p-->
+
+ <img src="img/makeup.jpg" alt="hell" >
+ &nbsp; 
+
+ <img src="img/makeup3.jpg" alt="hell" style="padding-top: 10px ">
+&nbsp; 
+ <img src="img/glow.jpg" alt="hell" style="padding-top: 10px">
+&nbsp; 
+
+ <img src="img/4th.jpg" alt="hell" style="padding-top: 10px">
+
+									
+								  </div>
+								  <div role="tabpanel" class="tabs-para tab-pane fade" id="profile" aria-labelledby="profile-tab">
+									<!--p>Organizers</p-->
+									<p> Makeup Services, Special Effect Makeover, Sales of Makeup Products</p>
+ <div class="card-body text-center">
+        <!--Title-->
+        <!--h4 class="card-title"><strong>Fritz International</strong></h4-->
+       
+</div>
+					
+
+
+								  </div>
+								  <div role="tabpanel" class="tabs-para tab-pane fade" id="return" aria-labelledby="return-tab">
+									<p>2, Idejo street, Victoria Island, Lagos</p>
+									
+
+								  </div>
+								</div>
+							</div>
+						</div>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+</div>
+
+
+
+
+
+<div class="container" style="margin-top: 100px; margin-left: 15px">
+
+
+
+<div class="row" >
+    
+<div class="col-md-3">
+
+ <img src="../img/vm.jpg" alt="hell" class="img-fluid">
+    
+</div>
+
+   
+<div class="col-md-3" style="padding-right: 10px">
+
+ <img src="../img/vm.jpg" alt="hell"  class="img-fluid">
+    
+
+</div>
+
+
+   
+<!--div class="col-md-2">
+
+ <img src="../img/vm.jpg" alt="hell" >
+    
+</div-->
+
+
+   
+<!--div class="col-md-2">
+
+ <img src="../img/vm.jpg" alt="hell" >
+    
+</div-->
+
+
+   
+<div class="col-md-3">
+
+ <img src="../img/vm.jpg" alt="hell" >
+    
+</div>
+
+</div> 
+
+
+</div>
+
+
+
+<div class="container" style="margin-top: 100px; height:">
+
+
+<hr>
+
+
+
+
+
+<div class="row">
+
+<div class="col-md-3">
+<p class="name"> <a href="../event/vendorpage.html" style="color: #4f2684"> Flawless Makeover </a> </p>
+</div> 
+
+
+<div class="col-md-3">
+ Makeup Services, Special Effect Makeover, Sales of Makeup Products     
+</div> 
+   
+
+
+<div class="col-md-3">
+ 
+
+ <img src="img/makeup.jpg" alt="hell" >
+ &nbsp; 
+
+ <img src="img/makeup3.jpg" alt="hell" style="padding-top: 10px ">
+&nbsp; 
+ <img src="img/glow.jpg" alt="hell" style="padding-top: 10px">
+&nbsp; 
+
+ <img src="img/4th.jpg" alt="hell" style="padding-top: 10px">
+
+
+
+</div> 
+
+
+<div class="col-md-3">
+<p><b>Patronage</b> : 11</p>
+<p><b>Rating</b> :    100%</p>
+<p><b>Duration</b> :  6 Months</p>
+<!--p>CONTACT</p-->
+<p> <button type="button" class="btn btn-lg" style="background-color: #4f2684; font-size: 8px">
+    <span class="glyphicon glyphicon-envelope"></span> 
+    Contact vendor
+  </button> </p>
+</div> 
+</div>
+
+
+<hr>
+
+<div class="row">
+
+<div class="col-md-3">
+<p class="name"> <a href="#" style="color: #4f2684">  Hardcore Nigeria Limited </a></p> 
+</div> 
+
+
+<div class="col-md-3">
+ Large Format Printing, Branding, Sewing, Screen Printing, Embroidery.     
+</div> 
+   
+
+
+<div class="col-md-3">
+ 
+ <img src="img/v3.jpg" alt="hell" >
+ &nbsp; 
+ <img src="img/Hardcore.jpg" alt="hell" >
+&nbsp;
+ <img src="img/Hardcore1.jpg" alt="hell" style="padding-top: 10px ">
+&nbsp; 
+ <img src="img/Hardcore2.jpg" alt="hell" style="padding-top: 10px">
+
+ 
+
+</div> 
+
+
+<div class="col-md-3">
+<p><b>Patronage</b> : 3</p>
+<p><b>Rating</b> :    93%</p>
+<p><b>Duration</b> :  3 Months</p>
+<!--p>CONTACT</p-->
+<p> <button type="button" class="btn btn-lg" style="background-color: #4f2684; font-size: 8px">
+    <span class="glyphicon glyphicon-envelope"></span> 
+    Contact vendor
+  </button> </p>
+</div> 
+
+</div>
+<hr>
+
+<div class="row">
+
+<div class="col-md-3">
+<p class="name"> <a href="#" style="color: #4f2684">  Biodun Rentals </a></p>
+</div> 
+
+
+<div class="col-md-3">
+ Canopy Rental, Chair Rental, Table Rental, Cooking Utensils Rental       
+</div> 
+   
+
+
+<div class="col-md-3">
+
+
+ <img src="img/rental.jpg" alt="hell" >
+ &nbsp; 
+ <img src="img/rental1.jpg" alt="hell" >
+&nbsp;
+ <!--img src="img/Hardcore1.jpg" alt="hell" style="padding-top: 10px ">
+&nbsp; 
+ <img src="img/Hardcore2.jpg" alt="hell" style="padding-top: 10px"-->
+
+
+</div> 
+
+
+<div class="col-md-3">
+<p><b>Patronage</b> : 52</p>
+<p><b>Rating</b> :    84%</p>
+<p><b>Duration</b> :  2 Years</p>
+<!--p>CONTACT</p-->
+<p> <button type="button" class="btn btn-lg" style="background-color: #4f2684; font-size: 8px">
+    <span class="glyphicon glyphicon-envelope"></span> 
+    Contact vendor
+  </button> </p>
+</div> 
+
+</div>
+<hr>
+
+<div class="row">
+
+<div class="col-md-3">
+<p class="name"> <a href="#" style="color: #4f2684">  Dj Neptune </a> </p>
+</div> 
+
+
+<div class="col-md-3">
+ Dj Services, DJ Equipments Rental     
+</div> 
+   
+
+
+<div class="col-md-3">
+ 
+ <img src="img/dj.jpg" alt="hell">
+&nbsp; 
+
+ <img src="img/dj2.jpg" alt="hell">
+
+</div> 
+
+
+<div class="col-md-3">
+<p><b>Patronage</b> : 1</p>
+<p><b>Rating</b> :    40%</p>
+<p><b>Duration</b> :  1 Month</p>
+<!--p>CONTACT</p-->
+<p> <button type="button" class="btn btn-lg" style="background-color: #4f2684; font-size: 8px">
+    <span class="glyphicon glyphicon-envelope"></span> 
+    Contact vendor
+  </button> </p>
+</div> 
+
+</div>
+<hr>
+
+
+
+
+</div>
+
+
+
+<!-- end of event --> 
+    <!--Footer-->
+    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn" style="background-color: #4f2684;">
+
+        <!--Call to action-->
+        <div class="pt-4" style="background-color:#8f2dc2; padding-bottom: 1.5rem;">
+            <a class="btn btn-outline-white" href="#" role="button">Become a Vendor
+            </a>
+            <a class="btn btn-outline-white" href="event/create.php" role="button">Create Event
+            </a>
+        </div>
+        <!--/.Call to action-->
+
+        <!-- Social icons -->
+        <div class="pb-4" style="background-color:#4f2684; padding-top: 1.5rem;">
+            <a href="#">
+                <i class="fa fa-facebook mr-3"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-twitter mr-3"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-youtube mr-3"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa fa-google-plus mr-3"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-pinterest mr-3"></i>
+            </a>
+        </div>
+        <!-- Social icons -->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3" style="background-color:#4f2684; padding-top: 0px;">
+            © 2018 Copyright:
+            <a href="#"> Eventor.com </a>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
+
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

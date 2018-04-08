@@ -341,15 +341,6 @@ list-style-type: none;">
                     </div>
                     <!--/.Slides-->
                     
-                    <!--Controls-->
-                    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                     <!--/.Controls-->
                     <div><form class="col-sm-12" id="searchForm">
     <div class="form-group col-sm-6 col-sm-offset-2">
@@ -368,6 +359,17 @@ list-style-type: none;">
   </form>
   </div>
                 </div>
+
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    
                 <!--/.Carousel Wrapper-->
                 <!-- <div class="container form-group" style="width: 26%; height: 62px; background-color: rgba(79, 38, 132, 0.4);">
 	<div class="row" style="height: 55px;">

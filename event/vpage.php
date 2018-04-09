@@ -98,186 +98,14 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.text {
-  color: white;
-  font-size: 14px;
-  position: absolute;
-  top: 8%;
-  left: 14%;
-  transform: translate(-10%, -8%);
-  -ms-transform: translate(-10%, -8%);
-  text-align: left;
-}
-
-div#carousel-example-generic {
-    position:relative;
-}
-
-
-.carousel-control {
-  top: 50%;
-}
-
-
-
-#searchForm {
-    position:absolute;
-    top:86%;
-}
-
-.form-group{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.menu{
-    font-size: 13px;
-}
-
-.menu1{
-    font-size:12px;
-}
-
-.doe{
-    height: 40px; 
-    width: 104%; 
-    margin-top: 6px; 
-    background-color: rgba(79, 38, 132, 0.2);
-    padding: 6px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    border: 2px solid #ffffff;
-}
-
-    .search-query:focus + button {
-        z-index: 3;   
-    }
-
-.carousel-control.left {
-    z-index:7
-}  
-.carousel-control.right {
-    z-index:7
-}
-
-.mdb-color.darken-2 {
-
-background-color: #4f2684 !important;
-
-}
-
-.active{
-    font-weight: normal;
+.shift{
+height: 50px;
 }
 </style>
 
 
 
 
-<style type="text/css">
-
-
-/* box model hacks not catered for in the demo */
-/* global reset for demo purposes only - use a proper reset in a real page*/
-*{margin:0;padding:0}
-p{margin:0 0 .5em 0}
-h1{margin:1em 0;text-align:center}
-#catlist{
-    border:1px dashed #ccc;
-    border-bottom:none;
-    width:660px;
-    margin:10px auto;
-}
-#catlist dl{
-    width:640px;
-    margin:0 auto;
-    border-bottom:1px dashed #ccc;
-    padding:10px;
-    overflow:hidden;
-    background:#f2f2f2;
-}
-#catlist dd{overflow:auto}
-#catlist dt strong{
-    float:right;
-    padding:0 0 0 20px;
-}
-#catlist dt img{
-    float:left;
-    margin:0 10px 0 0;
-    border:1px solid #000;
-}
-* html dd{height:1%}/* 3px jog*/
-
-
-.glyphicon { margin-right:5px; }
-.thumbnail
-{
-    margin-bottom: 20px;
-    padding: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-}
-
-.item.list-group-item
-{
-    float: none;
-    width: 100%;
-    background-color: #fff;
-    margin-bottom: 10px;
-}
-.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
-{
-    background: #428bca;
-}
-
-.item.list-group-item .list-group-image
-{
-    margin-right: 10px;
-}
-.item.list-group-item .thumbnail
-{
-    margin-bottom: 0px;
-}
-.item.list-group-item .caption
-{
-    padding: 9px 9px 0px 9px;
-}
-.item.list-group-item:nth-of-type(odd)
-{
-    background: #eeeeee;
-}
-
-.item.list-group-item:before, .item.list-group-item:after
-{
-    display: table;
-    content: " ";
-}
-
-.item.list-group-item img
-{
-    float: left;
-}
-.item.list-group-item:after
-{
-    clear: both;
-}
-.list-group-item-text
-{
-    margin: 0 0 11px;
-}   
-
-img{
-
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.name{
-    font-weight: bold;
-    font-size: 25px;
-}
-
-</style>
 
 
 <script type="text/javascript">
@@ -293,104 +121,10 @@ $(document).ready(function() {
 </head>
 <body>
 
-    <!--Main Navigation-->
-<header>
-
-<!-- Navbar -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-    <div class="container" style="height: 50px">
-
-        <!-- Brand -->
-        
-            <div style="width: 150px;" class="navbar-brand waves-effect" style="border:0px"> <a href="../index.php"><img src="img/logo.png" alt="" class="img-fluid img-responsive"></a>
-</div>
-        
-        <!-- Collapse -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-top: 14px;">
-
-            <!-- Left -->
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">How It Works
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">Event</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="../event/vendor.html">Vendors</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="../dash/index.html" >Dashboard</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">About us</a>
-                </li>
-                <!--li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#" >Contact</a>
-                </li-->
-            </ul>
 
 
-            
-
-            <!-- Right -->
-            <ul class="navbar-nav nav-flex-icons">
-            
-                <li class="nav-item">
-                    <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
-                        <i class="fa fa-login"></i>Create Event
-                    </a>
-                </li>
-                <li class="nav-item" style="margin-right: 60px;" >
-                    <a href="#" class="nav-link waves-effect menu" style="color:#4f2684;">
-                        <i class="fa fa-login"></i>Become a Vendor
-                    </a>
-                </li>
-                
-                <li class="nav-item menu">
-<a href="../auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
-<i class="fa fa-login"></i>Login</a>      
-
-
-                </li>
-
-
-                <li class="nav-item menu">
-                   
-<a href="../auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
-
-
-</li>
-<!-- drop down for dashboard and logout -->
-<!-- drop down for dashboard and logout ends here -->
-</ul>
-
-
-
-
-
-
-
-        </div>
-
-    </div>
-</nav>
-<!-- Navbar -->
-
-</header>
-<!--Main Navigation-->
-
-
+   
+<?php require('../header.php'); ?> 
 
 
 
@@ -400,7 +134,7 @@ $(document).ready(function() {
 
 
     <!-- grow -->
-        <div class="product" style="margin-top: 100px">
+        <div class="product" style="margin-top: 50px">
             <div class="container">
                 
                 <div class="product-price1">

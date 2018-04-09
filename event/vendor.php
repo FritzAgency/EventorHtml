@@ -256,10 +256,10 @@ h1{margin:1em 0;text-align:center}
     margin: 0 0 11px;
 }   
 
-img{
+.img{
 
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} 
 
 .name{
     font-weight: bold;
@@ -283,101 +283,9 @@ $(document).ready(function() {
 <body>
 
 
-    <!--Main Navigation-->
-<header>
+   
+<?php require('../header.php'); ?> 
 
-<!-- Navbar -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-    <div class="container">
-
-        <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="">
-            <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
-        </a>
-
-        <!-- Collapse -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-top: 14px;">
-
-            <!-- Left -->
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">How It Works
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">Event</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="../event/vendor.html">Vendors</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="../dash/index.html" >Dashboard</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">About us</a>
-                </li>
-                <!--li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#" >Contact</a>
-                </li-->
-            </ul>
-
-
-            
-
-            <!-- Right -->
-            <ul class="navbar-nav nav-flex-icons">
-            
-                <li class="nav-item">
-                    <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
-                        <i class="fa fa-login"></i>Create Event
-                    </a>
-                </li>
-                <li class="nav-item" style="margin-right: 60px;" >
-                    <a href="#" class="nav-link waves-effect menu" style="color:#4f2684;">
-                        <i class="fa fa-login"></i>Become a Vendor
-                    </a>
-                </li>
-                
-                <li class="nav-item menu">
-<a href="../auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
-<i class="fa fa-login"></i>Login</a>      
-
-
-                </li>
-
-
-                <li class="nav-item menu">
-                   
-<a href="../auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
-
-
-</li>
-<!-- drop down for dashboard and logout -->
-<!-- drop down for dashboard and logout ends here -->
-</ul>
-
-
-
-
-
-
-
-        </div>
-
-    </div>
-</nav>
-<!-- Navbar -->
-
-</header>
-<!--Main Navigation-->
 
 
 <div class="container" style="margin-top: 100px; height:">
@@ -388,7 +296,7 @@ $(document).ready(function() {
 <div class="row">
 
 <div class="col-md-3">
-<p class="name"> <a href="../event/vpage.html" style="color: #4f2684"> Flawless Makeover </a> </p>
+<p class="name"> <a href="../event/vpage.php" style="color: #4f2684"> Flawless Makeover </a> </p>
 </div> 
 
 
@@ -404,12 +312,12 @@ $(document).ready(function() {
  <img src="img/makeup.jpg" alt="hell" >
  &nbsp; 
 
- <img src="img/makeup3.jpg" alt="hell" style="padding-top: 10px ">
+ <img src="img/makeup3.jpg" alt="hell" style="padding-top: 10px " class="img">
 &nbsp; 
- <img src="img/glow.jpg" alt="hell" style="padding-top: 10px">
+ <img src="img/glow.jpg" alt="hell" style="padding-top: 10px" class="img">
 &nbsp; 
 
- <img src="img/4th.jpg" alt="hell" style="padding-top: 10px">
+ <img src="img/4th.jpg" alt="hell" style="padding-top: 10px" class="img">
 
 
 
@@ -446,13 +354,13 @@ $(document).ready(function() {
 
 <div class="col-md-3">
  
- <img src="img/v3.jpg" alt="hell" >
+ <img src="img/v3.jpg" alt="hell" class="img">
  &nbsp; 
- <img src="../event/img/hardcore.jpg" alt="hell" >
+ <img src="../event/img/hardcore.jpg" alt="hell" class="img">
 &nbsp;
- <img src="../event/img/hardcore1.jpg" alt="hell" style="padding-top: 10px ">
+ <img src="../event/img/hardcore1.jpg" alt="hell" style="padding-top: 10px " class="img">
 &nbsp; 
- <img src="../event/img/hardcore2.jpg" alt="hell" style="padding-top: 10px">
+ <img src="../event/img/hardcore2.jpg" alt="hell" style="padding-top: 10px" class="img">
 
  
 
@@ -489,9 +397,9 @@ $(document).ready(function() {
 <div class="col-md-3">
 
 
- <img src="img/rental.jpg" alt="hell" >
+ <img src="img/rental.jpg" alt="hell" class="img">
  &nbsp; 
- <img src="img/rental1.jpg" alt="hell" >
+ <img src="img/rental1.jpg" alt="hell" class="img">
 &nbsp;
  <!--img src="img/Hardcore1.jpg" alt="hell" style="padding-top: 10px ">
 &nbsp; 
@@ -530,10 +438,10 @@ $(document).ready(function() {
 
 <div class="col-md-3">
  
- <img src="img/dj.jpg" alt="hell">
+ <img src="img/dj.jpg" alt="hell" class="img">
 &nbsp; 
 
- <img src="img/dj2.jpg" alt="hell">
+ <img src="img/dj2.jpg" alt="hell" class="img">
 
 </div> 
 

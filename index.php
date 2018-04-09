@@ -79,7 +79,7 @@ body {
 } */
 
 #searchForm {
-	position:absolute;
+	/*position:absolute;*/
   	top:86%;
 }
 
@@ -185,6 +185,12 @@ body {
 background-color: #4f2684 !important;
 
 }
+
+
+@media only screen and (max-device-width: 480px) {
+
+ }   
+
 </style>
 
 

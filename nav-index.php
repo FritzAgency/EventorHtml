@@ -68,7 +68,7 @@
     <div class="container shift">
 
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="../">
+        <a class="navbar-brand waves-effect" href="index.php">
             <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
         </a>
 
@@ -92,11 +92,11 @@
                     <a class="nav-link waves-effect menu1" href="#">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="../event/vendor.php">Vendors</a>
+                    <a class="nav-link waves-effect menu1" href="event/vendor.php">Vendors</a>
                 </li>
 
                  <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="../dash/index.html" >Dashboard</a>
+                    <a class="nav-link waves-effect menu1" href="dash/index.html" >Dashboard</a>
                 </li>
 
                 <li class="nav-item">

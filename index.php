@@ -207,7 +207,7 @@ background-color: #4f2684 !important;
 <body>
 
 
-<?php require('header.php'); ?> 
+<?php require('nav-index.php'); ?> 
 
     <!--Main layout-->
     <main class="mt-5 pt-5">

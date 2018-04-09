@@ -79,7 +79,7 @@ body {
 } */
 
 #searchForm {
-	/*position:absolute;*/
+	position:absolute;
   	top:86%;
 }
 
@@ -187,9 +187,17 @@ background-color: #4f2684 !important;
 }
 
 
-@media only screen and (max-device-width: 480px) {
 
- }   
+/*@media (max-width: 500px) {
+  #searchForm {
+     position:relative;
+     /*top:0;
+     left:0;*/
+     /*width:100%;*/
+  /*}
+}*/
+  
+
 
 </style>
 
@@ -232,12 +240,15 @@ background-color: #4f2684 !important;
                 <li class="nav-item">
                     <a class="nav-link waves-effect menu1" href="event/vendor.html">Vendors</a>
                 </li>
+
+                 <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="dash/index.html" >Dashboard</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link waves-effect menu1" href="#">About us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#" >Contact</a>
-                </li>
+               
             </ul>
 
 
@@ -331,7 +342,7 @@ list-style-type: none;">
                     <div class="carousel-inner" role="listbox">
                         <!--First slide-->
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/sliid.jpg" alt="First slide">
+                          <a href="event/summary.html">  <img class="d-block w-100" src="img/sliid3.jpg" alt="First slide"></a>
                         </div>
                         <!--/First slide-->
                         <!--Second slide-->
@@ -353,7 +364,7 @@ list-style-type: none;">
       <div class="input-group input-group-lg center-block" style="background-color: rgba(79, 38, 132, 0.4);">
         <div class="row" style="border: 2px solid white; margin: 7px; width: 100%;">
         <div class="col-sm-11">
-        <input type="text" class="form-control" placeholder="Find an Event here" style="padding-top: 7px; background-color: transparent; color: white; text-align:center; border: 0px;">
+        <input type="text" class="form-control input-size" placeholder="Find an Event here" style="padding-top: 7px; background-color: transparent; color: white; text-align:center; border: 0px;">
         </div>
         <div class="col-sm-1">
         <span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: white; font-size: 1.333333em; vertical-align: -57%;"></i></span>
@@ -395,7 +406,7 @@ list-style-type: none;">
             <!--Section: Carousel-->
 
             <!--Section: Images-->
-            <section class="text-center">
+            <section class="text-center event-section">
 
                 <!-- Grid row -->
                 <div class="row">

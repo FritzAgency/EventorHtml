@@ -1,8 +1,8 @@
-<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Create EVENT</title>
+<title>Become a vendor</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -94,14 +94,7 @@
 }
 </style>
 
-<?php 
-require_once('../vendor/vendorclass.php');
 
-//if user not logged, redirect to the signup page 
-if((!isset($_SESSION['email']))){
-header("Location: ../auth/signup.php");
-}
-?> 
 </head>
 <body>
      <!-- header starts here -->
@@ -109,50 +102,11 @@ header("Location: ../auth/signup.php");
   <div class="container-fluid">
     <div class="navbar-header" >
       <div>
-      <h2 style="margin-right: auto; font-weight: bold; color: #4f2684; margin-left: 2em; margin-bottom: 20px; margin-top: 20px;">VENDOR REGISTRATION FORM</h2>
+      <h4 style="margin-right: auto; font-weight: bold; color: #4f2684; margin-left: 2em; margin-bottom: 20px; margin-top: 20px;">VENDOR REGISTRATION FORM</h2>
       <!-- <a class="navbar-brand" href="index.php"><img src="img/logo2.png" alt="" srcset="" class="img-responsive" style="margin-top: -7px;"></a> -->
       </div>
     </div>
-    <ul class="nav navbar-nav navbar-right" class="topnav" id="myTopnav" style="margin-top: -43px;padding-bottom: 10px;">
-    <li><a href="index.php" class="new" style="margin-top: 53px; font-size: 20px; font-weight: bold; border-radius: 5%;" id="change"> <span class="glyphicon glyphicon-arrow-left"> </span></a></li>
-    <!--  <li><a href="#" class="new">EVENTS</a></li>
-      <li><a href="#" class="new">SPECIAL DEALS</a></li>
-      <li><a href="#" class="new">ABOUT US</a></li>
-      <li><a href="#" class="new">CONTACT</a></li> -->
-      <!-- <li><a href="auth/signup.php" class="new">SIGNUP</a></li> -->
-      <!--li><a class="new"> | </a></li-->
-      <!-- <li><a href="auth/login.php" class="new">LOGIN</a></li> -->
-      <?php if ((isset($_SESSION['email']))){
-
-echo 
-''; 
-}else{
-echo'<li><a href="auth/signup.php" style="color:#4f2684;"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>'; 
-}
-?>
-
-<?php if ((isset($_SESSION['email']))){
-
-echo 
-'
-<li><a href="auth/logout.php" style="color:#4f2684;"><span class=""></span> Logout</a></li>
-';      }else{
-echo'
-<li><a href="auth/login.php" style="color:#4f2684;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-'; 
-}
-?>
-
-
-
-<li style="margin-top: 15px; margin-right: 17px; font-weight: bold; color: #4f2684;">  <?php 
-if((isset($_SESSION['first_name']))){
-echo 'Welcome, '. $_SESSION['first_name'];
-}
-?>
-
-    </ul>
-  </div>
+     </div>
 </nav>
 <!-- header stops here -->
 <div class="container" style="background-color: white; width: 600px; padding: 20px;">
@@ -391,9 +345,10 @@ Mobile Number 2
 <!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
 
 
- <div class="form-group">
+ <!--div class="form-group">
         <label>Upload Logo</label>
-        <div class="input-group">
+
+        <!--div class="input-group">
             <span class="input-group-btn">
                 <span class="btn btn-default btn-file">
                     Browse… <input type="file" name="vendor_logo" id="imgInp">
@@ -401,8 +356,8 @@ Mobile Number 2
             </span>
             <input type="text" class="form-control" readonly>
         </div>
-        <img id='img-upload'/>
-    </div>
+        <img id='img-upload'/-->
+    <!--/div-->
 
 <!--input type="file" name="vendor_logo" id="js-upload-files">
 </div-->

@@ -7,6 +7,12 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
 
+a:link {
+    color: green;
+}
+
+
+
 .text {
   color: white;
   font-size: 14px;
@@ -38,7 +44,9 @@
     border: 2px solid #ffffff;
 }
 
-  
+ .nav-link a:visited{
+    color: blue;
+ } 
 
 
   
@@ -68,7 +76,7 @@
     <div class="container shift">
 
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="index.php">
+        <a class="" href="index.php">
             <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
         </a>
 
@@ -117,8 +125,8 @@
                     </a>
                 </li>
                 <li class="nav-item" style="margin-right: 60px;" >
-                    <a href="#" class="nav-link waves-effect menu" style="color:#4f2684;">
-                        <i class="fa fa-login"></i>Sell Products
+                    <a href="vendor/vendorform.php" class="nav-link waves-effect menu" style="color:#4f2684;">
+                        <i class="fa fa-login"></i>Become a Vendor
                     </a>
                 </li>
                 

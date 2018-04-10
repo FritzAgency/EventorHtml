@@ -51,7 +51,7 @@
 <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/">
+      <a class="navbar-brand waves-effect" href="">
         <div style="width: 70px; height: 50px; border-radius: 50%">
 
 
@@ -76,9 +76,9 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <!--a class="nav-link" href="#"-->
               <span class="sr-only">(current)</span>
-            </a>
+            <!--/a-->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank"></a>
@@ -99,7 +99,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link" style="font-size: 10px" >
+            <a href="#" class="nav-link" style="font-size: 10px" >
                 Activities
             </a>
           </li>
@@ -158,10 +158,12 @@
               <!--p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
               </p-->
-              <a  href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
-              </a>
               <a href="../event/ticket.html" class="btn btn-outline-white btn-lg">Register
               </a> 
+
+              <a  href="../vendor/vendorform.php" class="btn btn-outline-white btn-lg">Become a Vendor
+              </a>
+              
 
             </div>
             <!-- Content -->
@@ -195,7 +197,7 @@
               <!--p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
               </p-->
-              <a  href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Become a Vendor
+              <a  href="../vendor/vendorform.php" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
               <a  href="../event/ticket.html" class="btn btn-outline-white btn-lg">Register
               </a> 

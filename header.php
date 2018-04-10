@@ -39,8 +39,9 @@
 }
 
   
-
-
+#xx a:link{
+	color: yellow;
+}
   
 
 
@@ -89,7 +90,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">Events</a>
+                    <a class="nav-link waves-effect menu1" id="xx" href="#" >Events</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link waves-effect menu1" href="../event/vendor.php">Vendors</a>

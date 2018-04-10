@@ -211,7 +211,7 @@ background-color: #4f2684 !important;
   /*background:#f4f4f4;
   background:rgba(244,244,244,.79);
   border: 1px solid #d3d3d3;*/ 
-  background: transparent;
+  background: #4f2684;
   left: 50%;
   padding: 2px 5px;
   position: absolute;
@@ -236,7 +236,7 @@ background-color: #4f2684 !important;
  /* font:12px/12px 'HelveticaNeue', Helvetica, Arial, sans-serif;*/ 
   margin-right: 5px;
   padding: 10px;
-  width: 216px;
+  width: 300px;
  /* box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
   -moz-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
   -webkit-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
@@ -339,27 +339,29 @@ background-color: #4f2684 !important;
 
 
 <form class="searchform cf">
-  <input type="text" placeholder="Search for Events">
-  <button type="submit">Search</button>
+  <input type="text" placeholder="Find an Event here" style="font-size: 10px;">
+  <!--button type="submit">Search</button-->
+
+        <!--span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: white; font-size: 1.333333em; vertical-align: -57%;"></i></span-->
 </form>
 
 
-                    <!--form class="col-sm-12" id="searchForm">
-    <div class="form-group col-sm-6 col-sm-offset-2">
-      <div class="input-group input-group-lg center-block" style="background-color: rgba(79, 38, 132, 0.4);">
+                    <!--form class="searchform cf"-->
+    
+      <!--div class="input-group input-group-lg center-block" style="background-color: rgba(79, 38, 132, 0.4);">
         <div class="row" style="border: 2px solid white; margin: 7px; width: 100%;">
-        <div class="col-sm-11">
-        <input type="text" class="form-control input-size" placeholder="Find an Event here" style="padding-top: 7px; background-color: transparent; color: white; text-align:center; border: 0px;">
+        <div class="col-sm-11"-->
+        <!--input type="text" class="form-control input-size" placeholder="Find an Event here" style="padding-top: 7px; background-color: transparent; color: white; text-align:center; border: 0px;">
         </div>
         <div class="col-sm-1">
         <span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: white; font-size: 1.333333em; vertical-align: -57%;"></i></span>
 
         <div>
         </div>
-      </div>
-    </div>
-  </form-->
-  </div>
+      <!--/div>
+    </div-->
+  <!--/form>
+  </div-->
                 </div>
 
                     <!--Controls-->

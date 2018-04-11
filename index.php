@@ -8,6 +8,7 @@
     <title>Eventor.com</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -16,7 +17,6 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
 
 body {
   background-image:url("img/eventor.jpg");
@@ -211,7 +211,9 @@ background-color: #4f2684 !important;
   /*background:#f4f4f4;
   background:rgba(244,244,244,.79);
   border: 1px solid #d3d3d3;*/ 
-  background: #4f2684;
+  /*background: #4f2684;*/ 
+  font-family: 'Montserrat', sans-serif;
+
   left: 50%;
   padding: 2px 5px;
   position: absolute;
@@ -231,19 +233,13 @@ background-color: #4f2684 !important;
   float: left
 }
 .searchform input {
-  background:#fefefe;
+  /*background:#fefefe;*/ 
   border: none;
  /* font:12px/12px 'HelveticaNeue', Helvetica, Arial, sans-serif;*/ 
   margin-right: 5px;
   padding: 10px;
   width: 300px;
- /* box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
-  -moz-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
-  -webkit-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
-  border-radius: 9px;
-  -moz-border-radius: 9px;
-  -webkit-border-radius: 9px*/
-}
+ }
   .searchform input:focus {
     outline: none;
     box-shadow:0 0 4px #0d76be inset;
@@ -261,16 +257,7 @@ background-color: #4f2684 !important;
   }
 
 .searchform button {
-  /*background: rgb(52,173,236);
-  background: -moz-linear-gradient(top, rgba(52,173,236,1) 0%, rgba(38,145,220,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,173,236,1)), color-stop(100%,rgba(38,145,220,1)));
-  background: -webkit-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
-  background: -o-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
-  background: -ms-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
-  background: linear-gradient(to bottom, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34adec', endColorstr='#2691dc',GradientType=0 ); */
-  background-color: #4f2684; 
-  border: none;
+    border: none;
   color:#fff;
   cursor: pointer;
   /*font: 13px/13px 'HelveticaNeue', Helvetica, Arial, sans-serif;*/ 
@@ -288,6 +275,30 @@ background-color: #4f2684 !important;
     opacity:.9;
   }  
 
+</style>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+-webkit-box-shadow: 0px 0px 3px 5px transparent;
+-moz-box-shadow: 0px 0px 3px 5px transparent;
+box-shadow: 0px 0px 3px 5px transparent; 
+
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-family: 
+ /* background: transparent;*/ 
+}
 </style>
 
 </head>
@@ -327,7 +338,7 @@ background-color: #4f2684 !important;
                         <!--/Second slide-->
                         <!--Third slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/pageslide3.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="img/makeup3.jpg" alt="Third slide">
                         </div>
                         <!--/Third slide-->
                     </div>
@@ -337,13 +348,16 @@ background-color: #4f2684 !important;
                     <div>
 
 
+<!--form class="search-container">
+  
 
-<form class="searchform cf">
-  <input type="text" placeholder="Find an Event here" style="font-size: 10px;">
-  <!--button type="submit">Search</button-->
+<input type="text" id="search-bar" placeholder="What can I help you with today?">
+    <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
 
-        <!--span class="input-group-addon"><i class="fa fa-search fa-lg" style="color: white; font-size: 1.333333em; vertical-align: -57%;"></i></span-->
-</form>
+
+
+  </form-->
+
 
 
                     <!--form class="searchform cf"-->
@@ -390,10 +404,20 @@ background-color: #4f2684 !important;
 
 
             </section>
+        
+
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Find Your Event" title="Type in a name" style="border-radius: 50px">
+       
+
+
+
             <!--Section: Carousel-->
 
             <!--Section: Images-->
             <section class="text-center event-section">
+
 
                 <!-- Grid row -->
                 <div class="row">
@@ -573,31 +597,59 @@ background-color: #4f2684 !important;
 
 
             <!--Section: Jumbotron-->
-            <section class="card wow fadeIn" style="background-image: url('img/midle.jpg');">
+            <!--section class="card wow fadeIn" style="background-image: url('img/midle.jpg');"-->
 
-                <!-- Content -->
-                <div class="card-body text-white text-center py-5 px-5 my-5">
+       
 
-                    <h1 class="mb-4">
-                        <strong>Find Your Perfect Event at Eventor.com</strong>
-                    </h1>
-                    <p>
-                        <strong>Create Event and Share with your Friends on your social media platform</strong>
-                    </p>
-                    <p class="mb-4">
-                        <strong>The most comprehensive Event creator and also a platform that allows you to sell your products and services.                            versions available. Create your own, stunning website.</strong>
-                    </p>
-                    <a href="event/create.php" class="btn btn-outline-white btn-lg">Start Your event creation
-                    </a>
+     
 
-                </div>
-                <!-- Content -->
-            </section>
-            <!--Section: Jumbotron-->
-
-        </div>
     </main>
     <!--Main layout-->
+
+
+
+<section class="mb-4" id="How" style="width: 90%; margin: auto">
+
+                <!--Carousel Wrapper-->
+                <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">
+                                        <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                          <a href="">  <img class="d-block w-100" src="img/carocom1.jpg" alt="First slide"></a>
+                        </div>
+                        <!--/First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/carocom2.jpg" alt="Second slide">
+                        </div>
+                        <!--/Second slide-->
+                        <!--Third slide-->
+                        <!--div class="carousel-item">
+                            <img class="d-block w-100" src="img/caro2.jpg" alt="Third slide">
+                        </div-->
+                        <!--/Third slide-->
+                    </div>
+                    <!--/.Slides-->
+                    
+                    <!--/.Controls-->
+                    <div>
+                </div>
+
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+               
+
+            </section>
+        
+
+
 
     <!--Footer-->
     <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn" style="background-color: #4f2684;">

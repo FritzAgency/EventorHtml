@@ -92,7 +92,7 @@ a:link {
             <!-- Left -->
             <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#">How It Works
+                    <a class="nav-link waves-effect menu1" href="#How">How It Works
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>

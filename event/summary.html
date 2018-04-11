@@ -65,7 +65,6 @@ body{
 font-family: 'Montserrat', sans-serif;
 }	
 
-
 </style> 
 
 
@@ -163,7 +162,7 @@ background-color: #4f2684 !important;
     <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="#">
+        <a class="navbar-brand waves-effect" href="../index.php">
             <div style="width: 150px;"><img src="img/logo2.png" alt="" class="img-fluid"></div>
         </a>
 
@@ -189,12 +188,15 @@ background-color: #4f2684 !important;
                 <li class="nav-item">
                     <a class="nav-link waves-effect menu1" href="#">Special Deals</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu1" href="../dash/index.html" >Dashboard</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link waves-effect menu1" href="#">About us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="#" >Contact</a>
-                </li>
+                
             </ul>
 
 
@@ -204,7 +206,7 @@ background-color: #4f2684 !important;
             <ul class="navbar-nav nav-flex-icons">
             
                 <li class="nav-item">
-                    <a href="event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
+                    <a href="../event/create.php" class="nav-link waves-effect menu" style="color:#4f2684;">
                         <i class="fa fa-login"></i>Create Event
                     </a>
                 </li>
@@ -215,7 +217,7 @@ background-color: #4f2684 !important;
                 </li>
                 
                 <li class="nav-item menu">
-<a href="auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
+<a href="../auth/login.php" class="nav-link waves-effect" style="color: #4f2684;">
 <i class="fa fa-login"></i>Login</a>      
 
 
@@ -224,7 +226,7 @@ background-color: #4f2684 !important;
 
                 <li class="nav-item menu">
                    
-<a href="auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
+<a href="../auth/signup.php" class="nav-link border border-light rounded waves-effect" style="color: #4f2684;"><i class="fa fa-login"></i>Signup</a>
 
 
 </li>
@@ -300,7 +302,7 @@ font-family: 'Montserrat', sans-serif; font-weight: bold">FITFAM FEST 2018</h1>
 							<h6>Price:</h6>
 							<ul>
 
-                                 &#8358;5000. 
+                               From  &#8358;5000. 
 								<!--li><a href="#"></a></li>
 								<li><a href="#"></a></li>
 								<li><a href="#"></a></li>
@@ -322,10 +324,10 @@ font-family: 'Montserrat', sans-serif; font-weight: bold">FITFAM FEST 2018</h1>
 								  <!--li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">About</a></li-->
 
 
-        <li role="presentation" class="active active-tab"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">ABOUT</a></li>
+        <!--li role="presentation" class="active-tab"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">ABOUT</a></li-->
 
 
-        <!--li role="presentation" class="active" style="font-weight: normal"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">ABOUT</a></li-->
+        <li role="presentation" class="active-tab" style="font-weight: normal"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" >ABOUT</a></li>
 
 								  <li role="presentation" ><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">ORGANIZERS</a></li>
 								  <li role="presentation" style=""><a href="#return" role="tab" id="return-tab" data-toggle="tab" aria-controls="return">SPONSORS</a></li>
@@ -359,7 +361,13 @@ is back this year in conjunction with AXA Mansard as AXA Mansard FitFamFest <a h
 
 								  </div>
 								  <div role="tabpanel" class="tabs-para tab-pane fade" id="return" aria-labelledby="return-tab">
-									<p>SPONSORS</p>
+									<!--p>SPONSORS</p-->
+
+                                    <div class="row">
+                  <div class="col-md-4"><img src="../img/sponsor1.jpg"></div>
+                  <div class="col-md-4"><img src="../img/sponsor2.jpg"></div>
+                  <div class="col-md-4"><img src="../img/sponsor3.jpg"></div>
+              </div>
 									
 
 								  </div>

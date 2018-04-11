@@ -99,7 +99,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" style="font-size: 10px" >
+            <a href="#activities" class="nav-link" style="font-size: 10px" >
                 Activities
             </a>
           </li>
@@ -240,7 +240,7 @@
               <!--p class="mb-4 d-none d-md-block">
                 <strong>The trip to have with friends and family to enjoy at moments that will strick a mark in your history</strong>
               </p-->
-              <a  href="" class="btn btn-outline-white btn-lg">Become a Vendor
+              <a   href="../vendor/vendorform.php" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
               <a  href="../event/ticket.html" class="btn btn-outline-white btn-lg">Register
               </a> 
@@ -648,7 +648,7 @@ Get ready to have lots of fun and show the #ColoursofYou.
       <hr class="my-5">
 
       <!--Section: ACTIVITIES-->
-      <section>
+      <section id="activities">
        
         <p class="text-center mb-5" style="font-weight:bold; ">ACTIVITIES</p>
 
@@ -972,7 +972,7 @@ learning about portion control and calorie measurement.
 
     <!--Call to action-->
     <div class="pt-4">
-      <a class="btn btn-outline-white"  role="button">Become a Vendor
+      <a class="btn btn-outline-white" href="../vendor/vendorform.php" role="button">Become a Vendor
       </a>
       <a class="btn btn-outline-white" href="../event/ticket.html"  role="button">Register
       </a>

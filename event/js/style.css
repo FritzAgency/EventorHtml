@@ -1119,7 +1119,7 @@ width:100%;
     background-color: #fff;
     border: none;
     border-bottom: 3px solid #0080ff;
-    font-weight: 900;
+    /*font-weight: 900;*/ 
 }
 .nav > li > a:hover, .nav > li > a:focus {
  border: none;

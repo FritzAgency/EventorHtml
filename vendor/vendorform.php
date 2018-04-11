@@ -141,7 +141,7 @@ if(isset($message)){
 
 
 <!-- registration form starts here -->
-<form method="POST" enctype="multipart/form-data">
+<form method="POST" enctype="multipart/form-data" action="../dash/vendor.html">
 <div class="form-group">
 <!--button class="btn btn-secondary" type="button" style="margin-top: 17px; margin-bottom: 5px; background-color: #4f2684; color: #fff;" id="venia"-->
 Business/Organization Name
@@ -318,7 +318,7 @@ Mobile Number 2
 <i class="material-icons" style="color: #4f2684">&#xe568;</i>
 </div>
 <div class="col-sm-3" style="padding-left: 0px; margin-top: 7px;">
-<p style="font-weight: bold;">Map</p>
+<!--p style="font-weight: bold;">Map</p-->
 </div>
 </div>
 </div>

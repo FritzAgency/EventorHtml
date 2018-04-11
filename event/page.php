@@ -478,7 +478,7 @@
 
     <!--Card image-->
     <div class="view overlay">
-        <img src="../img/vendor2.jpg" class="img-fluid" alt="">
+      <center>  <img src="../img/vendor2.jpg" class="img-fluid" alt=""> </center>
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>
@@ -514,7 +514,7 @@
 
     <!--Card image-->
     <div class="view overlay">
-        <img src="../img/optima.jpg" class="img-fluid" alt="">
+<center>        <img src="../img/optima.jpg" class="img-fluid" alt=""></center>
         <a>
             <div class="mask rgba-white-slight"></div>
         </a>

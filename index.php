@@ -615,18 +615,18 @@ box-shadow: 0px 0px 3px 5px transparent;
                                         <div class="carousel-inner" role="listbox">
                         <!--First slide-->
                         <div class="carousel-item active">
-                          <a href="">  <img class="d-block w-100" src="img/carocom1.jpg" alt="First slide"></a>
+                          <a href="">  <img class="d-block w-100" src="img/caroven1.jpg" alt="First slide"></a>
                         </div>
                         <!--/First slide-->
                         <!--Second slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/carocom2.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="img/caroven2.jpg" alt="Second slide">
                         </div>
                         <!--/Second slide-->
                         <!--Third slide-->
-                        <!--div class="carousel-item">
-                            <img class="d-block w-100" src="img/caro2.jpg" alt="Third slide">
-                        </div-->
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/caroven3.jpg" alt="Third slide">
+                        </div>
                         <!--/Third slide-->
                     </div>
                     <!--/.Slides-->

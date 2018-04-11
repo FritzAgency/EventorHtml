@@ -58,7 +58,7 @@
           <!--img src="img/logo2.png" alt="" class="img-fluid"-->
           <!-- The site logo goes in here --> 
           
-<img src="../public/images/fitfam-logo.png" alt="Anything" class="img-fluid" style="border-radius: 50px ">
+<img src="../img/fitfam-logo.png" alt="Anything" class="img-fluid">
 
         </div>
     </a>

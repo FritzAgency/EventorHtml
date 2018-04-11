@@ -90,7 +90,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" id="xx" href="#" >Events</a>
+                    <a class="nav-link waves-effect menu1" id="xx" href="../event.php" >Events</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link waves-effect menu1" href="../event/vendor.php">Vendors</a>

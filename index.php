@@ -338,7 +338,9 @@ box-shadow: 0px 0px 3px 5px transparent;
                         <!--/Second slide-->
                         <!--Third slide-->
                         <div class="carousel-item">
+                            <a href="event/vpage.php">
                             <img class="d-block w-100" src="img/makeup3.jpg" alt="Third slide">
+                        </a>
                         </div>
                         <!--/Third slide-->
                     </div>
@@ -608,7 +610,7 @@ box-shadow: 0px 0px 3px 5px transparent;
 
 
 
-<section class="mb-4" id="How" style="width: 90%; margin: auto">
+<section class="mb-4" id="How" style="width: 80%; margin: auto;">
 
                 <!--Carousel Wrapper-->
                 <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">

@@ -511,6 +511,190 @@ box-shadow: 0px 0px 3px 5px transparent;
 
        
 
+
+<!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/kingmaker.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask back" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                    <div class="doe">
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">KING MAKER CONCERT</p>
+                                </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>APRIL 29, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Music, Concert, Entertainment</p>
+
+                                        <p>
+                                            Witness the first live performance of Harrysong and some of the best songwriters and performers in Nigeria.
+                                    </p>
+                                    <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/Concert2.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                        <div class="doe">
+                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Mente de Moda</p>
+                                        </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>APRIL 8, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Shopping, Exhibition</p>
+
+                                        <p>The biggest shopping experience in Nigeria is back again.</p>
+
+                                            <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/Concert3.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                    <div class="doe">
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Safety Summit Lagos 2018</p>
+                                    </div>
+                                    <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>APRIL 4, 2018  </p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Business,  Education, Lecture</p>
+                                        <p>
+                                        Come share seats with prestigious individuals from various industries for an insightful lecture on security around us.  
+
+                                        </p>
+                                        <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-12 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/Concert4.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask back" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                    <div class="doe">
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Gidi Fest 5</p>
+                                </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>March 30, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>100</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Concert, Music, Entertainment </p>
+                                        <p>
+                                            A gathering of the greatest artistes in Nigeria and the diaspora. The 5th edition promises to be bigger and better. 
+                                        </p>
+                                        <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/Concert5.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                        <div class="doe">
+                                        <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Flawless Makeup/Gele Training </p>
+                                        </div>
+                                        <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>May 11, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>400</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Beauty, Training, Business</p>
+                                        <p>Empower yourself as a makeup artist and a business person in the hands of the biggest beauty brand in the country for one month.</p>
+                                        <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-4 col-md-6 mb-3">
+
+                        <div class="view overlay z-depth-1-half zoom animated">
+                            <img src="img/Concert6.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask rgba-blue-light" style="background-color: rgba(79, 38, 132, 0.6);">
+                                    <div class="text">
+                                    <div class="doe">
+                                    <p style="font-weight: bold; color: #ffffff; padding:2px; margin: 2px; margin-left: auto; margin-right: auto; text-align: center;">Anna & Mark's Wedding Ceremony</p>
+                                    </div>
+                                    <p><i class="fa fa-calendar" style="padding:5px; margin: 2px;"></i>AUGUST 21, 2018</p>
+                                        <p><i class="fa fa-tasks" style="padding:5px; margin: 2px;"></i>200</p>
+                                        <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Wedding</p>
+                                        <p>Come  celebrate with us on the happiest day of our lives.<p>
+                                        <!-- Secondary button -->
+                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <div class="row">
+            </section>
+
+
+
+            <!--Section: Jumbotron-->
+            <!--section class="card wow fadeIn" style="background-image: url('img/midle.jpg');"-->
+
+       
+
+
      
 
     </main>

@@ -79,8 +79,8 @@ body {
 } */
 
 /*#searchForm {
-	position:absolute;
-  	top:86%;
+  position:absolute;
+    top:86%;
 }*
 
 /*.form-group{
@@ -93,7 +93,7 @@ body {
 /* @media (max-width: 768px) {
 
   .carousel-inner>.item>img, .carousel-inner>.item>a>img {
-  	max-width:inherit;
+    max-width:inherit;
   }
 
   .carousel-caption p {
@@ -310,7 +310,18 @@ box-shadow: 0px 0px 3px 5px transparent;
 
     <!--Main layout-->
     <main class="mt-5 pt-5">
+        <div class="container">
+
+            <!--Section: Carousel-->
+            <section class="mb-4">
+
+
+
+            </section>
         
+       
+
+
 
             <!--Section: Carousel-->
 
@@ -504,6 +515,8 @@ box-shadow: 0px 0px 3px 5px transparent;
 
     </main>
     <!--Main layout-->
+
+
 
 
 

@@ -410,7 +410,7 @@ box-shadow: 0px 0px 3px 5px transparent;
 
 
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Find Your Event" title="Type in a name" style="border-radius: 50px">
+<!--input type="text" id="myInput" onkeyup="myFunction()" placeholder="Find Your Event" title="Type in a name" style="border-radius: 50px"-->
        
 
 

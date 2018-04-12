@@ -328,7 +328,7 @@ box-shadow: 0px 0px 3px 5px transparent;
                     <div class="carousel-inner" role="listbox">
                         <!--First slide-->
                         <div class="carousel-item active">
-                          <a href="event/summary.html">  <img class="d-block w-100" src="img/sliid5.jpg" alt="First slide"></a>
+                          <a href="event/summary.html">  <img class="d-block w-100" src="img/sliidnew.jpg" alt="First slide"></a>
                         </div>
                         <!--/First slide-->
                         <!--Second slide-->

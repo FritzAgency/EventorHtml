@@ -13,7 +13,7 @@ $to = new SendGrid\Email(null, "adetonaabiodun12@gmail.com");
 $content = new SendGrid\Content("text/plain", "Hello, This is from Fritzng!");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
-$apiKey = getenv('xxxx_api_key_xxxx');
+$apiKey = 'xxxx_api_key_xxxx';
 $sg = new \SendGrid($apiKey);
 
 $response = $sg->client->mail()->send()->post($mail);

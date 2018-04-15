@@ -10,7 +10,7 @@ require 'vendor/autoload.php';
 $from = new SendGrid\Email('Abiodun', "abiodun@fritzng.com");
 $subject = "My test email for fritz review system";
 $to = new SendGrid\Email(null, "adetonaabiodun12@gmail.com");
-$content = new SendGrid\Content("text/plain", "Hello, This is from Fritzng!");
+$content = new SendGrid\Content("text/plain", "Hello, This is from Fritzng review system!");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 //$apiKey = 'xxxx_api_key_xxxx';

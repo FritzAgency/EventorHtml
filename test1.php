@@ -14,7 +14,7 @@ $content = new SendGrid\Content("text/plain", "Hello, This is from Fritzng!");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 //$apiKey = 'xxxx_api_key_xxxx';
-$sg = new \SendGrid('my_mail_key_xxx');
+$sg = new \SendGrid('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');
 
 $response = $sg->client->mail()->send()->post($mail);
 echo $response->statusCode();

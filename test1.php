@@ -7,10 +7,16 @@ require 'vendor/autoload.php';
 // If you are not using Composer (recommended)
 // require("path/to/sendgrid-php/sendgrid-php.php");
 
-$from = new SendGrid\Email('Abiodun', "abiodun@fritzng.com");
-$subject = "My test email for fritz review system";
+
+$message = "<p>Hi,</p> <p>kindly help test the event rating system for fritz.</p> <p> Click on this <a href='/rate.php'> link <a> to test the review system </p> <p> Thank you! </p> 
+
+<p>Abiodun Adetona, Web developer @fritz</p> 
+"; 
+
+$from = new SendGrid\Email('Abiodun Adetona', "abiodun@fritzng.com");
+$subject = "Fritz event review system.";
 $to = new SendGrid\Email(null, "adetonaabiodun12@gmail.com");
-$content = new SendGrid\Content("text/plain", "Hello, This is from Fritzng review system!");
+$content = new SendGrid\Content("text/html", $message);
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 //$apiKey = 'xxxx_api_key_xxxx';

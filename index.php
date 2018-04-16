@@ -425,7 +425,7 @@ box-shadow: 0px 0px 3px 5px transparent;
                 <div class="row">
 
                     <!-- Grid column -->
-                    <div class="col-lg-4 col-md-12 mb-3">
+                    <div class="col-lg-4 col-md-4 mb-3">
 
                         <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/kingmaker.jpg" class="img-fluid" alt="">
@@ -453,7 +453,7 @@ box-shadow: 0px 0px 3px 5px transparent;
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-4 mb-3">
 
                         <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/Concert2.jpg" class="img-fluid" alt="">
@@ -480,7 +480,7 @@ box-shadow: 0px 0px 3px 5px transparent;
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-4 mb-3">
 
                         <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/Concert3.jpg" class="img-fluid" alt="">
@@ -512,7 +512,7 @@ box-shadow: 0px 0px 3px 5px transparent;
                 <div class="row">
 
                     <!-- Grid column -->
-                    <div class="col-lg-4 col-md-12 mb-3">
+                    <div class="col-lg-4 col-md-4 mb-3">
 
                         <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/Concert4.jpg" class="img-fluid" alt="">
@@ -539,7 +539,7 @@ box-shadow: 0px 0px 3px 5px transparent;
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-4 mb-3">
 
                         <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/Concert5.jpg" class="img-fluid" alt="">
@@ -564,7 +564,7 @@ box-shadow: 0px 0px 3px 5px transparent;
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-lg-4 col-md-4 mb-3">
 
                         <div class="view overlay z-depth-1-half zoom animated">
                             <img src="img/Concert6.jpg" class="img-fluid" alt="">
@@ -593,7 +593,7 @@ box-shadow: 0px 0px 3px 5px transparent;
                 <!-- Grid row -->
 
                 <!-- Grid row -->
-                <div class="row">
+                <!--div class="row"-->
             </section>
 
 

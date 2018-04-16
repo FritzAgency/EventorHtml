@@ -84,7 +84,7 @@ else{
       
       <div class="col-md-6">
 
-      <ul class="rate-area">
+      <ul class="rate-area" style="margin-left: -40px">
 
 
         

@@ -8,7 +8,7 @@ require 'vendor/autoload.php';
 // require("path/to/sendgrid-php/sendgrid-php.php");
 
 
-$message = "<p>Hi,</p> <p>kindly help test the event rating system for fritz.</p> <p> Click on this <a href='dev-eventor.herokuapp.com/rate.php'> link </a> to test the rating system </p> <p> Thank you! </p> 
+$message = "<p>Hi,</p> <p>kindly help test the event rating system for fritz.</p> <p> Click on this <a href='https://dev-eventor.herokuapp.com/rate.php'> link </a> to test the rating system </p> <p> Thank you! </p> 
 
 <p>Abiodun Adetona, Web developer @fritz</p> 
 "; 
@@ -18,7 +18,7 @@ $message = "<p>Hi,</p> <p>kindly help test the event rating system for fritz.</p
 
 $from = new SendGrid\Email('Abiodun Adetona', "abiodun@fritzng.com");
 $subject = "Fritz event review system.";
-$to = new SendGrid\Email(null, "lawaltolu22@gmail.com");
+$to = new SendGrid\Email(null, "eniola@fritzng.com");
 $content = new SendGrid\Content("text/html", $message);
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 

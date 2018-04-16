@@ -13,13 +13,13 @@ $message = "<p>Hi,</p> <p>kindly help test the event rating system for fritz.</p
 <p>Abiodun Adetona, Web developer @fritz</p> 
 "; 
 
-$email =  array("abiodun@fritzng.com, adetonaabiodun12@gmail.com, adetona99@yahoo.com");
+//$email =  array("abiodun@fritzng.com, adetonaabiodun12@gmail.com, adetona99@yahoo.com");
 
 
 $from = new SendGrid\Email('Abiodun Adetona', "abiodun@fritzng.com");
 $subject = "Fritz event review system.";
 $to = new SendGrid\Email(null, $email);
-$content = new SendGrid\Content("text/html", $message);
+$content = new SendGrid\Content("text/html", "abiodun@fritzng.com, adetonaabiodun12@gmail.com, adetona99@yahoo.com");
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
 //$apiKey = 'xxxx_api_key_xxxx';

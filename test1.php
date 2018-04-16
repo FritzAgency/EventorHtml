@@ -8,7 +8,7 @@ require 'vendor/autoload.php';
 // require("path/to/sendgrid-php/sendgrid-php.php");
 
 
-$message = "<p>Hi,</p> <p>kindly help test the event rating system for fritz.</p> <p> Click on this <a href='/rate.php'> link <a> to test the review system </p> <p> Thank you! </p> 
+$message = "<p>Hi,</p> <p>kindly help test the event rating system for fritz.</p> <p> Click on this <a href='dev-eventor.herokuapp.com/rate.php'> link <a> to test the rating system </p> <p> Thank you! </p> 
 
 <p>Abiodun Adetona, Web developer @fritz</p> 
 "; 

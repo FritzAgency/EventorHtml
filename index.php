@@ -554,7 +554,7 @@ box-shadow: 0px 0px 3px 5px transparent;
                                         <p><i class="fa fa-film" style="padding:5px; margin: 2px;"></i>Beauty, Training, Business</p>
                                         <p>Empower yourself as a makeup artist and a business person in the hands of the biggest beauty brand in the country for one month.</p>
                                         <!-- Secondary button -->
-                                        <a href="event/create.php"><button type="button" class="btn btn-secondary">View</button></a>
+                                        <a href="event/vpage.php"><button type="button" class="btn btn-secondary">View</button></a>
                                     </div>
                                 </div>
                             </a>
@@ -610,7 +610,7 @@ box-shadow: 0px 0px 3px 5px transparent;
 
 
 
-<section class="mb-4" id="How" style="width: 80%; margin: auto;">
+<section class="mb-4" id="How" style="width: 88%; margin: auto;">
 
                 <!--Carousel Wrapper-->
                 <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">

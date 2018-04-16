@@ -16,9 +16,9 @@ $message = "<p>Hi,</p> <p>kindly help test the event rating system for fritz.</p
 //$email =  array("abiodun@fritzng.com, adetonaabiodun12@gmail.com, adetona99@yahoo.com");
 
 
-$from = new SendGrid\Email('Abiodun Adetona', "eniola.lion@gmail.com");
+$from = new SendGrid\Email('Abiodun Adetona', "adetonaabiodun12@gmail.com");
 $subject = "Fritz event review system.";
-$to = new SendGrid\Email(null, "abiodun@fritzng.com" );
+$to = new SendGrid\Email(null, "adetonaabiodun12@gmail.com");
 $content = new SendGrid\Content("text/html", $message);
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 

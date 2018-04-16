@@ -49,7 +49,24 @@ a:link {
  } 
 
 
-  
+  input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://www.w3schools.com/css/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
 
 
 </style>
@@ -97,7 +114,7 @@ a:link {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link waves-effect menu1" href="event.php">Events</a>
+                    <a class="nav-link waves-effect menu1" href="event/summary.html">Events</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link waves-effect menu1" href="event/vendor.php">Vendors</a>
@@ -129,6 +146,14 @@ a:link {
                         <i class="fa fa-login"></i>Become a Vendor
                     </a>
                 </li>
+
+
+                <!--li class="nav-item">
+                   <form>
+  <input type="text" name="search" placeholder="Search..">
+</form> 
+
+                </li-->
                 
                 <li class="nav-item menu">
 <?php if ((!isset($_COOKIE['first_name']))){

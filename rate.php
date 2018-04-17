@@ -101,7 +101,7 @@ else{
   
 
 
-<div class="row">
+<div class="row" style="margin-top: 20px">
   
   <div class="col-md-6">
      <textarea class="form-control"  rows="3" name="comment" placeholder="Additional comment"></textarea>

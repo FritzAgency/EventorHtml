@@ -317,7 +317,7 @@ idth:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;'>★
 
 $from = new SendGrid\Email('Abiodun Adetona', "abiodun@fritzng.com");
 $subject = "Fritz event review system.";
-$to = new SendGrid\Email(null, "adetonaabiodun12@gmail.com");
+$to = new SendGrid\Email(null, "eniola.lion@gmail.com");
 $content = new SendGrid\Content("text/html", $message);
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 

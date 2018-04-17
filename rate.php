@@ -29,7 +29,7 @@ $name = $_POST['name'];
 
 $comment = $_POST['comment']; 
 
-$rating =  $_POST['rating'];  
+$rating =  $_GET['rating'];  
 
 
   $query = "INSERT into `review` (name, comment, rating) VALUES ('$name', '$comment', '$rating' )"; 
@@ -80,7 +80,7 @@ else{
 
 
 
-<div class="row">
+<!--div class="row">
       
       <div class="col-md-6">
 
@@ -97,7 +97,7 @@ else{
   </ul>
 </div>
 
-  </div>  
+  </div-->  
   
 
 

@@ -691,7 +691,7 @@ box-shadow: 0px 0px 3px 5px transparent;
         <!--Copyright-->
         <div class="footer-copyright py-3" style="background-color:#4f2684; padding-top: 0px;">
             © 2018 Copyright:
-            <a href="#"> Eventor.com </a>
+            <a href="./index.php"> Eventor.com </a>
         </div>
         <!--/.Copyright-->
     </footer>

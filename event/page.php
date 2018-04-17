@@ -1020,7 +1020,7 @@ learning about portion control and calorie measurement.
     <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2018 Copyright:
-      <a href="index1.php"> Eventor.com </a>
+      <a href="../index.php"> Eventor.com </a>
     </div>
     <!--/.Copyright-->
 

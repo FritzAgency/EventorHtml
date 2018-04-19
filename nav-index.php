@@ -69,6 +69,8 @@ input[type=text]:focus {
 }
 
 
+
+
 </style>
 
 
@@ -173,6 +175,14 @@ echo'<a href="auth/signup.php" class="nav-link  rounded waves-effect" style="col
 '; 
 }
 ?>
+
+</li>
+
+<li class="nav-item menu">
+
+  <button type="button" class="btn btn-info"  data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-search"></span> 
+    </button>
 
 </li>
 <!-- drop down for dashboard and logout -->

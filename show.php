@@ -20,7 +20,7 @@
   <table class="table table-bordered">
     <thead>
       <tr>
-        <th>Name</th>
+        <th>Email</th>
         <th>Comment</th>
         <th>Rating</th>
       </tr>

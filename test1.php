@@ -228,50 +228,50 @@ float : none !important;
 <tbody><tr>
 <td style='padding: 0;vertical-align: top;'' width='55 class='star-wrapper' lang='x-star-wrapper'>
 <div style='display: block; text-align: center; float: left;width: 55px;overflow: hidden;line-height: 60px;'>
-<a href='https://dev-eventor.herokuapp.com/rate.php?rating=5' class='star target='_blank' lang='x-star-divbox' style='color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;'' tabindex='1'>
+<a href='https://dev-eventor.herokuapp.com/rate.php?rating=5&&email=eniola.lion@gmail.com' class='star target='_blank' lang='x-star-divbox' style='color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;'' tabindex='1'>
 <div lang='x-empty-star' style='margin: 0;display: inline-block;'>☆</div>
 <div lang='x-full-star' style='margin: 0;display: inline-block; width:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;'>★</div>
 </a>
-<a href='https://dev-eventor.herokuapp.com/rate.php?rating=5' class='star-number' target='_blank' lang='x-star-number' style='font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;'>5</a>
+<a href='https://dev-eventor.herokuapp.com/rate.php?rating=5&&email=eniola.lion@gmail.com' class='star-number' target='_blank' lang='x-star-number' style='font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;'>5</a>
 </div>
 </td>
 <td style='padding: 0;vertical-align: top' width='55' class='star-wrapper' lang='x-star-wrapper'>
 <div style='display: block; text-align: center; float: left;width: 55px;overflow: hidden;line-height: 60px;'>
-<a href='https://dev-eventor.herokuapp.com/rate.php?rating=4' class='star' target='_blank' lang='x-star-divbox' style='color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;' tabindex='2'>
+<a href='https://dev-eventor.herokuapp.com/rate.php?rating=4&&email=eniola.lion@gmail.com' class='star' target='_blank' lang='x-star-divbox' style='color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;' tabindex='2'>
 <div lang='x-empty-star' style='margin: 0;display: inline-block;'>☆</div>
 <div lang='x-full-star' style='margin: 0;display: inline-block; width:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;'>★</div>
 </a>
-<a href='https://dev-eventor.herokuapp.com/rate.php?rating=4' class='star-number' target='_blank' lang='x-star-number' style='font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;'>4</a>
+<a href='https://dev-eventor.herokuapp.com/rate.php?rating=4&&email=eniola.lion@gmail.com' class='star-number' target='_blank' lang='x-star-number' style='font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;'>4</a>
 </div>
 </td>
 <td style='padding: 0;vertical-align: top' width='55' class='star-wrapper' lang='x-star-wrapper'>
 <div style='display: block; text-align: center; float: left;width: 55px;overflow: hidden;line-height: 60px;'>
-<a href='https://dev-eventor.herokuapp.com/rate.php?rating=3' class='star target='_blank' lang='x-star-divbox' style='color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;'' tabindex='3'>
+<a href='https://dev-eventor.herokuapp.com/rate.php?rating=3&&email=eniola.lion@gmail.com' class='star target='_blank' lang='x-star-divbox' style='color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;'' tabindex='3'>
 <div lang='x-empty-star' style='margin: 0;display: inline-block;'>☆</div>
 <div lang='x-full-star' style='margin: 0;display: inline-block; width:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;'>★</div>
 </a>
-<a href='https://dev-eventor.herokuapp.com/rate.php?rating=3' class
+<a href='https://dev-eventor.herokuapp.com/rate.php?rating=3&&email=eniola.lion@gmail.com' class
 
 ='star-number' target='_blank' lang='x-star-number' style='font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;'>3</a>
 </div>
 </td>
 <td style='padding: 0;vertical-align: top' width='55' class='star-wrapper' lang='x-star-wrapper'>
 <div style='display: block; text-align: center; float: left;width: 55px;overflow: hidden;line-height: 60px;'>
-<a href='https://dev-eventor.herokuapp.com/rate.php?rating=2' class='star' target='_blank' lang='x-star-divbox' style='color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;' tabindex='4'>
+<a href='https://dev-eventor.herokuapp.com/rate.php?rating=2&&email=eniola.lion@gmail.com' class='star' target='_blank' lang='x-star-divbox' style='color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;' tabindex='4'>
 <div lang='x-empty-star' style='margin: 0;display: inline-block;'>☆</div>
 <div lang='x-full-star' style='margin: 0;display: inline-block; w
 idth:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;'>★</div>
 </a>
-<a href='https://dev-eventor.herokuapp.com/rate.php?rating=2' class='star-number' target='_blank' lang='x-star-number' style='font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;'>2</a>
+<a href='https://dev-eventor.herokuapp.com/rate.php?rating=2&&email=eniola.lion@gmail.com' class='star-number' target='_blank' lang='x-star-number' style='font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;'>2</a>
 </div>
 </td>
 <td style='padding: 0;vertical-align: top' width='55' class='star-wrapper' lang='x-star-wrapper'>
 <div style='display: block; text-align: center; float: left;width: 55px;overflow: hidden;line-height: 60px;'>
-<a href='https://dev-eventor.herokuapp.com/rate.php?rating=1' class='star' target='_blank' lang='x-star-divbox' style='color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;' tabindex='5'>
+<a href='https://dev-eventor.herokuapp.com/rate.php?rating=1&&email=eniola.lion@gmail.com' class='star' target='_blank' lang='x-star-divbox' style='color: #FFCC00; text-decoration: none; display: inline-block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;' tabindex='5'>
 <div lang='x-empty-star' style='margin: 0;display: inline-block;'>☆</div>
 <div lang='x-full-star' style='margin: 0;display: inline-block; width:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;'>★</div>
 </a>
-<a href='https://dev-eventor.herokuapp.com/rate.php?rating=1' class='star-number' target='_blank' lang='x-star-number' style='font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;'>1</a>
+<a href='https://dev-eventor.herokuapp.com/rate.php?rating=1&&email=eniola.lion@gmail.com' class='star-number' target='_blank' lang='x-star-number' style='font-family: sans-serif;color: #AEAEAE; font-size: 14px; line-height: 14px; text-decoration: none; display: block;height: 50px;width: 55px;overflow: hidden;line-height: 60px;border-bottom: 3px solid #FFFFFF; text-align: center;'>1</a>
 </div>
 </td>
 </tr>
@@ -312,10 +312,11 @@ idth:0; overflow:hidden;float:left; display:none; height: 0; max-height: 0;'>★
 
 
 
+
 //$email =  array("abiodun@fritzng.com, adetonaabiodun12@gmail.com, adetona99@yahoo.com");
 
 
-$from = new SendGrid\Email('Abiodun Adetona', "abiodun@fritzng.com");
+$from = new SendGrid\Email('Abiodun Adetona', "Abiodun@fritzng.com");
 $subject = "Fritz event review system.";
 $to = new SendGrid\Email(null, "eniola.lion@gmail.com");
 $content = new SendGrid\Content("text/html", $message);

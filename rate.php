@@ -25,16 +25,16 @@ require_once('Database/conn.php');
 
 if (isset($_POST['submit'])){
   
-$name = $_POST['name']; 
+$email = $_GET['email']; 
 
 $comment = $_POST['comment']; 
 
 $rating =  $_GET['rating'];  
 
 
-  $query = "INSERT into `review` (name, comment, rating) VALUES ('$name', '$comment', '$rating' )"; 
+  $query = "INSERT into `review` (name, comment, rating) VALUES ('$email', '$comment', '$rating' )"; 
 
- $result = mysqli_query($con,$query);
+ $result = mysqli_query($con, $query);
 
 if ($result){
   
@@ -71,9 +71,9 @@ else{
 <form method="POST">
 
 
-  <div class="col-md-6">
+  <!--div class="col-md-6">
     <input type="name"  class="form-control"  placeholder="name" name="name"> 
-  </div>
+  </div-->
 </div>
 
 

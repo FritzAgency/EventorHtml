@@ -301,12 +301,93 @@ box-shadow: 0px 0px 3px 5px transparent;
 }
 </style>
 
+
+<style type="text/css">
+  
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-backdrop {
+background-color:#fff;
+  opacity:1!important;
+    border: 10px solid rgba(136, 136, 136, .4);
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body form {
+  margin: 0 auto;
+  float: none;
+  width: 300px;
+}
+
+.modal-content .close {
+  opacity: 1;
+  font-size: 30px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+}
+
+
+</style>
+
 </head>
 
 <body>
 
 
 <?php require('nav-index.php'); ?> 
+
+
+
+ <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                  </div>
+                  <div class="modal-body">
+
+                    
+                    <form class="navbar-form " role="search">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+
+
+                  </div>
+
+
+                </div>
+              </div>
+            
+
+
 
     <!--Main layout-->
     <main class="mt-5 pt-5">
@@ -352,6 +433,10 @@ box-shadow: 0px 0px 3px 5px transparent;
 
 <!--form class="search-container">
   
+              <!-- Button trigger modal -->
+            <!--button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-default navbar-btn">
+         <span class="glyphicon glyphicon-search" aria-hidden="true" ></span>
+</button>
 
 <input type="text" id="search-bar" placeholder="What can I help you with today?">
     <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>

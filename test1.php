@@ -111,7 +111,7 @@ p, ul, ol { font-size: 16px; font-weight: normal; margin-bottom: 20px; }
 
                         <!--h1></h1-->
 
-                        <img src="https://drive.google.com/file/d/1ro9L7-ULsu_Yhs7dIXvToUB5Hh1X0Jbu/view?usp=sharing"> 
+                        <img src="http://dev-eventor.herokuapp.com/Fmedia.png"> 
 
                     </td>
                 </tr>

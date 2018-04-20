@@ -42,6 +42,9 @@ $message = '
     <meta name="viewport" content="width=device-width"/>
 
 
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+
     <style type="text/css">
 
     * { margin: 0; padding: 0; font-size: 100%; font-family: "Avenir Next", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; line-height: 1.65; }
@@ -82,7 +85,7 @@ p, ul, ol { font-size: 16px; font-weight: normal; margin-bottom: 20px; }
 
 .container table { width: 100% !important; border-collapse: collapse; }
 
-.container .masthead { padding: 80px 0; background: #71bc37; color: white; }
+.container .masthead { padding: 80px 0; background: white; color: white; }
 
 .container .masthead h1 { margin: 0 auto !important; max-width: 90%; text-transform: uppercase; }
 
@@ -120,7 +123,11 @@ p, ul, ol { font-size: 16px; font-weight: normal; margin-bottom: 20px; }
 
                         <h2>Hi Stranger,</h2>
 
-                        <p>Buffalo tenderloin chuck short ribs filet mignon cow shankle. Shankle spare ribs rump drumstick, bacon swine sausage strip steak beef pork belly leberkas. Biltong buffalo tongue t-bone bacon pastrami ribeye alcatra shoulder filet mignon leberkas strip steak capicola turkey ham. Meatball jerky ground round, salami turducken buffalo shoulder spare ribs strip steak alcatra prosciutto pastrami tenderloin drumstick. Pig biltong flank shoulder tail chuck. </p>
+                        <p class="text-justify">Buffalo tenderloin chuck short ribs filet mignon cow shankle. Shankle spare ribs rump drumstick, bacon swine sausage strip steak beef pork belly leberkas. </p>
+
+                        <p>Biltong buffalo tongue t-bone bacon pastrami ribeye alcatra shoulder filet mignon leberkas strip steak capicola turkey ham.</p>
+
+                        <p> Meatball jerky ground round, salami turducken buffalo shoulder spare ribs strip steak alcatra prosciutto pastrami tenderloin drumstick. Pig biltong flank shoulder tail chuck. </p>
 
                         <table>
                             <tr>
@@ -166,8 +173,8 @@ p, ul, ol { font-size: 16px; font-weight: normal; margin-bottom: 20px; }
 
 
 $from = new SendGrid\Email('Abiodun Adetona', "Abiodun@fritzng.com");
-$subject = "Fritz event review system.";
-$to = new SendGrid\Email(null, "adetonaabiodun12@gmail.com");
+$subject = "Fmedia Template (test).";
+$to = new SendGrid\Email(null, "lanre@fritzng.com");
 $content = new SendGrid\Content("text/html", $message);
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 

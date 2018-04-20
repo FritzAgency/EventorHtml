@@ -278,29 +278,6 @@ background-color: #4f2684 !important;
 </style>
 
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-#myInput {
-  background-image: url('https://www.w3schools.com/css/searchicon.png');
--webkit-box-shadow: 0px 0px 3px 5px transparent;
--moz-box-shadow: 0px 0px 3px 5px transparent;
-box-shadow: 0px 0px 3px 5px transparent; 
-
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-  font-family: 
- /* background: transparent;*/ 
-}
-</style>
-
 
 <style type="text/css">
   
@@ -352,6 +329,46 @@ background-color:#fff;
 
 </style>
 
+
+<style type="text/css">
+  
+
+* {
+    box-sizing: border-box;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+
 </head>
 
 <body>
@@ -361,30 +378,7 @@ background-color:#fff;
 
 
 
- <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-                  </div>
-                  <div class="modal-body">
-
-                    
-                    <form class="navbar-form " role="search">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                      </div>
-                      <button type="submit" class="btn btn-default">Submit</button>
-                    </form>
-
-
-                  </div>
-
-
-                </div>
-              </div>
+              
             
 
 
@@ -735,6 +729,31 @@ background-color:#fff;
 
             </section>
         
+
+
+<section>
+  
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container" style="height: 100px">
+        <div><span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span></div>
+<div style="margin-top: 30px">
+  
+
+<form class="example" action="/action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit" style="background-color: #4f2684;" ><i class="fa fa-search"></i></button>
+</form>
+
+
+</div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
 
 
 

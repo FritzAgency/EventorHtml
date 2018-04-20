@@ -49,25 +49,6 @@ a:link {
  } 
 
 
-  input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('https://www.w3schools.com/css/searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-    width: 100%;
-}
-
 
 
 
@@ -82,6 +63,7 @@ input[type=text]:focus {
     <!-- Your custom styles (optional) -->
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 <body>
@@ -156,7 +138,16 @@ input[type=text]:focus {
 </form> 
 
                 </li-->
-                
+  
+<li class="">
+
+<!--button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button-->
+<button type="submit" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"><i class="fa fa-search"></i></button>
+
+</li>
+
+
+
                 <li class="nav-item menu">
 <?php if ((!isset($_COOKIE['first_name']))){
 echo 
@@ -175,14 +166,6 @@ echo'<a href="auth/signup.php" class="nav-link  rounded waves-effect" style="col
 '; 
 }
 ?>
-
-</li>
-
-<li class="nav-item menu">
-
-  <button type="button" class="btn btn-info"  data-toggle="modal" data-target="#myModal">
-      <span class="glyphicon glyphicon-search"></span> 
-    </button>
 
 </li>
 <!-- drop down for dashboard and logout -->

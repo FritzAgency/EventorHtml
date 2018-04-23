@@ -35,137 +35,110 @@ Kindly rate your experience
 
   </form>'; */ 
 
-$message = '
-<html>
+
+$message = '<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width"/>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway" rel="stylesheet">
+<style>
 
+body{
 
-   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+font-family: "Montserrat", sans-serif;
+}
 
-
-    <style type="text/css">
-
-    * { margin: 0; padding: 0; font-size: 100%; font-family: "Avenir Next", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; line-height: 1.65; }
-
-img { max-width: 100%; margin: 0 auto; display: block; }
-
-body, .body-wrap { width: 100% !important; height: 100%; background: #f8f8f8; }
-
-a { color: #71bc37; text-decoration: none; }
-
-a:hover { text-decoration: underline; }
-
-.text-center { text-align: center; }
-
-.text-right { text-align: right; }
-
-.text-left { text-align: left; }
-
-.button { display: inline-block; color: white; background: #71bc37; border: solid #71bc37; border-width: 10px 20px 8px; font-weight: bold; border-radius: 4px; }
-
-.button:hover { text-decoration: none; }
-
-h1, h2, h3, h4, h5, h6 { margin-bottom: 20px; line-height: 1.25; }
-
-h1 { font-size: 32px; }
-
-h2 { font-size: 28px; }
-
-h3 { font-size: 24px; }
-
-h4 { font-size: 20px; }
-
-h5 { font-size: 16px; }
-
-p, ul, ol { font-size: 16px; font-weight: normal; margin-bottom: 20px; }
-
-.container { display: block !important; clear: both !important; margin: 0 auto !important; max-width: 580px !important; }
-
-.container table { width: 100% !important; border-collapse: collapse; }
-
-.container .masthead { padding: 80px 0; background: white; color: white; }
-
-.container .masthead h1 { margin: 0 auto !important; max-width: 90%; text-transform: uppercase; }
-
-.container .content { background: white; padding: 30px 35px; }
-
-.container .content.footer { background: none; }
-
-.container .content.footer p { margin-bottom: 0; color: #888; text-align: center; font-size: 14px; }
-
-.container .content.footer a { color: #888; text-decoration: none; font-weight: bold; }
-
-.container .content.footer a:hover { text-decoration: underline; }
-
-
-    </style>
-</head>
+</style>
+  
+  </head>
 <body>
-<table class="body-wrap">
-    <tr>
-        <td class="container">
 
-            <!-- Message start -->
-            <table>
-                <tr>
-                    <td align="center" class="masthead">
+<div class="container">
+ 
+  <div class="row">
+    <div class="col-sm-2" style="background-color:; margin: 0px;">
+    	
+   <!--img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Terminator-2-judgement-day.jpg/250px-Terminator-2-judgement-day.jpg" width="250" height="250"--> 		
+   	
+	<img src="https://i.imgur.com/CuAJRIn.jpg" width="200" height="200">
 
-                        <!--h1></h1-->
+ 	
+	
+	
+	
+	</div>
+    <div class="col-sm-10" style="background-color:;">
+    	<div class="col-sm-6" style="background-color:white;">
+    		<p style="color:#4f2684;" style="font-size: 15px"><strong>LAWAL HARDCORE</strong></p>
+    		<p style="color:#;">UI/UX  Designer | Graphics Designer</p>
+    		<p> <b>Email:</b> lawalhardcore@eventor.com</p>
 
-                        <img src="http://dev-eventor.herokuapp.com/Fmedia.png"> 
+    	</div>
+    	<div class="col-sm-12" style="background-color:#512586; color: white; height: 110px;">
+    		<div class="col-sm-12">
+    		<div class="col-sm-6">
+    			<h5>Cranium One, Towry Close,</h5>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td class="content">
+    			<h5>Adeola  Odeku,  Victoria Island, Lagos.</h5>
+    		</div>
+    		<div class="col-sm-6" style="padding: 10px;  height: 50px; text-align: center;">
 
-                        <h2>Hi Stranger,</h2>
+				<button type="button" class="btn btn-default" style="border-radius: 50%;">
+				    <!--span class="fa fa-facebook" style="color: #512586"></span-->
+					<img src="https://i.imgur.com/NVnQSaR.jpg" class="fa fa-facebook" style="color: #512586"> 
+				  </button>
+				  <button type="button" class="btn btn-default" style="border-radius: 50%;">
+				    <!--span class="fa fa-twitter" style="color: #512586"></span-->
+					<img src="https://i.imgur.com/vvsD3wv.jpg" class="fa fa-facebook" style="color: #512586">
+				  </button>
+				  <button type="button" class="btn btn-default" style="border-radius: 50%;">
+				    <!--span class="fa fa-instagram" style="color: #512586"></span-->
+					<img src="https://i.imgur.com/cALUfN7.jpg" class="fa fa-facebook" style="color: #512586">
+				  </button>
 
-                        <p class="text-justify">Buffalo tenderloin chuck short ribs filet mignon cow shankle. Shankle spare ribs rump drumstick, bacon swine sausage strip steak beef pork belly leberkas. </p>
+				  <!--button type="button" class="btn btn-default" style="border-radius: 50%;">
+				    <span class="fa fa-linkedin" style="color: #512586"></span>
+				  </button-->
+    		</div>
+	<div class="col-sm-12" >
+    		<!--div class="col-sm-6">
+    		<p>08111 0832 161 | info@eventor.com | <a href="https://fritzng.com">www.eventor.com</a> </p>
+    		</div-->  
+    		<!--span class="col-sm-1">|</span>
+    		<div class="col-sm-2">
+    		<p>info@eventor.com</p> 
+    		</div> 
+    		<span class="col-sm-1">|</span>
+    		<div class="col-sm-2">
+    		<p>www.eventor.com</p>
+    		</div--> 
+    			
+    		</div>
+    	
+    		
+    	</div>
+    	
+    </div>
 
-                        <p>Biltong buffalo tongue t-bone bacon pastrami ribeye alcatra shoulder filet mignon leberkas strip steak capicola turkey ham.</p>
+    
+  </div>
+  <div class="col-sm-12" style="background-color:white; color: gray">
+    	<div> DISCLAIMER: This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. This message contains confidential information and is intended only for the individual named. If you are not the named addressee you should not disseminate, distribute or copy this e-mail. Please notify the sender immediately by e-mail if you have received this e-mail by mistake and delete this e-mail from your system.</div>
+    </div>
+</div>
 
-                        <p> Meatball jerky ground round, salami turducken buffalo shoulder spare ribs strip steak alcatra prosciutto pastrami tenderloin drumstick. Pig biltong flank shoulder tail chuck. </p>
 
-                        <table>
-                            <tr>
-                                <td align="center">
-                                    <p>
-                                        <a href="http://fritzng.com/" class="button">Visit Our Site</a>
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
-
-                       
-
-                    </td>
-                </tr>
-            </table>
-
-        </td>
-    </tr>
-    <tr>
-        <td class="container">
-
-            <!-- Message start -->
-            <table>
-                <tr>
-                    <td class="content footer" align="center">
-                        <p>Sent by <a href="#">fmedia</a>, 1 Cranium One, Victoria Island, Lagos</p>
-                        <p><a href="mailto:">hello@fmedia.com</a> | <a href="#">Unsubscribe</a></p>
-                    </td>
-                </tr>
-            </table>
-
-        </td>
-    </tr>
-</table>
 </body>
-</html>'; 
+</html>
 
+
+'; 
 
 
 
@@ -174,7 +147,7 @@ p, ul, ol { font-size: 16px; font-weight: normal; margin-bottom: 20px; }
 
 $from = new SendGrid\Email('Abiodun Adetona', "Abiodun@fritzng.com");
 $subject = "Fmedia Template (test).";
-$to = new SendGrid\Email(null, "lanre@fritzng.com");
+$to = new SendGrid\Email(null, "onojaife2va@yahoo.com");
 $content = new SendGrid\Content("text/html", $message);
 $mail = new SendGrid\Mail($from, $subject, $to, $content);
 

@@ -42,6 +42,13 @@
 
       tracking.track('#video', tracker, { camera: true });
 
+      tracking.ColorTracker.registerColor('green', function(r, g, b) {
+  if (r < 50 && g > 200 && b < 50) {
+    return true;
+  }
+  return false;
+});
+
       tracker.on('track', function(event) {
         context.clearRect(0, 0, canvas.width, canvas.height);
 

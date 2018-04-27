@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="assets/demo.css">
 
   <script src="../build/tracking-min.js"></script>
-  <script src="../node_modules/dat.gui/build/dat.gui.min.js"></script>
+
+  <script src="../build/build2/dat.gui.min.js"></script>
+  <!--script src="../node_modules/dat.gui/build2/dat.gui.min.js"></script-->
   <script src="assets/stats.min.js"></script>
   <script src="assets/color_camera_gui.js"></script>
 
@@ -38,7 +40,7 @@
 
       var tracker = new tracking.ColorTracker();
 
-      tracking.track('#video', tracker, { camera: false });
+      tracking.track('#video', tracker, { camera: true });
 
       tracker.on('track', function(event) {
         context.clearRect(0, 0, canvas.width, canvas.height);

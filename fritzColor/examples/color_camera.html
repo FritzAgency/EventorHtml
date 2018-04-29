@@ -57,6 +57,10 @@
 });
 
 
+event.data.forEach(function(rect) {
+        alert(rect.x, rect.y, rect.height, rect.width, rect.color);
+});
+
 
 
       tracker.on('track', function(event) {

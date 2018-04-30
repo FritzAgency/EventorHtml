@@ -77,12 +77,23 @@
           context.fillStyle = "#fff";
           context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
           context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
+          //console.log(rect.color); 
+          
+        console.log(rect.x, rect.y, rect.height, rect.width, rect.color);
         });
       });
 
      initGUIControllers(tracker);
     };
-  </script>
+
+/*video.addEventListener('track', function(event) {
+      event.detail.data.forEach(function(rect) {
+       // plotRectangle(img, rect);
+       console.log('Hello'); 
+      });
+    });*/ 
+
+      </script>
 
 </body>
 </html>

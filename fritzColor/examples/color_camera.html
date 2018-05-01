@@ -30,8 +30,8 @@
 
   <div class="demo-frame">
     <div class="demo-container">
-      <video id="video" width="600" height="450" camera="true" preload autoplay loop muted controls></video>
-      <canvas id="canvas" width="600" height="450"></canvas>
+      <video id="video" is="video-color-tracking" target="red" width="600" height="450" camera="true" preload autoplay loop muted controls></video>
+      <canvas id="canvas" width="600" height="450" is="canvas-color-tracking" target="red"></canvas>
     </div>
   </div>
 
@@ -41,7 +41,7 @@
       var canvas = document.getElementById('canvas');
       var context = canvas.getContext('2d');
 
-    //  var tracker = new tracking.ColorTracker();
+      var tracker = new tracking.ColorTracker();
 
         //var tracker = new tracking.ColorTracker(['yellow', 'r']);
 

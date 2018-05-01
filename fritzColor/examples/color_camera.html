@@ -43,16 +43,17 @@
 
       var tracker = new tracking.ColorTracker();
 
-       //var tracker = new tracking.ColorTracker(['red', 'green']);
+       var tracker = new tracking.ColorTracker(['red']);
+
 
       tracking.track('#video', tracker, { camera: true });
 
-      tracking.ColorTracker.registerColor('green', function(r, g, b) {
+     /* tracking.ColorTracker.registerColor('green', function(r, g, b) {
   if (r < 50 && g > 200 && b < 50) {
     return true;
   }
   return false;
-});
+});*/ 
 
    tracking.ColorTracker.registerColor('red', function(r, g, b) {
   if (r < 255 && g > 0 && b < 0) {

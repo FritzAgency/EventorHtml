@@ -61,6 +61,11 @@
    * @param {HTMLVideoElement} element Canvas element to track.
    * @param {object} opt_options Optional configuration to the tracker.
    */
+
+/*window.navigator.mediaDevices.getUserMedia = navigator.getUserMedia ||
+                         navigator.webkitGetUserMedia ||
+                         navigator.mozGetUserMedia;*/ 
+
   tracking.initUserMedia_ = function(element, opt_options) {
     window.navigator.mediaDevices.getUserMedia({
       video: true,
@@ -71,6 +76,9 @@
       throw Error('Cannot capture user camera.');
     });
   };
+
+
+
 
   /**
    * Tests whether the object is a dom node.

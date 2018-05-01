@@ -82,9 +82,10 @@
           context.fillStyle = "#fff";
           context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
           context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
-          var area = rect.height * rect.width; 
+          
+          var area = rect.height * rect.width; //area covered by the color
 
-          alert(area, rect.color);
+          alert(rect.color);
         });
       });
 

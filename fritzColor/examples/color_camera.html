@@ -133,12 +133,14 @@
 }
 
 
-             document.cookie = 'area='+area+''; 
+             document.cookie = 'area='+area+'';
+
+             var res = getCookie("area");  
 
 
-             alert (getCookie("area"));
+             alert (res);
 
-             alert(getCookie("area") + '+1+');   
+             alert(res+1);   
 
              if (col='yellow'){
 

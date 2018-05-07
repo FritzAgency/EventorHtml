@@ -99,11 +99,16 @@
          
  //alert('Hello world');
 
-var green = rect.color === '#008000'; 
+//var green = rect.color === '#008000'; 
 
-alert(green);  
 
-//setTimeout(function(){ alert(context.strokeStyle); }, 7000);
+//alert(green);  
+tracking.ColorTracker.prototype.getColors = function() {
+    alert (this.colors);
+  };
+
+
+setTimeout(function(){ alert(context.strokeStyle); }, 7000);
 
 
 function getCookie(cname) {

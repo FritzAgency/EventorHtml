@@ -23,28 +23,26 @@
   }
   </style>
 </head>
-<body>
-  <!--div class="demo-title">
-    <p><a href="http://trackingjs.com" target="_parent">tracking.js</a> － choose the colors you want to detect through the controls on the right</p>
-  </div-->
 
-   <div id="counter_div">
-        Area
+<body>
+
+    <div id="color_detected_div">
+        color_type 
     </div>
+
+  <div class="demo-title">
+    <p><a href="http://trackingjs.com" target="_parent">tracking.js</a> － choose the colors you want 
+     to detect through the controls on the right</p>
+  </div>
 
   <div class="demo-frame">
     <div class="demo-container">
-      <video id="video" is="video-color-tracking" target="red" width="600" height="450" camera="true" preload autoplay loop muted controls></video>
-      <canvas id="canvas" width="600" height="450" is="canvas-color-tracking" target="red"></canvas>
+      <video id="video" width="600" height="450" camera="true" preload autoplay loop muted controls></video>
+      <canvas id="canvas" width="600" height="450"></canvas>
     </div>
   </div>
 
-  
-
-<script>
-
-
-
+  <script>
 
     window.onload = function() {
       var video = document.getElementById('video');
@@ -53,96 +51,64 @@
 
       var tracker = new tracking.ColorTracker();
 
-      var count = 0;
-      var div_counter = document.getElementById('counter_div');
-
-        //var tracker = new tracking.ColorTracker(['yellow', 'r']);
-
-
       tracking.track('#video', tracker, { camera: true });
 
       tracking.ColorTracker.registerColor('green', function(r, g, b) {
-  if (r < 50 && g > 200 && b < 50) {
-    return true;
-  }
-  return false;
-});
-
-   tracking.ColorTracker.registerColor('red', function(r, g, b) {
-  if (r < 255 && g > 0 && b < 0) {
-    return true;
-  }
-  return false;
-});
-
-
-/*event.data.forEach(function(rect) {
-        alert(rect.x, rect.y, rect.height, rect.width, rect.color);
-});*/
-
-
-
-      tracker.on('track', function(event) {
-        context.clearRect(0, 0, canvas.width, canvas.height);
-
-        event.data.forEach(function(rect) {
-          if (rect.color === 'custom') {
-            rect.color = tracker.customColor;
-          }
-
-          context.strokeStyle = rect.color;
-          context.strokeRect(rect.x, rect.y, rect.width, rect.height);
-          context.font = '11px Helvetica';
-          context.fillStyle = "#fff";
-          context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
-          context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
-         
- //alert('Hello world');
-
-//var green = rect.color === '#008000'; 
-
-
-//alert(green);  
-tracking.ColorTracker.prototype.getColors = function() {
-    alert (this.colors);
-  };
-
-
-setTimeout(function(){ alert(context.strokeStyle); }, 7000);
-
-
-function getCookie(cname) {
-      var name = cname + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      for(var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ') {
-              c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-              return c.substring(name.length, c.length);
-          }
-      }
-      return "";
-}
-
-
- var col = rect.color; 
- 
-
-        });
+            if (r < 50 && g > 200 && b < 50) {
+              return true;
+            }
+            return false;
       });
 
-     initGUIControllers(tracker);
+      tracking.ColorTracker.registerColor('red', function(r, g, b) {
+            if (r < 255 && g > 0 && b < 0) {
+              return true;
+            }
+            return false;
+      });
+
+      tracker.on('track', function(event) {
+
+        if (event.data.length === 0) {
+
+               //No colors were detected in this frame
+    
+         } else {
+
+               context.clearRect(0, 0, canvas.width, canvas.height);
+               event.data.forEach(function(rect) {
+                    if (rect.color === 'custom') {
+                         rect.color = tracker.customColor;
+                         var color_div = document.getElementById('color_detected_div');
+                         color_div.innerHTML = rect.color;
+                    }
+
+                   context.strokeStyle = rect.color;
+                   context.strokeRect(rect.x, rect.y, rect.width, rect.height);
+                   context.font = '11px Helvetica';
+                   context.fillStyle = "#fff";
+                   context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
+                   context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
+              });
+
+         }
+
+      });
+
+      initGUIControllers(tracker);
     };
+
   </script>
 
-<script type="text/javascript">
-  
-  //document.getElementById('counter_div').innerHTML = area; 
-
-</script>
-
 </body>
+
+
+
+
+
+
+
+
+
+
 </html>

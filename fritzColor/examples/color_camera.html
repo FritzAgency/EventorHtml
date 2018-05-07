@@ -73,7 +73,7 @@
       var context = canvas.getContext('2d');
 
       var tracker = new tracking.ColorTracker();
-      
+
   var div_cType = document.getElementById('color_type_div');
 
       var div_cType1 = document.getElementById('color_type_divv');
@@ -99,10 +99,6 @@
 });
 
 
-/*event.data.forEach(function(rect) {
-        alert(rect.x, rect.y, rect.height, rect.width, rect.color);
-});*/
-
 
 
       tracker.on('track', function(event) {
@@ -110,29 +106,20 @@
 
 
 
-          /*if(rect.color === 'yellow'){
-            counter++;
-            div_cType.innerHTML = rect.color + " detected " + counter + " times";
-            
-          }
 
-          if(rect.color === 'magenta'){
-            counter++;
-            div_cType1.innerHTML = rect.color + " detected " + counter + " times";
-            
-          }*/
+
         event.data.forEach(function(rect) {
           if (rect.color === 'custom') {
             rect.color = tracker.customColor;
           }
 
-if(rect.color === 'yellow'){
+if(rect.color === 'red'){
             counter++;
             div_cType.innerHTML = rect.color + " detected " + counter + " times";
             
           }
 
-          if(rect.color === 'magenta'){
+          if(rect.color === 'green'){
             counter++;
             div_cType1.innerHTML = rect.color + " detected " + counter + " times";
             

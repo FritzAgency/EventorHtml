@@ -6,14 +6,21 @@
   <link rel="stylesheet" href="assets/demo.css">
 
   <script src="../build/tracking-min.js"></script>
+
+  <script src="../build/build2/dat.gui.min.js"></script>
+
    <!--<script src="../node_modules/dat.gui/build/dat.gui.min.js"></script>-->
   <!--<script src="assets/stats.min.js"></script>-->
   <!--<script src="assets/color_camera_gui.js"></script>-->
 
+  <script src="assets/stats.min.js"></script>
+  <script src="assets/color_camera_gui.js"></script>
+
+
   <style>
-  .demo-container {
+  /*.demo-container {
     background-color: black;
-  }
+  }*/
 
   video, canvas {
     position: absolute;
@@ -31,28 +38,34 @@
 <div id="color_type_divv"> color_type </div>
 
 
+
+
     <div class="demo-container">
-      
-
-      <div id="rectangle"></div>
-
       <video id="video" is="video-color-tracking" target="red" width="600" height="450" camera="true" preload autoplay loop muted controls></video>
       <canvas id="canvas" width="600" height="450" is="canvas-color-tracking" target="red"></canvas>
-    
+    </div>
+  
 
-      <!--div id="rectangle"></div>
+
+    <!--div class="demo-container">
+          
+
+      <div id="rectangle"></div>
       <video id="video" width="800" height="530" preload autoplay loop muted controls>
         <source src="assets/minions.mp4" type="video/mp4">
         <source src="assets/minions.ogv" type="video/ogg">
       </video>
       <canvas id="canvas" width="800" height="500"></canvas>
-    </div-->
-  </div>
+    </div>
+  </div-->
 
   <script>
     window.onload = function() {
       var canvas = document.getElementById('canvas');
       var context = canvas.getContext('2d');
+
+      var video = document.getElementById('video');
+
       var div_cType = document.getElementById('color_type_div');
 
       var div_cType1 = document.getElementById('color_type_divv');
@@ -110,7 +123,7 @@
         });
       });
 
-      // initGUIControllers(tracker);
+      initGUIControllers(tracker);
     };
   </script>
 

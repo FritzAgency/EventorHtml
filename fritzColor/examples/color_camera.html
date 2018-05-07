@@ -106,9 +106,9 @@
       tracker.on('track', function(event) {
         context.clearRect(0, 0, canvas.width, canvas.height);
 
-        
 
-          if(rect.color === 'yellow'){
+
+          /*if(rect.color === 'yellow'){
             counter++;
             div_cType.innerHTML = rect.color + " detected " + counter + " times";
             
@@ -118,7 +118,7 @@
             counter++;
             div_cType1.innerHTML = rect.color + " detected " + counter + " times";
             
-          }
+          }*/
         event.data.forEach(function(rect) {
           if (rect.color === 'custom') {
             rect.color = tracker.customColor;

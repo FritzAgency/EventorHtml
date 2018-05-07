@@ -2,48 +2,51 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>xxxxx</title>
+  <title>tracking.js - color with video</title>
   <link rel="stylesheet" href="assets/demo.css">
 
   <script src="../build/tracking-min.js"></script>
-
-
-  <!--script src="../build/tracking.js"></script-->
-
-  <!--script src="../build/build2/dat.gui.min.js"></script-->
-  <!--script src="../node_modules/dat.gui/build2/dat.gui.min.js"></script-->
-  <!--script src="assets/stats.min.js"></script-->
-  <!--script src="assets/color_camera_gui.js"></script-->
+   <!--<script src="../node_modules/dat.gui/build/dat.gui.min.js"></script>-->
+  <!--<script src="assets/stats.min.js"></script>-->
+  <!--<script src="assets/color_camera_gui.js"></script>-->
 
   <style>
+  .demo-container {
+    background-color: black;
+  }
+
   video, canvas {
-    margin-left: 100px;
-    margin-top: 35px;
     position: absolute;
   }
   </style>
 </head>
-
 <body>
-
-    <!--div id="color_detected_div">
-        color_type 
-    </div-->
-
-
-    <div id="color_type_div">color_type</div>
-
-
   <div class="demo-title">
-    <p><a href="http://trackingjs.com" target="_parent">tracking.js</a> － choose the colors you want 
-     to detect through the controls on the right</p>
+    <p><a href="http://trackingjs.com" target="_parent">tracking.js</a> － detect certain colors in a video</p>
   </div>
 
   <div class="demo-frame">
+    <div id="color_type_div">color_type</div>
+
+<div id="color_type_divv"> color_type </div>
+
+
     <div class="demo-container">
-      <video id="video" width="600" height="450" camera="true" preload autoplay loop muted controls></video>
-      <canvas id="canvas" width="600" height="450"></canvas>
-    </div>
+      
+
+      <div id="rectangle"></div>
+
+      <video id="video" is="video-color-tracking" target="red" width="600" height="450" camera="true" preload autoplay loop muted controls></video>
+      <canvas id="canvas" width="600" height="450" is="canvas-color-tracking" target="red"></canvas>
+    
+
+      <!--div id="rectangle"></div>
+      <video id="video" width="800" height="530" preload autoplay loop muted controls>
+        <source src="assets/minions.mp4" type="video/mp4">
+        <source src="assets/minions.ogv" type="video/ogg">
+      </video>
+      <canvas id="canvas" width="800" height="500"></canvas>
+    </div-->
   </div>
 
   <script>
@@ -51,7 +54,12 @@
       var canvas = document.getElementById('canvas');
       var context = canvas.getContext('2d');
       var div_cType = document.getElementById('color_type_div');
+
+      var div_cType1 = document.getElementById('color_type_divv');
+
       var counter = 0;
+
+
 
       // tracking.ColorTracker.registerColor('purple', function(r, g, b) {
       //   var dx = r - 120;
@@ -65,7 +73,7 @@
       // });
 
       // var tracker = new tracking.ColorTracker(['yellow', 'purple']);
-      var tracker = new tracking.ColorTracker(['yellow']);
+      var tracker = new tracking.ColorTracker(['yellow', 'magenta']);
       tracker.setMinDimension(65);
 
       tracking.track('#video', tracker);
@@ -85,6 +93,13 @@
             div_cType.innerHTML = rect.color + " detected " + counter + " times";
             
           }
+
+          if(rect.color === 'magenta'){
+            counter++;
+            div_cType1.innerHTML = rect.color + " detected " + counter + " times";
+            
+          }
+
           
           context.strokeStyle = rect.color;
           context.strokeRect(rect.x, rect.y, rect.width, rect.height);
@@ -99,16 +114,5 @@
     };
   </script>
 
-
 </body>
-
-
-
-
-
-
-
-
-
-
 </html>

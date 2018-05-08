@@ -84,8 +84,8 @@
 
       tracking.track('#video', tracker, { camera: true });
 
-      tracking.ColorTracker.registerColor('green', function(r, g, b) {
-  if (r >= 0 && g >= 255  && b >0 ) {
+      tracking.ColorTracker.registerColor('blue', function(r, g, b) {
+  if (r >= 0 && g >= 0  && b >=128 ) {
     return true;
   }
   return false;
@@ -115,13 +115,13 @@
             rect.color = tracker.customColor;
           }
 
-if(rect.color === 'red'){
+if(rect.color === 'yellow'){
             counter++;
             div_cType.innerHTML = rect.color + " detected " + counter + " times";
             
           }
 
-          if(rect.color === 'green'){
+          if(rect.color === 'blue'){
             counter++;
             div_cType1.innerHTML = rect.color + " detected " + counter + " times";
             

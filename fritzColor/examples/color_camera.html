@@ -85,7 +85,7 @@
       tracking.track('#video', tracker, { camera: true });
 
       tracking.ColorTracker.registerColor('blue', function(r, g, b) {
-  if (r < 0 && g > 0 && b < 255) {
+  if (r <= 0 && g >= 0 && b < 255) {
     return true;
   }
   return false;

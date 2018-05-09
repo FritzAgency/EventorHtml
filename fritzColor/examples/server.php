@@ -38,9 +38,9 @@
   </div>
 
   <div class="demo-frame">
-    <div id="color_type_div" class="color_type_div">color_type</div>
+    <div id="color_type_div" class="color_type_div"></div>
 
-<div id="color_type_divv"> color_type </div>
+<div id="color_type_divv">  </div>
 
 
 

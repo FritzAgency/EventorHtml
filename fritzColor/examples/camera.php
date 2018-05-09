@@ -14,7 +14,7 @@
 
 
 <script type="text/javascript">
-	$.get("server.php", {}, function(results){
+	$.get("https://dev-eventor.herokuapp.com/fritzColor/examples/server.php", {}, function(results){
    // will show the HTML from anotherPage.html
    //alert(results); 
     

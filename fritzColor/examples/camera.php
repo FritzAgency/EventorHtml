@@ -14,7 +14,7 @@
 
 
 <script type="text/javascript">
-	$.get("https://dev-eventor.herokuapp.com/fritzColor/examples/server.php", {}, function(results){
+	$.get("server.php", {}, function(results){
    // will show the HTML from anotherPage.html
    //alert(results); 
     
@@ -28,7 +28,8 @@
 $('#demo1').html(color1);  
 
 $('#demo2').html(color2);
-
+ window.setTimeout(update, 10000);//reload after 10 seconds
+ 
 //  $('color_type_divv').html('Hello World');
 });
 

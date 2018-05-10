@@ -14,6 +14,15 @@
 
 
 <script type="text/javascript">
+
+
+
+	$(document).ready(function () {
+    // will call refreshPartial every 5 seconds
+    setInterval(update, 5000)
+
+});
+	function update(){
 	$.get("server.php", {}, function(results){
    // will show the HTML from anotherPage.html
    //alert(results); 
@@ -28,12 +37,14 @@
 $('#demo1').html(color1);  
 
 $('#demo2').html(color2);
- window.setTimeout(update, 10000);//reload after 10 seconds
- 
+// window.setTimeout(update, 10000);//reload after 10 seconds
+
 //  $('color_type_divv').html('Hello World');
 });
 
+}
 
+//update(); //call update function
 </script>
 
 </body>

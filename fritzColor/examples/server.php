@@ -38,9 +38,9 @@
   </div>
 
   <div class="demo-frame">
-    <div id="color_type_div">1</div>
+    <div id="color_type_div">Fetch first color</div>
 
-<div id="color_type_divv"> 2 </div>
+<div id="color_type_divv">Fetch second color </div>
 
 
 

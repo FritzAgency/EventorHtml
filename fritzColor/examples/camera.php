@@ -12,6 +12,11 @@
 
 <div id="demo2"></div>
 
+<script type="text/javascript">
+fetch('https://dev-eventor.herokuapp.com/fritzColor/examples/server.php')
+.then(res => console.log(res));	
+
+</script>
 
 <script type="text/javascript">
 
@@ -46,6 +51,7 @@ $('#demo2').html(color2);
 
 //update(); //call update function
 </script>
+
 
 </body>
 </html>

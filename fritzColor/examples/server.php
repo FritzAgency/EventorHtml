@@ -10,6 +10,7 @@
   <title>tracking.js - color with video</title>
   <link rel="stylesheet" href="assets/demo.css">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../build/tracking-min.js"></script>
 
   <script src="../build/build2/dat.gui.min.js"></script>
@@ -38,9 +39,9 @@
   </div>
 
   <div class="demo-frame">
-    <div id="color_type_div">Fetch first color</div>
+    <div id="color_type_div" class="color_type_div"></div>
 
-<div id="color_type_divv">Fetch second color </div>
+<div id="color_type_divv" class="color_type_divv"> </div>
 
 
 
@@ -127,14 +128,14 @@
 
           if(rect.color === 'cyan'){
             count_blue++;
-            div_cType1.innerHTML = rect.color + " detected " + count_blue + " times";
-            
+            //div_cType1.innerHTML = rect.color + " detected " + count_blue + " times";
+             div_cType1.innerHTML = rect.color + " detected " + count_blue + "X";
           }
 
 
           if(rect.color === 'yellow'){
             count_yellow++;
-            div_cType.innerHTML = rect.color + " detected " + count_yellow + " times";
+            div_cType.innerHTML = rect.color + " detected " + count_yellow + " X";
             
 }
 
@@ -150,6 +151,30 @@
  
 
 
+var color1 = $('.color_type_div').html(); //first div
+
+var color2 = $('.color_type_divv').html();  //second div
+
+/*
+ajax to save into database
+*/
+  $.ajax({
+
+         type: "POST",
+         url: "save.php",
+         data: {
+                color1: color1, color2: color2
+            },
+         success: function(data){
+              console.log(color2);
+         }
+});
+
+
+
+//console.log(color1);
+
+//console.log(color2);  
 
 
 
@@ -159,6 +184,15 @@
      initGUIControllers(tracker);
     };
   </script>
+
+<script>
+
+
+
+
+</script>
+
+
 
 
 

@@ -42,8 +42,13 @@ if ($con == false)
   $color2 = $_POST['color2'];
 
 
+  $yellow = $color1 / $color1 + $color2 * 100; 
 
-     $query = "UPDATE `color` SET color1='$color1', color2='$color2'"; 
+  $cyan = $color2 / $color1  + $color2 * 100;   
+
+
+
+     $query = "UPDATE `color` SET color1='$yellow', color2='$cyan'"; 
 
 //$query = "INSERT into `color` (color1, color2) VALUES ('$color1', '$color2')";
 

@@ -42,9 +42,13 @@ if ($con == false)
   $color2 = $_POST['color2'];
 
 
-  $yellow = $color1 / $color1 + $color2 * 100; 
+//add the color
+$addition = $color1 + $color2; 
 
-  $cyan = $color2 / $color1  + $color2 * 100;   
+
+  $yellow = $color1 / $addition * 100; 
+
+  $cyan = $color2 / $addition * 100;   
 
 
 

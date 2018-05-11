@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html>
-<body>
+<?php 
 
-<h1>Getting server updates</h1>
-<div id="result"></div>
 
-<script>
-if(typeof(EventSource) !== "undefined") {
-    var source = new EventSource("camera.php");
-    source.onmessage = function(event) {
-        document.getElementById("result").innerHTML += event.data + "<br>";
-    };
-} else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
-}
-</script>
 
-</body>
-</html>
+  $color1 = 10; 
+
+
+  $color2 = 20;
+
+$add = $color1 + $color2;
+
+  $yellow = $color1/$add * 100;  
+ 
+
+  $cyan = $color2/$add * 100;   
+
+echo 'Yellow:'. $yellow; 
+
+echo 'Cyan:' . $cyan; 
+?>
+

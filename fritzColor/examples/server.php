@@ -119,7 +119,7 @@
             //div_cType1.innerHTML = rect.color + " detected " + count_blue + " times";
             // div_cType1.innerHTML = rect.color + " detected " + count_blue + "X";
 
-             div_cType1.innerHTML = "Cyan:" + count_blue + ;  
+             div_cType1.innerHTML = "Cyan" + count_blue;  
 
 
           }
@@ -128,7 +128,7 @@
           if(rect.color === 'yellow'){
             count_yellow++;
             //div_cType.innerHTML = rect.color + " detected " + count_yellow + " X";
-            div_cType.innerHTML = "Yellow" + count_yellow +;  
+            div_cType.innerHTML = "Yellow" + count_yellow;  
             
 }
 

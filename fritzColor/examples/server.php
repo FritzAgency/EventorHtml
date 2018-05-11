@@ -53,18 +53,6 @@
   
 
 
-    <!--div class="demo-container">
-          
-
-      <div id="rectangle"></div>
-      <video id="video" width="800" height="530" preload autoplay loop muted controls>
-        <source src="assets/minions.mp4" type="video/mp4">
-        <source src="assets/minions.ogv" type="video/ogg">
-      </video>
-      <canvas id="canvas" width="800" height="500"></canvas>
-    </div>
-  </div-->
-
 
 
 
@@ -129,13 +117,18 @@
           if(rect.color === 'cyan'){
             count_blue++;
             //div_cType1.innerHTML = rect.color + " detected " + count_blue + " times";
-             div_cType1.innerHTML = rect.color + " detected " + count_blue + "X";
+            // div_cType1.innerHTML = rect.color + " detected " + count_blue + "X";
+
+             div_cType1.innerHTML = "Cyan:" + count_blue + ;  
+
+
           }
 
 
           if(rect.color === 'yellow'){
             count_yellow++;
-            div_cType.innerHTML = rect.color + " detected " + count_yellow + " X";
+            //div_cType.innerHTML = rect.color + " detected " + count_yellow + " X";
+            div_cType.innerHTML = "Yellow" + count_yellow +;  
             
 }
 

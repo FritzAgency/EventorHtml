@@ -60,9 +60,13 @@ $query = "SELECT * FROM `color`";
 $result = mysqli_query($con,$query); 
 
 while ($row = mysqli_fetch_assoc( $result )){
+
+	echo '<div id="content">'; 
 	echo '<div id="demo1">'.  $row['color1'] . '</div>'; 
 
-	echo '<div id="demo2">'. $row['color2'] . '</div>';  
+	echo '<div id="demo2">'. $row['color2'] . '</div>'; 
+
+	echo '</div>'; 
 }
 
 
@@ -83,17 +87,27 @@ while ($row = mysqli_fetch_assoc( $result )){
 
 $(document).ready(function () {
     // will call refreshPartial every 5 seconds
-    setInterval(refresh, 5000)
+    setInterval(refresh, 1000); 
+    
 
 });
 
 
 function refresh() {
-	 $( "#demo1" ).load(window.location.href + " #demo1" );
+	/* $( "#demo1" ).load(window.location.href + " #demo1" );
 
-	 $( "#demo2" ).load(window.location.href + " #demo2" );
+	 $( "#demo2" ).load(window.location.href + " #demo2" );*/ 
+
+	 $("#content").load(window.location.href + " #content").fadeIn();
+	 //$("#content").load(window.location.href + " #content").fadeOut(); 
 }
 
+
+/*function fade(){
+
+	$("#content").fadeIn(); 
+	$("#content").fadeOut(); 
+}*/ 
 
 /*	$(document).ready(function () {
     // will call refreshPartial every 5 seconds

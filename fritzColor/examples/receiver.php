@@ -5,39 +5,33 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
 </head>
+
+<style>
+
+body{
+    background-image: url("../images/djtakeover-background.jpg");
+    background-repeat: no-repeat;
+}
+
+#color{
+    color: white; 
+    font-size: 30px; 
+}
+
+</style> 
+
+
 <body>
 
-<div id="demo1"></div>
-
-<div id="demo2"></div>
-
-
-<div id="target-div"></div>
-
+<div class="container-fluid"> 
 
 
 <?php
-/*
-Author: Abiodun Adetona. 
-email: adetonaabiodun12@gmail.com. 
-*/
-
-/*$db_host='localhost'; //defining the database host. 
-$db_user='root'; //defining the database user. 
-$db_name='eventor';//defining the database name.   
-$db_pass=''; //defining the password
-
-$con = mysqli_connect($db_host, $db_user, "", $db_name);//establishing the connecting. 
-
-// Check if its connected. 
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();//returns error if connection failed. 
-  }/*else{
-  	echo 'Success'; 
-  }*/ 
-
 
 
 $server = "us-cdbr-iron-east-05.cleardb.net";
@@ -61,10 +55,10 @@ $result = mysqli_query($con,$query);
 
 while ($row = mysqli_fetch_assoc( $result )){
 
-	echo '<div id="content">'; 
-	echo '<div id="demo1">'.  $row['color1'] . '</div>'; 
+	echo '<div class="row" id="content">'; 
+	echo '<div class="col-md-offset-2 col-md-4" id="color">'.  $row['color1'] . '</div>'; 
 
-	echo '<div id="demo2">'. $row['color2'] . '</div>'; 
+	echo '<div class="col-md-4" id="color">'. $row['color2'] . '</div>'; 
 
 	echo '</div>'; 
 }
@@ -136,7 +130,7 @@ $('#demo2').html(color2);
 }*/ 
 
 </script>
-
+</div>
 
 </body>
 </html>

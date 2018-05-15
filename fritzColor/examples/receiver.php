@@ -5,31 +5,59 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--link rel='stylesheet' href='css/style.css'-->
 
-
-</head>
 
 <style>
 
 body{
-    background-image: url("../images/djtakeover-background.jpg");
+    background-image: url("../images/djtakeover-full5.jpg");  
     background-repeat: no-repeat;
 }
-
 #color{
-    color: white; 
-    font-size: 30px; 
+   /* color:white; 
+    font-size: 30px; */ 
 }
 
+.bar{
+    width: 50px; 
+}
 </style> 
 
+<style type="text/css">
+
+.progress {
+  height: 100px;
+  margin-top: 600px;
+
+}
+.progress .skill {
+  font: normal 12px "Open Sans Web";
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+.progress-bar {
+  text-align: left;
+  transition-duration: 3s;
+}
+
+</style>
+
+
+    </head> 
 
 <body>
 
-<div class="container-fluid"> 
-
+<div class="container"> 
 
 <?php
 
@@ -55,12 +83,33 @@ $result = mysqli_query($con,$query);
 
 while ($row = mysqli_fetch_assoc( $result )){
 
-	echo '<div class="row" id="content">'; 
-	echo '<div class="col-md-offset-2 col-md-4" id="color">'.  $row['color1'] . '</div>'; 
-
+	/*echo '<div class="row" id="content">'; 
+    echo '<div class="col-md-offset-2 col-md-4" id="color">'.  $row['color1'] . '</div>'; 
+    
 	echo '<div class="col-md-4" id="color">'. $row['color2'] . '</div>'; 
 
-	echo '</div>'; 
+	echo '</div>';*/ 
+
+echo '<div class="row" id="content">'; 
+
+echo '<div class="col-md-4 progress skill-bar">
+                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow='.$row['color1'].' aria-valuemin="0" aria-valuemax="100">
+                    <span class="skill"></span>
+                </div>                
+  </div>'; 
+
+
+echo '<div class="col-md-4 progress skill-bar" style="float: right"> 
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow='.$row['color2'].'  aria-valuemin="0" aria-valuemax="100" >
+                    <span class="skill"></span>
+                </div>
+                  </div>'; 
+
+
+
+echo '</div>'; 
+	 
+ 
 }
 
 
@@ -81,7 +130,7 @@ while ($row = mysqli_fetch_assoc( $result )){
 
 $(document).ready(function () {
     // will call refreshPartial every 5 seconds
-    setInterval(refresh, 1000); 
+    setInterval(refresh, 5000); 
     
 
 });
@@ -130,6 +179,23 @@ $('#demo2').html(color2);
 }*/ 
 
 </script>
+
+<!--script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script-->
+<script src="script/jquery.barChart.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+  $(document).ready(function() {
+      $('.progress .progress-bar').css("width",
+                function() {
+                    return $(this).attr("aria-valuenow") + "%";
+                }
+        )
+    });
+</script>
+
+
 </div>
 
 </body>

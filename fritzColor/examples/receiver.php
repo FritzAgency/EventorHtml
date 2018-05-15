@@ -93,14 +93,14 @@ while ($row = mysqli_fetch_assoc( $result )){
 echo '<div class="row" id="content">'; 
 
 echo '<div class="col-md-4 progress skill-bar" id="content">
-                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow='.$row['color1'].' aria-valuemin="0" aria-valuemax="100">
+                     <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow='.$row['color1'].' aria-valuemin="0" aria-valuemax="100" id="content">
                     <span class="skill"></span>
                 </div>                
   </div>'; 
 
 
 echo '<div class="col-md-4 progress skill-bar" style="float: right" id="content"> 
-                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow='.$row['color2'].'  aria-valuemin="0" aria-valuemax="100" >
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow='.$row['color2'].'  aria-valuemin="0" aria-valuemax="100" id="content">
                     <span class="skill"></span>
                 </div>
                   </div>'; 

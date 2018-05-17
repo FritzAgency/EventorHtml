@@ -115,6 +115,23 @@ echo '</div>';
 
 ?> 
 
+<!--script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script-->
+<script src="script/jquery.barChart.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+  $(document).ready(function() {
+      $('.progress .progress-bar').css("width",
+                function() {
+                    return $(this).attr("aria-valuenow") + "%";
+                }
+        )
+    });
+</script>
+
+
+
 <script>
     /*$(document).ready(function(){  
         setInterval(function(){   
@@ -137,22 +154,22 @@ $(document).ready(function () {
 
 
 function refresh() {
-	/* $( "#demo1" ).load(window.location.href + " #demo1" );
+  /* $( "#demo1" ).load(window.location.href + " #demo1" );
 
-	 $( "#demo2" ).load(window.location.href + " #demo2" );*/ 
+   $( "#demo2" ).load(window.location.href + " #demo2" );*/ 
 
-	 $("#content").load(window.location.href + "#content").fadeIn();
-	 //$("#content").load(window.location.href + " #content").fadeOut(); 
+   $("#content").load(window.location.href + "#content").fadeIn();
+   //$("#content").load(window.location.href + " #content").fadeOut(); 
 }
 
 
 /*function fade(){
 
-	$("#content").fadeIn(); 
-	$("#content").fadeOut(); 
+  $("#content").fadeIn(); 
+  $("#content").fadeOut(); 
 }*/ 
 
-/*	$(document).ready(function () {
+/*  $(document).ready(function () {
     // will call refreshPartial every 5 seconds
     setInterval(update, 5000)
 
@@ -163,8 +180,8 @@ function reload(){
 }
 
 
-	function update(){
-	$.get("server.php", {}, function(results){
+  function update(){
+  $.get("server.php", {}, function(results){
    
 
   var color1 = $(results).find("#color_type_div").html();
@@ -179,24 +196,6 @@ $('#demo2').html(color2);
 }*/ 
 
 </script>
-
-<!--script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script-->
-<script src="script/jquery.barChart.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script>
-  $(document).ready(function() {
-      $('.progress .progress-bar').css("width",
-                function() {
-                    return $(this).attr("aria-valuenow") + "%";
-                }
-        )
-    });
-</script>
-
-
-
 
 
 </div>

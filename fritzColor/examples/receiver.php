@@ -202,7 +202,7 @@ $(window).keypress(function (e) {
     e.preventDefault()
     //alert('Space pressed')
 
-     $("#barChart").css("display", "block");
+     $("#barChart").css("display", "");
   
   }
 });

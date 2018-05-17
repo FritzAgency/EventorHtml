@@ -90,17 +90,17 @@ while ($row = mysqli_fetch_assoc( $result )){
 
 	echo '</div>';*/ 
 
-echo '<div class="row" id="barChart" style="display: none">'; 
+echo '<div class="row" id="content">'; 
 
-echo '<div class="col-md-4 progress skill-bar">
+echo '<div class="col-md-4 progress skill-bar" id="content">
                      <div class="progress-bar" role="progressbar" aria-valuenow='.$row['color1'].' aria-valuemin="0" aria-valuemax="100" id="content" style="background-color: yellow">
                     <span class="skill" id="content"></span>
                 </div>                
   </div>'; 
 
 
-echo '<div class="col-md-4 progress skill-bar" style="float:right"> 
-                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow='.$row['color2'].'  aria-valuemin="0" aria-valuemax="100"  style="background-color: #00FFFF">
+echo '<div class="col-md-4 progress skill-bar" style="float: right" id="content"> 
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow='.$row['color2'].'  aria-valuemin="0" aria-valuemax="100" id="content" style="background-color: #00FFFF">
                     <span class="skill" id="content"></span>
                 </div>
                   </div>'; 
@@ -195,19 +195,7 @@ $('#demo2').html(color2);
     });
 </script>
 
-<script type="text/javascript">
-  
-$(window).keypress(function (e) {
-  if (e.keyCode === 0 || e.keyCode === 32) {
-    e.preventDefault()
-    //alert('Space pressed')
 
-     $("#barChart").css("display", "");
-  
-  }
-});
-
-</script>
 
 
 

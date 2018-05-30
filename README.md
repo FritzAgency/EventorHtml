@@ -39,6 +39,11 @@ NB: You can switch to the Mockup branch using `git checkout Mockup`
 * Frontend: HTML, CSS(Bootstrap framework), Javascript. 
 
 
+## DJ-takeover.
+
+
+The DJ-takeover codebase resides in the Mockup branch. 
+
 
 
   

@@ -8,8 +8,6 @@
 
 2. DJ-takeover. 
 
-3. Email rating. 
-
 
 ## Eventor
 
@@ -84,5 +82,4 @@ The color camera is [here](trackingjs.com/examples/color_camera.html).
 What the project aims to achieve is to enable voting based on color. 
 
 So far you can detect colors using the camera page, count the color and present the percentage in the output page.  
-
 

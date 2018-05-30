@@ -8,21 +8,22 @@
 
 2. DJ-takeover. 
 
+3. Email rating. 
+
 
 ## Eventor
 
 The Eventor project on Github is divided into 2 branches:
 
-* Master. 
+* Master branch. 
 
-* Mockup. 
+* Mockup branch. 
 
 ### Master. 
 
 
-The Master contains the all the Backend functionality of the app.  
+The Master branch contains all the Backend functionality of the app.  
 
-It is the default you get when you download the project. 
 
 ### Mockup. 
 
@@ -45,7 +46,30 @@ NB: You can switch to the Mockup branch using `git checkout Mockup`
 The DJ-takeover codebase resides in the Mockup branch. 
 
 
+**File structure:**
 
+The project folder is in the  `fritzColor` folder.
+
+
+**Screens** 
+
+
+There are currently two screens for this project:
+
+* Input page (commonly known as the camera page). 
+
+* Output page. 
+
+## Input page. 
+
+The code that makes the input page work is inside this directory: `/fritzColor/examples/server.php`    
   
+There is a testing page as well for the input page: `/fritzColor/examples/color_camera.html`
 
+The hosted url is at [Camera page](https://dev-eventor.herokuapp.com/fritzColor/examples/server.php)  
 
+## Output page.
+
+The code for the output page is in this directory `/fritzColor/examples/receiver.php ` 
+
+The hosted url is at [Output page](https://dev-eventor.herokuapp.com/fritzColor/examples/receiver.php)  

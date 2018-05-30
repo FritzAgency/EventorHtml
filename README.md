@@ -73,3 +73,16 @@ The hosted url is at [Camera page](https://dev-eventor.herokuapp.com/fritzColor/
 The code for the output page is in this directory `/fritzColor/examples/receiver.php ` 
 
 The hosted url is at [Output page](https://dev-eventor.herokuapp.com/fritzColor/examples/receiver.php)  
+
+
+## How the project works. 
+
+The camera page is based on Trackingjs color project  [You can view their various projects here.](https://trackingjs.com). 
+
+The color camera is [here](trackingjs.com/examples/color_camera.html).
+
+What the project aims to achieve is to enable voting based on color. 
+
+So far you can detect colors using the camera page, count the color and present the percentage in the output page.  
+
+

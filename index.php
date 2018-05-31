@@ -403,7 +403,7 @@ form.example::after {
                     <div class="carousel-inner" role="listbox">
                         <!--First slide-->
                         <div class="carousel-item active">
-                          <a href="event/summary.html">  <img class="d-block w-100" src="img/sliidnew.jpg" alt="First slide"></a>
+                          <a href="event/summary.html">  <img class="d-block w-100" src="img/compressedslide.jpg" alt="First slide"></a>
                         </div>
                         <!--/First slide-->
                         <!--Second slide-->

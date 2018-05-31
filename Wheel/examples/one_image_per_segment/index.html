@@ -4,6 +4,9 @@
         <link rel="stylesheet" href="main.css" type="text/css" />
         <script type="text/javascript" src="../../Winwheel.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div align="center">
@@ -41,6 +44,8 @@
                 </tr>
             </table>
         </div>
+
+
         <script>
             // Create new wheel object specifying the parameters at creation time.
             var theWheel = new Winwheel({
@@ -174,11 +179,21 @@
             // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
             // note the indicated segment is passed in as a parmeter as 99% of the time you will want to know this to inform the user of their prize.
             // -------------------------------------------------------
+            
+
+
             function alertPrize(indicatedSegment)
             {
                 // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
-                alert(indicatedSegment.text + ' says Hi');
+               alert('You have won a ' + indicatedSegment.text);
+
+                //document.getElementById('winner').innerHtml = 'You have won a ' + indicatedSegment.text; 
+
+
+
             }
         </script>
+
+
     </body>
 </html>

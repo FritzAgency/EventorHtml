@@ -689,7 +689,7 @@ form.example::after {
 
 
 
-<section class="mb-4" id="How" style="width: 88%; margin: auto;">
+<section class="col-lg-12" id="How" style="width: 88%; margin: auto;">
 
                 <!--Carousel Wrapper-->
                 <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">

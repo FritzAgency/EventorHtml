@@ -762,7 +762,7 @@ form.example::after {
 
         <!--Call to action-->
         <div class="pt-4" style="background-color:#8f2dc2; padding-bottom: 1.5rem;">
-            <a class="btn btn-outline-white" href="vendor/vendorform.php" role="button">Become a Vendor
+            <a class="btn btn-outline-white" href="vendor1/vendorform.php" role="button">Become a Vendor
             </a>
             <a class="btn btn-outline-white" href="event/create.php" role="button">Create Event
             </a>

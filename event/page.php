@@ -972,7 +972,7 @@ learning about portion control and calorie measurement.
 
     <!--Call to action-->
     <div class="pt-4">
-      <a class="btn btn-outline-white" href="../vendor/vendorform.php" role="button">Become a Vendor
+      <a class="btn btn-outline-white" href="../vendor1/vendorform.php" role="button">Become a Vendor
       </a>
       <a class="btn btn-outline-white" href="../event/ticket.html"  role="button">Register
       </a>

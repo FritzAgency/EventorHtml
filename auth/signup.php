@@ -29,6 +29,10 @@
 	border-bottom-right-radius: 5px;
 }
 
+a{
+    text-decoration: none; 
+}
+
 p {
     font-family: Verdana, Arial, sans-serif;
     font-size: 1em;
@@ -213,7 +217,7 @@ p {
  </div>
                                         <div class="form-group">
                         <div class="col-sm-12">
-                           <a href="../auth/login.php"> <button type="submit" class="btn btn-primary btn-block" name="submit">Submit</button></a>
+                           <a href="../auth/login.php"> <button type="submit" class="btn btn-primary btn-block" name="submit" style="background-color: #4f2684;">Submit</button></a>
                         </div>
     </form>
 

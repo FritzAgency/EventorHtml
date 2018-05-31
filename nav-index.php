@@ -142,7 +142,7 @@ a:link {
 <li class="">
 
 <!--button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button-->
-<button type="submit" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black"><i class="fa fa-search"></i></button>
+<button type="submit" onclick="document.getElementById('id01').style.display='block'" class="w3-button" style="background-color: white"><i class="fa fa-search" style="color: #4f2684; "></i></button>
 
 </li>
 

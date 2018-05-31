@@ -161,7 +161,7 @@
               <a href="../event/ticket.html" class="btn btn-outline-white btn-lg">Register
               </a> 
 
-              <a  href="../vendor/vendorform.php" class="btn btn-outline-white btn-lg">Become a Vendor
+              <a  href="../vendor1/vendorform.php" class="btn btn-outline-white btn-lg">Become a Vendor
               </a>
               
 

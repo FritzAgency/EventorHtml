@@ -126,7 +126,7 @@ a:link {
                     </a>
                 </li>
                 <li class="nav-item" style="margin-right: 60px;" >
-                    <a href="vendor/vendorform.php" class="nav-link waves-effect menu" style="color:#4f2684;">
+                    <a href="vendor1/vendorform.php" class="nav-link waves-effect menu" style="color:#4f2684;">
                         <i class="fa fa-login"></i>Become a Vendor
                     </a>
                 </li>
